@@ -1,0 +1,6 @@
+To Do file for Github datasciY repo.
+Date: 10/16/2018 5:00 pm start.
+
+* Upload Titanic notebook
+* Create folder for Titanic Project.
+* Create png files.
