@@ -1,4 +1,14 @@
 To Do file for Github datasciY repo.
+
+Date: July 21, 2019 5:42 AM EST
+ - Create a local repo for datasciY.com development.
+ - Use VS Code to manage git
+ - Upload current changes to Github.
+ - Practice using Git commands: git push, stage, commit, pull, rebase.
+
+
+
+Old: 
 Date: 10/16/2018 5:00 pm start.
 
 * Upload Titanic notebook
