@@ -5,10 +5,15 @@ Other Data Science python libraries: numpy, pandas, matplotlib, scipy, sklearn, 
 
 All content of this repo is copyrighted (c 2017 - 2019).  All rights reserved.
 
-## Projects
-- Titanic Machine Learning Project
+Directory structure:
 
-## Tutorials
-- Matplotlib Graphing Tutorial
+### About Jennifer Yoon
 
-## Other
+### Projects
+
+### Articles
+
+### Blog
+
+### root
+
