@@ -1,0 +1,5 @@
+# TASKS LIST FOR WEBSITE datasciY.com
+
+JULY 22, 2019.
+
+DAILY POST updates.
