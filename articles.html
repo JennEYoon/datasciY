@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8" />	
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>Articles-datasciY.com</title>
+<meta name="description" content="Jennifer Yoon's Data Science Programming Portfolio." />
+<meta name="keywords" content="data science, python, scipy, pydata, programming, coding" />
+
+<link rel="stylesheet" href="http://datasciY.com/dsy.css">
+<link rel="stylesheet" href="dsy.css">
+</head>
+
+
+<body>
+<header><!-- Header, background image, purple. -->    
+    <p></p>
+    <h1>Articles</h1>
+    <p class="tagline">datasciY.com</p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <!-- Main navigation -->
+    <ul class="nav-ul">    
+    <li class="nav-li"><a href="/about.html">About</a></li>
+    <li class="nav-li"><a href="/projects.html">Projects</a></li>
+    <li class="nav-li"><a class="active" href="/articles.html">Articles</a></li>
+	<li class="nav-li"><a href="/blog.html">Blog</a></li>	
+    </ul>
+</header>
+
+
+<section><!-- Main content section. -->
+
+    <h3>Introduction</h3>
+        <p>I will post indepth articles on topics of general interest here.</p>
+        <ul>
+        <li>Author: Jennifer Yoon</li>    
+        <li>Contact email: "datasciY.info@gmail.com"</li>
+        </ul>
+
+    <h3>Deep Learning in Brain Segmentation Imaging</h3>
+        <ul>
+        <li>Date: March 16, 2019</li>    
+        </ul>
+
+        <p>I saw remarkably advanced brain imaging techniques using deep learning.  The research is still being vetted.  Results seem to imply that deep learning AI can correctly draw-in structures that are not in the original image.  The context is that high resolution brain image slices are expensive and difficult to obtain.  Fuzzy versions are cheaper and more abundant in image databases.  The process of capturing a very high resolution image damages some of the super thin layers.  So when the brain of a test organism is being scanned, only every 2nd or 3rd slice is a high resolution image, and the rest are fuzzy images.  The stuctures found in hi-res images are used to fill-in the missing structures in the fuzzy images, in a kind of interpolation.  Humans now perform this task.  Humans are only somewhat accurate in filling in the missing structures.  However, recent research seem to indicate that deep-learning AIs trained on various morphing software to go from hi-res to fuzzy, and from fuzzy to hi-res, can produce very accurately filled-in images.  </p>
+            
+        <p>You may have seen pictures where photos were transformed into art in the style of famous artists, such as Van Gogh, Monet, and Picasso.  Deep learning AIs were trained to "morph" an image from a photo to a painting and back.  Take a cafe street scene at night in France that was painted by Van Gogh.  A photograph of the same street scene is used, along with Van Gogh's painting, to train the deep learning AI to "morph" from one version to another.  If you consider that Monet painted the same hay stacks many times, under all different natural light conditions, then you can see that the AI will have many samples to train on.  This is the same kind of deep learning AI that was used in the amazing brain segmentation imaging enhancements.  </p>
+
+        <p>Links to follow. </p>
+
+    <h3>GARP Conference - Machine Learning and Extreme Value Distributions</h3>
+        <ul>
+        <li>Date: March 16, 2019</li>    
+        </ul>
+
+        <p>At the recent GARP Conference, I saw several interesting applications of machine learning in the financial securities industry.  Anti-money laundering was one area that many participants wished to try using machine learning on.  Cybersecurity was repeatedly mentioned as another good area for machine learning application.  Quantum computing was also predicted to make currently-used secure encryption ineffective in just 7 years.  I am skeptical, and think it is more likely to take 20-30 years.  I think the manufacturing challenges will be formidable.  (See <strong><i>Quantum Computing: Progress and Prospects</i></strong>, National Academies of Sciences, Engineering, and Medicine, Washington, DC., 2019. <a href="https://doi.org/10.17226/25196"> https://doi.org/10.17226/25196</a>)</p>
+            
+            
+        <p>I was excited that Extreme Value Distributions were being used widely in liquidity risk management.  One panelist said his bank had a wide-ranging pilot to extend the application of Extreme Value Theory, and another said they are currently using them in their talks with bank regulators.  A third just said "yes."  When I have some time, I will write a longer explanation about why Extreme Value Distributions can be helpful to manage liquidity risks during a crisis.  </p>
+            
+        <p>Generally, the Extreme Value Theory and Distributions allow us to be more accurate about the tail areas of probability density functions.  There is a trade-off.  We can get better confidence that our tail estimates are not 10x or 100x off from reality, but even the best tail estimate comes with wider confidence bands.  Also, as a theory, the Extreme Value Theory does not rely exclusively on the Central Limit Theorm.  This is key, because if we only have the Central Limit Theorm, we can only have high confidence about events occuring close to the mean (or centers) of a probability density function.  The frequently used log-normal probability distribution (of stock price returns),  was never designed to give high confidence estimates at the tails of the distribution.  </p>
+        <p>Extreme Value Distribution to post - images.</p>
+
+    <h3>Operating System Interface (OSI) and Web Assembly System Interface (WASI)</h3>
+
+        <ul> 
+        <li>Date: April 1, 2019</li>
+        <li><a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">Standardizing Web Assembly</a></li>
+        </ul>
+
+        <p>An article by Lin Clark explains the operating system interface and how to extend it using the Web Assembly System Interface (WASI).  The operating system interface tightly controls which programs can do things to system resources, like create and write to files, using the <strong>kernel</strong>.  This is for security and functional reasons.  But this means that application developers must write different versions of their software for each OS (Windows, Unix, MacOS, iOS, Android, etc.).  The web assembly language adds a conceptual abstraction layer to work with many different operating systems.  Any website content that conforms to W3C standards will be translated by the browser to work on any operating system.  Developers have been extending the web browser's conceptual layer to other software applications.  A new standard, the web assembly system interface (WASI), will standardize this.  And application developers will no longer need to write different versions of their software for each OS.
+        </p>
+
+    <div class="block-quote">
+        <h4 class="bheaders">By Lin Clark, Mozilla.org, Standardizing WASI </h4>    
+        <!-- <img src="" style="" /> left quote float left -->
+        <h4 class="bheaders">"What’s a system interface? </h4>
+        <p>Many people talk about languages like C giving you direct access to system resources. But that’s not quite true.  These languages don’t have direct access to do things like open or create files on most systems. Why not?  Because these system resources — such as files, memory, and network connections — <strong>are too important for stability and security</strong>.  If one program unintentionally messes up the resources of another, then it could crash the program.  Even worse, if a program (or user) intentionally messes with the resources of another, it could steal sensitive data.</p>
+        <!-- clear left float -->
+
+        <img src="http://datasciY.com/articles/crash.png" alt="crash image" />
+
+        <p>So we need a way to control which programs and users can access which resources. People figured this out pretty early on, and came up with a way to provide this control: protection ring security.
+        With protection ring security, the operating system basically puts a protective barrier around the system’s resources. This is the kernel. The kernel is the only thing that gets to do operations like creating a new file or opening a file or opening a network connection.
+        The user’s programs run outside of this kernel in something called user mode. If a program wants to do anything like open a file, it has to ask the kernel to open the file for it. 
+        </p>
+
+        <img src="http://datasciY.com/articles/kernel.png" alt="kernel barrier" />
+
+        <!-- <img src="" class="" /> right quote, float right-bottom. -->
+        <p>This is where the concept of the system call comes in. When a program needs to ask the kernel to do one of these things, it asks using a system call. This gives the kernel a chance to figure out which user is asking. Then it can see if that user has access to the file before opening it.  On most devices, this is the only way that your code can access the system’s resources — through system calls."</p>
+        <h4><a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">Link to full article.</a></h4>
+        <!-- clear right float -->
+    </div>
+    <p></p>
+</section><!-- End main content -->
+
+
+<footer>    
+    <p>Contact: "datasciY.info@gmail.com"<br />
+    Copyright &copy; 2018- 2019 by Jennifer Yoon.<br />
+    All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
