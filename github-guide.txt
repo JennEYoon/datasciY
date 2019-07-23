@@ -19,7 +19,7 @@ git add .  (add all changes to local staging area)
 git commit -m "message"  (merge change to local repo with message)
 
 git commit -am "message"  (add to staging and merge with local repo)
-git push  (merge remote repo withy local changes)
+git push  (merge remote repo with local changes)
 
 From remote repo download changes & sync with local repo.
 git checkout master  (add new local repo from remote copy)
