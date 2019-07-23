@@ -1,0 +1,16 @@
+Ubuntu bash text editor, nano:
+
+nano <path>  (to edit file)
+Control+x  (quit)
+Control+s  (save)
+Creates a new file when no filename is provided.
+When saving, asks for new file name.
+
+Directory:
+cd ..  (up one level)
+ls or dir
+pwd
+mkdir  (make directory)
+
+make file command?
+* to upload cheat sheet PDF file.
