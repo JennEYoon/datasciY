@@ -5,13 +5,12 @@ Any way to read Windows files from WSL? and vice versa?
 
 7/23/2019 4:36 PM  saved.
 
-Edit on master remote git
-testgit.txt
+Github Contributions colormap:
 
-Edited again on master remote git
-tetgit.txt
+Level 0: blank
+Level 1: pale green, 1 contribution - check
+Level 2: light green, 7 contributions ?
+Level 3: medium green, 14 contributions - check
+Level 4: dark green, 21 contributions ?
 
-14 contributions makes med green, 2nd level.
-test of github.
 
-20-21 contributions seem dark green, 1st level.
