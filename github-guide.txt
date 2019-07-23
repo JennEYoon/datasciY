@@ -11,7 +11,22 @@ Level 0: blank
 Level 1: pale green, 1 contribution - check
 Level 2: light green, 7 contributions ?
 Level 3: medium green, 14 contributions - check
-Level 4: dark green, 21 contributions ?
+Level 4: dark green, 20 contributions - check
 
-Edit change to check colormap.
-Edit change again.  20th commit.
+From local machine, changes in local machine upload to remote repo.
+git status
+git add .  (add all changes to local staging area)
+git commit -m "message"  (merge change to local repo with message)
+
+git commit -am "message"  (add to staging and merge with local repo)
+git push  (merge remote repo withy local changes)
+
+From remote repo download changes & sync with local repo.
+git checkout master  (add new local repo from remote copy)
+
+git fetch  (download changes from remote repo)
+git merge feature/unzip (merge changes)
+
+git pull  (download and merge with local repo)
+git pull --rebase  (also commit local changes)
+
