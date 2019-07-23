@@ -1,0 +1,6 @@
+Test Windows Subsystem for Linux Ubuntu.
+Git cloned datasciY repo to local computer.
+Linux file system seems to be separate from Windows file system.
+Any way to read Windows files from WSL? and vice versa?
+
+7/23/2019 4:36 PM  saved.
