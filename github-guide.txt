@@ -13,4 +13,4 @@ Level 2: light green, 7 contributions ?
 Level 3: medium green, 14 contributions - check
 Level 4: dark green, 21 contributions ?
 
-
+Edit change to check colormap.
