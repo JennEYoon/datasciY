@@ -1,3 +1,5 @@
+# Github Guide for my own use.  Also WSL usage notes.
+
 ============ 7/23/2019 4:36 PM  saved. ===============
 Test Windows Subsystem for Linux (WSL) Ubuntu.
 Git cloned datasciY repo to local computer, linux
@@ -49,5 +51,9 @@ Linux file system seems to be separate from Windows file system.
 Any way to read Windows files from WSL? and vice versa?
 
 ### Git branching practive, ohe hot fix, issues #1 current project.
+
+Timestamp correct for Github submission on Master Remote directly.
+7/24/2019 8:34 AM - based on web browser.
+Local commit and merge to master, based on laptop system time.
 
 :-)
