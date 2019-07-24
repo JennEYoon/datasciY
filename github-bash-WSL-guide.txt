@@ -68,6 +68,17 @@ git push  (update remote master with new branch changes)
 or git pull --rebase  (add remote master and local new branch)
 If conflict, changes in both masters, pull from remote first, then push to remote.
 
+### Git remove new brach  
+
+git branch (list all branches, including master)
+git checkout new  (switch to branch new)
+git status  (Check there is nothing to update)
+git checkout master  (switch back to master)
+
+From master local repo:
+git branch new -d  (Delete branch named "new")
+git branch  (list all branches)
+
 ==========================================================
 ### Linux Bash:  
 
