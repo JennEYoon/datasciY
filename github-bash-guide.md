@@ -1,9 +1,9 @@
 # Github Guide for my own use.  Also WSL usage notes.
 
-============ 7/23/2019 4:36 PM  saved. ===============
-Test Windows Subsystem for Linux (WSL) Ubuntu.
-Git cloned datasciY repo to local computer, linux
-    path> $home/jyoon/dsy/datasciY/.git
+============ 7/23/2019 4:36 PM  saved. ===============  
+Test Windows Subsystem for Linux (WSL) Ubuntu.  
+Git cloned datasciY repo to local computer, linux  
+    path> $home/jyoon/dsy/datasciY/.git  
 
 =============== 7/23/2019 6:30 PM =====================================
 
