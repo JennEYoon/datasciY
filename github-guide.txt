@@ -57,3 +57,39 @@ Timestamp correct for Github submission on Master Remote directly.
 Local commit and merge to master, based on laptop system time.
 
 :-)
+
+### WSL Directory:
+
+Default directory:  /home/jyoon
+sub: dsY   new   
+sub: /home/jyoon/dsY/datasciY/
+
+datasciY local repo:  /home/jyoon/dsY/datasciY/
+sub:  README.md  articles  blog  projects  tasks.md  test2.txt  testgit.txt  tutorials
+
+root:  /
+sub:  bin  boot  dev  etc  **home**  init  lib  lib64  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+
+home:  /home
+sub:   jyoon   (nothing else)
+
+usr:  /usr
+sub:  bin  games  include  lib  local  sbin  share  src
+
+
+
+Linus Bash:
+
+File names case sensitive, folder names case sensitive.
+jyoon@Asus-S510:~/dsY/datasciY$ ls
+
+ - Move up cd (space) .. (2 dots)
+ - ls and dir both works
+ - mkdir  new directory
+ - new file?
+ - pwd (print working directory)
+ 
+ 
+
+
+
