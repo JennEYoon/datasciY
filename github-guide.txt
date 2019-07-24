@@ -1,12 +1,17 @@
-Test Windows Subsystem for Linux Ubuntu.
-Git cloned datasciY repo to local computer.
-Linux file system seems to be separate from Windows file system.
-Any way to read Windows files from WSL? and vice versa?
+============ 7/23/2019 4:36 PM  saved. ===============
+Test Windows Subsystem for Linux (WSL) Ubuntu.
+Git cloned datasciY repo to local computer, linux
+    path> $home/jyoon/dsy/datasciY/.git
 
-7/23/2019 4:36 PM  saved.
+### Ubuntu easy text editor, nano.
+nano <path>  (to open existing file)
+nano         (to open a new file)
+Control+s    (save new file with a filename, or save changes)
+Control+x    (quit, prompt to save changes)
 
-Github Contributions colormap:
+=============== 7/23/2019 6:30 PM =====================================
 
+### Github Contributions colormap:
 Level 0: blank
 Level 1: pale green, 1 contribution - check
 Level 2: light green, 7 contributions ?
@@ -30,3 +35,19 @@ git merge feature/unzip (merge changes)
 git pull  (download and merge with local repo)
 git pull --rebase  (also commit local changes)
 
+
+=====================================================
+datasciY Info <datasciy.info@gmail.com>
+7:24 AM (57 minutes ago)
+to me
+### GIT Branching and Merging
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+==========================================================
+
+### 7/24/2019 8:24 AM -- Task, accessing Windows filesystem from WSLinux    
+Linux file system seems to be separate from Windows file system.
+Any way to read Windows files from WSL? and vice versa?
+
+### Git branching practive, ohe hot fix, issues #1 current project.
+
+:-)
