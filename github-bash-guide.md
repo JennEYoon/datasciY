@@ -5,12 +5,6 @@ Test Windows Subsystem for Linux (WSL) Ubuntu.
 Git cloned datasciY repo to local computer, linux
     path> $home/jyoon/dsy/datasciY/.git
 
-### Ubuntu easy text editor, nano.
-nano <path>  (to open existing file)
-nano         (to open a new file)
-Control+s    (save new file with a filename, or save changes)
-Control+x    (quit, prompt to save changes)
-
 =============== 7/23/2019 6:30 PM =====================================
 
 ### Github Contributions colormap:
@@ -44,19 +38,41 @@ datasciY Info <datasciy.info@gmail.com>
 to me
 ### GIT Branching and Merging
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
-==========================================================
 
-### 7/24/2019 8:24 AM -- Task, accessing Windows filesystem from WSLinux    
-Linux file system seems to be separate from Windows file system.
-Any way to read Windows files from WSL? and vice versa?
-
-### Git branching practive, ohe hot fix, issues #1 current project.
+### Git branching practive, one hot fix, issues #1 current project.
 
 Timestamp correct for Github submission on Master Remote directly.
 7/24/2019 8:34 AM - based on web browser.
 Local commit and merge to master, based on laptop system time.
 
-:-)
+### First updated local master using "git pull --rebase"
+### Created new branch in laptop as a working directory separate from master local.
+
+jyoon@Asus-S510:~/dsY/datasciY$ git branch new
+jyoon@Asus-S510:~/dsY/datasciY$ git checkout new
+Switched to branch 'new'
+
+Create new file here and commit to local branch only.
+
+From new branch on local computer:
+git add .  (stage changes)
+git merge new  (update new branch)
+
+git checkout maste  (switch to local master)
+git merge new
+
+git pull  (fetch from remote master, update local master)
+git push  (update remote master with new branch changes)
+
+or git pull --rebase  (add remote master and local new branch)
+If conflict, changes in both masters, pull from remote first, then push to remote.
+
+==========================================================
+### Linux Bash:  
+
+7/24/2019 8:24 AM -- Task, accessing Windows filesystem from WSLinux    
+Linux file system seems to be separate from Windows file system.
+Any way to read Windows files from WSL? and vice versa?
 
 ### WSL Directory:
 
@@ -76,10 +92,6 @@ sub:   jyoon   (nothing else)
 usr:  /usr
 sub:  bin  games  include  lib  local  sbin  share  src
 
-
-
-Linux Bash:
-
 File names case sensitive, folder names case sensitive.
 jyoon@Asus-S510:~/dsY/datasciY$ ls
 
@@ -89,7 +101,44 @@ jyoon@Asus-S510:~/dsY/datasciY$ ls
  - new file?
  - pwd (print working directory)
  
- 
+ ============ Create new file ======================
+### How to create a file in Linux from terminal window?
+
+Create an empty text file named foo.txt:
+touch foo.bar
+OR
+> foo.bar
+
+Make a text file on Linux:
+cat > filename.txt
+Add data and press CTRL+D to save the filename.txt when using cat on Linux
+
+Run shell command:
+echo 'This is a test' > data.txt
+
+Everything worked!
+
+### Ubuntu easy text editor, nano.
+nano <path>  (to open existing file)
+nano         (to open a new file)
+Control+s    (save new file with a filename, or save changes)
+Control+x    (quit, prompt to save changes)
+nano <path>  (to edit file)
+Control+x  (quit)
+Control+s  (save)
+Creates a new file when no filename is provided.
+When saving, asks for new file name.
+
+Directory:
+cd ..  (up one level)
+ls or dir
+pwd
+mkdir  (make directory)
+
+make file command?
+* to upload cheat sheet PDF file.
+
+
 
 
 
