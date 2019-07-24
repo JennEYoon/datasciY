@@ -14,3 +14,22 @@ mkdir  (make directory)
 
 make file command?
 * to upload cheat sheet PDF file.
+
+
+============ Create new file ======================
+### How to create a file in Linux from terminal window?
+
+Create an empty text file named foo.txt:
+touch foo.bar
+OR
+> foo.bar
+
+Make a text file on Linux:
+cat > filename.txt
+Add data and press CTRL+D to save the filename.txt when using cat on Linux
+
+Run shell command:
+echo 'This is a test' > data.txt
+
+Let us see some examples for creating a text files on Linux operating systems.
+
