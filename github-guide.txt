@@ -78,7 +78,7 @@ sub:  bin  games  include  lib  local  sbin  share  src
 
 
 
-Linus Bash:
+Linux Bash:
 
 File names case sensitive, folder names case sensitive.
 jyoon@Asus-S510:~/dsY/datasciY$ ls
