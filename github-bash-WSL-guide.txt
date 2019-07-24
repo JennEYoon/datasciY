@@ -79,6 +79,8 @@ From master local repo:
 git branch new -d  (Delete branch named "new")
 git branch  (list all branches)
 
+git branch list  (creates a branch named "list")
+git branch   (lists all branches)
 ==========================================================
 ### Linux Bash:  
 
