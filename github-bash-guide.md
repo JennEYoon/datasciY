@@ -16,7 +16,7 @@ Control+x    (quit, prompt to save changes)
 ### Github Contributions colormap:
 Level 0: blank
 Level 1: pale green, 1 contribution - check
-Level 2: light green, 7 contributions ?
+Level 2: light green, 7 contributions (6?)
 Level 3: medium green, 14 contributions - check
 Level 4: dark green, 20 contributions - check
 
