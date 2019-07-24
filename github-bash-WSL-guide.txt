@@ -1,9 +1,9 @@
-# Github Guide for my own use.  Also WSL usage notes.
+# Github Bash WSL (Windows System for Linux) Guide, for my own use.
 
 ============ 7/23/2019 4:36 PM  saved. ===============  
 Test Windows Subsystem for Linux (WSL) Ubuntu.  
 Git cloned datasciY repo to local computer, linux  
-    path> $home/jyoon/dsy/datasciY/.git  
+   $  $home/jyoon/dsy/datasciY/.git  
 
 =============== 7/23/2019 6:30 PM =====================================
 
@@ -14,22 +14,27 @@ Level 2: light green, 7 contributions (6?)
 Level 3: medium green, 14 contributions - check
 Level 4: dark green, 20 contributions - check
 
-From local machine, changes in local machine upload to remote repo.
-git status
-git add .  (add all changes to local staging area)
-git commit -m "message"  (merge change to local repo with message)
+Timestamp correct for Github submission on Master Remote directly.
+7/24/2019 8:34 AM - based on web browser.
+Local commit and merge to master, based on laptop system time.
 
-git commit -am "message"  (add to staging and merge with local repo)
-git push  (merge remote repo with local changes)
+### Using GIT commands  
+
+From local machine, changes in local machine upload to remote repo:
+    git status
+    git add .  (add all changes to local staging area)
+    git commit -m "message"  (merge change to local repo with message)
+
+OR  git commit -am "message"  (add to staging and merge with local repo)
+    git push  (merge remote repo with local changes)
 
 From remote repo download changes & sync with local repo.
-git checkout master  (add new local repo from remote copy)
+    git checkout master  (create a new local master repo)
+    git fetch  (download changes from remote repo)
+    git merge feature/unzip (merge changes)
 
-git fetch  (download changes from remote repo)
-git merge feature/unzip (merge changes)
-
-git pull  (download and merge with local repo)
-git pull --rebase  (also commit local changes)
+OR  git pull  (download and merge with local repo)
+OR  git pull --rebase  (also commit local changes)
 
 
 =====================================================
@@ -40,10 +45,6 @@ to me
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 
 ### Git branching practive, one hot fix, issues #1 current project.
-
-Timestamp correct for Github submission on Master Remote directly.
-7/24/2019 8:34 AM - based on web browser.
-Local commit and merge to master, based on laptop system time.
 
 ### First updated local master using "git pull --rebase"
 ### Created new branch in laptop as a working directory separate from master local.
