@@ -33,3 +33,13 @@ echo 'This is a test' > data.txt
 
 Let us see some examples for creating a text files on Linux operating systems.
 
+
+### First updated local master using "git pull --rebase"
+### Created new branch in laptop as a working directory separate from master local.
+
+jyoon@Asus-S510:~/dsY/datasciY$ git branch new
+jyoon@Asus-S510:~/dsY/datasciY$ git checkout new
+Switched to branch 'new'
+
+Create new file here and commit to local branch only.
+
