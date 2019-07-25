@@ -188,3 +188,14 @@ Please update conda by running
 Create conda environment
 conda create -n class  (name "class")
 
+* installing jupyter notebook
+conda install jupyter  
+worked, but where is notebook on browser?
+
+Yeah copied URL.  Also created new notebook & saved it.
+
+
+
+
+
+
