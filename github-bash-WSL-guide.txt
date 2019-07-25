@@ -176,3 +176,15 @@ sudo apt install jupyter-core
 jyoon@Asus-S510:~$ sudo apt install jupyter-core
 [sudo] password for jyoon:
 
+
+Update conda:
+  current version: 4.5.4
+  latest version: 4.7.10
+
+Please update conda by running
+
+    $ conda update -n base conda
+    
+Create conda environment
+conda create -n class  (name "class")
+
