@@ -204,6 +204,7 @@ worked, but where is notebook on browser?
 Yeah copied URL.  Also created new notebook & saved it.
 
 
+need to sunchronize file with the one in LEARN-DS-ML resources.  keep only one.
 
 
 
