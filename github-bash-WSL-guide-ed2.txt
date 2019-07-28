@@ -117,6 +117,7 @@ jyoon@Asus-S510:~/dsY/datasciY$ ls
  - mkdir  new directory
  - new file?
  - pwd (print working directory)
+ - rm (remove file, delete, cannot undo)
  
  ============ Create new file ======================
 ### How to create a file in Linux from terminal window?
@@ -204,8 +205,7 @@ worked, but where is notebook on browser?
 Yeah copied URL.  Also created new notebook & saved it.
 
 
-need to sunchronize file with the one in LEARN-DS-ML resources.  keep only one.
-
+Synced w. learn-ML-DL guide.  7/28/2019 5:24 PM
 
 
 
