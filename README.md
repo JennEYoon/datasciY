@@ -17,5 +17,14 @@ Directory structure:
 
 ### Blog
 
+=============================================================
+
+### Tasks  
+
+ * Merge git master branch.  Delete linux dsy/datasciY master.
+ * Create branch with production files in C:\...\DataSciY.com
+ * Clone with github URL.
+ * Merge local.
+
 
 
