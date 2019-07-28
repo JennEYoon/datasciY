@@ -152,11 +152,20 @@ cd ..  (up one level)
 ls or dir
 pwd
 mkdir  (make directory)
+rm file  (remove file, can't undo!)
+rmdir name  (remove empty directory)
 
-make file command?
-* to upload cheat sheet PDF file.
+Linux remove directory and all contents.
+rm -rf mydir    (without prompt for each file)
+
+New text file
+touch new.txt
+> new.txt
+nano
+cat > new.txt
 
 
+=======================================
 # Tasks List
 
 7/24/2019 8:24 AM -- Task, accessing Windows filesystem from WSLinux    
@@ -165,8 +174,8 @@ Any way to read Windows files from WSL? and vice versa?
 
 7/25/2019 6:28 PM
 How to run Python and Jupyter notebook from WSL bash?
+ * From WSL bash window: type "python"
 
-From WSL bash window: type "python"
 jyoon@Asus-S510:~$ python
 Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
 [GCC 7.2.0] on linux
@@ -177,8 +186,10 @@ Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
 
 * Python Linux already installed.
 * Path:  /mnt/c/python/conda3linux/lib/python3.6/
+*** /mnt/c/python/conda3linux/envs/class/lib/python3.7/site-packages/numpy ...
 
-Access full windows file structure?  Seems yes.  Preface with "/mnt/c/"
+Access all windows files, Preface with "/mnt/c/"
+Can't figure out how to access linux files from command prompt.
 
 * Installing jupyter notebook:
 sudo apt install jupyter-core
