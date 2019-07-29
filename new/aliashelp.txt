@@ -1,0 +1,7 @@
+later create bash alias for datasciy folder.
+
+alias myfold='cs ~/Files/Scripts/Main'
+
+call by typing "myfold" without "cd".
+
+Save to .bashrc file in startup file.

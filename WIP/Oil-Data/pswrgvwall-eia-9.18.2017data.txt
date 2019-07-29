@@ -1,0 +1,2 @@
+Oil data from EIA 9.18.2017 data.  Macros included.
+For use in DataSciY.com website.
