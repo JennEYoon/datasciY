@@ -17,9 +17,9 @@
  - Upload current changes to Github  -- done.
  - Practice using Git commands: git push, stage, commit, pull, rebase - done.
  - Practice using Ubuntu Bash, WSL -- done.
- - IPython Cookbook has Bash tools section -- not needed.
- - Use VS Code to manage git  - maybe?
-   -----------
+ - IPython Cookbook has Bash tools section -- not needed.  
+ - Use VS Code to manage git  - maybe?  
+   /-----------
  - Do IPython Cookbook ML chapter all.
  - Review Chris's blog, like code format.
 
