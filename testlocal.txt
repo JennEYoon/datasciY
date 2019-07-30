@@ -1,0 +1,11 @@
+# Test file local
+
+#### Move local master repo directory.
+
+ * new location: /mnt/c/gdrive/_python/web_dsy/
+ * datasciY repo folder.
+
+#### Old git still there for now.
+
+ * c:/python/github/dsy/
+ * datasciY repo folder.
