@@ -10,7 +10,7 @@ Git cloned datasciY repo to local computer, linux
 ### Github Contributions colormap:
 Level 0: blank
 Level 1: pale green, 1 contribution - check
-Level 2: light green, 7 contributions - check  (colors shifted, now 10)
+Level 2: light green, 7 contributions - check  (now 10)
 Level 3: medium green, 14 contributions - check (now 20)
 Level 4: dark green, 20 contributions - check  (now 30)
 
