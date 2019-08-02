@@ -11,7 +11,7 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  * Blog -- short posts, news and thoughts
  
- All pages hand coded by me using HTML5 and CSS3 standard.  Hand coded stylesheet.  After evaluating Bootstrap and W3C Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.
+ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.
  
  #### Author: Jennifer E Yoon  
  
