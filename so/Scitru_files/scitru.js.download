@@ -1,0 +1,179 @@
+Array.prototype.clean = function(deleteValue) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == deleteValue) {         
+      this.splice(i, 1);
+      i--;
+    }
+  }
+  return this;
+};
+
+var t;
+$(document).ready(function(){
+    var locarray=document.URL.replace(/https?:\/\/[^\/]+/i, "");
+    locarray=locarray.split('/');
+    locarray.clean('');
+    if (!(locarray[locarray.length-1]=='edit')){
+        citations();
+        $.getScript("https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML", function(){
+           MathJax.Hub.Config({
+               tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+               TeX: { equationNumbers: { autoNumber: "AMS" } }
+           });
+        });
+    }
+    $('#tagNotification').hide();
+    
+    $("#topsearchform .searchfield").keyup(function(event){
+        if(event.keyCode == 13){ // When the enter key is pressed, submit the search form
+            $("#topsearchform").submit();
+        }
+    });
+    $("#tagField").keyup(function(event){
+        if(event.keyCode == 13){ // When the enter key is pressed, submit the search form
+            addTag($(this).val());
+        }
+    });
+    $("#topsearchform .searchfield").focus();
+    if (locarray.length>1 && locarray[0]!='authors' && locarray[0]!='home')
+        getTags();
+        
+    $('#trashButton').click(function(){
+        var hex_id=locarray[1]
+        $.post("/ajax/switcharticletrashed/", { hex_id: hex_id }, 
+            function(data) {
+                window.location.replace('/home/');
+            });
+    });
+});
+function notify(notificationid,data){
+    clearTimeout(t);
+    $(notificationid).html(data);
+    $(notificationid).show();
+    var fadefunc="$('"+notificationid+"').hide('fade', {}, 200);";
+    t=setTimeout(fadefunc,15000);
+    
+}
+
+function addTag(tag){
+    var a=document.URL.split('/');
+    var hex_id=a[a.indexOf('articles')+1];
+    $.post('/ajax/addtag/',{tag:tag,hex_id:hex_id}, function(data){ if(data!=''){notify('#tagNotification',data);getTags();}});}
+function removeTag(tag){
+    var a=document.URL.split('/');
+    var hex_id=a[a.indexOf('articles')+1];
+    $.post("/ajax/removetag", {tag:tag, hex_id:hex_id},
+        function(data){
+            notify('#tagNotification',data);
+            $('.tag').find("span").each(function(){
+                if(tag==$(this).text()){
+                    if(+data.replace(/[^\d-]+/gi, '')==0)
+                        $(this).parent().remove();
+            }
+            });
+        },
+        "text");
+
+}
+function citations(){
+    var i=1;
+    var isDragging = false;
+    $("cite")
+        .mousedown(function() {
+            $(window).mousemove(function() {
+                isDragging = true;
+                $(window).unbind("mousemove");
+            });
+        })
+        .mouseup(function() {
+            var wasDragging = isDragging;
+            isDragging = false;
+            $(window).unbind("mousemove");
+            if (!wasDragging) { //was clicking
+                $(this).next().toggle();
+                $(this).toggle();
+            }
+        });
+    $("cite").each(function(){
+    $("<a class='citation' href=#'><sup>[" + i + "]</sup></a>").insertAfter(this);
+        $(this).toggle();
+        i=i+1;
+    })
+    $(".citation").click(function(){
+        $(this).prev().toggle();
+        $(this).toggle();
+    })
+}
+
+
+function getTags(str){
+    var a=document.URL.split('/');
+    article_pos = a.indexOf('articles');
+    if (article_pos==-1){
+        return false;
+    }
+    var hex_id=a[article_pos+1];
+    console.log(hex_id);
+    $.post(
+        "/ajax/getTags",
+        {hex_id: hex_id},
+        function(data){if(data=='0'){$('#displayTags').html("");}else{
+            var n=0
+            $('#displayTags').html(data);
+            var nmax=$('#tagList').children().length-1;
+            $('#tagList').children().eq(n).siblings().hide();
+            $('#prevTagBlock>img').css({'opacity':'.3'});
+            if(n==nmax)
+                $('#nextTagBlock>img').css({'opacity':'.3'});
+
+            $('#nextTagBlock').click(function() {
+                if(n<nmax){
+                    n=n+1;
+                    $('#tagList').children().eq(n).siblings().hide();
+                    $('#tagList').children().eq(n).show();
+                    $('#prevTagBlock>img').css({'opacity':'1'});
+                }
+                if(n==nmax)
+                    $('#nextTagBlock>img').css({'opacity':'.3'});
+            });
+            $('#prevTagBlock').click(function() {
+                if(n>0){
+                    n=n-1;
+                    $('#tagList').children().eq(n).siblings().hide();
+                    $('#tagList').children().eq(n).show();
+                    $('#nextTagBlock>img').css({'opacity':'1'});
+                }
+                if(n==0){
+                    $('#prevTagBlock>img').css({'opacity':'.3'});
+                }
+            });
+            $('.tag').hover(
+                function(){
+                    $(this).css({'padding':'1px 6px 1px 6px','border-width':' 0px', 'margin':'0px 5px'});
+                    $(this).prepend("<img id='uptag' src=/support/images/uptag.gif? width='18px' height='8px'/>");
+                    $(this).append("<img id= 'downtag' src=/support/images/downtag.gif? width='18px' height='8px'/>");
+                    $('#uptag').click(function(){
+                        var str=$(this).siblings('span').text();
+                        addTag(str);
+                    });
+                    $('#downtag').click(function(){
+                        var str=$(this).siblings('span').text();
+                        removeTag(str);
+                    });
+                },
+                function(){
+                    $(this).css({'padding':'4px 6px 4px 6px','border-width':'1px','margin': '4px'});
+                    $(this).children('img').remove();
+                });
+            $('.tag').children('span').click(function(){
+                var tag=$(this).text();
+                $('#searchtag').attr('value', tag)
+                $('#searchtag').parent().submit();
+            });
+        }},
+        "text");
+}
+
+function trash(){
+    alert('trash');
+}

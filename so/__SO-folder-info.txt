@@ -1,0 +1,3 @@
+SO folder use for testing StackOverflow answers.
+Use pyfin conda virtual environmnet.
+pywin32 installed.

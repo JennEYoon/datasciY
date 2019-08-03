@@ -1,0 +1,18 @@
+
+deck = list(range(0, 52))
+print(deck)
+
+deck2 = random.shuffle(deck)
+print("shuffled", deck2)
+
+hand1 = deck2[0:13] # first 13 cards goes into hand1
+hand2 = deck2[13:26]  # second 13 cards goes into hand2, etc.
+# Later you can select every 4th card from the list to simulate dealing to each player.
+
+# Use a dictionary to map numbers to cards, full 52 cards in a deck.
+# Stricktly you don't need this step to calculate scores, but it's to help you debug.
+deckdict = {0:['D', 'Ace'], 1:['D', '2'], 2:['D', 3], 13:['S', 'Ace'], 14:['S', '2']}  
+
+# Then calculate score.
+# Generally, use numbers and lists to do all logic, 
+# and dictionary just to lookup the card value for, for your eyes.
