@@ -27,7 +27,7 @@ excel.Visible = True
 
 # Move Sheet1
 wb0.Worksheets(1).Move()
-# The new worksheet become the ActiveWorkbook.  Save it as a new Excel file.
+# The new worksheet becomes the ActiveWorkbook.  Save it as a new Excel file.
 excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet1.xlsx')
 
 # Move Sheet2
