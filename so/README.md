@@ -8,7 +8,8 @@ I find answering questions on Stack Overflow similar to an addictive game.  I ne
 
 #### Example pywin32 to manipulate Excel files.  
 
-'''########## Updated on Stackoverflow 6/21/2019 3am. #############
+''' python
+########## Updated on Stackoverflow 6/21/2019 3am. #############  
 #
 # Refined .Move() method, save new file using Active Worksheet property.
 # This method open an excel workbook, splits each worksheet into
@@ -36,4 +37,5 @@ wb0.SaveAs(r'C:\python\so\sheet3.xlsx')
 wb0.Close()
 excel.Application.Quit()
 
-#############################################################'''
+#############################################################  
+'''
