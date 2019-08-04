@@ -14,7 +14,7 @@ I find answering questions on Stack Overflow similar to an addictive game.  I ne
 #
 # Refined .Move() method, save new file using Active Workbook property.
 #
-# This method opens an Excel workbook, splits each worksheet into
+# This module opens an Excel workbook, splits each worksheet into
 # separate files, and saves each Excel file with a new name.  
 # The purpose is to preserve extensive formatting of pivot tables 
 # in the original Excel workbook, while using Python to split it into
