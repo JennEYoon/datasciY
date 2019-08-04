@@ -12,18 +12,20 @@ I find answering questions on Stack Overflow similar to an addictive game.  I ne
 ########## Updated on Stackoverflow 6/21/2019 3am. #############  
 #
 # Refined .Move() method, save new file using Active Worksheet property.
-# This method open an excel workbook, splits each worksheet into
-# separate workbooks, saves each sheet with a new name.
-# The purpose is to preserve heavy group-pivot table formatting
-# in the original Excel workbook, while splitting a large file into
-# individual worksheet files.
+#
+# This method opens an Excel workbook, splits each worksheet into
+# separate files, and saves each Excel file with a new name.  
+# The purpose is to preserve extensive formatting of pivot tables 
+# in the original Excel workbook, while using Python to split it into
+# individual reports.
 #
 import win32com.client as win32
 excel = win32.gencache.EnsureDispatch('Excel.Application')
 wb0 = excel.Workbooks.Open(r'C:\python\so\original.xlsx')
+#  This example uses an original excel workbook with 3 worksheets.
 excel.Visible = True
 
-# Move sheet1
+# Move Sheet1
 wb0.Worksheets(1).Move()
 # The new worksheet become the ActiveWorkbook.  Save it as a new Excel file.
 excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet1.xlsx')
@@ -32,7 +34,7 @@ excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet1.xlsx')
 wb0.Worksheets(1).Move()
 excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet2.xlsx')  
 
-# Save single remaining sheet.
+# Save the single remaining sheet.
 wb0.SaveAs(r'C:\python\so\sheet3.xlsx')
 wb0.Close()
 excel.Application.Quit()
