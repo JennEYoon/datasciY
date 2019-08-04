@@ -223,7 +223,9 @@ Removing conda environment
    conda remove-env --name myenvname   
    (I think this is what I used.  Check again)
 
-Markdown formatting for code block, backticks before & after, leave a line break.  Can preface with language to get highlighting.
+Markdown formatting for code block, backticks before & after, leave a line break.  
+Can preface with language to get highlighting.
+
 ```python  
 # beginning of python
    do some code ...
