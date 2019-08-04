@@ -218,5 +218,14 @@ Yeah copied URL.  Also created new notebook & saved it.
 
 Synced w. learn-ML-DL guide.  7/28/2019 5:24 PM
 
+Removing conda environment  
 
+   conda remove-env --name myenvname   
+   (I think this is what I used.  Check again)
 
+Markdown formatting for code block, backticks before & after, leave a line break.  Can preface with language to get highlighting.
+```python  
+# beginning of python
+   do some code ...
+# end of python
+```
