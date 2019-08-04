@@ -5,3 +5,35 @@ This folder is used to test my answers to Stack Overflow questions.  Most of my 
 A quarter of the answers are about using Excel with Python.  Pywin32 library gives full access to Excel-VBA object model controls, but only in a Windows OS or Windows Emulation (on Linux).  There are slight changes to commands, but if you are already familiar with VBA, you can do almost everything in Python that you can do in Excel & Macros/VBA.  
 
 I find answering questions on Stack Overflow similar to an addictive game.  I need to answer questions quickly in order to gain additional reputation points. :-)
+
+#### Example pywin32 to manipulate Excel files.  
+
+'''########## Updated on Stackoverflow 6/21/2019 3am. #############
+#
+# Refined .Move() method, save new file using Active Worksheet property.
+# This method open an excel workbook, splits each worksheet into
+# separate workbooks, saves each sheet with a new name.
+# The purpose is to preserve heavy group-pivot table formatting
+# in the original Excel workbook, while splitting a large file into
+# individual worksheet files.
+#
+import win32com.client as win32
+excel = win32.gencache.EnsureDispatch('Excel.Application')
+wb0 = excel.Workbooks.Open(r'C:\python\so\original.xlsx')
+excel.Visible = True
+
+# Move sheet1
+wb0.Worksheets(1).Move()
+# The new worksheet become the ActiveWorkbook.  Save it as a new Excel file.
+excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet1.xlsx')
+
+# Move Sheet2
+wb0.Worksheets(1).Move()
+excel.Application.ActiveWorkbook.SaveAs(r'C:\python\so\sheet2.xlsx')  
+
+# Save single remaining sheet.
+wb0.SaveAs(r'C:\python\so\sheet3.xlsx')
+wb0.Close()
+excel.Application.Quit()
+
+#############################################################'''
