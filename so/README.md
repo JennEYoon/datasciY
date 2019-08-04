@@ -22,7 +22,7 @@ I find answering questions on Stack Overflow similar to an addictive game.  I ne
 import win32com.client as win32
 excel = win32.gencache.EnsureDispatch('Excel.Application')
 wb0 = excel.Workbooks.Open(r'C:\python\so\original.xlsx')
-#  This example uses an original excel workbook with 3 worksheets.
+#  This example uses an original Excel workbook with 3 worksheets.
 excel.Visible = True
 
 # Move Sheet1
