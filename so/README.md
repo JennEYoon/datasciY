@@ -11,7 +11,7 @@ I find answering questions on Stack Overflow similar to an addictive game.  I ne
 ```python
 ########## Updated on Stackoverflow 6/21/2019 3am. #############  
 #
-# Refined .Move() method, save new file using Active Worksheet property.
+# Refined .Move() method, save new file using Active Workbook property.
 #
 # This method opens an Excel workbook, splits each worksheet into
 # separate files, and saves each Excel file with a new name.  
