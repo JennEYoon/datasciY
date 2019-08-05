@@ -42,3 +42,11 @@ excel.Application.Quit()
 
 #############################################################  
 ```
+
+#### Tasks SO, 8/5/2019 12L22 PM  
+
+ * Create blog demo of using pywin32.
+ * Load original.xls file to working directory.
+ * Show relative and absolute addressing in python.
+ * Post on my website datasciY.com.
+ 
