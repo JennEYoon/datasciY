@@ -15,7 +15,7 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  #### Author: Jennifer E Yoon  
  
- #### Tasks List as of 8/2/2019  
+ #### Tasks List as of 8/5/2019  
  
- This week, need to focus on getting simple code examples in ML up.
+ * This week, need to focus on getting simple code examples in ML up on my website.
  
