@@ -18,4 +18,4 @@ Repository for http://datasciY.com development, my coding portfolio.
  #### Tasks List as of 8/5/2019  
  
  * This week, need to focus on getting simple code examples in ML up on my website.
- 
+ * Also finish up links & plots in Articles.  
