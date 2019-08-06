@@ -19,3 +19,5 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  * This week, need to focus on getting simple code examples in ML up on my website.
  * Also finish up links & plots in Articles.  
+   * GAN, brain segmentation
+   * Extreme Value Distributions - Weibull, Gumbel, etc.  Whole distribution and only the tail portion.
