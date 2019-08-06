@@ -18,10 +18,15 @@ Repository for http://datasciY.com development, my coding portfolio.
  #### Tasks List as of 8/5/2019  
  
  * This week, need to focus on getting simple code examples in ML up on my website.
+ 
  * Also finish up links & plots in Articles.  
    * GAN, brain segmentation
-   * Extreme Value Distributions - Weibull, Gumbel, etc.  
-   * Whole distribution and only the tail portion (zoom in view)  
+   
+ * Extreme Value Distributions - Weibull, Gumbel, etc.  
+   * Whole distribution and only the tail portion (zoomed-in view)  
    * Link to Fréchet, Weibull and Gumbel families
-   <a href="">Generalized Extreme Value Distribution</a>
+     <a href="assets/GevDensity_2.svg.png">Generalized Extreme Value Distribution</a>  
      
+   * Sources   
+     https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
+     https://www.itl.nist.gov/div898/handbook/apr/section1/apr163.htm   
