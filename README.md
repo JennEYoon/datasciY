@@ -24,8 +24,8 @@ Repository for http://datasciY.com development, my coding portfolio.
    
  * Extreme Value Distributions - Weibull, Gumbel, etc.  
    * Whole distribution and only the tail portion (zoomed-in view)  
-   * Link to Fréchet, Weibull and Gumbel families
-     <a href="assets/GevDensity_2.svg.png">Generalized Extreme Value Distribution</a>  
+   * Link to Fréchet, Weibull and Gumbel families  
+     <a href="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  
      
    * Sources   
      https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
