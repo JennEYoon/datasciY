@@ -29,6 +29,8 @@ I really enjoyed this class.  If you do most of the exercises from scratch in a 
  * To Do -- Edit my jupyter notebook solutions.  Clean up.
  * To Do -- Post to blog on datasciY.com
  
+ #### Duplicate Copy, 8/5/2019 8:38 PM  
+  * Copied from learn-mldl github repo to datasciY github repo.
  
 ---------------------------------------------------------------------------------------
 
