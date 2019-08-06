@@ -9,7 +9,7 @@
     ![Extreme Value Dist](assets/GevDensity_2.svg.png)
 
 #### Image insert 1  
-<img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>     
+<img src="assets/GevDensity_2.svg.png" height="400" width="280">Image, Generalized Extreme Value Distribution</a>     
      
 #### Image insert 2 
 ![Extreme Value Dist](assets/GevDensity_2.svg.png)
