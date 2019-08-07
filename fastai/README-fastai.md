@@ -2,7 +2,9 @@
 
 Machine Learning for Coders (2018 fast.v07)
 
-Practical Deep Learning for Coders (Part 1)
+Practical Deep Learning for Coders (Part 1) 
+& 2018 version with fastat v0.7 custom modules
+ * has cifar 10 image classification example -- to do & upload to website.
 
 Fundamentals of Deep Learning (Part 2)
 
@@ -16,7 +18,7 @@ Verify that my fork is auto merging changes from remote upstream master.
 ### Tastks
 
  * Deleted folder, moved to root.
- * Move to a separate repo?
+ * Move to datasciY.com repo.  Related to projects uploaded.
 
 
 
