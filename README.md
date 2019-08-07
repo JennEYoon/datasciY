@@ -1,7 +1,7 @@
 # datasciY.com
 Repository for http://datasciY.com development, my coding portfolio.
 
-### Folder Structure
+#### Folder Structure
 
  * About -- Profile
  
@@ -13,9 +13,16 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  * WIP -- Work in Process
  
- All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services used in doing data science.
+ * new -- new material, temporary working files
  
- #### Author: Jennifer E Yoon  
+ #### Additional folders for coding exercise files  
+ 
+  * udemy-ds -- data science book camp
+  * fastai -- deep learning, machine learning, math classes  
+  * so -- stack overflow, test files of my answers
+ 
+All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services used in doing data science.
+ 
  
  #### Tasks List as of 8/5/2019  
  
@@ -36,3 +43,6 @@ Repository for http://datasciY.com development, my coding portfolio.
    * Sources   
      https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
      https://www.itl.nist.gov/div898/handbook/apr/section1/apr163.htm   
+
+
+ #### Author: Jennifer E Yoon  
