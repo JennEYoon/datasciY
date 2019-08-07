@@ -15,7 +15,7 @@
 
 >DL1 makes extensive use of custon library and functions in fastai v 1.0.  Not easy to translate this to standard libraries.  Just watch the videos and follow along for the concept.  Need to takde DL2 in order to see what is going on from scratch. 
 
-#### My Github Fork does not merge with Source Github repo.  
+#### My My Fork on Github does NOT merge with Source/Upstream Github account's repo.  
 
  * First clone on laptop with upstream source repo, i.e., fastai's github URL.
  * Pull from source to my laptop master branch. (download all changed files)
