@@ -1,8 +1,9 @@
-## My exercises and practice doing fast.ai deep learning classes
+## My exercises and practice doing fast.ai classes
 
-Machine Learning for Coders (2018 fast.v07)
+#### Machine Learning for Coders (2018 fastai v0.7)
 
-Practical Deep Learning for Coders (Part 1) 
+
+#### Practical Deep Learning for Coders (Part 1, 2019 fastai v1.0) 
 & 2018 version with fastat v0.7 custom modules
  * has cifar 10 image classification example -- to do & upload to website.
 
