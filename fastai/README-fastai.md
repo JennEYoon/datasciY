@@ -4,7 +4,7 @@
 
   * Machine Learning for Coders (2018 fastai v0.7)
   
-  * Practical Deep Learning for Coders (2018, fastai v0.7)
+  * Practical Deep Learning for Coders (2018 fastai v0.7)
     * Has cifar 10 image classification example -- to do & upload to website.
   * Math - Linear Algebra for ML 
 
