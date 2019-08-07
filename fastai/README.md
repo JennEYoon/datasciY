@@ -1,14 +1,14 @@
-## My exercise and practice doing fast.ai classes - for uploading to datasciY.com  
+# My practice doing fast.ai classes  
+- for uploading to datasciY.com  
 
 #### 2018 Fastai v0.7  
 
   * Machine Learning for Coders (2018 fastai v0.7)
-  
   * Practical Deep Learning for Coders (2018 fastai v0.7)
     * Has cifar 10 image classification example -- to do & upload to website.
   * Math - Linear Algebra for ML 
 
-#### 2019 Fastai v1.0 modules:
+#### 2019 Fastai v1.0 modules
 
   * Practical Deep Learning for Coders (Part 1, 2019 fastai v1.0) 
   * Fundamentals of Deep Learning (Part 2, 2019 fastai v1.0))
@@ -24,14 +24,13 @@
 
 >Commits made to my fork does not count towards Github contributions graph, bad!
 
-### Tasks - Date 8/7/2019  6:40 PM EST  
+#### Tasks - Date 8/7/2019  6:40 PM EST  
 
  * Keep full fastai repo on my account, to push updates to.
  * Manually upload fastai exercise for uploading to my website, datasciY.com
  
  
- 
- ### Author:  Jennifer E Yoon  
+#### Author:  Jennifer E Yoon  
   
   
 
