@@ -1,10 +1,10 @@
-## My exercises and practice doing fast.ai classes
+## My exercise and practice doing fast.ai classes - for uploading to datasciY.com  
 
 #### 2018 Fastai v0.7  
 
   * Machine Learning for Coders (2018 fastai v0.7)
   
-  * Practival Deep Learning for Coders (2018, fastai v0.7)
+  * Practical Deep Learning for Coders (2018, fastai v0.7)
     * Has cifar 10 image classification example -- to do & upload to website.
   * Math - Linear Algebra for ML 
 
