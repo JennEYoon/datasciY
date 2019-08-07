@@ -24,12 +24,12 @@
 
 >Commits made to my fork does not count towards Github contributions graph, bad!
 
-### Tastks
+### Tasks - Date 8/7/2019  6:40 PM EST  
 
  * Keep full fastai repo on my account, to push updates to.
  * Manually upload fastai exercise for uploading to my website, datasciY.com
  
- ### Date: 8/7/2019  6:40 PM EST  
+ 
  
  ### Author:  Jennifer E Yoon  
   
