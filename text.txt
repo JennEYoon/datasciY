@@ -1,1 +1,0 @@
-test nano is default git commit editor
