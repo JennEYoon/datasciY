@@ -15,19 +15,23 @@
 
 >DL1 makes extensive use of custon library and functions in fastai v 1.0.  Not easy to translate this to standard libraries.  Just watch the videos and follow along for the concept.  Need to takde DL2 in order to see what is going on from scratch. 
 
-#### Github Fork does not merge.  
+#### My Github Fork does not merge with Source Github repo.  
 
- * First clone on laptop with upstream fastai's source URL.
- * Pull from source to my laptop master branch.
+ * First clone on laptop with upstream source repo, i.e., fastai's github URL.
+ * Pull from source to my laptop master branch. (download all changed files)
  * Merge with my working files in my own master branch.
- * Push to my Forked version on my account's Github - fastai repo.
+ * Push to my own Forked (fastai) repo on MY OWN Github Accout.
 
 >Commits made to my fork does not count towards Github contributions graph, bad!
 
 ### Tastks
 
- * Deleted folder, moved to root.
- * Move to datasciY.com repo.  Related to projects uploaded.
+ * Keep full fastai repo on my account, to push updates to.
+ * Manually upload fastai exercise for uploading to my website, datasciY.com
+ 
+ ### Date: 8/7/2019  6:40 PM EST  
+ 
+ ### Author:  Jennifer E Yoon  
   
   
 
