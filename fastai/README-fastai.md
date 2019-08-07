@@ -2,10 +2,11 @@
 
 #### Machine Learning for Coders (2018 fastai v0.7)
 
+#### 2018 Practival Deep Learning for Coders (Part 1, fastai v0.7)
+ * Has cifar 10 image classification example -- to do & upload to website.
 
 #### Practical Deep Learning for Coders (Part 1, 2019 fastai v1.0) 
-& 2018 version with fastat v0.7 custom modules
- * has cifar 10 image classification example -- to do & upload to website.
+
 
 #### Fundamentals of Deep Learning (Part 2, 2019 fastai v1.0))
 
