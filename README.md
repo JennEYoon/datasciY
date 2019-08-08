@@ -17,9 +17,9 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  #### Additional folders for coding exercise files  
  
-  * udemy-ds -- data science book camp
-  * fastai -- deep learning, machine learning, math classes  
-  * so -- stack overflow, test files of my answers
+  * udemy-ds -- data science boot camp class
+  * fastai -- deep learning, machine learning and math classes  
+  * so -- stack overflow, my answers test files
  
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services used in doing data science.
  
@@ -27,11 +27,15 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  #### Tasks List as of 8/5/2019  
  
  * This week, need to focus on getting simple code examples in ML up on my website.
- 
+   - Uploaded Random Walk python code.
+   - Demo live updating on Amazon Lambda cloud server
+   
  * Also finish up links & plots in Articles.  
    * GAN, brain segmentation
    
- * Extreme Value Distributions - Weibull, Gumbel, etc.  
+ ------------------------------------------------------------------------
+ 
+ #### Extreme Value Distributions - Weibull, Gumbel, etc.  
    * Whole distribution and only the tail portion (zoomed-in view)  
    * Link to Fréchet, Weibull and Gumbel families  
      <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
