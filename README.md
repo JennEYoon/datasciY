@@ -11,9 +11,9 @@ Repository for http://datasciY.com development, my coding portfolio.
  
  * Blog -- short posts, news and thoughts
  
- * WIP -- Work in Process
+ * wip2 -- Work in Process folder
  
- * new -- new material, temporary working files
+ * new -- new material, temporary testing files
  
  #### Additional folders for coding exercise files  
  
