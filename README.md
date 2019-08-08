@@ -35,6 +35,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * This week, need to focus on getting simple code examples in ML up on my website.
    - Uploaded Random Walk python code.
    - Demo live updating on Amazon Lambda cloud server
+   - Update done - articles folder, images WASI article.
    
  * Also finish up links & plots in Articles.  
    * GAN, brain segmentation
