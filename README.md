@@ -6,13 +6,14 @@
 #### Folder Structure
 
  * About -- Profile
+ 
    - assets -- Folder for image and pdf files called at root level by href src command.
    - dsy.css -- My handcoded stylesheet, uses CSS3 format, the latest standard.
    - purpleimg.jpg -- Header image used in HTML files.
  
  * Projects -- coding projects and short coding exercises (supporting folder)
  
- * Articles -- in depth write ups
+ * Articles -- in-depth write ups (supporting folder)
  
  * Blog -- short posts, news and thoughts (supporting folder)
  
