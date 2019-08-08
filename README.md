@@ -6,6 +6,7 @@
 #### Folder Structure
 
  * About -- Profile
+   - assets -- image and pdf files called at root level html src.
  
  * Projects -- coding projects and short coding exercises
  
