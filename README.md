@@ -1,5 +1,7 @@
 # datasciY.com
-Repository for http://datasciY.com development, my coding portfolio.
+#### Repository for http://datasciY.com development, my coding portfolio.
+
+#### Author: Jennifer E Yoon  
 
 #### Folder Structure
 
@@ -49,4 +51,3 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
      https://www.itl.nist.gov/div898/handbook/apr/section1/apr163.htm   
 
 
- #### Author: Jennifer E Yoon  
