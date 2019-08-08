@@ -1,1 +1,0 @@
-Write a blog about PyData DC 2018 experience.
