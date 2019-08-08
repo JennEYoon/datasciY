@@ -10,15 +10,15 @@
    - dsy.css -- My handcoded stylesheet, uses CSS3 format, the latest standard.
    - purpleimg.jpg -- Header image used in HTML files.
  
- * Projects -- coding projects and short coding exercises
+ * Projects -- coding projects and short coding exercises (supporting folder)
  
  * Articles -- in depth write ups
  
- * Blog -- short posts, news and thoughts
+ * Blog -- short posts, news and thoughts (supporting folder)
  
- * wip2 -- Work in Process folder
+ * wip2 -- work-in-process folder
  
- * new -- new material, temporary testing files
+ * new -- new material & testing files folder
  
  #### Additional folders for coding exercise files  
  
