@@ -7,8 +7,8 @@
 
  * About -- Profile
    - assets -- Folder for image and pdf files called at root level by href src command.
-   - dsy.css -- my handcoded stylesheet, uses CSS3 format, the latest standard
-   - purpleimg.jpg -- header image used in HTML files
+   - dsy.css -- My handcoded stylesheet, uses CSS3 format, the latest standard.
+   - purpleimg.jpg -- Header image used in HTML files.
  
  * Projects -- coding projects and short coding exercises
  
