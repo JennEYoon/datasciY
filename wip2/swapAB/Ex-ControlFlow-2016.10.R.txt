@@ -1,0 +1,85 @@
+#  Title: Example - RIA book p.105, 5.4 Control Flow.
+#  Date:  10/27/2016 7pm -- 11:30pm, 45 m break dinner.
+#  Memo:  Practice basic looping and syntax in R.
+#  R script files can be printed using NotePad. RStudio still problem printing.
+#----------------------------------------------------------------------------
+
+#  Example 1:
+#  i takes on values of sequence, even strings.
+#  if (cond) statement 
+#  if (cond) statement1 else statement2   
+#
+#  ifelse(cond, yes, no)
+#  Yes or No values automatically printed. No print() function needed.
+  
+x <- c(-15:15)
+if (x[1] %% 3 == 0) print("Fizz")
+if (x[6] %% 5 == 0) print("Buzz") else print(x[6])
+
+#  Notice: not 'print("Fizz")' but just "Fizz" for yes statement.
+x <- c(1:15)
+ifelse(x[6] %% 3 == 0, y <- "yes", x[6])
+ifelse(x[5] %% 5 == 0, "Buzz", x[5])
+ifelse(x[7] %% 5 == 0, "Buzz", x[7])
+
+#  Example 2:
+#  for (i in sequence) expression
+#  
+#  for (i in 1:10) {
+#    multiple lines
+#  }
+
+x <- (1:20)
+for (i in x)
+  if (x[i] %% 3 == 0) print("Fizz") else print(x[i])
+
+for (i in 1:20)
+  if (i %% 3 == 0) print("Fizz") else print(i)
+
+#  i takes on values of sequence, even strings.
+for (i in c(1, 2, 3, "hello", "me", "good", 7, 8, 9, "great"))
+  print(i)
+
+#  Spaces around all algebraic operators.
+#  Curly braces, first on same line, last on new line. 2nd... indent 2 spaces.
+#  Don't need curly braces for 1 line block following 'if'. Be consistent.
+
+for (i in 1:30) {
+  if (i %% 15 == 0) { 
+    print("FizzBuzz") 
+   } else {
+    if (i %% 3 == 0) {
+      print("Fizz")  
+    } else {
+      if (i %% 5 == 0){
+        print("Buzz")
+      } else {
+        print(i)
+      }  
+    }  
+  }
+}
+
+#  Example 3:
+#  while (cond) statement
+#  while (i > 0) {do1; do2}
+
+i <- 1
+while (i < 22) {
+  print(i)
+  print(i*i)
+  i <- i+2
+}
+
+i <- 1
+while (i < 20) {print(i); print(i*i); i <- i+1}
+
+#  Example 4:
+#  switch(i, value1 = outcome1, value2 = outcome2, ...)
+#  
+#  switch(i,
+#    value1 = outcome1,
+#    value2 = outcome2, ...
+#  )
+
+
