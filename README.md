@@ -43,7 +43,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  ------------------------------------------------------------------------
  
  #### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019
-   * Added 1 image, Generalized Extreme Value distribution from Wikipidea.
+   * Added 1 image, Generalized Extreme Value distribution from Wikipedia.
    * To add more graphs, tail images zoomed in. 
    * To add - Links to Fréchet, Weibull and Gumbel families  
    
