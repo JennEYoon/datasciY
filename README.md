@@ -1,5 +1,7 @@
 # datasciY.com
-#### Repository for http://datasciY.com development, my coding portfolio.
+#### Repository for http://datasciY.com development, my coding portfolio.  
+
+All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services used in doing data science.
 
 #### Author: Jennifer E Yoon  
 
@@ -27,10 +29,7 @@
   * fastai -- deep learning, machine learning and math classes  
   * so -- stack overflow, my answers test files
  
-All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services used in doing data science.
- 
- 
- #### Tasks List as of 8/5/2019  
+#### Tasks List as of 8/5/2019  
  
  * This week, need to focus on getting simple code examples in ML up on my website.
    - Uploaded Random Walk python code.
@@ -40,23 +39,22 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * Also finish up links & plots in Articles.  
    * GAN, brain segmentation
    
- ------------------------------------------------------------------------
+------------------------------------------------------------------------
  
- #### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019
+#### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019
    * Added 1 image, Generalized Extreme Value distribution from Wikipedia.
    * To add more graphs, tail images zoomed in. 
    * To add - Links to Fréchet, Weibull and Gumbel families  
    
-   ===================================================================
-  
-     <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
-     <!-- resize later -->
-     
- Alt image insert in ***markdown mode***
- ![Extreme Value Dist](articles/GevDensity_2.svg.png)
-     
+   <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
+   <!-- resize later -->
    * Sources   
      https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
      https://www.itl.nist.gov/div898/handbook/apr/section1/apr163.htm   
+     
+Alt image insert in ***markdown mode***
+![Extreme Value Dist](articles/GevDensity_2.svg.png)
+     
+
 
 
