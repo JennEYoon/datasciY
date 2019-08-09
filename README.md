@@ -52,8 +52,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
      <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
      <!-- resize later -->
      
-     Alt image insert in ***markdown mode***
-     ![Extreme Value Dist](assets/GevDensity_2.svg.png)
+ Alt image insert in ***markdown mode***
+ ![Extreme Value Dist](articles/GevDensity_2.svg.png)
      
    * Sources   
      https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
