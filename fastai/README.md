@@ -29,6 +29,11 @@
  * Keep full fastai repo on my account, to push updates to.
  * Manually upload fastai exercise for uploading to my website, datasciY.com
  
+#### Tasks - 8/11/2019 12:17 PM  
+
+ * Uploaded CoLab folder from Google Drive 
+ * Has Fastai exercise notebook.
+ * Do timeing test, get faster GPU to test on.
  
 #### Author:  Jennifer E Yoon  
   
