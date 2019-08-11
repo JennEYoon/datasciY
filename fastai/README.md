@@ -1,5 +1,7 @@
 # My practice doing fast.ai classes  
 - for uploading to datasciY.com  
+ 
+## Author:  Jennifer E Yoon  
 
 #### 2018 Fastai v0.7  
 
@@ -34,8 +36,7 @@
  * Uploaded CoLab folder from Google Drive 
  * Has Fastai exercise notebook.
  * Do timeing test, get faster GPU to test on.
- 
-#### Author:  Jennifer E Yoon  
+
   
   
 
