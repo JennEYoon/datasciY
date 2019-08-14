@@ -42,18 +42,13 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 ------------------------------------------------------------------------
  
 #### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019
-   * Added 1 image, Generalized Extreme Value distribution from Wikipedia.
-   * To add more graphs, tail images zoomed in. 
+
+   * To add more graphs, tail only images zoomed-in. 
    * To add - Links to Fréchet, Weibull and Gumbel families  
    
    <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
-   <!-- resize later -->
-   * Sources   
-     https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution   
-     https://www.itl.nist.gov/div898/handbook/apr/section1/apr163.htm   
-     
-Alt image insert in ***markdown mode***
-![Extreme Value Dist](articles/GevDensity_2.svg.png)
+   >Alt image insert in ***markdown mode***
+   >![Extreme Value Dist](articles/GevDensity_2.svg.png)
      
 
 
