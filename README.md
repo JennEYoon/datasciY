@@ -47,8 +47,10 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * To add - Links to Fréchet, Weibull and Gumbel families  
    
    <!-- <img src="assets/GevDensity_2.svg.png">Image, Generalized Extreme Value Distribution</a>  -->
-   >Alt image insert in ***markdown mode***
-   >![Extreme Value Dist](articles/GevDensity_2.svg.png)
+   ```
+   Alt image insert in ***markdown mode***
+   ![Extreme Value Dist](articles/GevDensity_2.svg.png)
+   ```
      
 
 
