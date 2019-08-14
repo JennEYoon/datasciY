@@ -1,0 +1,38 @@
+0000000000000000000000000000000000000000 a0698f93c75129163a827aa0d2bc4c795209daa0 JennEYoon <jenneyoon@gmail.com> 1564694651 -0400	clone: from https://github.com/JennEYoon/datasciY.git
+a0698f93c75129163a827aa0d2bc4c795209daa0 7e044afab09d698d999de998b344ebd961383ddd JennEYoon <jenneyoon@gmail.com> 1564754739 -0400	commit: test git
+7e044afab09d698d999de998b344ebd961383ddd 051813a855660e36b7e0d53a694ebf0248ca010d JennEYoon <jenneyoon@gmail.com> 1564755892 -0400	pull: Fast-forward
+051813a855660e36b7e0d53a694ebf0248ca010d b03d44949d278566b496e2b1e1be24534d791cc3 JennEYoon <jenneyoon@gmail.com> 1564756013 -0400	commit: test
+b03d44949d278566b496e2b1e1be24534d791cc3 05bb8e41120b0e0f6c611101edb2bf309ba5db6b JennEYoon <jenneyoon@gmail.com> 1564756328 -0400	pull: Fast-forward
+05bb8e41120b0e0f6c611101edb2bf309ba5db6b 1c29c63b4ff6455e56878ac4ff3f8ae2f1c6f1fe JennEYoon <jenneyoon@gmail.com> 1564850734 -0400	commit: stack overflow folder added to datasciY repo
+1c29c63b4ff6455e56878ac4ff3f8ae2f1c6f1fe 3e4c136b9acb509aed2a7c917fdcde5def2ed55c JennEYoon <jenneyoon@gmail.com> 1564862941 -0400	pull: Fast-forward
+3e4c136b9acb509aed2a7c917fdcde5def2ed55c afbf8dcc9255e27381031db14dd0d06754262f18 JennEYoon <jenneyoon@gmail.com> 1564934794 -0400	pull: Fast-forward
+afbf8dcc9255e27381031db14dd0d06754262f18 09d06498cbc4d19b1ab1ba0bd0500def61c7802e JennEYoon <jenneyoon@gmail.com> 1565050440 -0400	pull: Fast-forward
+09d06498cbc4d19b1ab1ba0bd0500def61c7802e 439b4d5121174c987efffdbcae9f826e753babbd JennEYoon <jenneyoon@gmail.com> 1565050466 -0400	commit: typos fixed to 4 html pages.
+439b4d5121174c987efffdbcae9f826e753babbd d2319b5f8033b8ed06af09ea4a5aa02417e093db JennEYoon <jenneyoon@gmail.com> 1565051607 -0400	pull: Fast-forward
+d2319b5f8033b8ed06af09ea4a5aa02417e093db 74ee9a6bdf746619c1a19e669e84266820b61e1e JennEYoon <jenneyoon@gmail.com> 1565051635 -0400	commit: typos
+74ee9a6bdf746619c1a19e669e84266820b61e1e 8e6acdd76d362f0177bf1bf8a0cc374140aeaf91 JennEYoon <jenneyoon@gmail.com> 1565051806 -0400	commit: Udemy-ds copy folder over.
+8e6acdd76d362f0177bf1bf8a0cc374140aeaf91 e6fcdf841f74d004237670505620e4b333a93b03 JennEYoon <jenneyoon@gmail.com> 1565052440 -0400	pull: Fast-forward
+e6fcdf841f74d004237670505620e4b333a93b03 3f64914874d84c3c4029e7650ad2b1073b9e714d JennEYoon <jenneyoon@gmail.com> 1565053298 -0400	pull: Fast-forward
+3f64914874d84c3c4029e7650ad2b1073b9e714d 6aea2b079d622962f2512439f182e3bf8991bee5 JennEYoon <jenneyoon@gmail.com> 1565053346 -0400	commit: test file
+6aea2b079d622962f2512439f182e3bf8991bee5 8debf9e0567b43776f49177cf6dbacf8271f22b0 JennEYoon <jenneyoon@gmail.com> 1565053415 -0400	pull: Fast-forward
+8debf9e0567b43776f49177cf6dbacf8271f22b0 8c920a632860e4fb3659d3072d8f741e59bde5f1 JennEYoon <jenneyoon@gmail.com> 1565115996 -0400	pull: Fast-forward
+8c920a632860e4fb3659d3072d8f741e59bde5f1 005c8d35637a04cb49ec576b596c6f8d680690d1 JennEYoon <jenneyoon@gmail.com> 1565123881 -0400	commit: docs(test.txt)
+005c8d35637a04cb49ec576b596c6f8d680690d1 f880b8e3c80bd3849a1bc946df1b0a655f1a4aad JennEYoon <jenneyoon@gmail.com> 1565219027 -0400	pull: Fast-forward
+f880b8e3c80bd3849a1bc946df1b0a655f1a4aad a1a7181a2a558ed07be3cc1ae4e20c265119b697 JennEYoon <jenneyoon@gmail.com> 1565285858 -0400	pull: Fast-forward
+a1a7181a2a558ed07be3cc1ae4e20c265119b697 154b5dcdec11bd08761ce6bc5aff8ad2f9fbff2f JennEYoon <jenneyoon@gmail.com> 1565286073 -0400	commit: Rename folder WIP to lower letter wip2
+154b5dcdec11bd08761ce6bc5aff8ad2f9fbff2f 2dd69088c0ac18b2fd00c06942ed1484149975e4 JennEYoon <jenneyoon@gmail.com> 1565288527 -0400	commit: add wip2 to master local branch
+2dd69088c0ac18b2fd00c06942ed1484149975e4 b32fed21b7f4ad4fa555b7f274cffe9dc60d1364 JennEYoon <jenneyoon@gmail.com> 1565288566 -0400	pull: Merge made by the 'recursive' strategy.
+b32fed21b7f4ad4fa555b7f274cffe9dc60d1364 25fc15bbd83a001f1222bb49f48ccbdc6a0e616a JennEYoon <jenneyoon@gmail.com> 1565288766 -0400	commit: add
+25fc15bbd83a001f1222bb49f48ccbdc6a0e616a 42cb30a1856edf519708e3fe038e94a076d65ab6 JennEYoon <jenneyoon@gmail.com> 1565289312 -0400	pull: Fast-forward
+42cb30a1856edf519708e3fe038e94a076d65ab6 360ebad67295e5a31f036daac2ebaec6e3232c56 JennEYoon <jenneyoon@gmail.com> 1565289331 -0400	commit: articles folder items added
+360ebad67295e5a31f036daac2ebaec6e3232c56 ec23d899b965a455847dab799ee5c009388a549e JennEYoon <jenneyoon@gmail.com> 1565289554 -0400	pull: Fast-forward
+ec23d899b965a455847dab799ee5c009388a549e 2f6df67589594d0d66eb565ffc4a96b47fb4b4c9 JennEYoon <jenneyoon@gmail.com> 1565289569 -0400	commit: add
+2f6df67589594d0d66eb565ffc4a96b47fb4b4c9 7106cfaa4e9b6f7ade3e8a60ce1195cb08975872 JennEYoon <jenneyoon@gmail.com> 1565374276 -0400	pull: Fast-forward
+7106cfaa4e9b6f7ade3e8a60ce1195cb08975872 5e43b4884261e5d0c223000239b9aa8514716ecb JennEYoon <jenneyoon@gmail.com> 1565375170 -0400	commit: Add myrefs, delete tmp.dwnld folder
+5e43b4884261e5d0c223000239b9aa8514716ecb 301a0aa2ce928d293ae572786b24b4f9edda50ba JennEYoon <jenneyoon@gmail.com> 1565376904 -0400	commit: Edit projects.html Extreme Value Dist image
+301a0aa2ce928d293ae572786b24b4f9edda50ba f6fee3a50604c8d18cb00643c5708163afb5b69a JennEYoon <jenneyoon@gmail.com> 1565377446 -0400	pull: Fast-forward
+f6fee3a50604c8d18cb00643c5708163afb5b69a 2cff94d4ded9c7deb2a36b276a5c19b59d077ecf JennEYoon <jenneyoon@gmail.com> 1565377571 -0400	commit: Untracked temp folder keep as is
+2cff94d4ded9c7deb2a36b276a5c19b59d077ecf f42e2589e0fca27b678a9404122b43bf8076eee8 JennEYoon <jenneyoon@gmail.com> 1565456361 -0400	pull: Fast-forward
+f42e2589e0fca27b678a9404122b43bf8076eee8 c3f652a22e560e34819189773a21c1e9513d6556 JennEYoon <jenneyoon@gmail.com> 1565456400 -0400	commit: untracked?
+c3f652a22e560e34819189773a21c1e9513d6556 1ba73dca685fc5d57588cdce1fd0218269d828f5 JennEYoon <jenneyoon@gmail.com> 1565553382 -0400	pull: Fast-forward
+1ba73dca685fc5d57588cdce1fd0218269d828f5 8c3fc725667dd0e4e5307effef846fd69dbc3bf5 JennEYoon <jenneyoon@gmail.com> 1565817587 -0400	pull: Fast-forward
