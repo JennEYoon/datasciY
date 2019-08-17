@@ -18,11 +18,9 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
 #### Tasks 
 
   * Setup Paperspace GPU -- 40 cents per hour.  Prebuilt fastai machine.
-    * Periodically "git pull" fastai module, conda3 packages.
+    * Periodically "git pull" fastai module, update conda3 packages.
     
   * Try notebook 1 with my own images and labels, few hundred data.
-  
-  * **Image augmentation** means create additional data for training and validation, by changing a small element randomly. Example:  zoom by small amounts, rotate by small degrees, lf-rt flip OK when it makes sense, tint & hue change by small amount.  Still a cat, but add extra images to data.  Augmented images should not affect outcome of learning.  
     
 #### Code from Notebook 1 -- resnet34 transfer learning.  
 
@@ -37,8 +35,13 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
     learn.fit(0.01, 3)
     # Learning rate is 10*e**-2.  Epochs is 3. Run through all data 3 times.
     ```
+  #### Notebook 2 -- image augmentation  
+    
+  **Image augmentation** means create additional data for training and validation, by changing a small element randomly. Example:  zoom by small amounts, rotate by small degrees, lf-rt flip OK when it makes sense, tint & hue change by small amount.  Still a cat, but add extra images to data.  Augmented images should not affect outcome of learning.  
   
-  A really cool way to visualize the filter.  Image of a horizontal sorbel filter.     
+  #### Visualizing sobel filter  
+  
+  A really cool way to visualize a (horizontal) sobel filter.      
     
   ![sorbel kernel image](sorbel_kernel_demo.png)  
   
