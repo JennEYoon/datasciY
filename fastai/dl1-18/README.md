@@ -26,7 +26,9 @@ Two versions: fastai/fastai/courses/dl1
 #### Code from Notebook 1 -- resnet34 transfer learning.  
 
   * Transfer Learning, from original version, Lesson1.ipynb, Dogs vs Cats.  
-    ![code block](transferlearn.png)
+  
+    >![code block](transferlearn.png)  
+    
     ```python
     arch = resnet34 
     data = ImageClassifierData.from_paths(
