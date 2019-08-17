@@ -11,6 +11,10 @@ Make sure to use software fastai version 0.7!  NOT fastai version 1.0, which is 
 Class Link:  http://course18.fast.ai/
 Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
 
+Two versions: fastai/fastai/courses/dl1  
+-- "dl1-courses" has original notebooks in addition to newer versions.
+-- "dl1-new" only has newer notebooks.  Does not match videos.
+
 #### Tasks 
 
   * Setup Paperspace GPU -- 40 cents per hour.  Prebuilt fastai machine.
