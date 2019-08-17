@@ -16,8 +16,10 @@ Gets 99.99% accuracy, but is easier to understand.
 
   * To copy -- main model cell.
   
-  A really cool way to visualize mask -- choose "top sobel" in the drop-down box to see horizontal filter.  
-  [sorbel kernel excerpt](sorbel_kernel_demo.png)  
+  A really cool way to visualize the filter.  Image of a horizontal sorbel filter.     
+  ![sorbel kernel excerpt](sorbel_kernel_demo.png)  
   
-  Full website see [Image Kernels by Victor Powell](http://setosa.io/ev/image-kernels/)  
+  See website [Image Kernels by Victor Powell](http://setosa.io/ev/image-kernels/)  
+   - Choose "top sobel" in the drop-down box to see the horizontal sorbel filter.  
+   - A Sorbel filter increases weights on the center points.  For example, instead of the top line being (1, 1, 1) it is (1, 2, 1).
 
