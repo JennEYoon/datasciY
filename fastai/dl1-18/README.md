@@ -17,5 +17,6 @@ Gets 99.99% accuracy, but is easier to understand.
   * To copy -- main model cell.
   
   A really cool way to visualize mask -- choose "top sobel" in the drop-down box to see horizontal filter.
+  [sorbel kernel excerpt](sorbel_kernel_demo.png)
   [Image Kernels by Victor Powell](http://setosa.io/ev/image-kernels/)
 
