@@ -22,7 +22,7 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
     
   * Try notebook 1 with my own images and labels, few hundred data.
     
-#### Code from Notebook 1 -- resnet34 transfer learning.  
+### Notebook 1 -- resnet34 transfer learning.  
 
   * Transfer Learning, from original version of Lesson1.ipynb, Dogs vs Cats.  
   
@@ -35,11 +35,11 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
     learn.fit(0.01, 3)
     # Learning rate is 10*e**-2.  Epochs is 3. Run through all data 3 times.
     ```
-  #### Notebook 2 -- image augmentation  
+  ### Notebook 2 -- image augmentation  
     
   **Image augmentation** means create additional data for training and validation, by changing a small element randomly. Example:  zoom by small amounts, rotate by small degrees, lf-rt flip OK when it makes sense, tint & hue change by small amount.  Still a cat, but add extra images to data.  Augmented images should not affect outcome of learning.  
   
-  #### Visualizing sobel filter  
+  ### Visualizing sobel filter  
   
   A really cool way to visualize a (horizontal) sobel filter.      
     
