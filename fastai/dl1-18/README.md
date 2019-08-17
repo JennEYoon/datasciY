@@ -25,17 +25,16 @@ Two versions: fastai/fastai/courses/dl1
     
 #### Code from Notebook 1 -- resnet34 transfer learning.  
 
-  * Transfer Learning, from original version, Lesson1.ipynb, Dogs vs Cats.  
+  * Transfer Learning, from original version of Lesson1.ipynb, Dogs vs Cats.  
   
     >![code block](transferlearn.png)  
     
     ```python
     arch = resnet34 
-    data = ImageClassifierData.from_paths(
-              PATH, tfms=tfms_from_models(arch, sz))
+    data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_models(arch, sz))
     learn = ConvLearner.pretrained(arch, data precompute=True)          
     learn.fit(0.01, 3)
-    # Learning rate is 10*e**-2.  Epochs is 3 -- run through all data 3X.
+    # Learning rate is 10*e**-2.  Epochs is 3. Run through all data 3 times.
     ```
   
   A really cool way to visualize the filter.  Image of a horizontal sorbel filter.     
