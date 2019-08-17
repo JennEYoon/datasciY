@@ -8,6 +8,9 @@ Gets 99.9% accuracy, but is easier to understand.
 
 Make sure to use software fastai version 0.7!  NOT fastai version 1.0, which is for 2019 class.
 
+Class Link:  http://course18.fast.ai/
+Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
+
 #### Tasks 
 
   * Setup Paperspace GPU -- 40 cents per hour.  Prebuilt fastai machine.
