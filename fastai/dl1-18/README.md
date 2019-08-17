@@ -11,9 +11,9 @@ Make sure to use software fastai version 0.7!  NOT fastai version 1.0, which is 
 Class Link:  http://course18.fast.ai/
 Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
 
-Two versions: fastai/fastai/courses/dl1  
--- "dl1-courses" has original notebooks in addition to newer versions.
--- "dl1-new" only has newer notebooks.  Does not match videos.
+**Two versions: fastai/fastai/courses/dl1**  
+  * "dl1-courses" has original notebooks in addition to newer versions.
+  * "dl1-new" only has newer notebooks.  Does not match videos.
 
 #### Tasks 
 
@@ -21,7 +21,8 @@ Two versions: fastai/fastai/courses/dl1
     * Periodically "git pull" fastai module, conda3 packages.
     
   * Try notebook 1 with my own images and labels, few hundred data.
-    * Image augmentation -- zoom by small amounts, rotate by small degrees, lf-rt flip OK when it makes sense, tint & hue change by small amount.  Still a cat, but add extra data points.  
+  
+  * **Image augmentation** means create additional data for training and validation, by changing a small element randomly. Example:  zoom by small amounts, rotate by small degrees, lf-rt flip OK when it makes sense, tint & hue change by small amount.  Still a cat, but add extra images to data.  Augmented images should not affect outcome of learning.  
     
 #### Code from Notebook 1 -- resnet34 transfer learning.  
 
