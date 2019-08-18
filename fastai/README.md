@@ -40,14 +40,6 @@
   
 #### Tasks -- 8/18/2019  5:44 PM  
 
- * fast.ai -- coursese2018 dp1 - Lectures watched 2.5.  
-   - upload cool video on filtering, write a short blog.
-    - Do several tests with different dataset.  CIFAR10 dataset?  Loaded with tensor flow?
-    - AWS -- look for student free coupons.  
-       - Setup fastai machine.
-       
-  * ipython notebook -- H for keyborad shortcuts.
-      * Memorize more keyborad shortcuts, a few a week.
   * Markdown -- learn a few more format items each week.  
   * Github -- look nto "rebase" and "Merging" 2 upstread soruces.  Test it out.
   * Git -- also practice using branches.  Different ones for different small projects.
