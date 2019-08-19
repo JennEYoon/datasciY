@@ -50,3 +50,19 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
    - A Sorbel filter increases weights on the center points.  
      For example, instead of the top line being (1, 1, 1) the middle weight is increased to (1, 2, 1).
 
+
+#### Otavio Good, WordLense talk, how convolution works.  
+
+  * Short cropped video  https://www.youtube.com/watch?v=f0t-OCG79-U  
+  * Full talk, demo is at 4:27 minutes to 9:40 minutes.  
+    https://youtu.be/Oqm9vsf_hvU?t=267  
+
+#### Tasks 8/18/2017  
+
+ * fast.ai -- coursese2018 dp1 - Lectures watched 2.5.  
+   - upload cool video on filtering, write a short blog.
+    - Do several tests with different dataset.  CIFAR10 dataset?  Loaded with tensor flow?
+    - AWS -- look for student free coupons.  
+       - Setup fastai machine.
+  * ipython notebook -- H for keyborad shortcuts.
+      * Memorize more keyborad shortcuts, a few a week.
