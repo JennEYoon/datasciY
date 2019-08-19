@@ -5,21 +5,21 @@
 
 #### 2018 Fastai v0.7  
 
-  * Practical Deep Learning for Coders (2018 fastai v0.7)
+  * Practical Deep Learning for Coders (2018 fastai v0.7)  
     https://github.com/fastai/fastai/tree/master/courses/dl1
     
-    * Has cifar 10 image classification example -- to do & upload to website.
+    * Has cifar 10 image classification example -- to do & upload to website.  
       https://github.com/fastai/fastai/blob/master/courses/dl1/cifar10-simplenet.ipynb
       Notebook Does NOT load on Github.  Run on other servers.
  
-    * There are multiple versions of 2018 fastai class for deep learning part 1.
+    * There are multiple versions of 2018 fastai class for deep learning part 1.  
        - Full notebooks are only available as part of courses repo:  
          https://github.com/fastai/fastai/tree/master/courses     
  
-  * Cutting Edge Deep Learning 2018 - Part 2
+  * Cutting Edge Deep Learning 2018 - Part 2  
     https://github.com/fastai/fastai/tree/master/courses/dl2
     
-  * Machine Learning for Coders (2018 fastai v0.7)
+  * Machine Learning for Coders (2018 fastai v0.7)  
     * https://github.com/fastai/fastai/tree/master/courses/ml1 
     
   * Math - Linear Algebra for ML 
@@ -57,6 +57,8 @@
   * Markdown -- learn a few more format items each week.  
   * Github -- look nto "rebase" and "Merging" 2 upstread soruces.  Test it out.
   * Git -- also practice using branches.  Different ones for different small projects.
+  * Jupyter Notebook -- Learn a few keyboard shortcuts each week.
+  * Become faster and accurate typist -- each small bug from typing error takes 30 minutes to hours to find and fix!
   
   
   
