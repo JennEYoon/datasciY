@@ -5,9 +5,23 @@
 
 #### 2018 Fastai v0.7  
 
-  * Machine Learning for Coders (2018 fastai v0.7)
   * Practical Deep Learning for Coders (2018 fastai v0.7)
+    https://github.com/fastai/fastai/tree/master/courses/dl1
+    
     * Has cifar 10 image classification example -- to do & upload to website.
+      https://github.com/fastai/fastai/blob/master/courses/dl1/cifar10-simplenet.ipynb
+      Notebook Does NOT load on Github.  Run on other servers.
+ 
+    * There are multiple versions of 2018 fastai class for deep learning part 1.
+       - Full notebooks are only available as part of courses repo:  
+         https://github.com/fastai/fastai/tree/master/courses     
+ 
+  * Cutting Edge Deep Learning 2018 - Part 2
+    https://github.com/fastai/fastai/tree/master/courses/dl2
+    
+  * Machine Learning for Coders (2018 fastai v0.7)
+    * https://github.com/fastai/fastai/tree/master/courses/ml1 
+    
   * Math - Linear Algebra for ML 
 
 #### 2019 Fastai v1.0 modules
