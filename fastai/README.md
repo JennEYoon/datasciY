@@ -55,9 +55,9 @@
 #### Tasks -- 8/18/2019  5:44 PM  
 
   * Markdown -- learn a few more format items each week.  
-  * Github -- look nto "rebase" and "Merging" 2 upstread soruces.  Test it out.
+  * Github -- look into "rebase" and "merging" 2 upstream soruces.  Test it out.
   * Git -- also practice using branches.  Different ones for different small projects.
-  * Jupyter Notebook -- Learn a few keyboard shortcuts each week.
+  * Jupyter Notebook (Lab) -- Learn a few keyboard shortcuts each week.
   * Become faster and accurate typist -- each small bug from typing error takes 30 minutes to hours to find and fix!
   
   
