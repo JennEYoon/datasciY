@@ -66,3 +66,8 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
        - Setup fastai machine.
   * ipython notebook -- H for keyborad shortcuts.
       * Memorize more keyborad shortcuts, a few a week.
+
+#### Tasks 8/19/2019  
+
+  * Convolution demo, Otavio Good, added to website, blog.html page.
+  
