@@ -9,7 +9,7 @@
     https://github.com/fastai/fastai/tree/master/courses/dl1
     
     * Has cifar 10 image classification example -- to do & upload to website.  
-      https://github.com/fastai/fastai/blob/master/courses/dl1/cifar10-simplenet.ipynb
+      https://github.com/fastai/fastai/blob/master/courses/dl1/cifar10-simplenet.ipynb  
       Notebook Does NOT load on Github.  Run on other servers.
  
     * There are multiple versions of 2018 fastai class for deep learning part 1.  
