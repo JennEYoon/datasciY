@@ -53,11 +53,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    ![Extreme Value Dist](articles/GevDensity_2.svg.png)
    ```
      
-#### Blog to Article, Convolution, Sobel filter, Fast.AI Lesson 3.  
+#### Blog to Article, Convolution, Sobel filter, Fast.AI Lesson 3 - Date 8/19/2019 6:35 PM  
 
   * WIP - Blog update with Convolution demo, Otavia Good
   * WIP - Sobel Filter -- gatered links.
-  * To Do -- Write longer article, add to "article.html".
+  * To Do -- Write longer article, add to "articles.html" on datasciY.com.
   
 
 
