@@ -5,6 +5,20 @@ Test Windows Subsystem for Linux (WSL) Ubuntu.
 Git cloned datasciY repo to local computer, linux  
    $  $home/jyoon/dsy/datasciY/.git  
 
+### 8/20/2019 9:00 PM 
+Deleted all previous github on Unix.
+
+Created new github clone for fastai version1.
+All notebooks and software module copied.
+
+mkdir fastaiv1
+cd fastaiv1
+
+git clone https://github.com/fastai/fastai.git
+
+
+Set Default Properties -- Control + Shift + C/V for copy & paste.
+
 =============== 7/23/2019 6:30 PM =====================================
 
 ### Github Contributions colormap:
