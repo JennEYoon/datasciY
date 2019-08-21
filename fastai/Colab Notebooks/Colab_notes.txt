@@ -22,11 +22,7 @@ When you run the first cell, you will face a pop-up saying ‘Warning: This notebo
 
 ### Step 3:  Saving your notebook  
 
-Before you start using your notebook, you need to install the necessary packages. You can do this by creating a code cell, and running:
-
-  !curl -s https://course.fast.ai/setup/colab | bash
-
-When you run the first cell, you will face a pop-up saying ‘Warning: This notebook was not authored by Google’; you should leave the default tick in the ‘Reset all runtimes before running’ check box and click on ‘Run Anyway’.
+...
 
 ### Step 4: Saving your data files  
 
