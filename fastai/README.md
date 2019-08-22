@@ -60,8 +60,23 @@
   * Jupyter Notebook (Lab) -- Learn a few keyboard shortcuts each week.
   * Become faster and accurate typist -- each small bug from typing error takes 30 minutes to hours to find and fix!
   
-  
-  
+###  WIP Tasks 8/22/2019  
+
+  * fastai software setup version 1.0 and version 0.7
+  * Last 2 days - CoLab works with version 1.0
+     - CoLab each notebook at the beginning need "symlink" symbolic link, can work with version 0.7
+     - CoLab is Unix
+  * Windows 10 -- copied repo to c: work folder
+     - Version 1.0 works with CPU and GPU -- Ubuntu WSL
+     - Linux home - copied full repo and version 1.0 works.
+     - Need to add "symlink" to have it work with version 0.7.
+     CMD.exe -- fastai version 1.0 may also work here.
+      - Some sort of path twicking at the top of each notebook to work with version 0.7.
+      - Version 07 is in "old/fastai/ folder.
+      - Was able to import one module, but itself calls a bunch of other modules taht it cannot import, recursive.
+      - Need a global way to add a path to the old fastai versions folder.
+      > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.
+      
      
 
 
