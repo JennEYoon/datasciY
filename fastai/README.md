@@ -68,7 +68,7 @@
      - CoLab each notebook at the beginning need "symlink" symbolic link, can work with version 0.7
      - CoLab is Unix
      
-  * Windows - WSL Ubun ut
+  * Windows - WSL Ubuntu  
     Copied repo to $home Linux location (& to c:\python\conda3linux\envs\
      - Version 1.0 works with CPU and GPU -- Ubuntu WSL
      - Linux home - copied full repo and version 1.0 works.
