@@ -90,7 +90,7 @@
      - Try with fastai too.  Have AMI setup?  
   * AWS GPU AMI -- fastai has AMI "Public Community Machines" setup.  Try it out.
   * AWS AMI for cs231n -- may also exist, look into it.
-      
+  * Try Papersource for fastai -- since it is cheaper and there is an AMI for it.      
      
 
 
