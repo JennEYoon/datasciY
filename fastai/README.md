@@ -62,20 +62,30 @@
   
 ###  WIP Tasks 8/22/2019  
 
-  * fastai software setup version 1.0 and version 0.7
-  * Last 2 days - CoLab works with version 1.0
+  * GOAL:  to setup fastai software to work with version 1.0 and version 0.7
+  * Last 3 days - CoLab works with version 1.0
+     - Test saving of downloaded data -- Google Drive mounted, but no data saved yet. 
      - CoLab each notebook at the beginning need "symlink" symbolic link, can work with version 0.7
      - CoLab is Unix
-  * Windows 10 -- copied repo to c: work folder
+     
+  * Windows - WSL Ubun ut
+    Copied repo to $home Linux location (& to c:\python\conda3linux\envs\
      - Version 1.0 works with CPU and GPU -- Ubuntu WSL
      - Linux home - copied full repo and version 1.0 works.
      - Need to add "symlink" to have it work with version 0.7.
+  
+  * Windows 10 with CMD.exe
+     * Full repo copied to  C:\python\work\w_fastai\fastai  (version 1.0 top level)
+     * version 0.7 in sub-level  ..\old\fastai\
      CMD.exe -- fastai version 1.0 may also work here.
       - Some sort of path twicking at the top of each notebook to work with version 0.7.
       - Version 07 is in "old/fastai/ folder.
       - Was able to import one module, but itself calls a bunch of other modules taht it cannot import, recursive.
       - Need a global way to add a path to the old fastai versions folder.
-      > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.
+      
+  > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.  Read about "symlink" in Ubuntu.  Read about setting PATH for jupyter notebook in Windows 10.
+  
+  
       
      
 
