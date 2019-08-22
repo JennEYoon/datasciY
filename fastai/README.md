@@ -73,15 +73,14 @@
      - Version 1.0 works with CPU and GPU -- Ubuntu WSL
      - Linux home - copied full repo and version 1.0 works.
      - Need to add "symlink" to have it work with version 0.7.
+     - Was able to import one module from 0.7 by moving working .py file, but that module calls a bunch of other modules in fastai directory that it cannot import, recursive.
+     - Need a global way to add a path to the old fastai versions folder, and replace the new fastai folder.  There should be a way to do this.  Maybe create a whole new place for conda env along with only old fastai folders as a short-term fix?
   
   * Windows 10 with CMD.exe
      * Full repo copied to  C:\python\work\w_fastai\fastai  (version 1.0 top level)
-     * version 0.7 in sub-level  ..\old\fastai\
-     CMD.exe -- fastai version 1.0 may also work here.
+     * version 0.7 in sub-level  ..\old\fastai\  
+      - CMD.exe -- fastai version 1.0 may also work here.
       - Some sort of path twicking at the top of each notebook to work with version 0.7.
-      - Version 07 is in "old/fastai/ folder.
-      - Was able to import one module, but itself calls a bunch of other modules taht it cannot import, recursive.
-      - Need a global way to add a path to the old fastai versions folder.
       
   > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.  Read about "symlink" in Ubuntu.  Read about setting PATH for jupyter notebook in Windows 10.
   
