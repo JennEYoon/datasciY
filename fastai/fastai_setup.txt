@@ -3,7 +3,7 @@
 tilda "~/" seems to be same as dot-dot "..\" in windows.
 Relative address, add up-path to current location.
 
-"~$" by itself if the home directory.
+"~$" by itself is the home directory.
 "~/fastai$" is the first level subdir to home.
 
 "!/usr/bin/env python"
