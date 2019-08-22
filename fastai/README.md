@@ -94,6 +94,10 @@
   * AWS AMI for cs231n -- may also exist, look into it.
   * Try Papersource for fastai -- since it is cheaper and there is an AMI for it.      
      
+#### fastai setup WIP  
 
-
+  * Stackoverflow -- lookup questions on fastai setup.
+  * A few promising answers & questions.
+  * Later -- Maybe aska setup question in 2019 for version 07 usage on Windows Ubuntu.  
+  
 
