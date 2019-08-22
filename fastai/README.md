@@ -98,8 +98,8 @@
 
   * Stackoverflow -- lookup questions on fastai setup.
   * A few promising answers & questions.
-  * Later -- Maybe ask a Stackoverflow question: 
-    In 2019, setting up fastai v0.7 conda env on Windows WSL Ubuntu, with Python 3.7.
+  * Later -- Maybe ask a Stackoverflow question:  
+    In 2019, setting up fastai v0.7 conda env on Windows WSL Ubuntu, with Python 3.7.  
     Use symlink for PATH.
   
 
