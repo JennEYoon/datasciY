@@ -82,7 +82,7 @@
       - CMD.exe -- fastai version 1.0 may also work here.
       - Some sort of path twicking at the top of each notebook to work with version 0.7.
       
-  > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.  Read about "symlink" in Ubuntu.  Read about setting PATH for jupyter notebook in Windows 10.
+      > If I can figure out how PATH is called in Linux for sub-modules, I can do the same for CMD.exe shell.  Read about "symlink" in Ubuntu.  Read about setting PATH for jupyter notebook in Windows 10.
   
   * Google Cloud  GCI, datasciY.info@ acct.    
      - free $300 credit expires soon
