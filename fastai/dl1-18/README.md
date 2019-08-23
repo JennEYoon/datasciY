@@ -70,4 +70,5 @@ Class Wiki:  http://wiki.fast.ai/index.php/Main_Page
 #### Tasks 8/19/2019  
 
   * Convolution demo, Otavio Good, added to website, blog.html page.
-  
+  * Fastai videos watched 3.5 - 4. 
+  * Tried setting up environment, bot Ubuntu and Windows, version 1.0 and 0.7, and CoLab. 8/23/2019.
