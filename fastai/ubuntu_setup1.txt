@@ -1,0 +1,54 @@
+#  Ubuntu setup on my Windows 10 machines under WSL.  
+
+
+====== Notes ====================================================
+Ubuntu WSL can now be accesses from File Explorer!
+
+One of the biggest benefits of this change is file handling. Previously, Windows could only modify files on the Ubuntu file system, but not create. Now, by using \\wsl$\Ubuntu in the address bar of your file explorer, one can directly access any Linux-based file, create additional ones, or remove them and the changes will be seen on the Linux-side as well.
+
+Win: Windows key 
+Search: Win + s 
+Run: Win + r 
+
+File Explorer:  \\wsl$\Ubuntu
+
+=========== Ubuntu setup 8/25/2019 ===============
+
+Reinstalled conda3 linux version to $home/jyoon/conda3 location.
+Auto-activates base conda3 upon terminal startup.
+
+sudo password is my usual 4digits
+
+------------------------------
+Installing firefox:
+
+jyoon@Asus-S510:/opt$ firefox
+Error: no DISPLAY environment variable specified
+
+Need xhost
+
+jyoon@Asus-S510:~$ xhost +
+
+Command 'xhost' not found, but can be installed with:
+
+sudo apt install x11-xserver-utils
+-----------
+
+In conda3 base: 
+Installed packages
+
+jupyter notebook (includes ipython shell)
+numpy, pandas, matplotlib, seaborn, scikit-learn (includes scipy, statsmodels), pillow, pytorch, tensorflow (but can't install tensorflow-datasets).  h5py.  IDLE included.
+
+Location, python packages in ubuntu.
+\\wsl$\Ubuntu\home\jyoon\conda3\lib\python3.7\site-packages
+
+#### WIP 8/25/2019  
+ * Firefox browser on Ubuntu -- installed, but windows open function does not work.
+ * tensorflow CPU version installed -- but tensorflow-datasets datasets does not work.
+ * Can use ROKU-TV as wireless 3rd monitor -- but resolution is too low.
+ * Switched to Apple keyboard bluetooth.  Replaced batteries.  Control-key is 2nd left, need to adjust to it.
+   Control-C/V, keep hitting wrong key.
+   Ubuntu -- Control+Shift C/V. 
+   
+****  
