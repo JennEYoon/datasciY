@@ -133,6 +133,13 @@ jyoon@Asus-S510:~/dsY/datasciY$ ls
  - pwd (print working directory)
  - rm (remove file, delete, cannot undo)
  
+ - mv file1 file2  (rename file1 to file2, "move" pointer)
+ - mv file1 ../file2  (move file1 to up one level file2)
+ - mv home/file1 ./   (move file1 from home to current location)
+ 
+ From Windows Explorer:  \\wsl$\Ubuntu  
+ opens window at Ubuntu.
+ 
  ============ Create new file ======================
 ### How to create a file in Linux from terminal window?
 
