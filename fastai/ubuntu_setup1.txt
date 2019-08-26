@@ -4,8 +4,12 @@
 ====== Notes ====================================================
 Ubuntu WSL can now be accesses from File Explorer!
 
-One of the biggest benefits of this change is file handling. Previously, Windows could only modify files on the Ubuntu file system, but not create. Now, by using \\wsl$\Ubuntu in the address bar of your file explorer, one can directly access any Linux-based file, create additional ones, or remove them and the changes will be seen on the Linux-side as well.
-
+One of the biggest benefits of this change is file handling. 
+Previously, Windows could only modify files on the Ubuntu file system, 
+but not create. Now, by using \\wsl$\Ubuntu in the address bar of your 
+file explorer, one can directly access any Linux-based file, create 
+additional ones, or remove them and the changes will be seen on the 
+Linux-side as well.
 
 Win: Windows key (clover key on Apple keyboard)
 Search: Win + s 
@@ -18,7 +22,8 @@ Control key: is 2nd from left-bottom corner.
 
 In Ubuntu terminal: Shift+Control + C/V to cut and paste
 Mouse: Click and Shift+click to select line
-Mouse Drag: click-hold to lock, then click again to release lock, before cut (control+shift+X).
+Mouse Drag: click-hold to lock, then click again to release lock, 
+before cut (control+shift+X).
 
 =========== Ubuntu setup 8/25/2019 ===============
 
@@ -46,7 +51,9 @@ In conda3 base:
 Installed packages
 
 jupyter notebook (includes ipython shell)
-numpy, pandas, matplotlib, seaborn, scikit-learn (includes scipy, statsmodels), pillow, pytorch, tensorflow, tensorflow-datasets.  h5py for deeplearning.ai.  IDLE included.  pandas-datareader installed for VanderPlas book.
+numpy, pandas, matplotlib, seaborn, scikit-learn (includes scipy, statsmodels), pillow, 
+pytorch, tensorflow, tensorflow-datasets.  h5py for deeplearning.ai.  IDLE included.  
+pandas-datareader installed for VanderPlas book.
 
 Location, python packages in ubuntu.
 
@@ -72,6 +79,7 @@ Original copy in cpythowork was deleted.
    Control-key is 2nd left, need to adjust to it.  Keep making mistakes
    Ubuntu -- Control+Shift C/V. 
    Alt+Tab works, but ALT is 3rd from left-bottom corner.
-   Overall, Apple bluetooth keyboard feels good for typing, better than Logitech, which was feeling creaky/inaccurate.
+   Overall, Apple bluetooth keyboard feels good for typing, better than Logitech, 
+   which was feeling creaky/inaccurate.
     * How to show desktop using Apple keyboard?  Is 3 finger swipe on Asus touchpad.
 ****  
