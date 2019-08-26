@@ -38,10 +38,13 @@ In conda3 base:
 Installed packages
 
 jupyter notebook (includes ipython shell)
-numpy, pandas, matplotlib, seaborn, scikit-learn (includes scipy, statsmodels), pillow, pytorch, tensorflow (but can't install tensorflow-datasets).  h5py.  IDLE included.
+numpy, pandas, matplotlib, seaborn, scikit-learn (includes scipy, statsmodels), pillow, pytorch, tensorflow (but can't install tensorflow-datasets).  h5py for deeplearning.ai.  IDLE included.  pandas-datareader installed for VanderPlas book.
 
 Location, python packages in ubuntu.
+\\wsl$\Ubuntu\home\jyoon\conda3\pkgs\
 \\wsl$\Ubuntu\home\jyoon\conda3\lib\python3.7\site-packages
+
+VanderPlas copied to \\wsl$\Ubunut\home\jyoon\w_vanderplas\  
 
 #### WIP 8/25/2019  
  * Firefox browser on Ubuntu -- installed, but windows open function does not work.
