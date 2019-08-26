@@ -75,6 +75,7 @@ Original copy in cpythowork was deleted.
  * Deleted conda3linux on c:\python.  Saved 10 GB disk space.     
    --------- 
  * Can use ROKU-TV as wireless 3rd monitor -- but resolution is too low.
+    OK for watching YouTube videos.
  * Switched to Apple keyboard bluetooth.  Replaced batteries.  
    Control-key is 2nd left, need to adjust to it.  Keep making mistakes
    Ubuntu -- Control+Shift C/V. 
@@ -82,4 +83,6 @@ Original copy in cpythowork was deleted.
    Overall, Apple bluetooth keyboard feels good for typing, better than Logitech, 
    which was feeling creaky/inaccurate.
     * How to show desktop using Apple keyboard?  Is 3 finger swipe on Asus touchpad.
+      None of the special key combination on Apple Keyboard seems to work.
+      Function keys in general work, e.g., F1 is help key.
 ****  
