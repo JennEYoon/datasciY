@@ -6,6 +6,7 @@ Ubuntu WSL can now be accesses from File Explorer!
 
 One of the biggest benefits of this change is file handling. Previously, Windows could only modify files on the Ubuntu file system, but not create. Now, by using \\wsl$\Ubuntu in the address bar of your file explorer, one can directly access any Linux-based file, create additional ones, or remove them and the changes will be seen on the Linux-side as well.
 
+
 Win: Windows key (clover key on Apple keyboard)
 Search: Win + s 
 Run: Win + r 
