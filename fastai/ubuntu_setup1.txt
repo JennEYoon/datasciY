@@ -86,3 +86,7 @@ Original copy in cpythowork was deleted.
       None of the special key combination on Apple Keyboard seems to work.
       Function keys in general work, e.g., F1 is help key.
 ****  
+  * Installing plotly and cufflinks for Udemy class
+    pip install plotly
+    pip install cufflinks
+    
