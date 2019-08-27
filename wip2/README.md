@@ -1,4 +1,4 @@
-# README for wip2 folder, Work-In-Porcess  
+# README for wip2 folder, Work-In-Process  
 
 #### R-lang folder  
  * R cache matrix
