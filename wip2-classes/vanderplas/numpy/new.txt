@@ -1,0 +1,5 @@
+numpy practices
+
+KNN 2 digit example
+
+Fancy indexing, argsort

@@ -1,0 +1,18 @@
+
+* Moved classes to datasciY repo from secdataml repo.
+8/31/2019
+
+ * Added folder "wip1-classes"
+   Date:  8/26/2019 11:55 PM  
+
+    - Vanderplas - my work only
+      * Focus for next 2 months, Sept & Oct 2019.
+
+    - Bishop * Math suppliment
+
+    - ESL/R - empty * Math suppliment 
+
+    - Udemy data science bootcamp - my work only  
+
+    - Udacity - career only 
+      * others moved to "work" folder in C:\python  
