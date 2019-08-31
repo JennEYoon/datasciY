@@ -2,7 +2,7 @@
 * Moved classes to datasciY repo from secdataml repo.
 8/31/2019
 
- * Added folder "wip1-classes"
+ * Added folder "wip2-classes"
    Date:  8/26/2019 11:55 PM  
 
     - Vanderplas - my work only
