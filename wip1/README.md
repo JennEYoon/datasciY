@@ -1,4 +1,4 @@
-# README for wip2 folder, Work-In-Process  
+# README for WIP1 folder, Work-In-Process  
 
 #### R-lang folder  
  * R cache matrix
@@ -7,6 +7,4 @@
 #### swap A & B compare R, Python, VBA
 #### FizzBuzz - compare R, Python, VBA, C++
 
-#### ISLR Updated link to book  
- * Gareth James et. al., An Introduction to Statistical Learning: with Applications in R (c 2013)  
-   - https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about  
+
