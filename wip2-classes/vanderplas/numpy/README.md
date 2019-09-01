@@ -1,4 +1,4 @@
-# Numpy Tasks -- Vanderplas, Pythong Data Science Handbook.  
+# Numpy, Python Data Science Handbook.  
 
 To Do. ~ More practive with ufuncs. 9/1/2019.  
 
