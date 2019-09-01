@@ -1,12 +1,12 @@
-# Numpy Tasks -- Vanderplas, Pythong Data Science Handbook.
+# Numpy Tasks -- Vanderplas, Pythong Data Science Handbook.  
 
-To Do. ~ More practive with ufuncs.
+To Do. ~ More practive with ufuncs. 9/1/2019.  
 
-New Axis
+( x, newaxis)  or (newaxis, y)
 
-Boolean and mastsks
+Boolean and masks
 
-Sorting.
+Sorting.  Fancy Indexing.
 
 Andrew Ng -- don't use (5, )  Rank 1 ndarray.
 Always fully specify dimension  (5, 1) or (1, 5) for Rank 2 ndarray.
@@ -15,6 +15,6 @@ Always fully specify dimension  (5, 1) or (1, 5) for Rank 2 ndarray.
   
   or [[1], [5]]  row 2D array
   
-  Transpose of A is same as A for rank 1 ndarray.
+Transpose of A is same as A for rank 1 ndarray.
   
   
