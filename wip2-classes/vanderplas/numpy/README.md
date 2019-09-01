@@ -2,8 +2,8 @@
 
 To Do. ~ More practive with ufuncs. 9/1/2019.  
 
-( x, newaxis)  or (newaxis, y)
-
+(x, newaxis) column  or (newaxis, y) row vector.
+  
 Boolean and masks
 
 Sorting.  Fancy Indexing.
