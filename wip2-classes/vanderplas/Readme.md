@@ -3,8 +3,10 @@
 
 Only post my own work here.  Reproduced examples and my applications/extensions.  
 
-My Google Drive book PDF:  
-    https://drive.google.com/file/d/1gb_48QCsQoUfTp_m7K76Gafj4y-4jnl3/view?usp=sharing  
+Jake Vanderplas Github Repo for book:  
+    https://github.com/jakevdp/PythonDataScienceHandbook
+
+![Cover Image](https://github.com/JennEYoon/datasciY/blob/master/wip2-classes/vanderplas/figures/PDSH-cover-small.png)
 
 ### To Focus on **VanderPlas book exclusively** for reproduced projects.  
 
