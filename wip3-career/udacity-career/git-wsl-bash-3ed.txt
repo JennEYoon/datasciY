@@ -1,4 +1,4 @@
-# Github Bash WSL (Windows System for Linux) Guide, for my own use.
+# Github & WSL (Windows System for Linux) Bash Guide, for my own use.  
 
 ============ 7/23/2019 4:36 PM  saved. ===============  
 Test Windows Subsystem for Linux (WSL) Ubuntu.  
