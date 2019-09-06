@@ -14,9 +14,16 @@ Level 2: light green, 7 contributions - check
 Level 3: medium green, 14 contributions - check
 Level 4: dark green, 20 contributions - check
 
+ * After 51 commits in one day, only one square was darkest green.  
+   Successively recovered, only after deleting SECdataML repo from Github!  
+   Escapted successively.  No black squares.  Had other repo commits on each day.  
+   9/6/2019.  Whew! :-P  
+
 Timestamp correct for Github submission on Master Remote directly.
 7/24/2019 8:34 AM - based on web browser.
 Local commit and merge to master, based on laptop system time.
+
+=====================================================================  
 
 ### Git initialization
 
