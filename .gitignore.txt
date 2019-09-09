@@ -1,3 +1,2 @@
 fastai\.ipynb_checkpoints
-.tmp.drivedownload\
 .tmp.drivedownload/
