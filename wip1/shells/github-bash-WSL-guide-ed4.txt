@@ -252,3 +252,12 @@ Can preface with language to get highlighting.
    do some code ...
 # end of python
 ```
+
+### Ubuntu symlink  "->"  
+
+    data -> folder/path/datasets  
+    
+    Fast.ai uses symlink in Ubuntu to change software to version 0.7 and to point to data path.  
+    
+    
+    
