@@ -89,5 +89,19 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
   * Vanderplas Matplotlib - more exercises with tickmarks, legends, 3D surface graphs, time series.
   * Pandas - do SQL like groupby, time series, between time, interday trading data groupby.  
      
-     
+ 
+#### Ubuntu, CoLab, fast.ai setup - Aug-Sept 2019.  
+ * More practice setting up version 0.7
+    -  !curl command in unix, symbolic link in unix
+       (Unix home dir: version 1.0 setup, git repo full fastai)
+    -  similar options should be availabe for Windows OS
+       (Currently windows: v1.0 setup for GPU & CPU??)
+       
+* CoLab works with v 1.0, on Google Server (internet) & Google Drive.
+* CoLab -- test using with v 0.7 on Google?  Transfer to GDrive?
+* Try AWS Ubuntu Fast.ai AMI machine -- for v 0.7 & v 1.0  
+   * Machine existed before for v 0.7.  Still available?
+   * Machine should exist for v 1.0 in 2019.      
+   
+   
 --- end ---  
