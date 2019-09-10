@@ -4,7 +4,7 @@ tasks_template.md
 
 # Git hard reset to merge commit histories.
 # Too many small commits in a day, tried to combine several commits into one in history.  
-# Commit graph rescale so that only one day was darkest green with 51 commits.  
+# Commit graph rescale so that only one day was darkest green with 51 commits. 9/6/2019 around this date.  
 # Commands were successful in Ubuntu bash, but did nothing to commit history numbers on Github.
 # Is there a delay maybe?  Check again based on parent commit id above.  9/10/2019.
 
