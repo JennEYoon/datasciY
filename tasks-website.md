@@ -103,5 +103,18 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
    * Machine existed before for v 0.7.  Still available?
    * Machine should exist for v 1.0 in 2019.      
    
+#### Projects Content update - 9/13/2019.     
+ * Working on updating content to projects page.  
+ * Spell Checked with MS Word.  
+ * Completely messed up HTML formatting, WORD inseted a whole bunch of junk!   
+ * Word messed up my header, navigation bar, and footer formats.    
+ * Next time -- just copy a text-only version into word, spell check, then copy back text-only version.  
+ * DOES VS Code have spell checker for HTML?  That will ignore hteml tags?  
+ * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  
+ 
+#### Projects -- Visualization & AWS Lambda demo - Sept 2019.  
+
+ * Priority items -- AWS Lambda demo, Ubuntu and Windows 10 base machines.  
+ * Priority items -- Visualizations using financial data.  
    
 --- end ---  
