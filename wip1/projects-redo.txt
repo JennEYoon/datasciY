@@ -1,0 +1,93 @@
+From Word-html, selected all body text, opend a new text.txt file, pasted.  Only text was copied, not html codes.  Can run spell check  on this if I want.  Copy content back to HTML page, individual paragraphs one by one.
+
+------------------------
+
+Introduction
+Author: Jennifer Yoon
+Contact email: "datasciY.info@gmail.com"
+GitHub Profile: JennEYoon
+DatasciY repo: datasciY
+
+Learn Machine Learning and Deep Learning (learn-mldl) repo: datasciY
+
+Resume: data science-PDF
+LinkedIn Profile: JenniferYoon
+
+
+Welcome to my data science coding projects portfolio. This projects portfolio is very much a work in progress. When the portfolio is full, my goal is to cover the full spectrum of data science process while using Python, Excel and VBA, SQL database, Amazon Web Services (AWS) and Google Cloud.
+
+My main area of interest is in applying data science tools to bring value to financial derivative securities industry, financial risk management industry and economic policy setting industry. I am also interested in visual deep learning as it is applied to brain segmentation image analysis (e.g., Janelia.org) and to geospatial intelligence analysis (e.g., NGA.org).
+
+Some of the specific types of analyses I will be performing include: decision trees and random forests, principal component analysis (PCA), k-means clustering, sentiment analysis, natural language processing (NLP), linear regression, logistic regression, time-series, econometrics, big data cloud computing, deep learning, and convolutional neural networks (CNN).
+
+Amazon Lambda (AWS)
+Sometimes it is really helpful to host a short, executable python code on a public web server. You may have a client with whom you wish to share an idea or a methodology. It may not be enough to show a static html page. Amazon's Lambda makes that easy to do. You can customize installed python libraries with "layers."
+
+I will post a demo using the Ubuntu Linux OS base machine and a Jupyter notebook running Python 3, and import NumPy, pandas, Matplotlib, and Scikit-Learn libraries. I will also repeat the demo with a Windows 10 base machine for the 50% of population who uses a Windows computer.
+
+To be added.
+
+Visualizing 3-Dimensional Option Volatility Surface Data with Matplotlib
+To be added.
+
+Visualizing Interactive Charts with Dash and Plotly
+Dash from Plot.ly
+Plotly for Python
+Dash is an interactive charting app for the web that can be built using Python. No JavaScript required. Dash is built on top of the Plotly chart definitions. Python developers can use many of Plotly's chart styles in their default mode to create beautiful, interactive charts. Website visitors can zoom in or out of the chart, seeing details or a summary view. Full customization is available via Plotly's open-source GitHub repo.
+
+Dash allows you to build a web app with your customized sliders, radio buttons, text input, and user-selected data sorting and filtering. While Plotly has built-in default chart types with zoom, pan, expand/collapse and data filtering already included.
+
+To be added.
+
+Visualizing Energy Trading Data with Bokeh
+To be added.
+
+Visualizing Economics Data with Tableau
+To be added,
+
+Link to Hans TED talk movie - to be added.
+
+Data Cleaning and Exploring with NumPy and Pandas
+I will post exercises using NumPy and Pandas to clean and explore input data. I will cover reading from JSON, CSV and Excel file formats, as well as directly scraping data from websites in html formatted tables. I will also explore what to do when data tables only come in PDF formats.
+
+To add - NumPy knn VanderPlas with 10 point.
+To add - NumPy knn with CIFAR10 image data, Stanford CS231n class.
+To add - NumPy VanderPlas fancy indexing, argsort, ufunc, newaxis, rank 2, sort(axis=1/0), matrix multiply, broadcasting, vs scaler multiplication.
+NumPy Exercise 1 (html),   GitHub
+NumPy Exercise 2 (py),   GitHub
+Python Basics
+Functions - Pass functions as inputs to another function. Function Exercise 1
+Functions - *arg, **kwargs, defaults, and variables order. To do.
+Reference: www.geeksforgeeks.org"
+Class Objects - Spaceship Class, Asteroid Class. To do.
+To do -- Pandas as Class Objects, NumPy as Class Objects.
+Sorting, Recursion and Big-O Math
+Algorithm efficiency is studied using the Big-O math. Generally an order of log(n) is preferred over an order of n*log(n), n**3, or n!. The best algorithm has an order of n, O(n), but this is rarely achieved. An O(n) means that as the number of inputs grows, the time to execute grows linearly. In my sorting algorithm, I use a binary tree with a central pivot point and recursive function calls to itself. I use this algorithm to study Big-O math.
+
+Example to post later.
+
+Bias-Variance Tradeoff at a Glance
+A picture showing conceptually the bias-variance tradeoff in machine learning. Source: Pierian Data, Udemy class PyMLDSBC, Section 16 link. Udemy class link.
+
+A test result with a bias problem refers to a case where the true mean was totally missed by the machine learning model. A test result with a variance problem refers to a case where the machine learning predictions are too widely distributed to provide a meaningful indicator to the decision maker.
+
+bias-variance tradeoff
+
+Titanic Project (ML) DRAFT
+Passenger information from the Titanic ship is a common data set used in machine learning (ML). Here I use Python and data science libraries to find patterns in the data and build a prediction model. Then I use various visualization libraries to create pretty figures.
+
+View html version of Jupyter notebook: Titanic-NB-HTML
+Download from GitHub, full Jupyter notebook: GitHub Titanic-NB
+Tags: exploratory data analysis (EDA), machine learning (ML), graphics, logistic regression
+Data: https://www.kaggle.com/c/titanic/data: Kaggle Titanic data.
+Reference: Rossant, Cyrille, Ipython Interactive Computing and Visualization Cookbook, 2nd ed., Packt Publishing 2018, pp. 299-304.
+To be continued later.
+
+When do you know you have sufficient samples from a streaming data source?
+Answer: "It depends on the stability of your mean and standard deviation. By using the Central Limit Theorem, you can calculate the probability that you have sufficient data."
+Date: June 1, 2019
+I went to an NT Concepts talk this week, and an audience member asked a question, "When you are using a streaming data source, when do you know you have enough data?" I provided an audience answered to this question. I think the questioner was asking when we can have a reasonably high level of confidence that the sample data we are getting from the streaming data source is a good representation of the true population data. My answer was that, "From a statistics point of view, it depends on the stability of the sampled mean and sampled standard deviation over time. And I don't know the formula off the top of my head, but due to the Central Limit Theorem, there IS a formula that will allow one to calculate the probability that the streaming sampled data is [not representative of the true underlying data]". (That is, the streaming data you have collected so far is NOT representative of the true population, and you need to collect more samples.) I forgot to mention that the number of observations and number of features you are using also matters, as these influence the degrees of freedom you have in the statistical calculation. And that my emphasis on the stability of mean and standard deviation over time was an indirect reference to stationarity and independence of samples.
+
+In summary, this question seems to come straight out of the Central Limit Theorem. Given the sample mean, sample standard deviation, independence, and stability of volatility -- the probability of the sampled mean approaching the true population mean can be estimated. (This is usually stated as the sampled mean approaching the true mean of the "Gaussian" probability density function, or some other named probability density functions, such as binominal, log-normal, exponential, etc.). I tried to follow up with the questioner, but the email address she gave me had an error. Anyway, I thought it might make a good post. So I will explore it further and write a post about it with real-world streaming data.
+
+To be continued later.

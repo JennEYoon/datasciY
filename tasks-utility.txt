@@ -1,0 +1,43 @@
+# Tasks 8/2019 on Desktop  
+
+  ** .rtf file uploaded to github ** 
+      Text readable with format codes. 
+      Can edit, with manually added format codes. 
+
+fastai
+
+ * More practice setting up version 0.7
+    -  !curl command in unix, symbolic link in unix
+       (Unix home dir: version 1.0 setup, git repo full fastai)
+    -  similar options should be availabe for Windows OS
+       (Currently windows: v1.0 setup for GPU & CPU??)
+* CoLab works with v 1.0, on-Cloug & Google Drive.
+* CoLab -- test using with v 0.7 on Google?  Transfer to GDrive?
+
+Try AWS -- for v 0.7 & v 1.0
+
+CS231n
+
+ * Try setting up Google Cloud GCI -- have AMI machine setup?
+ * Have $300 credit that expires in few months, use it.
+ * Can create another one with different gmail account later.
+  -- Use Ubuntu
+ * CIFAR10 -- try fasai version, png format not binary, in Windows.
+
+Google Cloud -- free $300 credit for GPU -- use up this year 2019.
+ * Used datasciY.info@gmail.com -- same as google drive acct.
+ 
+Google CoLab also uses datasciY.info@gmail.com, linked to Google Drive. 
+
+AWS 3rd free trial, ends this year, datasciY.info@gmail.com
+AWS 2nd free trial, expired? - jyoon@10sigmarisk.com acct(wb>>$10tabs)
+
+Personal AWS -- mail@jenniferyoon.com acct.
+
+
+Audible my account
+
+* verify that current credits will last 1 year, then change to 12-credits per year model.  Or better yet, use up all credits and stop membership.
+
+
+
