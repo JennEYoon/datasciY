@@ -110,11 +110,13 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Word messed up my header, navigation bar, and footer formats.    
  * Next time -- just copy a text-only version into word, spell check, then copy back text-only version.  
  * DOES VS Code have spell checker for HTML?  That will ignore hteml tags?  
- * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  
+ * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  Done.
  
 #### Projects -- Visualization & AWS Lambda demo - Sept 2019.  
 
  * Priority items -- AWS Lambda demo, Ubuntu and Windows 10 base machines.  
  * Priority items -- Visualizations using financial data.  
+ * next items -- Numpy KNN, Srgsort.
+ * next item -- 3D Matplotlib option implied volatility surface plot.
    
 --- end ---  
