@@ -109,7 +109,7 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Completely messed up HTML formatting, WORD inseted a whole bunch of junk!   
  * Word messed up my header, navigation bar, and footer formats.    
  * Next time -- just copy a text-only version into word, spell check, then copy back text-only version.  
- * DOES VS Code have spell checker for HTML?  That will ignore hteml tags?  
+ * DOES VS Code have spell checker for HTML?  That will ignore html tags?  
  * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  Done.
  
 #### Projects -- Visualization & AWS Lambda demo - Sept 2019.  
