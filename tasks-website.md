@@ -116,7 +116,8 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
 
  * Priority items -- AWS Lambda demo, Ubuntu and Windows 10 base machines.  
  * Priority items -- Visualizations using financial data.  
- * next items -- Numpy KNN, Srgsort.
+ * next items -- Numpy KNN, Argsort.
  * next item -- 3D Matplotlib option implied volatility surface plot.
+ * next item -- Vanderplas chapter SkLearn.
    
 --- end ---  
