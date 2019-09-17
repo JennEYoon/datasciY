@@ -8,11 +8,6 @@
 
 I really enjoyed this class.  If you do most of the exercises from scratch in a new Jupyter notebook, instead of only watching the vieos, you will become a competent user of basic data science libraries (Jupyter notebook, iPython shell, Numpy, Pandas, Matplotlib and Scikit-Learn).  One of my friends found this class to be unfulfilling because it does not examine much math or the logic of  algorithms used in the libraries.  I like it just fine for quickly learning the most useful Python library commands for doing Machine Learning.  It's a simpler (and shorter) version of Jake VanderPlas's ***Python Data Science Handbook***.
 
-Jake Vanderplas Github Repo for book:  
-    https://github.com/jakevdp/PythonDataScienceHandbook
-
-![Cover Image](https://github.com/JennEYoon/datasciY/blob/master/wip2-classes/vanderplas/figures/PDSH-cover-small.png)
-
 ### Chapters with My Exercises  
 
 #### Part 1: Data Wrangling  
@@ -45,17 +40,25 @@ Jake Vanderplas Github Repo for book:
  * Chapter 25: Big Data with PySpark  
  * Chapter 26: Neural Nets Deep Learning (TensorFlow 1.10)  
 
-The Machine Learning section is especially brief.  It only gives brief glimpses of the main machine learning models in use.  You would need to go onto another book or class to become good enough to run the models yourself in a useful way.  It does cover all of the top models, so you can use it as a starting point for learning more about machine learning models.  
+#### Additional Resources for Machine Learning    
 
-Jake VanderPlas' excellent book has about 200 pages on Chapter 5 Machine Learning.  So it goes deeper than this Udemy class.  But even that book leaves something to be desired.  I recommend studying ***Introduction to Statisical Learning with R***, ***Elements of Statistical Learning***, ***Handson Machine Learning with Scikit-Learn, 2nd ed.***, ***Python Deep Learning, 2nd ed.***, or ***Deep Learning book***.  All of these books have exercises freely available online.  Some of them also have YouTube videos provided by authors.  
+This Udemy class' Machine Learning section is especially brief.  It only gives brief glimpses of the main machine learning models.  You would need to go onto another book or class to become good enough to run the models yourself in a useful way.  It does cover all of the top models, so you can use it as a starting point for learning more about machine learning models.  
 
- * ISLR Updated link to book
-   Gareth James et. al., _An Introduction to Statistical Learning: with Applications in R_ (c 2013)
-   https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about  
+Jake VanderPlas' excellent book has about 200 pages on machine learning.  So it goes deeper into machine learning than this Udemy class.  But even that book leaves something to be desired.  I recommend studying ***Introduction to Statisical Learning with R***, ***Elements of Statistical Learning***, ***Handson Machine Learning with Scikit-Learn, 2nd ed.***, ***Python Deep Learning, 2nd ed.***, or ***Deep Learning book***.  All of these books have exercises freely available online.  Some of them also have YouTube videos provided by authors.  
 
- * https://web.stanford.edu/~hastie/ElemStatLearn/  
+ * Jake Vanderplas book is a good companion to this Udemy class.   
+   Github Repo for book: https://github.com/jakevdp/PythonDataScienceHandbook   
+   ![Cover Image](https://github.com/JennEYoon/datasciY/blob/master/wip2-classes/vanderplas/figures/PDSH-cover-small.png)
 
- * https://icenamor.github.io/files/books/Hands-on-Machine-Learning-with-Scikit-2E.pdf  
+ * ISLR is an easy introduction to the entire field of machine learning.  It uses R instead of Python.  
+   Gareth James et. al., _An Introduction to Statistical Learning: with Applications in R_ (c 2013)  
+   https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about   
+
+ * ESL is an important historical book that covers the math and concept of machine learning.  
+   https://web.stanford.edu/~hastie/ElemStatLearn/  
+
+ * May be one of the best Python version of ISLR book.  
+   https://icenamor.github.io/files/books/Hands-on-Machine-Learning-with-Scikit-2E.pdf  
 
  * https://www.bokus.com/bok/9781789348460/python-deep-learning/  
 
