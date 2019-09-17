@@ -1,4 +1,9 @@
-## Udemy.com -- Python Data Science and Machine Learning Bootcamp  
+## Udemy.com -- Python Data Science and Machine Learning Bootcamp   
+
+### Author: Jennifer E Yoon in Leesburg, Virginia   
+
+#### Active Learning Period: 2019 March - July  
+
 ### My practice exercises  
 
 I really enjoyed this class.  If you do most of the exercises from scratch in a new Jupyter notebook, instead of only watching the vieos, you will become a competent user of basic data science libraries (Jupyter notebook/shell, numpy, pandas, matplotlib and sklearn).  One friend found this class to be unfulfilling because it does not examine much math or the logic of  algorithms used in the libraries.  I like it just fine for quickly learning the most useful Python library commands for doing Machine Learning.  It's a beginner version of Jake VanderPlas's Python Data Science Handbook.
@@ -6,32 +11,32 @@ I really enjoyed this class.  If you do most of the exercises from scratch in a 
 ### Chapters with My Exercises  
 
 #### Part 1: Data Wrangling  
- * Chapter 2: Numpy -- Matrix Operation   
- * Chapter 3 & 4: Pandas - Data wrangling  
- * Chapter 5: Matplotlib - Plotting   
- * Chapter 6: Seaborn - Plotting 
- * Chapter 7: Pandas Built-in Plotting
+ * Chapter 1 & 2: Introduction and Environment Setup      
+ * Chapter 3 & 4: Jupyter Notebook Overview & Python Primer  
+ * Chapter 5: Numpy Data Operations     
+ * Chapter 6 & 7: Pandas Data Operations  
  
-#### Part 2: Learning Models   
- * Chapter 14: K-Nearest Neighbor 
- * Chapter 15: Decision Trees & Random Forests
- * Chapter 16: Support Vector Machines (svm)
- * Chapter 17: K-Means Clustering
- * Chapter 18: Principal Compoenent Analysis (PCA)
-
-#### Date: 2019 February - 2019 June
-
-#### Author: Jennifer E Yoon in Leesburg, Virginia
-
-#### Tasks as of 8/3/2019   
-
- * Uploaded folders for numpy, pandas, matplotlib
- * To Do -- Edit my jupyter notebook solutions.  Clean up.
- * To Do -- Post to blog on datasciY.com
+#### Part 2: Plotting and Data Capstone Projects     
+ * Chapter 8: Matplotlib Plotting  
+ * Chapter 9: Seaborn Plotting
+ * Chapter 10: Pandas Built-in Plotting  
+ * Chapter 11: Plotly and Cufflinks Plotting  
+ * Chapter 12: Geographical Plotting    
+ * Chapter 13: Bank Stocks - Data Capstone Project    
+               Calls to 911 - Data Capstone Project  
  
- #### Duplicate Copy, 8/5/2019 8:38 PM  
-  * Copied from learn-mldl github repo to datasciY github repo.
- 
+#### Part 3: Learning Models   
+ * Chapter 18: K-Nearest Neighbor  
+ * Chapter 19: Decision Trees & Random Forests  
+ * Chapter 20: Support Vector Machines (svm)  
+ * Chapter 21: K-Means Clustering  
+ * Chapter 22: Principal Compoenent Analysis (PCA)  
+ * Chapter 23: Recommender Systems  
+ * Chapter 24: Natural Language Processing (NLP)  
+ * Chapter 25: Big Data with PySpark  
+ * Chapter 26: Neural Nets Deep Learning (TensorFlow 1.10)  
+
+
 ---------------------------------------------------------------------------------------
 
 #### Author Code for signing up for  
