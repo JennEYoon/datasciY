@@ -57,12 +57,12 @@ Jake VanderPlas' excellent book has about 200 pages on machine learning.  So it 
  * ESL is an important historical book that covers the math and concept of machine learning.  
    https://web.stanford.edu/~hastie/ElemStatLearn/  
 
- * May be one of the best Python version of ISLR book.  
+ * Hands-on Machine Learning may be one of the best Python version of the ISLR book.  
    https://icenamor.github.io/files/books/Hands-on-Machine-Learning-with-Scikit-2E.pdf  
 
- * https://www.bokus.com/bok/9781789348460/python-deep-learning/  
+ * Python Deep Learning 2nd ed., Packt: https://www.bokus.com/bok/9781789348460/python-deep-learning/  
 
- * https://www.deeplearningbook.org/  
+ * The Deeep Learning book: https://www.deeplearningbook.org/  
 
 
 ---------------------------------------------------------------------------------------
