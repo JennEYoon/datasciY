@@ -1,6 +1,14 @@
-# Tasks list for uploading Udemy Python examples to my website, datasciY.com.  
+# Tasks for uploading Udemy Python examples to my website, datasciY.com.  
 
-#### Date 9/17/2019 Tasks List  
+
+#### Task List as of 8/3/2019   
+
+ * Uploaded folders for numpy, pandas, matplotlib  
+ * To Do -- Edit my jupyter notebook solutions.  Clean up  
+ * To Do -- Post to blog on datasciY.com  
+
+
+#### Task List as of 9/17/2019    
 
  * Yesterday, reviewed Bank Stocks data download and plotting using Matplotlib, Pandas.  
    Example uses Google Finance.  See if this is still active for downloading stock prices.  
@@ -16,5 +24,6 @@
    Do 3D graphs using option implied vol surface.  
    Extend and add a bit of my market knowledge and analysis.  
    May be interesting to compare volatility surface during 2008 crash to 10 years later.  
-   
+
+ 
  --- end ---    
