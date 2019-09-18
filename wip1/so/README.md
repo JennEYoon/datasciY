@@ -50,3 +50,13 @@ excel.Application.Quit()
  * Show relative and absolute addressing in python.
  * Post on my website datasciY.com.
  
+#### Tasks Update as of 9/19/2019   
+
+ * Got 40 points from 1 question answer!  Same person seems to have seen my recent answer, and voted me up on 3 older answers.  array.array data types and bit and byte.  1 point newbie questioner.  Should be a duplicate of some other SO question.  
+ * Follow up on 1 question - numpy memory cache & buffer, 56 GB question.  
+   - Do some tests on my own machine.  Specify out=y_array.  
+   - Don't waste too much time doing follow up tech support.  I already answered her original questions.  
+ * Answer 1 more for this week.  Try for 500 pts.
+ * Got 15 pts for curses/ncurses package answer, 1.5 months AFTER I answered it!  
+ 
+ 
