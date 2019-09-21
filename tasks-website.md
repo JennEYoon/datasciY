@@ -74,22 +74,6 @@ Don't waste so much time on watching all kinds of videos and trying to learn dee
 
 I can spend 15-20% of my time on deeplearning.ai or fast.ai videos, since I find them interesting.  Do to take a break after spending 4-6 hours per day first on VanderPlas.  Forget about Stanford CS231n for now.  NOT taught well.  Not modern methods.  Do fast.ai deep learning part 2 -- foundations with tensor flow, if I want to learn under-the-hood, coding algorithms from scratch.  Also, can follow along Nathan's solutions for the class, without investing too much of my own time on getting the code details right.  
 
-
-#### Finance project ideas, date 9/20/2019.  
-
-Working on GARP FRM QA questions this week.  
-Refresh Copulas, Variable volatility chapters on Hull, 2018 copyright ebook.  
-Refresh Credit Risk -- current books, methods.  
-Refresh BASEL, FED Stress Test RESULTS from top banks -- write analysis about it.  
-Read Advanced in Financial ML book -- what is new?  
-Review MATZ book -- credit risk?  2008 crash?  
-
-Try downloading EIA.gov energy series data, and do visualizations using Bokeh and Plotly.  
-  * First plot stuff using Pandas and Matplotlib/Seaborn.  
-  * Vanderplas Matplotlib - more exercises with tickmarks, legends, 3D surface graphs, time series.
-  * Pandas - do SQL like groupby, time series, between time, interday trading data groupby.  
-     
- 
 #### Ubuntu, CoLab, fast.ai setup - Aug-Sept 2019.  
  * More practice setting up version 0.7
     -  !curl command in unix, symbolic link in unix
@@ -109,8 +93,32 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Completely messed up HTML formatting, WORD inseted a whole bunch of junk!   
  * Word messed up my header, navigation bar, and footer formats.    
  * Next time -- just copy a text-only version into word, spell check, then copy back text-only version.  
- * DOES VS Code have spell checker for HTML?  That will ignore html tags?  
+ * DOES VS Code have spell checker for HTML?  That will ignore html tags?  --Yes. Installed code spell checker.  Test to do.  
  * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  Done.
+ 
+#### Finance project ideas, date 9/15/2019.  
+
+Working on **GARP FRM QA** questions this week.  
+ * Done submitted 2 Questions 9/15/2019 midnight.  Didn't get any feedback as of 9/21.   
+ * Start writing more questions next week anyway.   
+ 
+Refresh Copulas, Variable volatility chapters on Hull, 2018 copyright ebook.  
+Refresh Credit Risk -- current books, methods.  
+Refresh BASEL, FED Stress Test RESULTS from top banks -- write analysis about it.  
+Read Advanced in Financial ML book -- what is new?  
+Review MATZ book -- credit risk?  2008 crash?  
+
+Try downloading EIA.gov energy series data, and do visualizations using Bokeh and Plotly.  
+  * First plot stuff using Pandas and Matplotlib/Seaborn.  
+  * Vanderplas Matplotlib - more exercises with tickmarks, legends, 3D surface graphs, time series.
+  * Pandas - do SQL like groupby, time series, between time, interday trading data groupby.  
+ 
+ #### Stack Overflow update 9/21/2019  
+ 
+ Got 522 pts!, 90 points from 3 answers.  
+  * Didn't take a long time to answer the questions, but spent a whole night thinking about 1 question.  Got totally messed up on my sleeping cycle again.  Try to partition my mind so I won't think about stuff when it's not productive, when I need to sleep regularly.  Forcefully wrest control of my mind off from one topics onto a different topic.    
+  * Add natural breaks into my night after 3 hours.  Force an off-switch.  
+ 
  
 #### Projects -- Visualization & AWS Lambda demo - Sept 2019.  
 
