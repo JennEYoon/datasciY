@@ -20,14 +20,17 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * Blog -- short posts, news and thoughts (supporting folder)
  
  * wip1 -- work-in-process folder, new materials and testing files.  
-   * udemy-ds -- data science boot camp class
-   * fastai -- deep learning, machine learning and math classes  
    * so -- stack overflow, my answers test files
  
  * wip2-classes -- work in process for classes, directly related to posts on website.  
- 
+    * udemy-ds -- data science boot camp class
+    * vanderplas -- my own exercises  
+    * ISLR/Bishop -- math and machine learning, my notes.  
+    
  * wip3-career -- work in process for career related files.  
- 
+    * GatAJob - Data Science Weekly  
+    * Udacity - career guide, GitHub guide  
+
 
 
 
