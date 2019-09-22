@@ -120,12 +120,15 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
   * Add natural breaks into my night after 3 hours.  Force an off-switch.  
  
  
-#### Projects -- Visualization & AWS Lambda demo - Sept 2019.  
+#### Projects.html -- Visualization & AWS Lambda demo - Sept 16, 2019 Update.  
 
  * Priority items -- AWS Lambda demo, Ubuntu and Windows 10 base machines.  
  * Priority items -- Visualizations using financial data.  
- * next items -- Numpy KNN, Argsort.
- * next item -- 3D Matplotlib option implied volatility surface plot.
- * next item -- Vanderplas chapter SkLearn.
+   * 3D Matplotlib option implied volatility surface plot.  
+   * Interactive graph, histogram, time series line chart - Plotly & Cufflinks.  
+   * Economic GPD per capita countries - Tableau.  
+ * next item -- Vanderplas chapter SkLearn.  
+ * next item -- VanderPlas Numpy -- finish p 60-90.  
+   * Ufunc, vertorized calc, argsort, knn.  
    
 --- end ---  
