@@ -1,0 +1,4 @@
+this is a test of github uploading.
+test1.txt file in datasciY repo root.
+
+9/24/2019 end. ---   s
