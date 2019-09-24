@@ -58,5 +58,9 @@ excel.Application.Quit()
    - Don't waste too much time doing follow up tech support.  I already answered her original questions.  
  * Answer 1 more for this week.  Try for 500 pts.
  * Got 15 pts for curses/ncurses package answer, 1.5 months AFTER I answered it!  
+ * Update 9/24/2019 - Got 50 pts from 56 GB Buffer asker on 2 questions!!! 522 pts now.  
+ * Look up reading and writing to file numpy array object, recreate buffer problem.  
+ * Also tie in with NASA questioner on saving data objects to file.  
+ 
  
  
