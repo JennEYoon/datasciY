@@ -5,3 +5,5 @@
   * GetAJob -- has Data Science Weekly book on getting a job in data science.  
   
     * Also copy of GlassDoor.com job descriptions, as of Jan 2019.
+ * PLOTLY VIDEO FINISHED?  
+ * DOWNLOADED DLAI CLASS4 WEEK4 datasets, images.
