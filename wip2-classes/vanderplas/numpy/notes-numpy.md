@@ -17,3 +17,13 @@ A = np.array(mylist)  # Convert list type to ndarray type.
 B = np.array(A[ind])  
 B = ["Tom", "Harry"]  
 
+```oython 
+  import numpy as np
+  mylist = ["Mary", "Tom", "Harry", "Moe"]
+  A = np.array(mylist)
+  ind = [1, 2]
+  B = np.array(A[ind])
+  print(B)
+  #(output)
+  >>>['Tom' 'Harry']
+```
