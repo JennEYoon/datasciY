@@ -13,7 +13,7 @@ B is stretched from [5] to [5, 5, 5]
 
 mylist = ["Mary", "Tom", "Harry", "Moe"]  
 ind = [1, 2]  
-A = np.array(mylist)  # Convert list type to ndarray type.
+A = np.array(mylist)  # Convert list type to ndarray type.  
 B = np.array(A[ind])  
 B = ["Tom", "Harry"]  
 
