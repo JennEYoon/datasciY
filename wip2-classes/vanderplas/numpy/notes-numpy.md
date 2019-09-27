@@ -11,9 +11,9 @@ B is stretched from [5] to [5, 5, 5]
 
 #### 1. Masks, Fancy Indexing  
 
-list = ["Mary", "Tom", "Harry", "Moe"]  
+mylist = ["Mary", "Tom", "Harry", "Moe"]  
 ind = [1, 2]  
-A = np.array(list)  # Convert list data to ndarray abject.
+A = np.array(mylist)  # Convert list type to ndarray type.
 B = np.array(A[ind])  
 B = ["Tom", "Harry"]  
 
