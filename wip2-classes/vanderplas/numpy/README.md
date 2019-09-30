@@ -13,6 +13,8 @@
 Currently doing ufunc, broadcasting, fancy indexing. 
 Remaining Boolean Masks, Sorting. Pages 60 to 96.  
 To Post - Writeup on datasciY.com this week.  
+Do not try to directly edit Jupyter Notebooks.  Even though JSON formatting, directly editing seems to corrupt file.
+VanderPlas 2.05 boxed image broadcasting example is correct in the notebook.  Numpy.ndarray is reshaped to allow broadcasting rules to work.  Note: When none of the dimension is 1, and the dimensions do not match, error is returned.  Broadcasting only stretches the smaller dimension if that dimension is 1.  (5, 3) + (3, 3) will produce an error.  (5, 3) + (3, 1) will be broadcast.  
 
 ### Notes - Andrew Ng DL.AI  
 
