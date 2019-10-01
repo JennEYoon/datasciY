@@ -62,5 +62,8 @@ excel.Application.Quit()
  * Look up reading and writing to file numpy array object, recreate buffer problem.  
  * Also tie in with NASA questioner on saving data objects to file.  
  
+ #### Tasks 9/30/2019  
  
- 
+* SO to update with loops -- Excel original question.  
+* SO numpy automatically naming arrays after its 3D position index.
+* 532 pts today. My earliest answer on boxplot was voted up, possibley by original questioner, who has 32 pts now, so can vote up.  
