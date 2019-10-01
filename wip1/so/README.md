@@ -68,4 +68,8 @@ excel.Application.Quit()
 * SO numpy automatically naming arrays after its 3D position index.  
   - Numpy structured data array is a possibility.  
   - Look at link in the Q. https://stackoverflow.com/questions/1373164/how-do-i-create-a-variable-number-of-variables  
+ - Numpy indexing ref: 
+   https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#arrays-indexing  
+
 * 532 pts today. My earliest answer on boxplot was voted up, possibley by original questioner, who has 32 pts now, so can vote up.  
+
