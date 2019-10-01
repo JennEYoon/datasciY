@@ -46,4 +46,5 @@ Can flatten the array, and name new arrays in one go based on binary number sche
 then make a array copy with value copied to new array with new name.  
 
 Try to do it in a vectorized calculation, one go without loops. 
+Create X number of (1 x 1) empty arrays first?
 """
