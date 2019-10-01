@@ -65,5 +65,7 @@ excel.Application.Quit()
  #### Tasks 9/30/2019  
  
 * SO to update with loops -- Excel original question.  
-* SO numpy automatically naming arrays after its 3D position index.
+* SO numpy automatically naming arrays after its 3D position index.  
+  - Numpy structured data array is a possibility.  
+  - Look at link in the Q. https://stackoverflow.com/questions/1373164/how-do-i-create-a-variable-number-of-variables  
 * 532 pts today. My earliest answer on boxplot was voted up, possibley by original questioner, who has 32 pts now, so can vote up.  
