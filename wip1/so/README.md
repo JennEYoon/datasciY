@@ -69,7 +69,7 @@ excel.Application.Quit()
   - Numpy structured data array is a possibility.  
   - Look at link in the Q. https://stackoverflow.com/questions/1373164/how-do-i-create-a-variable-number-of-variables  
     - Most recommend using a dictionary. 
-    - Others use list, or a system operaion.
+    - Others use list, or a system operation.
  - Numpy indexing ref: 
    https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#arrays-indexing  
 
