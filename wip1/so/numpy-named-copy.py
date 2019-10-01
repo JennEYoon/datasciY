@@ -31,3 +31,19 @@ Also if working with numpy, there may be a way to use its index attribute in a v
 
 Later, I will think of examples for both and update my answer if possible.
 """
+
+"""
+MEMO:  10/1/1029. 
+
+Use arr.copy() to create a separate array when naming them.
+For 2x2x2 array, use binary number scheme to name them, without looping over each item.
+Can be generalized to other dimensions, with number base manipulation.  3*x power for 3x3x3 array 3D.  
+self.shape[1] == 1, to test for dimension.  
+self.shape[0] to get 1st dimension size.
+
+self.size() to get total length flattened of the array.  
+Can flatten the array, and name new arrays in one go based on binary number scheme, 
+then make a array copy with value copied to new array with new name.  
+
+Try to do it in a vectorized calculation, one go without loops. 
+"""
