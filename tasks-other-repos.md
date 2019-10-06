@@ -13,11 +13,12 @@
   3. Sync changes from Source Repo, push to MyFork repo.  
      - ```git pull upstream <MASTER>, git push origin <MASTER>```  
      
-  4. Contribute to Original Repo, Pull Request from MyFork repo.  
-     - Open Bash, cd to folder, crate new-branch, commit changes to new-branch, push to MyFork.  
+  4. Contribute to Source Repo, Pull Request from MyFork repo.  
+     - Open Bash, cd to folder, create new-branch, commit changes to new-branch, push changes to MyFork.  
      - ```git branch <NEW-BRANCH>, git checkout <NEW-BRANCH>```
      - ```git add . , git commit -m "message" ```
-     - ```git push origin <NEW-BRANCH>```      
+     - ```git push origin <NEW-BRANCH>```  
+     - May also need to create New-Branch from online Github, on MyFork repo.
      - From online Github, button-prompt to create a Pull Request.  
   
      * May need to squash commits into one commit. May need to name new-branch with "issue#num". 
