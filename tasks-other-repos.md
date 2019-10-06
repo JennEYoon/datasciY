@@ -26,6 +26,7 @@
        
 #### My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
 
+---------------------------------------------------  
 
 #### dlaicourse repo - from LMoroney - Don't Merge.     
  - Different TensorFlow class on Coursera.  
