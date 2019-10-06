@@ -23,9 +23,11 @@
   
      * May need to squash commits into one commit. May need to name new-branch with "issue-number". 
        Follow maintainer's instructions.  
-     * My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
+       
+#### My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
 
-#### Don't Merge - dlaicourse repo from LMoroney.   
+
+#### dlaicourse repo - from LMoroney - Don't Merge.     
  - Different TensorFlow class on Coursera.  
 
 #### geosnap repo - volunteer to contribute, but commented a question.  
