@@ -16,13 +16,14 @@
   4. Contribute to Original Repo, Pull Request from MyFork repo.  
      - Open Bash, cd to folder, crate new-branch, commit changes to new-branch, push to MyFork.  
      - ```git branch <NEW-BRANCH>, git checkout <NEW-BRANCH>```
+     - ```git add . , git commit -m "message" ```
      - ```git push origin <NEW-BRANCH>```      
      - From online Github, button-prompt to create a Pull Request.  
   
-     * May need to squash commits into one commit.  May need to name new-branch with "issue#num".   
+     * May need to squash commits into one commit. May need to name new-branch with "issue#num". 
        Follow maintainer's instructions.  
   
-  My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
+     * My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
 
  * Don't Merge - dlaicourse repo from LMoroney.   
   - Different TensorFlow class on Coursera.  
