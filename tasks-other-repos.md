@@ -21,7 +21,7 @@
      - May also need to create New-Branch from online Github, on MyFork repo.
      - From online Github, button-prompt to create a Pull Request.  
   
-     * May need to squash commits into one commit. May need to name new-branch with "issue#num". 
+     * May need to squash commits into one commit. May need to name new-branch with "issue-number". 
        Follow maintainer's instructions.  
   
      * My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
