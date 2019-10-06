@@ -1,6 +1,6 @@
 # My Task Notes for other Repos.  
 
- * To merge updates, geosnap repo - done 10/5/2019 Saturday.  
+#### To merge updates, geosnap repo - done 10/5/2019 Saturday.  
   1. Fork on my account Github  
      - Log into my account Github, go to source github repo, click button to "Fork."  
   2. Create git repo locally on my computer     
@@ -23,16 +23,15 @@
   
      * May need to squash commits into one commit. May need to name new-branch with "issue-number". 
        Follow maintainer's instructions.  
-  
      * My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
 
- * Don't Merge - dlaicourse repo from LMoroney.   
-  - Different TensorFlow class on Coursera.  
+#### Don't Merge - dlaicourse repo from LMoroney.   
+ - Different TensorFlow class on Coursera.  
 
- * geosnap repo - volunteer to contribute, but commented a question.  
-  - Later install and try out software.  
-  - Part of University of California Riverside.  
-  - Part of PySal, a large python spatial analysis package.  
+#### geosnap repo - volunteer to contribute, but commented a question.  
+ - Later install and try out software.  
+ - Part of University of California Riverside.  
+ - Part of PySal, a large python spatial analysis package.  
    
- * inequality repo - small package, related to geosnap?  
-  - Part of PySal package.  
+#### inequality repo - small package, related to geosnap?  
+ - Part of PySal package.  
