@@ -131,4 +131,11 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * next item -- VanderPlas Numpy -- finish p 60-90.  
    * Ufunc, vertorized calc, argsort, knn.  
    
+#### Project.thml -- hid some planned projects.  
+
+ * Do shown projects - Level 1 - by Oct 20th.  
+ * Finish hidden projects - Level 2 - by Oct 30th.  Ready for PyDataNY.  
+ * Bank 7K balance until job.  
+ * Vacation - Dec to Jan - need a break from the death-march pace.  
+ 
 --- end ---  
