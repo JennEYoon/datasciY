@@ -36,5 +36,8 @@
  - Part of University of California Riverside.  
  - Part of PySal, a large python spatial analysis package.  
    
-#### inequality repo - small package, related to geosnap?  
+#### inequality repo - small package, related to geosnap? Only lossly. 
  - Part of PySal package.  
+ - Next week try it out along with geosnap.  
+ 
+ 
