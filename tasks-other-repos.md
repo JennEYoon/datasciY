@@ -31,8 +31,11 @@
 #### dlaicourse repo - from LMoroney - Don't Merge.     
  - Different TensorFlow class on Coursera.  
 
-#### geosnap repo - volunteer to contribute, but commented a question.  
+#### geosnap repo - volunteer to contribute - rec'd reply 1 week ago, to finish by Monday 10/14/2019.  
+
+ - review code, finish fix and PR.
  - Later install and try out software.  
+ ----------------  
  - Part of University of California Riverside.  
  - Part of PySal, a large python spatial analysis package.  
    
@@ -40,4 +43,6 @@
  - Part of PySal package.  
  - Next week try it out along with geosnap.  
  
+####  Hactoberfest, for repo for easy commit.  
+ - Finish by Tuesday 10/14/2019.  
  
