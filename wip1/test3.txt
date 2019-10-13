@@ -1,4 +1,0 @@
-Test of Github commits created online Github
-9/24/2019.  
-
-Test "merge" and "fetch" commands.  
