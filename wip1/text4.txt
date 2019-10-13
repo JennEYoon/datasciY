@@ -1,3 +1,0 @@
-Test of Github commit commands.
-test4.txt file created locally on laptop.
-9/24/2019.
