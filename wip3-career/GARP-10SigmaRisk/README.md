@@ -3,9 +3,9 @@
 #### GARP Oct 2019 Tasks:  
 
  * Read Chapters that were sent to me on QA.  
- * Read Hull, Risk Mgmet ebook, Chapter 11 and 12 on volatility and copula.  
+ * Read Hull, Risk Mgmet ebook, Chapter 11 and 12 on volatility and copula. 
  * Look at Feb 2019 white papers, downloaded to my iPad Air2 - black color.  
-   ---------------------
+      \---------------------
  * Wait for feedback on FRM questions.  Submitted 10/11/2019. 
  
 #### 10 Sigma Risk Tasks:  
