@@ -28,9 +28,6 @@
 
 ---------------------------------------------------  
 
-#### dlaicourse repo - from LMoroney - Don't Merge.     
- - Different TensorFlow class on Coursera.  
-
 #### geosnap repo - volunteer to contribute - rec'd reply 1 week ago, to finish by Monday 10/14/2019.  
 
  - review code, finish fix and PR.
@@ -38,11 +35,11 @@
  ----------------  
  - Part of University of California Riverside.  
  - Part of PySal, a large python spatial analysis package.  
-   
-#### inequality repo - small package, related to geosnap? Only lossly. 
- - Part of PySal package.  
- - Next week try it out along with geosnap.  
  
 ####  Hactoberfest, for repo for easy commit.  
  - Finish by Tuesday 10/14/2019.  
+ - Submitted 2 PR to my own SECdatapy - good. 
+ - 1 PR to Hactoberfest2019 - bad, not quality. 
+ - Do 2 PR to WCC Getting Started WSL branch.
+ - **Finish GeoSmap PR by tomorrow, 10/24/2019 TH -- Big One.**  
  
