@@ -1,2 +1,0 @@
-# All 3 notebooks renderer works!  10/25/2019 6:18 PM.
-Uploaded to datasciY repo, wip1 folder.  From local repo via git command line.
