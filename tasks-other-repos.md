@@ -39,7 +39,10 @@
 ####  Hactoberfest, for repo for easy commit.  
  - Finish by Tuesday 10/14/2019.  
  - Submitted 2 PR to my own SECdatapy - good. 
- - 1 PR to Hactoberfest2019 - bad, not quality. 
- - Do 2 PR to WCC Getting Started WSL branch.
+ - 1 PR to Hactoberfest2019 - bad, not qualify; later changed did qualify. 
+ - Do 2 PR to WCC Getting Started WSL branch. done 10/25/2019 Janelia Fall Fair.  
  - **Finish GeoSmap PR by tomorrow, 10/24/2019 TH -- Big One.**  
+   * Started reading description and source doe.  
+   * two parts, first one seems doable.  
+   
  
