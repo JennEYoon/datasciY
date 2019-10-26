@@ -1,5 +1,5 @@
 Github test, notebook still not render today, WCC too.
 10/25/2019 6:13 PM EST. 
-Notebooks rendered yesterday night, 10/24/2019.  WCC too.  Seems episodic.  
-Now no longer rendering again! 10/26/2019.  
+Notebooks rendered yesterday night, 10/25/2019.  WCC too.  Seems episodic.  
+Now rendering again 10/26/2019.  
 
