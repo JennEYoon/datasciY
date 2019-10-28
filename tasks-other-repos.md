@@ -14,6 +14,11 @@
        Follow maintainer's instructions.  
 
 ---------------------------------------------------  
+#### Hactoberfest 2019 Progress.  
+
+https://hacktoberfest.digitalocean.com/profile  
+Will pass review period on 10/31/2019 4:00 AM.  
+Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before me.  
 
 #### geosnap repo - volunteer to contribute
 
