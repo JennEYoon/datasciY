@@ -46,6 +46,17 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
      instructions received 10/7/2019 - Monday afternoon  
      21 days ago!  
      
+     
+  >awesome, thanks @JennEYoon! we dont have a contributor guide yet, thanks for raising that.
+
+#### Here are the details on this issue:
+
+we have a function that converts currency variables for inflation. When a user stores a longitudinal dataset like LTDB or NCDB in geosnap's database, the function that reads in the data sends the appropriate columns to the inflation adjuster function. Here is what that looks like for the LTDB reader. Notice that the **columns in the list** match the currency variables in the **ltdb column of variables.csv**. What still needs to be done are two things:
+
+1. verify that the **columns in inflate_cols on line 494** are all the currency variables in **LTDB**. This would mean going through each of the rows of **variables.csv** and looking for those variables that represent currency of some kind and making sure **each one is listed in inflate_cols**.
+
+2. copy logic similar to **lines 494-509** into the **store_ncdb function**, but making sure that the **inflate_cols** in this case match the currency variables from the **ncdb column in variables.csv**.  
+
 --- end --- 
  
      
