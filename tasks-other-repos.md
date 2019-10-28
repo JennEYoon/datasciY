@@ -44,5 +44,10 @@
  - **Finish GeoSmap PR by tomorrow, 10/24/2019 TH -- Big One.**  
    * Started reading description and source doe.  
    * two parts, first one seems doable.  
+   **Really need to finish GeoSnap PR.  10/28/2019 M.**  
+     - Do #1 today.  
+     - Finish #2 tomorrow. 
+     - Do PR Tuesday or Wednesday.  
+     
    
  
