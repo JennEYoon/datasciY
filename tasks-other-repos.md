@@ -36,5 +36,11 @@
      - Finish #2 tomorrow. 
      - Do PR Tuesday or Wednesday.  
      
-   
+   https://github.com/spatialucr/geosnap/issues/59  
+     Volunteer commit 10/5/2019 - Saturday 9pm.   
+     instructions received 10/7/2019 - Monday afternoon  
+     21 days ago!  
+     
+--- end --- 
  
+     
