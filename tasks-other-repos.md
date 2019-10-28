@@ -2,7 +2,7 @@
 
 #### To merge updates, geosnap repo - done 10/5/2019 Saturday.    
      
-  4. Contribute to Source Repo, Pull Request from MyFork repo.  
+   Contribute to Source Repo, Pull Request from MyFork repo.  
      - Open Bash, cd to folder, create new-branch, commit changes to new-branch, push changes to MyFork.  
      - ```git branch <NEW-BRANCH>, git checkout <NEW-BRANCH>```
      - ```git add . , git commit -m "message" ```
@@ -12,12 +12,10 @@
   
      * May need to squash commits into one commit. May need to name new-branch with "issue-number". 
        Follow maintainer's instructions.  
-       
-#### My notes on [Git-Fork-Branch](wip1/udacity-github/Git-Fork-Branch-memo.txt).  
 
 ---------------------------------------------------  
 
-#### geosnap repo - volunteer to contribute - rec'd reply 1 week ago, to finish by Monday 10/14/2019.  
+#### geosnap repo - volunteer to contribute
 
  - review code, finish fix and PR.
  - Later install and try out software.  
