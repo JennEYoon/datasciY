@@ -138,4 +138,9 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Bank 7K balance until job.  
  * Vacation - Dec to Jan - need a break from the death-march pace.  
  
+#### Update 10/27/2019 -- Matplotlib 3D row subplots done.  
+ * To write up and plot next week.  
+ * Finish PR geosnap. 
+ 
+ 
 --- end ---  
