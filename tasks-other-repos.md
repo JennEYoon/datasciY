@@ -1,17 +1,6 @@
 # My Task Notes for other Repos.  
 
-#### To merge updates, geosnap repo - done 10/5/2019 Saturday.  
-  1. Fork on my account Github  
-     - Log into my account Github, go to source github repo, click button to "Fork."  
-  2. Create git repo locally on my computer     
-     - Start Bash, cd to new folder, 
-     - ```git init, git clone <MYFORK-URL.git>```  
-     - Add remote upstream 
-     - ```git remote add upstream <SOURCE-URL.git>```  
-     * End up with two remotes, origin (MYFORK), upstream (SOURCE).  
-  
-  3. Sync changes from Source Repo, push to MyFork repo.  
-     - ```git pull upstream <MASTER>, git push origin <MASTER>```  
+#### To merge updates, geosnap repo - done 10/5/2019 Saturday.    
      
   4. Contribute to Source Repo, Pull Request from MyFork repo.  
      - Open Bash, cd to folder, create new-branch, commit changes to new-branch, push changes to MyFork.  
