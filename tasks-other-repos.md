@@ -36,6 +36,8 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
  - **Finish GeoSmap PR by tomorrow, 10/24/2019 TH -- Big One.**  
    * Started reading description and source doe.  
    * two parts, first one seems doable.  
+   * 10/25 Friday, ~4 h, read through source code, instructions again.
+   
    **Really need to finish GeoSnap PR.  10/28/2019 M.**  
      - Do #1 today.  
      - Finish #2 tomorrow. 
@@ -47,7 +49,7 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
      21 days ago!  
      
      
-  >awesome, thanks @JennEYoon! we dont have a contributor guide yet, thanks for raising that.
+### >awesome, thanks @JennEYoon! we dont have a contributor guide yet, thanks for raising that.  
 
 #### Here are the details on this issue:
 
