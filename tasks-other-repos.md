@@ -37,6 +37,9 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
    * Started reading description and source doe.  
    * two parts, first one seems doable.  
    * 10/25 Friday, ~4 h, read through source code, instructions again.
+   * 10/28 Monday - ~1h read instructions again, notebooks browse. 
+     - After Zoysia, 1.5h planted/dug 1st sheet.  
+   * 10/29 Tuesday -- working on it.  After Zoysia 2-3h.  
    
    **Really need to finish GeoSnap PR.  10/28/2019 M.**  
      - Do #1 today.  
@@ -45,7 +48,7 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
      
    https://github.com/spatialucr/geosnap/issues/59  
      Volunteer commit 10/5/2019 - Saturday 9pm.   
-     instructions received 10/7/2019 - Monday afternoon  
+     instructions **received 10/7/2019 - Monday** afternoon  
      21 days ago!  
      
      
