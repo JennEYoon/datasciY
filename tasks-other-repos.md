@@ -59,6 +59,17 @@ we have a function that converts currency variables for inflation. When a user s
 
 2. copy logic similar to **lines 494-509** into the **store_ncdb function**, but making sure that the **inflate_cols** in this case match the currency variables from the **ncdb column in variables.csv**.  
 
+Example notebooks: https://github.com/spatialucr/geosnap/tree/master/examples  
+
+geosnap has 4 modules: data, analyze, harmonize, visualize  
+
+Install instructions:  
+cd into cloned repo local.
+
+conda env create -f environment.yml
+conda activate geosnap 
+python setup.py develop
+
 --- end --- 
  
      
