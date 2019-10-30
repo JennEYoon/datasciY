@@ -39,12 +39,16 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
    * 10/25 Friday, ~4 h, read through source code, instructions again.
    * 10/28 Monday - ~1h read instructions again, notebooks browse. 
      - After Zoysia, 1.5h planted/dug 1st sheet.  
-   * 10/29 Tuesday -- working on it.  After Zoysia 2-3h.  
+   * 10/29 Tuesday - 1h review, 2h Zoysia 2 more sheets.  
+   * 10/30 Wednesday - 1h review, I think I finially figured out what needs to be done.  
+     Really, Really need to finish today!  After 2-3h Zoysia.  
    
    **Really need to finish GeoSnap PR.  10/28/2019 M.**  
      - Do #1 today.  
      - Finish #2 tomorrow. 
      - Do PR Tuesday or Wednesday.  
+     **Really, Really need to finish today, Wednesday 10/30.**  
+     I think I finally understand what I need to do to finish both parts.  
      
    https://github.com/spatialucr/geosnap/issues/59  
      Volunteer commit 10/5/2019 - Saturday 9pm.   
@@ -58,9 +62,15 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
 
 we have a function that converts currency variables for inflation. When a user stores a longitudinal dataset like LTDB or NCDB in geosnap's database, the function that reads in the data sends the appropriate columns to the inflation adjuster function. Here is what that looks like for the LTDB reader. Notice that the **columns in the list** match the currency variables in the **ltdb column of variables.csv**. What still needs to be done are two things:
 
-1. verify that the **columns in inflate_cols on line 494** are all the currency variables in **LTDB**. This would mean going through each of the rows of **variables.csv** and looking for those variables that represent currency of some kind and making sure **each one is listed in inflate_cols**.
+1. verify that the **columns in inflate_cols on line 494** are all the currency variables in **LTDB**. This would mean going through each of the rows of **variables.csv** and looking for those variables that represent currency of some kind and making sure **each one is listed in inflate_cols**.  
+
+  * function in data/data.py, inflate_cols (line 494 - 509)  
+  * LTDB column name in variables.csv -- look for currency of some kind, any missing from function defintion list?  
 
 2. copy logic similar to **lines 494-509** into the **store_ncdb function**, but making sure that the **inflate_cols** in this case match the currency variables from the **ncdb column in variables.csv**.  
+
+  * function in data/data.py, copy inflate_cols function into "store_ncdb" function definition.  
+  * Match definition list to NCDB column, currency of some kind, in variables.csv.  
 
 Example notebooks: https://github.com/spatialucr/geosnap/tree/master/examples  
 
