@@ -49,6 +49,10 @@ Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before m
      - Do PR Tuesday or Wednesday.  
      **Really, Really need to finish today, Wednesday 10/30.**  
      I think I finally understand what I need to do to finish both parts.  
+     - 10/31 Really need to finish today.  I go to Mrs Lee for hair in AM.  
+       Copy files to review while there.
+      * Finished Hactoberfest 6AM 10/31/2019 -- qualitifed for T-shirt.
+        Order filled out.  Women's XL heathered Navy color, with purple logo.  
      
    https://github.com/spatialucr/geosnap/issues/59  
      Volunteer commit 10/5/2019 - Saturday 9pm.   
