@@ -140,7 +140,10 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  
 #### Update 10/27/2019 -- Matplotlib 3D row subplots done.  
  * To write up and plot next week.  
- * Finish PR geosnap. 
- 
+ * Finish PR geosnap -- done 10/31/2019 9:30 PM submitted.
+   - Took a really long time, a whole week.  
+   - Difficult to learn new code base.  Difficult to figure out what is going on.  
+ * 11/1/2019 Friday -- to post finished Hactoberfest on my blog page, datasciY.com.  
+ * 11/1/2019 task -- to 3D plotting on my Projects page, datasciY.com.    
  
 --- end ---  
