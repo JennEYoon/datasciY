@@ -1,5 +1,7 @@
 # My Tasks for GARP or 10 Sigma Risk related items  
 
+Link to GARP folder, local: C:\gdrive\10SigmaRisk\GarpReadings   
+
 #### GARP Oct 2019 Tasks:  
 
  * Read Chapters that were sent to me on QA.  
