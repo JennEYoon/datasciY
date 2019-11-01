@@ -88,6 +88,14 @@ conda env create -f environment.yml
 conda activate geosnap 
 python setup.py develop
 
+#### Update 10/31/2019 9:50 PM  
+
+Finally finished PR for geosnap data.py.  Really difficult to figure out what is going on, even though it is a very simple Python file.  Had to read the instructions many, many times.  Sample was good for really getting what is going on.  There is no "currency exhange" involved.  Only USD Deflator and inflation adjustment in US dollars.  Very confusing because eli kept saying "add missing currency."  
+
+Got T-Shirt,  Finished before 10/31/2019 midnight, so will have another +1 bonus PR. 
+
+
+
 --- end --- 
  
      
