@@ -26,7 +26,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * wip2-career -- work in process for career related files.  
     * GatAJob - Data Science Weekly  
        - GlassDoor data science job desciptions, key word search.  
-    * Udacity - career guide, GitHub guide  
+    * Udacity - career guide, interview guide  
     * Build a Career in Data Science 
 
 
