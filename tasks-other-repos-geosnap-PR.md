@@ -19,6 +19,7 @@
 https://hacktoberfest.digitalocean.com/profile  
 Will pass review period on 10/31/2019 4:00 AM.  
 Probably won't get T-shirt.  150,000 signed up, more than 50,000 finish before me.  
+60, 408 people completed the challenge, so I was lucky to get a T-shirt with 10/24 date for last PR.  
 
 #### geosnap repo - volunteer to contribute
 
@@ -93,7 +94,7 @@ python setup.py develop
 Finally finished PR for geosnap data.py.  Really difficult to figure out what is going on, even though it is a very simple Python file.  Had to read the instructions many, many times.  Sample was good for really getting what is going on.  There is no "currency exhange" involved.  Only USD Deflator and inflation adjustment in US dollars.  Very confusing because eli kept saying "add missing currency."  
 
 Got T-Shirt,  Finished before 10/31/2019 midnight, so will have another +1 bonus PR. 
-
+Yes.  Got +2 bonus, on top of 4 required PRs.  
 
 
 --- end --- 
