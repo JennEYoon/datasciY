@@ -149,5 +149,6 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  ####  update 11/5/2019  
   * pydata nyc - shared website wih several other people.  
   * Time to finish Level 1 projects page.  
+  * geosnap received feedback.  Fix df with each year slice.  apply inflation separately.  How?
   
 --- end ---  
