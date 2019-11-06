@@ -146,4 +146,8 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * 11/1/2019 Friday -- to post finished Hactoberfest on my blog page, datasciY.com.  
  * 11/1/2019 task -- to 3D plotting on my Projects page, datasciY.com.    
  
+ ####  update 11/5/2019  
+  * pydata nyc - shared website wih several other people.  
+  * Time to finish Level 1 projects page.  
+  
 --- end ---  
