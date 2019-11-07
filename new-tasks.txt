@@ -1,0 +1,17 @@
+new tasks from PyData NY 2019. 11/7/2019  
+
+ * blog - finishing up Hactoberfest
+ * blog - first open-source commit to geosnap 
+
+ * Articles - Neural Style transfer paper link.
+   - brain segmentation links, paper & video, check w Bill.  
+
+ * Projects - Matplotlib - doing 2d and 3d subplots in row and vertical. 
+
+ * Projects - Hacking for Data Science takehome test. Bicycles.  
+   - To a fuller attempt and post online.  
+   - Get visualization template updated & use for all job interview tests.  
+   - Use tools, prebaked during test.  
+
+ * Projects - Testing talk. 
+
