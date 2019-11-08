@@ -2,15 +2,13 @@
 
 #### Date: July 21, 2019 5:42 AM EST
 
- - Create a local repo for datasciY.com development - done.
- - Upload current changes to Github  -- done.
- - Practice using Git commands: git push, stage, commit, pull, rebase - done.
- - Practice using Ubuntu Bash, WSL -- done.
- - IPython Cookbook has Bash tools section -- not needed.  
- - Use VS Code to manage git  - maybe?  
+ * Create a local repo for datasciY.com development - done.
    /-----------
- - Do IPython Cookbook ML chapter all.
- - Review Chris's blog, like code format.
+ * Do IPython Cookbook ML chapter all. - 11/8/2019 update.
+ * Finish Titanic notebook, do logistic regression. - 11/8/2019 update.  
+   - Find some way to personalize the project.  
+   - Extend it with other dataset, other boat drowning accidents in modern times?  
+
 
 #### Articles - July 21, 2019  
 
@@ -89,12 +87,6 @@ I can spend 15-20% of my time on deeplearning.ai or fast.ai videos, since I find
    
 #### Projects Content update - 9/13/2019.     
  * Working on updating content to projects page.  
- * Spell Checked with MS Word.  
- * Completely messed up HTML formatting, WORD inseted a whole bunch of junk!   
- * Word messed up my header, navigation bar, and footer formats.    
- * Next time -- just copy a text-only version into word, spell check, then copy back text-only version.  
- * DOES VS Code have spell checker for HTML?  That will ignore html tags?  --Yes. Installed code spell checker.  Test to do.  
- * To Do -- correct "project.html" page with new content, spell corrected, and copied back to original html format.  Done.
  
 #### Finance project ideas, date 9/15/2019.  
 
@@ -149,6 +141,6 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  ####  update 11/5/2019  
   * pydata nyc - shared website wih several other people.  
   * Time to finish Level 1 projects page.  
-  * geosnap received feedback.  Fix df with each year slice.  apply inflation separately.  How?
+  * geosnap received feedback.  Fix df with each year slice.  apply inflation separately.  How?  Need to have a very clear idea of what output is required from my code.  Right now I am fuzzy.  Hot a whole lot of help from maintainer.  Write tests install software and read through the whole example and documentation.  Figure out what is going on.  Then fix the small issue.  
   
 --- end ---  

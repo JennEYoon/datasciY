@@ -1,0 +1,1 @@
+sometimes jupyter notebook does not render.  save html static version.  save here to serve up to phones.  memo saying runnable code can be find at:  binder or colab with installed libraries.  AWS Lambda another option for runnable notebook.  

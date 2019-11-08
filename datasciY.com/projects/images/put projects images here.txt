@@ -1,0 +1,3 @@
+save images as png and svg.
+png is better for phone viewing and loading.  also inside html page svg does not load image.  html inside html.
+svg better for scalable image, better resolution.
