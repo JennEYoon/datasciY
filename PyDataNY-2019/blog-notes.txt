@@ -6,5 +6,7 @@ How to turn data into app.
 Note - use binder to show Jupyter notebook -- better and more reliable than Github, which is flakey on rendering noteboooks.  
 Web html pages -- can use Github.IO default webpage server, or post to my AWS Hosting site. 
 
-Linked IN - connect with Measles speaker.  Musa too?  
-https://pydata.org/nyc2019/speaker/profile/216/michal-mucha/
+Linked IN - connect with Measles speaker.-- no, too verbose.    
+https://pydata.org/nyc2019/speaker/profile/216/michal-mucha/  
+
+Connect with Barclays speakers, BarkDob speaker, Musa speaker.
