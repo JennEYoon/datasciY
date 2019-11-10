@@ -15,5 +15,5 @@ new tasks from PyData NY 2019. 11/7/2019
 
  * Projects - Testing talk. 
 
- * secdatapy joint profect - contact info in gmail datasciy.  
-   study github.  reach out and connect.  
+ * SECdataPy joint project - KEN contact info in gmail datasciy.
+   study his github. how to improve trading strategy? reach out and connect.  
