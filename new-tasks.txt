@@ -17,9 +17,11 @@ new tasks from PyData NY 2019. 11/7/2019
 
  * SECdataPy joint project - KEN contact info in gmail datasciy.
    study his github. how to improve trading strategy? reach out and connect.  
- * Post financial machine learning book on my blog.  Posted message to Slack, if he contacts me.  
+ * Post financial machine learning book on my blog.- done.
+ * Posted message to Slack, see if he contacts me.  done. 
  * Move photos from ipad and phone, combine.  Download talks and tutorials. combine.
  
  * Next Tuesday -- Meetup??  Have cold so not sure I can go.
  * Do lessons 2 notebooks.
+ * ADD REPLICATED data SCIENCE CHALLENGE TO MY PROJECTS PAGE?  
  
