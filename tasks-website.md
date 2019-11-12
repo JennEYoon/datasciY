@@ -123,7 +123,7 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * next item -- VanderPlas Numpy -- finish p 60-90.  
    * Ufunc, vertorized calc, argsort, knn.  
    
-#### Project.thml -- hid some planned projects.  
+#### Project.html -- hid some planned projects.  
 
  * Do shown projects - Level 1 - by Oct 20th.  
  * Finish hidden projects - Level 2 - by Oct 30th.  Ready for PyDataNY.  
@@ -143,4 +143,14 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
   * Time to finish Level 1 projects page.  
   * geosnap received feedback.  Fix df with each year slice.  apply inflation separately.  How?  Need to have a very clear idea of what output is required from my code.  Right now I am fuzzy.  Hot a whole lot of help from maintainer.  Write tests install software and read through the whole example and documentation.  Figure out what is going on.  Then fix the small issue.  
   
+#### Update 11/12/2019 This Week To Do  
+
+ 1. Get Level 1 Graphs up.  Gave out my website to people at PyData NY.  
+ 1. Next week - contact jobs from PyData NY.  More work on my Projects.html page.  
+ 1. 2 weeks from now -- Do some tutorials, replicate projects.  Post on my Projects page.  
+    - Extend with my own data if time allows.  
+ 1. Meetup - do week 4 notebooks, watch videos, read math book Bishop chapter 5.  
+ 
+
+
 --- end ---  
