@@ -150,7 +150,9 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  1. 2 weeks from now -- Do some tutorials, replicate projects.  Post on my Projects page.  
     - Extend with my own data if time allows.  
  1. Meetup - do week 4 notebooks, watch videos, read math book Bishop chapter 5.  
- 
-
+ 1. Skimmed -- Hundread Pages ML book.  Good summary of main ideas.
+---------  
+ * Contact more people from PyData, Linked In.  
+   Job Search Companies.  
 
 --- end ---  
