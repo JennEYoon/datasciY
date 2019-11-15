@@ -17,6 +17,9 @@ Date: Nov 14, 2019
      * Look for good sample data and deep learning /ML models.  
      * Job at IBM?  As data analyst or Junior data scientist?  
      * Has returning Moms launch-internship positions in data analyst role.
+
+Get a complimentary month of Coursera  join http://ibm.biz/ds-comm  
+  Signup with a different email, not JennEYoon@gmail.com  
      
   * AmenityAnalytics.com : Spot deception (fraud) in data - business and company financial reports.
     * Connects to Earnings Call transcripts, SEC filings, news, broker research.  
@@ -37,7 +40,11 @@ Date: Nov 14, 2019
     * Lots of SQL testing for Data Analyst/Scientist.
       Seems like as long as I can pass SQL tests I can get a job as a data analyst.  
       
-  * X... marketing firm - also SQL for Data Analyst jobs. 
-  
-  *
+  * Xander -  marketing firm - also SQL for Data Analyst jobs. Interface with Business.
+    xandr.att.jobs -- Associate, Data Scientist, NY, NY.  
+
+  * Applied Data Scientist role at StreetEasy (Zillow)
+    Not posted yet, email simonri@zillowgroup.com  
+
+
     
