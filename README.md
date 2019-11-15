@@ -4,13 +4,13 @@
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and data science libraries.  Some of the demos and articles are about tools and cloud compute services.  
 
 **Tags:**  
-**Topics:** python, data science, data analysis, machine learning, deep learning, visualization, financial modeling, economics, inequality  
+ * **Topics:** python, data science, data analysis, machine learning, deep learning, visualization, financial modeling, economics, inequality  
 
-**Services and Tools:** Jupyter Notebook, Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda.
+ * **Services and Tools:** Jupyter Notebook, Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda.
 
-**Python Libraries**: Jupyter (Lab and Notebook), NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, PyTorch, Keras, Plotly, Dash, Bokeh  
+ * **Python Libraries**: Jupyter (Lab and Notebook), NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, PyTorch, Keras, Plotly, Dash, Bokeh  
 
-**Other:** Excel (Pywin32 for Python interface), VBA, SQL, R (for statistics), Tableau (Reporting & Visualization)    
+ * **Other Software:** Excel (Pywin32 for Python interface), VBA, SQL, R (for statistics), Tableau (Reporting & Visualization)    
 
 #### Author: Jennifer E Yoon  
 
