@@ -12,11 +12,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   
  * ***Topics:*** python, data science, data analysis, machine learning, deep learning, visualization, financial modeling, economics, inequality  
 
- * ***Services and Tools:*** Jupyter Notebook, Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda.
+ * ***Services and Tools:*** Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda
 
  * ***Python Libraries:*** Jupyter (Lab and Notebook), NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, PyTorch, Keras, Plotly, Dash, Bokeh  
 
- * ***Other Software:*** Excel (Pywin32 for Python interface), VBA, SQL, R (for statistics), Tableau (Reporting & Visualization)    
+ * ***Other Software:*** Excel and Pywin32, VBA, SQL (MySQL and AWS Aurora), R (statistics), Tableau 
 
 #### Folder Structure  
 
