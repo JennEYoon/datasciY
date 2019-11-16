@@ -2,7 +2,22 @@
 
 Date: Nov 14, 2019  
 
-* BlueFire AI
+ * Ken, trading stragegies, SEC Edgar data, bond credit ratings data.  
+https://github.com/kenNicholaus/AI_Trade_Central  
+Kenneth.nicholaus@gmail.com
+
+Ken N <kenneth.nicholaus@gmail.com>
+https://github.com/kenNicholaus/AI_Trade_Central
+Kenneth Nicholaus Sumbit AI
+(photo may be of different person)
+
+Has lots of ideas about products, investing, Edgar default data?
+Review Gihub.  Ideas on how to take it further.  Web app for mobile Flutter, Flash for website.  
+
+Angels.co. For startup group?
+
+
+  * BlueFire AI
   * Samir Rath - CEO
     Met in person talked, Toronto open positions, Bill's contact. 
     Capital Markets investing firm, use ML.
@@ -32,7 +47,7 @@ Get a complimentary month of Coursera  join http://ibm.biz/ds-comm
     Franklin Marsh, Sr Applied Data Scientist, civisanalytics.com
     fmarsh@civisanalytics.com  815-761-0498
     
-  * Two Sigma - Jane Adams, Data Engineer - recruits Data Analysts.  NY HQ
+  * Two Sigma - Jane Adams, Data Engineer - recruits **Data Analysts** NY HQ
     Talked with Joe Kotlowski, Data Engineer.
     joe.kotlowski@twosigma.com 
     
@@ -46,5 +61,5 @@ Get a complimentary month of Coursera  join http://ibm.biz/ds-comm
   * Applied Data Scientist role at StreetEasy (Zillow)
     Not posted yet, email simonri@zillowgroup.com  
 
-
+  * BCG Data Offshoot, non-profit?  Help people.
     
