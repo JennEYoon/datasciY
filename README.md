@@ -10,13 +10,12 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 #### Tags  
   
- * ***Topics:*** python, data science, data analysis, machine learning, deep learning, visualization, financial modelling, economics
+ * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, financial derivatives, economics
 
- * ***Services and Tools:*** Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda
+ * ***Python Libraries:*** Python standard library, Jupyter Notebook, NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, Keras, Plotly, Dash, Bokeh 
+ 
+ * ***Other Software, Services and Tools:*** Excel and Pywin32, VBA, SQL (MySQL and Postgres), R (statistics), Tableau, Unix-Bash, VS Code, Google CoLab, Binder, AWS Lambda & EC2
 
- * ***Python Libraries:*** Jupyter (Lab and Notebook), NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, PyTorch, Keras, Plotly, Dash, Bokeh  
-
- * ***Other Software:*** Excel and Pywin32, VBA, SQL (MySQL and AWS Aurora), R (statistics), Tableau 
 
 #### Folder Structure  
 
