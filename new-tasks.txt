@@ -25,7 +25,12 @@ new tasks from PyData NY 2019. 11/7/2019
  * Move photos from ipad and phone, combine.  
  * Download talks and tutorials - all from PyDataNY, even ones I didn't go to. combine.
  
- * DLAI week 4 notebooks & videos/study.  Read math on gradient descent.  Bishop Chp 5.  
+ * Meetup - DLAI week 4 notebooks & videos/study.  
+   - Read math on gradient descent.  Bishop Chp 5.  
+   - Colette Deep Learning book - good for visual, MNist
+   - 3Blue 1Brown video - Neural Network, does MNist.  
+ 
+ * Meetup - Kate repo -- Flatiron classes -- look over to see what they teach.  
  
  ### Important:
  
