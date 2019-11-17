@@ -10,7 +10,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 #### Tags  
   
- * ***Topics:*** python, data science, data analysis, machine learning, deep learning, visualization, financial modeling, economics, inequality  
+ * ***Topics:*** python, data science, data analysis, machine learning, deep learning, visualization, financial modelling, economics
 
  * ***Services and Tools:*** Unix-Bash, Windows Subsystem for Linux (WSL), VS Code, Google CoLab, Binder, AWS Lambda
 
