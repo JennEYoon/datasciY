@@ -1,4 +1,8 @@
 /* Stylesheet dsy.css */
+
+
+/* Main body section */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -7,6 +11,15 @@ h1 {
     font-size: 40px; 
     color: white;
     text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #eb1010;
+    /* orange - deep */
+}
+
+.purple {
+    background-color: #b532d6;
 }
 
 .tagline {
@@ -23,28 +36,6 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     /* header bold line - unused */
-}
-
-h2, h3, h4, h5, h6 {
-    color: #eb1010;
-    /* orange - deep */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid gray;
-    margin: 0;
-    /* margin is clear area outside of border. */
-}
-
-.img-lg {
-    margin: 16px 16px 0 16px;
-    width: 95%;
-    max-width: 900px;
-    height: auto;
-    border: 1px solid gray;
-    /* top and left margin, away from text. */
 }
 
 header {
@@ -68,7 +59,9 @@ footer {
     background-color: purple;
 }
 
-/* Navigation Horizontal */
+
+/* Navigation Horizontal section */
+
 .nav-ul {
     list-style-type: none;
     margin: 0;
@@ -100,12 +93,10 @@ footer {
 
 .navhoriz {
     display: inline;
-    
 }
-/* End navigation styles. */
 
 
-/* Bio section with photo left, text on right layout. */
+/* Bio section with photo left, text on right layout. @ media for small screen below. */
 
 .grid-container {
     display: grid;
@@ -128,8 +119,7 @@ footer {
     margin-right: 16px;
 }
 
-/* If small scrren, grid-container break after photo. */
-
+/* If small screen, grid-container break after photo. */
 @media only screen and (max-width: 500px){  
     .grid-container {
         display: grid;
@@ -155,17 +145,34 @@ footer {
 
 }
 
-/* End bio section */
 
-
+/* Set maximum width on very large screens, so text won't be very long. */
 @media only screen and (min-width: 1000px){ 
     body {
         max-width: 1000px;
     }
 }
 
-.purple {
-    background-color: #b532d6;
+
+/* Image controls Section */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    margin: 0;
+    /* margin is clear area outside of border. */
+}
+
+.img-lg-ctr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 672px;
+    height: 380px;
+    border: 2px solid black;
+    /* width and height is 70% of 50% of 1920x1080 display */
+    /* HTML5 does not have "align: center". Use "display: block" */
 }
 
 .imglf {
@@ -175,14 +182,23 @@ footer {
     max-height: 250px;
 }
 
+.imglf-lg {
+    float: left;
+    margin: 0 16px 0 16px;
+    max-width: 90%;
+    border: 2px solid black;
+}
+
 .clearlf {
     clear: left;
 }
 
 .imgsm {
     float: left;
+    margin: 0 16px 0 16px;
     max-width: 165px;
     height: auto;
+    border: 2px solid black;
 }
 
 .imgmid {
@@ -193,8 +209,26 @@ footer {
 
 .imgtext {
     margin-left: 16px;
-
 }
+
+.imgrt {
+    float: right;
+    margin: 0 16px 0 16px;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.imgrt-lg {
+    float: right;
+    margin: 0 16px 0 16px;
+    max-width: 90%;
+    border: 2px solid black;
+}
+
+.clearrt {
+    clear: right; 
+}
+
 
 /* block quote section style */
 /* margin is clear area outside border, padding is inside colored. */

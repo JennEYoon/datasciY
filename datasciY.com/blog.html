@@ -34,7 +34,7 @@
 
 <section>
 
-    <h3>What's New?</h3>
+    <h2>What's New?</h2>
     <!-- separate section for "what's new"? Diff background color? -->
         <ul>
         <li>Author: Jennifer Yoon</li>    
@@ -42,7 +42,7 @@
         </ul>
     
     <!-- Template start     
-    <h4>Title h4</h4>       
+    <h3>Title h3</h3>       
         <ul>
         <li>Date:   </li>
         <li>Link:  <a href=""></a></li>    
@@ -52,7 +52,7 @@
     -->
    
 
-    <h4>PyData NY 2019 Conference</h4>	
+    <h3>PyData NY 2019 Conference</h3>	
         <ul>
         <li>Date:  November 4 - 6, 2019</li>    
         <li>Link:  <a href="https://pydata.org/nyc2019/schedule/">PyData NY Schedule</a></li>
@@ -62,8 +62,8 @@
         <p>I attended the PyData NY 2019 Conference this week.  It was a wonderful 
         learning opportunity.  I especially enjoyed the tutorials.  
         (See below my selfies at PyData and Time Square, New York City.)  </p> 
-        <img src="blog/assets/me-pydatany-2019.jpg" alt="Me at PyData" width="112" />
-        <img src="blog/assets/me-timesquare-2019.jpg" alt="Me at Time Square" width="200" />
+        <img src="blog/assets/me-pydatany-2019.jpg" alt="Me at PyData" style="height: 250px; margin-left: 16px; border: 2px solid black;" />
+        <img src="blog/assets/me-timesquare-2019.jpg" alt="Me at Time Square" style="height: 250px; margin-left: 16px; border: 2px solid black;" />
         
         <p><b>Tutorials of Note: </b>
         <ol><li>Interview prep talk, Hacking a data science challenge by Michoel Snow (<a href="https://            pydata.org/nyc2019/schedule/presentation/9/hacking-the-data-science-challenge/">Abstract 1 </a>        and <a href="https://github.com/michoelsnow/pydata_nyc_2019"> Github 1</a>), </li>
@@ -83,7 +83,7 @@
             <li>Stan: <a href="https://mc-stan.org/users/documentation/tutorials">package tutorials</a></li>
             </ul>
 
-            <div class="block-inset"><b>"Rethinking: Is Null hypothesis significance testing (NHST) falsificationist?</b>
+            <div class="block-inset"><b>"Rethinking: Is null hypothesis significance testing (NHST) falsificationist?</b>
             <br /> NHST is often identified with the falsificationist, or Popperian, philosophy of science. However, usually NHST is used to falsify a null hypothesis, not the actual research hypothesis. So the falsification is being done to something other than the explanatory model. This seems the reverse from Karl Popper’s philosophy.<b>"</b> (See Statistical Rethinking book, page 5.) </div>
 
         <!-- 
@@ -94,57 +94,58 @@
         render notebooks.  Github.io web server, can add repo as project, html pages auto-populated and served in browser.   </p> <p>Try reproducing the project on my own.  Use mainly Matplotlib.  Maybe Plotly as well as Bokeh. </p>
          -->
     
-    <h4>Advances in Financial Machine Learning book</h4>       
+    <h3>Advances in Financial Machine Learning book</h3>       
         <ul>
         <li>Date:  November 8, 2019</li>
         <li>Link:  <a href="https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089/ref=sr_1_1?crid=1SWX7D6AOQ961&keywords=advances+in+financial+machine+learning&qid=1573432753&sprefix=advances+in+f%2Caps%2C139&sr=8-1">Amazon book link</a></li>
         <li>Related attempt by others <a href="https://github.com/hudson-and-thames/mlfinlab">on Github </a></li>
         </ul>  
         <p>While I was at the NYC PyData Conference, I discussed a book for using 
-        Machine Learning to make money in 2019. The book is called <b>Advances in Financial Machine Learning</b>, by Marcos Lopez de Prado, c 2018 from Wiley. 
+        Machine Learning to make money in 2019. The book is called <b>Advances in Financial Machine Learning</b>, by Marcos Lopez de Prado, c 2018 from Wiley. </p>
+        <p><img class="imglf" src="http://datasciY.com/blog/assets/financial-ml-sm.jpg" alt="Financial ML book" width="200" style="border:1px solid black"/></a>
         It is a very opinionated book.  And I don't agree with many of the author's views.  
         But it offers an interesting look inside the mind of a hedge fund manager trying to use Machine Learning to make money in 2018.  The author pans natural language processing to conduct sentiment analysis on earnings calls or satellite image processing to obtain product delivery or sales quantity estimates.  The author thinks the low hanging fruit from those methods are gone.  He believes in processing raw trading data from the exchanges to discover trading fingerprints of humans vs algo traders, as well as other classes of traders.  This can be used to create spread trading strategies where one class of traders can be expected to outperform another class of traders, under specific economic conditions. The Machine Learning part is used to automate raw data processing, where huge volumes are processed for the small nuggets of silver.</p>  
         <p>The code used in book examples seem to be Python, but without PEP8 styling. A group of people have tried to translate the author's code examples into fully finished coding exercises. See Github link above.</p>
-            <a href="http://datasciY.com/blog/assets/financial-ml-lg.jpg" target="_blank">
-            <img src="http://datasciY.com/blog/assets/financial-ml-sm.jpg" alt="Books" width="260" 
-            style="border:4px solid red"/></a>
-
+        <p class="clearlf"> </p>
+  
         <p><b>Update on Long-Term Capital failure: </b> </p>
-        <p>Originally in my chat with other attendees at PyData NY where I discussed this book, I was also explaining my take on the Long-Term Capital failure, and why I thought that they failed in an unusual way.  Since then, I already got 2 posts from people commenting on the Slack channel about my book post.  In brief, I read in an article that Fisher Black told someone close that the reason he decided not to join Long-Term Capital was because he thought their strategy boiled down to shorting liquidity.  I have no way to verify whether he said this.  However, after many years of thinking about it, I came to agree that LT Capital failed primarily because they were short liquidity.  This is unusual.  Most failures are primarily due to market risk or credit risk.  Although almost all failures do have a liquidity risk component, this is a short-term effect caused by deteriorating asset values.  In most failures, the main invested assets are later discovered to be fundamentally flawed and loses significant value.  This did not happen in the LT Capital failure.  The fund ran out of time, but the bulk of the positions were later sold at a profit.  I was working at the SEC when LT Capital failed and was involved in the wrap up.  I think we can only have an imperfect understanding of what happened then, even though this case has been extensively studied and reported on.</p>
+        <p>Originally in my chat with other attendees at PyData NY where I discussed this book, I was also explaining my take on the Long-Term Capital failure, and why I thought that they failed in an unusual way.  Since then, I already got 2 posts from people commenting on the Slack channel.</p>
+        <p><img class="imgrt" src="blog/assets/LTCMbook.jpg" alt="Long-Term Capital book image" width="200" style="border:2px solid black">In brief, I read in an article that Fisher Black told someone close that the reason he decided not to join Long-Term Capital was because he thought their strategy boiled down to shorting liquidity.  I have no way to verify whether he said this.  However, after many years of thinking about it, I came to agree that LT Capital failed primarily because they were short liquidity.  This is unusual.  Most failures are primarily due to market risk or credit risk.  Although almost all failures do have a liquidity risk component, this is a short-term effect caused by deteriorating asset values.  In most failures, the main invested assets are later discovered to be fundamentally flawed and loses significant value.  This did not happen in the LT Capital failure.  The fund ran out of time, but the bulk of the positions were later sold at a profit.  I was working at the SEC when LT Capital failed and was involved in the wrap up.  I think we can only have an imperfect understanding of what happened then, even though this case has been extensively studied and reported on.</p>
+        <p>Incidentally, you may also be interested in the book, <b><i>When Genius Failed: The Rise and Fall of Long-Term Capital Management.</i></b> <a href="https://www.amazon.com/When-Genius-Failed-Long-Term-Management-dp-037550317X/dp/037550317X/ref=mt_hardcover?_encoding=UTF8&me=&qid=1573968710">Amazon link.</a></p>
+        <p class="clearrt"> </p>
 
 
-    <h4>Hactoberfest 2019</h4>
+    <h3>Hactoberfest 2019</h3>
         <ul>
         <li>Date:  October 1 - 31, 2019   </li>
         <li>Link:  <a href="https://hacktoberfest.digitalocean.com/">https://hacktoberfest.digitalocean.com</a></li>    
         <li>Link:  <a href="https://www.meetup.com/Women-Who-Code-DC/">Women Who Code DC</a></li>
         </ul>    
-        <p>Woohoo! It's Octoberfest for Hackers again.  Register and submit 4 pull requests.  
+        <p><a class="imgrt" href="blog/assets/Hactoberfest-2019.png" target="_blank">
+            <img src="blog/assets/Hactoberfest-2019.png" alt="" width="400" height="auto" 
+            style="border:2px solid red"/></a> 
+        Woohoo! It's Octoberfest for Hackers again.  Register and submit 4 pull requests.  
         Get started on creating a habit of frequent Github commits.  The first 50,000
         participants to finish gets a free T-shirt from Digital Ocean.  Last year, I got reacquainted with Github through this Hactoberfest and a little help from NOVA Women Who Code. </p>
-            <a href="blog/assets/Hactoberfest-2019.png" target="_blank">
-            <img src="blog/assets/Hactoberfest-2019.png" alt="" width="400" height="auto" 
-            style="border:2px solid black"/></a> 
 
 	    <p><b>Update: </b> I finished my four pull requests on October 25, 2019, and was able to get my Hactoberfest 2019 t-shirt from Digital Ocean. 
         This year about 60,000 people finished the challenge, and only the first 50,000 got t-shirts. So I was lucky to get one. (My t-shirt arrived yesterday, Nov 14, 2019, yeah!!!) </p>
         <p>I also submitted a pull-request to <b>geosnap</b>, which is a neighborhood economic analysis package.  I had more trouble with this repo because I am unfamiliar with the code base. See Github <a href="https://github.com/spatialucr/geosnap"><b>geosnap repo</b>.</a></p>
+        <p class="clearrt"> </p>
 
         
-    <h4>Understanding Convolutions - Otavio Good's talk on Word Lens</h4>    
+    <h3>Understanding Convolutions - Otavio Good's talk on Word Lens</h3>    
+
         <ul>
         <li>Date:  August 19, 2019 </li>
         <li>Otavio Good's talk on <a href="https://youtu.be/Oqm9vsf_hvU?t=266">Word Lens</a> at O'Reilly AI conference, Sept. 2017</li>
         <li>Fast.ai 2018 Deep Learning Part 1 <a href="http://course18.fast.ai/lessons/lesson3.html">Lesson 3</a></li>
         </ul>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Oqm9vsf_hvU?start=266" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>While studying deep learning with <strong>fast.ai</strong>, I came across a really good video that demonstrates a convolution in action.  In a convolution layer, a small grid crawls across the source image to produce an output image layer that is a combination of a source and a filter array.  Each small output area is a dot product of a small scanned input image area and the filter.  The filter (also called kernal) is most often a 3 x 3 array of numbers.  These frequently represent vertical, horizontal, or diagonal filters.  These filters themselves are products of previous machine learning steps.  Watch Otavio Good demonstrate how a convolutional layer recognizes the letter "<strong>A</strong>." </p>
-            
+        <p>While studying deep learning with <strong>fast.ai</strong>, I came across a really good video that demonstrates a convolution in action.  In a convolution layer, a small grid crawls across the source image to produce an output image layer that is a combination of a source and a filter array.  Each small output area is a dot product of a small scanned input image area and the filter.  The filter (also called kernal) is most often a 3 x 3 array of numbers.  These frequently represent vertical, horizontal, or diagonal filters.  These filters themselves are products of previous machine learning steps.  Watch Otavio Good demonstrate how a convolution layer recognizes the letter "<strong>A</strong>." </p>
         <p>Google acquired Word Lens app and the development team in May 2014. It's now part of Google Translate.  It can translate written signs and text (not hand writing) using your phone's camera in real-time.  It's really handy when travelling and trying to make sense of foreign language public signs on the street and at museums. ;-) </p>
+            <iframe src="https://www.youtube.com/embed/Oqm9vsf_hvU?start=266" class="img-lg-ctr" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <!-- <h4>Convolutions continued</h4>
+    <!-- <h3>Convolutions continued</h3>
         LATER: Turn Convolution Demo into a longer article, include face image sobel filter demo.  
          - Sorbel Filter, 
          - MNIST scaled to 1 and 0 from uint8 - 3 blue 1 brown video.
@@ -157,18 +158,16 @@
         For example, instead of the top line being (1, 1, 1) the middle weight is increased to (1, 2, 1).
     -->
 
-    <h4>My Books in August 2019</h4>    
-        <ul>
-        <li>Date:  August 15, 2019 </li>
-        </ul>
+    <h3>My Books in August 2019</h3>    
+        <p>
+        <a style="float: right;" href="http://datasciY.com/blog/assets/Books-9.2019-lg.jpg" target="_blank">
+            <img style="margin-left: 16px; border:2px solid red;"" src="http://datasciY.com/blog/assets/Books-9.2019-sm.jpg" alt="Books" width="500" /></a>
+        <ul> <li>Date:  August 15, 2019 </li> </ul>
+        This is the current state of my coding bookshelf.  On the top shelf there are financial coding, Python & R machine learning, coding interview, algorithms, and financial modeling books.  Bottom shelf has references for R and C++ coding, financial risk management, and statistics, probability, and stochastic calculus.  I like to study from several different books on the same topic.  I find that different authors have varying approaches, and they work best in combination.  Jake VanderPlas's <strong><em>Python Data Science Handbook</em></strong> (c 2017) is still my best book for learning Python data science libraries.  It's my go to book for Numpy, Matplotlib, Scikit-Learn, and Jupyter Notebook (for %magic and !shell commands).</p>
+        <p class="clearrt"></p>
 
-        <p>This is the current state of my coding bookshelf.  On the top shelf there are financial coding, Python & R machine learning, coding interview, algorithms, and financial modeling books.  Bottom shelf has references for R and C++ coding, financial risk management, and statistics, probability, and stochastic calculus.  I like to study from several different books on the same topic.  I find that different authors have varying approaches, and they work best in combination.  Jake VanderPlas's <strong><em>Python Data Science Handbook</em></strong> (c 2017) is still my best book for learning Python data science libraries.  It's my go to book for Numpy, Matplotlib, Scikit-Learn, and Jupyter Notebook (for %magic and !shell commands).</p>
 
-        <a href="http://datasciY.com/blog/assets/Books-9.2019-lg.jpg" target="_blank">
-        <img src="http://datasciY.com/blog/assets/Books-9.2019-sm.jpg" alt="Books" width="500" 
-        style="border:4px solid red"/></a>
-
-    <h4>Quantum Computing, 2019 National Academies Study</h4>
+    <h3>Quantum Computing, 2019 National Academies Study</h3>
 
         <div class="grid-container">  
         <img class="photo imgsm" src="http://datasciY.com/blog/assets/quantcomp_cover_sm.jpg" alt="Quantum Computing Report cover">
@@ -183,49 +182,49 @@
         </div>
         </div>
 
-    <h4>Easy Explanation on How A Quantum Computer Works</h4>
-        
-        <iframe width="530" height="300" style="margin-left:16px;" src="https://www.youtube.com/embed/g_IaVepNDT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Easy Explanation on How A Quantum Computer Works</h3>
+
+        <iframe class="imgrt-lg" width="530" height="300" src="https://www.youtube.com/embed/g_IaVepNDT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- original Youtube resolution 640 x 360 -->
         <ul>
         <li>Date:  March 20, 2019 </li>
         </ul>
-        <p>This is an old video dated 2013, but has an easy to understand explanation on how a quantum computer works.  2^n is the number of information bits that can theoretically be combined.  2^300 is supposed to be a greater number than the number of [atoms] in the universe.  But this is only useful for calculations that can make use of the super-position state.  Also, for reading the final result, the quantum computer must drop back out of the super-position state into the normal state.  For normal calculations, the quantum computer is projected to be slower than a regular computer.</p>
+        <p>
+        This is an old video dated 2013, but has an easy to understand explanation on how a quantum computer works.  2^n is the number of information bits that can theoretically be combined.  2^300 is supposed to be a greater number than the number of [atoms] in the universe.  But this is only useful for calculations that can make use of the super-position state.  Also, for reading the final result, the quantum computer must drop back out of the super-position state into the normal state.  For normal calculations, the quantum computer is projected to be slower than a regular computer.</p>
+        <p class="clearrt"> </p><br />
+        
 
-    <h4>Beginning of Probability Measure Theory</h4>
+    <h3>Beginning of Probability Measure Theory</h3>
 
         <ul>
         <li>Date:  March 20, 2019 </li>
         </ul>
         <p>I think one of the most confusing and difficult part of learning probability measure theory comes at the very beginning!  Obviously this project is going to be very opinionated.  :-)  DeMorgan's Laws and other rules for calculating probabilities, which comes after the beginning, are not that different from normal algebra.  I think most people can follow along and understand the other parts, if they do not make the mistake of getting forever stuck on the starting definitions!  We need to rename "probability space", "sigma-algebra", and all those greek letters, to something more English-like and easier to remember.  Anyway, I plan to post a very opinionated translation from Greek-Math-speak to Normal-English-speak. </p>
 
-    <h4>k-Means Clustering Talk</h4>
+    <h3>k-Means Clustering Talk</h3>
 
-        <div class="grid-container">  
-            <img class="photo imgsm" src="http://datasciY.com/blog/assets/ISLR_cover_sm.jpg" alt="ISLR book cover">
-
-            <div class="text">
-            <ul>
-            <li>Date:  March 12, 2019 </li>
-            <li><a href="http://datasciY.com/blog/k-Means-3.2019.docx">My k-Means Clustering</a> talk file, part of Chapter 10.</li>
-            <li>Meetup group: <a href="https://www.meetup.com/Data-Science-Machine-Learing-Collaborative-Learning-Group/">Data Science and Machine Learning CLG</a></li>
-            <li>Next Meetup: Convolutional Neural Networks for Visual Recognition, by Stanford University, Chp 1 and 2. <a href="http://cs231n.stanford.edu/">CS231n</a></li>
-            <li>Reference:  Gareth James et al., An Intro to Stat Learn with R. <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR-website</a></li>
-            </ul>
-            </div>
-        </div>
+        <p><img class="imgrt" src="http://datasciY.com/blog/assets/ISLR_cover_sm.jpg" alt="ISLR book cover">
+        <ul><li>Date:  March 12, 2019 </li>
+        <li><a href="http://datasciY.com/blog/k-Means-3.2019.docx">My k-Means Clustering</a> talk file, part of Chapter 10.</li>
+        <li>Meetup group: <a href="https://www.meetup.com/Data-Science-Machine-Learing-Collaborative-Learning-Group/">Data Science and Machine Learning CLG</a></li>
+        <li>Next Meetup: Convolutional Neural Networks for Visual Recognition, by Stanford University, Chp 1 and 2. <a href="http://cs231n.stanford.edu/">CS231n</a></li>
+        <li>Reference:  Gareth James et al., An Intro to Stat Learn with R. <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR-website</a></li>
+        </ul></p>
+   
 
         <p>I gave my first short talk on a data science subject to a local Meetup group this week.  Here's a shout-out to the group, 
         <a href="https://www.meetup.com/novadeeplearning/events/258744894/">Serious Data Science</a>.  Thanks Deborah, Julius, Elsa, Peter, Dan and others.  You guys are so supportive and kind!  I don't think I would have read the ISLR book with such attention without all of you helping to keep my motivation high!  :-)  If you, Reader, live near Sterling, Virginia, please come and join this wonderful Meetup group.  We meet monthly on the 2nd Tuesday evenings at REI Systems Inc building.</p>
+        <p class="clearrt"> </p>
 
-    <h4>GARP 20th Conference in NYC</h4>
+
+    <h3>GARP 20th Conference in NYC</h3>
 
         <ul>
         <li>Date: February 24 - 27, 2019</li>
         </ul>	
 		<p>I will be in NYC attending the 20th GARP Risk Conference.  The agenda has several sessions on machine learning and AI along with the usual risk topics.  I am interested in learning more about how data science and AI is being using by financial institutions.  I will also catch up with my former colleagues from the SEC while I am there.  Glad the scheduling worked out.</p>
 	
-	<h4>PyData DC 2018 and SciPy Austin 2018</h4>
+	<h3>PyData DC 2018 and SciPy Austin 2018</h3>
 
         <ul>
         <li>Date: November 20, 2018</li>
