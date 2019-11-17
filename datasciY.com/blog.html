@@ -55,35 +55,37 @@
     <h4>PyData NY 2019 Conference</h4>	
         <ul>
         <li>Date:  November 4 - 6, 2019</li>    
-        <li>Link:  <a href="https://pydata.org/nyc2019/schedule/">Schedule</a></li>
-        <li>Link Alt:  <a href="blog/PyData New York City 2019 - Conference Schedule.html">Schedule Saved</a></li>
+        <li>Link:  <a href="https://pydata.org/nyc2019/schedule/">PyData NY Schedule</a></li>
+        <li>Link Alt:  <a href="blog/PyData New York City 2019 - Conference Schedule.html">PyData NY Schedule Saved</a></li>
         </ul>
 
         <p>I attended the PyData NY 2019 Conference this week.  It was a wonderful 
         learning opportunity.  I especially enjoyed the tutorials.  
-        I will write a longer article about it later.  </p>
+        (See below my selfies at PyData and Time Square, New York City.)  </p> 
+        <img src="blog/assets/me-pydatany-2019.jpg" alt="Me at PyData" width="112" />
+        <img src="blog/assets/me-timesquare-2019.jpg" alt="Me at Time Square" width="200" />
         
-        <p>The tutorials of note were:
-        <ol>
-            <li>Interview prep talk, Hacking a data science challenge by Michoel Snow (<a href="https://pydata.org/nyc2019/schedule/presentation/9/hacking-the-data-science-challenge/">Abstract 1</a> and <a href="https://github.com/michoelsnow/pydata_nyc_2019"> Github 1</a>), </li>
+        <p><b>Tutorials of Note: </b>
+        <ol><li>Interview prep talk, Hacking a data science challenge by Michoel Snow (<a href="https://            pydata.org/nyc2019/schedule/presentation/9/hacking-the-data-science-challenge/">Abstract 1 </a>        and <a href="https://github.com/michoelsnow/pydata_nyc_2019"> Github 1</a>), </li>
             
             <li>Unit testing talk, From Raw Recruit Scripts to Perfect 
             Python in 90 minutes, by Stanley van der Merwe and Petr Wolf (<a href="https://pydata.org/nyc2019/schedule/presentation/14/from-raw-recruit-scripts-to-perfect-python-in-90-minutes/">Abstract 2,</a> <a href="https://github.com/PetrWolf/pydata_nyc_2019/blob/master/tutorial.pdf">tutorials-pdf,</a> and <a href="https://github.com/PetrWolf/pydata_nyc_2019">Github 2</a>), and</li>
 
             <li>Visualizing the 2019 Measles Outbreak in NYC (<a href="https://pydata.org/nyc2019/schedule/presentation/33/visualizing-the-2019-measles-outbreak-in-nyc-with-python/">Abstract 3</a> and <a href="https://carlos-afonso.github.io/measles/">Github 3</a>).</li>
-        </ol>
-        </p>
+        </ol></p>
 
-        
-        <p>I also heard about a Bayesian approach to Statistical Inference that 
-        sounded interesting.  There is a free YouTube class using R and Stan library. 
-        (<a href="https://mc-stan.org/users/documentation/tutorials">Stan Tutorials</a>)</p>
+        <p><b>Bayesian Statistics: </b></p>
+        <p>I also heard about a new Bayesian approach to Statistical Inference that 
+        sounded interesting.  There is a free class taught by Professor Richard McElreath, <b><i>Statistical Rethinking: A Bayesian Course with Examples in R and Stan.</i></b>  I had a friend who was doing his PhD on the Bayesian Approach to Statistics.  What I remember is that this approach makes a richer use of prior knowledge and estimates and finds ways to use them directly in the statistical model.  Professor McElreath emphasizes that being able to reject a null hypothesis does not necessarily lead to our goal of positively accepting our research hypothesis.</p>
+            <ul><li>Github: <a href="https://github.com/rmcelreath/statrethinking_winter2019">statrethinking_winter2019</a></li>
+            <li>Book: <a href="blog/Statistical Rethinking 2nd ed.pdf">Statistical Rethinking 2nd ed.</a></li>
+            <li>Video: <a href="https://www.youtube.com/playlist?list=PLDcUM9US4XdNM4Edgs7weiyIguLSToZRI">Playlist Winter 2019</a></li>
+            <li>Stan: <a href="https://mc-stan.org/users/documentation/tutorials">package tutorials</a></li>
+            </ul>
 
+            <div class="block-inset"><b>"Rethinking: Is Null hypothesis significance testing (NHST) falsificationist?</b>
+            <br /> NHST is often identified with the falsificationist, or Popperian, philosophy of science. However, usually NHST is used to falsify a null hypothesis, not the actual research hypothesis. So the falsification is being done to something other than the explanatory model. This seems the reverse from Karl Popper’s philosophy.<b>"</b> (See Statistical Rethinking book, page 5.) </div>
 
-        <p>Photos of me at PyData and Time Square, New York City.  </p> 
-        <img src="blog/assets/me-pydatany-2019.jpg" alt="Me at PyData" width="112" />
-        <img src="blog/assets/me-timesquare-2019.jpg" alt="Me at Time Square" width="200" />
-            
         <!-- 
         <p>Bokeh and Matplotlib - NYC Measles Outbreak, 2019, presentation.  
         https://github.com/carlos-afonso/measles/blob/master/pydata-nyc-2019/notebooks/nyc-measles-cases-by-neighborhood-final.ipynb  
@@ -103,12 +105,13 @@
         It is a very opinionated book.  And I don't agree with many of the author's views.  
         But it offers an interesting look inside the mind of a hedge fund manager trying to use Machine Learning to make money in 2018.  The author pans natural language processing to conduct sentiment analysis on earnings calls or satellite image processing to obtain product delivery or sales quantity estimates.  The author thinks the low hanging fruit from those methods are gone.  He believes in processing raw trading data from the exchanges to discover trading fingerprints of humans vs algo traders, as well as other classes of traders.  This can be used to create spread trading strategies where one class of traders can be expected to outperform another class of traders, under specific economic conditions. The Machine Learning part is used to automate raw data processing, where huge volumes are processed for the small nuggets of silver.</p>  
         <p>The code used in book examples seem to be Python, but without PEP8 styling. A group of people have tried to translate the author's code examples into fully finished coding exercises. See Github link above.</p>
+            <a href="http://datasciY.com/blog/assets/financial-ml-lg.jpg" target="_blank">
+            <img src="http://datasciY.com/blog/assets/financial-ml-sm.jpg" alt="Books" width="260" 
+            style="border:4px solid red"/></a>
 
-        <p><b>Update on Long-Term Capital failure: </b> Originally in my chat with other attendees at PyData NY where I discussed this book, I was also explaining my take on the Long-Term Capital failure, and why I thought that they failed in an unusual way.  Since then, I already got 2 posts from people commenting on the Slack channel about my book post.  In brief, I read in an article that Fisher Black told someone close that the reason he decided not to join Long-Term Capital was because he thought their strategy boiled down to shorting liquidity.  I have no way to verify whether he said this.  However, after many years of thinking about it, I came to agree that LT Capital failed primarily because they were short liquidity.  This is unusual.  Most failures are primarily due to market risk or credit risk.  Although almost all failures do have a liquidity risk component, this is a short-term effect caused by deteriorating asset values.  In most failures, the main invested assets are later discovered to be fundamentally flawed and loses significant value.  This did not happen in the LT Capital failure.  The fund ran out of time, but the bulk of the positions were later sold at a profit.  I was working at the SEC when LT Capital failed and was involved in the wrap up.  I think we can only have an imperfect understanding of what happened then, even though this case has been extensively studied and reported on.</p>
+        <p><b>Update on Long-Term Capital failure: </b> </p>
+        <p>Originally in my chat with other attendees at PyData NY where I discussed this book, I was also explaining my take on the Long-Term Capital failure, and why I thought that they failed in an unusual way.  Since then, I already got 2 posts from people commenting on the Slack channel about my book post.  In brief, I read in an article that Fisher Black told someone close that the reason he decided not to join Long-Term Capital was because he thought their strategy boiled down to shorting liquidity.  I have no way to verify whether he said this.  However, after many years of thinking about it, I came to agree that LT Capital failed primarily because they were short liquidity.  This is unusual.  Most failures are primarily due to market risk or credit risk.  Although almost all failures do have a liquidity risk component, this is a short-term effect caused by deteriorating asset values.  In most failures, the main invested assets are later discovered to be fundamentally flawed and loses significant value.  This did not happen in the LT Capital failure.  The fund ran out of time, but the bulk of the positions were later sold at a profit.  I was working at the SEC when LT Capital failed and was involved in the wrap up.  I think we can only have an imperfect understanding of what happened then, even though this case has been extensively studied and reported on.</p>
 
-        <a href="http://datasciY.com/blog/assets/financial-ml-lg.jpg" target="_blank">
-        <img src="http://datasciY.com/blog/assets/financial-ml-sm.jpg" alt="Books" width="260" 
-        style="border:4px solid red"/></a>
 
     <h4>Hactoberfest 2019</h4>
         <ul>
@@ -119,14 +122,14 @@
         <p>Woohoo! It's Octoberfest for Hackers again.  Register and submit 4 pull requests.  
         Get started on creating a habit of frequent Github commits.  The first 50,000
         participants to finish gets a free T-shirt from Digital Ocean.  Last year, I got reacquainted with Github through this Hactoberfest and a little help from NOVA Women Who Code. </p>
+            <a href="blog/assets/Hactoberfest-2019.png" target="_blank">
+            <img src="blog/assets/Hactoberfest-2019.png" alt="" width="400" height="auto" 
+            style="border:2px solid black"/></a> 
 
 	    <p><b>Update: </b> I finished my four pull requests on October 25, 2019, and was able to get my Hactoberfest 2019 t-shirt from Digital Ocean. 
-        This year about 60,000 people finished the challenge, and only the first 50,000 got t-shirts. So I was lucky to get one. </p>
-        <p>I also submitted a pull-request to <b>geosnap</b>, which is a neighborhood economic analysis package.  I had more trouble with this repo because I am unfamiliar with the code base. See <a href="https://github.com/spatialucr/geosnap"> Github <b>geosnap</b> repo.</a></p>
-	
-        <a href="blog/assets/Hactoberfest-2019.png" target="_blank">
-        <img src="blog/assets/Hactoberfest-2019.png" alt="" width="400" height="auto" 
-        style="border:2px solid black"/></a> 
+        This year about 60,000 people finished the challenge, and only the first 50,000 got t-shirts. So I was lucky to get one. (My t-shirt arrived yesterday, Nov 14, 2019, yeah!!!) </p>
+        <p>I also submitted a pull-request to <b>geosnap</b>, which is a neighborhood economic analysis package.  I had more trouble with this repo because I am unfamiliar with the code base. See Github <a href="https://github.com/spatialucr/geosnap"><b>geosnap repo</b>.</a></p>
+
         
     <h4>Understanding Convolutions - Otavio Good's talk on Word Lens</h4>    
         <ul>
