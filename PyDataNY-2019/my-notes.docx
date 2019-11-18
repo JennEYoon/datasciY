@@ -2,6 +2,11 @@
 
 November 14, 2019 start.  
 
+ * Measles -- I should be able to present something like this as a tutorial.  
+ * Idea - Create my own version using stock prices/trading, or with inequality.  
+https://carlos-afonso.github.io/measles/ -- blog
+https://github.com/carlos-afonso/measles -- repo
+
 * Bokeh app -- Musa
 https://hub.gke.mybinder.org/user/michamucha-pyda-c-visualization-rd96skxy/tree  
 How to turn data into app.
@@ -12,9 +17,7 @@ Bokeh works well with html pages.
 
 App -- quantstack.net (or quanstack.net?) quansite -- UK? NumFocus founder?
 vuetify & panel --  notebooks
-voila & ipywidgets - notebook
-
-Linked IN - connect with Measles speaker.-- no, too verbose.    
+voila & ipywidgets - notebook 
 https://pydata.org/nyc2019/speaker/profile/216/michal-mucha/  
 
 Connect with Barclays speakers, BarkDob speaker, Musa speaker.
