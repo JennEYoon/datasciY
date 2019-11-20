@@ -13,7 +13,7 @@ Want to finish by this week:
  
 
 
-##2.  Important, Not Time Relevent   
+## 2.  Important, Not Time Relevent   
 
 #### Week of 11/5/2019 Tasks - Important  
 
