@@ -2,9 +2,9 @@
 
 #### Date: July 21, 2019 5:42 AM EST
 
- * Create a local repo for datasciY.com development - done.
+ * Create a local repo for datasciY.com development - done.  
    /-----------
- * Do IPython Cookbook ML chapter all. - 11/8/2019 update.
+ * Do IPython Cookbook ML chapter - hold.  Nov 2019.  
  * Finish Titanic notebook, do logistic regression. - 11/8/2019 update.  
    - Find some way to personalize the project.  
    - Extend it with other dataset, other boat drowning accidents in modern times?  
@@ -12,50 +12,13 @@
 
 #### Articles - July 21, 2019  
 
- - Neural Style tranfer and Brain Gready GAN - find links and finished article
- 
-#### Projects - July 21, 2019   
-
- - AWS Lambda Tutorial
-   * Simple demo for Ubuntu machines and Windows x64 bit machine on Amazon
-   * Layers for numpy, scikit-learn, matplotlib
-   * separate layer for pandas and datareader -- too big to include in one layer.
-   * Base layer only have Python 3.7 and Jupyter notebook/shell.
-   * Add a test and documentation layer later.
-
-#### This week, focus on CNN, cs231n, deeplearning.ai - 7/29/2019.  
-
-#### Date: July 29, 2019 3:00 PM  
-
- - Done datasciY.com local master repo  
-   path>> /mnt/c/python/github/dsy/datasciY
-   (base) jyoon@Asus-S510:/mnt/c/python/github/dsy/datasciY$  
-   Deleted temporary git branches.  Only master git branch left.
- - All content for **datasciY** synced with Github.  Also production version.  
-
-#### Tasks List as of 8/5/2019  
- 
- * This week, need to focus on getting simple code examples in ML up on my website.
-   - Uploaded Random Walk python code.
-   - Demo live updating on Amazon Lambda cloud server
-   - Update done - articles folder, images WASI article.
-   
- * Also finish up links & plots in Articles.  
-   * GAN, brain segmentation, Neural Style Transfer art.  
+ - Neural Style tranfer and Brain Gready GAN - find links and finished article  
+ - Get video link from Bill.  Brain segmentation GAN.  
+    * GAN, brain segmentation, Neural Style Transfer art.  
    
 ------------------------------------------------------------------------
  
-#### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019
-
-   * To add more graphs, tail only images zoomed-in. 
-   * To add - Links to Fréchet, Weibull and Gumbel families  
-   ```
-   <!-- <img src="assets/GevDensity_2.svg.png" height="500" width="600">
-   Image, Generalized Extreme Value Distribution</a>  -->
-   
-   Alt image insert in ***markdown mode***
-   ![Extreme Value Dist](articles/GevDensity_2.svg.png)
-   ```
+#### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019 - done.  
      
 #### Blog to Article, Convolution, Sobel filter, Fast.AI Lesson 3 - Date 8/19/2019 6:35 PM  
 
@@ -84,15 +47,8 @@ I can spend 15-20% of my time on deeplearning.ai or fast.ai videos, since I find
 * Try AWS Ubuntu Fast.ai AMI machine -- for v 0.7 & v 1.0  
    * Machine existed before for v 0.7.  Still available?
    * Machine should exist for v 1.0 in 2019.      
-   
-#### Projects Content update - 9/13/2019.     
- * Working on updating content to projects page.  
  
 #### Finance project ideas, date 9/15/2019.  
-
-Working on **GARP FRM QA** questions this week.  
- * Done submitted 2 Questions 9/15/2019 midnight.  Didn't get any feedback as of 9/21.   
- * Start writing more questions next week anyway.   
  
 Refresh Copulas, Variable volatility chapters on Hull, 2018 copyright ebook.  
 Refresh Credit Risk -- current books, methods.  
@@ -122,13 +78,6 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * next item -- Vanderplas chapter SkLearn.  
  * next item -- VanderPlas Numpy -- finish p 60-90.  
    * Ufunc, vertorized calc, argsort, knn.  
-   
-#### Project.html -- hid some planned projects.  
-
- * Do shown projects - Level 1 - by Oct 20th.  
- * Finish hidden projects - Level 2 - by Oct 30th.  Ready for PyDataNY.  
- * Bank 7K balance until job.  
- * Vacation - Dec to Jan - need a break from the death-march pace.  
  
 #### Update 10/27/2019 -- Matplotlib 3D row subplots done.  
  * To write up and plot next week.  
@@ -153,6 +102,7 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  1. Skimmed -- Hundread Pages ML book.  Good summary of main ideas.
 ---------  
  * Contact more people from PyData, Linked In.  
-   Job Search Companies.  
+ * Job Search Companies.  
+ * Ken Nicholas Github - superficial info exchanged.  Next week, may work on SQL integration, Amazon Postgress SQL.  
 
 --- end ---  
