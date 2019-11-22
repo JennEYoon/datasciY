@@ -6,10 +6,10 @@ Date: December 2019 Monthly
 
 #### Week of 12/1/2019 Tasks - Time Relevent  
 
-Want to finish by this week:  
+##### Want to finish by this week:  
  *  
- * 
- *
+ *  
+ *  
  
 
 
@@ -17,7 +17,7 @@ Want to finish by this week:
 
 #### Week of 12/1/2019 Tasks - Important  
 
-Want to start this week:  
+##### Want to start this week:  
  *  
  *  
  *  
@@ -30,7 +30,7 @@ Want to start this week:
 
 ## 4. Reference Info saved  
 
-Links saved:  
+##### Links saved:  
  *  
  *  
  *
