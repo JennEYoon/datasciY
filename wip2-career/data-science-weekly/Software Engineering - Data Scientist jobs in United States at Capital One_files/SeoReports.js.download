@@ -1,0 +1,694 @@
+//TMET-175 CandidateCard Apply Metrics - START
+//Global Variables for CandidateCard metrics processing
+var g_applyURL, g_url, g_type, g_parameters, g_isCenter, g_widhtW, g_heightW, g_domain, g_srcimg, g_trackingparam,
+        g_jobID, g_jobTitle, g_domainID, g_isOldGATracking, g_isApplyURLEncodeEnabled, g_disableRedirect, g_isJobMatchingApply;
+
+//18211 - Timer to send Apply clicks only once every 10seconds to Google Analytics
+var GLOBAL_TIMEOUT_SEND_TO_GA = 10000;
+var GLOBAL_APPLY_SEND_TO_GA_FLAG = true;
+
+function ProcessApplyClickData(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg,
+        trackingparam, jobID, jobTitle, domainID, isOldGATracking, isApplyURLEncodeEnabled,
+        refCode, jobCity, jobState, jobCountry, candidateReferralSource, disableRedirect,
+        isJobMatchingApply) { //JM-12
+
+    CandidateCardTracking_SetGlobals(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg, trackingparam,
+        jobID, jobTitle, domainID, isOldGATracking, isApplyURLEncodeEnabled, disableRedirect, isJobMatchingApply)
+
+    // CHQ Apply Metrics
+    // On success or failure of the call, we will still call TB Apply Metrics
+    Sys.Net.WebServiceProxy.invoke("/SeoSiteWebService/SeoSiteWebContent.asmx", "SendApplyUrlClickDataToCHQ", false,
+        {
+            "seoSiteId": domainID, "jobId": jobID, "refCode": refCode, "jobTitle": jobTitle, "jobCity": jobCity,
+            "jobState": jobState, "jobCountry": jobCountry, "referrerSource": candidateReferralSource
+        },
+        OnSendApplyUrlClickDataToCHQResult, OnSendApplyUrlClickDataToCHQResult, null, null);  
+
+        }
+
+function OnSendApplyUrlClickDataToCHQResult(result, eventArgs) {
+    // TB Apply Metrics
+    GetApplyClickCount(g_applyURL, g_url, g_type, g_parameters, g_isCenter, g_widhtW, g_heightW, g_domain, g_srcimg, g_trackingparam,
+        g_jobID, g_jobTitle, g_domainID, g_isOldGATracking, g_isApplyURLEncodeEnabled, g_disableRedirect, g_isJobMatchingApply);
+}
+
+function CandidateCardTracking_SetGlobals(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg, trackingparam,
+        jobID, jobTitle, domainID, isOldGATracking, isApplyURLEncodeEnabled, disableRedirect, isJobMatchingApply) {
+    g_applyURL = applyURL;
+    g_url = url;
+    g_type = type;
+    g_parameters = parameters;
+    g_isCenter = isCenter;
+    g_widhtW = widhtW;
+    g_heightW = heightW;
+    g_domain = domain;
+    g_srcimg = srcimg;
+    g_trackingparam = trackingparam;
+    g_jobID = jobID;
+    g_jobTitle = jobTitle;
+    g_domainID = domainID;
+    g_isOldGATracking = isOldGATracking;
+    g_isApplyURLEncodeEnabled = isApplyURLEncodeEnabled;
+    g_disableRedirect = disableRedirect;
+    g_isJobMatchingApply = isJobMatchingApply;
+}
+//TMET-175  CandidateCard Apply Metrics - END
+
+//JM-12 START - Google Analytics for Job Matching
+function TrackJobMatchingButtonClick(domainId, pageName) {
+    try {
+        pageTracker._trackEvent("JMLaunched", pageName, domainId, 1);
+    }
+    catch (ex) {
+        var x = ex.message;
+    }
+}
+
+function TrackJobMatchingFacetChange(domainId, buttonName) {
+    try {
+        pageTracker._trackEvent("JMFacetChange", buttonName, domainId, 1);
+    }
+    catch (ex) {
+        var x = ex.message;
+    }
+}
+
+function TrackJobMatchingL3LinkClick(domainId, jobTitle, jobId) {
+    try {
+        pageTracker._trackEvent("JMListToJob", jobTitle + " (" + jobId + ")", domainId, 1);
+    }
+    catch (ex) {
+        var x = ex.message;
+    }
+}
+//JM-12 END
+
+//Begin:Changes for Bert-10474:Added DomainID parameter
+// Added 12th parameter,Bert 2478
+//BERT 2930 - New Tracking code implementation
+//BERT 8289 - Start
+// Added 'disableRedirect' Parameter (Candidate Card Project: Dain Whyte: 07-08-2013)
+function GetApplyClickCount(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg,
+        trackingparam, jobID, jobTitle, domainID, isOldGATracking, isApplyURLEncodeEnabled, disableRedirect,
+        isJobMatchingApply) { //JM-12
+    try {
+        if (isApplyURLEncodeEnabled != undefined && isApplyURLEncodeEnabled != '') { // Check Apply URL Hack Enabled or Not
+
+            // Hack Added for WebConnect Encode Issue
+            if (/\bWebConnectApplyURLEncoding\b/i.test(isApplyURLEncodeEnabled) && /webconnect/i.test(applyURL) && /returnurl/i.test(applyURL)) {
+                // Below will fetch only the return URL uery String Value and encode the same
+                var urlList1 = applyURL.split("ReturnUrl=");
+                if (urlList1.length > 1) {
+                    var urlList2 = urlList1[1].split("&ID");
+                    if (urlList2.length > 0) {
+                        var urlToBeEncoded = urlList2[0];
+                        var encodedUrl = encodeURIComponent(urlToBeEncoded);
+                        applyURL = applyURL.replace(urlToBeEncoded, encodedUrl);
+                    }
+                }
+            }
+            //General Apply URL Encoding Hack
+            else if (/\bApplyURLEncoding\b/i.test(isApplyURLEncodeEnabled)) {
+                // Below Hack will encode the Complete Query String
+                var pathArray = applyURL.split('?');
+                if (pathArray.length > 1) {
+
+                    var queryStringKeyValuepairArray = pathArray[1].split('=');
+                    if (queryStringKeyValuepairArray.length > 1) {
+                        applyURL = pathArray[0] + "?" + queryStringKeyValuepairArray[0] + "=" + encodeURIComponent(queryStringKeyValuepairArray[1]);
+                    }
+                    else {
+                        applyURL = pathArray[0] + "?" + encodeURIComponent(queryStringKeyValuepairArray[0]);
+                    }
+                }
+            }
+        }
+    } catch (ex) {
+
+    }
+    // BERT 8289 - End
+    
+
+    var JobTitle = "Jobs";
+    var s = null;
+
+    if (jobTitle != "")
+        JobTitle = jobTitle;
+
+    //BERT 2930 - New Tracking code implementation
+    try {//Bert 3305 Ks28 Try catch Block
+        if ("" != trackingparam && isOldGATracking) {
+            pageTracker._trackPageview(trackingparam);
+        }
+    }
+    catch (e) {
+    }
+
+    if (jobID != "" && GLOBAL_APPLY_SEND_TO_GA_FLAG == true && disableRedirect == false) {//TSSDQ-157- disableRedirect condition is added to stop apply click tracking for candidateCard as this logic is added directly in apply link.
+        if (jobID != "000000") {
+            //JM-12 START
+            var jobApplyClickType = isJobMatchingApply == 'True' ? "JMJobApplyClick" : "ApplyClick";
+            //JM-12 END
+
+            // BERT 12052 Date : 13-Jan-2010    Author : Sushil Jinder
+            /////////////////////////////////////////////////////////////////
+            //Commented as per Kristen's request 14-Mar-11 Author :Romeo Mehra.
+            /* if (domain == 'jobs.disney.corp.go.com')
+            {
+            CustomTrackingApplyButton();
+            }
+            */
+            /////////////////////////////////////////////////////////////////
+
+            // pageTracker._trackEvent(JobTitle + " (" + jobID + ")","ApplyClick", "SeoSiteID", domain)
+            //Begin:Changes for Bert-10474:Reordered parameters and opt_value has been passed as integer to track the events successfuly
+            //Modified Opt_value parameter from domain id to 1 - as per Amy comments 11/2/2010- begin
+            //BERT 2930 - New Tracking code implementation
+            if (isOldGATracking == 'True') {
+                //START BERT#6677
+                try {
+                    //JM-12 START
+                    pageTracker._trackEvent("ApplyButton", jobApplyClickType, JobTitle + " (" + jobID + ")", 1);
+                    //JM-12 END
+                }
+                catch (e) {
+                }
+                //pageTracker._trackEvent("ApplyButton", "ApplyClick", JobTitle + " (" + jobID + ")", 1);
+                //END BERT#6677
+            }
+            else
+            {
+                var head = document.getElementsByTagName("head").item(0);
+                var script = document.createElement("script");
+                script.setAttribute("type", "text/javascript");
+                //BERT16869 START - removing space
+                var request = _gaq.push(['_trackEvent', 'ApplyButton', jobApplyClickType, JobTitle + ' (' + jobID + ')', 1, true]);
+				//BERT16869 END - removing space for ApplyButton
+                
+                script.setAttribute("src", request);
+                head.appendChild(script);
+            }
+            //BERT 2478
+            //Modified Opt_value parameter from domain id to 1 - as per Amy comments 11/2/2010- end
+            //End;Changes for Bert-10474:Added DomainID parameter
+
+        }
+        else {
+            //START BERT#6677
+            try {
+                pageTracker._trackEvent("ApplyButton", "ApplyClick", "JobID", 1);
+            }
+            catch (e) {
+            }
+            //pageTracker._trackEvent("ApplyButton", "ApplyClick", "JobID", 1);
+            //END BERT#6677
+        }
+
+        if (GLOBAL_APPLY_SEND_TO_GA_FLAG == true) {
+            GLOBAL_APPLY_SEND_TO_GA_FLAG = false; //Disable further immediate clicks to be sent to Google Analytics
+            setTimeout(function () {
+                GLOBAL_APPLY_SEND_TO_GA_FLAG = true; //Enable Google Analytics call after the timer elapsed
+            }, GLOBAL_TIMEOUT_SEND_TO_GA);
+        }
+    }
+
+    if (isCenter = "true" && widhtW != "0" && heightW != "0") {
+        if (parameters != "")
+            parameters += ", ";
+
+        parameters += "top=" + (Math.round(document.body.offsetHeight / 2) - Math.round(heightW / 2)) + ", left=" + (Math.round(document.body.offsetWidth / 2) - Math.round(widhtW / 2));
+    }
+
+    if (disableRedirect == false) {
+        if (srcimg == "") {
+
+            //Bert No. 13130 starts here
+            //BERT 17221 Starts
+            //if (domainID == '522') {//Bert 3305 +Ks28 Compare the Domain id to the Companies Domain id
+                //openUrlInSameWindowPassingEncodedStrings(applyURL);
+                //return;
+                ////alert("hello");
+            //}
+            //BERT 17221
+            //Bert No. 13130 starts here
+
+            if (type == "NewWindow") {
+                //BERT 13766 - Sinduja,05/09/2011
+                //window.open(applyURL, GetGUID(), parameters);
+                if (domainID == '726' || '898') {//Bert 3305 +Ks28 Compare the Domain id to the Companies Domain id
+                    //var newApplyURL;
+                    //newApplyURL = openUrlInNewWindowPassingReferrerEncoded(applyURL);
+                    openUrlInNewWindowPassingReferrerEncoded(applyURL, parameters);
+                    //window.open(newApplyURL, GetGUID(), parameters);
+                }
+                else {
+                    window.open(applyURL, GetGUID(), parameters);
+                }
+                //End BERT 13766
+            }
+            else if (type == "SameWindow")
+
+            //Bert No. 12748 starts here
+                if (domainID == '726') {//Bert 3305 +Ks28 Compare the Domain id to the Companies Domain id
+                    setTimeout(function () {
+                        openUrlInSameWindowPassingReferrerEncoded(applyURL);
+                    }, 500);
+                }
+                else {
+                    setTimeout(function () {
+                        openUrlInSameWindowPassingReferrer(applyURL);
+                    }, 500);
+                }
+
+            //Bert No. 12748 ends here
+            else if (type == "Lightbox") {
+                createLightBox(document.body.offsetHeight, document.body.offsetWidth, applyURL, "");
+                createBlockSite(document.body.offsetHeight, document.body.offsetWidth);
+            }
+
+        }
+        else {
+            if (type == "NewWindow")
+                window.open("http://" + domain + "/ApplyWindow.aspx?srcimgheader=" + encodeURIComponent(srcimg) + "&srciframe=" + encodeURIComponent(applyURL), GetGUID(), parameters);
+            else if (type == "SameWindow")
+            setTimeout(function () {
+                window.location.href = "http://" + domain + "/ApplyWindow.aspx?srcimgheader=" + encodeURIComponent(srcimg) + "&srciframe=" + encodeURIComponent(applyURL);
+            }, 500);
+            else if (type == "Lightbox") {
+                createLightBox(document.body.offsetHeight, document.body.offsetWidth, applyURL, srcimg);
+                createBlockSite(document.body.offsetHeight, document.body.offsetWidth);
+            }
+        }
+    }
+
+    scroll(0, 0);
+
+    var newURL = (url.indexOf("?") != -1) ? url + "&clickok=true" : url + "?clickok=true";
+    var xmlHttp, e;
+    try {
+        xmlHttp = new XMLHttpRequest();
+    }
+    catch (e) {
+        try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        catch (e) { }
+    }
+    xmlHttp.open("POST", newURL, false);
+    xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlHttp.send(null);
+}
+
+//Bert 1299, display agreement popup for client parexel , Mira 7/11/11
+//TMET-175 START - Cleaning up method for Candidate Card implementation.
+// Added 'disableRedirect' Parameter (Candidate Card Project: Dain Whyte: 07-08-2013)
+function ProcessAgreeBeforeApply(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg, trackingparam, jobID, jobTitle, domainID,
+	isOldGATracking, isApplyURLEncodeEnabled, isCandidateCardUser, refCode, jobCity, jobState, jobCountry, candidateReferralSource, disableRedirect,
+        isJobMatchingApply) { //JM-12
+    //BERT 4313 starts
+    var strAgreement = null;
+    var strHeading = null; //reusing Parexel for gwinnet
+
+    if (domain == "jobs.gwinnettmedicalcenter.org" || domain == "gwinnettmedicalcenter.tmpseoqa.com") {
+        strHeading = "Gwinnett Medical Center Tobacco-Free Campus Policy";
+        strAgreement = "As the number one cause of preventable disease and death in the United States, tobacco/nicotine has a devastating effect on individuals and communities. We believe the healthcare industry – including Gwinnett Medical Center – must lead the way in reducing tobacco/nicotine usage and the accompanying suffering and economic loss. Gwinnett Medical Center will not hire any individual who uses tobacco/nicotine in any form. This includes all smoking cessation products and any product containing nicotine. This policy applies to any job applicant, including previous employees.\n As an applicant for employment at Gwinnett Medical Center, I verify that I do not use any tobacco or nicotine product, such as cigarettes, cigars, chew, snuff, pipe, nicotine gum or patch, electronic cigarettes, etc.\n I understand that a contingent offer of employment is dependent upon me verifying my non-tobacco, non-nicotine use by signing this document.\n I also understand that upon a contingent job offer, I will be tested for tobacco/nicotine usage. If the results are positive, the job offer will be rescinded.";
+    }
+    else {//For Parexel
+        strHeading = "Data Protection Statement for Candidates";
+        strAgreement = "I understand that PAREXEL International Corporation, 195 West Street, Waltham MA USA is the controller of the personal data I provided herewith. PAREXEL International Corporation and its affiliates shall process my personal data for the purposes of recruitment and selection. My personal data will be retained as long as necessary for the purposes it has been collected, but not longer than 1 year in countries covered under the EU Directive on the Protection of Personal Data (\"EU Directive\"). I understand that I can request access to and/or rectification of my personal data by contacting PAREXEL’s Corporate Vice President of Human Resources in writing at the address mentioned above. By agreeing to this statement, I consent that my personal data may, for the purposes of recruitment and selection, also be transferred to other entities of the PAREXEL group of companies, including to entities located in countries that, under the EU principles, do not offer an adequate level of protection of personal data. In addition, I understand that my personal data will be processed by PAREXEL´s third party contractors, such as Kenexa Corporation and others, for the purposes mentioned above. The supply of my personal data to PAREXEL is voluntary. I acknowledge that if I do not wish PAREXEL to collect, process or disclose such data in accordance with this statement, I will not provide PAREXEL with such data.";
+    }
+    //BERT 4313 Ends
+    var answer = confirm(strHeading + "\n\n" + strAgreement) /*Bert 1299 deleted the dot*/
+    if (answer) {
+        if (isCandidateCardUser == "True") {
+            ProcessApplyClickData(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg, trackingparam, jobID, jobTitle, domainID, isOldGATracking, isApplyURLEncodeEnabled,
+                refCode, jobCity, jobState, jobCountry, candidateReferralSource, disableRedirect, isJobMatchingApply); //JM-12
+        }
+        else {
+            GetApplyClickCount(applyURL, url, type, parameters, isCenter, widhtW, heightW, domain, srcimg, trackingparam, jobID, jobTitle, domainID,
+                isOldGATracking, isApplyURLEncodeEnabled, disableRedirect, isJobMatchingApply); //JM-12
+                
+        }
+    }
+}
+//TMET-175 END
+//End Bert 1299
+//Bert No. 12748 starts here
+function openUrlInSameWindowPassingReferrerEncoded(encodedstring) {
+    var a = document.createElement("a");
+    var x = encodedstring;
+    var index = x.toString().indexOf("?adata=");
+    if (x.toString().length >= 0) {
+        if (index > -1) {
+            var mySplitResult = x.toString().split("?adata=");
+
+            var newstringnotchange = mySplitResult[0];
+            var newstring = mySplitResult[1];
+
+            var encodedInputString = escape(newstring);
+            encodedInputString = encodedInputString.replace(/\+/g, "%2B");
+            var newEncodedInputString = encodedInputString;
+            do {
+                encodedInputString = newEncodedInputString;
+                newEncodedInputString = encodedInputString.replace("/", "%2F");
+            }
+            while (encodedInputString != newEncodedInputString);
+            encodedInputString = newEncodedInputString;
+            encodedInputString = encodedInputString.toString().replace(newstring, encodedInputString);
+            encodedstring = newstringnotchange + "?adata=" + encodedInputString;
+        }
+
+    }
+
+    if (!a.click) { //only IE has this (at the moment);
+        window.location = encodedstring;
+        return;
+    }
+    a.setAttribute("href", encodedstring);
+    a.style.display = "none";
+
+    try {
+        document.body.insertBefore(a, null);
+    } catch (e) {
+        $("body").insertBefore(a);
+    }
+    
+   
+
+    a.click();
+}
+//Bert No. 12748 ends here
+//BertNo. 13766 starts here,for open in new window,09/09/2011
+function openUrlInNewWindowPassingReferrerEncoded(encodedstring, parameters) {
+    var a = document.createElement("a");
+    var x = encodedstring;
+    var index = x.toString().indexOf("?adata=");
+    if (x.toString().length >= 0) {
+        if (index > -1) {
+            var mySplitResult = x.toString().split("?adata=");
+
+            var newstringnotchange = mySplitResult[0];
+            var newstring = mySplitResult[1];
+
+            var encodedInputString = escape(newstring);
+            encodedInputString = encodedInputString.replace(/\+/g, "%2B");
+            var newEncodedInputString = encodedInputString;
+            do {
+                encodedInputString = newEncodedInputString;
+                newEncodedInputString = encodedInputString.replace("/", "%2F");
+            }
+            while (encodedInputString != newEncodedInputString);
+            encodedInputString = newEncodedInputString;
+            encodedInputString = encodedInputString.toString().replace(newstring, encodedInputString);
+            encodedstring = newstringnotchange + "?adata=" + encodedInputString;
+        }
+
+    }
+
+    if (!a.click) { //only IE has this (at the moment);
+        window.open(encodedstring, GetGUID(), parameters);
+        return;
+    }
+    //Check the Firefox version
+    if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+        var ffversion = new Number(RegExp.$1)
+        if (ffversion >= 5) {
+            window.open(encodedstring, GetGUID(), parameters);
+            return;
+        }
+    }
+    a.setAttribute("target", "_blank");
+    a.setAttribute("href", encodedstring);
+    a.style.display = "none";
+    try {
+        document.body.insertBefore(a, null);
+    } catch (e) {
+        $("body").insertBefore(a);
+    }
+    a.click();
+}
+//BertNo. 13766 ends here
+//Bert No. 13130 starts here
+function openUrlInSameWindowPassingEncodedStrings(encodedstring) {
+    var a = document.createElement("a");
+    var x = encodedstring;
+    var index = x.toString().indexOf("&d=");
+    if (x.toString().length >= 0) {
+        if (index > -1) {
+            var mySplitResult = x.toString().split("&d=");
+            var newstringnotchange = mySplitResult[0];
+            var newstring = mySplitResult[1];
+            var encodedInputString = escape(newstring);
+            encodedInputString = encodedInputString.replace(/\+/g, "%2B");
+            var newEncodedInputString = encodedInputString;
+            do {
+                encodedInputString = newEncodedInputString;
+                newEncodedInputString = encodedInputString.replace("/", "%2F");
+            }
+            while (encodedInputString != newEncodedInputString);
+            encodedInputString = newEncodedInputString;
+            encodedInputString = encodedInputString.toString().replace(newstring, encodedInputString);
+            encodedstring = newstringnotchange + "&d=" + encodedInputString;
+
+        }
+
+    }
+    //encode again
+    // alert("document.location -->finally for attribite:\n" + encodedstring);  
+
+    document.location = encodedstring;
+
+    //return false; 
+    /*if(!a.click) 
+    { //only IE has this (at the moment);
+    alert("finally for IE:\n" + encodedstring);
+    window.location = encodedstring;
+    return;
+    }
+    alert("finally for attribite:\n" + encodedstring);
+    // document.write(encodedstring); 
+    a.setAttribute("href", encodedstring);
+    a.style.display = "none";
+        try {
+        document.body.insertBefore(a, null);
+    } catch (e) {
+        $("body").insertBefore(a);
+    }
+    a.click();
+    */
+}
+//Bert No. 13130 ends here
+
+
+// hack for IE to pass referrer info when opening URL
+function openUrlInSameWindowPassingReferrer(url) {
+    //BERT 19125
+    url = AppendGoogleTrackingCookie(url);
+    // END 19125
+    var a = document.createElement("a");
+    if (!a.click) { //only IE has this (at the moment);
+        window.location = url;
+        return;
+    }
+
+    //Check the Firefox version
+    if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+        var ffversion = new Number(RegExp.$1)
+        if (ffversion >= 5) {
+            window.location = url;
+            return;
+        }
+    }
+
+    //----------------------------------------
+    //Start:BERT 13672
+    //To Fix the Apply URL Issue in Opera
+    if (/Opera[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+        window.location = url;
+        return;
+    }
+    //End:BERT 13672
+    //----------------------------------------
+
+    a.setAttribute("href", url);
+    a.style.display = "none";
+    try {
+        document.body.insertBefore(a, null);
+    } catch (e) {
+        $("body").insertBefore(a);
+    }
+    a.click();
+}
+
+function GetGUID() {
+    var guid = "";
+    for (var i = 0; i < 32; i++)
+        guid += parseInt(Math.random() * 16).toString(16);
+
+    return guid;
+}
+
+function createBlockSite(heightS, widthS) {
+    var blockSite = document.createElement("div");
+
+    with (blockSite.style) {
+        position = "absolute";
+        zIndex = "100";
+        top = "0px";
+        left = "0px";
+        width = widthS + "px";
+        height = heightS + "px";
+        //width = "100%";
+        //height = "100%";
+        filter = "alpha(opacity=" + 50 + ")";
+        opacity = 0.5;
+        background = "black";
+    }
+
+    blockSite.id = "blockSite";
+    document.getElementsByTagName("body")[0].appendChild(blockSite);
+}
+
+function createLightBox(heightS, widthS, applyURL, srcheader) {
+    var lightBox = document.createElement("div");
+    with (lightBox.style) {
+        position = "absolute";
+        zIndex = "2000";
+        top = "50%";
+        left = "50%";
+    }
+    lightBox.id = "lightBox";
+    lightBox.className = "lightBox";
+
+    var header = document.createElement("div");
+    header.id = "headerLightBox";
+    header.className = "headerLightBox";
+
+    var closeL = document.createElement("a");
+    closeL.innerHTML = "Close";
+    closeL.href = "javascript:CloseLB();";
+    closeL.id = "closeLightBox";
+    closeL.className = "closeLightBox";
+    header.appendChild(closeL);
+
+    lightBox.appendChild(header);
+
+    var content = document.createElement("div");
+    with (content.style) {
+        overflow = "auto";
+    }
+    content.id = "contentLightBox";
+    content.className = "contentLightBox";
+    lightBox.appendChild(content);
+
+    if (srcheader != "") {
+        var img = document.createElement("img");
+        img.src = srcheader;
+        content.appendChild(img);
+    }
+
+    var imgL = document.createElement("img");
+    imgL.id = "imgLoadingLightBox";
+    imgL.src = "https://web.archive.org/web/20150106165359/http://seostatic.tmp.com/job-images/throbber2.gif";
+    imgL.style.position = "absolute";
+    imgL.style.zIndex = "2001";
+    imgL.style.top = "52%"; //iframeL.style.top + Math.round(widthIframe/2); //150
+    imgL.style.left = "49%"; //iframeL.style.left + Math.round(widthIframe/2); //300
+    content.appendChild(imgL);
+
+    var iframeL = document.createElement("iframe");
+    iframeL.id = "iframeLightBox";
+    iframeL.scrolling = "auto";
+    iframeL.src = applyURL;
+    iframeL.className = "iframeLightBox";
+    eventPush(iframeL, 'load', function() { CloseImg(); });
+    content.appendChild(iframeL);
+
+    var widthIframe = (iframeL.width == "") ? 300 : iframeL.width;
+    var heightIframe = (iframeL.height == "") ? 150 : iframeL.height;
+    //    alert(iframeL.style.top);
+    //    alert(iframeL.style.left);
+
+    document.getElementsByTagName("body")[0].appendChild(lightBox);
+}
+
+function CloseLB() {
+    var blockSite = document.getElementById("blockSite");
+    blockSite.parentNode.removeChild(blockSite);
+    var lightBox = document.getElementById("lightBox");
+    lightBox.parentNode.removeChild(lightBox);
+}
+
+function CloseImg() {
+    var imgLoad = document.getElementById("imgLoadingLightBox");
+    imgLoad.parentNode.removeChild(imgLoad);
+}
+
+// BERT 12052 Date : 13-Jan-2010    Author : Sushil Jinder
+function CustomTrackingApplyButton() {
+    var ebRand = Math.random() + '';
+    ebRand = ebRand * 1000000;
+    //<![CDATA[ 
+    document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=______&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+    //]]>
+
+    var jsNOScript;
+    jsNOScript = '<noscript>';
+    jsNOScript += '<img width="1" height="1" style="border:0" src="HTTPS://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=_____&amp;ns=1"/>';
+    jsNOScript += '</noscript>';
+    document.write (jsNOScript);
+}
+
+//Start Candidate Card Functions (Dain Whyte: 07-09-2013 )
+function TrackCandidateCardEvent(eventName, eventAction, label) {
+
+    try {
+        pageTracker._trackEvent(eventName, eventAction, label, 1);
+    }
+    catch (e) {
+    }
+}
+
+//End Candidate Card Functions
+
+// BERT 19125 L.B 05.21.14
+function AppendGoogleTrackingCookie(url)
+{
+    var passGATC = document.getElementById('PASSGATC'); 
+
+    if (passGATC != null && passGATC != undefined)
+    {
+        a =_gat._getTrackerByName();
+        b = a._getLinkerUrl(url);
+        return b; 
+
+    }
+           
+     else
+        return url; 
+    
+
+}
+//END BERT 19125
+
+/*
+     FILE ARCHIVED ON 16:53:59 Jan 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:21 Nov 22, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 243.184 (2)
+  PetaboxLoader3.datanode: 83.704 (5)
+  exclusion.robots.policy: 0.211
+  LoadShardBlock: 214.15 (3)
+  RedisCDXSource: 0.671
+  captures_list: 266.314
+  esindex: 0.015
+  CDXLines.iter: 12.7 (3)
+  load_resource: 303.058
+  exclusion.robots: 0.228
+*/

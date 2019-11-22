@@ -1,0 +1,37 @@
+﻿try {
+    //To removes the tracking code with #symbol when user sharing the jobs through addthis widget.
+    var flag = false;
+    $("script[src]").each(function (data, value) {
+        if ($(value).attr("src").match(/addthis_widget/i) != null) {
+            flag = true;
+        }
+    })
+
+    if (flag) {
+        var addthis_config = addthis_config || {};
+        addthis_config.data_track_addressbar = false;
+        addthis_config.data_track_clickback = false;
+    }
+} catch (e) {
+}
+/*
+     FILE ARCHIVED ON 16:54:01 Jan 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:27 Nov 22, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 383.027
+  exclusion.robots: 0.194
+  LoadShardBlock: 351.131 (3)
+  CDXLines.iter: 14.378 (3)
+  PetaboxLoader3.datanode: 392.451 (5)
+  exclusion.robots.policy: 0.179
+  RedisCDXSource: 11.01
+  load_resource: 302.111
+  esindex: 0.017
+  PetaboxLoader3.resolve: 211.768 (2)
+*/

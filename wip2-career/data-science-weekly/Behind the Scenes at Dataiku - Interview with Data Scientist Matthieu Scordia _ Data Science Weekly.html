@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)https://www.datascienceweekly.org/articles/behind-the-scenes-at-dataiku-interview-with-data-scientist-matthieu-scordia -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta tags: charset, Content-Type, X-UA-Compatible, viewport
+    ================================================== --> 
+    
+    	
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags: title, description, robots
+    ================================================== --> 
+    <title>Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia | Data Science Weekly</title>
+    <meta name="description" content="We recently interviewed Matthieu Scordia, a Data Scientist at Dataiku about his background, work at Dataiku and the role they&#39;re currently hiring for. Matthieu himself graduated with a master&#39;s ...">
+    <meta name="robots" content="FOLLOW,INDEX">
+
+    <!-- Bootstrap and Bootswatch CSS + JS Libraries
+    ================================================== -->
+    <link href="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/bootstrap.min(1).css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/4795790.js.download"></script><script type="text/javascript" async="" src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/heap-2103544385.js.download"></script><script async="" src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/analytics.js.download"></script><script src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/jquery.min.js.download"></script>
+    <script src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/bootstrap.min.js.download"></script>
+
+    <!-- HTML5 shim + Respond.js
+    ================================================== -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Application Specific JS, CSS, and CSRF Meta Tags
+    ================================================== -->    
+    <link rel="stylesheet" media="all" href="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/application-fb21b3cc646af700d0730a90d5c8a569bd2d63d911d121c27895ecc9b4fdc933.css">
+    <script src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/application-12ded896737ba23f1da8562bae9b5273d8baf3bfa568ca1b21dd66c95e618ab9.js.download"></script>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="14s7s9fpW50V5h1s1ivRQOwEuwLQqrqZIF3MPJj6BbdAWajFjW35BuxklksMeu01CF3nvrszVMenNlMQIAVkfA==">
+
+    <!-- Canonical URL Tag
+    ================================================== -->
+    <link rel="canonical" href="https://www.datascienceweekly.org/articles/behind-the-scenes-at-dataiku-interview-with-data-scientist-matthieu-scordia">
+
+    <!-- Open Graph Protocol Meta Tags
+    ================================================== -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia | DataScienceWeekly.org">
+    <meta property="og:description" content="We recently interviewed Matthieu Scordia, a Data Scientist at Dataiku about his background, work at Dataiku and the role they&#39;re currently hiring for. Matthieu himself graduated with a master&#39;s ...">
+    <meta property="og:url" content="https://www.datascienceweekly.org/articles/behind-the-scenes-at-dataiku-interview-with-data-scientist-matthieu-scordia">
+    <meta property="og:site_name" content="DataScienceWeekly.org">
+    <meta property="article:section" content="DataScienceWeekly.org Data Science Article Collection">
+    <meta property="og:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/dataiku-logo_324x156.png">
+
+    <!-- Twitter Card Meta Tags
+    ================================================== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia | DataScienceWeekly.org">
+    <meta name="twitter:description" content="We recently interviewed Matthieu Scordia, a Data Scientist at Dataiku about his background, work at Dataiku and the role they&#39;re currently hiring for. Matthieu himself graduated with a master&#39;s ...">
+    <meta property="twitter:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/dataiku-logo_324x156.png">
+    <meta name="twitter:site" content="@DataSciNews">
+    <meta name="twitter:domain" content="DataScienceWeekly.org">
+    <meta name="twitter:creator" content="@DataSciNews">
+ 
+    <!-- Google Analytics
+    ================================================== -->
+      <!-- Environment: production -->
+      <!-- begin google analytics code -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46037430-1', 'datascienceweekly.org');
+        ga('send', 'pageview');
+      </script>
+
+    <!-- Heap Analytics
+    ================================================== -->
+    <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+          heap.load("2103544385");
+    </script>
+
+  </head>
+
+  <body>
+
+      <!-- Static Navbar Top
+      ================================================== -->
+      <!-- Static Navbar Top
+================================================== -->
+<div id="dsw-navbar" class="navbar navbar-default">
+  <div class="container">
+
+    <!-- Navbar Brand
+    ================================================== -->
+    <div class="navbar-header">
+
+      <a class="navbar-brand" style="color: white; font-size:1.25em; margin-top: 13px;" href="https://www.datascienceweekly.org/">Data Science Weekly</a>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" style="width: auto;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar-main" class="navbar-collapse collapse">
+
+      <!-- Navigation Choices
+      ================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+
+        <li style="padding-left:10px;">
+          <a style="padding:0px 0px 0px;" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">
+            <button class="btn btn-success" type="button" style="background-color:#c9302c;border-color: #c12e2a; font-size:18px;">
+              Become A Data Scientist Faster
+            </button>
+</a>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- Main Container
+      ================================================== -->
+      <div class="container" id="main-yield-container">
+        <br>
+        <div class="col-lg-12" style="padding-left:0px; padding-right:0px;">
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    div.title {
+      padding: 0.5em;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+<!-- DataScienceWeekly.org Article Breadcrumb
+================================================== -->
+<ul class="breadcrumb">
+  <li>
+    <a href="https://www.datascienceweekly.org/">Home</a>
+  </li>
+  <li>
+    <a href="https://www.datascienceweekly.org/articles">Articles</a>
+  </li>
+  <li class="active">
+    <a href="https://www.datascienceweekly.org/articles/behind-the-scenes-at-dataiku-interview-with-data-scientist-matthieu-scordia">Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia</a>
+  </li>
+</ul>
+
+
+<!-- DataScienceWeekly.org Article
+================================================== -->
+<div class="well" style="padding:1em;background-color:#2c3e50;">
+
+  <div class="well" style="padding-left:2em;padding-right:2em;">
+    <div class="article-title" style="text-align:left;color:#34495e">
+      <h1>Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia</h1>
+    </div>
+
+    <hr class="blog-index-hr" style="margin-bottom:0.5em;margin-top:1em;">
+
+    <div class="article-content">
+      <img alt="Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia" class="img-responsive img-rounded img-thumbnail" src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/dataiku-logo_324x156.png">
+      <br>
+      <br>
+      <p>
+We recently interviewed Matthieu Scordia, a Data Scientist at <a href="https://www.patreon.com/">Dataiku</a> about his background, work at Dataiku and the <a href="https://www.dataiku.com/company/careers/">role they're currently hiring for</a>. 
+<br>
+<br>
+Matthieu himself graduated with a master's degree in artificial intelligence from Pierre et Marie Curie University in Paris 3 years ago and then joined Dataiku right away, as an intern at first. He was their first employee! You can find him on twitter <a href="https://twitter.com/Mattsco">@mattsco</a>
+<br>
+<br>
+</p>
+
+<p style="text-align:center;"><img alt="Dataiku Data Scientist Matthieu Scordia" src="./Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia _ Data Science Weekly_files/matt_dataiku_620x620.jpg" height="200" width="200">
+</p>
+
+
+<p>
+Matthieu, thanks for taking the time to chat with us - we're excited to learn more about your work at Dataiku
+<br>
+<br>
+Let's get into it, and first chat a bit more about your background :) ...
+<br>
+<br>
+</p>
+
+<p>
+<strong><em>Q. How did you get interested in working with data?</em></strong>
+<br>
+<br>
+I studied Artificial Intelligence at university, I’m a big fan of science fiction movies like Matrix so I thought that would be a fun subject to get into.
+During my masters degree, Machine Learning was the speciality I was the most interested in, so I started to play around with Kaggle competitions and it became a little bit of an addiction. University was very theoretical and it was hard for me to imagine all the possibilities of Data Science at the time. However the variety of Kaggle competitions really showed me the super power I was getting by mastering data. 
+</p>
+<br>
+
+<p>
+<strong><em>Q. Was there a specific "aha" moment when you realized the power of data?</em></strong>
+<br>
+<br>
+When I was working on Kaggle competitions I started to see all the powerful things that could be done with data. But it isn’t until I started working and developed my own project from scratch that I really saw what ‘working in data’ was all about. That first project I did was my very own movie recommender I developed with Data Science Studio. I started with a dataset of all the movies I’d seen in years, labelled those hundreds of movies with a star system, enriched that with data from online movie databases, and started trying out different algorithms to see how I could get my perfect movie recommendations!
+<br>
+<br>
+I still use it today: I set up a fun interface to easily rate movies as I see them, and every week my project rates new releases and tells which I’m most likely to go to and which I’m most likely to enjoy. My girlfriend gets a little upset that I trust my algorithm more than her advice, but to this day I use it to pick my weekly movie outings!
+<br>
+<br>
+This project had me working on all the different steps of a data project, from collecting data to cleaning it, enriching it, building and testing models to making webapps with the results and automating the process so the model gets better with every movie I see. It was a real aha moment to see that even outside of work, I just loved working on data and could make fun at things out of it as well!
+</p>
+<br>
+
+<p>
+<strong><em>That's great! Let's switch gears and talk a bit more about Dataiku</em></strong>
+</p>
+
+<br>
+<br>
+
+<p>
+<strong><em>Q. What are the biggest areas of opportunity/questions you want to tackle at Dataiku?</em></strong>
+<br>
+<br>
+The main opportunity for us today is to democratise data science in companies. We want to tackle  problems like: 
+</p><ul>
+<li>The fact that data scientist are in such demand that they’re hard to find, and companies often don’t know how to hire these types of profile yet.</li>
+<li>Even once data scientists are hired, data preparation takes up SO MUCH of their time and it definitely isn’t the most fun part, or the part they bring the most value to.</li>
+<li>There are a lots of incredible Big data technologies that are being developed, but they’re hard to assemble and often don’t work well together. (I suggest  the great technoslavia blogpost)</li>
+<li>Because of communication problems between different teams and different profiles (engineers vs data scientists vs marketers of managers) models are rarely deployed into production in the end and resources go to waste. </li>
+</ul>
+<p></p>
+<br>
+
+<p>
+<strong><em>Q. What projects are you currently working on, and why/how are they interesting to you?</em></strong>
+<br>
+<br>
+Right now I’m working for one of our favorite clients. With similar issues to an ecommerce platform, they want to optimise their conversion rates by doing recommandations, homepage personalisation, or email targeting. It’s great to work on concrete marketing issues to deliver value to their end user.
+<br>
+<br>
+But what interests me the most right now is that period when the model is done and the data flow has been tested, and I can help our client to put it into production. The client starts A/B testing the model and sees how great it’s going, it’s awesome! 
+</p>
+<br>
+
+<p>
+<strong><em>Q. What tools, techniques, programming languages etc do you use on a regular basis? Has this changed at all recently?</em></strong>
+<br>
+<br>
+As you can imagine, I only work with Data Science Studio, the platform we developed at Dataiku. I get to test it and suggest new features to make the jobs of data scientists like me easier. DSS is great because I get to work with all the technologies and tools I like, integrated in the software: Python, SQL, R (if you want to), as well as Hadoop and Spark. I’m a python guy myself so I love to code and analyse data in Jupyter notebooks. Recently I started to learn javascript and d3js to make cool data visualisation. I love building webapps to share results and have fun with them!
+</p>
+<br>
+
+<p>
+<strong><em>Q. What has been the most surprising insight you have found?</em></strong>
+<br>
+<br>
+One time, I was working for a client, and we noticed that their were curious anomalies in a lot of the timestamp data. We looked into and found that the data was collected by a fleet of cellphones, and the people collecting the data had been manually changing the time on their device, which was weird. The reason they were doing this is because they were playing Candy Crush on the phones, and to get more lives they went “back in time” on their smartphones, altering the data we were working on! I love the investigative part of working with data, it always comes down to people in the end.
+</p>
+<br>
+
+<p>
+<strong><em>
+That's amazing! Incredible what lengths people will go to to win at Candy Crush! :) ... Ok, let's chat a bit about the role you're currently hiring for at Dataiku...
+</em></strong>
+</p>
+
+<br>
+<br>
+
+<p>
+<strong><em>Q. What's one thing that's really compelling about the role that doesn't necessarily come through in the job description?</em></strong>
+<br>
+<br>
+We are looking for passionate people and candidates who are proactive and have lots of ideas to contribute. It’s a major part of the job to love the tool Data Science Studio and want to contribute to making it better. Our boss always says that he only recruits people that are smarter than him, from all kinds of different backgrounds, and that makes going to working every day so much fun!
+</p>
+<br>
+
+<p>
+<strong><em>Q. Out of all the requirements listed, which are the most critical for a candidate to possess? Why?</em></strong>
+<br>
+<br>
+As a data scientist you need to have a real solid knowledge of machine learning and be able to code in Python or R fluently. And if you also spend time building compelling stories around data, or spend all your free time on Kaggle for instance, you’re probably a great candidate for us. You have to like playing with data, have a bit of a hacker mindset.
+</p>
+<br>
+
+<p>
+<strong><em>Q. How do you typically read a data science resume? (i.e., Are there sections you skim, places you focus more time etc.)</em></strong>
+<br>
+<br>
+Well before we even start reading the resume, we reply to candidates by sending them a data science exercise, like a small Kaggle competition. Usually, the candidate has to make predictions on a small dataset, using the language of his choice. 
+<br><br>
+Only about half of the candidate send us the exercise back. Then, we especially look at how the candidate handles difficulties, what hacks he finds to avoid them. This is a great way to gouge a data scientist’s real value, before even looking at his studies or his background. After that we have him come in for a job interview to see how he could fit in with the team, as well as interact with clients.
+</p>
+<br>
+
+<p>
+<strong><em>Q. What should candidates avoid doing on their resume?</em></strong>
+<br>
+<br>
+Tell us you graduated from Stanford instead of admitting you just completed Andrew NG’s Coursera MOOC. True story, candidates have done this.
+</p>
+<br>
+
+<p>
+<strong><em>Matthieu, thanks for spending the time chatting with us. </em></strong>We really enjoyed learning more about your work at Dataiku, and your passion for everything data certainly shines through :)
+</p>
+
+<br>
+
+<hr>
+<p>
+Readers, if you're <strong>interested in learning more about the role at Dataiku</strong>, you can find the full job posting <a href="https://www.dataiku.com/company/careers/">here</a>.
+</p>
+    </div>
+
+  </div>
+
+
+  <!-- Related Guide
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <br>
+    <p>
+      <strong class="text-danger" style="font-size:1.5em;">Want to become a data scientist?</strong>
+      <br>
+      <br>
+      How would you feel if you woke up tomorrow with perfect knowledge, given your background and education,
+      for how to become a data scientist as fast as possible?
+      <br>
+      <br>
+      Get started today because you will save time, money, and frustration with this
+      <br>
+      =&gt; <a href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Data Science Getting Started Guide</a>.
+    </p>
+    <br>
+  </div>
+</div>
+
+  <!-- Related Articles
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <p>
+    <br>
+      You might also enjoy these data science articles because you are terrific:
+      <br>
+      </p><ul>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/how-can-i-improve-the-format-of-my-resume">How can I improve the format of my resume?</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/how-to-show-awareness-of-the-wider-commercial-impact-of-data-science">How To Show Awareness Of The Wider Commercial Impact Of Data Science</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/how-to-describe-your-personal-projects-on-your-data-science-resume">How to describe your Personal Projects on your Data Science resume</a>
+          </li>
+      </ul>
+    <br>
+    <p></p>
+  </div>
+</div>
+
+  <!-- Post Content Newsletter Form -->
+  <div class="well" style="margin-bottom: 0px;">
+
+    <!-- mailchimp form -->
+    <form action="https://datascienceweekly.us3.list-manage.com/subscribe/post?u=71a2b2a38789d4d25b738462f&amp;id=b63d6b814f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+      <!-- Row 1 -->
+      <div class="col-md-12">
+        <div class="row" id="row-1">
+          <div class="col-md-6" id="pcnf-left">
+            Sign up to receive the Data Science Weekly Newsletter every Thursday
+          </div>
+          <div class="col-md-3" id="pcnf-middle">
+          	<input type="email" value="E-mail Address" name="EMAIL" class="form-control" id="mce-EMAIL" onfocus="if (this.value == &#39;E-mail Address&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;E-mail Address&#39;;}">
+          </div>
+          <div class="col-md-3" id="pcnf-right">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-danger">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr id="pcnf-hr-separator">
+        <div class="row" id="row-2">
+          <div class="col-md-12">
+            Easy to unsubscribe. No spam — we keep your email safe and do not share it.
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- /Row 1 -->
+      <!-- Row 2 -->
+      <!-- /Row 2 -->
+
+      </form> <!-- /mailchimp form -->
+  </div>
+  <!-- /Post Content Newsletter Form -->
+
+</div>
+        </div>
+      </div>
+
+      <!-- Footer Container
+      ================================================== -->
+      <div id="dsw-footer">
+        <div class="container">
+          <footer style="font-size:0.75em;padding-top:20px;padding-bottom:20px;margin-top:30px;color:white;text-align:left;border-top: 1px solid #e5e5e5;">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-3">
+        <p>
+          <span style="color:yellow;"><strong>Data Science Weekly</strong></span>
+          <br>
+          <span style="font-size:0.85em;">
+          A free weekly newsletter featuring curated news, articles, guides, and jobs related to Data Science.
+          </span>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-3">
+        <p>
+          <strong>DataScienceWeekly.org</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/articles">Data Scientist Articles</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-scientist-interviews">Data Scientist Interviews</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-resources">Data Science Resources</a>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-4">
+        <p>
+          <strong>Wait, there's more!</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Become A Data Scientist Faster</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/about-us">About Us</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/newsletters">Data Science Newsletter Archive</a>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p>
+          <strong>Let's Connect!</strong>
+        </p>
+        <p>
+          <a href="https://twitter.com/datascinews" class="text-info">Twitter</a>
+        </p>
+        <p>
+          <a href="mailto:team@datascienceweekly.org" class="text-info">Email Us</a>
+        </p>
+      </div><!-- /col-log-2 -->
+    </div>
+    <div class="col-lg-12">
+      <p style="font-size:0.75em;color:white;" class="pull-right">
+      © 2013-2016 DataScienceWeekly.org
+      </p>
+    </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+
+    <!-- Get Drip
+    ================================================== -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '4795790';
+  
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true; 
+        dc.src = '//tag.getdrip.com/4795790.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+  
+</body></html>

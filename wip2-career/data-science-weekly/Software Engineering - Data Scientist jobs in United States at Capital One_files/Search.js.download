@@ -1,0 +1,2866 @@
+﻿var _url;
+var xmlHttp;
+var _domain;
+var _keyword;
+var _enterSearchTerms;
+
+function Search(url) {
+    var keyword = document.getElementById("job_input_text").value;
+    SendRequest(url, keyword, "keyword", ShowPopup);
+}
+
+function ShowPopup() {
+    if (xmlHttp.readyState != 4)
+        return;
+
+    if (xmlHttp.status == 200) {
+        var divHTML = document.getElementById("searchHTML");
+        var keyword = ClearKeyword(document.getElementById("job_input_text").value);
+        if (xmlHttp.responseText.indexOf("<span class=\"close\"><a href=\"javascript:ClosePopup();\">") != -1 && keyword.length > 0)
+            divHTML.innerHTML = xmlHttp.responseText;
+        else {
+            divHTML.innerHTML = "";
+        }
+    }
+}
+
+function SendRequest(url, parameter, queryString, nameFunction) {
+    var newURL = (url.indexOf(queryString + "=") != -1) ? url.substring(0, url.indexOf(queryString + "=") - 1) : url;
+    newURL = (newURL.indexOf("?") != -1) ? newURL + "&" + queryString + "=" + encodeURIComponent(parameter) : newURL + "?" + queryString + "=" + encodeURIComponent(parameter);
+   //GPS-3  START
+   if (isFilterSearchOnLocation())
+        newURL += filterOnLocationQuery('AJAX'); 
+    //GPS-3 END
+    var e;
+    if (xmlHttp != null)
+        xmlHttp.abort();
+    try {
+        xmlHttp = new XMLHttpRequest();
+    }
+    catch (e) {
+        try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        catch (e) { }
+    }
+    xmlHttp.open("GET", newURL, true);
+    xmlHttp.onreadystatechange = nameFunction;
+    xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlHttp.send(null);
+}
+
+
+
+function ClosePopup() {
+    var divHTML = document.getElementById("searchHTML");
+    divHTML.innerHTML = "";
+
+    var inputKeyword = document.getElementById("job_input_text");
+    inputKeyword.value = "";
+    inputKeyword.onblur();
+}
+
+function GoSearch(url, closeText, displayText, headerText, imgsrc, filterkeywords) {
+    //setCookie("JobInputText", document.getElementById("job_input_text").value); //ks26 
+    _url = url;
+    Search(closeText, displayText, headerText, imgsrc, filterkeywords);
+}
+
+var searchDelay = null;
+function Search(closeText, displayText, headerText, imgsrc, filterkeywords)
+{
+    if (searchDelay != null) clearTimeout(searchDelay);
+
+    var keyword;
+    if (filterkeywords == true)
+        keyword = ClearKeyword(document.getElementById("job_input_text").value);
+    else
+        keyword = document.getElementById("job_input_text").value;
+
+    //Bert Begin 3203
+    var isPRNReplace = null;
+    if (document.getElementById("PRN_Replace_hidden_basicsearch") != null) {
+        isPRNReplace = document.getElementById("PRN_Replace_hidden_basicsearch").value;
+    }
+
+    if (isPRNReplace != null && isPRNReplace != "0" && keyword.trim().toLowerCase() == "prn") {
+        keyword = isPRNReplace
+    }
+    //Bert End 3203
+
+    //Begin changes Keyword search
+    //'-' is a spesial char and is ignpred in search
+    //keyword = keyword.replace(/-+/g, '');
+
+    if(keyword.length > 1 && ((keyword.lastIndexOf("-") + 1) != keyword.length))
+    {
+       var searchTimeout = function()
+       {
+            SendRequest(_url, keyword, "keyword", ShowPopup);
+        }
+
+        ShowProgressMessage(closeText, displayText, headerText, imgsrc);
+        searchDelay = setTimeout(searchTimeout, 1000);
+        //SendRequest(_url, keyword, "keyword", ShowPopup);
+    }
+    else
+    {
+        var divHTML = document.getElementById("searchHTML");
+        divHTML.innerHTML = "";
+    }
+    //end changes Keyword Search
+}
+
+function ToSearchResult(domain, enterSearchTerms, trSearches, toUseSearch, filterkeywords)
+{
+    if (xmlHttp != null)
+        xmlHttp.abort();
+    var keyword = document.getElementById("job_input_text").value;
+    //Bert Begin 3203
+    var isPRNReplace = null;
+    if (document.getElementById("PRN_Replace_hidden_basicsearch") != null) {
+        isPRNReplace = document.getElementById("PRN_Replace_hidden_basicsearch").value;
+    }
+
+    if (isPRNReplace != null && isPRNReplace != "0" && keyword.trim().toLowerCase() == "prn") {
+        keyword = isPRNReplace
+    }
+    //Bert End 3203 
+    if (filterkeywords == true) {
+        _keyword = ClearKeyword(keyword);
+        //handle reserved characters
+        _keyword = _keyword.replace(/:+/g, '').replace(/\*+/g, '').replace(/%+/g, '').replace(/\?+/g, '');
+        _keyword = _keyword.replace(/#+/g, '%23');
+         //START BERT : 11753 
+        _keyword = _keyword.replace(/ /g, '-').replace(/"+/g, '“');
+        //_keyword = _keyword.replace(/ /g, '-').replace(/&+/g, '﹠').replace(/"+/g, '“');
+        //END BERT : 11753
+    }
+    else {
+        _keyword = keyword;
+        _keyword = encodeURIComponent(_keyword);
+    }
+    if (_keyword == "con")
+        _keyword = _keyword + " ";
+    _domain = domain;
+    _enterSearchTerms = enterSearchTerms;
+    //Start Bert 3337
+    checkCookie(trSearches);
+    //End Bert 3337
+
+    //URL =window.location.href = "http://" + _domain + URL;
+    //FB Job Search [Http/Https implementation]
+
+     if(keyword.length > 1 && keyword != enterSearchTerms)
+     {
+         var URL;
+        if (document.URL.substring(0, 5) == "https") {
+        	URL = "https://" + _domain + "/" + trSearches + "/" + _keyword;
+        }
+        else {
+    	 	URL = "http://" + _domain + "/" + trSearches + "/" + _keyword;
+        }
+
+
+        //GPS-3 START
+   
+        if (isFilterSearchOnLocation())
+               {
+                    IsRadius = true;
+                    URL = URL + filterOnLocationQuery('BASIC'); 
+                  
+               }
+
+        //GPS-3 END    
+
+
+
+
+         window.location.href = URL;
+    }
+     else
+     {
+        alert(toUseSearch);
+    }
+    return false;
+}
+
+/////////////////////////////////////////
+// BERT : 7586 (Advance Search script) ..............starts
+/////////////////////////////////////////
+
+// BERT : 7586 Author : Sushil Jinder
+//bert 10273 mods begin
+function ToAdvanceSearchResult(domain, enterSearchTerms, trSearches, toUseSearch, filterkeywords)
+{
+    //TODO comment it after plug in.  
+   
+    if (xmlHttp != null)
+        xmlHttp.abort();
+    //Start Bert 3337
+    checkCookie(trSearches);
+    //End Bert 3337
+    var URL = null;
+    var keyword = '';
+    var categoryText = -1;
+    var postedDate = -1;
+    var countryText = -1;
+    var stateText = -1;
+    var cityText = -1;
+    var companyNameText = -1;
+    var locationsText = -1;
+
+    //BERT 10060 URL Encode for Default  - User Keyword Search Start
+    var isDefaultKeyword = false;
+    //BERT 10060 URL Encode for Default  - User Keyword Search End
+    //START BERT:12906
+    var isDefaultSearchKeyword = false;
+    //END BERT:12906
+
+
+    //BERT 14289 - Added advanced search custom fields - Manikandan Muthu, 10/10/2011
+    var custom1Text = -1;
+    var custom2Text = -1;
+    var custom3Text = -1;
+    var custom4Text = -1;
+    var custom5Text = -1;
+    //End BERT 14289
+
+    //Radius Search S1 & S2: Manikandan Muthu, 23 May 2012
+    var IsRadius = false;
+    var radiusCityStateZipcode = -1;
+    var radiusLatitude = -1;
+    var radiusLongitude = -1;
+    var radiusDistanceValue = -1;
+    //End
+    //Radius Searc S5-US4
+    var radiusDistanceType = "Miles";
+
+    var keywordCtrl = document.getElementById("txtASKeywords");
+
+    if (keywordCtrl != null) {
+        if (keywordCtrl.value.toLowerCase() == "enter search terms..."
+        || keywordCtrl.value == ""
+        || keywordCtrl.value.toLowerCase() == "mots clés..."
+        || keywordCtrl.value.toLowerCase() == "entrez les termes de recherche..."
+        //BERT 7122 Start
+       || keywordCtrl.value.toLowerCase() == "entrez les termes de recherche"
+        || keywordCtrl.value.toLowerCase() == "输入搜索词"
+          || keywordCtrl.value.toLowerCase() == "ingresar términos de búsqueda"
+           || keywordCtrl.value.toLowerCase() == "geben sie die suchbegriffe"
+        || keywordCtrl.value.toLowerCase() == "输入搜索词..."
+          || keywordCtrl.value.toLowerCase() == "ingresar términos de búsqueda..."
+           || keywordCtrl.value.toLowerCase() == "geben sie die suchbegriffe..."
+             || keywordCtrl.value.toLowerCase() == "")
+        //BERT 7122 End
+        {
+            //BERT 9402 Start
+            if(document.getElementById("hdnAdvsearchLable") != null)
+            {
+                keyword = document.getElementById("hdnAdvsearchLable").value;
+                //BERT 10060 URL Encode for Default  - User Keyword Search Start
+                 isDefaultKeyword = true;
+                 //BERT 10060 URL Encode for Default  - User Keyword Search End
+            }
+            else
+            {
+                keyword = "advanced search";
+                //BERT 10060 URL Encode for Default  - User Keyword Search Start
+                 isDefaultKeyword = true;
+                 //BERT 10060 URL Encode for Default  - User Keyword Search End
+            }
+            //BERT 9402 End
+        }
+        //BERT 10051 Start
+        else if(document.getElementById("hdnSearchTermValue") != null)
+        {
+            if(keywordCtrl.value.toLowerCase() == document.getElementById("hdnSearchTermValue").value.toLowerCase())
+            {
+                //START BERT:12906
+                if(document.getElementById("hdnSearchTermValue") != null && isDefaultKeyword == false)
+                {
+                    if(keywordCtrl.value.toLowerCase() == document.getElementById("hdnSearchTermValue").value.toLowerCase())                
+                        isDefaultSearchKeyword = true;
+                }
+                //END BERT:12906
+                if(document.getElementById("hdnAdvsearchLable") != null)
+                {
+                    keyword = document.getElementById("hdnAdvsearchLable").value;
+                }
+                else
+                {
+                    keyword = "advanced search";
+                }
+             
+            }
+            else 
+            {
+            keyword = keywordCtrl.value;
+            }
+        }
+        //BERT 10051 End
+        else {
+            keyword = keywordCtrl.value;
+        }
+    }
+
+
+    //Bert Begin 3203
+    var isPRNReplace = null;
+    if (document.getElementById("PRN_Replace_hidden_advsearch") != null) {
+        isPRNReplace = document.getElementById("PRN_Replace_hidden_advsearch").value;
+    }
+
+    if (isPRNReplace != null && isPRNReplace != "0" && keyword.trim().toLowerCase() == "prn") {
+        keyword = isPRNReplace
+    }
+    //Bert End 3203        
+
+    //BERT 16106 Start
+    var categoryCtrl = null;
+    if(document.getElementById("ddlASCategory") != null){
+        categoryCtrl = document.getElementById("ddlASCategory");
+    }
+    else{
+        categoryCtrl = document.getElementById("ddlMultipleASCategory");
+    }
+
+    if (categoryCtrl != null){
+        var isCategoryMultiSelect = document.getElementById("hdnCategoryMultiselectRequired").value;
+        if(isCategoryMultiSelect == "True") {
+            var selectedCategories = "";
+            for (var i = 0; i < categoryCtrl.options.length; i++){
+                if (categoryCtrl.options[i].selected && categoryCtrl.options[i].value != '-1'){
+                    if(selectedCategories == ""){
+                        selectedCategories = categoryCtrl.options[i].value;
+                    }
+                    else {
+                        selectedCategories = selectedCategories+"-"+categoryCtrl.options[i].value;
+                    }
+                }
+            }
+            if(selectedCategories != ""){
+                categoryText=selectedCategories;
+            }
+            else{
+                categoryText = '-1';
+            }
+        }
+        else{
+            if (categoryCtrl.options[categoryCtrl.selectedIndex].value == '-1') {
+                categoryText = '-1';
+            }
+            else
+                categoryText = categoryCtrl.options[categoryCtrl.selectedIndex].text;
+         }
+     }
+    //BERT 16106 End
+    //BERT 14004 Dev:Prakash Kumar Rout Date:17 AUG 2011
+    //Description: When we are creating drop down for PostedDate in BusLogic/JobData.cs we are using "ASPostedDate" as ID for the drop down
+    //var postedDateCtrl = document.getElementById("ddlASJobPostedWithin");
+    var postedDateCtrl = document.getElementById("ddlASPostedDate");
+    //End BERT 14004
+     if (postedDateCtrl != null)
+     {
+            postedDate = postedDateCtrl.value;
+    }
+
+    var countryCtrl = document.getElementById("ddlASCountry");
+     if (countryCtrl != null)
+     {
+        if (countryCtrl.options[countryCtrl.selectedIndex].value == '-1' || countryCtrl.options[countryCtrl.selectedIndex].value == '-1') //BERT 1062
+        {
+            countryText = '-1';
+        }
+        else
+            countryText = countryCtrl.options[countryCtrl.selectedIndex].text;
+    }
+
+    var stateCtrl = document.getElementById("ddlASState");
+     if (stateCtrl != null)
+     {
+            stateText = stateCtrl.value;
+    }
+
+    var cityCtrl = document.getElementById("ddlASCity");
+     if (cityCtrl != null)
+     {
+            cityText = cityCtrl.value;
+    }
+
+    var locationsCtrl = document.getElementById("ddlASLocations");
+     if (locationsCtrl != null)
+     {
+            locationsText = locationsCtrl.value;
+    }
+
+    var companyNameCtrl = document.getElementById("ddlASCompanyName");
+     if (companyNameCtrl != null)
+     {
+            companyNameText = companyNameCtrl.value;
+    }
+
+    //BERT 14289 - Added advanced search custom fields : Manikandan Muthu 10/10/2011
+    var custom1Ctrl = document.getElementById("ddlASCustom1");
+    if (custom1Ctrl != null) {
+            custom1Text = custom1Ctrl.value;
+    }
+
+    var custom2Ctrl = document.getElementById("ddlASCustom2");
+    if (custom2Ctrl != null) {
+            custom2Text = custom2Ctrl.value;
+    }
+
+    var custom3Ctrl = document.getElementById("ddlASCustom3");
+    if (custom3Ctrl != null) {
+            custom3Text = custom3Ctrl.value;
+    }
+
+    var custom4Ctrl = document.getElementById("ddlASCustom4");
+    if (custom4Ctrl != null) {
+            custom4Text = custom4Ctrl.value;
+    }
+
+    var custom5Ctrl = document.getElementById("ddlASCustom5");
+    if (custom5Ctrl != null) {
+        if (custom5Ctrl.value != "")
+            custom5Text = custom5Ctrl.value;
+    }
+    //End BERT 14289
+
+    //Radius Search S1 & S2 : Manikandan Muthu, 23 May 2012
+    var radiusCtrl = document.getElementById("rdBtnRadius");
+    if (radiusCtrl != null) {
+        if (radiusCtrl.checked) {
+            IsRadius = true;
+        }
+    }
+
+    var radiusLocationCtrl = document.getElementById("rdBtnLocation");
+
+    var radiusCityStateZipCtrl = document.getElementById("txtCityStateZip");
+    if (radiusCityStateZipCtrl != null) {
+        if (radiusCityStateZipCtrl.value != "")
+            radiusCityStateZipcode = radiusCityStateZipCtrl.value;
+
+        if (!IsRadius && radiusCityStateZipCtrl.value != "") {
+            if (radiusLocationCtrl != null) {
+
+                if (radiusLocationCtrl.checked) {
+                    IsRadius = false;
+                }
+                else {
+                    IsRadius = true;
+                }
+            }
+            else {
+                IsRadius = true;
+            }
+        }
+    }
+
+    var radiusDistanceValueCtrl = document.getElementById("ddlRadiusMiles");
+    
+
+    if (radiusDistanceValueCtrl != null) {
+        if (radiusDistanceValueCtrl.value != "")
+            radiusDistanceValue = radiusDistanceValueCtrl.value;
+    }
+    //Radius Search SOLR Migration
+
+   //GPS-3 START - added outer logic branch
+     if (isFilterSearchOnLocation())
+           IsRadius = true; 
+        else//GPS-3 END
+            if (radiusCityStateZipcode == -1) {
+                IsRadius = false;
+        }
+
+    if (radiusDistanceValue == -1) {
+        if (document.getElementById("hdnDefaultORMaxDistanceValue") != null) {
+            radiusDistanceValue = document.getElementById("hdnDefaultORMaxDistanceValue").value;
+
+        }
+        // START GPS-10 
+        if (isFilterSearchOnLocation()) 
+          { 
+            if (document.getElementById("hdnBasicSearchGPSDefaultDistance") != null 
+                && document.getElementById("hdnBasicSearchGPSDefaultDistance") != "")
+                {radiusDistanceValue = document.getElementById("hdnBasicSearchGPSDefaultDistance").value; }
+          }
+          //END  GPS-10 
+    }
+    var radiusLatitudeCtrl = document.getElementById("hdnLatitude");
+    if (radiusLatitudeCtrl != null) {
+        if (radiusLatitudeCtrl.value != "") {
+            radiusLatitude = radiusLatitudeCtrl.value;
+        }
+    }
+
+    var radiusLongitudeCtrl = document.getElementById("hdnLongitude");
+    if (radiusLongitudeCtrl != null) {
+        if (radiusLongitudeCtrl.value != "") {
+            radiusLongitude = radiusLongitudeCtrl.value;
+        }
+    }
+    //End
+    //Radius Search S5-US4
+    var radiusddlDistanceTypeCtrl = document.getElementById("ddlDistanceType"); 
+    var radiuslblDistanceTypeCtrl = document.getElementById("lblDistanceType");      
+    if (radiuslblDistanceTypeCtrl != null && radiuslblDistanceTypeCtrl.title == "UserChoice") {
+        if (radiusddlDistanceTypeCtrl != null && radiusddlDistanceTypeCtrl.value != "") {
+            if (radiusddlDistanceTypeCtrl.value != -1)
+                radiusDistanceType = radiusddlDistanceTypeCtrl.value;
+        }
+    }
+    else if (radiuslblDistanceTypeCtrl != null) {
+        radiusDistanceType = radiuslblDistanceTypeCtrl.title;
+    }
+
+    if (!IsRadius) {
+        var radiusCityStateZipcode = -1;
+        var radiusLatitude = -1;
+        var radiusLongitude = -1;
+        var radiusDistanceValue = -1;
+        var radiusDistanceType = -1;
+
+    }
+    else {
+        var countryText = -1;
+        var stateText = -1;
+        var cityText = -1;
+        var locationsText = -1;
+    }
+    if (filterkeywords == true && keyword != null) {
+        _keyword = ClearKeyword(keyword);
+        //handle reserved characters
+        _keyword = _keyword.replace(/:+/g, '').replace(/\*+/g, '').replace(/%+/g, '').replace(/\?+/g, '');
+        _keyword = _keyword.replace(/#+/g, '');
+          //START BERT : 11753
+        _keyword = _keyword.replace(/ /g, '-').replace(/"+/g, '“');
+        //_keyword = _keyword.replace(/ /g, '-').replace(/&+/g, '?').replace(/"+/g, '“');
+        //END BERT : 11753
+    }
+    else {
+        _keyword = keyword;
+        _keyword = encodeURIComponent(_keyword);
+    }
+    if (_keyword == "con")
+        _keyword = _keyword + " ";
+    _domain = domain;
+    _enterSearchTerms = enterSearchTerms;
+
+    //Bert: 2568 Added category check - shilpa,03/28/2012 
+    var _categoryText = '-1';
+    var _stateText = '-1';
+    var _stateText1 = '-1';
+    var _companyNameText = '-1'; //BERT 23365
+    var _custom2Text = '-1'; //BERT 23365
+    //BERT 2568 - Broke Autonation advance search - fixed
+    if ((categoryText != '-1') && (categoryText != -1))
+    {
+        _categoryText = categoryText.replace(/\\/g, "_backslash_") //BERT 16160
+    }
+    if ((stateText != '-1') && (stateText != -1)) {
+        _stateText = stateText.replace('/', ' ');
+        _stateText1 = _stateText.replace('/', ' ');
+    }
+    //BERT START 23365
+    if ((companyNameText != '-1') && (companyNameText != '-1')) {
+        _companyNameText = companyNameText.replace('/',' ');
+    }
+    if ((custom2Text != '-1') && (custom2Text != '-1')) {
+        _custom2Text = custom2Text.replace('/',' ');
+    }
+    //BERT END 23365
+    //BERT_12906 Starts
+    //Change Advanced Search / Radius Search Behavior so at least one value is required for the user to enter
+      if(IsRadius)
+     {
+        if (isFilterSearchOnLocation()) // BERT 19070 - when toggling bet rad/gps this value was still being passed
+            radiusCityStateZipcode =-1;
+
+        if((radiusCityStateZipcode==-1 || radiusCityStateZipcode.length<3 )&& (keyword.length < 2 || isDefaultKeyword==true || isDefaultSearchKeyword == true) && 
+        categoryText==-1 && postedDate==-1 && countryText==-1 && stateText==-1 && cityText==-1 && locationsText==-1 && companyNameText==-1 && custom1Text==-1 &&
+         custom2Text==-1 && custom3Text==-1 && custom4Text==-1 && custom5Text==-1)
+        {
+            // BERT 19070 if geo-location is on and radius selected allow blank keyword search
+            if (isFilterSearchOnLocation())
+               { 
+                    if (radiusDistanceValueCtrl.value == undefined || radiusDistanceValueCtrl.value == null || radiusDistanceValueCtrl.value == -1) 
+                    {   
+                        alert(document.getElementById("hdnAdvsearch_errormessage").value);
+                    }
+                }
+            // END BERT 19070
+            else
+            {
+            alert(document.getElementById("hdnAdvsearch_errormessage").value); //BERT 16261
+            return;
+            }
+        }
+     }
+     else
+     {
+        if((isDefaultKeyword==true || keyword.length < 2 || isDefaultSearchKeyword == true) && categoryText==-1 && postedDate==-1 && countryText==-1 && stateText==-1 && cityText==-1 && locationsText==-1
+        && companyNameText==-1 && custom1Text==-1 && custom2Text==-1 && custom3Text==-1 && custom4Text==-1 && custom5Text==-1)
+        {
+            alert(document.getElementById("hdnAdvsearch_errormessage").value); //BERT 16261
+            return;
+        }
+     }
+    //BERT_12906 Ends    
+
+    // allow all values or none for the following:
+    URL = "/" + trSearches + "/" + _keyword;
+    URL += "/" + "ASCategory" + "/" + _categoryText;
+    URL += "/" + "ASPostedDate" + "/" + postedDate;
+    URL += "/" + "ASCountry" + "/" + countryText;
+    URL += "/" + "ASState" + "/" + _stateText1;
+    URL += "/" + "ASCity" + "/" + cityText;
+    //added locations
+    URL += "/" + "ASLocation" + "/" + locationsText;
+    URL += "/" + "ASCompanyName" + "/" + _companyNameText; //BERT 23365
+
+    //BERT 14289- Added customfields - Manikandan Muthu,10/10/2011
+    URL += "/" + "ASCustom1" + "/" + custom1Text;
+    URL += "/" + "ASCustom2" + "/" + _custom2Text;
+    URL += "/" + "ASCustom3" + "/" + custom3Text;
+    URL += "/" + "ASCustom4" + "/" + custom4Text;
+    URL += "/" + "ASCustom5" + "/" + custom5Text;
+    //End BERT 14289
+
+    //Radius Search S1 & S2: Manikandan Muthu, 23 May 2012
+    URL += "/" + "ASIsRadius" + "/" + IsRadius;
+    URL += "/" + "ASCityStateZipcode" + "/" + radiusCityStateZipcode;
+    URL += "/" + "ASDistance" + "/" + radiusDistanceValue;
+    URL += "/" + "ASLatitude" + "/" + radiusLatitude;
+    URL += "/" + "ASLongitude" + "/" + radiusLongitude;
+    //End
+    URL += "/" + "ASDistanceType" + "/" + radiusDistanceType;   //Radius Search S5-US4
+    if (keyword != '' && keyword != enterSearchTerms) {
+        //alert(length(_keyword));
+        if (keyword.length < 2) {
+            alert(toUseSearch);
+            return;
+        }
+    }
+    // Check if any filter is seleted by user or not
+    if (
+        (_keyword == '' || _keyword == enterSearchTerms) && categoryText == ''
+            && postedDate == ''
+            && countryText == ''
+            && stateText == ''
+            && cityText == ''
+            && locationText == ''
+        ) {
+
+        alert(toUseSearch);
+        return;
+    }
+    else {
+        // good url
+    }
+
+
+    //URL =window.location.href = "http://" + _domain + URL;
+    //FB Job Search [Http/Https implementation]
+    if (document.URL.substring(0, 5) == "https") {
+        URL = "https://" + _domain + URL;
+    }
+    else {
+        URL = "http://" + _domain + URL;
+    }
+
+
+
+//    BERT 10051 Start
+// BERT 10060   URL Encode for Default  - User Keyword Search Start
+if(isDefaultKeyword)    
+{
+URL = encodeURI(URL);
+}
+// BERT 10060   URL Encode for Default  - User Keyword Search End
+//    BERT 10051 End
+    window.location.href = URL;
+    return false;
+}
+//bert 10273 mods end
+
+function addOption(selectbox,text,value ) {
+       //BERT 9258 Starts - Updated Duplicate Check Logic
+    var optn = document.createElement("OPTION");
+    optn.text = text;
+    optn.value = value;
+    //BERT 8192, 8147 Start 
+    if ((value != '') && (value != null) && (text != '') && (text != null))
+    {
+        try
+        {
+//Bert 22032 starts here
+//                if ($("#" + selectbox.id + " [value='" + value + "']").length == 0)
+//                {
+                    selectbox.options.add(optn);
+//                }
+//Bert 22032 ends here
+        }
+        catch(e)
+        {
+            var IsDuplicateValue = false;
+            $("#" + selectbox.id + " option").each
+            (
+                function ()
+                {
+                    if ($(this).val() == value)
+                    {
+                        IsDuplicateValue = true;
+                        return false;
+                    }
+                }
+            );
+            if (!IsDuplicateValue)
+            {
+                selectbox.options.add(optn);
+            }
+        }
+    }
+    //BERT 9258 Ends
+    //BERT 8192, 8147 End
+}
+
+//BERT 6679 Start
+function sortSelect(selElem) {
+    var tmpAry = new Array();
+    for (var i = 0; i < selElem.options.length; i++) {
+        tmpAry[i] = new Array();
+        tmpAry[i][0] = selElem.options[i].text;
+        tmpAry[i][1] = selElem.options[i].value;
+    }
+
+   tmpAry.sort(function(obj1,obj2) { return obj1[1].localeCompare(obj2[1]) }) // BERT  22009
+
+    while (selElem.options.length > 0) {
+        selElem.options[0] = null;
+    }
+    for (var i = 0; i < tmpAry.length; i++) {
+        var op = new Option(tmpAry[i][0], tmpAry[i][1]);
+        selElem.options[i] = op;
+    }
+    return;
+}
+//BERT 6679 End
+
+//BERT 6679 Start
+function resetStates() {
+    cntrySel = document.getElementById('ddlASCountry');
+    var resetStateControl = document.getElementById('ddlASState');
+    if (resetStateControl != null) { //Bert 9402
+        //Start Bert 9402, Multi language option States dropdown for 'select'
+        var stateSelectOption=resetStateControl.options[0].innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>') ; 
+        resetStateControl.options.length = 0;
+        addOption(resetStateControl, stateSelectOption, '-1');
+        //End Bert 9402
+
+        //Start Bert 9402        
+        if(document.getElementById('hdnValueForLanguageDropDownList')!=null)
+            document.getElementById('hdnValueForLanguageDropDownList').value =stateSelectOption;
+        //End Bert 9402
+    for (var i = 1; i < cntrySel.options.length; i++) {
+    //Bert 22032 starts here
+            var stateList = states[cntrySel.options[i].value];
+            var uniqueList = $.unique(stateList);
+        for (var j = 0; j < uniqueList.length; j++) {
+            addOption(resetStateControl, uniqueList[j], uniqueList[j]);
+        }
+        //Bert 22032 ends here
+    }
+
+        removeStateDuplicates();
+
+    sortSelect(resetStateControl);
+
+    }//Bert 9402
+     resetCities();
+}
+//BERT 6679 End
+
+function removeStateDuplicates() {
+    var stateList = [];
+
+    $("#ddlASState> option").each(function () {
+        if ($.inArray(this.value, stateList) >= 0) {
+            $(this).remove()
+        } else {
+            stateList.push(this.value);
+        }
+    });
+
+    stateList = []
+
+}
+
+function removeCityDuplicates() {
+    var cityList = [];
+
+    $("#ddlASCity> option").each(function () {
+        if ($.inArray(this.value, cityList) >= 0) {
+            $(this).remove()
+        } else {
+            cityList.push(this.value);
+        }
+    });
+
+    cityList = []
+
+}
+
+//BERT 8192, 8147 Start
+function resetCities() {
+
+    var cityListAll;//Bert 22032
+    var cityList;//Bert 22032
+    cntrySel = document.getElementById('ddlASCountry');
+    var stateSel = document.getElementById('ddlASState');
+    var resetCityControl = document.getElementById('ddlASCity');
+    if (resetCityControl != null) {
+        
+        //Start Bert 9402, Multi language option Cities dropdown for 'select'
+        var citySelectOption=resetCityControl.options[0].innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>') ; 
+        resetCityControl.options.length = 0;
+        addOption(resetCityControl, citySelectOption, '-1');
+        //End 9402
+
+        //Start Bert 9402
+            if(document.getElementById('hdnValueForLanguageDropDownList')!=null)
+                document.getElementById('hdnValueForLanguageDropDownList').value =citySelectOption;
+        //End Bert 9402
+        
+
+        if (stateSel == null) {
+             //BERT 8225 Start
+             if (cntrySel != null) {
+                 for (var i = 1; i < cntrySel.options.length; i++) {
+
+                     //Bert 22032 starts here
+                     cityListAll = CountriesCities[cntrySel.options[i].innerHTML];
+                     cityList = $.unique(cityListAll);
+
+                     if (cityList != null) {
+                         for (var l = 0; l < cityList.length; l++)
+                         addOption(resetCityControl, cityList[l], cityList[l]);
+                     }
+                 }
+             }
+         } else if ( stateSel.value == '-1') {
+            //BERT 8225 Start
+            if (cntrySel != null) {
+                for (var i = 1; i < cntrySel.options.length; i++) {
+                    if (states[cntrySel.options[i].value].length == 0) {
+                    //Bert 22032 starts here
+                        cityListAll = CountriesCities[cntrySel.options[i].innerHTML];
+                        cityList = $.unique(cityListAll);
+                    //Bert 22032 ends here
+                        //BERT 9258 Start
+                        if (cityList != null) {
+                            for (var l = 0; l < cityList.length; l++)
+                                addOption(resetCityControl, cityList[l], cityList[l]);
+                        }
+                        //addOption(resetCityControl, cityList, cityList);
+                        //BERT 9258 End
+                    }
+
+                    for (var j = 0; j < states[cntrySel.options[i].value].length; j++) {
+                        if (states[cntrySel.options[i].value][j] == '-1') {
+                        //Bert 22032 starts here
+                        cityListAll = cities[cntrySel.options[i].value][j];
+                        cityList = $.unique(cityListAll);
+                            for (var k = 0; k < cityList.length; k++) {
+                                addOption(resetCityControl, cityList[j], cityList[j]); //BERT 8192, 8147
+                                //Bert 22032 ends here
+                            }
+                        }
+                        else {
+                        //Bert 22032 starts here
+                        cityListAll = cities[states[cntrySel.options[i].value][j]];
+                        cityList = $.unique(cityListAll);
+                            for (var k = 0; k < cityList.length; k++) {
+                                addOption(resetCityControl, cityList[k], cityList[k]); //BERT 8192, 8147
+                                //Bert 22032 ends here
+                            }
+                        }
+                    }
+                }
+            }
+            //BERT 8225 End
+            else {
+                for (var i = 1; i < stateSel.options.length; i++) {
+                    if (cities[stateSel.options[i].value].length > 0) {
+                    //Bert 22032 starts here
+                        cityListAll = cities[stateSel.options[i].value];
+                        cityList = $.unique(cityListAll);
+                    //Bert 22032 ends here
+                        if (cityList != null) {
+                            for (var l = 0; l < cityList.length; l++)
+                                addOption(resetCityControl, cityList[l], cityList[l]);
+                        }
+                    }
+                }
+
+            }
+        }
+        else {
+         //Bert 22032 starts here
+                        cityListAll = cities[stateSel.options[stateSel.selectedIndex].text];
+                        cityList = $.unique(cityListAll);
+            for (var k = 0; k < cityList.length; k++) {
+                addOption(resetCityControl, cityList[k], cityList[k]); //BERT 8192, 8147
+                //Bert 22032 ends here
+            }
+        }
+
+        removeCityDuplicates();
+
+        sortSelect(resetCityControl);
+    }
+}
+//BERT 8192, 8147 End
+
+
+ //BERT 9258 starts...
+function setStates() {
+
+
+
+    //BERT 6679 Start
+
+    cntrySel = document.getElementById('ddlASCountry');
+    //BERT 13543 Starts
+    stateSel = document.getElementById('ddlASState');
+    if (cntrySel != null && cntrySel.value == '-1' && stateSel != null && stateSel.value == '-1') //BERT 13543 Ends
+    { // BERT 8225
+        resetStates();
+
+        return;
+    }
+
+    //BERT 6679 End
+    var stateList = null; //BERT 1062
+    var stateControl = document.getElementById('ddlASState');
+    //    if (stateControl.value == '-1') 
+    //    {
+    //        resetCities();
+    //        return;
+    //    }
+
+    if (stateControl != null) //BERT 1062
+    {
+        if (cntrySel != null) {
+            if (cntrySel.value != null && cntrySel.value != '' && cntrySel.value != '-1' && cntrySel.length > 0) {
+                stateList = states[cntrySel.value];
+                changeSelect('ddlASState', stateList, stateList);
+                removeStateDuplicates();
+                setCities();
+                if (stateControl.value == '-1') {
+                    removeStateDuplicates();
+                    sortSelect(stateControl);//TSSDQ-243 - Sorting is added for state.
+                    setCountriesCities();
+                }
+            } else {
+                removeStateDuplicates();
+                sortSelect(stateControl);
+                setCities();
+            }
+        } else {
+            removeStateDuplicates();
+            setCities();
+        }
+    } else {
+        setCountriesCities();
+    }
+}
+// BERT 9258 - Ends 
+
+// BERT : 7586 Author : Sushil Jinder
+function setCities() {
+
+    cntrySel = document.getElementById('ddlASCountry');
+    stateSel = document.getElementById('ddlASState');
+    //BERT 6679 start
+    if (cntrySel != null && cntrySel.value == '-1') { // BERT 8225
+        resetCities();
+    } else { //BERT 6679 end
+        if (stateSel != null) {
+            if (stateSel.value != '-1') {
+                if (document.getElementById('ddlASCity') != null) //Bert-6636.
+                {
+                    cityList = cities[stateSel.value];
+                    changeSelect('ddlASCity', cityList, cityList);
+                    removeCityDuplicates();
+                    sortSelect(document.getElementById('ddlASCity'));
+                }
+            } else {
+                citySel = document.getElementById('ddlASCity');
+                if (citySel != null && cntrySel != null) { //BERT-6041
+                    if (cntrySel.value != null && cntrySel.value != '' && cntrySel.value != '-1' && cntrySel.length > 0) { //BERT-6041
+                        cityList = CountriesCities[cntrySel.value]; //Ks01 Friday at 6:05
+                        changeSelect('ddlASCity', cityList, cityList); //Ks01 Friday at 6:05
+
+                        if (citySel.options.length > 0) {
+                            citySel.selectedIndex = 0;
+                        }
+                        removeCityDuplicates();
+                        sortSelect( citySel );
+                    } else {
+                        resetCities(); //BERT 8225
+                    }
+                } //Bert-23539 start
+                else if (citySel != null && cntrySel == null && stateSel.value == -1) {
+                    resetCities();
+                } //Bert-23539 end
+            }
+
+            /*else
+            {
+            citySel = document.getElementById('ddlASCity');
+            citySel.options.length = 0;
+            
+            var selectNode=document.createElement('option');
+            selectNode.text='--Select--'
+            selectNode.value = '-1';
+            citySel.add(selectNode,0);
+            citySel.selectedIndex = 0;
+            }*/
+        }
+    } //BERT 6679
+}
+
+// BERT : 7586 Author : Sushil Jinder
+function setCountriesCities() {
+    cntrySel = document.getElementById('ddlASCountry');
+    try {
+        if (cntrySel != 'undefined' && cntrySel) {
+            //if (CountriesCities != null && CountriesCities != 'undefined')
+            if (cntrySel.value != '-1') {
+                if (document.getElementById('ddlASCity') != null) //Bert-6636.
+                {
+                    cityList = CountriesCities[cntrySel.value];
+                    changeSelect('ddlASCity', cityList, cityList);
+                    removeCityDuplicates();
+                }
+            } else {
+                resetCities();
+            }
+        }
+    } catch (err) {
+        ClearCityDrp();
+    }
+}
+
+//Ks01 Used temp
+function ClearCityDrp() {
+    // Start BERT 1062
+    var citySel = document.getElementById('ddlASCity');
+    if (citySel != null) {
+        citySel.options.length = 0; //KS01 Bert 2388          Clearing out drop down
+        var selectNode = document.createElement('option');   //Locating option
+	    selectNode.text = '<--- select --->';                //Adding an option             
+        selectNode.value = '-1';                             //Setting the index value
+        citySel.add(selectNode, 0);                          //Adding the option to the drop down
+        citySel.selectedIndex = 0;       //This is for countries that do not have state, the link is broken to retrieve city.
+    }
+}
+
+// BERT : 7586 Author : Sushil Jinder
+function changeSelect(fieldID, newOptions, newValues) 
+{
+
+        //Start Bert 9402, Multi language option Cities dropdown for 'select'
+        var field = document.getElementById(fieldID);
+        var fieldFirst =field.options[0].innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>') ; 
+        if(document.getElementById('hdnValueForLanguageDropDownList')!=null)//bhuvan
+        document.getElementById('hdnValueForLanguageDropDownList').value =fieldFirst ;
+        //End 9402
+
+    selectField = document.getElementById(fieldID);
+    selectField.options.length = 0;
+
+    //BERT: 1136 Dev:Vandana Date:14th Oct, 2011
+  if(newOptions != null)
+  {
+      for (i=0; i<newOptions.length; i++) 
+      {
+            selectField.options[selectField.length] = new Option(newOptions[i], newValues[i]);
+        }
+    }
+
+    // Add a blank node at the start
+    //BERT: 1136 Dev:Vandana Date: 14th Oct, 2011
+  if(selectField != null)  
+  {
+        var selectNode = document.createElement('option');
+       //BERT-6093 starts...
+        if (document.getElementById('hdnValueForLanguageDropDownList') != null) {
+          //START BERT:18643  
+          //var ddlASCategory = document.getElementById('ddlASCategory').options;
+          //END BERT:18643
+            selectNode.text = document.getElementById('hdnValueForLanguageDropDownList').value;
+        }
+        else {
+            selectNode.text = '<--- select --->';
+        }
+        //BERT-6093 ends
+        selectNode.value = '-1';
+
+
+        //selectField.add(selectNode,selectField.selectedIndex);      
+
+
+
+        // BERT 13320 by SJ on 07-June-2011
+        // Cross browser issues with adding an item to list      
+        // ***************************************************************************      
+        // var lastElement = selectField.options[selectField.selectedIndex];  
+        // try 
+        // {
+        //     selectField.add(selectNode, lastElement); // standards compliant; doesn't work in IE
+        // }
+        // catch(ex) 
+        // {
+        //    selectField.add(selectNode, selectField.selectedIndex); // IE only
+        // }
+        // *****************************************************************************
+
+
+        selectField.insertBefore(selectNode, selectField.firstChild);
+
+        //For IE only
+     if(selectField[0].text=="")
+     {
+            //BERT-6093 starts...
+            if (document.getElementById('hdnValueForLanguageDropDownList') != null) {
+                selectNode.text = document.getElementById('hdnValueForLanguageDropDownList').value;
+            }
+            else {
+                selectField[0].text = '<--- select --->';
+            }
+            //BERT-6093 ends
+            selectField[0].value = '-1';
+        }
+        // BERT 14152 ends...
+        //BERT-6041 starts...
+        //selectField.selectedIndex = 0;
+        var index = 0;
+        if (fieldID == "ddlASState") {
+            if (document.getElementById('hdnASState') != null) {
+                for (var stateIndex = 0; stateIndex <= selectField.length; stateIndex++) {
+                    if (selectField.options[stateIndex] != null)
+                        if (selectField.options[stateIndex].value == document.getElementById('hdnASState').value) {
+                        index = stateIndex;
+                        break;
+                    }
+                }
+            }
+        }
+        else if (fieldID == "ddlASCity") {
+            if (document.getElementById('hdnASCity') != null) {
+                for (var cityIndex = 0; cityIndex <= selectField.length; cityIndex++) {
+                    if (selectField.options[cityIndex] != null)
+                        if (selectField.options[cityIndex].value == document.getElementById('hdnASCity').value) {
+                        index = cityIndex;
+                        break;
+                    }
+                }
+            }
+        }
+        //        else {
+        //            selectField.selectedIndex = 0;
+        //        }
+        selectField.options[index].selected = true;
+        //BERT-6041 ends
+    }
+}
+
+// BERT 8192 and 8147 - start
+function SetAdvancedSearchDefaultValues() {
+    var stateDefaultValue = document.getElementById('hdnASState');
+    var cityDefaultValue = document.getElementById('hdnASCity');//BERT 9389 
+    
+//BERT 9389 Start
+ var categoryDefaultValue = document.getElementById('hdnASCategory');
+ var countryDefaultValue = document.getElementById('hdnASCountry');
+ var postedDateDefaultValue = document.getElementById('hdnASPostedDate');
+var companyNameDefaultValue = document.getElementById('hdnASCompanyName');
+
+var custom1DefaultValue = document.getElementById('hdnASCustom1');
+
+var custom1Ctrl = document.getElementById("ddlASCustom1");
+    if (custom1Ctrl != null && custom1DefaultValue != null && custom1DefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= custom1Ctrl.length; stateIndex++) {
+            if (custom1Ctrl.options[stateIndex].value == custom1DefaultValue.value) {
+                custom1Ctrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+
+var Custom2DefaultValue = document.getElementById('hdnASCustom2');
+
+var Custom2Ctrl = document.getElementById("ddlASCustom2");
+    if (Custom2Ctrl != null && Custom2DefaultValue != null && Custom2DefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= Custom2Ctrl.length; stateIndex++) {
+            if (Custom2Ctrl.options[stateIndex].value == Custom2DefaultValue.value) {
+                Custom2Ctrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+
+
+var Custom3DefaultValue = document.getElementById('hdnASCustom3');
+
+var Custom3Ctrl = document.getElementById("ddlASCustom3");
+    if (Custom3Ctrl != null && Custom3DefaultValue != null && Custom3DefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= Custom3Ctrl.length; stateIndex++) {
+            if (Custom3Ctrl.options[stateIndex].value == Custom3DefaultValue.value) {
+                Custom3Ctrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+var Custom4DefaultValue = document.getElementById('hdnASCustom4');
+
+var Custom4Ctrl = document.getElementById("ddlASCustom4");
+    if (Custom4Ctrl != null && Custom4DefaultValue != null && Custom4DefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= Custom4Ctrl.length; stateIndex++) {
+            if (Custom4Ctrl.options[stateIndex].value == Custom4DefaultValue.value) {
+                Custom4Ctrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+var Custom5DefaultValue = document.getElementById('hdnASCustom5');
+
+var Custom5Ctrl = document.getElementById("ddlASCustom5");
+    if (Custom5Ctrl != null && Custom5DefaultValue != null && Custom5DefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= Custom5Ctrl.length; stateIndex++) {
+            if (Custom5Ctrl.options[stateIndex].value == Custom5DefaultValue.value) {
+                Custom5Ctrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+
+var locationsDefaultValue = document.getElementById('hdnASLocations');
+
+var locationsCtrl = document.getElementById("ddlASCustom5");
+    if (locationsCtrl != null && locationsDefaultValue != null && locationsDefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= locationsCtrl.length; stateIndex++) {
+            if (locationsCtrl.options[stateIndex].value == locationsDefaultValue.value) {
+                locationsCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+
+var companyNameCtrl = document.getElementById("ddlASCompanyName");
+    if (companyNameCtrl != null && companyNameDefaultValue != null && companyNameDefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= companyNameCtrl.length; stateIndex++) {
+            if (companyNameCtrl.options[stateIndex].value == companyNameDefaultValue.value) {
+                companyNameCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+
+//BERT 16106 Start
+var categoryCtrl = null;
+if(document.getElementById("ddlASCategory") != null){
+    categoryCtrl = document.getElementById("ddlASCategory");
+}
+else{
+    categoryCtrl = document.getElementById("ddlMultipleASCategory");
+}
+
+if (categoryCtrl != null && categoryDefaultValue != null && categoryDefaultValue.value != '') {
+    var isCategoryMultiSelect = document.getElementById("hdnCategoryMultiselectRequired").value;
+    if(isCategoryMultiSelect == "True") {
+        var Categories=categoryDefaultValue.value.split("-");
+        for (var stateIndex = 0; stateIndex < categoryCtrl.length; stateIndex++) {
+            for(var i=0;i<Categories.length;i++){
+                if (categoryCtrl.options[stateIndex].value.toLowerCase() == Categories[i].toString().toLowerCase()) {
+                    categoryCtrl.options[stateIndex].selected = true; 
+                    break;
+                }
+            }
+        }
+    }
+    else {
+        for (var stateIndex = 0; stateIndex <= categoryCtrl.length; stateIndex++) {
+            if (categoryCtrl.options[stateIndex].value == categoryDefaultValue.value) {
+                categoryCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+}
+//BERT 16106 End
+var countryCtrl = document.getElementById("ddlASCountry");
+    if (countryCtrl != null && countryDefaultValue != null && countryDefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= countryCtrl.length; stateIndex++) {
+            if (countryCtrl.options[stateIndex].value == countryDefaultValue.value) {
+                countryCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+    
+var postedDateCtrl = document.getElementById("ddlASPostedDate");
+    if (postedDateCtrl != null && postedDateDefaultValue != null && postedDateDefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex <= postedDateCtrl.length; stateIndex++) {
+            if (postedDateCtrl.options[stateIndex].value == postedDateDefaultValue.value) {
+                postedDateCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+//BERT 9389 End
+
+    var stateCtrl = document.getElementById("ddlASState");
+    //    if (stateCtrl != null && stateDefaultValue != null) {
+
+    //        var stateValue = $("#" + stateCtrl.id + " [text=" + stateDefaultValue.value + "]");
+    //        if (stateValue.length > 0) {
+    //            stateValue[0].selected = true;
+    //        }
+    //    }
+
+    if (stateCtrl != null && stateDefaultValue != null && stateDefaultValue.value != '') {
+
+        for (var stateIndex = 0; stateIndex < stateCtrl.length; stateIndex++) {
+            if (stateCtrl.options[stateIndex].value == stateDefaultValue.value) {
+                stateCtrl.options[stateIndex].selected = true;
+                break;
+            }
+        }
+    }
+    var cityCtrl = document.getElementById("ddlASCity");
+
+    if (cityCtrl != null && cityDefaultValue != null && cityDefaultValue.value != '') {
+
+        for (var cityIndex = 0; cityIndex < cityCtrl.length; cityIndex++) {
+            if (cityCtrl.options[cityIndex].value == cityDefaultValue.value) {
+                cityCtrl.options[cityIndex].selected = true;
+                break;
+            }
+        }
+    }
+}
+// BERT 8192 and 8147 - End
+
+
+// BERT : 7586 Author : Sushil Jinder
+function addLoadEvent(func) {
+
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
+    }
+}
+
+// BERT 16937 - Start
+//addLoadEvent(function() {
+//    
+//    setStates();
+//    // BERT 8192 and 8147 - start
+//    SetAdvancedSearchDefaultValues();
+//    // BERT 8192 and 8147 - End
+//});
+
+$(document).ready(function()
+{
+    try
+    {
+    if( document.location.host != "ups.tmpseoqa.com" && document.location.host != "jobs-ups.com")
+    {
+    setStates();
+    }
+    }catch(e)
+    {
+    }
+    // BERT 8192 and 8147 - start
+    SetAdvancedSearchDefaultValues();
+    // BERT 8192 and 8147 - End
+});
+
+// BERT 16937 - Ends
+
+/////////////////////////////////////////
+// BERT : 7586 (Advance Search script)..............ends
+/////////////////////////////////////////
+
+//BERT-6093 starts...
+function setDefaultValues() {
+
+    var countryCtrl = document.getElementById("ddlASCountry");
+    if (countryCtrl != null) {
+        countryCtrl.selectedIndex = 0;
+    }
+
+    var stateCtrl = document.getElementById("ddlASState");
+    if (stateCtrl != null) {
+        stateCtrl.selectedIndex = 0;
+    }
+
+    var cityCtrl = document.getElementById("ddlASCity");
+    if (cityCtrl != null) {
+        cityCtrl.selectedIndex = 0;
+    }
+    
+    //BERT-16106 starts
+    var categoryCtrl = null;
+    if(document.getElementById("ddlASCategory") != null){
+        categoryCtrl = document.getElementById("ddlASCategory");
+    }
+    else{
+        categoryCtrl = document.getElementById("ddlMultipleASCategory");
+    }
+    //BERT-16106 ends
+    if (categoryCtrl != null) {
+        categoryCtrl.selectedIndex = 0;
+    }
+
+    var postedDateCtrl = document.getElementById("ddlASPostedDate");
+    if (postedDateCtrl != null) {
+        postedDateCtrl.selectedIndex = 0;
+    }
+
+    var companyNameCtrl = document.getElementById("ddlASCompanyName");
+    if (companyNameCtrl != null) {
+        companyNameCtrl.selectedIndex = 0;
+    }  
+}
+//BERT-6093 ends    
+
+//Start Bert 2 No. 1073
+function Go(url, isSearchPaging, isDate) {
+    //Bert 7690, IE7,8 issue for boeing, added var
+    var jobTitleKeyword = '';
+    var locationKeyword = '';
+    var dateKeyword = '';
+    var categoryKeyword = ''; //4356
+
+    var filterTitle = '';
+    var filterLocation = ''
+    var filterDate = '';
+    var filterCategory = ''; //4356
+    //End 7690
+
+    if (document.getElementById("jobTitleKeyword") != null) {
+        jobTitleKeyword = Trim(document.getElementById("jobTitleKeyword").value).replace("+","%2B").replace("+","%2B").replace("-","–");//BERT : 11753; //BERT 20670
+    }
+
+    if (document.getElementById("locationsKeyword") != null) {
+        locationKeyword = Trim(document.getElementById("locationsKeyword").value).replace("-","–"); //BERT 20670
+    }
+    //BERT 4356 
+    if (document.getElementById("categoryKeyword") != null) {
+        categoryKeyword = Trim(document.getElementById("categoryKeyword").value);
+    }
+
+    if (document.getElementById("hdnFilterTitle") != null) {
+        filterTitle = Trim(document.getElementById("hdnFilterTitle").value);
+    }
+
+    if (document.getElementById("hdnFilterLocation") != null) {
+        filterLocation = Trim(document.getElementById("hdnFilterLocation").value);
+    }
+
+    //4356
+    if (document.getElementById("hdnFilterCategory") != null) {
+        filterCategory = Trim(document.getElementById("hdnFilterCategory").value);
+    }
+    if (categoryKeyword == filterCategory) {
+        categoryKeyword = '';
+    }
+    //end bert 4356
+
+    if (jobTitleKeyword == filterTitle) {
+        jobTitleKeyword = '';
+    }
+
+    if (locationKeyword == filterLocation) {
+        locationKeyword = '';
+    }
+
+    //Bert 2 No. 1073 - Filteration in L2 page.
+    if ((document.getElementById("dateKeyword") != null) && (document.getElementById("hdnFilterDate") != null)) {
+        dateKeyword = Trim(document.getElementById("dateKeyword").value);
+        filterDate = Trim(document.getElementById("hdnFilterDate").value);
+
+        if (dateKeyword == filterDate) {
+            dateKeyword = '';
+        }
+    }
+    //Bert 4356 - Category Filteration in L2 page.
+    if ((document.getElementById("categoryKeyword") != null) && (document.getElementById("hdnFilterCategory") != null)) {
+        categoryKeyword = Trim(document.getElementById("categoryKeyword").value);
+        filterCategory = Trim(document.getElementById("hdnFilterCategory").value);
+
+        if (categoryKeyword == filterCategory) {
+            categoryKeyword = '';
+        }
+    } //end 4356
+    
+	// BERT 7565 - Only GetRequest if jobTitleKeyword or locationKeyword contain actual values
+    if(jobTitleKeyword != '' || locationKeyword != '') 
+        GetRequest(url, jobTitleKeyword, locationKeyword, dateKeyword, categoryKeyword, isSearchPaging, isDate, 1); //Bert 4356 add filter category //Bert 2 No. 1073
+}
+
+function Reset(url, isSearchPaging, isDate) {
+    document.location.href = document.location.toString().split('#')[0];        //BERT 6274
+    setFilterCookie("FilterUrl","");//BERT:21260
+    GetRequest(url, '', '', '', '', isSearchPaging, isDate, 1); //Bert 4356 add filter category //Bert 2 No. 1073
+}
+
+function GetRequest(url, jobTitleKeyword, locationKeyword, dateKeyword, categoryKeyword, isSearchPaging, isDate, pagenumber)//Bert 4356 add filter category //Bert 2 No. 1073
+{
+    //START BERT 1062
+    if (document.getElementById("hdnIsPageLoaded") != null) {
+        if (document.getElementById("hdnIsPageLoaded").value == '1') {
+            setCookie("pagenumber", pagenumber);
+            setCookie("url", url);
+            setCookie("isSearchPaging", isSearchPaging);
+            setCookie("isDate", isDate);
+            setCookie("jobTitleKeyword", jobTitleKeyword);
+            setCookie("locationKeyword", locationKeyword);
+            setCookie("categoryKeyword", categoryKeyword);  //BERT 4356 
+        }
+    }
+    //END BERT 1062
+
+    //START BERT 3315
+    if (document.getElementById("hdnIsL2PageLoaded") != null) {
+        if (document.getElementById("hdnIsL2PageLoaded").value == '1') {
+            setCookie("pagenumber", pagenumber);
+            setCookie("url", url);
+            setCookie("isSearchPaging", isSearchPaging);
+            setCookie("isDate", isDate);
+            setCookie("jobTitleKeyword", jobTitleKeyword);
+            setCookie("locationKeyword", locationKeyword);
+            setCookie("categoryKeyword", categoryKeyword);  //BERT 4356 
+        }
+    }
+    // End 3337,3270
+    //END BERT 1062
+
+    //var newURL = url.replace(/&+/g, '﹠') + "&jobtitlekeyword=" + encodeURIComponent(jobTitleKeyword.replace(/&+/g, '﹠'))
+
+    var newURL = url + "&jobtitlekeyword=" + encodeURIComponent(jobTitleKeyword.replace(/&+/g, '﹠'))
+        + "&locationkeyword=" + encodeURIComponent(locationKeyword.replace(/&+/g, '﹠'))
+        + "&dateKeyword=" + encodeURIComponent(dateKeyword.replace(/&+/g, '﹠'))
+        + "&categoryKeyword=" + encodeURIComponent(categoryKeyword.replace(/&+/g, '﹠'))//4356
+        + "&issearchpaging=" + encodeURIComponent(isSearchPaging) + "&isdate=" + encodeURIComponent(isDate)
+        + "&pagenumber=" + encodeURIComponent(pagenumber);
+    var e;
+
+    if (xmlHttp != null)
+        xmlHttp.abort();
+    try
+    {       
+        xmlHttp = new XMLHttpRequest();
+    }
+    catch(e)
+    {
+        try
+        {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        catch (e) { }
+    }
+
+    try
+    {
+        xmlHttp.open("GET", newURL, true);
+        xmlHttp.onreadystatechange = RefreshResults;
+        xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlHttp.send(null);
+    }
+    catch(Exception)
+    {
+        alert(Exception);
+    }
+}
+
+
+function RefreshResults() {
+
+
+    if (xmlHttp.readyState != 4) return;
+
+    //BERT 10137 - Start
+    if (xmlHttp.status == 200) {
+        
+        var divHTML = document.getElementById("conteinerForSearchResults");
+        if (xmlHttp.responseText.indexOf("\"divMain\"") == -1) {
+            
+            if (xmlHttp.responseText.indexOf("<table class=\"tableSearchResults\">") != -1) divHTML.innerHTML = xmlHttp.responseText;
+            //Bert 11839 Dharmendra 3/1/2011        
+            if (document.getElementById("hdnSearchResultCount") != null) {
+                var searchResultCount = document.getElementById("hdnSearchResultCount").value;
+                if (document.getElementById("searchResultCount") != null) {
+                    if (document.all) {
+                        document.getElementById("searchResultCount").innerText = searchResultCount;
+                    } else {
+                        document.getElementById("searchResultCount").innerHTML = searchResultCount;
+                    }
+                }
+            }
+            //Bert End 11839
+
+            //BERT 2294 - show message to user if search results over 500 results : Manikandan Muthu     
+            if (document.getElementById("hdnmaximumSearchResult") != null && document.getElementById("hdnmaximumSearchResult") != "") {
+                var searchResultMessage = document.getElementById("hdnmaximumSearchResult").value;
+                if (searchResultMessage.length > 0) {
+                    if (document.getElementById("maximumSearchResult") != null) {
+                        if (document.all) {
+                            document.getElementById("maximumSearchResult").innerHTML = searchResultMessage;
+                        } else document.getElementById("maximumSearchResult").innerHTML = searchResultMessage;
+                    }
+                } else {
+                    if (document.getElementById("maximumSearchResult") != null) {
+                        document.getElementById("maximumSearchResult").innerHTML = "";
+                    }
+                }
+            }
+
+        } else {
+            try {
+                var result = $(xmlHttp.responseText).find("#SearchResultsConteiner");
+
+                if (result.length > 0) {
+
+                    var searchResults = result[0].innerHTML;
+                    if (searchResults.indexOf("<table class=\"tableSearchResults\">") != -1) divHTML.innerHTML = searchResults;
+
+                    if (document.getElementById("hdnSearchResultCount") != null) {
+                        var searchResultCount = document.getElementById("hdnSearchResultCount").value;
+                        if (document.getElementById("searchResultCount") != null) {
+                            if (document.all) {
+                                document.getElementById("searchResultCount").innerText = searchResultCount;
+                            } else {
+                                document.getElementById("searchResultCount").innerHTML = searchResultCount;
+                            }
+                        }
+                    }
+                    //Bert End 11839
+
+                    //BERT 2294 - show message to user if search results over 500 results : Manikandan Muthu     
+                    if (document.getElementById("hdnmaximumSearchResult") != null && document.getElementById("hdnmaximumSearchResult") != "") {
+                        var searchResultMessage = document.getElementById("hdnmaximumSearchResult").value;
+                        if (searchResultMessage.length > 0) {
+                            if (document.getElementById("maximumSearchResult") != null) {
+                                if (document.all) {
+                                    document.getElementById("maximumSearchResult").innerHTML = searchResultMessage;
+                                } else document.getElementById("maximumSearchResult").innerHTML = searchResultMessage;
+                            }
+                        } else {
+                            if (document.getElementById("maximumSearchResult") != null) {
+                                document.getElementById("maximumSearchResult").innerHTML = "";
+                            }
+                        }
+                    }
+                }
+            } catch (e) {}
+        }
+
+        //End     
+    }
+    //BERT 10137 - End
+
+}
+
+//Changed for Bert 2 No. 1073 & and code refactored. This change incorporates fix for Bert 1 tickets 11839 and 9605 as well.
+//suggesting to modify function Go() to take 'pagenumber' as one of the parameters, so that the Paging function can be eliminated.
+function Paging(url, pagenumber, isSearchPaging, isDate) {
+
+//START BERT 11736
+url = url.replace(/&#39;+/g, '%27');
+//END BERT 11736
+//START BERT : 11753
+url = url.replace(/#+/g, '%23');
+//END BERT : 11753
+    //Bert 3337, start if
+    if (url != undefined) {
+        //BERT 10992 Starts - Adding var to each variable
+        var jobTitleKeyword = '';
+        var locationKeyword = '';
+        var categoryKeyword = ''; //BERT 4356 
+        var dateKeyword = '';
+
+        var filterTitle = '';
+        var filterLocation = '';
+        var filterCategory = '';
+        var filterDate = '';
+      //BERT 10992 Ends
+
+        if (document.getElementById("jobTitleKeyword") != null) {
+            jobTitleKeyword = Trim(document.getElementById("jobTitleKeyword").value);
+        }
+
+        if (document.getElementById("locationsKeyword") != null) {
+            locationKeyword = Trim(document.getElementById("locationsKeyword").value);
+
+        }
+
+        if (document.getElementById("categoryKeyword") != null) {
+            categoryKeyword = Trim(document.getElementById("categoryKeyword").value);
+
+        }
+
+        if (document.getElementById("hdnFilterTitle") != null) {
+            filterTitle = Trim(document.getElementById("hdnFilterTitle").value);
+
+        }
+
+        if (document.getElementById("hdnFilterLocation") != null) {
+            filterLocation = Trim(document.getElementById("hdnFilterLocation").value);
+        }
+
+        //BERT 4356
+        if (document.getElementById("hdnFilterCategory") != null) {
+            filterCategory = Trim(document.getElementById("hdnFilterCategory").value);
+        }
+
+        //BERT 1062
+        if (jobTitleKeyword == filterTitle) {
+            if (jobTitleKeyword == '') {
+                jobTitleKeyword = getCookie("jobTitleKeyword");
+                if (jobTitleKeyword == undefined) {
+                    jobTitleKeyword = '';
+                }
+            }
+
+        }
+
+        if (locationKeyword == filterLocation) {
+            if (locationKeyword == '') {
+                locationKeyword = getCookie("locationKeyword");
+                if (locationKeyword == undefined) {
+                    locationKeyword = '';
+                }
+            }
+        }
+
+        //BERT 4356 
+        if (categoryKeyword == filterCategory) {
+            if (categoryKeyword == '') {
+                categoryKeyword = getCookie("categoryKeyword");
+                if (categoryKeyword == undefined) {
+                    categoryKeyword = '';
+                }
+            }
+        }
+
+        //END BERT 1062
+        if ((document.getElementById("dateKeyword") != null) && (document.getElementById("hdnFilterDate") != null)) {
+            dateKeyword = Trim(document.getElementById("dateKeyword").value);
+            filterDate = Trim(document.getElementById("hdnFilterDate").value); //Bert 2 No. 1073
+
+            if (dateKeyword == filterDate) {
+                dateKeyword = '';
+            }
+        }
+
+        GetRequest(url, jobTitleKeyword, locationKeyword, dateKeyword, categoryKeyword, isSearchPaging, isDate, pagenumber);
+    } //Bert 3337, end If
+}
+//End Bert 2 No. 1073
+//START BERT 1062
+function getCookie(c_name) {
+    var i, x, y, ARRcookies = document.cookie.split(";");
+    for (i = 0; i < ARRcookies.length; i++) {
+        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == c_name) {
+            return unescape(y);
+        }
+    }
+}
+
+//START BERT:12816
+function setCookie(c_name, value) {
+    var exdate = new Date();
+    var c_value = escape(value);
+    document.cookie = c_name + "=" + c_value+";path=/";
+}
+
+//Bert 3337
+function checkCookie(search) {
+    var username = getCookie("url");
+    var val = navigator.userAgent.toLowerCase();
+    var path; //3270 to resolve Chrome Issue
+
+    //    if (val.indexOf('chrome') > -1) {
+    //        path = '/' ;
+    //    }
+    //    else
+    //        path = '/' + search + '/';
+    
+    path="/";
+    Delete_Cookie("url", path, '');
+}
+function Delete_Cookie(name, path, domain) {
+    document.cookie = name + "=" +
+((path) ? ";path=" + path : "") +
+((domain) ? ";domain=" + domain : "") +
+";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+}
+//END BERT:12816
+//End Bert 3337
+//END BERT 1062
+
+
+function ShowProgressMessage(closeText, displayText, headerText, imgsrc)
+{
+    var divHTML = document.getElementById("searchHTML");
+    var indexStart = divHTML.innerHTML.toLowerCase().indexOf("<h4>");
+    var indexEnd = divHTML.innerHTML.toLowerCase().indexOf("</h4>");
+    var header = "";
+    var newHeadr = "";
+
+    var img = document.createElement("img");
+    img.border = "0";
+    img.src = imgsrc;
+    img.style.height = "17px";
+    img.style.width = "17px";
+    img.style.padding = "0";
+    img.style.margin = "-3px";
+
+    if(indexStart != -1 && indexEnd != -1)
+    {    
+        header = divHTML.innerHTML.substring(indexStart + 4, indexEnd);
+        newHeadr = displayText + "&nbsp;&nbsp;&nbsp;";
+        if(divHTML.innerHTML.indexOf(displayText) == -1)
+        {
+            divHTML.innerHTML = divHTML.innerHTML.replace(header, newHeadr);
+            document.getElementById("srb").getElementsByTagName("h4")[0].appendChild(img);
+        }
+    }
+    else
+    {
+        var str = "<div id=\"srb\"><div class=\"header\"><h4>" + displayText + "&nbsp;&nbsp;&nbsp;" + "</h4><span class=\"close\"><a href=\"javascript:ClosePopup();\">" + closeText + "</a></span></div></div>";
+        if(divHTML.innerHTML.indexOf(displayText) == -1)
+        {
+            divHTML.innerHTML = str;
+            document.getElementById("srb").getElementsByTagName("h4")[0].appendChild(img);
+        }
+    }
+}
+
+function ClearKeyword(keyword)
+{
+    //Start BERT 12986
+    if(SkipKeywords(keyword))
+       {
+        keyword = keyword.replace(/\s+/g, ' ');
+        keyword = keyword.replace(/(^\s+)|(\s+$)/g, '');
+        keyword = keyword.toLowerCase();
+        return keyword;
+    }
+    //End BERT 12986   
+    keyword = " " + keyword.toLowerCase() + " ";
+    keyword = keyword.replace(/:+/g, '');
+    keyword = keyword.replace(/\.+/g, '');
+    keyword = keyword.replace(/\/+/g, '');
+    keyword = keyword.replace(/%+/g, '');
+    keyword = keyword.replace(/\\+/g, '');
+    keyword = keyword.replace(/<+/g, '');
+    keyword = keyword.replace(/>+/g, '');
+    keyword = keyword.replace(/\*+/g, '');
+    keyword = keyword.replace(/@+/g, '');
+    //BERT 10060 Start
+    //keyword = keyword.replace(/#+/g, '');
+    //BERT 10060 End
+    keyword = keyword.replace(/\$+/g, '');
+    keyword = keyword.replace(/\^+/g, '');
+    keyword = keyword.replace(/;+/g, '');
+    keyword = keyword.replace(/\|+/g, '');
+    keyword = keyword.replace(/,+/g, '');
+    keyword = keyword.replace(/\?+/g, '');
+    keyword = keyword.replace(/"+/g, '');
+    keyword = keyword.replace(/`+/g, '');
+    keyword = keyword.replace(/'+/g, '');
+    keyword = keyword.replace(/_+/g, '');
+    //keyword = keyword.replace(/&+/g, '');
+    //removed 3/23/2011 by Jason for keyword search
+    //keyword = keyword.replace(/-+/g, '');
+    //end keyword search fix
+     //START BERT : 11753 - Removing '-' only if keyword doesnot have characters except '-'
+    var keywordLength = keyword.replace(/ /g, '').replace(/-+/g, '') .length;
+    if (keywordLength == 0)
+    {
+    keyword = keyword.replace(/-+/g, '');
+    }
+    //END BERT : 11753
+    keyword = keyword.replace(/~+/g, '');
+    keyword = keyword.replace(/!+/g, '');
+    keyword = keyword.replace(/\++/g, '');
+    keyword = keyword.replace(/\(+/g, '');
+    keyword = keyword.replace(/\)+/g, '');
+    keyword = keyword.replace(/\[+/g, '');
+    keyword = keyword.replace(/\]+/g, '');
+     keyword = keyword.replace(/\{+/g, '');
+    keyword = keyword.replace(/\}+/g, '');
+    
+
+    // BEGIN BERT : 21274
+    // ˪
+    // U+02EA
+    keyword = keyword.replace(/\u02ea+/g, '');
+    
+    // ¬
+    // U+00AC
+    keyword = keyword.replace(/\u00ac+/g, '');
+    // END BERT : 21274
+    
+    keyword = keyword.replace(/\·+/g, '');
+    keyword = keyword.replace(/“+/g, '');
+    
+    keyword = keyword.replace(/ the /g, ' ');
+    keyword = keyword.replace(/ www /g, ' ');
+    keyword = keyword.replace(/ http /g, ' ');
+    keyword = keyword.replace(/ that /g, ' ');
+    keyword = keyword.replace(/ will /g, ' ');
+    keyword = keyword.replace(/ where /g, ' ');
+    keyword = keyword.replace(/ has /g, ' ');
+    keyword = keyword.replace(/ with /g, ' ');
+    keyword = keyword.replace(/ at /g, ' ');
+    keyword = keyword.replace(/ are /g, ' ');
+    keyword = keyword.replace(/ your /g, ' ');
+    keyword = keyword.replace(/ you /g, ' ');
+    keyword = keyword.replace(/ etc /g, ' ');
+    keyword = keyword.replace(/ as /g, ' ');
+    keyword = keyword.replace(/ is /g, ' ');
+    keyword = keyword.replace(/ for /g, ' ');
+    keyword = keyword.replace(/ on /g, ' ');
+    keyword = keyword.replace(/ an /g, ' ');
+    keyword = keyword.replace(/ or /g, ' ');
+    keyword = keyword.replace(/ and /g, ' ');
+    keyword = keyword.replace(/ by /g, ' ');
+    keyword = keyword.replace(/ to /g, ' ');
+    keyword = keyword.replace(/ from /g, ' ');
+
+    if(keyword.match(/Voer trefwoorden Categorie of Functie in/gi) == null) // TSSDQ-198
+    {    
+        keyword = keyword.replace(/ of /g, ' ');
+    }
+    
+    if(keyword.match(/ Voer trefwoorden Categorie of Functie in/gi) == null) // TSSDQ-198
+    {    
+        keyword = keyword.replace(/ in /g, ' ');
+    }
+
+    keyword = keyword.replace(/ a /g, ' ');
+    keyword = keyword.replace(/ job /g, ' ');
+    keyword = keyword.replace(/ jobs /g, ' ');
+    keyword = keyword.replace(/ popular /g, ' ');
+
+    keyword = keyword.replace(/\\s+/g, ' ');
+    keyword = keyword.replace(/(^\s+)|(\s+$)/g, '');
+
+    return keyword;
+}
+
+function Trim(str)
+{
+    str = str.replace('\\s+', ' ');
+    str = str.replace(/(^\s+)|(\s+$)/g, '');
+
+    return str;
+}
+
+//BERT 9471 Widget Builder Project
+
+function ToWidgetSearchResult(domain, enterSearchTerms, trSearches, toUseSearch, filterkeywords, clicktag, paramlist, popup)
+{
+    if (xmlHttp != null)
+        xmlHttp.abort();
+
+    var keyword = document.getElementById("job_input_text").value;
+
+    if (filterkeywords == true) {
+        _keyword = ClearKeyword(keyword);
+        //handle reserved characters
+        _keyword = _keyword.replace(/:+/g, '').replace(/\*+/g, '').replace(/%+/g, '').replace(/\?+/g, '');
+        _keyword = _keyword.replace(/#+/g, '%23');
+          //START BERT : 11753
+       _keyword = _keyword.replace(/ /g, '-').replace(/"+/g, '“');
+        //_keyword = _keyword.replace(/ /g, '-').replace(/&+/g, '?').replace(/"+/g, '“');
+        //END BERT : 11753
+    }
+    else {
+        _keyword = keyword;
+        _keyword = encodeURIComponent(_keyword);
+    }
+    if (_keyword == "con")
+        _keyword = _keyword + " ";
+
+    _domain = domain;
+    _enterSearchTerms = enterSearchTerms;
+
+     if(keyword.length > 1 && keyword != enterSearchTerms)
+     {
+        //BERT 10607 - Open new window when popup=1, Date 14/Aug/2010
+        if (popup == 0) {
+            window.location.href = clicktag + "http://" + _domain + "/" + trSearches + "/" + _keyword + "/" + paramlist;
+        } else {
+            window.open(clicktag + "http://" + _domain + "/" + trSearches + "/" + _keyword + "/" + paramlist);
+        }
+    }
+     else
+     {
+        alert(toUseSearch);
+    }
+    return false;
+}
+
+var _searchDelay = false;
+
+function WidgetSearch(domain, paramlist, resultCount, fields, popup, clicktag, SSLDomain) {
+    var keyword = document.getElementById("job_input_text").value;
+    if (keyword.length > 1 && keyword != 'Enter Search Terms...') {
+        dynamicTag(domain, paramlist, resultCount, fields, popup, clicktag, SSLDomain);
+    }
+    else {
+        alert('To use search please enter 2 or more letters.');
+    }
+}
+
+function dynamicTag(domain, paramlist, resultCount, fields, popup, clicktag, SSLDomain, resultfound) {
+    //BERT - 11010 Results Found text, 04/10/2010 Preeti
+    //var  request = "http://" + domain + "/WidgetSearchResults.aspx" + paramlist + "&rc=" + resultCount + "&col=" + fields + "&id=web" + "&rf=" + resultfound;
+    var request;
+
+    if (window.location.protocol != "https:") {
+        request = "http://" + domain + "/WidgetSearchResults.aspx" + paramlist + "&rc=" + resultCount + "&col=" + fields + "&id=web" + "&rf=" + resultfound;
+    }
+    else {
+        request = "https://" + SSLDomain + "/WidgetHandler.aspx" + paramlist + "&rc=" + resultCount + "&col=" + fields + "&id=web" + "&rf=" + resultfound + "&domain=" + domain;
+    }
+
+    //BERT 10608 - open in new window when popup is 1, 08/12/2010
+    if (popup == 1)
+        request = request + "&pop=1";
+
+    if (clicktag != null && clicktag != '')
+        request = request + "&clicktag=" + clicktag;
+
+    if (!_searchDelay) {
+        document.getElementById("searchResults").innerHTML = "";
+        //BERT - 11010 View All Link, 09/28/2010 Preeti
+        document.getElementById("divViewAll").style.display = "none";
+
+        var job_input_text = document.getElementById("job_input_text").value;
+
+        //Bert 21313 starts (Handling cases like when search starts with "#"
+        job_input_text = ClearKeyword(job_input_text);
+        //handle reserved characters
+        job_input_text = job_input_text.replace(/:+/g, '').replace(/\*+/g, '').replace(/%+/g, '').replace(/\?+/g, '');
+                
+        if (job_input_text.length >= 2) {
+            job_input_text = job_input_text.replace(/#+/g, '%23');            
+            job_input_text = job_input_text.replace(/ /g, '-').replace(/"+/g, '“');
+            //Bert 21313 ends
+            _searchDelay = true;
+            request = request + "&key=" + job_input_text;
+            //var request = "https://web.archive.org/web/20150106165400/http://www.jobsattmp.com/WidgetSearchResults.aspx?ss=paid&utm_source=asdasd&utm_medium=sdf&utm_campaign=sdfsdgf&x=r&rc=20&col=234&id=web&clicktag=http://s0b.bluestreak.com/ix.e?tr&s=4677945&a=5578925&u=&key="+job_input_text;
+            var head = document.getElementsByTagName("head").item(0);
+            var script = document.createElement("script");
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("src", request);
+            head.appendChild(script);
+        }
+        else {
+            document.getElementById("searchResults").innerHTML = "";
+            //BERT - 11010 View All Link, 28/sept/2010 Preeti
+            document.getElementById("divViewAll").style.display = "none";
+        }
+    }
+}
+
+function getJobs(JSONData) {
+    if (JSONData != null) {
+        //BERT - 11010 View All Link, 209/28/2010 Preeti
+        if (JSONData.ResultSet.totalResultsAvailable != 0) {
+            document.getElementById("divViewAll").style.display = "block";
+        }
+        else {
+            document.getElementById("divViewAll").style.display = "none";
+        }
+
+        _searchDelay = false;
+        var ul = document.getElementById("searchResults");
+
+
+        var count = document.createElement("p");
+        count.setAttribute("class", "count");
+        //BERT 11010- Result Found text, 04/10/2010, Preeti
+        //textNote = document.createTextNode(JSONData.ResultSet.totalResultsAvailable + " Results Found");
+
+        //TRMA-9 If RM Ad, show result text only if results are 0
+        if (!isRichMediaAdSource() || (isRichMediaAdSource() && JSONData.ResultSet.totalResultsAvailable == "0"))
+          { 
+           textNote = document.createTextNode(JSONData.ResultSet.includeresultfound);
+              if (isRichMediaAdSource)
+                 textNote = document.createTextNode(JSONData.ResultSet.includeresultfound + " - "+_keyword); ; 
+          }
+        else
+            textNote = document.createTextNode("");
+           
+        count.appendChild(textNote);
+        ul.appendChild(count);
+
+        //Bert-10831  Add View All link
+        //	    if(JSONData.ResultSet.totalResultsAvailable!=0)
+        //	        JSONData.ResultSet.totalResultsAvailable = JSONData.ResultSet.totalResultsAvailable+1;
+
+        if (JSONData.ResultSet.totalResultsAvailable != "0" )   //TRMA-13 If result is 0 display message and 'try again' link 
+    	    for (i=0; i<JSONData.ResultSet.totalResultsAvailable; i++)
+    	    {
+                var wrapper = document.createElement("li");
+                ul.appendChild(wrapper);
+
+                var link = document.createElement("a");
+    		     if(JSONData.ResultSet.includepopup == 1)
+    		     { 
+    		       if(JSONData.ResultSet.Result[i].Title !='View All' && JSONData.ResultSet.Result[i].Title !='Back') 
+    		       {
+                        link.setAttribute("target", "_blank");
+                    }
+                }
+
+                link.setAttribute("href", JSONData.ResultSet.Result[i].URL);
+                textNote = document.createTextNode(JSONData.ResultSet.Result[i].Title);
+                //TRMA L.B
+                if (isRichMediaAdSource())
+                 textNote.data = RichMediaAdJobTitleTrim(textNote.data);
+
+                
+                //TRMA
+                link.appendChild(textNote);
+                wrapper.appendChild(link);
+
+                var location = document.createElement("span");
+                textNote = document.createTextNode(" " + JSONData.ResultSet.Result[i].Location);
+                location.appendChild(textNote);
+                wrapper.appendChild(location);
+            }
+        else
+            {
+                if (document.getElementById("emptyRMResult") != null)
+                   { document.getElementById("emptyRMResult").style.display = "block"; 
+
+                    document.getElementById("job_input_text").value = "";}
+            
+            }
+    }
+}
+
+///web.archive.org/web/20150106165400/http://bert/ - 9471 Preeti- End
+
+//Start - BERT 10558 Job Alert Form Widget
+function ToJobAlertForm(domain, enterEmailId, trCareers, emailRequired, emailValid, clicktag, paramlist, popup)
+{ 
+
+    //FB Job Search [Http/Https implementation]
+    if (document.URL.substring(0, 5) == "https") {
+        var request = "https://" + domain + "/WidgetSearchResults.aspx" + paramlist + "&id=jah";
+    }
+    else {
+        var request = "http://" + domain + "/WidgetSearchResults.aspx" + paramlist + "&id=jah";
+    }
+   
+    if (clicktag != null && clicktag != '')
+        request = request + "&clicktag=" + clicktag;
+
+    var keyword = document.getElementById("job_input_text").value;
+    _domain = domain;
+
+   if(keyword.length > 1 && keyword != enterEmailId)
+   { 
+        if (validateEmail("job_input_text", emailValid)) { // BERT 6320
+            _keyword = keyword.replace(/@+/g, '%40');
+            //_keyword = _keyword.replace(/.+/g, '%2E');
+            request = request + "&key=" + keyword;
+            // alert(request);
+            if (popup == 0) {
+                window.location.href = request;
+            } else {
+                window.open(request);
+            }
+        }
+    }
+    else {
+        alert(emailRequired);}
+}
+
+function showJobAlertForm(emailid)
+{
+    HidePasswordMessage();
+   if(document.getElementById("txtEmail") != null)
+   {
+        document.getElementById("txtEmail").value = emailid;
+        ERP.ERPService.isuserexists(emailid, WidgetonIsSEOSitesUserExistsSuccess, WidgetonIsSEOSitesUserExistsFailed);
+    }
+}
+
+function WidgetonIsSEOSitesUserExistsSuccess(result)
+{
+    if(result == null || result.Error!='')
+    { 
+        if(result != null )
+        {
+            $.fn.colorbox.close();
+            openPopupWindow('/SubscribeJobs.aspx', 'txtEmail');
+        }
+    }
+    else
+    { 
+       if(result != null )
+        { 
+            if (result.Result == 'TRUE') {
+                //BERT 7802 Starts
+                document.getElementById("txtUserPassword").value = "";
+                //BERT 7802 Ends
+                //BERT 11802 Starts
+                $("#cboxOverlay").show();
+                $.colorbox.resize();
+                $.fn.colorbox({ width: "575px", inline: true, href: "#inline_Password",
+                            onComplete: function() { $('#txtUserPassword').focus(); }
+                });
+                //BERT 11802 Ends                
+            }
+        }
+    }
+}
+
+function WidgetonIsSEOSitesUserExistsFailed(result)
+{
+    alert(result.Error);
+}
+
+function HidePasswordMessage()
+{
+    if(document.getElementById("pPasswordIncorrect") != null)
+    {
+        document.getElementById("pPasswordIncorrect").style.display = "none";
+    }
+    if(document.getElementById("pSendNewPassword") != null)
+    {
+        document.getElementById("pSendNewPassword").style.display = "none";
+    }
+}
+
+function openPopupWindow(pagename,emailclt)
+        {
+    var emailid = document.getElementById(emailclt);
+    var newPageName = '';
+    var LocalURL = '';
+    
+    var getURL = document.URL;
+            if(getURL.indexOf('?') != -1)
+            {
+        var Position = getURL.indexOf('?');
+        LocalURL = getURL.substr(Position, getURL.length)
+    }
+
+            if(emailid != null)
+            {
+                if(LocalURL != null && LocalURL.length > 0)
+                {
+            newPageName = '/SubscribeJobs.aspx' + LocalURL + '&email=' + emailid.value;
+            //alert(newPageName);
+        }
+                else
+                {
+            newPageName = '/SubscribeJobs.aspx?email=' + emailid.value;
+        }
+        var retValue = validateEmail(emailclt, '<%=PageJobData.EmailIsRequired%>')
+                if(retValue)
+                {
+            $.fn.colorbox({ href: newPageName, width: 575, height: 580, iframe: true, overlayClose: false, escKey: false });
+        }
+    }
+
+    return false;
+}
+
+//GPS-3 START
+function isFilterSearchOnLocation()
+{
+    var isResultFilteredOnLocation = false; 
+    var LocationButtonWrapper = document.getElementById('user-geolocation');
+    if (LocationButtonWrapper != null)
+        {
+            var LocationButton = LocationButtonWrapper.firstChild; 
+            if (LocationButton != null)
+                if(LocationButton.className == 'active')
+                    isResultFilteredOnLocation = true; 
+
+        }
+
+        return isResultFilteredOnLocation; 
+
+}
+
+function filterOnLocationQuery(RequestType)
+{
+     var BasicSearchLatiduteHdnCtrl = document.getElementById("hdnBasicSearchGPSLatitude");
+     var BasicSearchLongitudeHdnCtrl = document.getElementById("hdnBasicSearchGPSLongitude");
+     var BasicSearchDistanceHdnCtrl = document.getElementById("hdnBasicSearchGPSDefaultDistance");
+     var BasicSearchDistanceUnitHdnCtrl = document.getElementById("hdnBasicSearchGPSDefaultDistanceUnit");
+     var LocationFilter = "";
+    if (BasicSearchLongitudeHdnCtrl != null && BasicSearchLatiduteHdnCtrl != null
+     && BasicSearchDistanceHdnCtrl != null && BasicSearchDistanceUnitHdnCtrl != null) 
+        {
+            var BasicSearchLatValue = BasicSearchLatiduteHdnCtrl.value; 
+            var BasicSearchLonValue = BasicSearchLongitudeHdnCtrl.value; 
+            var BasicSearchDefaultDistance = BasicSearchDistanceHdnCtrl.value;  
+            var BasicSearchDefaultDistanceUnit = 'Miles';
+
+            if(BasicSearchDistanceUnitHdnCtrl.value != 'User Choice')
+                BasicSearchDefaultDistanceUnit = BasicSearchDistanceUnitHdnCtrl.value; 
+
+            if (RequestType == 'AJAX')
+            {
+                LocationFilter = "&IsRadiusSearch=true&ASLatitude="+ BasicSearchLatValue; 
+                LocationFilter += "&ASLongitude=" + BasicSearchLonValue; 
+                LocationFilter += "&ASDistance="+  BasicSearchDefaultDistance; 
+                LocationFilter += "&ASDistanceType="+ BasicSearchDefaultDistanceUnit; 
+            }
+            else
+            {
+                LocationFilter = "/ASCategory/-1/ASPostedDate/-1/ASCountry/-1/";
+                LocationFilter += "ASState/-1/ASCity/-1/ASLocation/-1/ASCompanyName/-1/";
+                LocationFilter += "ASCustom1/-1/ASCustom2/-1/ASCustom3/-1/ASCustom4/-1/";
+                LocationFilter += "ASCustom5/-1/ASIsRadius/true/ASCityStateZipcode/-1";
+                LocationFilter += "/ASDistance/" + BasicSearchDefaultDistance; 
+                LocationFilter += "/ASLatitude/" + BasicSearchLatValue;
+                LocationFilter += "/ASLongitude/" + BasicSearchLonValue;
+                LocationFilter += "/ASDistanceType/" + BasicSearchDefaultDistanceUnit ;
+            }
+       }
+       return LocationFilter; 
+
+}
+//END GPS-3
+
+//TRMA 8,9 L.B
+function RichMediaWidgetSearch(domain, paramlist, resultCount, fields, popup, clicktag, SSLDomain,resultFoundText, searchText) {
+    var keyword = document.getElementById("job_input_text").value;
+    _enterSearchTerms = searchText;
+    _keyword = keyword;
+    if (keyword.length > 1 && keyword != searchText) {
+        document.getElementById("searchResults").style.display = "block";
+        document.getElementById("searchForm").style.display = "none";
+    dynamicTag(domain, paramlist, resultCount, fields, popup, clicktag, SSLDomain, resultFoundText);
+
+    }
+    else {
+        document.getElementById("errorMsg").style.display = "block";
+    }
+}
+
+function ResetRichMediaAd(AdType)
+{
+    if (AdType = "RichMediaSearchAd")
+    {
+        if (document.getElementById('searchForm')!= null)
+           { 
+                document.getElementById('searchForm').style.display="block";
+                document.getElementById("job_input_text").value = _enterSearchTerms;
+            }
+
+        if (document.getElementById('searchResults')!= null)
+            document.getElementById('searchResults').style.display="none";
+
+        if (document.getElementById('divViewAll')!= null)
+            document.getElementById('divViewAll').style.display = "none";
+
+        if (document.getElementById('emptyRMResult')!= null)
+            document.getElementById('emptyRMResult').style.display = "none";   
+
+        
+    }
+
+}
+function RichMediaAdJobTitleTrim(jobTitle)
+{
+    // On Average 35 char can fit on the line. 
+    //Trying to find a whitespace to put an elipsis
+    var jobTitleArray;
+    var splitArrayIndex;
+    var truncatedJobTitle;
+    if (jobTitle.length > 35)
+    {
+        jobTitleArray = jobTitle.split('');
+        for(x = 35;jobTitleArray[x] !=" "; x-- )
+        {
+            splitArrayIndex = x;
+
+        }
+        truncatedJobTitle = jobTitle.substring(0,splitArrayIndex -1);
+        truncatedJobTitle += "...";
+        return truncatedJobTitle;
+       
+    }
+    else
+        return jobTitle; 
+
+
+
+}
+function isRichMediaAdSource()
+{
+    var obj = document.getElementById('RMSearchAd'); 
+    if (obj != 'undefined' && obj != "null")
+        return true; 
+    else
+        return false; 
+
+}
+//TRMA
+
+function validateEmail(field, alerttxt) {
+    //START BERT:8058 - updating regex - Manikandan Muthu, 21 May 13
+    var reg =/^((((([a-zA-Z0-9]+))|(\"[^#&]([-!\$%'\*\+/=\?\^`\{\}\|~\.\_\(\)\w])+?\"))@)|(([0-9a-zA-Z]((\.(?!\.))|[-!\$%'\*\+/=\?\^`\{\}\|~\w])*)([0-9a-zA-Z](\@(?!\@)))))((\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$/;
+    //END BERT:8058
+    var address = document.getElementById(field).value;
+    
+    if (reg.test(address) == false) {
+        alert(alerttxt);
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+//End - BERT 10558 Job Alert Form Widget 
+
+
+//bert 10273
+function SortResults(url, column)
+//function SortResults(column)
+{
+    //get the URL
+    var reloadURL = url;
+
+
+    //this isnt pretty....
+    if (reloadURL.indexOf("?title=asc") > -1)
+        reloadURL = reloadURL.replace("?title=asc", "");
+    else
+        if (reloadURL.indexOf("&title=asc") > -1)
+        reloadURL = reloadURL.replace("&title=asc", "");
+    else
+        if (reloadURL.indexOf("?title=desc") > -1)
+        reloadURL = reloadURL.replace("?title=desc", "");
+    else
+        if (reloadURL.indexOf("?title=desc") > -1)
+        reloadURL = reloadURL.replace("?title=desc", "");
+
+    //but it works!
+    if (reloadURL.indexOf("?loc=asc") > -1)
+        reloadURL = reloadURL.replace("?loc=asc", "");
+    else
+        if (reloadURL.indexOf("&loc=asc") > -1)
+        reloadURL = reloadURL.replace("&loc=asc", "");
+    else
+        if (reloadURL.indexOf("?loc=desc") > -1)
+        reloadURL = reloadURL.replace("?loc=desc", "");
+    else
+        if (reloadURL.indexOf("&loc=desc") > -1)
+        reloadURL = reloadURL.replace("&loc=desc", "");
+
+    //Radius Search - Distance : Manikandan Muthu
+    if (reloadURL.indexOf("?dis=asc") > -1)
+        reloadURL = reloadURL.replace("?dis=asc", "");
+    else
+        if (reloadURL.indexOf("&dis=asc") > -1)
+        reloadURL = reloadURL.replace("&dis=asc", "");
+    else
+        if (reloadURL.indexOf("?dis=desc") > -1)
+        reloadURL = reloadURL.replace("?dis=desc", "");
+    else
+        if (reloadURL.indexOf("&dis=desc") > -1)
+        reloadURL = reloadURL.replace("&dis=desc", "");
+
+    //check title sort order
+    var titleCurrentDir = document.getElementById("hdnTitleSortDirection");
+    if(column == "title")
+    {                       
+        if (titleCurrentDir.value == "asc")
+            titleCurrentDir.value = "desc";
+        else
+            titleCurrentDir.value = "asc";
+
+        reloadURL += (reloadURL.indexOf("?") == -1) ? "?title=" + titleCurrentDir.value : "&title=" + titleCurrentDir.value;
+    }
+
+    //check location sort order
+    var locCurrentDir = document.getElementById("hdnLocationSortDirection");
+    if(column == "location")
+    {
+        if (locCurrentDir.value == "asc")
+            locCurrentDir.value = "desc";
+        else
+            locCurrentDir.value = "asc";
+
+        reloadURL += (reloadURL.indexOf("?") == -1) ? "?loc=" + locCurrentDir.value : "&loc=" + locCurrentDir.value;
+    }
+
+    //Radius Search - check distance sort order : Manikandan Muthu
+    var distanceCurrentDir = document.getElementById("hdnDistanceSortDirection");
+    if (column == "distance") {
+        if (distanceCurrentDir.value == "asc")
+            distanceCurrentDir.value = "desc";
+        else
+            distanceCurrentDir.value = "asc";
+
+        reloadURL += (reloadURL.indexOf("?") == -1) ? "?dis=" + distanceCurrentDir.value : "&dis=" + distanceCurrentDir.value;
+    }
+
+    window.location.href = reloadURL;
+    //window.location.refrsh();
+
+}
+
+//Start BERT 12986
+function SkipKeywords(keyword)
+{
+    keyword = keyword.replace(/\s+/g, ' ');
+    keyword = keyword.replace(/(^\s+)|(\s+$)/g, '');
+    keyword = keyword.toLowerCase();
+    var flag = false;
+    var arrSkipKeywords = new Array();
+    arrSkipKeywords[0] = "m & a";
+
+    for(loopcount in arrSkipKeywords)
+    {
+        if(keyword==arrSkipKeywords[loopcount])
+          {
+            flag = true;
+            break;
+        }
+    }
+    return flag;
+}
+//End BERT 12986
+//Radius Search S2 : Sort Advanced search results through pegination
+function SortAdvancedSearchResults(url, column, pagenumber, isSearchPaging, isDate) {
+    jobTitleKeyword = '';
+    locationKeyword = '';
+    dateKeyword = '';
+    categoryKeyword = '';
+
+    filterTitle = '';
+    filterLocation = ''
+    filterDate = '';
+    filterCategory = '';
+
+    if (document.getElementById("jobTitleKeyword") != null) {
+        jobTitleKeyword = Trim(document.getElementById("jobTitleKeyword").value);
+    }
+
+    if (document.getElementById("locationsKeyword") != null) {
+        locationKeyword = Trim(document.getElementById("locationsKeyword").value);
+
+    }
+
+    if (document.getElementById("hdnFilterTitle") != null) {
+        filterTitle = Trim(document.getElementById("hdnFilterTitle").value);
+
+    }
+
+    if (document.getElementById("hdnFilterLocation") != null) {
+        filterLocation = Trim(document.getElementById("hdnFilterLocation").value);
+    }
+    if (jobTitleKeyword == filterTitle) {
+        if (jobTitleKeyword == '') {
+            jobTitleKeyword = getCookie("jobTitleKeyword");
+            if (jobTitleKeyword == undefined) {
+                jobTitleKeyword = '';
+            }
+        }
+    }
+
+    if (locationKeyword == filterLocation) {
+        if (locationKeyword == '') {
+            locationKeyword = getCookie("locationKeyword");
+            if (locationKeyword == undefined) {
+                locationKeyword = '';
+            }
+        }
+    }
+    if ((document.getElementById("dateKeyword") != null) && (document.getElementById("hdnFilterDate") != null)) {
+        dateKeyword = Trim(document.getElementById("dateKeyword").value);
+        filterDate = Trim(document.getElementById("hdnFilterDate").value); //Bert 2 No. 1073
+
+        if (dateKeyword == filterDate) {
+            dateKeyword = '';
+        }
+    }
+
+    if ((document.getElementById("categoryKeyword") != null) && (document.getElementById("hdnFilterCategory") != null)) {
+        categoryKeyword = Trim(document.getElementById("categoryKeyword").value);
+        filterCategory = Trim(document.getElementById("hdnFilterCategory").value);
+
+        if (categoryKeyword == filterCategory) {
+            categoryKeyword = '';
+        }
+    }
+
+    var reloadURL = url;
+
+    if (reloadURL.indexOf("?dis=asc") > -1)
+        reloadURL = reloadURL.replace("?dis=asc", "");
+    else
+        if (reloadURL.indexOf("&dis=asc") > -1)
+        reloadURL = reloadURL.replace("&dis=asc", "");
+    else
+        if (reloadURL.indexOf("?dis=desc") > -1)
+        reloadURL = reloadURL.replace("?dis=desc", "");
+    else
+        if (reloadURL.indexOf("&dis=desc") > -1)
+        reloadURL = reloadURL.replace("&dis=desc", "");
+
+    var distanceCurrentDir = document.getElementById("hdnDistanceSortDirection");
+    if (column == "distance") {
+        if (distanceCurrentDir.value == "asc")
+            distanceCurrentDir.value = "desc";
+        else
+            distanceCurrentDir.value = "asc";
+
+        reloadURL += (reloadURL.indexOf("?") == -1) ? "?dis=" + distanceCurrentDir.value : "&dis=" + distanceCurrentDir.value;
+    }
+    GetRequest(reloadURL, jobTitleKeyword, locationKeyword, dateKeyword, categoryKeyword, isSearchPaging, isDate, pagenumber);
+
+}
+//Bert 4356 - Category Filteration in L2 page end
+//BERT 2947 - Manikandan, 25 JULY 2012
+function CheckAlphaNumeric(evt) {
+    evt = (evt) ? evt : event;
+    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+    if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || (charCode >= 48 && charCode <= 57) || charCode == 8) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+//END BERT 2947
+
+//START BERT:6209 - Advanced Search Reset Button
+function ResetAdvanceSearchControls() {
+    
+    var keywordCtrl = document.getElementById("txtASKeywords");
+    var keywordCtrlDefault = document.getElementById("hdntxtASKeywords");
+
+    var cityStateZipCtrl = document.getElementById("txtCityStateZip");
+    var cityStateZipDefault = document.getElementById("txtPlainText");
+
+    var radiusDefaultORMaxDistance = document.getElementById("hdnDefaultORMaxDistanceValue");
+    var radiusLocationCtrl = document.getElementById("rdBtnLocation");
+    var radiusMilesCtrl = document.getElementById("ddlRadiusMiles");
+    var radiusDistanceType = document.getElementById("ddlDistanceType");
+
+    //Keyword Text Box
+    if (keywordCtrl != null && keywordCtrl != '') {
+        if (keywordCtrlDefault != null && keywordCtrlDefault != '') {
+            keywordCtrl.value = keywordCtrlDefault.value;
+        }
+        else
+            keywordCtrl.value = '';
+    }
+
+    setDefaultValues();    
+     
+     resetStates();
+
+    var locationsCtrl = document.getElementById("ddlASLocations");
+    if (locationsCtrl != null) {
+       locationsCtrl.selectedIndex = 0;
+    }
+
+    var custom1Ctrl = document.getElementById("ddlASCustom1");
+    if (custom1Ctrl != null) {
+      custom1Ctrl.selectedIndex = 0;
+    }
+
+    var custom2Ctrl = document.getElementById("ddlASCustom2");
+    if (custom2Ctrl != null) {
+        custom2Ctrl.selectedIndex = 0;
+    }
+
+    var custom3Ctrl = document.getElementById("ddlASCustom3");
+    if (custom3Ctrl != null) {
+       custom3Ctrl.selectedIndex = 0;
+    }
+
+    var custom4Ctrl = document.getElementById("ddlASCustom4");
+    if (custom4Ctrl != null) {
+       custom4Ctrl.selectedIndex = 0; 
+    }
+
+    var custom5Ctrl = document.getElementById("ddlASCustom5");
+    if (custom5Ctrl != null) {
+        custom5Ctrl.selectedIndex = 0;
+    }
+
+    //Radius Search Type
+    if (radiusLocationCtrl != null && radiusLocationCtrl != '') {
+        radiusLocationCtrl.checked = true;
+        $("#rdBtnLocation").trigger('click'); 
+    }
+
+    //Radius Distance
+    if (radiusMilesCtrl != null && radiusMilesCtrl != '') {
+        radiusMilesCtrl.selectedIndex = 0;       
+    }
+
+    //Radius Search Text Box
+    if (cityStateZipCtrl != null && cityStateZipCtrl != '') {
+        if (cityStateZipDefault != null && cityStateZipDefault != '') {
+            cityStateZipCtrl.value = cityStateZipDefault.value;
+        }
+        else
+            cityStateZipCtrl.value = '';
+    }
+
+    //Radius Distance Type
+    if (radiusDistanceType != null && radiusDistanceType != '') {
+        if (radiusDistanceType.style.display != null && radiusDistanceType.style.display != 'none') {
+            radiusDistanceType.selectedIndex = 0;
+        }
+    }
+}
+
+function setDropDownValue(ddID, ddValue) {
+    for (var i = 0; i < ddID.options.length; i++) {
+        if (ddID.options[i].text == ddValue) {
+            ddID.selectedIndex = i;
+            break;
+        }
+    }
+
+}
+//END BERT:6209
+
+function openJobAlertsForm(emailCltID, queryString) {
+    if (!emailCltID)
+        return;
+    var emailCtl = document.getElementById(emailCltID);
+    if (!emailCtl)
+        return;
+    var emailAddress = emailCtl.value;
+    if (!emailAddress)
+        return;
+                    
+    var url = '/JobAlerts/JobAlertForm.aspx';
+    if (queryString)
+        url += queryString + '&email=' + emailAddress;
+    else
+        url += '?email=' + emailAddress;
+
+    if (setCookie)
+        setCookie('aja_returnurl', document.location.href);
+
+    document.location.href = url;                    
+}
+
+//BERT-16106 starts
+function checkMaximumSelected() {
+
+    var itemsSelected = []; 
+    var limitcount = 10;
+    var ctrlCategory = null;
+    if(document.getElementById("ddlASCategory") != null){
+        ctrlCategory = document.getElementById("ddlASCategory");
+    }
+    else{
+        ctrlCategory = document.getElementById("ddlMultipleASCategory");
+    }
+
+    for (var i = 0; i < ctrlCategory.options.length; i++) { 
+        if (ctrlCategory.options[i].selected) { 
+            if(ctrlCategory.options[i].value != -1) {
+                itemsSelected[itemsSelected.length] = i; 
+             }
+        } 
+    }
+
+    if (itemsSelected.length > limitcount) { 
+        itemsSelected = ctrlCategory.itemsSelected.split(","); 
+
+        for (i = 0; i < ctrlCategory.options.length; i++) { 
+            ctrlCategory.options[i].selected = false; 
+        } 
+
+        for (i = 0; i < itemsSelected.length; i++) { 
+            ctrlCategory.options[itemsSelected[i]].selected = true; 
+        } 
+    } 
+    else { 
+        ctrlCategory.itemsSelected = itemsSelected.toString(); 
+    }   
+}
+//BERT-16106 ends
+
+//BERT 21260 START - This is similar to setCookie Method with different name. 
+//It is created because it calls setCookie method in some other file while creating cookies for FilterURL cookie for jobs.bayada.com
+function setFilterCookie(c_name,value)
+{
+    var exdate = new Date();
+    var c_value = escape(value);
+    document.cookie = c_name + "=" + c_value+";path=/";
+}
+//BERT 21260 ENDS
+
+/*
+     FILE ARCHIVED ON 16:54:00 Jan 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:21 Nov 22, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 77.547 (3)
+  exclusion.robots.policy: 0.173
+  CDXLines.iter: 16.74 (3)
+  exclusion.robots: 0.203
+  RedisCDXSource: 361.541
+  esindex: 0.018
+  PetaboxLoader3.datanode: 119.425 (5)
+  load_resource: 255.046
+  captures_list: 475.525
+  PetaboxLoader3.resolve: 169.698 (2)
+*/

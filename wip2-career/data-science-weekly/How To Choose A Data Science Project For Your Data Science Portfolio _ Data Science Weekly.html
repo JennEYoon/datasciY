@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)https://www.datascienceweekly.org/articles/how-to-choose-a-data-science-project-for-your-data-science-portfolio -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta tags: charset, Content-Type, X-UA-Compatible, viewport
+    ================================================== --> 
+    
+    	
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags: title, description, robots
+    ================================================== --> 
+    <title>How To Choose A Data Science Project For Your Data Science Portfolio | Data Science Weekly</title>
+    <meta name="description" content="You want to create a data science portfolio to showcase you can “do” data science. That you know how to take in a data set, clean it up, use various techniques to extract useful information from it, ...">
+    <meta name="robots" content="FOLLOW,INDEX">
+
+    <!-- Bootstrap and Bootswatch CSS + JS Libraries
+    ================================================== -->
+    <link href="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/bootstrap.min(1).css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/4795790.js.download"></script><script type="text/javascript" async="" src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/heap-2103544385.js.download"></script><script async="" src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/analytics.js.download"></script><script src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/jquery.min.js.download"></script>
+    <script src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/bootstrap.min.js.download"></script>
+
+    <!-- HTML5 shim + Respond.js
+    ================================================== -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Application Specific JS, CSS, and CSRF Meta Tags
+    ================================================== -->    
+    <link rel="stylesheet" media="all" href="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/application-fb21b3cc646af700d0730a90d5c8a569bd2d63d911d121c27895ecc9b4fdc933.css">
+    <script src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/application-12ded896737ba23f1da8562bae9b5273d8baf3bfa568ca1b21dd66c95e618ab9.js.download"></script>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Y29rHVLSfPnNLERwAsF3aXGALbBeXBOTlQhfxmXxxK/0vfhrCFbeYjSuz1fYkEscldlxDDXF/c0SY8Dq3Q6lZA==">
+
+    <!-- Canonical URL Tag
+    ================================================== -->
+    <link rel="canonical" href="https://www.datascienceweekly.org/articles/how-to-choose-a-data-science-project-for-your-data-science-portfolio">
+
+    <!-- Open Graph Protocol Meta Tags
+    ================================================== -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How To Choose A Data Science Project For Your Data Science Portfolio | DataScienceWeekly.org">
+    <meta property="og:description" content="You want to create a data science portfolio to showcase you can “do” data science. That you know how to take in a data set, clean it up, use various techniques to extract useful information from it, ...">
+    <meta property="og:url" content="https://www.datascienceweekly.org/articles/how-to-choose-a-data-science-project-for-your-data-science-portfolio">
+    <meta property="og:site_name" content="DataScienceWeekly.org">
+    <meta property="article:section" content="DataScienceWeekly.org Data Science Article Collection">
+    <meta property="og:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/hands_sparklers_620x413.jpg">
+
+    <!-- Twitter Card Meta Tags
+    ================================================== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How To Choose A Data Science Project For Your Data Science Portfolio | DataScienceWeekly.org">
+    <meta name="twitter:description" content="You want to create a data science portfolio to showcase you can “do” data science. That you know how to take in a data set, clean it up, use various techniques to extract useful information from it, ...">
+    <meta property="twitter:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/hands_sparklers_620x413.jpg">
+    <meta name="twitter:site" content="@DataSciNews">
+    <meta name="twitter:domain" content="DataScienceWeekly.org">
+    <meta name="twitter:creator" content="@DataSciNews">
+ 
+    <!-- Google Analytics
+    ================================================== -->
+      <!-- Environment: production -->
+      <!-- begin google analytics code -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46037430-1', 'datascienceweekly.org');
+        ga('send', 'pageview');
+      </script>
+
+    <!-- Heap Analytics
+    ================================================== -->
+    <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+          heap.load("2103544385");
+    </script>
+
+  </head>
+
+  <body>
+
+      <!-- Static Navbar Top
+      ================================================== -->
+      <!-- Static Navbar Top
+================================================== -->
+<div id="dsw-navbar" class="navbar navbar-default">
+  <div class="container">
+
+    <!-- Navbar Brand
+    ================================================== -->
+    <div class="navbar-header">
+
+      <a class="navbar-brand" style="color: white; font-size:1.25em; margin-top: 13px;" href="https://www.datascienceweekly.org/">Data Science Weekly</a>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" style="width: auto;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar-main" class="navbar-collapse collapse">
+
+      <!-- Navigation Choices
+      ================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+
+        <li style="padding-left:10px;">
+          <a style="padding:0px 0px 0px;" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">
+            <button class="btn btn-success" type="button" style="background-color:#c9302c;border-color: #c12e2a; font-size:18px;">
+              Become A Data Scientist Faster
+            </button>
+</a>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- Main Container
+      ================================================== -->
+      <div class="container" id="main-yield-container">
+        <br>
+        <div class="col-lg-12" style="padding-left:0px; padding-right:0px;">
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    div.title {
+      padding: 0.5em;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+<!-- DataScienceWeekly.org Article Breadcrumb
+================================================== -->
+<ul class="breadcrumb">
+  <li>
+    <a href="https://www.datascienceweekly.org/">Home</a>
+  </li>
+  <li>
+    <a href="https://www.datascienceweekly.org/articles">Articles</a>
+  </li>
+  <li class="active">
+    <a href="https://www.datascienceweekly.org/articles/how-to-choose-a-data-science-project-for-your-data-science-portfolio">How To Choose A Data Science Project For Your Data Science Portfolio</a>
+  </li>
+</ul>
+
+
+<!-- DataScienceWeekly.org Article
+================================================== -->
+<div class="well" style="padding:1em;background-color:#2c3e50;">
+
+  <div class="well" style="padding-left:2em;padding-right:2em;">
+    <div class="article-title" style="text-align:left;color:#34495e">
+      <h1>How To Choose A Data Science Project For Your Data Science Portfolio</h1>
+    </div>
+
+    <hr class="blog-index-hr" style="margin-bottom:0.5em;margin-top:1em;">
+
+    <div class="article-content">
+      <img alt="How To Choose A Data Science Project For Your Data Science Portfolio" class="img-responsive img-rounded img-thumbnail" src="./How To Choose A Data Science Project For Your Data Science Portfolio _ Data Science Weekly_files/hands_sparklers_620x413.jpg">
+      <br>
+      <br>
+      <p>
+You want to create a data science portfolio to showcase you can “do” data science. That you know how to take in a data set, clean it up, use various techniques to extract useful information from it, and then communicate the results. The problem is that you aren’t sure where to start, what projects to do, what languages to use, or even what techniques to use. You’ve read on several blogs people using just one or two algorithms to make awesome things and so you’re thinking of picking small interesting projects, but you’re afraid it’ll just be a waste of time.
+</p>
+
+<p>
+<strong>You want the right project that will teach you the right things and showcase the right skills</strong>
+</p>
+
+<p>
+You’ve found that learning something by doing is better than going through a pile of books. So you want to make sure the project you chose will actually help you not only learn how to “do” data science, but it’ll also help you get the data science job that you want.
+</p>
+
+<p>
+<strong>Doing a data science project is great interview preparation</strong>
+</p>
+
+<p>
+By picking the right project, you’ll learn some math, statistics, machine learning, programming techniques, programming languages, and perhaps even get an inside track on getting the job. This project will be the perfect thing to discuss during the data science job interview. It’ll even be a great “calling card” that you can send ahead of time as sample work when you apply to the data science job. It should also help you prepare for the actual interview as you’ll be familiar with some of the work the company is doing. Overall, doing the right data science project will be immensely helpful to the overall interview preparation.
+</p>
+
+<p>
+<strong>“Show”, don’t “Tell” with your data science project portfolio</strong>
+</p>
+
+<p>
+As we covered in the article <a href="http://www.datascienceweekly.org/articles/how-you-should-create-a-data-science-portfolio-that-will-get-you-hired">“How You Should Create A Data Science Portfolio That Will Get You Hired”</a>, a key part of the portfolio is being able to showcase your critical thinking and communication skills. To that end, you want to make sure that project you pick conveys that you are familiar with the company, you are familiar with what they are looking for, and that you’ve accomplished some of the things they want you to be familiar with.
+</p>
+
+<p>
+<strong>Three Steps &amp; One Real Example</strong>
+</p>
+
+<p>
+The three steps to choosing a data science project for your data science portfolio are as follows (with further explanation below):
+<br>
+</p><ol>
+<li>Find a data science job you would take</li>
+<li>Take notes on skills, qualifications, and what you’ll be doing</li>
+<li>Create projects based on that data</li>
+</ol>
+<p></p>
+
+<p>
+The one real example that we’ll look at is a job posting from today January 6th, 2015 for a Data Science position at Capital One. The link will be below as well as the analysis and 3 potential projects to do for this particular posting.
+</p>
+
+<p>
+That said, let’s go back and given a bit more description to the three steps we spoke about above.
+</p>
+
+<p>
+<strong>Step 1 - Find a data science job you would take</strong>
+</p>
+
+<p>
+The first step is to find a data science job you would take. The reason to do this is that if you are going to put in the hard work to do a project, make sure that it’s actually something you are excited about doing. Websites to look at are LinkedIn, Indeed, Stackoverflow, Careerbuilder, and Glassdoor. These are all “job websites” that have hundreds of listings for “Data Science” roles.
+</p>
+
+<p>
+<strong>Step 2 - Take notes on skills, qualifications, and what you’ll be doing</strong>
+</p>
+
+<p>
+The second step is to figure out exactly what this company wants. This breaks down into three things - skills, qualifications, and what you’ll be doing. The skill portion should include programming languages and previous experience. The qualifications portion may also include programming languages, but will also mention experience as well as academic background. Finally, the third portion (and most important) is what you’ll actually be doing. This is where the you’ll get the most ideas of what project to do for your data science portfolio.
+</p>
+
+<p>
+<strong>Step 3 - Create projects based on that data</strong>
+</p>
+
+<p>
+Now that you’ve done the previous two steps, you’ll have data regarding what programming languages to use, what data to use, what the employer wants you to have done before, and what potential directions you should go. From this data, you can put your “thinking cap” on and come up with a few different things to explore. Remember - the goal is to “do” data science, not to write a thesis or do something perfect. Do something, write it up, reflect on what you learned and then do it again! :)
+</p>
+
+<p>
+Alright, that’s all well and good. Let’s now take a look at a real example.
+</p>
+
+<p>
+<strong>Example - Choosing data science projects from a Capital One Data Science Job Posting</strong>
+</p>
+
+<p>
+As described in article <a href="http://www.datascienceweekly.org/articles/how-you-should-create-a-data-science-portfolio-that-will-get-you-hired">How You Should Create A Data Science Portfolio That Will Get You Hired</a>, we’ll look at one job postings to come up with three different potential projects. The job posting we will look at is at the Capital One company where they are looking for a "Data Scientist" who will be located in "New York, NY". The job posting can be found here =&gt; <a href="https://web.archive.org/web/20150106165357/http://jobs.capitalone.com/us/united-states/software-engineering/jobid6722330-data-scientist">Capital One Data Scientist Job Posting</a> [Note: we use web.archive.org to make sure this example doesn’t disappear].
+</p>
+
+<p>
+<strong>Example - skills extracted from job posting</strong>
+</p>
+
+<p>
+Let's take a look at the key section that describes skills. Here we see the following:
+<br>
+</p><ul>
+<li>Wrangler. You know how to move data around, from a database or an API, through a transformation or two, a model and into human-readable form (ROC curve, Excel chart, map, d3 visualization, Tableau, etc.). You probably know Python, Java, R, Storm, Julia, SQL, Matlab, Mahout, or think everything can be done in a Perl one-liner.
+</li>
+</ul>
+<p></p>
+
+<p>
+From there we can see a few key ideas: moving data around, using databases, using APIs, performing data transformation, and create visualizations. This also gives us a few programming languages they expect: Python, Java, R, Julia, Matlab, Perl, and SQL as well as some systems: Storm, Mahout, and Matlab.
+</p>
+
+<p>
+<strong>Example - qualifications extracted from job posting</strong>
+</p>
+
+<p>
+Let's take a look at the key section that describes qualifications. Here we see the following:
+<br>
+</p><ul>
+<li>3 years’ experience in R, Perl, Python, Java, or other languages appropriate for large scale analysis of numerical and textual data</li>
+</ul>
+<p></p>
+
+<p>
+From these we see a bit more into their preferred programming languages: R, Perl, Python, and Java. We also see what types of data they are using: numerical and textual data.
+</p>
+
+<p>
+<strong>Example - what you’ll be doing extracted from job posting</strong>
+</p>
+
+<p>
+Let's take a look at the key section that describes what you'll be doing. Here we see the following:
+<br>
+</p><ul>
+<li>Using Hadoop and related tools (Pig, Hive, Impala) to manage the analysis of billions of customer transaction records</li>
+<li>Writing software to clean and investigate large, messy data sets</li>
+<li>Integrating with external data sources and APIs to discover interesting trends (NOAA Weather Data + Credit Card Transactions = Fascinating!)</li>
+<li>Creating machine learning models from development through testing and validation to our 30+ million customers in production</li>
+<li>Designing rich data visualizations to communicate complex ideas to customers or company leaders</li>
+<li>Investigating the impact of new technologies on the future of mobile banking and the financial world of tomorrow</li>
+</ul>
+<p></p>
+
+<p>
+From these we see a bit more about the systems they are looking for: Hadoop, Pig, Hive, and Impala. As well as the relative size of data: billions of customer transactions &amp; 30+ million customers. We also see that part of the job will require cleaning and investigation large, messy data sets. We also see that there will be integration work with external data sources and APIs. We also see some data sets that they are using: NOAA Weather Data, Credit Card Transactions, mobile banking, and general financial transactions. Finally, we also see that the job will involve doing data visualization for non-data scientists, so top-notch communication skills are required.
+</p>
+
+<p>
+<strong>Example - putting skills, qualifications, and what you'll be doing together</strong>
+</p>
+
+<p>
+Putting it all together, we now have a list of programming languages you can create your portfolio project in: Perl, R, Python, Java. We have some data that you can use: external data sources, APIs, NOAA Weather Data, Financial Transactions. We have some systems you can use: Hadoop, Pig, Hive, and Impala. We also have some goals: make something that customers and/or company leaders (read non-data scientists) can understand.
+</p>
+
+<p>
+<strong>Example - Three example projects to do from this one job posting</strong>
+</p>
+
+<p>
+From the above, we can put together some preliminary thoughts on some sample projects to put together for this one Capital One Data Science Job Posting.
+<br>
+</p><ol>
+<li>Data Wrangling :: Get NOAA Weather Data + Twitter Data for Twitter Hashtag #Bought</li>
+<li>Visualization :: Visualize the above data and showcase interesting aspects of it</li>
+<li>Modeling :: Few ideas - does weather affect use of #bought hashtag, does weather affect what other hashtags are used, given weather today can you predict number of #bought hashtag uses tomorrow?</li>
+</ol>
+<p></p>
+
+<p>
+<strong>Example - project :: Data Wrangling</strong>
+</p>
+
+<p>
+The job posting is interested in your ability to use external data sources and APIs. They job posting also mentioned NOAA Weather Data and financial transactions. Based on this, you should extract data, clean it up, and integrate two or more disparate data sources. Bonus points for combining textual and numerical data. Given that they've already mentioned one data source - NOAA Weather Data, you should use that one. For the second one, you'd should do something related to financial data. Since this is normally private information, you have to think of a proxy. One good one is that often times, when people buy something on Twitter, they use the hashtag #bought. Which means you can get data for this hashtag from the Twitter API that is text. Which means the weather data will be numerical and the Twitter data will be textual.
+</p>
+
+<p>
+You can then write up, what you found, how you went about finding the data, how you used the external data sources, how you combined them, and what you learned.
+</p>
+
+<p>
+<strong>Example - project :: Visualization</strong>
+</p>
+
+<p>
+The job posting is interested in your ability to visualization data and information for non-data scientists. Now that you have data from two different sources with two different types of data, you can come up with some visualizations to show interesting you found and/or visualizations that let others explore what you found. Remembering this is a financial company that operates in certain parts of the world: you can make map visualizations, or you can make an exploration tool that explores, time, dates, the past, or even certain time periods - like the financial crisis of 2008.
+</p>
+
+<p>
+<strong>Example - project :: Modeling</strong>
+</p>
+
+<p>
+The job is interested in your ability to do statistical modeling, discover interesting trends, machine learning, and algorithms. This is where you can shine while learning your math, statistics, machine learning, and machine learning techniques. Some interesting ideas / questions you can try to figure out and model are: does weather affect use of #bought hashtag, does weather affect what other hashtags are used, given weather today can you predict number of #bought hashtag uses tomorrow, or anything else where you are using weather to gain insight into how #bought is used? Bonus points here for pointing out demographics and psychographics of twitters population as well as figuring out how to get location from the twitter data so that you can more accurately combine weather and hashtag usage.
+</p>
+
+<p>
+<strong>The end is the beginning</strong>
+</p>
+
+<p>
+And there you go. You now have three projects that can build for this specific job posting. Again, you found the job posting, you looked at what they wanted, and you come up with three potential projects to build that matched up directly with what they mentioned. As with most things, the end is the beginning. Now that you've done this, you'll want to do this with another job posting and some other projects. The more that you do, the more proficient you'll become, and the more prepared you'll be for the data science job interview, as well as just working in the data science field in general.
+</p>
+<p>
+To that end, it's time to get started with the first step! Go out today and start looking at data science job postings to see if there are any that you like. If you find one or a few, copy the text down and start keeping notes so that you can started on decide what data science projects you'll create for your portfolio!
+<br>
+<br>
+Good luck!
+</p>
+    </div>
+
+  </div>
+
+
+  <!-- Related Guide
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <br>
+    <p>
+      <strong class="text-danger" style="font-size:1.5em;">Want to become a data scientist?</strong>
+      <br>
+      <br>
+      How would you feel if you woke up tomorrow with perfect knowledge, given your background and education,
+      for how to become a data scientist as fast as possible?
+      <br>
+      <br>
+      Get started today because you will save time, money, and frustration with this
+      <br>
+      =&gt; <a href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Data Science Getting Started Guide</a>.
+    </p>
+    <br>
+  </div>
+</div>
+
+  <!-- Related Articles
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <p>
+    <br>
+      You might also enjoy these data science articles because you are terrific:
+      <br>
+      </p><ul>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/behind-the-scenes-at-dataiku-interview-with-data-scientist-matthieu-scordia">Behind the Scenes at Dataiku - Interview with Data Scientist Matthieu Scordia</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/most-popular-data-science-articles-of-2017">Most Read Data Science Articles of 2017</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/data-scientist-interviews-vol-1-april-2014">Data Scientist Interviews - Vol 1, April 2014</a>
+          </li>
+      </ul>
+    <br>
+    <p></p>
+  </div>
+</div>
+
+  <!-- Post Content Newsletter Form -->
+  <div class="well" style="margin-bottom: 0px;">
+
+    <!-- mailchimp form -->
+    <form action="https://datascienceweekly.us3.list-manage.com/subscribe/post?u=71a2b2a38789d4d25b738462f&amp;id=b63d6b814f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+      <!-- Row 1 -->
+      <div class="col-md-12">
+        <div class="row" id="row-1">
+          <div class="col-md-6" id="pcnf-left">
+            Sign up to receive the Data Science Weekly Newsletter every Thursday
+          </div>
+          <div class="col-md-3" id="pcnf-middle">
+          	<input type="email" value="E-mail Address" name="EMAIL" class="form-control" id="mce-EMAIL" onfocus="if (this.value == &#39;E-mail Address&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;E-mail Address&#39;;}">
+          </div>
+          <div class="col-md-3" id="pcnf-right">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-danger">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr id="pcnf-hr-separator">
+        <div class="row" id="row-2">
+          <div class="col-md-12">
+            Easy to unsubscribe. No spam — we keep your email safe and do not share it.
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- /Row 1 -->
+      <!-- Row 2 -->
+      <!-- /Row 2 -->
+
+      </form> <!-- /mailchimp form -->
+  </div>
+  <!-- /Post Content Newsletter Form -->
+
+</div>
+        </div>
+      </div>
+
+      <!-- Footer Container
+      ================================================== -->
+      <div id="dsw-footer">
+        <div class="container">
+          <footer style="font-size:0.75em;padding-top:20px;padding-bottom:20px;margin-top:30px;color:white;text-align:left;border-top: 1px solid #e5e5e5;">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-3">
+        <p>
+          <span style="color:yellow;"><strong>Data Science Weekly</strong></span>
+          <br>
+          <span style="font-size:0.85em;">
+          A free weekly newsletter featuring curated news, articles, guides, and jobs related to Data Science.
+          </span>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-3">
+        <p>
+          <strong>DataScienceWeekly.org</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/articles">Data Scientist Articles</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-scientist-interviews">Data Scientist Interviews</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-resources">Data Science Resources</a>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-4">
+        <p>
+          <strong>Wait, there's more!</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Become A Data Scientist Faster</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/about-us">About Us</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/newsletters">Data Science Newsletter Archive</a>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p>
+          <strong>Let's Connect!</strong>
+        </p>
+        <p>
+          <a href="https://twitter.com/datascinews" class="text-info">Twitter</a>
+        </p>
+        <p>
+          <a href="mailto:team@datascienceweekly.org" class="text-info">Email Us</a>
+        </p>
+      </div><!-- /col-log-2 -->
+    </div>
+    <div class="col-lg-12">
+      <p style="font-size:0.75em;color:white;" class="pull-right">
+      © 2013-2016 DataScienceWeekly.org
+      </p>
+    </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+
+    <!-- Get Drip
+    ================================================== -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '4795790';
+  
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true; 
+        dc.src = '//tag.getdrip.com/4795790.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+  
+</body></html>

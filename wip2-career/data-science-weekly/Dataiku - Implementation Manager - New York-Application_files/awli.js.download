@@ -1,0 +1,307 @@
+// Controller for LinkedIn's new AWLI widget
+// Docs: https://developer.linkedin.com/docs/lts/apply-with-linkedin
+(function(window, $) {
+  var MESSAGE_ORIGIN = 'https://www.linkedin.com';
+  var DATA_LOAD_TIMEOUT = 1000; // TODO: This time is totally arbitrary and should be refined to better suit reality
+  var BUTTON_STATES = ['loading', 'ready', 'completed'];
+  var BUTTON_MASK_CLASS = 'button-masked';
+  var BUTTON_SELECTOR = '.awli-button';
+  var WIDGET_SCRIPT_SELECTOR = 'script[type="IN/AwliWidget"]';
+  var WIDGET_CONTAINER_SELECTOR = '.IN-Awli-widget';
+  var WIDGET_LOAD_EVENT_NAME = 'awli-widget-load';
+
+  var MainController = function() {
+    this.receivedData = null;
+    this._userHasClicked = false;
+    this._isIframeLoaded = false;
+    this.overlayButton = new OverlayButton();
+    this.applicationForm = new ApplicationForm();
+    this.widgetAdapter = new WidgetAdapter();
+
+    this.overlayButton.onClick(this._onClickHandler.bind(this));
+    this.widgetAdapter.onIframeLoad(this._onIframeLoadHandler.bind(this));
+    window.addEventListener('message', this._onPostMessage.bind(this), false);
+
+    window._awliReceiveData = this.receiveData.bind(this);
+    window._awliAttachToIframe = this.widgetAdapter.attachToIframe.bind(this.widgetAdapter);
+  };
+
+  MainController.prototype._onClickHandler = function() {
+    this._userHasClicked = true;
+    if (this.receivedData) {
+      this.applicationForm.fill(this.receivedData);
+    }
+  };
+
+  MainController.prototype._onIframeLoadHandler = function(success) {
+    if (this.receivedData) { return; }
+    if (success) {
+      if (!this._isIframeLoaded) {
+        this._isIframeLoaded = true;
+        // Since we don't get any event from LinkedIn if the user is logged in, we have to use
+        // a custom timeout to determine if we should load the button mode in order to allow
+        // the user to log in first.
+        this._timeoutHandler = setTimeout(this._dataLoadTimeoutHandler.bind(this), DATA_LOAD_TIMEOUT);
+      }
+    } else {
+      // The browser hit a snafu while trying to load the iframe possibly due to browser/network policy
+      // so hide the field instead of showing a broken state
+      this.applicationForm.hideAWLI();
+    }
+  };
+
+  MainController.prototype._dataLoadTimeoutHandler = function() {
+    if (this.receivedData) { return; }
+    this._isIframeLoaded = false;
+    this.widgetAdapter.setMode('BUTTON_DATA');
+    // If we receive data after data load has timed out or we explicitly called this function,
+    // it means that user clicked the button and we can interpret it as intent to fill the form
+    this._userHasClicked = true;
+  };
+
+  MainController.prototype._onPostMessage = function(event) {
+    if (event.origin !== MESSAGE_ORIGIN) { return; }
+    var payload = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+    switch (payload.operation) {
+      // This event is fired when user is not logged in
+      // NOTE: This does not actually work at the moment due to a bug on LinkedIn's end.
+      // However, if they happen to fix this, it would improve the user experience, as
+      // we don't have to wait for the timeout anymore.
+      case 'defaultButton':
+        clearTimeout(this._timeoutHandler);
+        this._dataLoadTimeoutHandler();
+        break;
+
+      // This event is fired when user has finished logging into LinkedIn, or cancels the flow
+      case 'reload':
+        // Since user clicked the button, we can read it as intent to fill the form
+        this._userHasClicked = true;
+        this.overlayButton.setState('loading');
+        this._isIframeLoaded = false;
+        this.widgetAdapter.setMode('DATA');
+        break;
+
+      case 'dataFetch':
+        this.receiveData(payload.data);
+        break;
+
+      // This event is fired when the widget is ready,
+      case 'resizeIframe':
+        this._isIframeLoaded = true;
+        clearTimeout(this._timeoutHandler);
+        this.overlayButton.setState('ready');
+        this.overlayButton.showMask();
+        break;
+    }
+  };
+
+  MainController.prototype.receiveData = function(data) {
+    clearTimeout(this._timeoutHandler);
+    if (!data || this.receivedData) { return; }
+    data._v = 2;
+    this.receivedData = data;
+
+    this.overlayButton.hideMask();
+    this.widgetAdapter.destroy();
+
+    if (this._userHasClicked) {
+      this.applicationForm.fill(this.receivedData);
+      this.overlayButton.setState('completed');
+    } else {
+      this.overlayButton.setState('ready');
+    }
+  };
+
+  /*
+   * Form controller
+   */
+  var ApplicationForm = function() {};
+
+  ApplicationForm.prototype.fill = function(data) {
+    var fullName = [];
+
+    if (data.firstName) {
+      fullName.push(data.firstName);
+    }
+    if (data.lastName) {
+      fullName.push(data.lastName);
+    }
+    if (fullName.length) {
+      this.updateFieldIfEmpty('name', fullName.join(' '));
+    }
+
+    if (data.emailAddress) {
+      this.updateFieldIfEmpty('email', data.emailAddress.toLowerCase());
+    }
+
+    if (data.phoneNumber) {
+      this.updateFieldIfEmpty('phone', data.phoneNumber);
+    }
+
+    if (data.positions && data.positions.length) {
+      var companyName, position;
+      for (var i = 0; i < data.positions.length; i++) {
+        position = data.positions[i];
+        if (position && position.isCurrent) {
+          companyName = position.companyName;
+          if (!companyName && position.company && position.company.name) {
+            companyName = position.company.name;
+          }
+        }
+        if (companyName) { break; }
+      }
+      if (companyName) {
+        this.updateFieldIfEmpty('org', companyName);
+      }
+    }
+
+    if (data.publicProfileUrl) {
+      this.updateFieldIfEmpty('urls[LinkedIn]', data.publicProfileUrl);
+    }
+
+    this.updateFieldIfEmpty('linkedInData', JSON.stringify(data));
+  };
+
+  ApplicationForm.prototype.updateFieldIfEmpty = function(fieldName, value) {
+    var $field = $("input[name='" + fieldName + "']");
+    if ($field && $field.val()) { return; }
+    $field.val(value.trim());
+  };
+
+  ApplicationForm.prototype.hideAWLI = function() {
+    $('.awli-application-row').hide();
+  };
+
+  /*
+   * Button controller
+   */
+  var OverlayButton = function() {
+    this.disabled = false;
+    this.$button = $(BUTTON_SELECTOR);
+    var self = this;
+    this.$button.on('click', function() {
+      if (self.disabled) { return; }
+      self.setState('loading');
+      setTimeout(function() {
+        self.setState('completed');
+        if (self._onClickHandler) {
+          self._onClickHandler();
+        }
+      }, 300);
+    });
+  };
+
+  OverlayButton.prototype.setState = function(state) {
+    var states = BUTTON_STATES;
+    for (var i = 0; i < states.length; i++) {
+      if (states[i] === state) {
+        this.$button.addClass('state-' + states[i]);
+      } else {
+        this.$button.removeClass('state-' + states[i]);
+      }
+    }
+  };
+
+  OverlayButton.prototype.hide = function() {
+    this.hideMask();
+    this.$button.hide();
+  };
+
+  OverlayButton.prototype.showMask = function() {
+    this.$button.addClass(BUTTON_MASK_CLASS);
+  };
+
+  OverlayButton.prototype.hideMask = function() {
+    this.$button.removeClass(BUTTON_MASK_CLASS);
+  };
+
+  OverlayButton.prototype.onClick = function(handler) {
+    this._onClickHandler = handler;
+  };
+
+  /*
+   * Widget controller
+   */
+  var WidgetAdapter = function() {
+    this.loaded = false;
+    this.$script = $(WIDGET_SCRIPT_SELECTOR);
+  };
+
+  WidgetAdapter.prototype.attachToIframe = function(iframeElement) {
+    var self = this;
+    this.destroy();
+    this.loaded = false;
+    this.iframe = iframeElement;
+    // HACK: Cross-origin iframes don't allow the parent document to access certain iframe
+    // properties and will throw an error. However, before the iframe is loaded, the actual
+    // iframe document points to a local placeholder document that *is* accessible, so we
+    // can use it to see if the iframe is already loaded.
+    try {
+      var iframeDocument = this.iframe.contentDocument || (this.iframe.contentWindow && this.iframe.contentWindow.document);
+      this.loaded = !!(iframeDocument && iframeDocument.readyState === 'complete')
+    } catch(e) {
+      if (e.name === 'SecurityError') {
+        this.loaded = true;
+      }
+    }
+
+    if (!this.loaded) {
+      this.iframe.onload = this._onIframeLoad.bind(this, true);
+      this.iframe.onerror = this._onIframeLoad.bind(this, false);
+    }
+
+    // The awliWidget attaches the container into the dom only after this function is
+    // called, so we have to let the event loop finish before we can do a lookup
+    setTimeout(function() {
+      self.$container = $(WIDGET_CONTAINER_SELECTOR);
+    }, 0);
+  };
+
+  WidgetAdapter.prototype._onIframeLoad = function(success, event) {
+    if (this.loaded) { return; }
+    this.loaded = success;
+    if (this._onLoadHandler) {
+      this._onLoadHandler(success);
+    }
+  };
+
+  WidgetAdapter.prototype.onIframeLoad = function(handler) {
+    if (this.loaded) {
+      return handler(this.loaded);
+    }
+    this._onLoadHandler = handler;
+  };
+
+  WidgetAdapter.prototype.setMode = function(mode) {
+    if (this.$script[0].dataset) {
+      this.$script[0].dataset.mode = mode;
+    } else {
+      this.$script[0].setAttribute('data-mode', mode);
+    }
+
+    var widgetLoadEvent;
+    try {
+      // Older browsers often have Event class but do not allow creating custom events
+      widgetLoadEvent = new Event(WIDGET_LOAD_EVENT_NAME);
+    } catch (e) {
+      // Fall back to legacy way of creating custom events
+      widgetLoadEvent = document.createEvent('Event');
+      widgetLoadEvent.initEvent(WIDGET_LOAD_EVENT_NAME, true, true);
+    }
+
+    if (window.dispatchEvent) {
+      window.dispatchEvent(widgetLoadEvent);
+    } else {
+      window.fireEvent('on' + WIDGET_LOAD_EVENT_NAME, widgetLoadEvent);
+    }
+  };
+
+  WidgetAdapter.prototype.destroy = function() {
+    if (this.$container) {
+      this.$container.remove();
+    }
+  };
+
+  new MainController();
+
+})(window, window.jQuery);

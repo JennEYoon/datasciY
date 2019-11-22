@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://www.datascienceweekly.org/articles/aspiring-data-scientist-here-are-some-at-work-project-ideas -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta tags: charset, Content-Type, X-UA-Compatible, viewport
+    ================================================== --> 
+    
+    	
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags: title, description, robots
+    ================================================== --> 
+    <title>Aspiring Data Scientist? Here Are Some At Work Project Ideas | Data Science Weekly</title>
+    <meta name="description" content="Do you find yourself wanting to move into Data Science but keep hearing &quot;get some data, analyze it, and you&#39;ll be fine...&quot;? Have you developed many of the base skills for data science, such as progra ...">
+    <meta name="robots" content="FOLLOW,INDEX">
+
+    <!-- Bootstrap and Bootswatch CSS + JS Libraries
+    ================================================== -->
+    <link href="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/bootstrap.min(1).css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/4795790.js.download"></script><script type="text/javascript" async="" src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/heap-2103544385.js.download"></script><script async="" src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/analytics.js.download"></script><script src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/jquery.min.js.download"></script>
+    <script src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/bootstrap.min.js.download"></script>
+
+    <!-- HTML5 shim + Respond.js
+    ================================================== -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Application Specific JS, CSS, and CSRF Meta Tags
+    ================================================== -->    
+    <link rel="stylesheet" media="all" href="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/application-fb21b3cc646af700d0730a90d5c8a569bd2d63d911d121c27895ecc9b4fdc933.css">
+    <script src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/application-12ded896737ba23f1da8562bae9b5273d8baf3bfa568ca1b21dd66c95e618ab9.js.download"></script>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AJUmOw+c0UMwWCGpkXtU3tzNPEM8H9qB9SOkaKi3ceOXR7VNVRhz2Mnaqo5LKmirOJRg/1eGNN9ySDtEEEgQKA==">
+
+    <!-- Canonical URL Tag
+    ================================================== -->
+    <link rel="canonical" href="https://www.datascienceweekly.org/articles/aspiring-data-scientist-here-are-some-at-work-project-ideas">
+
+    <!-- Open Graph Protocol Meta Tags
+    ================================================== -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Aspiring Data Scientist? Here Are Some At Work Project Ideas | DataScienceWeekly.org">
+    <meta property="og:description" content="Do you find yourself wanting to move into Data Science but keep hearing &quot;get some data, analyze it, and you&#39;ll be fine...&quot;? Have you developed many of the base skills for data science, such as progra ...">
+    <meta property="og:url" content="https://www.datascienceweekly.org/articles/aspiring-data-scientist-here-are-some-at-work-project-ideas">
+    <meta property="og:site_name" content="DataScienceWeekly.org">
+    <meta property="article:section" content="DataScienceWeekly.org Data Science Article Collection">
+    <meta property="og:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/two-cars_620x413.jpg">
+
+    <!-- Twitter Card Meta Tags
+    ================================================== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aspiring Data Scientist? Here Are Some At Work Project Ideas | DataScienceWeekly.org">
+    <meta name="twitter:description" content="Do you find yourself wanting to move into Data Science but keep hearing &quot;get some data, analyze it, and you&#39;ll be fine...&quot;? Have you developed many of the base skills for data science, such as progra ...">
+    <meta property="twitter:image" content="https://s3.amazonaws.com/datascienceweekly/data-science-articles-images/two-cars_620x413.jpg">
+    <meta name="twitter:site" content="@DataSciNews">
+    <meta name="twitter:domain" content="DataScienceWeekly.org">
+    <meta name="twitter:creator" content="@DataSciNews">
+ 
+    <!-- Google Analytics
+    ================================================== -->
+      <!-- Environment: production -->
+      <!-- begin google analytics code -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46037430-1', 'datascienceweekly.org');
+        ga('send', 'pageview');
+      </script>
+
+    <!-- Heap Analytics
+    ================================================== -->
+    <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+          heap.load("2103544385");
+    </script>
+
+  </head>
+
+  <body>
+
+      <!-- Static Navbar Top
+      ================================================== -->
+      <!-- Static Navbar Top
+================================================== -->
+<div id="dsw-navbar" class="navbar navbar-default">
+  <div class="container">
+
+    <!-- Navbar Brand
+    ================================================== -->
+    <div class="navbar-header">
+
+      <a class="navbar-brand" style="color: white; font-size:1.25em; margin-top: 13px;" href="https://www.datascienceweekly.org/">Data Science Weekly</a>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" style="width: auto;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar-main" class="navbar-collapse collapse">
+
+      <!-- Navigation Choices
+      ================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+
+        <li style="padding-left:10px;">
+          <a style="padding:0px 0px 0px;" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">
+            <button class="btn btn-success" type="button" style="background-color:#c9302c;border-color: #c12e2a; font-size:18px;">
+              Become A Data Scientist Faster
+            </button>
+</a>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- Main Container
+      ================================================== -->
+      <div class="container" id="main-yield-container">
+        <br>
+        <div class="col-lg-12" style="padding-left:0px; padding-right:0px;">
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    div.title {
+      padding: 0.5em;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+<!-- DataScienceWeekly.org Article Breadcrumb
+================================================== -->
+<ul class="breadcrumb">
+  <li>
+    <a href="https://www.datascienceweekly.org/">Home</a>
+  </li>
+  <li>
+    <a href="https://www.datascienceweekly.org/articles">Articles</a>
+  </li>
+  <li class="active">
+    <a href="https://www.datascienceweekly.org/articles/aspiring-data-scientist-here-are-some-at-work-project-ideas">Aspiring Data Scientist? Here Are Some At Work Project Ideas</a>
+  </li>
+</ul>
+
+
+<!-- DataScienceWeekly.org Article
+================================================== -->
+<div class="well" style="padding:1em;background-color:#2c3e50;">
+
+  <div class="well" style="padding-left:2em;padding-right:2em;">
+    <div class="article-title" style="text-align:left;color:#34495e">
+      <h1>Aspiring Data Scientist? Here Are Some At Work Project Ideas</h1>
+    </div>
+
+    <hr class="blog-index-hr" style="margin-bottom:0.5em;margin-top:1em;">
+
+    <div class="article-content">
+      <img alt="Aspiring Data Scientist? Here Are Some At Work Project Ideas" class="img-responsive img-rounded img-thumbnail" src="./Aspiring Data Scientist_ Here Are Some At Work Project Ideas _ Data Science Weekly_files/two-cars_620x413.jpg">
+      <br>
+      <br>
+      <p>
+Do you find yourself wanting to move into Data Science but keep hearing "get some data, analyze it, and you'll be fine..."? Have you developed many of the base skills for data science, such as programming, data analysis, and/or visualization but are unsure of how to apply them? Are you looking to differentiate yourself from the ever-growing pile of aspiring "data scientist" who have taken the usual Coursera classes and done Kaggle competitions?
+</p>
+<p>
+You are not alone.
+</p>
+<p>
+A few days ago, a member from our <a href="http://www.datascienceweekly.org/">newsletter</a> asked us our thoughts on question a reader on <a href="http://www.reddit.com/r/datascience">reddit.com/r/datascience</a> asked regarding project ideas using data from their work for an aspiring data scientist.
+</p>
+<p>
+Here is the question:
+<br>
+<span style="font-style:italic;">
+"I would like to know if any of you have any ideas for any specific problems I can solve that would be relevant to my current position. At the moment, I have been entrusted with pretty much all of the company's data, including service records, material pricing, billing info, and even vehicle tracking data. My boss is willing to let me use the data to work on a project, provided the day-to-day tasks get done and I don't leak privileged information all over the internet."
+</span>
+</p>
+<p>
+The person asking the question has a PhD in physics and has some of the necessary base skills for data science - programming, data analysis, and visualization. Now all that this person needs is data and they're good to go, right? Well, not so fast - they already have the skills and all of the companies data that they could want, what they now need is an understanding of what data science can do for them, their data, and their company.
+</p>
+<p>
+There are two ways to approach this:
+<br>
+</p><ul>
+<li>
+A) <strong>Top Down</strong> - understand what kinds of problems the business has, and then look for specific solutions in the Data Science domain. (i.e. - pick a problem the business has - are the marketing dollars working as best as they can - and then figuring out which Data Science techniques you can use to answer that question...)
+</li>
+<li>
+B) <strong>Bottom Up</strong> - understand what kinds of problems can be solved with Data Science first, and then look for specific applications in the business domain. (i.e. - before even looking at the business, go out and learn Classification techniques, or Clustering techniques, or Dimensionality Reduction techniques, or Regression techniques, or Deep Learning techniques, or Optimization techniques, etc...)
+</li>
+</ul>
+<p></p>
+<p>
+The bottom up way reminds me of the following quote from "Zen and the Art of Motorcycle Maintenance: An Inquiry into Values" by Robert Pirsig:
+<br>
+<span style="font-style:italic;">
+“You want to know how to paint a perfect painting? ... It's easy. Make yourself perfect and then just paint naturally. That's the way all the experts do it. The making of a painting [...] isn't separate from the rest of your existence."
+</span>
+</p>
+<p>
+Which is great if you are still a PhD student or have all the time in the world to make yourself perfect.  There are many positive attributes to this approach and is the long term solution.
+</p>
+<p>
+However, as this person is currently in a job and wants to build an independent project to showcase their data science skills in the short term, the best approach is the Top Down approach.
+</p>
+<p>
+To that end, we can think of the business in the following terms: A business, in broad strokes, has one goal - make money. A secondary goal is to make more money (i.e., grow profit). The way to grow profit is to A) get more revenue, B) cut costs, or C) do both A and B at the same time.
+</p>
+<p>
+The person asking the question has access to pretty much all of the company's data. So taking the top down approach (what problems does the business have and the figure out what data science techniques to apply), the goal then should be to A) get more revenue and/or B) cut costs.
+</p>
+<p>
+<strong>First</strong>, let's look at the different functional areas of a business:
+</p><ul>
+<li>
+Finance and Accounts
+</li>
+<li>
+Human Resources
+</li>
+<li>
+Customer Service
+</li>
+<li>
+Marketing &amp; Sales
+</li>
+<li>
+Distribution
+</li>
+<li>
+Research and Development
+</li>
+<li>
+Administration Support
+</li>
+<li>
+Production Operations
+</li>
+<li>
+IT Support
+</li>
+<li>
+Purchasing
+</li>
+</ul>
+<p></p>
+<p>
+Each of these different functional areas of the business will be generating some type of data in normal daily operations. The person asking the question's goal then is to find a way to help the business grow its profits only using data from one or more of these functional areas and data science techniques.
+</p>
+<p>
+<strong>Second</strong>, we can group the different functional areas into those that have a direct impact into the profit numbers and those that have secondary impact:
+</p>
+<p>
+Primary Impact:
+</p><ul>
+<li>
+Marketing &amp; Sales
+</li>
+<li>
+Distribution
+</li>
+<li>
+Production Operations
+</li>
+<li>
+Purchasing
+</li>
+</ul>
+<p></p>
+<p>
+Secondary Impact:
+</p><ul>
+<li>
+Finance and Accounts
+</li>
+<li>
+Human Resources
+</li>
+<li>
+Customer Service
+</li>
+<li>
+Research and Development
+</li>
+<li>
+Administration Support
+</li>
+<li>
+IT Support
+</li>
+</ul>
+<p></p>
+<p>
+Note: of course R&amp;D and the other areas that provide secondary impact are very important to the running of a business and how it generates profit. It's just that the effect is either longer term (happy customers eventually recommend other customers) or harder to measure (happy workforce helps to attract a better work force which makes the company better).
+</p>
+<p>
+Since the person asking the question's boss is willing to let him/her use the data as long as the day-to-day tasks get done, we can safely assume that the boss will be happy to let this person work on a project for sometime though probably not forever. So it's probably important to have small / quick wins sooner than later to allow the side-project to continue if not grow. To that end, the person asking the question should then focus on the functional areas of the business that provide Primary Impact.
+</p>
+<p>
+<strong>Third</strong>, we can further separate the functional areas of the Primary Impact list into A) get more revenue and B) cut costs:
+</p>
+<p>
+A) Primary Impact &amp; Get more revenue:
+</p><ul>
+<li>
+Marketing &amp; Sales
+</li>
+</ul>
+<p></p>
+<p>
+B) Primary Impact &amp; Cut costs:
+</p><ul>
+<li>
+Distribution
+</li>
+<li>
+Production Operations
+</li>
+<li>
+Purchasing
+</li>
+</ul>
+<p></p>
+<p>
+<strong>Fourth</strong>, we can now start to think about what projects a "Data Scientist" can do with datasets from these specific functional areas. A data scientist's job can be broken down at a high level into two areas - data engineering &amp; asking questions and trying to answer them with data.
+</p>
+<p>
+For the data engineering part, the somewhat general consensus is that 80% of the time of a data science project is spend on the "data munging" part of it (e.g. <a href="http://www.datascienceweekly.org/data-scientist-interviews/data-science-transforming-online-retail-warby-parker-carl-anderson-interview">Data Science &amp; Online Retail - At Warby Parker and Beyond: Carl Anderson Interview</a>). You can think of the "data munging" part of the project as getting the data as it's currently stored into a nicely shaped, cleaned, checked, formatted, easily available data set that you can then throw into your modeling/visualization system.
+</p>
+<p>
+For the asking questions and trying to answer them with data part, this is where the visualization, modeling, story-telling, statistics, math, and programming come in. When non-data scientist think of data science, this is the part they normally talk about as it's usually what they see in Kaggle competitions, etc...
+</p>
+<p>
+What project ideas for specific problems the question asker can solve that are relevant to his/her current position start to become more clear. For A and B functional areas of primary impact we can come up with Data Engineering/Data Munging projects as well as asking questions and trying to answer them with data projects.
+</p>
+<p>
+For Data Engineering/Data Munging projects, we can look for projects in the following areas:
+<br>
+</p><ol>
+<li>
+Data Capture
+</li>
+<li>
+Data Storage
+</li>
+<li>
+Data Pipelines (capture -&gt; storage, storage -&gt; munging, munging -&gt; question asking &amp; answering)
+</li>
+<li>
+Data Munging (dealing with missing data, outliers, encoding issues, reformatting, etc...)
+</li>
+</ol>
+<p></p>
+<p>
+For the asking questions and trying to answer them with data projects, we can look for projects in the following areas:
+<br>
+</p><ol>
+<li>
+Visualization of Data
+</li>
+<li>
+Modeling of Data
+</li>
+<li>
+Story-telling of results
+</li>
+</ol>
+<p></p>
+<p>
+<strong>Fifth, and final</strong>, once we get to this point we can combine the functional areas and the project areas to find wins to improve the profit of the company. Each of these project areas when applied to the functional areas can be a project on it's own. As an example, let's look at A) marketing and sales and take a look at the full data science pipeline to see where things can be improved by asking the 5(6) W's and <strong>asking if each area can be improved</strong>:
+</p>
+<p>
+I) Sales &amp; Marketing - Data Capture:
+</p><ul>
+<li>
+Who does the data capture?
+</li>
+<li>
+What happens during the data capture?
+</li>
+<li>
+When does the data capture happen?
+</li>
+<li>
+Where does the data capture take place?
+</li>
+<li>
+Why does the data capture happen (are they the right goals)?
+</li>
+<li>
+How does the data capture happen?
+</li>
+</ul>
+<p></p>
+<p>
+II) Sales &amp; Marketing - Data Storage:
+</p><ul>
+<li>
+Who does the data storage?
+</li>
+<li>
+What happens during the data storage?
+</li>
+<li>
+When does the data storage happen?
+</li>
+<li>
+Where does the data storage happen?
+</li>
+<li>
+Why does the data storage happen (are they they right goals)?
+</li>
+<li>
+How does the data storage happen?
+</li>
+</ul>
+<p></p>
+<p>
+III) Sales &amp; Marketing - Data Pipelines (capture -&gt; storage)
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+IV) Sales &amp; Marketing - Data Pipelines (storage -&gt; munging)
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+V) Sales &amp; Marketing - Data Pipelines (munging -&gt; question asking &amp; answering)
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+VI) Sales &amp; Marketing - Data Visualization
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+VII) Sales &amp; Marketing - Data Modeling
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+VIII) Sales &amp; Marketing - Story-telling of results
+</p><ul>
+<li>
+5(6) W's...
+</li>
+</ul>
+<p></p>
+<p>
+For each W question in each section it is important to remember that we are always looking to either get more revenue, cut costs or do both. Also, remember that this example is just for the Primary Impact &amp; Get more revenue functionality area. We can perform this same exercise for the Primary Impact &amp; Cut costs area.
+</p>
+<p>
+Pulling it all together...
+</p>
+<p>
+Some example project in the data engineering aspect of sales and marketing could be the following:
+<br>
+</p><ul>
+<li>
+Making all of the Sales and Marketing data available on an internal website where it is visible and breakdown-able all the way to specific sales people and advertising campaigns...
+</li>
+<li>
+Moving all of the disparate sales and marketing data sets that are perhaps are siloed in spreadsheets on various people's computers into a centralized online data store that will scale to the size needed 5 years from now...
+</li>
+<li>
+Given the companies goals and aspirations, revamp the data collection process to capture even more data about the sales and marketing functions (this involves figuring out what to capture as well as how to accurately and efficiently capture it)...
+</li>
+</ul>
+<p></p>
+<p>
+Some example project in the asking questions and using data to answer them aspect of sales and marketing could be the following:
+<br>
+</p><ul>
+<li>
+Use Classification techniques to classify which accounts are the most likely to upgrade their service contract (this helps the salesforce to know which leads / accounts to focus on to sell more)...
+</li>
+<li>
+Use Regression techniques to improve how sales people pitch prospective clients and what features of the company's services they should highlight...
+</li>
+<li>
+Use Optimization techniques to maximize the number of views of company promotional material a prospective customer sees for a given dollar amount of promotional spend...
+</li>
+</ul>
+<p></p>
+<p>
+Some of these improvements are relatively simple while others will require much more thought and awareness. Any one of those with enough thought and energy should be able to help the company as well as provide some skills to showcase in a more explicit data science context. It's also important to remember that 80% of data science is generally thought to be data munging so while it may seem like the right thing to do is to jump into the modeling, it's much better to look at all the areas that can be improved and figure out where the highest value can be provided.
+</p>
+<p>
+The great thing about the situation the person asking the question finds themselves in is that though their boss might not have a great deal of understanding of how to use data to make the company better / bring in more profit, they are willing and really want for the question asker to turn data into dollars. And, because the boss is letting them try a project, it means that the communication lines are open and that constant dialogue should happen to make sure that the right problems are being tackled that benefit everyone involved - the boss looks great and the person asking the question will have developed data science skills they can showcase in more explicit data science contexts.
+</p>
+<p>
+....
+</p>
+<p>
+<strong>P.S.</strong> Readers, thanks for joining us! To keep up with our articles as well as the latest curated news and articles in Data Science, sign-up for our free weekly newsletter -&gt; <a href="http://www.datascienceweekly.org/">Data Science Weekly</a>... subscribe button below :)
+<br>
+</p>
+    </div>
+
+  </div>
+
+
+  <!-- Related Guide
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <br>
+    <p>
+      <strong class="text-danger" style="font-size:1.5em;">Want to become a data scientist?</strong>
+      <br>
+      <br>
+      How would you feel if you woke up tomorrow with perfect knowledge, given your background and education,
+      for how to become a data scientist as fast as possible?
+      <br>
+      <br>
+      Get started today because you will save time, money, and frustration with this
+      <br>
+      =&gt; <a href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Data Science Getting Started Guide</a>.
+    </p>
+    <br>
+  </div>
+</div>
+
+  <!-- Related Articles
+  ================================================== -->
+  <div class="article-outside">
+  <div class="article-content">
+    <p>
+    <br>
+      You might also enjoy these data science articles because you are terrific:
+      <br>
+      </p><ul>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/do-i-need-to-be-an-open-source-contributor-to-be-taken-seriously-by-a-data-science-hiring-manager">Do I need to be an open-source contributor to be taken seriously by a Data Science Hiring Manager?</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/how-to-get-a-data-scientist-job-with-a-masters-in-marketing-degree-what-should-i-learn">How To Get A Data Scientist Job With A Masters In Marketing Degree - What Should I Learn</a>
+          </li>
+          <li>
+            <a href="https://www.datascienceweekly.org/articles/interview-with-data-science-hiring-manager-nick-larusso-graphiq">Interview with Data Science Hiring Manager: Nick Larusso, Graphiq</a>
+          </li>
+      </ul>
+    <br>
+    <p></p>
+  </div>
+</div>
+
+  <!-- Post Content Newsletter Form -->
+  <div class="well" style="margin-bottom: 0px;">
+
+    <!-- mailchimp form -->
+    <form action="https://datascienceweekly.us3.list-manage.com/subscribe/post?u=71a2b2a38789d4d25b738462f&amp;id=b63d6b814f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+      <!-- Row 1 -->
+      <div class="col-md-12">
+        <div class="row" id="row-1">
+          <div class="col-md-6" id="pcnf-left">
+            Sign up to receive the Data Science Weekly Newsletter every Thursday
+          </div>
+          <div class="col-md-3" id="pcnf-middle">
+          	<input type="email" value="E-mail Address" name="EMAIL" class="form-control" id="mce-EMAIL" onfocus="if (this.value == &#39;E-mail Address&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;E-mail Address&#39;;}">
+          </div>
+          <div class="col-md-3" id="pcnf-right">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-danger">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr id="pcnf-hr-separator">
+        <div class="row" id="row-2">
+          <div class="col-md-12">
+            Easy to unsubscribe. No spam — we keep your email safe and do not share it.
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- /Row 1 -->
+      <!-- Row 2 -->
+      <!-- /Row 2 -->
+
+      </form> <!-- /mailchimp form -->
+  </div>
+  <!-- /Post Content Newsletter Form -->
+
+</div>
+        </div>
+      </div>
+
+      <!-- Footer Container
+      ================================================== -->
+      <div id="dsw-footer">
+        <div class="container">
+          <footer style="font-size:0.75em;padding-top:20px;padding-bottom:20px;margin-top:30px;color:white;text-align:left;border-top: 1px solid #e5e5e5;">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-3">
+        <p>
+          <span style="color:yellow;"><strong>Data Science Weekly</strong></span>
+          <br>
+          <span style="font-size:0.85em;">
+          A free weekly newsletter featuring curated news, articles, guides, and jobs related to Data Science.
+          </span>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-3">
+        <p>
+          <strong>DataScienceWeekly.org</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/articles">Data Scientist Articles</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-scientist-interviews">Data Scientist Interviews</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-resources">Data Science Resources</a>
+        </p>
+      </div><!-- /col-log-3 -->
+      <div class="col-lg-4">
+        <p>
+          <strong>Wait, there's more!</strong>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/data-science-guides/data-science-getting-started-guide">Become A Data Scientist Faster</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/about-us">About Us</a>
+        </p>
+        <p>
+          <a class="text-info" href="https://www.datascienceweekly.org/newsletters">Data Science Newsletter Archive</a>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p>
+          <strong>Let's Connect!</strong>
+        </p>
+        <p>
+          <a href="https://twitter.com/datascinews" class="text-info">Twitter</a>
+        </p>
+        <p>
+          <a href="mailto:team@datascienceweekly.org" class="text-info">Email Us</a>
+        </p>
+      </div><!-- /col-log-2 -->
+    </div>
+    <div class="col-lg-12">
+      <p style="font-size:0.75em;color:white;" class="pull-right">
+      © 2013-2016 DataScienceWeekly.org
+      </p>
+    </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+
+    <!-- Get Drip
+    ================================================== -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '4795790';
+  
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true; 
+        dc.src = '//tag.getdrip.com/4795790.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+  
+</body></html>

@@ -1,0 +1,208 @@
+function activeClass(id) {
+    resetSocial();
+    $('#' + id + '-feed').addClass('active');
+    $('.' + id).parent('li').addClass('active');
+    $('.' + id).attr('aria-selected', 'true');
+//    $('#' + id + '-feed').attr({'aria-hidden':'false','aria-expanded':'true'});
+}
+
+function resetSocial() {
+    $('#social-feeds li, #social-tabs li').removeClass('active');
+    $('#social-tabs li a').attr('aria-selected', 'false');
+    $('#social-feeds li').attr('aria-hidden', 'true');
+    $('#social-feeds li').attr('aria-expanded', 'false');
+}
+
+function openFeed(type) {
+    switch (type) {
+        case 'fb':
+            if (!document.getElementById('fb-feed')) {
+                $('#social-feeds').append($('<li id="fb-feed" aria-hidden="false" aria-expanded="true" tabindex="0" aria-labeledby="fb-tab" role="tabpanel"><iframe id="fb-content" title="Facebook Feed" src="https://web.archive.org/web/20150106165401/http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FCapitalOneJobs&amp;width=500&amp;height=200&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;show_border=false&amp;header=false" scrolling="no" frameborder="0" allowTransparency="true" height="200" tabindex="0"></iframe></li>'));
+            }
+            break;
+        case 'tw':
+            if (!document.getElementById('tw-feed')) {
+                $('#social-feeds').append($('<li id="tw-feed" aria-hidden="false" aria-expanded="true" tabindex="0" aria-labeledby="tw-tab" role="tabpanel"><a class="twitter-timeline"  data-chrome="nofooter" height="100" href="https://web.archive.org/web/20150106165401/https://twitter.com/capitalonejobs"  data-widget-id="349640961338523649" tabindex="0">Tweets by @capitalonejobs</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>'));
+            }
+            break;
+        case 'ln':
+            if (!document.getElementById('ln-feed')) {
+                $('#social-feeds').append($('<li id="ln-feed" aria-hidden="false" aria-expanded="true" tabindex="0" aria-labeledby="li-tab" role="tabpanel"></li>'));
+                $('#ln-feed').append($('<div><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://web.archive.org/web/20150106165401/http://services.tmpwebeng.com/tmp-share/widget/linkedin.aspx?Clientid=1419" tabindex="0"></iframe></div>'));
+            }
+            break;
+        case 'yt':
+            if (!document.getElementById('yt-feed')) {
+                $('#social-feeds').append($('<li id="yt-feed" aria-hidden="false" aria-expanded="true" tabindex="0" aria-labeledby="yt-tab" role="tabpanel"><h4 tabindex="0">Capital One Jobs <span>Check out the videos on our YouTube channel.</span></h4><a class="yt-subscribe" href="https://web.archive.org/web/20150106165401/http://www.youtube.com/capitalonejobs?sub_confirmation=1" target="_blank" tabindex="0">Subscribe</a><div id="videos" tabindex="0"></div></li>'));
+                plumTube({
+                    user: 'capitalonejobs',
+                    container: 'videos',
+                    largeThumb: true,
+                    showTitle: 'link',
+                    maxResults: 12
+                });
+            }
+            break;
+    }
+    activeClass(type);
+	return false;
+}
+//var dropTime;
+$('.job-dropdowns h2').click(function () {
+    //clearTimeout(dropTime);
+    //reset all aria attributes
+    $('.job-dropdowns h2').attr('aria-selected', 'false');
+    $('.job-dropdowns li ul').attr('aria-hidden', 'true');
+    $('.job-dropdowns li ul').attr('aria-expanded', 'false');
+    if ($(this).parent('li').hasClass('open')) {
+        $(this).parent('li').removeClass('open');
+    }
+    else {
+        $('.job-dropdowns li').removeClass('open');
+        $(this).parent('li').addClass('open');
+        $(this).attr('aria-selected', 'true');
+        $(this).next('ul').attr('aria-hidden', 'false');
+        $(this).next('ul').attr('aria-expanded', 'true');
+    }
+});
+/*.mouseover( function() {
+$('.job-dropdowns li').removeClass('open');
+$(this).parent('li').addClass('open');   
+}).mouseleave(function() {
+var elem = $(this);
+dropTime = setTimeout(function() {
+elem.parent('li').removeClass('open');
+}, 50);
+});
+$('.job-dropdowns ul').mouseenter(function() {
+clearTimeout(dropTime);
+}).mouseleave(function() {
+$(this).parent('li').removeClass('open'); 
+});
+$('.view-more').mouseenter(function() {
+clearTimeout(dropTime);
+$(this).parent('li').addClass('open');
+});*/
+$(document).ready(function () {
+    //set job dropdown viewall
+//    if ($('.job-dropdowns').length > 0) {
+//       $('.job-dropdowns ul li').hide();
+//        $('.job-dropdowns ul').each(function () {
+//            var listitems = $(this).children('li');
+//            for (var i = 0; i < 10; i++) {
+//                $(listitems[i]).show();
+//            }
+//        });
+		
+//		$('.job-dropdowns h2').focus(function() {
+//			if(!$(this).parent('li').hasClass('open')) {
+//				$('.job-dropdowns li').removeClass('open');
+//				$(this).parent('li').addClass('open');
+//			}
+//			$(window).scrollTop($('.job-dropdowns').position().top);
+//		});
+//		$('.job-dropdowns ul').focus(function() {
+//			if(!$(this).parent('li').hasClass('open')) {
+//				$('.job-dropdowns li').removeClass('open');
+//				$(this).parent('li').addClass('open');
+//			}
+//			$(window).scrollTop($('.job-dropdowns').position().top);
+//		});
+        
+//       $('.job-dropdowns li ul li a').focus(function () {
+//           if(!$(this).parent('li').parent('ul').parent('li').hasClass('open')) {
+//				$('.job-dropdowns li').removeClass('open');
+//				$(this).parent('li').parent('ul').parent('li').addClass('open');
+//			}
+//			$(window).scrollTop($('.job-dropdowns').position().top);
+//      });
+		
+//		$('.job-dropdowns .view-more').click(function () {
+//            $(this).siblings('ul').children('li').show();
+//			console.log($(this).siblings('ul').children('li:nth-child(11)').children('a'));
+//			$(this).siblings('ul').children('li:nth-child(11)').children('a').focus();
+ //           $(this).remove();
+//			return false;
+//        }).focus(function () {
+//            $(this).parent('li').addClass('open');
+//			$(window).scrollTop($('.job-dropdowns').position().top);
+//        }).blur(function () {
+//            $(this).parent('li').removeClass('open');
+//			$(window).scrollTop($('.job-dropdowns').position().top);
+//        });
+//    }
+
+    //advanced search toggle
+    $('#search-toggle').click(function () {
+        if ($(this).parent('div').hasClass('advanced')) {
+            $(this).parent('div').removeClass('advanced');
+            $('.RadiusSearchContainer').css('display', 'none');
+        }
+        else {
+            $(this).parent('div').addClass('advanced');
+            if ($("#rdBtnRadius").is(":checked")) {
+                $('.RadiusSearchContainer').css('display', 'block');
+            }
+            $("#txtASKeywords").focus();
+        }
+        return false;
+    });
+
+    //add social feeds
+    if (document.getElementById('social-tabs')) {
+        var feedlist = document.createElement('ul');
+        feedlist.id = 'social-feeds';
+        $(feedlist).insertAfter($('#social-tabs'));
+        openFeed('fb');
+        $('#social-tabs a').click(function () {
+            openFeed($(this).attr('class'));
+            $(this).attr('aria-selected', 'true');
+            return false;
+        });
+    }
+
+    //hacks
+    $('#btnASGo').val('search');
+    $('#btGo').attr('role', 'button');
+    $('#btReset').attr('role', 'button');
+});
+
+$(function () { //global on DOM ready
+    if (checkHC()) $('html').addClass('hcmode'); // Accessibility - high contrast mode
+    $('.hcmode #logo img').attr('src', '//web.archive.org/web/20150106165401/http://seostatic.tmp.com/job-images/4250/logo_hc.jpg');
+});
+
+// Accessibility - Check for high contrast mode -- http://www.html5accessibility.com/tests/imagecheck.html
+function checkHC() {
+    var e, c;
+    e = document.createElement("div");
+    e.style.color = "rgb(31,41,59)";
+    document.body.appendChild(e);
+    c = document.defaultView ? document.defaultView.getComputedStyle(e, null).color : e.currentStyle.color;
+    document.body.removeChild(e);
+    c = c.replace(/ /g, "");
+    if (c != "rgb(31,41,59)") { return true } else { return false };
+}
+
+
+/*
+     FILE ARCHIVED ON 16:54:01 Jan 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:27 Nov 22, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots.policy: 0.122
+  exclusion.robots: 0.132
+  LoadShardBlock: 37.95 (3)
+  PetaboxLoader3.datanode: 233.992 (5)
+  captures_list: 143.297
+  load_resource: 407.392
+  esindex: 0.017
+  CDXLines.iter: 13.065 (3)
+  RedisCDXSource: 88.876
+  PetaboxLoader3.resolve: 137.657 (2)
+*/

@@ -1,0 +1,98 @@
+Type.registerNamespace('WebContent');
+WebContent.SeoSiteWebContent=function() {
+WebContent.SeoSiteWebContent.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+WebContent.SeoSiteWebContent.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return WebContent.SeoSiteWebContent._staticInstance.get_path();},
+EncryptContent:function(page,input1,input2,input3,input4,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'EncryptContent',true,{page:page,input1:input1,input2:input2,input3:input3,input4:input4},succeededCallback,failedCallback,userContext); },
+getcityziplistSQL:function(userInput,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'getcityziplistSQL',false,{userInput:userInput},succeededCallback,failedCallback,userContext); },
+gethomepagelinks:function(listtype,pagenumber,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'gethomepagelinks',false,{listtype:listtype,pagenumber:pagenumber},succeededCallback,failedCallback,userContext); },
+ValidateCapatcha:function(responseValue,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ValidateCapatcha',false,{responseValue:responseValue},succeededCallback,failedCallback,userContext); },
+SendApplyUrlClickDataToCHQ:function(seoSiteId,jobId,refCode,jobTitle,jobCity,jobState,jobCountry,referrerSource,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SendApplyUrlClickDataToCHQ',false,{seoSiteId:seoSiteId,jobId:jobId,refCode:refCode,jobTitle:jobTitle,jobCity:jobCity,jobState:jobState,jobCountry:jobCountry,referrerSource:referrerSource},succeededCallback,failedCallback,userContext); },
+getcityziplist:function(userInput,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'getcityziplist',false,{userInput:userInput},succeededCallback,failedCallback,userContext); },
+JobMatchingAutoSuggest:function(userInput,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'JobMatchingAutoSuggest',false,{userInput:userInput},succeededCallback,failedCallback,userContext); },
+GetApplyURLEnding:function(request,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetApplyURLEnding',false,{request:request},succeededCallback,failedCallback,userContext); }}
+WebContent.SeoSiteWebContent.registerClass('WebContent.SeoSiteWebContent',Sys.Net.WebServiceProxy);
+WebContent.SeoSiteWebContent._staticInstance = new WebContent.SeoSiteWebContent();
+WebContent.SeoSiteWebContent.set_path = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_path(value); }
+WebContent.SeoSiteWebContent.get_path = function() { return WebContent.SeoSiteWebContent._staticInstance.get_path(); }
+WebContent.SeoSiteWebContent.set_timeout = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_timeout(value); }
+WebContent.SeoSiteWebContent.get_timeout = function() { return WebContent.SeoSiteWebContent._staticInstance.get_timeout(); }
+WebContent.SeoSiteWebContent.set_defaultUserContext = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_defaultUserContext(value); }
+WebContent.SeoSiteWebContent.get_defaultUserContext = function() { return WebContent.SeoSiteWebContent._staticInstance.get_defaultUserContext(); }
+WebContent.SeoSiteWebContent.set_defaultSucceededCallback = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_defaultSucceededCallback(value); }
+WebContent.SeoSiteWebContent.get_defaultSucceededCallback = function() { return WebContent.SeoSiteWebContent._staticInstance.get_defaultSucceededCallback(); }
+WebContent.SeoSiteWebContent.set_defaultFailedCallback = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_defaultFailedCallback(value); }
+WebContent.SeoSiteWebContent.get_defaultFailedCallback = function() { return WebContent.SeoSiteWebContent._staticInstance.get_defaultFailedCallback(); }
+WebContent.SeoSiteWebContent.set_enableJsonp = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_enableJsonp(value); }
+WebContent.SeoSiteWebContent.get_enableJsonp = function() { return WebContent.SeoSiteWebContent._staticInstance.get_enableJsonp(); }
+WebContent.SeoSiteWebContent.set_jsonpCallbackParameter = function(value) { WebContent.SeoSiteWebContent._staticInstance.set_jsonpCallbackParameter(value); }
+WebContent.SeoSiteWebContent.get_jsonpCallbackParameter = function() { return WebContent.SeoSiteWebContent._staticInstance.get_jsonpCallbackParameter(); }
+WebContent.SeoSiteWebContent.set_path("/SeoSiteWebService/SeoSiteWebContent.asmx");
+WebContent.SeoSiteWebContent.EncryptContent= function(page,input1,input2,input3,input4,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.EncryptContent(page,input1,input2,input3,input4,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.getcityziplistSQL= function(userInput,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.getcityziplistSQL(userInput,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.gethomepagelinks= function(listtype,pagenumber,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.gethomepagelinks(listtype,pagenumber,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.ValidateCapatcha= function(responseValue,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.ValidateCapatcha(responseValue,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.SendApplyUrlClickDataToCHQ= function(seoSiteId,jobId,refCode,jobTitle,jobCity,jobState,jobCountry,referrerSource,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.SendApplyUrlClickDataToCHQ(seoSiteId,jobId,refCode,jobTitle,jobCity,jobState,jobCountry,referrerSource,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.getcityziplist= function(userInput,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.getcityziplist(userInput,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.JobMatchingAutoSuggest= function(userInput,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.JobMatchingAutoSuggest(userInput,onSuccess,onFailed,userContext); }
+WebContent.SeoSiteWebContent.GetApplyURLEnding= function(request,onSuccess,onFailed,userContext) {WebContent.SeoSiteWebContent._staticInstance.GetApplyURLEnding(request,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('TMPW.Product.SeoSite.BusLogic');
+if (typeof(TMPW.Product.SeoSite.BusLogic.UserLocation) === 'undefined') {
+TMPW.Product.SeoSite.BusLogic.UserLocation=gtc("TMPW.Product.SeoSite.BusLogic.UserLocation");
+TMPW.Product.SeoSite.BusLogic.UserLocation.registerClass('TMPW.Product.SeoSite.BusLogic.UserLocation');
+}
+if (typeof(SeoWebContentResult) === 'undefined') {
+var SeoWebContentResult=gtc("SeoWebContentResult");
+SeoWebContentResult.registerClass('SeoWebContentResult');
+}
+if (typeof(TMPW.Product.SeoSite.BusLogic.JobMatchingLocation) === 'undefined') {
+TMPW.Product.SeoSite.BusLogic.JobMatchingLocation=gtc("TMPW.Product.SeoSite.BusLogic.JobMatchingLocation");
+TMPW.Product.SeoSite.BusLogic.JobMatchingLocation.registerClass('TMPW.Product.SeoSite.BusLogic.JobMatchingLocation');
+}
+if (typeof(WebContent.GetApplyURLEndingRequest) === 'undefined') {
+WebContent.GetApplyURLEndingRequest=gtc("WebContent.GetApplyURLEndingRequest");
+WebContent.GetApplyURLEndingRequest.registerClass('WebContent.GetApplyURLEndingRequest');
+}
+if (typeof(WebContent.GetApplyURLEndingResponse) === 'undefined') {
+WebContent.GetApplyURLEndingResponse=gtc("WebContent.GetApplyURLEndingResponse");
+WebContent.GetApplyURLEndingResponse.registerClass('WebContent.GetApplyURLEndingResponse');
+}
+
+/*
+     FILE ARCHIVED ON 16:54:01 Jan 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:26 Nov 22, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 748.675 (3)
+  exclusion.robots: 0.327
+  CDXLines.iter: 31.468 (3)
+  captures_list: 787.336
+  esindex: 0.021
+  PetaboxLoader3.datanode: 783.02 (5)
+  exclusion.robots.policy: 0.304
+  PetaboxLoader3.resolve: 373.647 (2)
+  RedisCDXSource: 1.174
+  load_resource: 451.487
+*/
