@@ -2,6 +2,36 @@
 
 Date: Nov 23, 2019 started.  
 
+### Time Scheduled Tasks  
+
+ * Monday, Nov 24, 2019 afternoon, call with Ken N.
+   - Nail down SQL Aurora outline
+   - General Business strategy discuss, what resources, past work, does he really have?  
+   - Where is his funding coming from?  
+   - ta-ching? Python library -- look at.
+   - Angel.co look at, join?  As business manager resource?  Maybe on financial startup like at Mountain View?  
+   - Get phone number of the "resource" person and his skills.  
+ 
+### Time Sooner Tasks 
+ 
+Next 2 weeks from Nov 23, 2019:  
+
+ * Revamp - website projects.html page.  
+   - Create sub-pages for each project.  
+   - Use Jupyter notebook initially, then create a separate html page to showcase visualtizations.  
+ * Finish Articles.html page 
+   - Neural Style transfer paper read, image photo and artistic style, add to post.  
+   - Brain segmentation and GAN, get link from Bill.  Read paper and watch Youtube of competitor.  
+   
+  * geosnap -- try to finish PR.  
+     - First attempt to fix problem by reading code.  
+     - Write tests for what I think the outputs should be.  
+     - Next, install module and test example notebook  
+     - Also look at 2018 Scipy talk GeoSpatial analysis.  
+     - Re-submit PR with working tests, installed module.  
+   
+====================================================
+
 ### Important, no time deadline  
 
  * Have to re-do my data science resume. 
@@ -30,38 +60,12 @@ Date: Nov 23, 2019 started.
     - Top banks - what's been going on?  Press releases, financial statements, leverage ratios, capital statement.  
     - Write some articles about using DS/ML in Finance for investing, trading, regulation, law & litigation.  
     - Craig's opioid deaths and sales quantity data py MSA.  Map and zoomable down to street level.  Do.  
- 
-### Time Sooner Tasks 
- 
-Next 2 weeks from Nov 23, 2019:  
 
- * Revamp - website projects.html page.  
-   - Create sub-pages for each project.  
-   - Use Jupyter notebook initially, then create a separate html page to showcase visualtizations.  
- * Finish Articles.html page 
-   - Neural Style transfer paper read, image photo and artistic style, add to post.  
-   - Brain segmentation and GAN, get link from Bill.  Read paper and watch Youtube of competitor.  
- * Finish Titanic reproduction project using Logistic Regression.  
-    - Read more about logistic regression to get comfortable.  3 Blue 1 Brown had something on it?  
-    - Do a preliminary Google search for data on modern ship wrecks, survivor data?  Crews lines?  
-   
-### Time Scheduled Tasks  
-
- * Monday, Nov 24, 2019 afternoon, call with Ken N.
-   - Nail down SQL Aurora outline
-   - General Business strategy discuss, what resources, past work, does he really have?  
-   - Where is his funding coming from?  
+===============================================================
    
 ### General Tasks, not time critical and medium importance.   
 
   * New business card, color print at Janelia printer.  
-  
-  * geosnap -- try to finish PR.  
-     - First attempt to fix problem by reading code.  
-     - Write tests for what I think the outputs should be.  
-     - Next, install module and test example notebook  
-     - Also look at 2018 Scipy talk GeoSpatial analysis.  
-     - Re-submit PR with working tests, installed module.  
      
   * elegant-scipy 
      - Finish notebook build write up using WSL, and Windows & Command Prompt.  
@@ -73,7 +77,12 @@ Next 2 weeks from Nov 23, 2019:
      - Feedback to Vanderplas, I think chart titles are switched?  Confusing which part is usint "Matlab" style and which is using "Object Oriented".  Make if more clear by stating in each part which style is being used.  Seems to mix them together in some parts.  
      - In Jupyter notebook, you can just re-run a cell after editing it, so should be able to do everythin in "MatLab" style.  Does 3d plots with subplots work in "MatLab" style?
      - Read ML chapter, do several of the exercises, post replication projects on datasciY.com.  Later, extend with my own data or different techniques.  Any further thoughts and research on Google.  
-     
-  * Titanic - look for model ship wrecks and do analysis on survivors by sex and age.  Is passenger fair data available? 
+       
+ * Finish Titanic reproduction project using Logistic Regression.  
+    - Read more about logistic regression to get comfortable.  3 Blue 1 Brown had something on it?  
+    - Do a preliminary Google search for data on modern ship wrecks, survivor data?  Crews lines?  
+    - Titanic - look for model ship wrecks and do analysis on survivors by sex and age.  Is passenger fair data available?  
   
   
+
+--- end ---  
