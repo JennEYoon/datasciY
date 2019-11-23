@@ -60,7 +60,7 @@ Next 2 weeks from Nov 23, 2019:
     - BASEL III, 2.5, 2 -- review very carefully.  
     - Top banks - what's been going on?  Press releases, financial statements, leverage ratios, capital statement.  
     - Write some articles about using DS/ML in Finance for investing, trading, regulation, law & litigation.  
-    - Craig's opioid deaths and sales quantity data py MSA.  Map and zoomable down to street level.  Do.  
+    - Craig's opioid deaths and sales quantity data GeoPandas, GeoSpatial MSA.  Map and zoomable down to street level.  Do.  
 
 ===============================================================
    
