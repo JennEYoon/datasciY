@@ -4,7 +4,8 @@ Date: Nov 23, 2019 started.
 
 ### Time Scheduled Tasks  
 
- * Monday, Nov 24, 2019 afternoon, call with Ken N.
+##### Ken Nicholas Trading AI/ML.  
+ * Monday, Nov 24, 2019 4pm EST, call with Ken N. = send confirm email.  
    - Nail down SQL Aurora outline
    - General Business strategy discuss, what resources, past work, does he really have?  
    - Where is his funding coming from?  
