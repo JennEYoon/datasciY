@@ -51,6 +51,8 @@
  
   * geosnap -- refactor, edit code first.  Before submitting, study examples.  
     * Install and run example notebooks to get a better idea of what this is doing.  
+    * Found Scipy 2018 Geospatial talk by Knapp and ground.  Re-watch.  
+    * How to create "COMMUNITY" output file?  What does it look like?  
     
     
   
