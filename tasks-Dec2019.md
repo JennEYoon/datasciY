@@ -18,7 +18,10 @@ Date: December 2019 Monthly
 #### Week of 12/1/2019 Tasks - Important  
 
 ##### Want to start this week:  
- *  
+ *  Start Elegant Python, 2nd ed.  
+    Rec'd 11/24/2019.  Skimmed, looks really good.  
+    Testing, Collaborating, Functions chapters of most interest now.  
+    
  *  
  *  
 
