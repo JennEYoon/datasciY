@@ -1,0 +1,94 @@
+.realtime-label {
+    background-color: #3368FF;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 12px;
+    margin-left: 12px;
+    padding: 2px 4px;
+}
+
+.popular-label {
+    background-color: green;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 12px;
+    margin-left: 12px;
+    padding: 2px 4px;
+}
+
+.beta-label {
+    background-color: orangered;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 12px;
+    margin-left: 12px;
+    padding: 2px 4px;
+}
+
+.form-field input {
+    height: 40px;
+    width: 400px;
+    border: solid 3px #dcdcdc;
+    transition: border 0.3s;
+}
+
+.premium-field {
+    height: 40px;
+    width: 400px;
+    border: solid 3px #dcdcdc;
+    transition: border 0.3s;
+}
+
+.choice-field select {
+    height: 40px;
+    width: 400px;
+    border: solid 3px #dcdcdc;
+    transition: border 0.3s;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    border-radius: 0;
+
+}
+.btn-default:not(:hover) {
+    border: 1px solid #42DCA3;
+    color: #42DCA3;
+    background-color: transparent;
+}
+.btn-default:hover {
+    border: 1px solid #42DCA3;
+    outline: none;
+    color: black;
+    background-color: #42DCA3;
+}
+
+#talk {
+    font-size:120%;
+}
+
+#table-of-contents a {
+    font-size:120%;
+}
+
+#support-page-top a {
+    font-size:120%;
+}
+
+#results {
+    color: blue;
+    font-style: italic;
+}
+
+

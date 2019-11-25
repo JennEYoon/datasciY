@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://rubygarage.org/blog/heroku-vs-amazon-web-services -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<link rel="amphtml" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services.amp">
+<link href="https://rubygarage.org/blog/heroku-vs-amazon-web-services" rel="canonical">
+<link rel="stylesheet" media="all" href="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/application-4a5e9699.css" recursive="true" cache="true" async="async">
+<meta content="https://rubygarage.org/blog/heroku-vs-amazon-web-services" property="og:url">
+<meta name="description" content="AWS and Heroku are the two best-known competitors on the cloud hosting market. Choosing between AWS and Heroku is difficult, but we’ll make it simple! ">
+<title>
+Heroku vs AWS: A Comparison of Two Popular Cloud Services in 2019
+</title>
+<meta content="article" property="og:type">
+<meta content="Heroku or Amazon Web Services – Which is Best for Your Startup?" property="og:title">
+<meta content="AWS and Heroku are advanced “X as a Service” products that let you rapidly deploy and manage your applications. Read our review to figure out which solution – Heroku or AWS – is right for your startup." property="og:description">
+<meta content="heroku vs aws" name="keywords">
+<meta content="summary_large_image" name="twitter:card">
+
+<meta content="https://rubygarage.s3.amazonaws.com/uploads/article/image_with_background/117/Heroku_or_Amazon_Web_Services-05.png" property="og:image">
+<meta content="https://rubygarage.s3.amazonaws.com/uploads/article/image_with_background/117/Heroku_or_Amazon_Web_Services-05.png" name="twitter:image">
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://rubygarage.org/blog.rss">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="3e7vy+Hi+OEewrkZdiQx8WblFZGV8MVSSw4WB85WbnELumA59W2bUS0+xLdm126LC3/pg7zl0oPkT5Lcv47Glw==">
+
+
+<meta content="#1c0058" name="theme-color">
+<link href="https://rubygarage.org/favicon.ico" rel="icon" type="image/x-icon">
+<script type="text/javascript" async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/ypppsgzm"></script><script src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/data_plerdy_form.js.download"></script></head>
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WK9RHZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/328927571074126" async=""></script><script async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/f.txt"></script><script type="text/javascript" async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/insight.min.js.download"></script><script async="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WK9RHZ');</script>
+<!-- End Google Tag Manager -->
+
+<div class="main-nav-container nav-js">
+<div class="main-nav-top">
+<a class="main-logo" href="https://rubygarage.org/">
+<div class="main-logo__icon"></div>
+<div class="main-logo__text"></div>
+</a>
+<button class="main-nav__close-btn nav-toggle-js" type="button">
+<i class="icon icon-cross d-block in-violet-500"></i>
+</button>
+</div>
+<ul class="main-nav">
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js">Services</span>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item font-700">
+<a href="https://rubygarage.org/services/web-development">Web Development</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/ruby-on-rails-development">Ruby on Rails</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/react-js-development">React</a>
+</li>
+</ul>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item font-700">
+<a href="https://rubygarage.org/services/mobile-app-development">Mobile Development</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/ios-app-development">iOS</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/android-app-development">Android</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/react-native-development">React Native</a>
+</li>
+</ul>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item font-700">
+<a href="https://rubygarage.org/services/web-design-company">Design Company</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/web-app-design-services">Web Design</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/mobile-app-design-services">Mobile Application Design</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/ux-design-review-services">UX Design Review</a>
+</li>
+</ul>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item main-nav__dropdown-item--indent">
+<a href="https://rubygarage.org/services/enterprise-software-development"><span class="font-700">Enterprise</span>
+<p class="main-nav__dropdown-text">
+Check out our experience in building enterprise software: from custom development and digital transformation to mobility solutions and data management.
+</p>
+</a></li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/services/startup-product-development"><span class="font-700">Startup</span>
+<p class="main-nav__dropdown-text">
+Our client’s success stories speak better than words. Check out our approach and services for startup development.
+</p>
+</a></li>
+</ul>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js">Solutions</span>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/solutions/marketplaces-development-services"><span class="font-700">Marketplace</span>
+<p class="main-nav__dropdown-text">Learn about our vast expertise in marketplace development and our custom white-label solutions</p>
+</a></li>
+</ul>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js">Industries</span>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/expertise/retail-software-development"><span class="font-700">Retail</span>
+<p class="main-nav__dropdown-text">Check out services we provide for ecommerce brands and marketplaces.</p>
+</a></li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/expertise/fintech-software-development"><span class="font-700">Fintech</span>
+<p class="main-nav__dropdown-text">See the services and technology solutions we offer the Fintech industry.</p>
+</a></li>
+</ul>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js">Company</span>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="main-nav__dropdown-item main-nav__dropdown-item--indent">
+<a href="https://rubygarage.org/company/about"><span class="font-700">About</span>
+<p class="main-nav__dropdown-text">Find out what makes us one of the top software development companies in Eastern Europe.</p>
+</a></li>
+<li class="main-nav__dropdown-item main-nav__dropdown-item--indent">
+<a href="https://rubygarage.org/company/workflow"><span class="font-700">Workflow</span>
+<p class="main-nav__dropdown-text">We believe that clear and transparent workflow is a key to success. See every step of product development with us.</p>
+</a></li>
+</ul>
+<ul class="main-nav__dropdown-list dropdown-item-js">
+<li class="font-700 main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/software-engineering">Engineering</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/business-analysis-office">Business Analysis Office</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/project-management-office">Project Management Office</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/design-office">Design Office</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/programming-and-engineering-office">Programming and Engineering Office</a>
+</li>
+<li class="main-nav__dropdown-item">
+<a href="https://rubygarage.org/company/quality-assurance-office">Quality Assurance Office</a>
+</li>
+</ul>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-title main-nav__item-title--hoverable" href="https://rubygarage.org/case-studies">Case Studies</a>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-title main-nav__item-title--hoverable" href="https://rubygarage.org/blog">Blog</a>
+</li>
+</ul>
+<div class="main-nav-bottom">
+<a class="main-header__get-button main-button d-inline-block" aria-label="Contact us" href="https://rubygarage.org/contacts"><span class="mr-15">Get in touch</span>
+<i class="icon icon-mail-fill font-12"></i>
+</a></div>
+</div>
+
+<div class="" id="cookies-banner">
+<div class="cookies-banner">
+<div class="container static">
+<div class="row align-items-center">
+<div class="col-md-7 col-xl-8">
+<div class="cookies-banner__text">
+This website uses cookies to ensure you get the best experience on our website.
+<a class="policy cookies-banner__text-link" href="https://rubygarage.org/privacy-policy">Learn more</a>
+</div>
+</div>
+<div class="cookies-banner__controls col-md-5 col-xl-4 static">
+<button class="main-button main-button--white-blue-violet move-icon-on-hover" id="accept-cookies" type="button">
+Agree &amp; Dismiss
+<i class="icon icon-arrow-right-short ml-15 font-8"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="article-content-page blog-page page-container">
+<div class="header-wrap-white">
+<header class="main-header main-header-js main-header--blog-page">
+<div class="main-header__left">
+<a class="main-logo" href="https://rubygarage.org/">
+<div class="main-logo__icon"></div>
+<div class="main-logo__text"></div>
+</a>
+</div>
+<div class="main-header__center">
+<ul class="main-nav">
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js" data-menu-item="1">Services</span>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js" data-menu-item="2">Solutions</span>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js" data-menu-item="3">Industries</span>
+</li>
+<li class="main-nav__item main-nav__item--dropdown">
+<span class="main-nav__item-title nav-item-js" data-menu-item="4">Company</span>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-title main-nav__item-title--no-indent false" href="https://rubygarage.org/case-studies">Case Studies</a>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-title main-nav__item-title--no-indent false" href="https://rubygarage.org/blog">Blog</a>
+</li>
+</ul>
+<div class="main-nav__inner">
+<div class="main-nav__dropdown-list main-nav__dropdown-list--autoheight dropdown-item-js" data-dropdown-item="1" style="padding-left: 336px;">
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item font-700" href="https://rubygarage.org/services/web-development">Web Development</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/ruby-on-rails-development">Ruby on Rails</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/react-js-development">React</a>
+</div>
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item font-700" href="https://rubygarage.org/services/mobile-app-development">Mobile Development</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/ios-app-development">iOS</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/android-app-development">Android</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/react-native-development">React Native</a>
+</div>
+<div class="main-nav__dropdown-wrp main-nav__dropdown-wrp--nowrap">
+<a class="main-nav__dropdown-item font-700" href="https://rubygarage.org/services/web-design-company">Design Company</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/web-app-design-services">Web Design</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/mobile-app-design-services">Mobile Application Design</a>
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/ux-design-review-services">UX Design Review</a>
+</div>
+<div class="d-flex w-100">
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/enterprise-software-development"><span class="font-700">Enterprise</span>
+<p class="main-nav__dropdown-text">Check out our experience in building enterprise software: from custom development and digital transformation to mobility solutions and data management.</p>
+</a></div>
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/services/startup-product-development"><span class="font-700">Startup</span>
+<p class="main-nav__dropdown-text">Our client’s success stories speak better than words. Check out our approach and services for startup development.</p>
+</a></div>
+</div>
+</div>
+<div class="main-nav__dropdown-list dropdown-item-js" data-dropdown-item="2" style="padding-left: 336px;">
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item" href="https://rubygarage.org/solutions/marketplaces-development-services"><span class="font-700">Marketplace</span>
+<p class="main-nav__dropdown-text">Learn about our vast expertise in marketplace development and our custom white-label solutions</p>
+</a></div>
+</div>
+<div class="main-nav__dropdown-list dropdown-item-js" data-dropdown-item="3" style="padding-left: 336px;">
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/expertise/retail-software-development"><span class="font-700">Retail</span>
+<p class="main-nav__dropdown-text">Check out services we provide for ecommerce brands and marketplaces.</p>
+</a></div>
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/expertise/fintech-software-development"><span class="font-700">Fintech</span>
+<p class="main-nav__dropdown-text">See the services and technology solutions we offer the Fintech industry.</p>
+</a></div>
+</div>
+<div class="main-nav__dropdown-list main-nav__dropdown-list--autoheight dropdown-item-js" data-dropdown-item="4" style="padding-left: 336px;">
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/company/about"><span class="font-700">About</span>
+<p class="main-nav__dropdown-text">Find out what makes us one of the top software development companies in Eastern Europe.</p>
+</a></div>
+<div class="main-nav__dropdown-wrp">
+<a class="main-nav__dropdown-item false" href="https://rubygarage.org/company/workflow"><span class="font-700">Workflow</span>
+<p class="main-nav__dropdown-text">We believe that clear and transparent workflow is a key to success. See every step of product development with us.</p>
+</a></div>
+<div class="d-flex w-100">
+<div class="main-nav__dropdown-wrp main-nav__dropdown-wrp--nowrap">
+<a class="main-nav__dropdown-item font-700 " href="https://rubygarage.org/company/software-engineering">Engineering</a>
+<a class="main-nav__dropdown-item  " href="https://rubygarage.org/company/business-analysis-office">Business Analysis Office</a>
+<a class="main-nav__dropdown-item  " href="https://rubygarage.org/company/project-management-office">Project Management Office</a>
+<a class="main-nav__dropdown-item  " href="https://rubygarage.org/company/design-office">Design Office</a>
+<a class="main-nav__dropdown-item  " href="https://rubygarage.org/company/programming-and-engineering-office">Programming and Engineering Office</a>
+<a class="main-nav__dropdown-item  " href="https://rubygarage.org/company/quality-assurance-office">Quality Assurance Office</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-header__right">
+<a class="main-header__get-button main-button d-none d-sm-inline-block" aria-label="Contact us" href="https://rubygarage.org/contacts"><span class="mr-15 hidden-xs-down">Get in touch</span>
+<span class="icon icon-mail-fill font-12"></span>
+</a><button aria-label="Toggle button" class="main-header__menu-btn nav-toggle-js d-lg-none" type="button">
+<span class="main-header__menu-btn-line"></span>
+<span class="main-header__menu-btn-line"></span>
+<span class="main-header__menu-btn-line"></span>
+</button>
+</div>
+</header>
+
+
+</div>
+
+<div class="page-content">
+<div class="blog-header blog-header--orange">
+<div class="blog-header__container container">
+<div class="row">
+<div class="col-12 hidden-md-up text-center">
+<div class="blog-header__image">
+<img src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/primary_Heroku_or_Amazon_Web_Services-06.png" alt="Primary heroku or amazon web services 06">
+</div>
+</div>
+<div class="col-md-9 col-xl-7 offset-lg-1 text-center text-md-left">
+<div class="blog-header__image hidden-sm-down">
+<img src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/primary_Heroku_or_Amazon_Web_Services-06.png" alt="Primary heroku or amazon web services 06">
+</div>
+<ul class="blog-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+<li class="blog-breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a class="blog-breadcrumbs__item-link" itemprop="item" href="https://rubygarage.org/"><span itemprop="name">
+RubyGarage
+</span>
+</a><meta content="1" itemprop="position">
+</li>
+<li class="blog-breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a class="blog-breadcrumbs__item-link" itemprop="item" href="https://rubygarage.org/blog"><span itemprop="name">
+Blog
+</span>
+</a><meta content="2" itemprop="position">
+</li>
+<li class="blog-breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a class="blog-breadcrumbs__item-link" itemprop="item" href="https://rubygarage.org/blog/category/tech-navigator"><span itemprop="name">
+Tech Navigator
+</span>
+</a><meta content="3" itemprop="position">
+</li>
+<li class="blog-breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a class="blog-breadcrumbs__item-link blog-breadcrumbs__item-link--disabled" itemprop="item" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services"><span itemprop="name">
+Heroku or Amazon Web Services – Which is Best for Your Startup?
+</span>
+<meta content="4" itemprop="position">
+</a></li>
+</ul>
+
+<h1 class="blog-header__title">
+Heroku or Amazon Web Services – Which is Best for Your Startup?
+</h1>
+<ul class="mb-20">
+<li class="blog-header__tag-list-item">
+69568 views
+</li>
+<li class="blog-header__tag-list-item">
+7 min
+</li>
+<li class="blog-header__tag-list-item">
+Aug 28, 2019
+</li>
+</ul>
+<div class="text-center text-md-left mb-10">
+<div class="blog-header__author">
+<div class="blog-header__author-img round-img round-img--sm" style="background-image: url(https://rubygarage.s3.amazonaws.com/uploads/blog_author/photo/15/sviatoslav_andrushko.jpg)"></div>
+<div class="in-white hidden-sm-down">
+<p class="font-14 mb-0">
+Sviatoslav A.
+</p>
+<p class="font-12 opacity-05 mb-0">
+Copywriter
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sub-navigation blog-nav-wrap">
+<div class="container static">
+<div class="blog-nav offset-lg-1">
+<div class="blog-nav__content">
+<div class="show-on-web">
+<ul class="d-flex flex-wrap">
+<li class="blog-tag blog-tag-js">
+<a class="blog-nav__content-item" href="https://rubygarage.org/blog">
+All
+</a>
+</li>
+<li class="blog-tag-js">
+<a class="blog-nav__content-item" href="https://rubygarage.org/blog/category/public">
+Public
+</a>
+</li>
+<li class="blog-tag-js">
+<a class="blog-nav__content-item" href="https://rubygarage.org/blog/category/tech-navigator">
+Tech Navigator
+</a>
+</li>
+<li class="blog-tag-js">
+<a class="blog-nav__content-item" href="https://rubygarage.org/blog/category/insights">
+Insights
+</a>
+</li>
+<li class="blog-tag-js">
+<a class="blog-nav__content-item" href="https://rubygarage.org/blog/category/entrepreneurship">
+Entrepreneurship
+</a>
+</li>
+</ul>
+</div>
+<div class="blog-nav__mob-wrapper show-on-mobile">
+<div class="w-100 text-center">
+<div>
+<button aria-expanded="false" aria-haspopup="true" class="main-button main-button--transparent-black dropdown-toggle font-600" data-toggle="dropdown" type="button">
+All
+<i class="icon icon-triangle-down font-6 ml-10"></i>
+</button>
+<ul class="blog-nav__dropdown-menu dropdown-menu text-center bg-white" style="left: -272.087px; width: 1519px;">
+<li>
+<a class="active blog-nav__main-link main-menu__link" href="https://rubygarage.org/blog">
+All
+</a>
+</li>
+<li>
+<a class="blog-nav__main-link main-menu__link" href="https://rubygarage.org/blog/category/public">
+Public
+</a>
+</li>
+<li>
+<a class="blog-nav__main-link main-menu__link" href="https://rubygarage.org/blog/category/tech-navigator">
+Tech Navigator
+</a>
+</li>
+<li>
+<a class="blog-nav__main-link main-menu__link" href="https://rubygarage.org/blog/category/insights">
+Insights
+</a>
+</li>
+<li>
+<a class="blog-nav__main-link main-menu__link" href="https://rubygarage.org/blog/category/entrepreneurship">
+Entrepreneurship
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<button class="blog-nav__open-search" data-target="#blog_search_modal" data-toggle="modal" type="button">
+<i class="blog-nav__open-search-icon"></i>
+</button>
+<button class="main-button-link move-icon-on-hover font-14 in-blue-220 hidden-md-down blog-subscr-btn" data-target="#blog-subscribe" data-toggle="modal" type="button">
+Subscribe
+<i class="icon icon-arrow-right ml-10 font-8"></i>
+</button>
+</div>
+</div>
+</div>
+
+</div>
+<div class="blog-content-js">
+<div class="blog-content">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-1">
+      <p>Amazon Web Services (AWS) and Heroku are two commonly used cloud services that let us deploy, monitor, and scale web and mobile apps.</p> <p>Both services provide us with cloud computing resources and are great for hosting applications.</p> <p>But if you’re building your first mobile or web application, how can you decide which of these options – AWS or Heroku – is best for <em>your</em> application?</p>
+
+<p>Choosing a hosting service becomes even harder when we take a glance at the number of products Amazon Web Services offer. It’s easy to get lost.</p>
+
+<img src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/aws-products.jpg" alt="Screenshot of all AWS products">
+
+<p>AWS provides a wide variety of products, making it difficult to quickly choose the right solution for your needs. And we haven’t even started considering Heroku!</p>
+
+<p>Let’s dive into the features of AWS and Heroku – and consider the key solutions they offer – to figure out your best option!</p>
+
+<h2 id="article_title_0">AWS vs Heroku for Startups</h2>
+
+<p>If we search for a comparison of Heroku and AWS, we’ll see a bunch of articles that juxtapose AWS Elastic Compute Cloud (EC2) with Heroku. But is the Heroku vs AWS Elastic Beanstalk comparison reasonable? Comparing these two products isn’t very logical for several reasons, as we’ll explain shortly. We'll also mention what are the advantages and disadvatanges of one hosting provider vs another.</p>
+<aside class="related-article">
+  <div class="related-article__icon">
+    <img alt="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/related_article_icon-bfa9806d738a0c742ef276eb48bbca94b4087b12349f05553a8c347e661ea98a.svg">
+  </div>
+  <p class="related-article__descr">
+    Have you already checked this in-depth comparison of cloud services: IaaS, PaaS, and SaaS?
+    <a href="https://rubygarage.org/blog/iaas-vs-paas-vs-saas">Choose the best solution for your project.</a>
+  </p>
+</aside>
+
+<h3 id="article_title_1">What are Heroku and AWS?</h3>
+<h4>AWS Elastic Compute Cloud</h4>
+<p>Elastic Compute Cloud (EC2) is an Infrastructure as a Service product, and is Amazon’s flagship offering. Before we’re able to deploy an application on Elastic Compute Cloud, we have to develop server infrastructure that will suit our application.</p>
+
+<p>But what does that look like? Put simply, we’ll need to manually configure and maintain virtualized servers that run our application. We also add database instances; choose and set up an operating system; and set up a load balancer to spread the load across multiple application servers. On top of that, we must select a CPU and amounts of RAM and storage that satisfy our application’s need. We’ll also install backup servers and hook them up to the main servers.</p>
+
+<p>Elastic Compute Cloud provides us only with the building blocks. Our task is to select the best blocks for our application and actively manage them, not only set them up. At many web development companies, a dedicated DevOps engineer is responsible for provisioning EC2 instances, controlling application deployment, and orchestrating EC2 infrastructure (deciding how these ‘building blocks’ interact with each other).</p>
+
+<h4>Heroku</h4>
+<p>Now let’s see what Heroku offers. Heroku is a <em>Platform as a Service</em> (PaaS) product based on AWS, and is <em>vastly</em> different from Elastic Compute Cloud. It’s very important to differentiate ‘Infrastructure as a Service’ and ‘Platform as a Service’ solutions as we consider deploying and supporting our application using these two solutions.</p>
+
+<p>Heroku is way simpler to use than AWS Elastic Compute Cloud. Perhaps it’s even too simple. But there’s a good reason for this simplicity. This platform equips us with a ready runtime environment and application servers. Plus, we benefit from seamless integration with various development instruments, a pre-installed operating system, and redundant servers.</p>
+
+<p>Therefore, we don’t need to think about infrastructure management, unlike with AWS EC2. We only need to choose a subscription plan and change our plan when necessary.</p>
+
+<p>This is how a conversation with Heroku might go:</p>
+<p>– Hey, we need to rapidly send a lot of cached data to our users!<br>
+– Here you go: Redis is ready!</p>
+
+<p>– Hey, we need more dynos to handle HTTP traffic!<br>
+– Yeah, just run the following command in CLI and specify the number of instances, e.g. three web dynos:
+<strong>$ heroku ps:scale web=3</strong></p>
+
+<p>– And what about a PostgreSQL instance?<br>
+– You need one – you get one! Run this command in CLI: <strong>$ heroku addons:create heroku-postgresql:hobby-dev</strong><br>
+– Thanks!</p>
+
+<p>– We need to restart our dynos! A new app version is coming!<br>
+– Just deploy your updated app, I’ll handle this.</p>
+
+<p>As we can see, Heroku conveniently takes care of the details. Thus, we can throw all our efforts into application development. You only need a web developer – or multiple developers – to create an application and push it to Heroku using Git. All management is done via the Command Line Interface or in the Dashboard.</p>
+
+<p>Сomparing AWS Elastic Compute Cloud to Heroku is like comparing a microwave to a toaster. Both devices are used for heating food, but they work differently. Maybe this metaphor isn’t the most apt, but it gets across the general point: We use AWS EC2 and Heroku to reach different goals.</p>
+<aside class="related-article">
+  <div class="related-article__icon">
+    <img alt="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/related_article_icon-bfa9806d738a0c742ef276eb48bbca94b4087b12349f05553a8c347e661ea98a.svg">
+  </div>
+  <p class="related-article__descr">
+    Find out
+    <a href="https://rubygarage.org/blog/e-learning-platform-for-delivering-customized-courses">how we used Heroku to build a cloud-based e-learning platform.</a>
+  </p>
+</aside>
+
+<p>So, to be reasonable, we must mention another AWS product that <em>is</em> a direct competitor to Heroku. This product is called Elastic Beanstalk, and it’s also a Platform as a Service product.</p>
+
+<h4>AWS Elastic Beanstalk</h4>
+<p>In short, Heroku vs AWS means Heroku vs Elastic Beanstalk. AWS offers Elastic Beanstalk to simplify application deployment.</p>
+
+<p>We deploy applications on AWS Elastic Beanstalk by running commands in a Command Line Interface (provided by AWS) or by using the Management Console. After deployment, Elastic Beanstalk manages infrastructure without our control.</p>
+
+<p>We generally don’t need to set up capacity provisioning, load balancing, or scaling, although we’re still able to get access to the infrastructure, if necessary, and save multiple configuration options for our application. Elastic Beanstalk uses EC2 instances to host your application, so migrating from AWS Beanstalk to EC2 is easy. And that’s great.</p>
+
+<h3 id="article_title_2">AWS vs Heroku Features</h3>
+<p>For a quick comparison of the two services, check out the table below:</p>
+
+<table style="width: 100%">
+<tbody>
+<tr style="background-color: #ad4c50; ">
+<td style="padding: 7px; text-align: center; width: 20%; color: white; font-size: 18px;"><strong>Service</strong></td>
+<td style="padding: 7px; text-align: center; width: 40%; color: white; font-size: 18px;"><strong>AMAZON WEB SERVICES</strong></td>
+<td style="padding: 7px; text-align: center; width: 40%; color: white; font-size: 18px;"><strong>HEROKU</strong></td>
+</tr>
+<tr>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Offered by</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Amazon<br>hosted on proprietary servers</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Salesforce<br>hosted on Amazon Web Services</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;"><p style="font-size:14px;">Pricing</p></td>
+<td style="padding: 7px;"><p style="font-size:14px;">Pay-as-you-go</p></td>
+<td style="padding: 7px;"><p style="font-size:14px;">Pay-as-you-go</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Main Offerings</p></td>
+<td style="padding: 7px;background: #f2f2f2;">
+<p style="font-size:14px;">Platform as a Service<br><strong>(Elastic Beanstalk)</strong></p>
+<p style="font-size:14px;">Infrastructure as a Service<br><strong>(Elastic Compute Cloud)</strong></p>
+</td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Platform as a Service</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;"><p style="font-size:14px;">Concept</p></td>
+<td style="padding: 7px;">
+<p style="font-size:14px;">Ready platform for rapid app deployment<br><strong>(Elastic Beanstalk)</strong></p>
+<p style="font-size:14px;">Infrastructure, which must be set up before deployment and managed afterwards<br><strong>(Elastic Compute Cloud)</strong></p>
+</td>
+<td style="padding: 7px;"><p style="font-size:14px;">Ready platform for rapid app deployment</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Supported platforms</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Runs environments for Ruby, NodeJS, Python, Go, Docker, PHP, and .NET apps</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Runs environments for Ruby, Python, PHP, Clojure, Go, Java, Scala, and Node.js apps</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;"><p style="font-size: 14px;">Scaling</p></td>
+<td style="padding: 7px;">
+<p style="font-size: 14px;">Supports automatic scaling for EC2 and Beanstalk based on time and metrics</p>
+<p style="font-size:14px;">Can set up the AutoScale feature before deploying your application</p>
+</td>
+<td style="padding: 7px;"><p style="font-size:14px;">Supports manual scaling with the Scaling slider in Dashboard or via a Command Line Interface</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;background: #f2f2f2;"><p style="padding: 4px; font-size:14px;">Geographic<br>availability</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">Throughout the world</p></td>
+<td style="padding: 7px;background: #f2f2f2;"><p style="font-size:14px;">US and Europe</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;"><p style="font-size:14px;">Main Features</p></td>
+<td style="padding: 7px;">
+<p style="font-size:14px;"><strong>Elastic Beanstalk</strong><br>Capacity Provisioning<br>Load Balancing<br>Auto-Scaling<br>App Health Monitoring<br></p>
+<p style="font-size:14px;"><strong>Elastic Compute Cloud</strong><br>Ready templates for deployment<br>Multiple configurations (CPU, RAM, etc.)</p>
+</td>
+<td style="padding: 7px;"><p style="font-size:14px;">Capacity Provisioning<br>Database Rollback<br>Application Rollback<br>Manual Vertical and Horizontal Scaling<br>App Health Monitoring<br>Full GitHub Integration</p></td>
+</tr>
+<tr>
+<td style="padding: 7px; background: #f2f2f2;"><p style="font-size:14px;">Architecture</p></td>
+<td style="padding: 7px; background: #f2f2f2;"><p style="font-size:14px;">Web server/load balancer<br>Platform<br>Operating System<br>Application tier<br>Database tier</p></td>
+<td style="padding: 7px; background: #f2f2f2;"><p style="font-size:14px;">Web server/load balancer<br>Platform<br>Operating System<br>Application tier<br>Database tier</p></td>
+</tr>
+<tr>
+<td style="padding: 7px;"><p style="font-size: 14px;">Built-in Tools for Management and Monitoring</p></td>
+<td style="padding: 7px;"><p style="font-size: 14px;">AWS Management Console<br>AWS Command Line Interface (AWS CLI)<br>AWS CloudWatch</p></td>
+<td style="padding: 7px;"><p style="font-size:14px;">Heroku Command Line<br>Heroku Application Metrics<br>Heroku Connect<br>Heroku Status</p></td>
+</tr>
+<tr>
+<td style="padding: 7px; background: #f2f2f2; border-bottom: 2px solid #ad4c50;"><p style="font-size:14px;">Service Level <br>Agreements</p></td>
+<td style="padding: 7px; background: #f2f2f2; border-bottom: 2px solid #4caf50;"><p style="font-size:14px;">Available for Elastic Compute Cloud</p></td>
+<td style="padding: 7px; background: #f2f2f2; border-bottom: 2px solid #3398FF;"><p style="font-size: 14px;">Available for Enterprise projects</p></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="article_title_3">Conclusion</h3>
+<p>When choosing between AWS and Heroku, you primarily need to consider the costs. Will it cost less for you to manage infrastructure yourself, or is it cost-effective for you to reply on a ready (but somewhat costly) platform that manages your infrastructure for you?</p>
+
+<p>In summary, you should use AWS Elastic Compute Cloud when:</p>
+
+<ul>
+<li>You need infrastructure flexibility from the first deployment of your application.</li>
+<li>You can afford a DevOps engineer or several DevOps engineers to manage the infrastructure.</li>
+<li>You’re ready to spend more time deploying new versions of your app.</li>
+<li>Your project demands great computational resources.</li>
+</ul>
+<p>And you should use PaaS solutions when:</p>
+<ul>
+<li>You need to deploy and test a Minimum Viable Product.</li>
+<li>You need to improve your application quickly after getting feedback from users.</li>
+<li>You can’t afford a DevOps engineer (or engineers).</li>
+<li>Your project doesn’t demand that many computational resources.</li>
+</ul>
+<p>If you do choose Amazon Web Services, it’s important to make sure that the company you’re working with has experience managing AWS infrastructure. And if rapid application development is your highest priority, consider Heroku or Beanstalk. Keep in mind that you can always switch between the PaaS and IaaS solutions should hosting plans change or your application demands a custom infrastructure. Still, it’s best to start with the right service right away. </p>
+<aside class="related-article">
+  <div class="related-article__icon">
+    <img alt="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/related_article_icon-bfa9806d738a0c742ef276eb48bbca94b4087b12349f05553a8c347e661ea98a.svg">
+  </div>
+  <p class="related-article__descr">
+    Need help with building your cloud-based platform?
+    <a href="https://rubygarage.org/contacts">Reach RubyGarage to get a high-quality, robust, and secure product.</a>
+  </p>
+</aside>
+
+
+    </div>
+
+    <div class="col-lg-3 hidden-md-down">
+      <div class="article-inner-nav" id="article_inner_navbar">
+        <span class="article-inner-nav__heading">
+          CONTENTS
+        </span>
+        <nav>
+          <ul class="nav nav-scrollable" id="scroll-area-js" style="height: 100%;">
+<li class="nav-item">
+  <a class="nav-link" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#article_title_0">AWS vs Heroku for Startups</a>
+<ul class="nav">
+<li class="nav-item">
+  <a class="nav-link" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#article_title_1">What are Heroku and AWS?</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#article_title_2">AWS vs Heroku Features</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#article_title_3">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+        </nav>
+        <div class="sctoll-nav-btn-overlay up hidden" id="scroll-up-js" style="display: none;">
+          <button class="sctoll-nav-btn" type="button">
+            <i class="icon icon-arrow-up"></i>
+          </button>
+        </div>
+        <div class="sctoll-nav-btn-overlay down hidden" id="scroll-down-js" style="display: none;">
+          <button class="sctoll-nav-btn scroll-btn" type="button">
+            <i class="icon icon-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="blog-tags">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+<p class="font-14 font-300 text-uppercase opacity-06 lh-1 pt-0 mb-30">
+Tags:
+</p>
+<div class="blog-tags__list">
+<a class="chip chip--outline-light" href="https://rubygarage.org/blog/tag/web">Web</a>
+<a class="chip chip--outline-light" href="https://rubygarage.org/blog/tag/tech-insights">Tech Insights</a>
+<a class="chip chip--outline-light" href="https://rubygarage.org/blog/tag/startup">Startup</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+<div class="blog-authors">
+<p class="font-14 font-300 text-uppercase opacity-06 lh-1 pt-0 mb-30">
+Author:
+</p>
+<div class="row">
+<div class="col-sm-6">
+<div class="d-flex align-items-center mb-20">
+<div class="blog-authors__img round-img round-img--md" style="background-image: url(https://rubygarage.s3.amazonaws.com/uploads/blog_author/photo/15/sviatoslav_andrushko.jpg)"></div>
+<div>
+<p class="font-17 lh-1 mb-10 pt-0">
+Sviatoslav A.
+</p>
+<p class="font-14 lh-1 opacity-05 mb-0 pt-0">Copywriter</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container text-center mb-40">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+<div class="pt-20">
+<p class="blog-social__title mb-40" id="ratingMessage">
+Rate this article!
+</p>
+<div class="article-rating">
+<div class="article-rating__pane">
+<div class="article-rating__pane-slot">
+<button class="article-rating__action" id="nayBtn" type="button">
+<span class="article-rating__action-icon">
+🙁
+</span>
+</button>
+<div class="article-rating__action-name">
+Nay
+</div>
+</div>
+<div class="article-rating__pane-slot">
+<button class="article-rating__action" id="sosoBtn" type="button">
+<span class="article-rating__action-icon">
+😐
+</span>
+</button>
+<div class="article-rating__action-name">
+So-so
+</div>
+</div>
+<div class="article-rating__pane-slot">
+<button class="article-rating__action" id="notBadBtn" type="button">
+<span class="article-rating__action-icon">
+😴
+</span>
+</button>
+<div class="article-rating__action-name">
+Not bad
+</div>
+</div>
+<div class="article-rating__pane-slot">
+<button class="article-rating__action" id="goodBtn" type="button">
+<span class="article-rating__action-icon">
+🙂
+</span>
+</button>
+<div class="article-rating__action-name">
+Good
+</div>
+</div>
+<div class="article-rating__pane-slot">
+<button class="article-rating__action" id="wowBtn" type="button">
+<span class="article-rating__action-icon">
+😍
+</span>
+</button>
+<div class="article-rating__action-name">
+Wow
+</div>
+</div>
+</div>
+<span class="article-rating__summary" id="ratingSummary">
+11 ratings, average 4.73 out of 5
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container text-center mb-40">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+<div class="pt-20">
+<p class="blog-social__title mb-40">
+Share article with
+</p>
+<div class="mb-10 social-counter">
+<div class="social-share-button" data-title="" data-img="" data-url="" data-desc="" data-via="">
+<a rel="nofollow " data-site="facebook" class="ssb-icon ssb-facebook" onclick="return SocialShareButton.share(this);" title="Share to Facebook" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+<a rel="nofollow " data-site="twitter" class="ssb-icon ssb-twitter" onclick="return SocialShareButton.share(this);" title="Share to Twitter" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+<a rel="nofollow " data-site="linkedin" class="ssb-icon ssb-linkedin" onclick="return SocialShareButton.share(this);" title="Share to Linkedin" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mb-50">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+<a name="comments"></a>
+<div class="comments-header">
+<span class="comments-header__title">
+Comments
+<span class="opacity-06 ls-1">
+(2)
+</span>
+</span>
+<div class="hidden-md-up">
+<button class="main-button main-button--grey main-button--sm sign-in-comments-js" data-target="#modal-sign-in" data-toggle="modal" type="button">
+to leave a comment
+</button>
+</div>
+<div class="hidden-sm-down">
+<span class="font-12 opacity-05 mr-10">
+to leave a comment
+</span>
+<button class="main-button main-button--grey main-button--sm sign-in-comments-js" data-target="#modal-sign-in" data-toggle="modal" type="button">
+Sign in
+</button>
+</div>
+</div>
+<div class="modal modal--sign-in" id="modal-sign-in">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="text-right modal-content-close-js mb-10">
+<button aria-label="Close" class="modal-close close icon icon-cross" data-dismiss="modal" type="button"></button>
+</div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2">
+<p class="font-24 font-700 mb-10">
+RubyGarage Blog
+</p>
+<p class="font-15 opacity-06 mb-30">
+Sign In to leave comments and connect with other readers
+</p>
+<div class="mb-15">
+<a class="social-button social-button--twitter" href="https://rubygarage.org/users/auth/twitter"><i class="icon icon-twitter font-13"></i>
+Sign in with Twitter
+</a></div>
+<div class="mb-15">
+<a class="social-button social-button--facebook" href="https://rubygarage.org/users/auth/facebook"><i class="icon icon-facebook font-13"></i>
+Sign in with Facebook
+</a></div>
+<div class="mb-15">
+<a class="social-button social-button--linkedin" href="https://rubygarage.org/users/auth/linkedin"><i class="icon icon-linkedin font-13"></i>
+Sign in with Linkedin
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<div class="comments-item">
+<div class="comments-item__first-level">
+<div class="comments-item__author-img" style="background-image: url(https://rubygarage.s3.amazonaws.com/uploads/blog_author/photo/15/small_sviatoslav_andrushko.jpg)"></div>
+<div class="comments-item__info">
+<div class="comments-item__info-name">
+Sviatoslav A.
+<span class="comments-item__info-date">
+almost 2 years ago
+</span>
+</div>
+<div class="comments-item__info-text">
+Thank you for your comment! We appreciate your feedback and we'll keep on delighting you with useful posts!
+</div>
+<a class="comments-item__reply" data-target="#modal-sign-in" data-toggle="modal">
+<i class="icon icon-reply font-14 in-grey-100 mr-10"></i>
+Reply
+</a>
+</div>
+</div>
+</div>
+
+<div class="comments-item">
+<div class="comments-item__first-level">
+<div class="comments-item__author-img" style="background-image: url(https://rubygarage.s3.amazonaws.com/uploads/user/avatar/41/bigger_10354686_10150004552801856_220367501106153455_n.jpg)"></div>
+<div class="comments-item__info">
+<div class="comments-item__info-name">
+Anudeep Bichal
+<span class="comments-item__info-date">
+almost 2 years ago
+</span>
+</div>
+<div class="comments-item__info-text">
+Nice guidelines for the people interested in startups,
+clarity in your post is good, and I could assume you are an expert on this subject. 
+
+
+</div>
+<a class="comments-item__reply" data-target="#modal-sign-in" data-toggle="modal">
+<i class="icon icon-reply font-14 in-grey-100 mr-10"></i>
+Reply
+</a>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="hidden-xs-down">
+<div class="divider"></div>
+<div class="blog-subscr">
+<div class="container">
+<div class="row">
+<div class="col-12 mb-20">
+<span class="icon icon-launch blog-subscr__icon"></span>
+</div>
+<div class="col-12 mb-30">
+<p class="blog-subscr__title">
+<span class="font-700">Subscribe</span>
+via email and know it all first!
+</p>
+</div>
+<div class="col-12">
+<button class="main-button main-button--violet-black move-icon-on-hover mb-20" data-target="#blog-subscribe" data-toggle="modal" type="button">
+Subscribe on our news
+<span class="icon icon-arrow-right-short font-8 ml-23"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="hide-socials-js"></div>
+<div class="blog-recommended">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="blog-recommended__title">
+Recommended Articles
+</div>
+<div class="row">
+<div class="mb-20 col-md-4">
+<div class="card-bg--gray card-blog">
+<a class="card-blog__img-wrap relative " aria-label="What if I Tell You That Ruby on Rails Is Scalable" href="https://rubygarage.org/blog/ruby-on-rails-is-scalable"><div class="card-bg--gray card-blog__wrap--blackout"></div>
+<img class="card-blog__img" alt="" title="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/primary_Scalable.png">
+</a><div class="card-blog__wrap">
+<div class="card-blog__title">
+<a class="article-record-106" href="https://rubygarage.org/blog/ruby-on-rails-is-scalable">What if I Tell You That Ruby on Rails Is Scalable</a>
+</div>
+<div class="card-blog__tags">
+<ul class="clearfix mb-10">
+<li class="card-blog__list-item">
+<a href="https://rubygarage.org/blog/category/tech-navigator">Tech Navigator</a>
+</li>
+<li class="card-blog__list-item">
+36843 views
+</li>
+<li class="card-blog__list-item">
+11 min
+</li>
+</ul>
+<a aria-label="What if I Tell You That Ruby on Rails Is Scalable" class="card-blog__link" href="https://rubygarage.org/blog/ruby-on-rails-is-scalable">
+<i class="icon icon-arrow-right-thin"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="mb-20 col-md-4">
+<div class="card-bg--gray card-blog">
+<a class="card-blog__img-wrap relative " aria-label="How to Contribute to Open Source Project" href="https://rubygarage.org/blog/how-contribute-to-open-source-projects"><div class="card-bg--gray card-blog__wrap--blackout"></div>
+<img class="card-blog__img" alt="" title="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/primary_open-source-head2__1_.png">
+</a><div class="card-blog__wrap">
+<div class="card-blog__title">
+<a class="article-record-103" href="https://rubygarage.org/blog/how-contribute-to-open-source-projects">How to Contribute to Open Source Project</a>
+</div>
+<div class="card-blog__tags">
+<ul class="clearfix mb-10">
+<li class="card-blog__list-item">
+<a href="https://rubygarage.org/blog/category/tech-navigator">Tech Navigator</a>
+</li>
+<li class="card-blog__list-item">
+144118 views
+</li>
+<li class="card-blog__list-item">
+9 min
+</li>
+</ul>
+<a aria-label="How to Contribute to Open Source Project" class="card-blog__link" href="https://rubygarage.org/blog/how-contribute-to-open-source-projects">
+<i class="icon icon-arrow-right-thin"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="mb-20 col-md-4">
+<div class="card-bg--gray card-blog">
+<a class="card-blog__img-wrap relative " aria-label="Three Myths Debunked About Open Source Software Security" href="https://rubygarage.org/blog/open-source-software-security"><div class="card-bg--gray card-blog__wrap--blackout"></div>
+<img class="card-blog__img" alt="" title="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/primary_security-OOS.png">
+</a><div class="card-blog__wrap">
+<div class="card-blog__title">
+<a class="article-record-115" href="https://rubygarage.org/blog/open-source-software-security">Three Myths Debunked About Open Source Software Security</a>
+</div>
+<div class="card-blog__tags">
+<ul class="clearfix mb-10">
+<li class="card-blog__list-item">
+<a href="https://rubygarage.org/blog/category/tech-navigator">Tech Navigator</a>
+</li>
+<li class="card-blog__list-item">
+19635 views
+</li>
+<li class="card-blog__list-item">
+4 min
+</li>
+</ul>
+<a aria-label="Three Myths Debunked About Open Source Software Security" class="card-blog__link" href="https://rubygarage.org/blog/open-source-software-security">
+<i class="icon icon-arrow-right-thin"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blog-social-fixed blog-social-fixed-js">
+<p class="blog-social__title">
+Share
+</p>
+<div class="social-share-button" data-title="" data-img="" data-url="" data-desc="" data-via="">
+<a rel="nofollow " data-site="facebook" class="ssb-icon ssb-facebook" onclick="return SocialShareButton.share(this);" title="Share to Facebook" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+<a rel="nofollow " data-site="twitter" class="ssb-icon ssb-twitter" onclick="return SocialShareButton.share(this);" title="Share to Twitter" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+<a rel="nofollow " data-site="linkedin" class="ssb-icon ssb-linkedin" onclick="return SocialShareButton.share(this);" title="Share to Linkedin" href="https://rubygarage.org/blog/heroku-vs-amazon-web-services#"></a>
+</div>
+</div>
+<div class="scroll-up hidden-lg-up scroll-up--lifted">
+<i class="icon icon-arrow-up"></i>
+</div>
+</div>
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":"https://rubygarage.org/blog/heroku-vs-amazon-web-services","headline":"Heroku or Amazon Web Services – Which is Best for Your Startup?","description":"AWS and Heroku are the two best-known competitors on the cloud hosting market. Choosing between AWS and Heroku is difficult, but we’ll make it simple! ","author":[{"@type":"Person","name":"Sviatoslav A."}],"publisher":{"@type":"Organization","name":"RubyGarage","logo":{"@type":"ImageObject","url":"https://rubygarage.org/assets/logo_128x128-bba6953ee698c17c234e49af2ef8cb7e555d699b4ca912e60cd133c925079ac9.png"}},"image":{"@type":"ImageObject","url":"https://rubygarage.s3.amazonaws.com/uploads/article/main_image/117/primary_Heroku_or_Amazon_Web_Services-06.png","width":540},"datePublished":"2019-08-28T17:15:00.000+03:00","dateModified":"2019-10-22T10:27:07.318+03:00","aggregateRating":{"@type":"AggregateRating","ratingValue":4.73,"reviewCount":11}}
+
+</script>
+
+</div>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-10 offset-md-1">
+<div class="footer__social">
+<a aria-label="clutch" class="footer__social-link icon icon-clutch" href="https://clutch.co/profile/rubygarage" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="github" class="footer__social-link icon icon-github" href="https://github.com/rubygarage" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="twitter" class="footer__social-link icon icon-twitter" href="https://twitter.com/rubygarage" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="facebook" class="footer__social-link icon icon-facebook" href="https://www.facebook.com/RubyGarage" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="linkedin" class="footer__social-link icon icon-linkedin" href="https://www.linkedin.com/company/rubygarage" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="dribbble" class="footer__social-link icon icon-dribbble" href="https://dribbble.com/ugem" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="behance" class="footer__social-link icon icon-behance" href="https://www.behance.net/ugemdesign" rel="noopener noreferrer" target="_blank"></a>
+</div>
+<div class="divider"></div>
+</div>
+</div>
+<div class="row footer-inner" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<div class="col-12 col-md-4 offset-md-1 col-lg-3 mb-40">
+<a href="https://rubygarage.org/">
+<img alt="RubyGarage" class="footer__logo" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/footer_logo-67b5eda42c45dec45a70e619c400ad6d10d3d77a61d66a779601c3ff6fa889f4.svg">
+</a>
+<div class="footer__contacts">
+<div class="footer__contacts-item">
+<svg height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" fill="#f0f0f0" r="11"></circle>
+<g fill="#d80027">
+<path d="M10.52 11H22c0-1-.13-1.95-.38-2.87h-11.1V11zM10.52 5.26h9.87a11.06 11.06 0 0 0-2.54-2.87h-7.33v2.87zM11 22c2.59 0 4.97-.9 6.85-2.4H4.15C6.03 21.1 8.41 22 11 22zM1.61 16.74H20.4c.54-.88.96-1.85 1.23-2.87H.38c.27 1.02.7 1.99 1.23 2.87z"></path>
+<path d="M5.1 1.72h1l-.93.68.35 1.1-.93-.69-.93.68.3-.95c-.82.69-1.54 1.49-2.13 2.38h.32l-.6.43-.26.47.29.88-.53-.39c-.13.28-.25.56-.36.86l.31.96h1.15l-.93.67.36 1.1-.94-.68-.55.4C.03 10.09 0 10.55 0 11h11V0C8.83 0 6.8.63 5.1 1.72zm.42 8.18l-.93-.68-.93.68L4 8.8l-.93-.67h1.15l.36-1.1.36 1.1H6.1l-.93.67.35 1.1zm-.35-4.3l.35 1.1-.93-.68-.93.68L4 5.6l-.93-.68h1.15l.36-1.1.36 1.1H6.1l-.93.68zm4.3 4.3l-.94-.68-.93.68.36-1.1-.93-.67h1.15l.35-1.1.36 1.1h1.15l-.93.67.36 1.1zM9.1 5.6l.36 1.1-.94-.68-.93.68.36-1.1-.93-.68h1.15l.35-1.1.36 1.1h1.15l-.93.68zm0-3.2l.36 1.1-.94-.69-.93.68.36-1.1-.93-.67h1.15l.35-1.1.36 1.1h1.15l-.93.68z" fill="#0052b4"></path>
+</g>
+</svg>
+<a class="footer__contacts-item-link" href="tel:+19299991970">+1 (929) 999-19-70</a>
+</div>
+<div class="footer__contacts-item">
+<svg height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" fill="#f0f0f0" r="11"></circle>
+<g fill="#0052b4">
+<path d="M2.27 4.3a10.96 10.96 0 0 0-1.9 3.83H6.1L2.27 4.3zM21.62 8.13c-.38-1.4-1.03-2.7-1.9-3.83L15.9 8.13h5.72zM.38 13.87c.38 1.4 1.03 2.7 1.9 3.83l3.82-3.83H.38zM17.7 2.27a10.96 10.96 0 0 0-3.83-1.9V6.1l3.83-3.83zM4.3 19.73c1.13.86 2.42 1.51 3.83 1.9V15.9L4.3 19.73zM8.13.38c-1.4.38-2.7 1.03-3.83 1.9L8.13 6.1V.38zM13.87 21.62c1.4-.38 2.7-1.03 3.83-1.9l-3.83-3.82v5.72zM15.9 13.87l3.83 3.83a10.96 10.96 0 0 0 1.9-3.83H15.9z"></path>
+</g>
+<g fill="#d80027">
+<path d="M21.9 9.57h-9.47V.09a11.11 11.11 0 0 0-2.86 0v9.48H.09a11.11 11.11 0 0 0 0 2.86h9.48v9.48a11.1 11.1 0 0 0 2.86 0v-9.48h9.48a11.1 11.1 0 0 0 0-2.86z"></path>
+<path d="M13.87 13.87l4.9 4.9c.23-.22.45-.45.65-.7l-4.2-4.2h-1.35zM8.13 13.87l-4.9 4.9c.22.23.45.45.7.65l4.2-4.2v-1.35zM8.13 8.13l-4.9-4.9c-.23.22-.45.45-.65.7l4.2 4.2h1.35zM13.87 8.13l4.9-4.9c-.22-.23-.45-.45-.7-.65l-4.2 4.2v1.35z"></path>
+</g>
+</svg>
+<a class="footer__contacts-item-link" href="tel:+442080684988">+44 (208) 068-49-88</a>
+</div>
+<div class="footer__contacts-item">
+<svg height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" fill="#ffda44" r="11"></circle>
+<path d="M0 11a11 11 0 0 1 22 0" fill="#338af3"></path>
+</svg>
+<a class="footer__contacts-item-link" href="tel:+380953330275">+380 (95) 333-02-75</a>
+</div>
+</div>
+<p class="footer__title">
+Featured in
+</p>
+<ul>
+<li class="mb-20">
+<img alt="Forbes Logo" width="93" height="24" srcset="https://d1hoawemncxx6w.cloudfront.net/assets/Forbes_logo-4c8d566b1cc8c80ed48de0a86d0d1a3a412d31104289fda1256db7b1c56982ee.png 1x, https://d1hoawemncxx6w.cloudfront.net/assets/Forbes_logo_2x-f4895c502c7a101eb4e72085397f5da8a040ed248e635b7272393c5a1711310b.png 2x" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/Forbes_logo-4c8d566b1cc8c80ed48de0a86d0d1a3a412d31104289fda1256db7b1c56982ee.png">
+</li>
+<li class="mb-20">
+<img alt="Inc Logo" width="56" height="19" srcset="https://d1hoawemncxx6w.cloudfront.net/assets/Inc_logo-389aa9b54072be8edd8412ab580ad2748f258bf71f3550a824ebaa876c7f6a5d.png 1x, https://d1hoawemncxx6w.cloudfront.net/assets/Inc_logo_2x-acdbf6a22f2ab17e7220d9d96d9a4604b3f215d84ee4a9ef8e385cafacdb116a.png 2x" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/Inc_logo-389aa9b54072be8edd8412ab580ad2748f258bf71f3550a824ebaa876c7f6a5d.png">
+</li>
+<li class="mb-20">
+<img alt="Apple News Logo" width="131" height="21" srcset="https://d1hoawemncxx6w.cloudfront.net/assets/AppleNews_logo-b646fbe007b65706dcb0dcefe8958cfbd0faeaa9a40a4a170f7a0b9e6c3e32f1.png 1x, https://d1hoawemncxx6w.cloudfront.net/assets/AppleNews_logo_2x-e6d47f009240ab46c0cd3f00aa753fa555c2c51e696ad3818b2d7d1cecdb9774.png 2x" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/AppleNews_logo-b646fbe007b65706dcb0dcefe8958cfbd0faeaa9a40a4a170f7a0b9e6c3e32f1.png">
+</li>
+<li class="mb-20">
+<img alt="Huff Post Hero Logo" width="133" height="16" srcset="https://d1hoawemncxx6w.cloudfront.net/assets/HuffPostHero_logo-6d380be004c2f80dc811354f9071532bd7428e29ebeea2745d1a72873bc70ae1.png 1x, https://d1hoawemncxx6w.cloudfront.net/assets/HuffPostHero_logo_2x-b0274a31dd09b50b94f38d6565c29095a58ad8a0fccf92540193f5101f3899d6.png 2x" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/HuffPostHero_logo-6d380be004c2f80dc811354f9071532bd7428e29ebeea2745d1a72873bc70ae1.png">
+</li>
+<li>
+<img alt="Hackernoon Logo" width="176" height="15" srcset="https://d1hoawemncxx6w.cloudfront.net/assets/Hackernoon_logo-5972388bef7407d50d2b092614decbd169d0c4b7b3655a88e461b7458c871845.png 1x, https://d1hoawemncxx6w.cloudfront.net/assets/Hackernoon_logo_2x-7b999d853bebe05dccee789bbfed2ce1633c24dc5edea8ca8d1c14b140687318.png 2x" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/Hackernoon_logo-5972388bef7407d50d2b092614decbd169d0c4b7b3655a88e461b7458c871845.png">
+</li>
+</ul>
+</div>
+<div class="col-6 col-md-3 col-lg-4">
+<div class="row">
+<div class="col-12 col-lg-6">
+<ul class="footer__list mb-md-20">
+<li class="footer__list-item">
+<a class="footer__list-item-link footer__list-item-link--large" href="https://rubygarage.org/case-studies">Case Studies</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link footer__list-item-link--large" href="https://rubygarage.org/blog">Blog</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link footer__list-item-link--large" href="https://rubygarage.org/contacts">Contacts</a>
+</li>
+</ul>
+<p class="footer__title">Top Rated in</p>
+<a class="clutch mb-40 mb-md-20" target="_blank" href="https://clutch.co/profile/rubygarage"><img src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/clutch-42a0f8cc5e28a42ced3b05d7aeb1fa4b27eff613b5a5bdf5a8f8bf5ec5c51bf0.svg" alt="Clutch">
+</a></div>
+<div class="col-12 col-lg-6">
+<p class="footer__title">Services</p>
+<ul class="footer__list mb-20">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/web-development">Web Development</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/ruby-on-rails-development">Ruby on Rails</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/react-js-development">React</a>
+</li>
+</ul>
+<ul class="footer__list mb-20">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/mobile-app-development">Mobile Development</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/ios-app-development">iOS</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/android-app-development">Android</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/react-native-development">React Native</a>
+</li>
+</ul>
+<ul class="footer__list mb-20">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/web-design-company">Design Company</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/web-app-design-services">Web Design</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/mobile-app-design-services">Mobile Application Design</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/ux-design-review-services">UX Design Review</a>
+</li>
+</ul>
+<ul class="footer__list">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/enterprise-software-development">Enterprise</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/services/startup-product-development">Startup</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-6 col-md-4">
+<div class="row">
+<div class="col-md-6">
+<p class="footer__title">Industries</p>
+<ul class="footer__list">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/expertise/retail-software-development">Retail</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/expertise/fintech-software-development">Fintech</a>
+</li>
+</ul>
+<p class="footer__title">Company</p>
+<ul class="footer__list">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/company/about">About</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/company/workflow">Workflow</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/company/software-engineering">Engineering</a>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<p class="footer__title"><span class="translation_missing" title="translation missing: en.menu.locations.locations">Locations</span></p>
+<ul class="footer__list">
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/chicago-web-design">Chicago</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/web-development-new-york">New York</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/san-francisco-web-design">San Francisco</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/houston-web-design">Houston</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/boston-web-design">Boston</a>
+</li>
+<li class="footer__list-item">
+<a class="footer__list-item-link" href="https://rubygarage.org/landings/manchester-web-design">Manchester</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row pb-20">
+<div class="col-12 col-md-10 offset-md-1">
+<div class="divider"></div>
+<div class="footer__bottom">
+<p class="footer__copyright">2011-2019 © Copyright RubyGarage. All Rights Reserved</p>
+<ul>
+<li class="footer__bottom-item">
+<a class="footer__bottom-item-link" href="https://rubygarage.org/assets">Assets</a>
+</li>
+<li class="footer__bottom-item">
+<a class="footer__bottom-item-link" href="https://rubygarage.org/privacy-policy">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<meta content="info@rubygarage.org" itemprop="email">
+<meta content="recruiting@rubygarage.org" itemprop="email">
+<meta content="+1 (929) 999-19-70" itemprop="telephone">
+<meta content="+44 (208) 068-49-88" itemprop="telephone">
+<meta content="+380 (95) 333-02-75" itemprop="telephone">
+<link href="https://clutch.co/profile/rubygarage" itemprop="sameAs">
+<link href="https://github.com/rubygarage" itemprop="sameAs">
+<link href="https://twitter.com/rubygarage" itemprop="sameAs">
+<link href="https://www.facebook.com/RubyGarage" itemprop="sameAs">
+<link href="https://www.linkedin.com/company/rubygarage" itemprop="sameAs">
+<link href="https://dribbble.com/ugem" itemprop="sameAs">
+<link href="https://www.behance.net/ugemdesign" itemprop="sameAs">
+</footer>
+
+</div>
+<div class="blog-subscribe modal fade blog-subscribe-js" id="blog-subscribe" role="dialog" tabindex="-1">
+<button class="blog-subscribe__close-btn blog-subscribe__close-btn-js" data-dismiss="modal" type="button">
+<span aria-hidden="true" class="icon icon-cross"></span>
+</button>
+<div class="modal-dialog" role="document">
+<div class="container">
+<div class="row">
+<div class="col-10 offset-1 col-md-12 offset-md-0">
+<div class="blog-subscribe__logo-wrapper">
+<img class="blog-subscribe__logo" alt="RubyGarage" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/subscr_modal_logo-25f961e6fb02253163a007eebb90b6c77ef8686b4fa807c420304b06c7a5e6a9.svg">
+</div>
+<h2 class="blog-subscribe__heading blog-subscribe__heading-js">
+<span class="font-700">Subscribe</span>
+via email and know it all first!
+</h2>
+<div class="text-center hidden success-js">
+<h2 class="blog-subscribe__heading">
+<span class="font-700">Thanks</span>
+for your subscription!
+</h2>
+<span class="icon icon-check in-blue-220 font-20"></span>
+</div>
+</div>
+<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+<form class="blog-subscr__form" autocomplete="off" id="new_subscriber" action="https://rubygarage.org/subscribe" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="3e7vy+Hi+OEewrkZdiQx8WblFZGV8MVSSw4WB85WbnELumA59W2bUS0+xLdm126LC3/pg7zl0oPkT5Lcv47Glw==" id="subscriber_input">
+<div class="blog-subscr__form-content">
+<div class="main-input blog-subscr__form-content-input">
+<div class="main-input__field-box">
+<input class="main-input__field main-input__field--grey" required="required" autocomplete="email" type="email" name="subscriber[email]" id="subscriber_email">
+<label class="main-input__label">
+Your Email*
+</label>
+</div>
+<div class="main-input__hint" id="email-hint-js"></div>
+</div>
+<div class="blog-subscribe__form-content-checkbox">
+<div class="blog-subscribe__form-check-wrap">
+<label class="main-checkbox">
+<input name="subscriber[subscription][technical_articles]" type="hidden" value="0"><input class="main-checkbox__input blog-subscribe__form-check-js" type="checkbox" value="1" checked="checked" name="subscriber[subscription][technical_articles]" id="subscriber_subscription_technical_articles">
+<span class="main-checkbox__icon icon icon-check"></span>
+<span class="main-checkbox__label">Technical articles</span>
+</label>
+</div>
+<div class="blog-subscribe__form-check-wrap">
+<label class="main-checkbox">
+<input name="subscriber[subscription][business_articles]" type="hidden" value="0"><input class="main-checkbox__input blog-subscribe__form-check-js" type="checkbox" value="1" checked="checked" name="subscriber[subscription][business_articles]" id="subscriber_subscription_business_articles">
+<span class="main-checkbox__icon icon icon-check"></span>
+<span class="main-checkbox__label">Business articles</span>
+</label>
+</div>
+<div class="main-input__hint hidden static" id="options-hint-js">
+Please select at least one option
+</div>
+</div>
+<div class="text-center">
+<button name="button" type="submit" id="submit-btn-js" class="main-button main-button--violet-black move-icon-on-hover">Subscribe
+<span class="icon icon-touch ml-23"></span>
+</button></div>
+</div>
+</form></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="blog-search-modal modal fade" id="blog_search_modal" role="dialog" tabindex="-1">
+<button class="blog-search-modal__close" data-dismiss="modal" type="button">
+<span aria-hidden="true" class="icon icon-cross"></span>
+</button>
+<div class="modal-dialog" role="document">
+<div class="container">
+<form action="https://rubygarage.org/blog" class="blog-search-form" method="get">
+<div class="main-input mb-40" id="main-input-js">
+<div class="main-input__field-box">
+<input type="text" name="search" id="main-input__field-js" class="blog-search-form__input main-input__field main-input__field--grey" maxlength="255">
+<label class="main-input__label">
+Search for...
+</label>
+<i class="icon icon-cross in-grey-300 blog-search-form__clear-btn hidden" id="clear-btn-js"></i>
+</div>
+<div class="main-input__hint" id="main-input__hint-js">
+Please fill in the search field
+</div>
+</div>
+<button class="main-button main-button--violet-black min-210 mx-auto d-block" id="main-button-js">
+Search
+</button>
+</form>
+</div>
+</div>
+</div>
+
+
+<script src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/show-fb9bf48dd4a48abc84f0808312a3129990451867c13d5735bc3f08e6ff9d87df.js.download" cache="true" recursive="true" async="async"></script>
+
+<script>
+  var loadDeferredStyles=function(){var addStylesNode=document.getElementById("deferred-styles");var replacement=document.createElement("div");replacement.innerHTML=addStylesNode.textContent;document.body.appendChild(replacement);addStylesNode.parentElement.removeChild(addStylesNode)};var raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;if(raf)raf(function(){window.setTimeout(loadDeferredStyles,0)});else window.addEventListener('load',loadDeferredStyles)
+</script>
+<script>
+  _linkedin_partner_id = "995377";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script>
+  (function(){var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img alt='' height='1' src='https://dc.ads.linkedin.com/collect/?pid=995377&amp;fmt=gif' style='display:none;' width='1'>
+</noscript>
+<script src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/intercom_widget-f80d6a63e166815d0bbbd722c24f7087a6ea75c568aecd9bdbf030228fd21caa.js.download"></script>
+
+
+<div>
+<link rel="stylesheet" media="all" href="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/technology_icons-b264a9b0.css" recursive="true" cache="true" async="async">
+</div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","328927571074126");fbq("set","agent","tmgoogletagmanager","328927571074126");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=328927571074126&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">var _protocol="https:"==document.location.protocol?" https://":" http://",_site_hash_code="4c4f656ce8d6df2453b07adcf0eac5bb",_suid=4797;</script>
+<script type="text/javascript" id="" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/main.js.download"></script><script type="text/javascript" id="">(function(a){function b(a){a=Math.floor(a);return 10>a?"0"+a:a}a.scrollEvent=function(d){var c=a(document),b=a(window),f=c.height();b=b.height();current_value=(c=b+c.scrollTop())?Math.floor(100*c/f):0;return d>current_value?d:current_value};a.fixTime=function(){var a=new Date;return Math.floor(a.getTime()/1E3)};a.timeFormat=function(a){var c=a;a=c/3600%24;var d=c/60%60;c%=60;return b(a)+":"+b(d)+":"+b(c)}})(jQuery);
+function getTimeInterval(a){if(0<=a&&30>a)return"from 0 sec to 30 sec";if(30<=a&&60>a)return"from 30 sec to 1 min";if(60<=a&&120>a)return"from 1 min to 2 min";if(120<=a&&180>a)return"from 2 min to 3 min";if(180<=a&&300>a)return"from 3 min to 5 min";if(300<=a&&480>a)return"from 5 min to 8 min";if(480<=a)return"more 8 min"}
+function getScrollingInterval(a){if(0<=a&&20>a)return"from 0% to 20%";if(20<=a&&40>a)return"from 20% to 40%";if(40<=a&&60>a)return"from 40% to 60%";if(60<=a&&80>a)return"from 60% to 80%";if(80<=a&&100>=a)return"from 80% to 100%"}
+jQuery(document).ready(function(){var a=jQuery.fixTime(),b=0;jQuery(window).scroll(function(){b=jQuery.scrollEvent(b)});jQuery(window).bind("beforeunload",function(){current_max_string=b.toString()+"%";var d=jQuery.fixTime(),c=jQuery.timeFormat(d-a),e=getScrollingInterval(b);d=getTimeInterval(d-a);dataLayer.push({event:"Scroll to",percent_of_scrolling:current_max_string,time_on_page:c,percent_of_scrolling_interval:e,time_on_page_interval:d})})});</script><script src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/f(1).txt"></script>
+
+<iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;" aria-hidden="true" tabindex="-1" title="Intercom" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/saved_resource.html"></iframe><div id="intercom-css-container"><style data-emotion="intercom-global"></style><style data-emotion="intercom"></style></div><div id="intercom-container" class="intercom-namespace"><style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style><div class="intercom-app" aria-live="polite"><iframe allowfullscreen="" class="intercom-launcher-frame intercom-zbcgyr e1ur5zlj0" name="intercom-launcher-frame" title="Intercom live chat" data-intercom-frame="true" src="./Heroku vs AWS_ A Comparison of Two Popular Cloud Services in 2019_files/saved_resource(1).html"></iframe><div id="intercom-modal-container"></div></div></div></body></html>
