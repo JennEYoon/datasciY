@@ -5,17 +5,8 @@ Date: Nov 23, 2019 started.
 ### Time Scheduled Tasks  
 
 ##### Ken Nicholas Trading AI/ML.  
- * Monday, Nov 24, 2019 4pm EST, call with Ken N. = send confirm email.  
-   - Nail down SQL Aurora outline
-   - General Business strategy discuss, what resources, past work, does he really have?  
-   - Where is his funding coming from?  
-   - 1  coding for technicals .
- Use **ta-lib** library to calculate technicals and write codes for buy or sell signals. I thought he said he already did this.  
-   - 2.  refining reinforcement agent algos to maximize gains and develop ways to save the algo to generate inference without rerunning the entire code.  Shouldn't he have done this in the past 3 years already?  What ML models did he work on?  
-   - "I will send you a recent repo" and resource "Peter Leong".  Need phone number, background, his role at this startup.  
-   - Heroku vs SQL-Aurora - Not interested in learning Heroku now, when I can use what I already know, SQL.   
-   - Angel.co - not now, maybe later.  As business manager on financial industry startups, like when I was at Mountain View.    
-   
+ * Monday, Nov 24, 2019 4pm EST, call with Ken N.
+ * Notes in Word doc, desktop local.  
  
 ### Time Sooner Tasks 
  
