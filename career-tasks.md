@@ -9,9 +9,13 @@ Date: Nov 23, 2019 started.
    - Nail down SQL Aurora outline
    - General Business strategy discuss, what resources, past work, does he really have?  
    - Where is his funding coming from?  
-   - ta-ching? Python library -- look at.
-   - Angel.co look at, join?  As business manager resource?  Maybe on financial startup like at Mountain View?  
-   - Get phone number of the "resource" person and his skills.  
+   - 1  coding for technicals .
+ Use **ta-lib** library to calculate technicals and write codes for buy or sell signals. I thought he said he already did this.  
+   - 2.  refining reinforcement agent algos to maximize gains and develop ways to save the algo to generate inference without rerunning the entire code.  Shouldn't he have done this in the past 3 years already?  What ML models did he work on?  
+   - "I will send you a recent repo" and resource "Peter Leong".  Need phone number, background, his role at this startup.  
+   - Heroku vs SQL-Aurora - Not interested in learning Heroku now, when I can use what I already know, SQL.   
+   - Angel.co - not now, maybe later.  As business manager on financial industry startups, like when I was at Mountain View.    
+   
  
 ### Time Sooner Tasks 
  
