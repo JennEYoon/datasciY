@@ -7,6 +7,8 @@ Date: Nov 23, 2019 started.
 ##### Ken Nicholas Trading AI/ML.  
  * Monday, Nov 24, 2019 4pm EST, call with Ken N.
  * Notes in Word doc, desktop local.  
+ * Has a friend who is hiring Data Scientist in Chicago.  Get link from Ken.  
+ * Get contact info for resource, Leong.  
  
 ### Time Sooner Tasks 
  
