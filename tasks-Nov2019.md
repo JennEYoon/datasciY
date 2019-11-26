@@ -55,4 +55,11 @@
     * How to create "COMMUNITY" output file?  What does it look like?  
     
     
+  #### Nov 26, 2019 Organize Files  
+   * Increased Google Drive to 200 GB.  
+   * Uploaded Coursera older classes folder to Google Drive, unsync folder to desktop.  
+   * Moved code learning files from USB stick to SDXC card.  
+   * Ken-TradingAI folder on Google Drive - unsync with my desktop, save space on local hard drive.  
+   
+   
   
