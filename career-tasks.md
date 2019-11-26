@@ -9,6 +9,7 @@ Date: Nov 23, 2019 started.
  * Notes in Word doc, desktop local.  
  * Has a friend who is hiring Data Scientist in Chicago.  Get link from Ken.  
  * Get contact info for resource, Leong.  
+ * Read profile on Ken from Angel.co.  Doesn't make any sense.  Warning alert.  
  
 ### Time Sooner Tasks 
  
