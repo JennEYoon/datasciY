@@ -4,11 +4,8 @@ Date: Nov 23, 2019 started.
 
 ### Time Scheduled Tasks  
 
-##### Ken Nicholas Trading AI/ML.  
- * Monday, Nov 24, 2019 4pm EST, call with Ken N.
- * Notes in Word doc, desktop local.  
- * Read profile on Ken from Angel.co.  Doesn't make any sense.  Warning alert.  
- * OK it's over as of 11/26/2019.  He never uploaded a single ML model.  
+
+
  
 ### Time Sooner Tasks 
  
@@ -17,6 +14,7 @@ Next 2 weeks from Nov 23, 2019:
  * Revamp - website projects.html page.  
    - Create sub-pages for each project.  
    - Use Jupyter notebook initially, then create a separate html page to showcase visualtizations.  
+   
  * Finish Articles.html page 
    - Neural Style transfer paper read, image photo and artistic style, add to post.  
    - Brain segmentation and GAN, get link from Bill.  Read paper and watch Youtube of competitor.  
