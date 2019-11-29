@@ -104,5 +104,6 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Contact more people from PyData, Linked In.  
  * Job Search Companies.  
  * Ken Nicholas Github - superficial info exchanged.  Next week, may work on SQL integration, Amazon Postgress SQL.  
+   * Has call on Monday.  Spent about 10 hours looking up relevant info.  He cancelled next day. Best possible outcome.  Too many warning signs. 
 
 --- end ---  
