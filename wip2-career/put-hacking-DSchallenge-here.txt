@@ -1,1 +1,0 @@
-Put resources from PyData talk, Hacking Data Science Chanllenge (interview) here.

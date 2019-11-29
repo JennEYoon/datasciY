@@ -31,29 +31,14 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * assets (folder) -- image and pdf files called at root level by src command.
    * articles (folder) -- in-depth write ups (supporting folder)
    * projects (folder) -- programming projects (supporting folder)
-   * blog (folder) -- short posts, news and thoughts (supporting folder)
- 
- * MySQL-AWS-databases (folder) -- temporary folder, collect MySQL and Aurora info  
-
- * PyDataNY-2019 (folder) -- temporary folder  
-   Collect PyDataNY related files, some post to datasciY.com.  
-
- * wip1-website (folder) -- work-in-process folder, new materials and testing files.  
+   * blog (folder) -- short posts, news and thoughts (supporting folder)  
+.  
+ * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
    * udacity-github -- notes and articles on using Github, best practices.  
- 
- * wip2-career (folder) -- work in process for career related files.  
-    * Build a Career in Data Science (folder) -- my notes
-    * GatAJob (folder) 
-       - Data Science Weekly, Get A Job in DS
-       - GlassDoor - data science job desciptions
-       - Interview Q&A
-    * udacity-career (folder) 
-    * other-career (folder)
-
+. 
 #### History  
 
- * Gihub Repo created on July 2019
+ * Github Repo created on July 2019
  * Website hosted on AWS during 2018 and 2019
  * Domain purchased on Sept 2017  
-
