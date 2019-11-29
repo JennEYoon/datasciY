@@ -9,5 +9,10 @@
 
 #### Spell check html pages.  
   
-From Word-html, selected all body text, opend a new text.txt file, pasted.  Only text was copied, not html codes.  
-Can run spell check  on this if I want.  Every error found must corrected on the HTML-file.  Save changes to the HTML-file.
+ * Installed VS Code extension for spell checker.  Works well!  Checks spelling in html, python, markdown files.  
+ 
+#### VS Code updates -- write a blog or article about it.  
+
+ * Improvements to VS Code makes it much easier to edit markdown (with preview), 
+ * Juptyer Notebook (auto-render) in interactive notebook format. "Open-in" VS code.  
+ * HTML/CSS spell checker, spacing checker.  
