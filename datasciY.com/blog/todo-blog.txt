@@ -1,2 +1,0 @@
-Write a blog about PyData DC 2018 experience -- Nov 2018 - 1 year ago.
-Write a blog about PyData NY 2019 experience -- Nov 2019.
