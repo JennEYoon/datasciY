@@ -35,6 +35,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
    * udacity-github -- notes and articles on using Github, best practices.  
+   * PyDataNY-2019 -- temporary working folder  
+   * Matplotlib-Github-Test -- temporary working folder  
 . 
 #### History  
 
