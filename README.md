@@ -8,6 +8,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 >Plan: Reconsider Bootstrap - mainly for text flow around images.  
 
+>Plan: Add dynamic elements, Add SQL database link.  
+
 #### Tags  
   
  * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, financial derivatives, economics
