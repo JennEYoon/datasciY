@@ -17,16 +17,6 @@ Date: December 2019 Monthly
     * Submit with comment.  Not compatible with revised _data.py and _community.py files.  
  * Unzip and look at data format for Brown University LTDB data.  
 
-##### Want to finish by this week:  
-
- *  Juan book - make sure to buy before it disappears.  
- *  Plane to Jason, check on price.  Maybe go in January? March?  
- *  Call back Chris, maybe go visit for 3-5 days?  Drive up, using cruise control.  Daylight hours.  
- *  DLAI wk4 done before next Meetup.  Bring wine & cupcakes to Meetup Dec 10th 2019.  
- *  Black outfit ready for Janelia party Friday Dec 6th. 
- *  Master bedroom clean - vacuum tops of boxes, furniture. Dust walls, windows inside & frame, curtains and blinds. vacuum floor corners.  Wipe each item with rag.  
- * Next week -- Master Closet Elfa, dust shelves first.  Then thorough clean after install (creates dust).  Cover clothes with sheets.
- * Next week -- garages, start breaking down boxes.  
  
 ## 2.  Important, Not Time Relevent   
 
