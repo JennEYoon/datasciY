@@ -60,6 +60,7 @@
    * Uploaded Coursera older classes folder to Google Drive, unsync folder to desktop.  
    * Moved code learning files from USB stick to SDXC card.  
    * Ken-TradingAI folder on Google Drive - unsync with my desktop, save space on local hard drive.  
+     - Folder deleted.  Ken no longer working with me.  Best possible outcome.  Too many warning alarms.  
    
    
   
