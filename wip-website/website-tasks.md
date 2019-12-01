@@ -1,31 +1,50 @@
 # Tasks list file for Github datasciY repo.  
 
-#### Date: July 21, 2019 5:42 AM EST
+## Main Areas:  
 
- * Create a local repo for datasciY.com development - done.  
-   /-----------
+### About:  
+
+### Projects:  
  * Do IPython Cookbook ML chapter - hold.  Nov 2019.  
  * Finish Titanic notebook, do logistic regression. - 11/8/2019 update.  
    - Find some way to personalize the project.  
    - Extend it with other dataset, other boat drowning accidents in modern times?  
+ * Do Matplotlib 3D plots, 3 horizontal subplots, same height plot size (SO). 3 vertical suplots with 3D plot.
+   - Read source documentation to find how what is Object Method and what is Matlab method.  
+ * Plotly and Dash interactive plotting demo.  
+ * AWS Lambda with Jupyter Notebooks demo.  Random Walk, Run-button to get new 1000 sample.  
+ * Reproduce Hacking - Bicycle data - from PyData.  
+ * Reproduce Measles talk from PyData, extend with other disease data.  
+ * Reproduce Barclay's testing talk, try with other data.  
 
-
-#### Articles - July 21, 2019  
-
+### Articles:  
  - Neural Style tranfer and Brain Gready GAN - find links and finished article  
  - Get video link from Bill.  Brain segmentation GAN.  
     * GAN, brain segmentation, Neural Style Transfer art.  
-   
-------------------------------------------------------------------------
- 
-#### Extreme Value Distributions - Weibull, Gumbel - Tasks as of 8/9/2019 - done.  
-     
-#### Blog to Article, Convolution, Sobel filter, Fast.AI Lesson 3 - Date 8/19/2019 6:35 PM  
+  - Write a series of articles about CNN, Transfer Learning with frozen layer & downloaded weights.  Data augmentation, architectures, using tensorflow and tensorflow datasets, load_datasets command.  
+  
+### Blog:  
+ * Add linke to 3 Blue 1 Brown NN video, rescales image of '3' from unit8 to 1 and 0 or (-1).  Makes more sense.  
+ * Add linke to one of the many good convolution filter matrix dot product examples.  
 
-  * Blog update with Convolution demo, Otavia Good - done.
-  * Sobel Filter -- gathered link. - done.
-  * To Do -- Write longer article, add to "articles.html" on datasciY.com.
-  * Write a series of articles about CNN, Transfer Learning with frozen layer & downloaded weights.  Data augmentation, architectures, using tensorflow and tensorflow datasets, load_datasets command.  Using Bash Ubunty on Windows 10.  Fast.ai DL1 and Coursera DL.AI class 1 and 4.  
+### Format & Infrastructure:  
+
+ * Re-consider Bootstrap framework.  Mainly for better looking text flow around images.  
+ * AWS Aurora -- SQL style database plug-in demo.  Use stock trading data and energy trading data.  
+ 
+### Topics to Add at a Future Time:   
+ 
+ * StockWiki.com -- revivie.  Add AOTH user account & password authorization plug in.  
+ * Add NLP sentiment analysis model -- use earning call text transcripts.  
+ * Add Visual Deep Learning model -- face recognition of company officers.  In PDF reports, annual reports, Youtube videos.  
+ * Add some kind of credit risk model, CDOs and Credit Rating Transition Matrix.  
+ * Add Option Pricing model in Python.  Use Python for Finance book.  Use Modeling Drivatives, London book.  
+ * Git -- need to learn more about Merging and Conflict fixing.  
+    - Git editor cherry pick commited file.  Force rebase, roll back, stash, feature branch.  
+ * Unix Bash -- better and moving around, copy and move files, search for files, wildcards, regular expressing search.  Write script for batch task, scheduled task.  Write logs and examine logs.     
+
+-----------------------------------       
+## Other Notes:  
 
 #### Dream 8/23/2019 midnight - Focus on VanderPlas and post on my website!  
 
@@ -33,7 +52,6 @@ Focus 80% of my effort on doing VanderPlas reproduction exercises and posting on
 
 Don't waste so much time on watching all kinds of videos and trying to learn deep learning from Stanford CS231n, which is taking too much time and effort.  From Vanderplas reproduction exercises, I can extend or add my own use cases.  This will be the fastest in helping me get a job. **Need to get 100%+ on future technical interviews!**  Demonstrate mastery on basic machine learning stuff, not need to know deep learning yet.  Learn supervised learning, random forest decision trees.  Learn nonsupervised learning PCA and k-means clustering.  Learn really well numpy, pandas, matplotlib, and Jupyter notebook magic and shell commands. Debug command & profile/timeit commands.  
 
-I can spend 15-20% of my time on deeplearning.ai or fast.ai videos, since I find them interesting.  Do to take a break after spending 4-6 hours per day first on VanderPlas.  Forget about Stanford CS231n for now.  NOT taught well.  Not modern methods.  Do fast.ai deep learning part 2 -- foundations with tensor flow, if I want to learn under-the-hood, coding algorithms from scratch.  Also, can follow along Nathan's solutions for the class, without investing too much of my own time on getting the code details right.  
 
 #### Ubuntu, CoLab, fast.ai setup - Aug-Sept 2019.  
  * More practice setting up version 0.7
@@ -68,28 +86,7 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
   * Add natural breaks into my night after 3 hours.  Force an off-switch.  
  
  
-#### Projects.html -- Visualization & AWS Lambda demo - Sept 16, 2019 Update.  
-
- * Priority items -- AWS Lambda demo, Ubuntu and Windows 10 base machines.  
- * Priority items -- Visualizations using financial data.  
-   * 3D Matplotlib option implied volatility surface plot.  
-   * Interactive graph, histogram, time series line chart - Plotly & Cufflinks.  
-   * Economic GPD per capita countries - Tableau.  
- * next item -- Vanderplas chapter SkLearn.  
- * next item -- VanderPlas Numpy -- finish p 60-90.  
-   * Ufunc, vertorized calc, argsort, knn.  
- 
-#### Update 10/27/2019 -- Matplotlib 3D row subplots done.  
- * To write up and plot next week.  
- * Finish PR geosnap -- done 10/31/2019 9:30 PM submitted.
-   - Took a really long time, a whole week.  
-   - Difficult to learn new code base.  Difficult to figure out what is going on.  
- * 11/1/2019 Friday -- to post finished Hactoberfest on my blog page, datasciY.com.  
- * 11/1/2019 task -- to 3D plotting on my Projects page, datasciY.com.    
- 
- ####  update 11/5/2019  
-  * pydata nyc - shared website wih several other people.  
-  * Time to finish Level 1 projects page.  
+ ####  update 11/5/2019   
   * geosnap received feedback.  Fix df with each year slice.  apply inflation separately.  How?  Need to have a very clear idea of what output is required from my code.  Right now I am fuzzy.  Hot a whole lot of help from maintainer.  Write tests install software and read through the whole example and documentation.  Figure out what is going on.  Then fix the small issue.  
   
 #### Update 11/12/2019 This Week To Do  
@@ -102,8 +99,6 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  1. Skimmed -- Hundread Pages ML book.  Good summary of main ideas.
 ---------  
  * Contact more people from PyData, Linked In.  
- * Job Search Companies.  
- * Ken Nicholas Github - superficial info exchanged.  Next week, may work on SQL integration, Amazon Postgress SQL.  
-   * Has call on Monday.  Spent about 10 hours looking up relevant info.  He cancelled next day. Best possible outcome.  Too many warning signs. 
+ * Job Search Companies from PyData.  Don't need to apply now, but save job descriptions for my research.  
 
 --- end ---  
