@@ -27,7 +27,10 @@ Date: December 2019 Monthly
     Rec'd 11/24/2019.  Skimmed, looks really good.  
     Testing, Collaborating, Functions chapters of most interest now.  
     
- *  Start looking at Testing.  Reading Python Testing book.  Skim Test Driven Development book.  Look at PyData 2 testing tutorials.  
+ *  Start looking at Testing.  
+    - Reading Python Testing book.  
+    - Skim Test Driven Development book.  
+    - Look at PyData NY testing tutorials (beginner and advanced). Youtube playlist out now.
    
  *  Juan's Elegant Scipy book -- start reading, start doing notebooks.   
 
