@@ -38,6 +38,7 @@ Date: December 2019 Monthly
    
  *  Juan's Elegant Scipy book -- start reading, start doing notebooks.   
     - YES24.com Korean paperback - seems to have shipped yesterday, Dec 4, 2019.
+    - Arrival in 7 business days (Friday 12/13/2019)?
 
 
 ## 3. Ideas for future tasks  
