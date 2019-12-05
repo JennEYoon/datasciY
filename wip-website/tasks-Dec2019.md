@@ -37,6 +37,7 @@ Date: December 2019 Monthly
    - Gave me new perspective in contributing to **geosnap** code base.
    
  *  Juan's Elegant Scipy book -- start reading, start doing notebooks.   
+    - YES24.com Korean paperback - seems to have shipped yesterday, Dec 4, 2019.
 
 
 ## 3. Ideas for future tasks  
