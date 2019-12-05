@@ -32,6 +32,10 @@ Date: December 2019 Monthly
     - Skim Test Driven Development book.  
     - Look at PyData NY testing tutorials (beginner and advanced). Youtube playlist out now.
    
+ * Finished listening to "Software Developer Life" book.  
+   - Interesting part about learning a new code base and side effect.  
+   - Gave me new perspective in contributing to **geosnap** code base.
+   
  *  Juan's Elegant Scipy book -- start reading, start doing notebooks.   
 
 
