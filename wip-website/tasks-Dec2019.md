@@ -48,6 +48,8 @@ Date: December 2019 Monthly
 
 ## 4. Reference Info saved  
 
+ * AWS Aurora seems to have charge me $38 for 1 month.  Postgres latest uses t2 as smallest server.  No free tier?  Is Haroku free?  But is on top of AWS, so can't be free if using Postgres.  
+
 ##### Links saved:  
  *  
  *  
