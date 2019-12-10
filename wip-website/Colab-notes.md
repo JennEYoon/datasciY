@@ -3,12 +3,12 @@ Anybody can open a copy of any github-hosted notebook within Colab. To make it e
 Open In Colab
 
 The markdown for the above badge is the following:
-  >[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]  (https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]  (https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
 
 The HTML equivalent is:
-  ><a href="https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
+  \<a href="https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb">
+  \<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+  \</a>
 Remember to replace the notebook URL in this template with the notebook you want to link to.
 
 https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb
