@@ -8,3 +8,5 @@ The HTML equivalent is:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 Remember to replace the notebook URL in this template with the notebook you want to link to.
+
+https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb
