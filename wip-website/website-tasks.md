@@ -101,4 +101,11 @@ Try downloading EIA.gov energy series data, and do visualizations using Bokeh an
  * Contact more people from PyData, Linked In.  
  * Job Search Companies from PyData.  Don't need to apply now, but save job descriptions for my research.  
 
+#### Tasks Dec 14 2019:  
+
+ * Blog -- update links to tutorials, original links dead now.  
+    - Add Youtube links to 3 tutorials. 
+    - Add New Adv Testing tutorial & Youtube video.  
+
+
 --- end ---  
