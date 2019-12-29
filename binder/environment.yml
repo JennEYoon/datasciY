@@ -3,10 +3,10 @@ name: datasciy-binder
 # "conda env export > environment.yml" to save existing environment to file 
 dependencies:
 - python=3.7
-- jupyter
 - numpy
 - matplotlib
 - seaborn
+- jupyter
 - pandas
 - pandas-datareader
 - quandl
