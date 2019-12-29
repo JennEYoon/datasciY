@@ -1,5 +1,5 @@
-# Anaconda environmnet for datasciy.com, Jupyter notebooks hosted on mybinder.org
-name: datasciy-binder
+# Anaconda environmnet for datasciY repo on Github.com  
+name: datasciy-env
 # "conda env export > environment.yml" to save existing environment to file 
 dependencies:
 - python=3.7
