@@ -1,0 +1,17 @@
+
+# Anaconda environmnet for datasciY repo on Github.com  
+# Created for testing MyBinder.org, free hosting of runnable Jupyter Notebooks.  
+# Date: Dec 29 - 31, 2019.  
+name: datasciy-env
+# "conda env export > environment.yml" to save existing environment to file 
+dependencies:
+- python=3.7
+- numpy
+- matplotlib
+- seaborn
+- jupyter
+- pandas
+- pandas-datareader
+- quandl
+- beautifulsoup4
+- scikit-learn
