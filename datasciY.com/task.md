@@ -1,3 +1,8 @@
+----------  
+
+Blub about Matplotlib 3D plotting examples and MyBinder.org.  
+Number of instances and memory are limited, not guranteed uptime.  When demo with 30 people simultaneously accesing binder, does not work well, latency.  Also may take a long time to build docker image even when only 1 user.  Have backup of CoLab.  Users use own Google  account to log into Google Cloud resources, not limited, can handle more.  Saving edits: default save to mybinder server.  Save to local computer, "File" "Download as Notebook".  Then upload to user's Github account, has user ID verification, some security check.  
+
 # Add binder demo to projects
 
 Link to Github: notebooks repo for testing mybinder.org hosting.  
@@ -58,13 +63,6 @@ The HTML equivalent is:
 </a>
 Remember to replace the notebook URL in this template with the notebook you want to link to.
 
-----------  
 
 
 
-Blub about Matplotlib 3D plotting examples and MyBinder.org.  
-Number of instances and memory are limited, not guranteed uptime.  When demo with 30 people simultaneously accesing binder, does not work well, latency.  Have backup of CoLab.  Users use own account to log into Google Cloud resources, not limited, can handle more.  Save locally first, then upload to Github in a new commit.
-
-# Update links from PyDataNY -- tutorials, use video link and pdf if available.  
-Testing tutorial: Stanley van der Merwe, Petr Wolf: From Raw Recruit Scripts to Perfect Python | PyData New York 2019
-Youtube video link: https://www.youtube.com/watch?v=vqLfJbo-vOs  
