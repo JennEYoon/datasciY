@@ -40,6 +40,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 . 
 #### History  
 
+ * Working on personal projects to post on datasciY.com during February to May 2020  
  * Github Repo created on July 2019
  * Website hosted on AWS during 2018 and 2019
  * Domain purchased on Sept 2017  
