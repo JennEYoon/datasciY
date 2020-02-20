@@ -1,4 +1,4 @@
-## Repository for datasciY.com development, my coding portfolio.  
+## Repository for my coding portfolio website, datasciY.com.  
 
 #### Author: Jennifer E Yoon  
 
