@@ -1,3 +1,5 @@
+# Moved to datasciY.com  
+
 Open In Colab Badge
 Anybody can open a copy of any github-hosted notebook within Colab. To make it easier to give people access to live views of GitHub-hosted notebooks, colab provides a shields.io-style badge, which appears as follows:
 Open In Colab
