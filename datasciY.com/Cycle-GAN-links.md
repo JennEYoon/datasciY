@@ -1,4 +1,5 @@
 # Articles - brain segmentation deep learning  
+### Moved to datasciY.com  
 
 
 article deep learning link.  
