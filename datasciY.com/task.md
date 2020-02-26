@@ -63,6 +63,8 @@ The HTML equivalent is:
 </a>
 Remember to replace the notebook URL in this template with the notebook you want to link to.
 
+#### Add Andrew Ng Podcast interview to Blog.  
+Feb 26, 2020.  Over 1hr. Listened to yesterday.  
 
 
 
