@@ -65,6 +65,7 @@ Remember to replace the notebook URL in this template with the notebook you want
 
 #### Add Andrew Ng Podcast interview to Blog.  
 Feb 26, 2020.  Over 1hr. Listened to yesterday.  
+https://youtu.be/0jspaMLxBig
 
-
+Andrew Ng: Deep Learning, Education, and Real-World AI | AI Podcast #73 with Lex Fridman  
 
