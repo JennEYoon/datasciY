@@ -16,3 +16,11 @@
    * Why are kids not dying from it?  Kids have newer lung cells?  Kids have not overpowering immune repose?  
    
    
+### Big Project using SEC data & Python ML.  
+
+  * Do something small first
+  * Or break down a big project into small steps
+  * Look at data sources to refresh my memory of what is available.  
+    -- SEC, FINRA, NASDAQ, NYSE, SIA, DTCC, FED, TRSY  
+    
+  
