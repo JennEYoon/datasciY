@@ -1,4 +1,6 @@
-# datasciY.com portfolio projects - March 2020  
+# datasciY.com portfolio  
+
+## March 2020 Projects  
 
 #### 1) Bicycle rental data reproductions to do  
 
@@ -10,4 +12,18 @@
 
 #### 3) DLAI - finish classes 1 to 4.  
   * Some notebooks - redo from scratch  
-  ( Read book, Chollet.  
+  * Read book, Chollet.  
+
+#### 4) Corona Virus map 
+ * Reproducce John's Hopkins interactive map  
+ * Add transport hubs connections info.  
+ * Population size, and age over 65 category.  
+
+
+## April 2020 Projects  
+
+#### 1) Titanic Reproduction to finish 
+
+
+#### 2) Big project - SEC data python ML.  
+
