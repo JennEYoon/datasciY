@@ -25,10 +25,11 @@
 #### 2) Big project - SEC data python ML.  
 
 
-#### 3) DLAI - finish classes 1 to 4, then 5 sequence models.    
+#### 3) DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
+  * finish classes 1 to 4, then 5 sequence models.    
   * Some notebooks - redo from scratch  
   * Read book, Chollet.  
-  * April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
+  * Read VanderPlas chp 5.  
 
 
 --- end ---  
