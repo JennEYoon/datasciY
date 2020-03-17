@@ -10,7 +10,7 @@
 
 
 
-#### 3) Corona Virus map 
+#### 3) Corvid-19 infections spread map 
  * Reproducce Johns Hopkins interactive map  
  * Add transport hubs connections info.  
  * Population size, and age over 65 category.  
