@@ -9,3 +9,9 @@
  * Materials  
  * Community testing for PM2.5 and .1 micron virus size  
  
+### Bill Gates - interviews related to Corvid-19  
+
+ *  
+ *   
+ 
+--- end ---   
