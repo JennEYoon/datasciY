@@ -4,6 +4,9 @@
  * Patients from hight pollution areas twice as likely to die from Corvid-19.  
  * Smoking and Vaping more likely to hurt Corvid-19 patients.  
  
+ * Waters run clear in Venice, Italy from Corvid-19 lockdown.  
+   https://www.cnbc.com/2020/03/18/photos-water-in-venice-italys-canals-clear-amid-covid-19-lockdown.html  
+ 
  
 ### Masks - efficacy for public, for medical workers.  
 
