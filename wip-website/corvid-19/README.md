@@ -21,5 +21,13 @@
   
  *   https://www.cnbc.com/2020/04/08/bill-gates-how-long-it-may-take-before-americans-are-safe-from-coronavirus.html  
  
+  * 
+  
+>  Fact check:Did Bill Gates predict the coronavirus in 2015?
+>
+>In a Feb. 28 article for The New England Journal of Medicine, Gates wrote, "In the past week, COVID-19 has started behaving a lot like the once-in-a-century pathogen we’ve been worried about. I hope it’s not that bad, but we should assume it will be until we know otherwise."
+>
+>Our ruling: False
+>Although Event 201 was a real event affiliated with high-profile medical professionals, business leaders and government actors, the claim that the event predicted the current pandemic, or is tied to it directly in some way, is unfounded. We rate this claim FALSE because it is not supported by our research. There is no reason to believe that the current pandemic will resemble the Event 201 simulation, despite coincidences in the modeling and timing of the simulation.
  
 --- end ---   
