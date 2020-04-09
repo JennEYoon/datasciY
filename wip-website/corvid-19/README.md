@@ -6,6 +6,7 @@
  
  * Waters run clear in Venice, Italy from Corvid-19 lockdown.  
    https://www.cnbc.com/2020/03/18/photos-water-in-venice-italys-canals-clear-amid-covid-19-lockdown.html  
+   <img src = "../Venice-ClearWater.jpg"> placeholder for venice image.  
  
  
 ### Masks - efficacy for public, for medical workers.  
