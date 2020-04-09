@@ -21,7 +21,7 @@
   
  *   https://www.cnbc.com/2020/04/08/bill-gates-how-long-it-may-take-before-americans-are-safe-from-coronavirus.html  
  
-  * 
+ *  https://www.usatoday.com/story/news/factcheck/2020/03/26/fact-check-bill-gates-backed-pandemic-exercise-didnt-predict-covid-19/5081854002/  
   
 >  Fact check:Did Bill Gates predict the coronavirus in 2015?
 >
