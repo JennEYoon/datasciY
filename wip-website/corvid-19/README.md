@@ -1,7 +1,8 @@
 # Collection spot for Corvid-19 related information  
 
  * Daily cases, deaths, and hospitalizations.  
- * Air pollution by county in USA - article  
+ * Patients from hight pollution areas twice as likely to die from Corvid-19.  
+ * Smoking and Vaping more likely to hurt Corvid-19 patients.  
  
  
 ### Masks - efficacy for public, for medical workers.  
@@ -18,6 +19,7 @@
  
  *   https://www.pbs.org/newshour/show/bill-gates-on-outlook-for-a-covid-19-vaccine-and-where-pandemic-will-hurt-most  
   
- *   
+ *   https://www.cnbc.com/2020/04/08/bill-gates-how-long-it-may-take-before-americans-are-safe-from-coronavirus.html  
+ 
  
 --- end ---   
