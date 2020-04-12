@@ -12,6 +12,6 @@ Edit# Tasks for datasciY.com portfo
   * Read VanderPlas chp 5.  
   
   #### 3) DLAI - May 2020
-
+   * finish all of class 3.  
 
 --- end ---  
