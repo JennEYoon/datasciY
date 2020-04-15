@@ -15,7 +15,9 @@ Edit# Tasks for datasciY.com portfo
    * finish all of class 3.  
 
 ### 4) Personal Projects - datasciY.com  
- * 
+ * Start reading some Python books to get back into the mood.  
+ * Work on Titanic project to start small.  
+ * Answer StackOverflow questions to get recent practice.  
 
 ### 5) SciPy 2020 -- refund requested, $25 virtual conference for students.  
  * reply emailed 4/15/2020.  
