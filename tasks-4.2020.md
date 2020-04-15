@@ -18,6 +18,8 @@ Edit# Tasks for datasciY.com portfo
  * Start reading some Python books to get back into the mood.  
  * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
+   - SO up to 570 points now.  Two more upvotes this year, one -2 downvote.  
+   - SO has new questions being posted even during Coronavirus.  
 
 ### 5) SciPy 2020 -- refund requested, $25 virtual conference for students.  
  * reply emailed 4/15/2020.  
