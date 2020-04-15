@@ -11,9 +11,11 @@ Edit# Tasks for datasciY.com portfo
   * Read book, Chollet.  
   * Read VanderPlas chp 5.  
   
-### 3) DLAI - May 2020
+### 3) DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
 
+### 4) Personal Projects - datasciY.com  
+ * 
 
 ### 5) SciPy 2020 -- refund requested, $25 virtual conference for students.  
  * reply emailed 4/15/2020.  
