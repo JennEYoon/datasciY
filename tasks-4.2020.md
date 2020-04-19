@@ -13,6 +13,7 @@ Edit# Tasks for datasciY.com portfo
   
 ### 3) DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
+   * watch class 3 first, get back in the mood. 
 
 ### 4) Personal Projects - datasciY.com  
  * Start reading some Python books to get back into the mood.  
