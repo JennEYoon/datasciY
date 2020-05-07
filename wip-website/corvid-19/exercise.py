@@ -34,6 +34,6 @@ def game_init(input1, input2, result):
   #inits
   ...  
 
-def ShipCreator():  
+def ShipCreator(self, arg1, arg2, *kwarg):  
   # self 
 
