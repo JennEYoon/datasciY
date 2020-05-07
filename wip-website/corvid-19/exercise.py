@@ -31,6 +31,9 @@ SHIPS = 3
 ROCKS = 20 
 
 def game_init(input1, input2, result):  
+  """ 
+  integrated docstring with test cases, examples 
+  """
   #inits
   ...  
   return pass
