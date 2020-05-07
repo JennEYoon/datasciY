@@ -19,3 +19,8 @@ import seaborn as sns
 import myfunc  
 import myutils  
 
+%matplotlib notebook # or inline 
+
+###
+# Beginning of program 
+###
