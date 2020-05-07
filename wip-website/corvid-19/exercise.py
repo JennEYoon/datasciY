@@ -33,6 +33,7 @@ ROCKS = 20
 def game_init(input1, input2, result):  
   #inits
   ...  
+  return pass
 
 def ShipCreator(self, arg1, arg2, *kwarg):  
   # self 
