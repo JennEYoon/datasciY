@@ -45,4 +45,5 @@ def ShipCreator(self, arg1, arg2, *kwarg):
 def helper_function();  
   # defines interactive game elements.  
   ... 
-  
+  return pass  
+
