@@ -14,6 +14,7 @@ Edit# Tasks for datasciY.com portfo
 ### 3) DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
    * watch class 3 first, get back in the mood. 
+   * started watching class 5 Sequence models NLP - May 7 updte.  
 
 ### 4) Personal Projects - datasciY.com  
  * Start reading some Python books to get back into the mood.  
