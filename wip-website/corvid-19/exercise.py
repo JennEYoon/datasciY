@@ -32,5 +32,6 @@ ROCKS = 20
 
 def game_init(input1, input2, result):  
   #inits
+  ...  
   
 
