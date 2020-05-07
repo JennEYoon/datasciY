@@ -1,5 +1,8 @@
+"""
 # My python github short exercise.  
 # Date:  May 7, 2020  
+# Jennifer Yoon  
+"""
 
 # Imports: standard, third party, my custom, in alphabetical order.  
 
