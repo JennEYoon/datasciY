@@ -24,3 +24,13 @@ import myutils
 ###
 # Beginning of program 
 ###
+
+# Global Constants in all caps  
+GAME = 10 
+SHIPS = 3 
+ROCKS = 20 
+
+def game_init(input1, input2, result):  
+  #inits
+  
+
