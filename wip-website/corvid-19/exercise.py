@@ -42,3 +42,6 @@ def ShipCreator(self, arg1, arg2, *kwarg):
   # self 
   ... 
   
+def helper_function();  
+  # defines interactive game elements.  
+  
