@@ -32,5 +32,7 @@ Edit# Tasks for datasciY.com portfo
 
 ### June 2020 tasks, May 23, 2020.  
 
-Start working on some short items to post on my blog, projects.  
-Reproduce some covid-19 charts as a starter.  
+  * Start working on some short items to post on my blog, projects.  
+  * Reproduce some covid-19 charts as a starter.  
+  * Install Zoom - practice using it for video calls.  
+  
