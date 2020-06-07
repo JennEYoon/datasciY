@@ -15,5 +15,8 @@ https://www.scipy2020.scipy.org/schedule
 Enthought, Prvious SciPy Conferences, Youtube:  
 
 2019 SciPy:  
-https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC  
+https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC   
 
+
+2018 SciPy:  
+https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR  
