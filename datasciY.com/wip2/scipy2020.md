@@ -4,6 +4,7 @@ Dates: July 6 - 10 wkth Sprints July 11 & 12, 2020.
 
 Tutorials: Materials not up yet.  
 https://www.scipy2020.scipy.org/tutorials  
+https://www.scipy2020.scipy.org/tutorial-information
 
 Youtube Tutorials:  
 
@@ -12,7 +13,7 @@ Schedule Main:
 https://www.scipy2020.scipy.org/schedule  
 
 
-Enthought, Prvious SciPy Conferences, Youtube:  
+Enthought, Previous SciPy Conferences, Youtube:  
 
 2019 SciPy:  
 https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC   
