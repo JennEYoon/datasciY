@@ -11,3 +11,9 @@ Youtube Tutorials:
 Schedule Main:  
 https://www.scipy2020.scipy.org/schedule  
 
+
+Enthought, Prvious SciPy Conferences, Youtube:  
+
+2019 SciPy:  
+https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC  
+
