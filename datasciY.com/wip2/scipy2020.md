@@ -20,3 +20,9 @@ https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC
 
 2018 SciPy:  
 https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR  
+
+
+2019 SciPy Japan:  
+https://www.youtube.com/playlist?list=PLYx7XA2nY5Geu7wUH_6RhQM1KJkAxZllc  
+
+
