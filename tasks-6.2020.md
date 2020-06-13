@@ -1,4 +1,4 @@
-Edit# Tasks for datasciY.com portfolio  
+# My Tasks for datasciY.com portfolio and general coding  
 
 ### 1) SciPy 2020 - $25 virtual conference for students.  
  * Set up a working environment and time for the week.  
