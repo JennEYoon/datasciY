@@ -37,6 +37,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * articles (folder) -- in-depth write ups (supporting folder)
    * projects (folder) -- programming projects (supporting folder)
    * blog (folder) -- short posts, news and thoughts (supporting folder)  
+   * wip2 -- temporary folder, saved links and snippets while writing posts    
 .  
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
