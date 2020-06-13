@@ -2,6 +2,10 @@
 
 #### Author: Jennifer E Yoon  
 
+To view HTML files directly from Github, prepend the following text to your URL in the address cell:  
+  https://htmlpreview.github.io/? 
+  e.g.:
+
 #### Description  
 
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
