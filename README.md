@@ -1,8 +1,10 @@
-## Repository for my coding portfolio website, datasciY.com.  
+# Repository for my coding portfolio, datasciY.com.  
 
 >To view HTML files directly from Github, prepend the following text to your URL in the address cell:  
 >  - https://htmlpreview.github.io/?   
 >  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
+
+---   
 
 #### Author: Jennifer E Yoon  
 
@@ -44,6 +46,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 . 
 #### History  
 
+ * Added random.html page for off-topic blogs - June 13, 2020.  
  * Working on personal projects to post on datasciY.com during February to May 2020  
  * Github Repo created on July 2019
  * Website hosted on AWS during 2018 and 2019
