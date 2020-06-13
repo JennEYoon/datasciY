@@ -4,7 +4,6 @@
 >  - https://htmlpreview.github.io/?   
 >  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
 
----   
 
 #### Author: Jennifer E Yoon  
 
@@ -12,7 +11,8 @@
 
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
 
->Plan: Add dynamic elements in Javascript. Add MySQL database link.  
+>Plan: Add dynamic elements in Javascript. 
+>      Add Amazon MySQL or Python SQLite database links.  
 
 #### Tags  
   
@@ -38,7 +38,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * projects (folder) -- programming projects (supporting folder)
    * blog (folder) -- short posts, news and thoughts (supporting folder)  
    * wip2 -- temporary folder, saved links and snippets while writing posts    
-.  
+   /-/-/-  
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
    * udacity-github -- notes and articles on using Github, best practices.  
