@@ -13,6 +13,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 >Plan: Add dynamic elements in Javascript.   
 >      Add Amazon MySQL or Python SQLite database links.  
+>      Add Excel-VBA and Access-VBA linkages to Python code with datasets.  
 
 #### Tags  
   
