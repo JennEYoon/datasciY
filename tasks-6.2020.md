@@ -23,8 +23,7 @@ Edit# Tasks for datasciY.com portfo
    - SO up to 570 points now.  Two more upvotes this year, one -2 downvote.  
    - SO has new questions being posted even during Coronavirus.  
 
-### 5) SciPy 2020 -- refund requested, $25 virtual conference for students.  
- * reply emailed 4/15/2020.  
+### 5) SciPy 2020 - $25 virtual conference for students.  
  * Set up a working environment and time for the week.  
  * Contemporaneous update on videos, Zoom conference.  
  
@@ -36,3 +35,10 @@ Edit# Tasks for datasciY.com portfo
   * Reproduce some covid-19 charts as a starter.  
   * Install Zoom - practice using it for video calls.  
   
+### June 13, 2020 doing   
+
+  * ngram post to DatasciY.com, 
+  * Good Habits, Bad Habits book reading. 
+  * Fluent Python book reading.  
+    Very low level concept takes a long time to sink in.  
+    Need to understand enough of language structures to mentally group items together.  Need to be able to group like items together to aid in memory.  Motivation also helps remember.  When I need to remember code words and syntax to use on the job soon, gives me more motivation to remember.  
