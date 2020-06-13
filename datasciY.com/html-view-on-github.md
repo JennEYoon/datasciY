@@ -4,3 +4,20 @@
 >  - https://htmlpreview.github.io/?   
 >  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
 
+About:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
+
+Projects:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/projects.html   
+
+Articles:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/articles.html   
+
+Blog:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/blog.html   
+
+Random:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/random.html   
+
+Template:  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/template.html   
