@@ -8,3 +8,5 @@
 Static notebooks that preserves User Interactive functions.  
 Part of DataSciY.com - Projects.  
 
+Moved from Ubuntu/~/work/hosting/notebooks/  
+Moved from earlied c:/python/work/
