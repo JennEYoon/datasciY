@@ -8,6 +8,9 @@ Can "Download as Notebook" to save locally by user. Then upload back to Github i
 Open **example.ipynb**  
 https://mybinder.org/v2/gh/JennEYoon/notebooks/master?filepath=example.ipynb  
 
+File moved >> Try 
+https://mybinder.org/v2/gh/JennEYoon/datasciY/master?filepath=example2.ipynb
+
 ### Date: Dec 28, 2019  
 
 ### Date: June 7, 2020 -- moved local repo to Ubuntu/work path.  
