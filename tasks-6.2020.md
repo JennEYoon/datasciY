@@ -66,3 +66,9 @@ Working Log:
   * Fluent Python book reading.  
     Very low level concept takes a long time to sink in.  
     Need to understand enough of language structures to mentally group items together.  Need to be able to group like items together to aid in memory.  Motivation also helps remember.  When I need to remember code words and syntax to use on the job soon, gives me more motivation to remember.  
+
+### MyBinder/notebooks moved, 6/14/2020 1:30 AM   
+   Keep on Github "notebooks-old" repo.  Converted to Private.  
+   If whole repo is deleted, will also remove commit history counts.  
+   Unless I can figure out how to "merge commit history", don't touch.  
+   
