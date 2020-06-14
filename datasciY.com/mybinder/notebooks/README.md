@@ -13,4 +13,5 @@ https://mybinder.org/v2/gh/JennEYoon/datasciY/master?filepath=example2.ipynb
 
 ### Date: Dec 28, 2019  
 
-### Date: June 7, 2020 -- moved local repo to Ubuntu/work path.  
+### Date: June 7, 2020, moved to datasciY.com repo. 
+Need to retest using MyBinder notebooks at new location.  
