@@ -1,5 +1,10 @@
 # MyBinder.org - Put hosted notebooks here  
 
-Static notebooks that preserves User Interactive functions.  
+### Author: Jennifer E. Yoon
 
-June 14, 2020 
+### Date:  June 14, 2020 
+
+### Purpose:  Hosting Jupyter Notebooks  
+Static notebooks that preserves User Interactive functions.  
+Part of DataSciY.com - Projects.  
+
