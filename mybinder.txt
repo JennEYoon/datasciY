@@ -1,0 +1,21 @@
+datasciY repo on Github:  
+
+Link MyBinder.org
+https://mybinder.org/v2/gh/JennEYoon/datasciY/main  
+
+Image built - MyBinder.org
+https://hub.gke.mybinder.org/user/jenneyoon-datasciy-ge5fgdge/tree 
+
+Markdown w badge
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JennEYoon/datasciY/main)
+
+HTML w badge 
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/JennEYoon/datasciY/main
+
+built notebook root
+https://hub.gke.mybinder.org/user/jenneyoon-datasciy-4ahiepej/tree
+
+example notebook
+https://hub.gke.mybinder.org/user/jenneyoon-datasciy-4ahiepej/notebooks/datasciY.com/mybinder/notebooks/example.ipynb
+
