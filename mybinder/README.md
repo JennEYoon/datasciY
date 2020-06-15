@@ -3,6 +3,8 @@
 
 #### Rebuilt Image main branch  - June 15, 2020 7:06 PM EST
 
+***Fails, host down.  Try later, but still not reliable***
+
 Root - Mybinder Image
 https://hub.gke.mybinder.org/user/jenneyoon-datasciy-pf0p204u/tree
 
