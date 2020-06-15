@@ -12,6 +12,8 @@ Badge on Markdown:
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/JennEYoon/datasciY/main?filepath=example_rt.ipynb
 
+Running links are specific to each launch instance.  Once host shuts down, no longer works.  
+
 Running link example:  
 https://notebooks.gesis.org/binder/jupyter/user/jenneyoon-datasciy-adi64mah/notebooks/example_rt.ipynb  
 
