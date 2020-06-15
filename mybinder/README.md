@@ -1,5 +1,16 @@
 # Repo for testing MyBinder.org hosting of Jupyter notebook, interactive mode.  
 
+### Rebuilt again, June 15, 2020 7:34 PM  
+
+Link sharing:  
+https://mybinder.org/v2/gh/JennEYoon/datasciY/main?filepath=example_rt.ipynb  
+
+Badge on Markdown:  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JennEYoon/datasciY/main?filepath=example_rt.ipynb) 
+
+.rst for html style?:  
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/JennEYoon/datasciY/main?filepath=example_rt.ipynb
 
 #### Rebuilt Image main branch  - June 15, 2020 7:06 PM EST
 
