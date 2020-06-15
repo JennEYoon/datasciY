@@ -8,5 +8,6 @@
 Static notebooks that preserves User Interactive functions.  
 Part of datasciY.com - Projects.  
 
-Moved from Ubuntu side:  ~/work/hosting/notebooks/    
-Moved earlier from:  c:/python/work/  or  c:/python/github/  
+Independent copy. Use to host datasciY project notebooks via MyBinder.org 
+Need "environmnet.yml" file at root of repo.  
+June 15, 2020.  
