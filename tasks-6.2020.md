@@ -72,3 +72,10 @@ Working Log:
    If whole repo is deleted, will also remove commit history counts.  
    Unless I can figure out how to "merge commit history", don't touch.  
    
+### June 15, 2020 WIP MyBinder.org image for datasciY.com  
+  * MyBinder needs Github repo to work, not just any public URL.  
+  * Keep getting 503 Error, host down.  
+  * Moved all items to root of **datasciY repo** .
+  
+  
+ --- end ---    
