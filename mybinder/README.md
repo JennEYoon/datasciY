@@ -12,6 +12,14 @@ Badge on Markdown:
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/JennEYoon/datasciY/main?filepath=example_rt.ipynb
 
+Running link example:  
+https://notebooks.gesis.org/binder/jupyter/user/jenneyoon-datasciy-adi64mah/notebooks/example_rt.ipynb  
+
+Running link root:  
+https://notebooks.gesis.org/binder/jupyter/user/jenneyoon-datasciy-adi64mah/tree  
+
+---  
+
 #### Rebuilt Image main branch  - June 15, 2020 7:06 PM EST
 
 ***Fails, host down.  Try later, but still not reliable***
