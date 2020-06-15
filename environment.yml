@@ -1,4 +1,6 @@
-# Anaconda environmnet for datasciY notebooks hosting via MyBinder.orge (Linux build).    
+# Anaconda environmnet for datasciY notebooks hosting via MyBinder.orge 
+# Need to be at root level of Github repo 
+# 
 name: datasciy-env
 # "conda env export > environment.yml" to save existing environment to file 
 dependencies:
