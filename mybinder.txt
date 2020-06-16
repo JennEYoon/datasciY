@@ -1,5 +1,13 @@
 datasciY repo on Github:  
 
+Rebuilt Image main branch  
+
+https://hub.gke.mybinder.org/user/jenneyoon-datasciy-pf0p204u/tree
+
+Example notebook at ./mybinder/example.ipynb
+https://hub.gke.mybinder.org/user/jenneyoon-datasciy-pf0p204u/notebooks/mybinder/example.ipynb
+
+
 Link MyBinder.org
 https://mybinder.org/v2/gh/JennEYoon/datasciY/main  
 
