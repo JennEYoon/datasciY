@@ -1,0 +1,3 @@
+# Google CoLab for running Jupyter notebooks.  
+Also terminal session.  
+June 16, 2020 
