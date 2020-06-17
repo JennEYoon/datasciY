@@ -3,4 +3,4 @@
 Extremely cumbersome to use on iPad.  
 View only useful, but can view on Github as well.  
 
-Need at least control key to use markdown, code switch.  
+Need at least control key to switch between markdown and code type.   
