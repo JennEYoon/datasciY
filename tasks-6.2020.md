@@ -32,12 +32,12 @@
  * Answer StackOverflow questions to get recent practice.  
    - SO up to 570 points now.  Two more upvotes this year, one -2 downvote.  
    - SO has new questions being posted even during Coronavirus.  
-
-### 6) Corvid-19 infections spread map 
- * Reproducce Johns Hopkins interactive map  
- * Add transport hubs connections info.  
- * Population size, and age over 65 category.  
- * A data networks company is also looking at mapping social networks of corvid-19 spread.  
+   \-  
+ * Corvid-19 infections spread map 
+   - Reproducce Johns Hopkins interactive map  
+   - Add transport hubs connections info.  
+   - Population size, and age over 65 category.  
+   - A data networks company is also looking at mapping social networks of corvid-19 spread.  
  
 ---  
 
