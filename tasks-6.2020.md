@@ -9,7 +9,7 @@
  * Do numpy tutorial, good overall review.  
  * Also watch Juan Scipy Japan, read parts of book.  
  
-### 2) Coursera.org Dr. Ng - DLAI - to finish this year.   
+### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
  * Finish clas 4 and 5 in June.  
  * July post conference, sign up on Coursera & get certificate.  
