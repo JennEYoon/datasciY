@@ -1,8 +1,9 @@
 # Anaconda environmnet for datasciY notebooks hosting via MyBinder.orge 
 # Need to be at root level of Github repo 
+# "conda env export > environment.yml" to save existing environment to file 
+# "conda info --envs"  to list all environments and get python version info  
 # 
 name: dsy-env
-# "conda env export > environment.yml" to save existing environment to file 
 dependencies:
 - python=3.8
 - numpy
