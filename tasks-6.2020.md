@@ -38,6 +38,10 @@
    - Add transport hubs connections info.  
    - Population size, and age over 65 category.  
    - A data networks company is also looking at mapping social networks of corvid-19 spread.  
+   \-  
+  * website - add side-nav bar to Projects, Blog, Articles  
+    - mobile version has side-nav on top, below main nav area.  
+
  
 ---  
 
