@@ -1,4 +1,4 @@
-# My Tasks for datasciY.com portfolio and general coding  
+# Tasks datasciY.com portfolio and general coding      
 
 ## Plan as of June 2020:  
 
@@ -43,24 +43,24 @@
 
 ## Working Log 2020:   
 
-### DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
+#### DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
   * finish classes 1 to 4, then 5 sequence models.    
   * Some notebooks - redo from scratch  
   * Read book, Chollet.  
   * Read VanderPlas chp 5.  
   
-### DLAI - May 4, 2020 Monday 7pm  
+#### DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
    * watch class 3 first, get back in the mood. 
    * started watching class 5 Sequence models NLP - May 7 updte.  
 
-### June 2020 tasks, May 23, 2020.  
+#### May 23, 2020 tasks update
 
   * Start working on some short items to post on my blog, projects.  
   * Reproduce some covid-19 charts as a starter.  
   * Install Zoom - practice using it for video calls.  
   
-### June 13, 2020 doing   
+#### June 13, 2020 doing   
 
   * ngram post to DatasciY.com, 
   * Good Habits, Bad Habits book reading. 
@@ -68,12 +68,12 @@
     Very low level concept takes a long time to sink in.  
     Need to understand enough of language structures to mentally group items together.  Need to be able to group like items together to aid in memory.  Motivation also helps remember.  When I need to remember code words and syntax to use on the job soon, gives me more motivation to remember.  
 
-### MyBinder/notebooks moved, 6/14/2020 1:30 AM   
+#### MyBinder/notebooks moved, 6/14/2020 1:30 AM   
    Keep on Github "notebooks-old" repo.  Converted to Private.  
    If whole repo is deleted, will also remove commit history counts.  
    Unless I can figure out how to "merge commit history", don't touch.  
    
-### June 15, 2020 WIP MyBinder.org image for datasciY.com  
+#### June 15, 2020 WIP MyBinder.org image for datasciY.com  
   * MyBinder needs Github repo to work, not just any public URL.  
   * Keep getting 503 Error, host down.  
   * Moved all items to root of **datasciY repo** .
@@ -89,7 +89,5 @@
   * car - finish registering soon. 
   * money - call KPMG Pension to move out money soon.  
   
-  
-
 
 --- end ---    
