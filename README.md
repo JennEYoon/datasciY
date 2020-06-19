@@ -66,7 +66,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    
 ### History  
  * Add folder for Tableau project - June 2020
- * Add folders for Javascript and Jquery project - June 2020 
+ * Add folder for Javascript and Jquery project - June 2020 
  * Add folder for MySQL project - June 2020  
  * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
  * Add general.html page for broader topics - June 13-15, 2020  
