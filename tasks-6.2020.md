@@ -1,5 +1,7 @@
 # My Tasks for datasciY.com portfolio and general coding  
 
+## Plan as of June 2020:  
+
 ### 1) SciPy 2020 - $25 virtual conference for students.  
  * Set up a working environment and time for the week.  
  * Contemporaneous update on videos, Zoom conference.
@@ -24,31 +26,30 @@
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
 
-### 5) Personal Projects - datasciY.com  
+### 5) Other Projects  
  * Start reading some Python books to get back into the mood.  
  * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
    - SO up to 570 points now.  Two more upvotes this year, one -2 downvote.  
    - SO has new questions being posted even during Coronavirus.  
 
- ### 6) Corvid-19 infections spread map 
+### 6) Corvid-19 infections spread map 
  * Reproducce Johns Hopkins interactive map  
  * Add transport hubs connections info.  
  * Population size, and age over 65 category.  
  * A data networks company is also looking at mapping social networks of corvid-19 spread.  
  
- 
---- end ---  
+---  
 
-Working Log:  
+## Working Log 2020:   
 
-### 2) DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
+### DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
   * finish classes 1 to 4, then 5 sequence models.    
   * Some notebooks - redo from scratch  
   * Read book, Chollet.  
   * Read VanderPlas chp 5.  
   
-### 3) DLAI - May 4, 2020 Monday 7pm  
+### DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
    * watch class 3 first, get back in the mood. 
    * started watching class 5 Sequence models NLP - May 7 updte.  
@@ -77,5 +78,18 @@ Working Log:
   * Keep getting 503 Error, host down.  
   * Moved all items to root of **datasciY repo** .
   
+#### June 19, 2020 WIP:  
+  * working on FluentPy frenchdeck, class creation, examples.  
+  * start researching MySQL use with Python  
+  * start researching JavaScript and jQuery for datasciY.com demos.  
+  * watching DLAI classes 3, 4, and 5. meetup small group at class 4 wk 2 (maybe 1 repeat) for July.  
+  * prep for SciPy 2020 virtual in few weeks.  
+  ---  
+  * Definitely need to file taxes for 2017, 2018, 2019 - get stimulus money!!!  
+  * car - finish registering soon. 
+  * money - call KPMG Pension to move out money soon.  
   
- --- end ---    
+  
+
+
+--- end ---    
