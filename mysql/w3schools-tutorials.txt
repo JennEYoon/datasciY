@@ -1,0 +1,10 @@
+W3 Schools has tutorials on Python MySQL. 
+
+https://www.w3schools.com/python/python_mysql_getstarted.asp
+
+Also tutorials on basic Python 
+https://www.w3schools.com/python/default.asp
+
+And JavScript/JQuery
+https://www.w3schools.com/jquery/default.asp  
+https://www.w3schools.com/js/default.asp
