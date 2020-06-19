@@ -1,4 +1,4 @@
-# Repository for my coding portfolio, datasciY.com.  
+# Repository for my data science coding portfolio, datasciY.com.  
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
@@ -11,6 +11,8 @@
 #### To Open In MyBinder - a copy of executable Jupyter Hub image:  
 >
 >
+
+---   
 
 #### Author: Jennifer E Yoon  
 
@@ -55,8 +57,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * Matplotlib-Github-Test -- temporary working folder  
 . 
 #### History  
-
- * Added random.html page for off-topic blogs - June 13, 2020.  
+ * Add folder for Tableau project - June 2020
+ * Add folders for Javascript and Jquery project - June 2020 
+ * Add folder for MySQL project - June 2020  
+ * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
+ * Add general.html page for broader topics - June 13-15, 2020  
  * Working on personal projects to post on datasciY.com during February to May 2020  
  * Github Repo created on July 2019
  * Website hosted on AWS during 2018 and 2019
