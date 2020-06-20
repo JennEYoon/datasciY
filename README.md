@@ -1,4 +1,4 @@
-## Repository for my data science & coding portfolio, http://datasciY.com  
+## Repository for my data science & Python coding portfolio, http://datasciY.com  
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
