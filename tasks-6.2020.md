@@ -42,6 +42,44 @@
   * website - add side-nav bar to Projects, Blog, Articles  
     - mobile version has side-nav on top, below main nav area.  
 
+---  
+
+## Goals Met as of June 2020:  
+
+#### Tools & Envs:  
+  * Bash-Ubuntu: 
+    - I am reasonably comfortable now with bash directory commands. 
+    - Alias, adding scripts to .bashrc. startt file
+    - using nano and cat with text files
+  * miniconda and pip installers:  
+    - I am comfortable now working with conda envs, creating, exporting, installing pkgs, pip, updating, activating.  Use of env.yml file to build env image.  Hosting on GitHub, MyBinder, CoLab using env.yml file.   
+  * Git and GitHub:  
+    - Finally somewhat comfortable with rebase, reset HEAD, edit history, remote force push, git clone, git add remote, and git merge feature branch. 
+  * Got working hosted Jupyter notebooks/Hub via Google CoLab and MyBinder.org  
+  * GitHub commit graph 
+    - Got solid filled 1-year history, 3 weeks to go. 
+    - Over 3000 commits in past year. 
+  * SO got over 500 pts in 2019.  
+    - To get another 500 points in 2020.  
+
+#### Python & ML:  
+  * Finally seem to have a firm fix on class obj.  
+    - what is class-wide constant
+    - what is initialized with each instance, private constants, variabes
+    - WHen to use () to call function, create class object.  
+    - Format for passing variables to class instance, updating class instance variable. 
+    - Inherit from base class to sub class.  Use () in class creation.  
+    - Call class() to create instance of class object.  
+  * Reasonably good with Numpy, Matplotlib.pyplot 
+    - could use more recent practice  
+  * Familiar with Pandas
+  * Started on sk-learn 
+  * Started on tensorflow v 2. 
+  * Reasonably good understanding of Machine Learning, before deep-learning.  
+  * Medium level on Deep-Learning, Coursera.org halfway.  
+  * Started learning about Python-MySQL-Connector, already know SQL language.  
+  * Got SO practice on usign Excel with Python, manipulating objects from python module.  
+
  
 ---  
 
