@@ -8,7 +8,7 @@ Author:  Jennifer E. Yoon
 
   * w3schools - tutorials: https://www.w3schools.com/js/js_jquery_selectors.asp  
 
-
+  * Head First Java Script Programming (newer version)
 
   
 
