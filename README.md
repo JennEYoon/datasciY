@@ -5,12 +5,12 @@
 >  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
 
 #### To Open In Google CoLab - a copy of executable Jupyter notebook:  
->  add link
 >  add link  
+>  add link    
 
 #### To Open In MyBinder - a copy of executable Jupyter Hub image:  
->  add link
->  add link 
+>  add link  
+>  add link   
 
 ---   
 
