@@ -2,7 +2,8 @@
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
->  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
+>  - e.g.: to vie example_rt.html file on this repo:
+     https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
 
 #### To Open In Google CoLab - a copy of executable Jupyter notebook:  
 >  add link  
