@@ -1,20 +1,5 @@
 ## Repository for my data science & Python coding portfolio, http://datasciY.com  
 
-#### To view HTML files directly from Github, prepend the following text to your browser's URL:  
->  - https://htmlpreview.github.io/?   
->  - e.g.: to view **example_rt.html** file on this repo:  
->    https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html
-
-#### To Open In Google CoLab - a copy of executable Jupyter notebook:  
->  add link  
->  add link    
-
-#### To Open In MyBinder - a copy of executable Jupyter Hub image:  
->  add link  
->  add link   
-
----   
-
 ### Author: Jennifer E Yoon  
 
 ### Description  
@@ -35,7 +20,20 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  
  * ***Other Software, Services and Tools:*** Excel and Pywin32, VBA, SQL (MySQL and Postgres), R (statistics), Tableau, Unix-Bash, VS Code, Google CoLab, Binder, AWS Lambda & EC2
 
----  
+#### To view HTML files directly from Github, prepend the following text to your browser's URL:  
+>  - https://htmlpreview.github.io/?   
+>  - e.g.: to view **example_rt.html** file on this repo:  
+>    https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html
+
+#### To Open In Google CoLab - a copy of executable Jupyter notebook:  
+>  add link  
+>  add link    
+
+#### To Open In MyBinder - a copy of executable Jupyter Hub image:  
+>  add link  
+>  add link   
+
+---   
 
 ### Folder Structure  
 
@@ -43,10 +41,12 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * root level:
      - dsy.css -- My handcoded stylesheet, uses CSS3 format, the latest standard.
      - purpleimg.jpg -- Header image used in HTML files.
-     - about.html -- Profile
+     - about.html -- Profile  
+     - articles.html -- long-form articles  
+     - blog.html -- short, quick updates  
+     - general.html -- posts on general topics
      - projects.html -- coding projects and short coding exercises 
-     - articles.html -- long-form articles
-     - blog.html -- short, quick updates 
+
    * assets (folder) -- image and pdf files called at root level by src command.
    * articles (folder) -- in-depth write ups (supporting folder)
    * projects (folder) -- programming projects (supporting folder)
@@ -67,8 +67,10 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    
  * jsq (folder) -- practice JavaScript and jQuery    
    
+   
 ### History  
 
+ * Add jsq folder and javascript exercises - June 20-23, 2020.  
  * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
  * Add general.html page for broader topics - June 13-15, 2020  
  * Working on personal projects to post on datasciY.com during February to May 2020  
