@@ -65,6 +65,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
    Links to published files on datasciY.com that are executable by user on MyBinder.org image build. (Note: Takes a long time to build, about 10 minutes.)
    
+ * jsq (folder) -- practice JavaScript and jQuery    
    
 ### History  
 
