@@ -20,3 +20,4 @@ Author:  Jennifer E. Yoon
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html  
 
   * Chp1 Ex1 HTML-View:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/jsq/chp1a.html
+  * Try Relative Link:  https://htmlpreview.github.io/?chp1a.html
