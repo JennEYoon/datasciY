@@ -65,6 +65,7 @@
   * VS Code editor -- how to select python engine, format code, indent, tab/html edit, run on selected python terminal, run on ipython interface, view markdown, view jupyter notebook, export as jupyter notebook, etc.  
   * Jupyter Notebook -- how to use, markdown edit, select cells, run connected python module, refresh imported module  
   * Python package management, installing, importing, updating, reload, run, %run automatically re-run, Ubuntu and Win versions  
+ * Basic webdev, html, css, frameworks, css grid, hosting on Amazon, email redirect.  
 
 #### Python & ML:  
   * Finally seem to have a firm fix on class obj.  
@@ -135,7 +136,9 @@
   * Definitely need to file taxes for 2017, 2018, 2019 - get stimulus money!!!  
   * car - finish registering soon. 
   * money - call KPMG Pension to move out money soon.  
-  
+  * todo: email "jyoon@datasciy.com"  "mail@datasciy.com"  
+    Namecheap get URL for email redirect, add to AWS host.  
+    Later: print new business cards, make sure ink doesn't fade.  
   
 
 --- end ---    
