@@ -65,7 +65,7 @@
   * VS Code editor -- how to select python engine, format code, indent, tab/html edit, run on selected python terminal, run on ipython interface, view markdown, view jupyter notebook, export as jupyter notebook, etc.  
   * Jupyter Notebook -- how to use, markdown edit, select cells, run connected python module, refresh imported module  
   * Python package management, installing, importing, updating, reload, run, %run automatically re-run, Ubuntu and Win versions  
- * Basic webdev, html, css, frameworks, css grid, hosting on Amazon, email redirect. 2017 first half year. 
+ * Basic webdev, html, css, frameworks, css grid, hosting on Amazon, email redirect for jyoon@10sigmarisk.com  - 2017 first half year. 
 
 #### Python & ML:  
   * Finally seem to have a firm fix on class obj.  
