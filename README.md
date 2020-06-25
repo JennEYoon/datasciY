@@ -7,10 +7,9 @@
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
 
 >Plan:  Add demos of MySQL and Python SQL-connector databases.  
->       Add dynamic elements in JQuery and Javascript.  
+>       Add dynamic elements in Javascript and/or jQuery.  
 >       - (w3school, Head First JavaScript)  
->       Add demos of Excel-VBA and Python use cases.   
->       Read Build-A-Career in DS   
+
 
 ### Tags  
   
@@ -18,7 +17,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
  * ***Python Libraries:*** Python standard library, Jupyter Notebook, NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, Keras, Plotly, Dash, Bokeh 
  
- * ***Other Software, Services and Tools:*** Excel and Pywin32, VBA, SQL (MySQL and Postgres), R (statistics), Tableau, Unix-Bash, VS Code, Google CoLab, Binder, AWS Lambda & EC2
+ * ***Other Software, Services and Tools:*** Excel, VBA, SQL (MySQL and SQLite), R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google CoLab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53)
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
@@ -66,13 +65,18 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    Links to published files on datasciY.com that are executable by user on MyBinder.org image build. (Note: Takes a long time to build, about 10 minutes.)
    
  * jsq (folder) -- practice JavaScript and jQuery    
+
+ * Note: ngram data files (in general.html post) stored localled in:   
+   C:/python/repos/large-files/   
+   - Files too big to upload to GitHub.  
    
-   
+
 ### History  
 
  * Add jsq folder and javascript exercises - June 20-23, 2020.  
  * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
- * Add general.html page for broader topics - June 13-15, 2020  
+ * Add general.html page for broader topics - June 13-15, 2020 
+   ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
  * Working on personal projects to post on datasciY.com during February to May 2020  
  * Github Repo created on July 2019
  * Website hosted on AWS during 2018 and 2019
