@@ -133,6 +133,8 @@
   * watching DLAI classes 3, 4, and 5. meetup small group at class 4 wk 2 (maybe 1 repeat) for July.  
   * prep for SciPy 2020 virtual in few weeks.  
   * 6/20/2020 - changed Github profile photo to recent, good job with cropp background and blur edge.  Used Paint and watercolor brush to blur, color picker.  
+  * 6/23-35, 2020 -- Change Github default  branch name from "master" to "main."  
+    (Finished datasciY, SECdataPy, deep-learning, learn-mldl, git-practice)
   ---  
   * Definitely need to file taxes for 2017, 2018, 2019 - get stimulus money!!!  
   * car - finish registering soon. 
