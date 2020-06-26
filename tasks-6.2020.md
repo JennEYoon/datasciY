@@ -11,7 +11,7 @@
  
 ### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
- * Finish clas 4 and 5 in June.  
+ * Finish clas 4 and 5 in July, edited.  
  * July post conference, sign up on Coursera & get certificate.  
 
 ### 3) Deep Learning w Python book 
@@ -41,6 +41,7 @@
    \-  
   * website - add side-nav bar to Projects, Blog, Articles  
     - mobile version has side-nav on top, below main nav area.  
+    - practice javascript Head First Javascript book started reading.  
 
 ---  
 
