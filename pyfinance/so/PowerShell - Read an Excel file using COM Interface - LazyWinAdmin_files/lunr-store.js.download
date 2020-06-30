@@ -1,0 +1,1141 @@
+var store = [{
+        "title": "How to Document Servers with SYDI",
+        "excerpt":"Having written SYDI from scratch, I know it inside and out. The readme file included in SYDI is far from perfect. While people in this line of business can usually figure out how it works, others will just ignore reading the manual anyway. In this how-to I will go through...","categories": [],
+        "tags": ["documentation","inventory","sydi","vbscript"],
+        "url": "https://lazywinadmin.github.io/2010/12/how-to-document-servers-with-sydi_23.html",
+        "teaser":null},{
+        "title": "Simple RAID Cheat Sheet",
+        "excerpt":"Note for self, here is a table of the different RAID Available.                  Level       Redundancy       Disk Required       Faster Reads       Faster Writes                       RAID 0       No       N       Yes       Yes                 RAID 1       Yes       2       Yes       No                 RAID 5       Yes       N+1       Yes       No                 RAID 10       Yes       N*2       Yes       Yes                 JBOD       No       N/A       No       No          ","categories": [],
+        "tags": ["cheat sheet","raid"],
+        "url": "https://lazywinadmin.github.io/2010/02/simple-raid-cheat-sheet.html",
+        "teaser":null},{
+        "title": "Powershell - Get-ClipBoard Set-Clipboard",
+        "excerpt":"I recently built GUI tool that needed to gather the content of the clipboard and set a new value. Here is the code I ended up using :) function Get-ClipBoard { &lt;# .SYNOPSIS Retrieve the content of the clipboard #&gt; [CmdletBinding()] PARAM() try{ Add-Type -AssemblyName System.Windows.Forms $TextBox = New-Object -TypeName...","categories": ["powershell"],
+        "tags": ["powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/06/powershell-get-clipboard-set-clipboard.html",
+        "teaser":null},{
+        "title": "Move a Computer Object to another Organizational Unit (OU) using DSMove",
+        "excerpt":"I’m currently configuring HP Rapid Deployment Pack (RDP) and needed a way to automatically move a Computer object in a specific Organizational Unit(OU). My logic is based on the Server name itself. As an example we use the following naming convention: Server Name: MTL1ASTT01 MTL is the city name 1...","categories": ["powershell"],
+        "tags": ["active directory","scripting","vbscript"],
+        "url": "https://lazywinadmin.github.io/2010/12/how-to-find-computer-serial-number.html",
+        "teaser":null},{
+        "title": "Powershell - How to use a config file (ini, conf,...) with a Powershell Script ?",
+        "excerpt":"I was recently looking for a way to load a txt file configuration with PowerShell and came up with the following solution: Here is an example of configuration stored in a file called Settings.txt SETTINGS.TXT #from http://tlingenf.spaces.live.com/blog/cns!B1B09F516B5BAEBF!213.entry # [General] MySetting1=value [Locations] InputFile=\"C:\\Users.txt\" OutputFile=\"C:\\output.log\" [Other] WaitForTime=20 VerboseLogging=True And here is the...","categories": ["powershell"],
+        "tags": ["ini","powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/08/powershell-how-to-use-config-file-ini.html",
+        "teaser":null},{
+        "title": "mRemoteNG - External Applications",
+        "excerpt":"Application: Windows Computer Manager This will let you launch the Windows Computer Management MMC against the selected host. This MMC will let you view event logs, manage users, configure disks, manage services, and a whole bunch more. Filename: C:\\windows\\system32\\compmgmt.msc Arguments: /Computer=%Hostname% Application: Zenmap GUI Zenmap is a GUI front-end for...","categories": [],
+        "tags": ["mremote","productivity","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/08/mremoteng-external-applications.html",
+        "teaser":null},{
+        "title": "Application command name for Windows",
+        "excerpt":"Here is a quick reference to Application command names for Windows If you encounter any problem launching some of the program, please try the following : Press the Windows Key + R on your keyboard or click on Start &gt; Start Search and type this command: Add/Remove Programs = appwiz.cpl...","categories": [],
+        "tags": ["cli","productivity"],
+        "url": "https://lazywinadmin.github.io/2010/09/application-command-name-for-windows.html",
+        "teaser":null},{
+        "title": "Active Directory - Saved Queries (ADUC MMC)",
+        "excerpt":"Updated: 2013/03/29 Active Directory Users and Computers provides a Saved Queries folder in which administrators can create, edit, save, and organize saved queries. Before saved queries, administrators were required to create custom ADSI scripts that would perform a query on common objects. This was an often lengthy process that required...","categories": [],
+        "tags": ["active directory","aduc","ldap","mmc","query","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/09/active-directory-saved-queries-aduc-mmc.html",
+        "teaser":null},{
+        "title": "Inventory - SYDI - Commands",
+        "excerpt":"SYDI is a VBscript tool that I used to gather all the information about servers and computers locally and remotely. Here are some of the commands i use very often: SYDI WORD (Need MS Word on the machine) cscript sydi-server.vbs –t&lt;NOM_DU_SERVER&gt; SYDI XML cscript sydi-server.vbs –t&lt;NOM_DU_SERVER&gt; -o&lt;NOM_DU_SERVER&gt;.xml -ex XML TO...","categories": [],
+        "tags": ["documentation","inventory","scripting","sydi","vbscript"],
+        "url": "https://lazywinadmin.github.io/2010/12/inventory-sydi-commands.html",
+        "teaser":null},{
+        "title": "BlackBerry and Powershell",
+        "excerpt":"Summary Something that might be useful to anyone that uses poweshell alot. I wrote this so I could quickly look up a users information instead of having to go the BES Admin console. I put this in my profile.ps1 along with my other custom functions so it loads when i...","categories": [],
+        "tags": ["blackberry server","powershell","scripting","sql 2008"],
+        "url": "https://lazywinadmin.github.io/2010/12/blackberry-and-powershell.html",
+        "teaser":null},{
+        "title": "MS Windows Server 2008 R2 - Adding the desktop icons back",
+        "excerpt":"Have you noticed that you cannot add the desktop icons (Computer, Network, etc.) to your Windows Server 2008 R2 desktop? Am I the only one who is annoyed by this? If not, here’s how to get them back. First, you’ll have to go into Server Manager and access the Features...","categories": [],
+        "tags": ["Windows","Server","2008","R2"],
+        "url": "https://lazywinadmin.github.io/2010/12/ms-windows-server-2008-r2-desktop-icons.html",
+        "teaser":null},{
+        "title": "Powershell - Using String methods",
+        "excerpt":"PowerShell uses .NET objects everywhere. .NET objects come with some useful built-in methods. However, for string manipulation you do not need to look for external commands as they are built right into string class. Here are a couple of useful examples: \"Hello\".Length #5 \"Hello\".ToLower() #hello \"Hello\".ToUpper() #HELLO \"Hello\".EndsWith('lo') #True \"Hello\".Contains('l')...","categories": [],
+        "tags": ["powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/12/powershell-using-string-functions.html",
+        "teaser":null},{
+        "title": "Rename a network card in Command Line",
+        "excerpt":"Last week I was working on HP RDP (Rapid Deployment Pack) where I want to automate the deployment of new server. One of the task I wanted to do was: Renaming a Network Interface. As you probably know it, by default: “Local Area Connection” or “Local Area Connection 2”. But...","categories": [],
+        "tags": ["batch","scripting"],
+        "url": "https://lazywinadmin.github.io/2010/12/rename-network-card-in-command-line.html",
+        "teaser":null},{
+        "title": "Active Directory - Delegate Remote Access Permission",
+        "excerpt":"Here are the steps I completed to do this. And yes it works through ADUC. ManageDialin Note: this model requires editing the C:\\windows\\system32\\DSSEC.DAT file on the DC that you are running ADUC on. See http://support.microsoft.com/?id=296490 for more details. In short, some of the rights that need to be delegated are...","categories": [],
+        "tags": ["active directory","aduc","mmc","security"],
+        "url": "https://lazywinadmin.github.io/2011/01/active-directory-delegate-remote-access.html",
+        "teaser":null},{
+        "title": "Powershell - Get files or Folder list",
+        "excerpt":"Update: PowerShell version 3 now have a parameter -File and -Directory Here is quick tip if you want to retrieve recursive either files or folder in PowerShell” Directories PowerShell version 2 Get-childitem -Path c:\\ -recurse | Where-Object -FilterScript { $_.PsIsContainer } PowerShell version 3+ Get-childitem -Path c:\\ -recurse -Directory Files...","categories": ["powershell"],
+        "tags": ["powershell"],
+        "url": "https://lazywinadmin.github.io/2011/01/powershell-get-files-or-folder-list.html",
+        "teaser":null},{
+        "title": "Find computers joined to the domain by a specific user",
+        "excerpt":"Here is a quick PowerShell tip to retrieve the computers created in Active Directory by a specific user With ActiveDirectory module ## Find computers joined to the domain by a specific user $UserName = Read-Host -Prompt \"Enter username\" $UserSID = (Get-ADUser $UserName -Property objectsid).objectsid Get-ADComputer -SizeLimit 0 -LdapFilter \"(&amp;(objectcategory=computer)(mS-DS-CreatorSid=$UserSID)\" With...","categories": ["powershell"],
+        "tags": ["powershell"],
+        "url": "https://lazywinadmin.github.io/2011/01/find-computers-joined-to-domain-by.html",
+        "teaser":null},{
+        "title": "Protecting OU from accidental deletion",
+        "excerpt":"When you create new Organizational Units in Active Directory Users And Computers (ADUC) in Server 2008 (or with RSAT on 2003 domains), ADUC gives you the option to protect the OU from accidental deletion. When this option is selected, ADUC updates the security descriptor of the object and, potentially, its...","categories": ["powershell"],
+        "tags": ["active directory","powershell"],
+        "url": "https://lazywinadmin.github.io/2011/01/protecting-ou-from-accidental-deletion.html",
+        "teaser":null},{
+        "title": "PowerShell/Active Directory - Compare two users accounts membership",
+        "excerpt":"Here is a PowerShell Tip to compare 2 Active Directory user account membership Using ActiveDirectory module # Import ActiveDirectory Module Import-Module ActiveDirectory function Compare-ADUserGroups { param ( [string] $FirstUser = $(Throw \"SAMAccountName required.\"), [string] $SecondUser = $(Throw \"SAMAccountName required.\") ) $a = (Get-ADUser $FirstUser).MemberOf $b = (Get-ADUser $SecondUser).MemberOf Compare-Object -referenceObject...","categories": ["powershell"],
+        "tags": ["active directory","powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/01/compare-two-users-accounts.html",
+        "teaser":null},{
+        "title": "PowerShell - Gather information from your Certificate Server",
+        "excerpt":"Here is a quick PowerShell tip to retrieve information from your Certificate Authority server PowerShell version Function Get-CertInfo { PARAM($server) # Establish connection to Certificate server $CaView = New-Object -Com CertificateAuthority.View.1 $CaView.OpenConnection($Server) # Define the numbers of columns $NumberOfColumns=8 $CaView.SetResultColumnCount($NumberOfColumns) $Index0 = $CAView.GetColumnIndex($False, \"CommonName\") $Index1 = $CAView.GetColumnIndex($False, \"Email\") $Index2 =...","categories": ["powershell"],
+        "tags": ["certificate","powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/01/se-powershell-to-enumerate-info-from.html",
+        "teaser":null},{
+        "title": "Powershell - SYDI - Convert all my XML to DOC Files",
+        "excerpt":"SYDI is a script to collect information (from servers and network devices) and write the data to a XML, DOC or HTML report file. The following example takes the XML generated and convert them to DOC files. # ============================================================================================== # # Microsoft PowerShell Source File # # NAME: SYDI-Convert_XML_files_To_DOC.ps1 #...","categories": [],
+        "tags": ["automation","powershell","scripting","sydi"],
+        "url": "https://lazywinadmin.github.io/2011/01/powershell-sydi-convert-all-my-xml-to.html",
+        "teaser":null},{
+        "title": "Generating Passwords with Powershell",
+        "excerpt":"Here is a very neat script writte by Derek Mangrum that can generate new passwords based on your parameters Script ####################################################################### # FUNCTION NAME: New-Password # # See USAGE() function for docs. # # WRITTEN BY: Derek Mangrum # # REVISION HISTORY: # 2008-10-23 : Initial version # # http://grinding-it-out.blogspot.com/2008/10/generating-passwords-with-powershell.html...","categories": ["powershell"],
+        "tags": ["password","powershell","scripting","security"],
+        "url": "https://lazywinadmin.github.io/2011/02/generating-passwords-with-powershell.html",
+        "teaser":null},{
+        "title": "PowerShell - How to find running processes and their port number",
+        "excerpt":"The netstat command line utility displays protocol statistics and current TCP/IP network connections. If we want to display the associated process identifier (PID) of each process we add the -o parameter. This filter the result we need to pipe to the Find.exe utility and again, the result is text!. In...","categories": [],
+        "tags": ["networking","powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/02/how-to-find-running-processes-and-their.html",
+        "teaser":null},{
+        "title": "PowerShell - Working with SID",
+        "excerpt":"I recently had to write mutliple scripts that were using a few different methods to convert SID to name and vice versa for Local and Active Directory accounts. Here Here is a PowerShell tip to convert Active Directory account from Name to SID and vice versa Local Account Name to...","categories": ["powershell"],
+        "tags": ["powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/02/working-with-sid.html",
+        "teaser":null},{
+        "title": "Active Directory - List and Set/Fix AD users not inheriting permissions",
+        "excerpt":"updated: 2013/03/29 Inherited permissions are those that are propagated to an object from a parent object. Inherited permissions ease the task of managing permissions and ensure consistency of permissions among all objects within a given container. If the Allow and Deny permission check boxes in the various parts of the...","categories": [],
+        "tags": ["active directory","powershell","scripting","security","user account"],
+        "url": "https://lazywinadmin.github.io/2011/02/list-and-set-ad-users-not-inheriting.html",
+        "teaser":null},{
+        "title": "Use PowerShell to Identify Non-Standard Windows Service Accounts",
+        "excerpt":"Source:Expert Solution for the 2011 Scripting Games Beginner Event 4 &lt;# .SYNOPSIS Identifies services with nonstandard accounts .DESCRIPTION Retrieves services that use accounts other than LocalSystem, LocalService or NetworkService .PARAMETER computername one or more computernames or IP addresses you will need local administrator privileges, and the firewall needs to allow...","categories": [],
+        "tags": ["function","powershell","scripting","security","services"],
+        "url": "https://lazywinadmin.github.io/2011/04/use-powershell-to-identify-non-standard.html",
+        "teaser":null},{
+        "title": "What Anti-Virus scanning exclusions should be considered for system and servers ?",
+        "excerpt":"Source Consider the followingfile scanning exceptions for your Anti-Virus software where applicable: NOTE: The %systemroot% is normally the C:\\WINDOWS or C:\\WINNT directory depending on your OS. NOTE: the %systemroot% variable will not work as an exclusion for some OSs. So make sure to spell out full path in your exclusion...","categories": [],
+        "tags": ["anti-virus","scan","sccm","security","virus","windows server"],
+        "url": "https://lazywinadmin.github.io/2011/04/what-anti-virus-scanning-exclusions.html",
+        "teaser":null},{
+        "title": "Application command name for Windows System",
+        "excerpt":"Source (Technet Wiki) If you encounter any problem launching some of the program, please try the following :Press theWindows Key + Ron your keyboard or click onStart &gt; Start Searchand type this command&lt;/i&gt; &lt;/i&gt;Add/Remove Programs = appwiz.cplAdministrative Tools = control admintoolsAuthorization Manager= azman.mscCalculator = calcCertificate Manager = certmgr.mscCharacter Map =...","categories": [],
+        "tags": ["cli","productivity","shortcuts","tool"],
+        "url": "https://lazywinadmin.github.io/2011/05/application-command-name-for-windows.html",
+        "teaser":null},{
+        "title": "Automating Active Directory Administration with Windows PowerShell",
+        "excerpt":"Technet Video Don Jones VIDEO:[Automating Active Directory Administration with Windows PowerShell](http://technet.microsoft.com/en-US/edge/Hh155325(MSDN.10)?query=1)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; About This Video Active Directory is one of the areas where administrators spend the most time: Adding users, changing users, managing computer accounts, removing users, managing organizational units, and more. Learn to automate many of these common tasks using...","categories": [],
+        "tags": ["powershell","video"],
+        "url": "https://lazywinadmin.github.io/2011/05/automating-active-directory.html",
+        "teaser":null},{
+        "title": "LazyWinAdmin 0.2",
+        "excerpt":"New version of LazyWinAdmin 0.2 (see the download section)   Download now   requires: -PowerShell 2.0 on local machine -Permissions on remote machines       ","categories": [],
+        "tags": ["lazywinadmin","tool"],
+        "url": "https://lazywinadmin.github.io/2011/05/lazywinadmin-02.html",
+        "teaser":null},{
+        "title": "Tool - mRemoteNG 1.67 RC3",
+        "excerpt":"New version of one of my favorite Admin tool: mRemoteNG Download it now! Changes from 1.67 RC2 to 1.67 RC3&lt;ul style=\"margin-bottom: 1em; margin-left: 3em; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;\"&gt;&lt;li style=\"list-style-type: inherit; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px;...","categories": [],
+        "tags": ["Tool"],
+        "url": "https://lazywinadmin.github.io/2011/05/tool-mremoteng-167-rc3.html",
+        "teaser":null},{
+        "title": "Powershell and Windows updates",
+        "excerpt":"Quick post, I found this neat function from http://richardspowershellblog.wordpress.com/ to be able to retrieve the installed Windows updates. # # Functions from http://richardspowershellblog.wordpress.com/ # # --- GET-UPDATE --- # function get-update { $session = New-Object -ComObject Microsoft.Update.Session $searcher = $session.CreateUpdateSearcher() $result = $searcher.Search(\"IsInstalled=0 and Type='Software'\" ) $result.Updates | select Title,...","categories": [],
+        "tags": ["com","powershell","scripting","windows update"],
+        "url": "https://lazywinadmin.github.io/2011/06/powershell-and-windows-updates.html",
+        "teaser":null},{
+        "title": "Bill Gates - How a Geek Changed the World /[Video\\/]",
+        "excerpt":"Bill Gates: How a Geek Changed the World [Video] &lt;/embed&gt; Just before he stepped down from Microsoft, BBC2’s “The Money Programme” put together a special on Bill Gates and how he made the company into a money making machine. Those of you who love geek history will definitely enjoy this...","categories": [],
+        "tags": ["microsoft","video"],
+        "url": "https://lazywinadmin.github.io/2011/06/bill-gates-how-geek-changed-world-video.html",
+        "teaser":null},{
+        "title": "Powershell - Exchange Environment Report",
+        "excerpt":"Exchange Environment Report A quick post on Exchange fellow Steve Goodman who created a nice PowerShell script which generates a basic HTML report on your Exchange environment. When required, you can also e-mail the report, which is nice if you want to schedule the script to run on a daily...","categories": [],
+        "tags": ["exchange 2007","exchange 2010","monitoring","powershell","report","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/06/exchange-environment-report.html",
+        "teaser":null},{
+        "title": "Cloning Windows Server 2008 R2 - Use Sysprep (no more NewSID)",
+        "excerpt":"Source It is not uncommon for system administrators to clone virtual servers or take an image of physical servers running Windows Server 2008 these days. There are plenty of tools to do that these days (Ghost, Acronis, Platespin for P2V conversions,etc.) If this is something you do regularly then you...","categories": [],
+        "tags": ["cloning","microsoft","newsid","sysprep","virtualization","windows server 2008 r2"],
+        "url": "https://lazywinadmin.github.io/2011/06/cloning-windows-server-2008-r2-use.html",
+        "teaser":null},{
+        "title": "Powershell - Check if all the services with StartMode AUTOMATIC are actually Running",
+        "excerpt":" download | new post  ","categories": [],
+        "tags": ["powershell","services"],
+        "url": "https://lazywinadmin.github.io/2011/06/powershell-check-if-all-services-with.html",
+        "teaser":null},{
+        "title": "Powershell - Get-USB",
+        "excerpt":"function Get-USB { &lt;# .Synopsis Gets USB devices attached to the system .Description Uses WMI to get the USB Devices attached to the system .Example Get-USB .Example Get-USB | Group-Object Manufacturer .Parameter ComputerName The name of the computer to get the USB devices from #&gt; param($computerName = \"localhost\") Get-WmiObject Win32_USBControllerDevice...","categories": [],
+        "tags": ["powershell","scripting","usb"],
+        "url": "https://lazywinadmin.github.io/2011/06/powershell-get-usb.html",
+        "teaser":null},{
+        "title": "Powershell - Launch/Start a process on a remote machine without powershell installed on it",
+        "excerpt":"How to launch/start a process on a remote machine when this one does not have Powershell ? … WMI! Solution 1 (Ravikanth Chaganti, see his WMI book! Must read!) $proc = Invoke-WmiMethod ` -ComputerName Test ` -Class Win32_Process ` -Name Create ` -ArgumentList \"Notepad.exe\" Register-WmiEvent ` -ComputerName test ` -Query...","categories": [],
+        "tags": ["powershell","process","remote","scripting","wmi"],
+        "url": "https://lazywinadmin.github.io/2011/06/powershell-launchstart-process-on.html",
+        "teaser":null},{
+        "title": "Powershell - Recommended coding style",
+        "excerpt":"source Here are someRecommended coding style for powershell byRichard Berg &lt;span class=\"Apple-style-span\" style=\"font-family: 'Courier New', Courier, monospace; font-size: x-small;\"&gt;&lt;# .SYNOPSIS Cmdlet help is awesome. Autogenerate via template so I never forget. .DESCRIPTION .PARAMETER .PARAMETER .INPUTS .OUTPUTS .EXAMPLE .EXAMPLE .LINK #&gt; function Get-Widget { [CmdletBinding()] param ( # Think about which...","categories": [],
+        "tags": ["coding","powershell","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/06/powershell-recommended-coding-style.html",
+        "teaser":null},{
+        "title": "Google+ Invitations",
+        "excerpt":"Here is my link for some 150 invitations to Google+   Google+ Invitations  ","categories": [],
+        "tags": ["google","social network"],
+        "url": "https://lazywinadmin.github.io/2011/08/google-invitations.html",
+        "teaser":null},{
+        "title": "Scaling and Queuing PowerShell Background Jobs",
+        "excerpt":"Great article from Travis Jones [Source] A couple of months ago I had asked the PowerShell MVPs for suggestions on blog topics. Karl Prosser, one of our awesome MVPs, brought up the topic of scaling and queuing background jobs. The scenario is familiar: You have a file containing a bunch...","categories": [],
+        "tags": ["background jobs","scripting"],
+        "url": "https://lazywinadmin.github.io/2011/08/scaling-and-queuing-powershell.html",
+        "teaser":null},{
+        "title": "Figuring out which VMNIC is assigned to what physical NIC port",
+        "excerpt":"esxcfg-nics -l  ","categories": [],
+        "tags": ["esx","networking","vmware"],
+        "url": "https://lazywinadmin.github.io/2011/09/figuring-out-which-vmnic-is-assigned-to.html",
+        "teaser":null},{
+        "title": "New Version - LazyWinAdmin 0.3c - 2011/10/02",
+        "excerpt":"LazyWinAdmin 0.3c - 2011/10/02 -Fixed/Improved Query/Stop/Start Service buttons -Add Descriptions in logs RichTextBox for Query/Stop/Start Service buttons -Changed the button :80 to HTTP -Add FTP, TELNET, HTTPS buttons Available on Download Page.  ","categories": [],
+        "tags": ["LazyWinAdmin"],
+        "url": "https://lazywinadmin.github.io/2011/10/lazywinadmin-update-20111002.html",
+        "teaser":null},{
+        "title": "Active Directory - How to remove SID History with Powershell ?",
+        "excerpt":"Source In the United States we celebrate Thanksgiving tomorrow. No matter where you are in the world let us all give thanks for PowerShell. If Windows were the pumpkin pie, then PowerShell would be the whipped cream on top. If Active Directory were the turkey, then PowerShell would be the...","categories": [],
+        "tags": ["active directory","cleanup","powershell"],
+        "url": "https://lazywinadmin.github.io/2011/11/active-directory-how-to-remove-sid.html",
+        "teaser":null},{
+        "title": "VMware Virtual Machine Template - Windows Server 2008 R2",
+        "excerpt":"Update: 2013/03/29 Virtual Machine Template Virtual Machine Templates come in very handy when you want to have a repository of Virtual Machine base or images that you can easily create a virtual machine from. This saves you the time of installing/configuring the operating system, installing regular common applications and patching...","categories": [],
+        "tags": ["virtualization","vmware","windows server 2008 r2"],
+        "url": "https://lazywinadmin.github.io/2012/02/vmware-vsphere-template-windows-2008-r2.html",
+        "teaser":null},{
+        "title": "Powershell - Webcast Speeding Up PowerShell - Multithreading",
+        "excerpt":"Interesting Web cast next Monday about Powershell Multi threading. Monday, February 20th, 2012 12:00 PM to 1:00 PM Central Time Here is the Event home page PowerShell is single-threaded by design which is why PowerShell can execute tasks only sequentially. To speed up scripts, PowerShell v2 offers background jobs which...","categories": [],
+        "tags": ["multithreading","performance","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/02/powershell-webcast-speeding-up.html",
+        "teaser":null},{
+        "title": "New version - LazyWinAdmin 0.3.20120220",
+        "excerpt":"LazyWinAdmin was created using ONLY Powershell scripting language I used SAPIEN PrimalForms to create the GUI. This tool requires Powershell 2.0 and permissions on local or remote computers to be able to manage those.LazyWinAdmin 0.3.20120220 Download -FIX some problem with Uptime Button -FIX Modified The Service Query/start/stop -ADD Restart Service...","categories": [],
+        "tags": ["gui","lazywinadmin","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/02/new-version-lazywinadmin-0320120220.html",
+        "teaser":null},{
+        "title": "Powershell - Monitor Active Directory Groups membership change",
+        "excerpt":"UPDATE:The most recent update is availableon Github See also those related BlogPosts: [2013/11/28] - Version 1.6 -[UPDATE] PowerShell - Monitor and Report Active Directory Group Membership Change [2013/10/13] - Version 1.5-PowerShell - Monitor and Report Active Directory Group Membership Change A couple of weeks back, my boss asked me to...","categories": [],
+        "tags": ["active directory","monitoring","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/03/powershell-monitor-membership-change-to.html",
+        "teaser":null},{
+        "title": "Run this Scheduled Task every minute !!!",
+        "excerpt":"Description This is a weird one… This post will show you how to configure a Scheduled task every single minute. By default on Microsoft Windows Server 2008 R2, You have the options to run a task every:“5 minutes”,“10 minutes”,“15 minutes”,“30 minutes”,“1 hour”. How to Schedule a task to run every...","categories": [],
+        "tags": ["task scheduler","windows server 2008 r2"],
+        "url": "https://lazywinadmin.github.io/2012/03/run-this-task-every-minute.html",
+        "teaser":null},{
+        "title": "Powershell - My Script Template",
+        "excerpt":"Here is my powershell script template. Hope that’s help someone out there. # ############################################################################# # COMPANY INC - SCRIPT - POWERSHELL # NAME: script.ps1 # # AUTHOR: Francois-Xavier Cat, Company Inc # DATE: 2012/03/14 # EMAIL: info@lazywinadmin.com # # COMMENT: This script will.... # # VERSION HISTORY # 1.0 2011.05.25...","categories": [],
+        "tags": ["powershell","template"],
+        "url": "https://lazywinadmin.github.io/2012/03/powershell-my-script-template.html",
+        "teaser":null},{
+        "title": "Powershell 3.0 - Workflows (video by Bruce Payette)",
+        "excerpt":"This is a live recording from European TEC 2011 PowerShell Deep Dive conference. Bruce Payette givesa tour of PowerShell Workflows.     What is Workflow                   Powershell Worflow Architecture Powershell Workflow Editor     ","categories": [],
+        "tags": ["powershell 3.0","video","workflow"],
+        "url": "https://lazywinadmin.github.io/2012/03/powershell-30-workflows-video-by-bruce.html",
+        "teaser":null},{
+        "title": "Video - James O'Neill and his PowerShell profile",
+        "excerpt":"Video: James O’Neill and his PowerShell profile: Here’s another cool tips and tricks recording from last PowerShell Deep Dive – James O’Neill is sharing the cool functions that he has in his PowerShell profile: Seemore PowerShell Deep Dive recordings here. This is a live recording from European TEC 2011 PowerShell...","categories": [],
+        "tags": ["powershell","powershell profil","video"],
+        "url": "https://lazywinadmin.github.io/2012/03/video-james-oneill-and-his-powershell.html",
+        "teaser":null},{
+        "title": "Leveraging Proxy Functions in PowerShell",
+        "excerpt":"@DSotnikov just released the video recording of the session from the PowerShell Deep Dive in Frankfurt (last year). In this video, MVP Kirk Munro (poshoholic) and I demoed a project we’ve been working on that let’s you create proxy functions. Here’s a reminder of the session abstract. In this session...","categories": [],
+        "tags": ["function","powershell","proxy","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/leveraging-proxy-functions-in.html",
+        "teaser":null},{
+        "title": "Using PowerShell as a Starting Point for Comparing GPOs",
+        "excerpt":"source&lt;/a&gt; &lt;iframe allowfullscreen=\"\" frameborder=\"0\" height=\"360\" src=\"http://www.youtube.com/embed/qoocEgmHUEg\" width=\"640\"&gt;&lt;/iframe&gt; Video Transcript Comparing two Group Policy Objects can be pretty tricky with the native tools. Here in the Group Policy Management console or GPMC I have created two different GPO's, test 1 and test 2. Now if we open one up each of...","categories": [],
+        "tags": ["active directory","audit","gpmc","group policy","powershell","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/using-powershell-as-starting-point-for.html",
+        "teaser":null},{
+        "title": "Video Awesomeness - VMware has released 3 hours of free online training",
+        "excerpt":"Video Awesomeness - VMware has released 3 hours of free online training: &lt;iframe frameborder=\"0\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PL94E0ACF96F8295AA&amp;hl=nl_NL\" width=\"640\"&gt;&lt;/iframe&gt; You definitely have to check out this YouTube video channel I’ve compiled from recent video uploads of VMwareTV. VMware has released 3 hours of online VMware vSphere training material featuring Chris Skinner and...","categories": [],
+        "tags": ["video","vmware"],
+        "url": "https://lazywinadmin.github.io/2012/04/video-awesomeness-vmware-has-released-3.html",
+        "teaser":null},{
+        "title": "Video - Jeffery Hicks - Turn Command-Line Tools into PowerShell Tools",
+        "excerpt":"Video: Jeffery Hicks – Turn Command-Line Tools into PowerShell Tools: Here’s recording of @jeffhicks – PowerShell MVP, book author and trainer – Jeffery Hicks – talking at the previous PowerShell Deep Dive about how you can turn existing command-line utilities into PowerShell functions so they can become first-class (object emitting...","categories": [],
+        "tags": ["command-line tools","powershell","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/video-jeffery-hicks-turn-command-line.html",
+        "teaser":null},{
+        "title": "Video - Aleksandar Nikolic – Delegation with Remoting",
+        "excerpt":"Video: Aleksandar Nikolic – Delegation with Remoting: Here’s recording of @alexandair – PowerShell MVP, constrained runspaces guru and editor of PowerShell Magazine – talking about delegation in PowerShell remoting. I bet not that many of you tried this feature before – so check out this talk that Aleksandar did at...","categories": [],
+        "tags": ["powershell","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/video-aleksandar-nikolic-delegation.html",
+        "teaser":null},{
+        "title": "Video - Brandon Shell – Module Design for IT Pro",
+        "excerpt":"Video: Brandon Shell – Module Design for IT Pro: Here’s another great recording from previous PowerShell Deep Dive – Brandon’s session on module design. Brandon has experience designing PowerShell modules for Splunk and other companies – so there’s a lot to learn from him! In this session we will deep...","categories": [],
+        "tags": ["module","powershell","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/video-brandon-shell-module-design-for.html",
+        "teaser":null},{
+        "title": "Video - Tobial Weltner – Regular Expressions in 5 Minutes",
+        "excerpt":"Video: Tobial Weltner – Regular Expressions in 5 Minutes: One of my favorite lightning talks at the PowerShell Deep Dive in Frankfurt was the one that Tobias did on regular expressions. Lightning Talks are super quick sessions at the conference in which anyone gets a chance to show something cool...","categories": [],
+        "tags": ["powershell","regular expressions","video"],
+        "url": "https://lazywinadmin.github.io/2012/04/video-tobial-weltner-regular.html",
+        "teaser":null},{
+        "title": "Video - Powershell V3 Guru Don Jones",
+        "excerpt":"Source : http://channel9.msdn.com/posts/PowerShell-V3-Guru-Don-Jones   Rick Claus interviewsPowerShell guru Don Jones while at MMS 2012. They chat  about Powershell V3. cool things that are under represented and how everything  is underpinned by PowerShell in Windows Server 2012.    ","categories": [],
+        "tags": ["powershell 3.0","video"],
+        "url": "https://lazywinadmin.github.io/2012/05/video-powershell-v3-guru-don-jones.html",
+        "teaser":null},{
+        "title": "Group Policy Health PowerShell Cmdlet Updated",
+        "excerpt":"SDM Software just updated their Group Policy Health Powershell Cmdlet to version 1.2 Once Download and Install, all you need to do is: Import-Module SDM-GPHealth Here is the only cmdlet available for this module Get-SDMGPHealth, this is the full help. NAME Get-SDMGPHealth SYNOPSIS Retrieves Group Policy Processing Health on local...","categories": [],
+        "tags": ["active directory","gpo","group policy","module","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/05/group-policy-health-powershell-cmdlet.html",
+        "teaser":null},{
+        "title": "What Can I Do With Windows PowerShell?",
+        "excerpt":"Interesting topic from Technet for beginner or advanced Powershell scripter What Can I Do With Windows PowerShell? * [Dates and Times](http://technet.microsoft.com/en-us/library/71f5eb08-a9fb-4dc1-8bc2-a7b0fd04f671) * [Files and Folders](http://technet.microsoft.com/en-us/library/5a761ad4-9a3e-4bd7-abe8-27bf7c54af36) * [Help and Information](http://technet.microsoft.com/en-us/library/3208e7f3-69f7-4ace-9545-831bec079980) * [Saving and Importing Data](http://technet.microsoft.com/en-us/library/c247a0f8-93b7-4663-854f-86962b74c7e5) * [Scripting Techniques](http://technet.microsoft.com/en-us/library/cbc16379-fccb-4ad3-ae3d-172d9df5f3ef) * [Scripts and Applications](http://technet.microsoft.com/en-us/library/6c00916d-be6c-42b8-afeb-a770993c8bfa) &lt;/td&gt; * [Security and Security Descriptors](http://technet.microsoft.com/en-us/library/1f4330af-9240-45dd-95f8-c653655ae3d5) * [System Administration...","categories": [],
+        "tags": ["powershell","ressource"],
+        "url": "https://lazywinadmin.github.io/2012/05/what-can-i-do-with-windows-powershell.html",
+        "teaser":null},{
+        "title": "VMware - Direct Download to VMtools",
+        "excerpt":"Pretty useful link to direct download the VMtools for your VMware Environment.   http://packages.vmware.com/tools/esx/index.html      ","categories": [],
+        "tags": ["vmtools","vmware"],
+        "url": "https://lazywinadmin.github.io/2012/05/vmware-direct-download-to-vmtools.html",
+        "teaser":null},{
+        "title": "LazyWinAdmin v0.4 - Sneak Peek",
+        "excerpt":"Sneak peek :LazyWinAdmin v0.4 LazyWinAdmin is a PowerShell Script This script generate a GUI/WinForm that was created using Sapien Powershell Studio. I’ve been working in LWA for a while now. This project of mine is mostly to help myself in my day to day Windows System Administrator tasks. The goal...","categories": [],
+        "tags": ["gui","lazywinadmin","powershell","sapien powershell studio 2012","winform"],
+        "url": "https://lazywinadmin.github.io/2012/06/lazywinadmin-v04-sneak-peek.html",
+        "teaser":null},{
+        "title": "LazyWinAdmin v0.4 released",
+        "excerpt":"UPDATE 2016/04/26: Lazywinadmin is now open source, see here:https://github.com/lazywinadmin/LazyWinAdmin_GUI LazyWinAdmin is a PowerShell Script that generates a GUI/WinForms loaded with a tons of tools The Form was created usingSapien Powershell Studio 2012. Main Features&lt;/strong&gt; * Verify the connectivity and information for a specified computer (Test-Connection, Test-Path, RDP, PowerShell Remoting, Os...","categories": [],
+        "tags": ["LazyWinAdmin"],
+        "url": "https://lazywinadmin.github.io/2012/06/lazywinadmin-v04-released.html",
+        "teaser":null},{
+        "title": "Introduction to CIM Cmdlets",
+        "excerpt":"Great article from the Powershell team blog: Introduction to CIM Cmdlets PowerShell 3.0 shipping with Windows server 2012 and Windows 8 brings a new set of Cmdlets to manage any server or device that complies with CIM and WS-Man standards defined by DMTF. In this blog post we will explore...","categories": [],
+        "tags": ["powershell 3.0","windows 8","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2012/08/introduction-to-cim-cmdlets.html",
+        "teaser":null},{
+        "title": "I'm Going to PowerShellSummit !!! @pshsummit",
+        "excerpt":"Seattle here I come !!!I cannot wait to meet all my fellow PowerShell enthousiasts ! The PowerShell Summit will be held at Microsoft in Redmond April 22-24, 2013. Check here for details.       ","categories": [],
+        "tags": ["PowerShell","Summit","2013"],
+        "url": "https://lazywinadmin.github.io/2012/09/im-going-to-powershellsummit-pshsummit.html",
+        "teaser":null},{
+        "title": "PowerShell Module included in System Center Configuration Manager 2012 SP1 BETA",
+        "excerpt":"Source Microsoft just released the Service Pack 1 for System Center Configuration Manager 2012. AND!! FINALLY comes with its own PowerShell Module !!! Woot Woot :-) Once the SP1 installed, all you need is PowerShell 3.0.Already included in Windows Server 2012 or can be installed on Windows Server 2008Windows Management...","categories": [],
+        "tags": ["configmgr","module","powershell","powershell 3.0"],
+        "url": "https://lazywinadmin.github.io/2012/09/powershell-module-included-in-system.html",
+        "teaser":null},{
+        "title": "PowerShell Resources - From Noob to Ninja",
+        "excerpt":"Videos Windows PowerShell for Beginners Technet ScriptCenter - Windows PowerShell: Learn It Now Before It’s an Emergency Build2011 - Windows networking with PowerShell: A foundation for data center management TechEd 2011 - Advanced Automation Using Windows PowerShell 2.0 TechEd 2011 -Windows PowerShell Remoting: Definitely NOT Just for Servers TechEd 2012...","categories": [],
+        "tags": ["powershell","video"],
+        "url": "https://lazywinadmin.github.io/2012/09/powershell-ressources-from-noob-to-ninja.html",
+        "teaser":null},{
+        "title": "How to report a bug or give a suggestion to the",
+        "excerpt":"Just a reminder to myself…, if you find a bug on #PowerShell or if you have a suggestion, here is the link   https://connect.microsoft.com/PowerShell/SearchResults.aspx?FeedbackType=0&amp;Scope=0&amp;SortOrder=5  ","categories": [],
+        "tags": [],
+        "url": "https://lazywinadmin.github.io/2012/10/how-to-report-bug-or-give-suggestion-to.html",
+        "teaser":null},{
+        "title": "Create a bunch of DNS Entries using PowerShell and DNScmd.exe",
+        "excerpt":"Today I needed to create approx. ~50 DNS A entries. Each of those also need to have a PTR entry. Lazy as i am… a quick search for PowerShell DNS module did return some interesting things but none who can create both A and&lt; PTR DNS entries at the same...","categories": [],
+        "tags": ["csv","dns","dns server","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/10/create-dns-entries-using-powershell-and.html",
+        "teaser":null},{
+        "title": "My Home Lab !",
+        "excerpt":"I finally ordered my home lab to work on my technicalknowledgeand to help me work on some certifications. My first goal will be to pass my VCP5-DV in February 2013 (It is already booked!) and probably work on some other certifications like Hyper-V, SCCM, W2012… Here is the configuration I...","categories": [],
+        "tags": ["esxi","hardware","homelab","lab","vmware","vsphere 5.1"],
+        "url": "https://lazywinadmin.github.io/2012/12/my-home-lab.html",
+        "teaser":null},{
+        "title": "FreeNas 8.3 - Creating a RAID volume and Configure iSCSI",
+        "excerpt":"FreeNAS is a tiny Open Source FreeBSD-based operating system which provides free Network-Attached Storage (NAS) services (CIFS, FTP, NFS, …).It supports sharing across Windows, Apple, and UNIX-like systems. FreeNAS 8 includes ZFS, which supports high storage capacities and integrates file systems and volume management into a single piece of software....","categories": [],
+        "tags": ["freenas","homelab","iscsi","raid","storage","vsphere 5.1"],
+        "url": "https://lazywinadmin.github.io/2012/12/freenas-83-creating-raid-volume-and.html",
+        "teaser":null},{
+        "title": "Move Computers Object between two organizational units (OU) - What are the permissions required ?",
+        "excerpt":"Today I was playing a bit in my lab with PowerShell and AD Computer Objects. I automate the daily cleanup of Inactive Computer Object and move them to a specific OU. This script is running with his own service account, the privileges required are specified below. Move Computer Object INSIDE...","categories": [],
+        "tags": ["active directory","automation","computer object","delegation","permission","security"],
+        "url": "https://lazywinadmin.github.io/2012/12/move-computers-object-between-two.html",
+        "teaser":null},{
+        "title": "Get-LocalGroupMembership (Using ADSI/WinNT)",
+        "excerpt":"Updated (2013/06/03): I added some error handeling/verbose/testing. You are now able to pass multiple computers to the ComputerName parameter. Intro Recently I had to do an Audit at my work to find who was Local Administrators on a bunch of Servers. That might sounds easy when you just have to...","categories": [],
+        "tags": ["audit","function","group membership","local administrators","powershell"],
+        "url": "https://lazywinadmin.github.io/2012/12/get-localgroupmembership-using-adsiwinnt.html",
+        "teaser":null},{
+        "title": "PowerShell - Retrieve a local group membership",
+        "excerpt":"In my previous post, I explain my PowerShell function to retrieve the local administrators group membership. Today I will go a bit further and find the nested members from the Active Directory. Get-LocalGroupAllMembers The following scripts query a localgroup on the localhost or a remote computer, and gather all the...","categories": [],
+        "tags": ["active directory","audit","group membership","local administrators","nested groups","powershell"],
+        "url": "https://lazywinadmin.github.io/2013/01/get-localgroupallmembers.html",
+        "teaser":null},{
+        "title": "Windows PowerShell Language Specification",
+        "excerpt":"Microsoft just released two very interesting documents part of Microsoft Open Specification: Windows PowerShell Language Specification Version 2.0 Windows PowerShell Language Specification Version 3.0 Those documents defines all the aspects of PowerShell Languages v2.0 and v3.0. I highly recommend any beginners, intermediates and guru to take a look at those...","categories": [],
+        "tags": ["documentation","powershell"],
+        "url": "https://lazywinadmin.github.io/2013/01/windows-powershell-language.html",
+        "teaser":null},{
+        "title": "DirectPath I/O supported with ASUS M5A97 R2.0/AMD FX-8350",
+        "excerpt":"Here is my HomeLab configuration: MotherBoard: ASUS M5A97 R2.0 CPU : AMD FX-8350 (8 Cores - 4.0Ghz) What is DirectPath IO ? How to configure it with an ASUS M5A97 R2.0 Enter into the BIOS and navigate to the Advanced Settings (using F7) Under North Bridge Configuration IOMMU is set...","categories": [],
+        "tags": ["directpathio","esxi","homelab","vmware"],
+        "url": "https://lazywinadmin.github.io/2013/01/directpath-io-supported-with-asus.html",
+        "teaser":null},{
+        "title": "WS2012 Storage - NFS Server - Configure NFS for VMware vSphere 5.1 Home Lab",
+        "excerpt":"The following procedure show how to setup aNFS Server hosted on Windows Server 2012 forbackend storage of myVMware vSphere Server 5.1 Home Lab. You can also check my post onCreating an iSCSI Target Server on Windows Server 2012. Overview In the following post I will talk about the following points:...","categories": [],
+        "tags": ["datastore","homelab","nfs server","powershell","powershell 3.0","storage","vmware","vsphere 5.1","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2013/01/configure-windows-server-2012-nfs.html",
+        "teaser":null},{
+        "title": "Enabling Change Block Tracking (CBT) on a Virtual Machine (VMware vSphere 5.1)",
+        "excerpt":"Update: 2013/07/02 I wrote another post about CBT and create a re-usable PowerShell function I recently had to enable CBT in my VMware vSphere environment, on a good amount of Virtual Machines. What is Change Block Tracking (CBT) ? If you are not familiar with CBT, checkout the following articles:...","categories": [],
+        "tags": ["backup","cbt","powercli","powershell","vmware"],
+        "url": "https://lazywinadmin.github.io/2013/01/enabling-change-block-tracking-cbt-on.html",
+        "teaser":null},{
+        "title": "Winter Scripting Games 2013 - Practice Event 1",
+        "excerpt":"The Winter Scripting Games 2013 started last week with the first practice event. Unfortunately for me, I was not able to post my script on time. The first Practice event was due on the Tuesday, 5th of February… 11:59 PM GMT! I assume I had until midnight my time….. (My...","categories": [],
+        "tags": ["2013 winter scripting games","function","powershell","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/02/winter-scripting-games-2013-practice.html",
+        "teaser":null},{
+        "title": "Winter Scripting Games 2013 - Practice Event 2",
+        "excerpt":"Just a quick post on the script I submit for the second practice event of the Winter Scripting Games 2013 (last week). Practice Event 2 -Covering Your AssetsYour organization is preparing to renew maintenance contracts on all of your server computers. You need to provide management with a report that...","categories": [],
+        "tags": ["2013 winter scripting games","function","powershell","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/02/winter-scripting-games-2013-practice_18.html",
+        "teaser":null},{
+        "title": "The PowerShell Certification",
+        "excerpt":"Update 2013/07/07: It seems that the Certification is now ONLY available after doing the in-person class offered by Concentrated Technology :-( Don Jones just announced the creation of the PowerShell “Certification”!! This is available for anybody who want to test their PowerShell scripting knowledge. The PowerShell “certification” is under the...","categories": [],
+        "tags": ["powershell","powershell 3.0","powershell certification","verified effective"],
+        "url": "https://lazywinadmin.github.io/2013/02/the-powershell-certification.html",
+        "teaser":null},{
+        "title": "The Simplest Way to Create a Bootable Windows Server 2012 or Windows 8 USB Key",
+        "excerpt":"After I passed my VCP510-DV last week, I wanted to rebuild my Home Lab using Windows Server 2012 for the Storage part, instead of FreeNas. Part of the rebuild, I needed to install Windows Server 2012 on top of the old FreeNas box. Hard task since I don’t have a...","categories": [],
+        "tags": ["bootable","homelab","lab","usb","windows 7","windows 8","windows 8.1","windows server 2012","windows server 2012 r2"],
+        "url": "https://lazywinadmin.github.io/2013/03/the-simplest-way-to-create-bootable.html",
+        "teaser":null},{
+        "title": "How to Deploy an OVF Template from a Remote Web Server",
+        "excerpt":"In the following post I am going to explain how to deploy an OVF Template from an URL. The VMware vSphere Client allows you to deploy and export virtual machines, virtual appliances, and vApps stored in Open Virtual Machine Format (OVF). An appliance is a pre-configured virtual machine that typically...","categories": [],
+        "tags": ["ovf template","url","vcenter","vcsa","vmware","web server"],
+        "url": "https://lazywinadmin.github.io/2013/03/how-to-deploy-ovf-template-from-remote.html",
+        "teaser":null},{
+        "title": "New Books on my Bookshelf ! Learn PowerShell ToolMaking and PowerShell in Depth!",
+        "excerpt":"My bookshelf just got a big bigger. I received yesterday those two items : * Learn PowerShell Toolmaking in a Month of Lunches from +Don Jonesand+Jeffery Hicks.  * PowerShell in Depth from+Don Jones+Richard Siddawayand+Jeffery Hicks I'm looking forward to get those signed at the PowerShell Summit next month!! ;-)    ","categories": [],
+        "tags": ["book","powershell 3.0","powershell summit 2013"],
+        "url": "https://lazywinadmin.github.io/2013/03/new-books-on-my-bookshelf-learn.html",
+        "teaser":null},{
+        "title": "Deploying and Configuring vCenter Server Appliance 5.1",
+        "excerpt":"In this post I will describe how I installed and configured vCSA in my Home Lab from the vSphere Client. I will also show how to access the vSphere Web client once the installation is completed. What is VMware vCenter ?&lt;/b&gt; Before I start, It should be good to revisit...","categories": [],
+        "tags": ["appliance","linux","vcenter","vcenter server appliance","vcsa","vmware"],
+        "url": "https://lazywinadmin.github.io/2013/03/deploying-and-configuring-vcenter.html",
+        "teaser":null},{
+        "title": "2013 Scripting Games - Competitor Guide",
+        "excerpt":"Don Jones just released the Competitor Guide for the 2013 Scripting Games online. This year the Games will be hosted by PowerShell.org (Previous ones where organize by the Scripting Guy Ed Wilson). This event is scheduled to start during the PowerShell Summit in Seattle (between the 22nd and the 24th...","categories": [],
+        "tags": ["2013 scripting games","powershell","psh2013","scripting","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/04/2013-scripting-games-competitor-guide.html",
+        "teaser":null},{
+        "title": "PowerShell/WinForm - Active Directory User Unlocker",
+        "excerpt":"An Active Directory account may be automatically locked, if the domain’s security policy has been configured to lock accounts after a number of unsuccessful logon attempts. If an account has been locked out, the lockouttime attribute will contain a Win32 time value that indicates when the account was locked. An...","categories": [],
+        "tags": ["active directory","gui","powershell","scripting","unlock","user account","winform"],
+        "url": "https://lazywinadmin.github.io/2013/04/powershellwinform-active-directory-user.html",
+        "teaser":null},{
+        "title": "Scripting Games 2013 - Advanced Event 1 - An Archival Atrocity",
+        "excerpt":"Last week I was one of the lucky PowerShell Summit attendees and had the chance to assist to the official launch of the Scripting Games 2013 !! (with a special video created by Sean ;-) Apart from the PowerShell stars like Ed Wilson, Don Jones, Bruce Payette, Alan Renouf, Lee...","categories": [],
+        "tags": ["2013 scripting games","function","powershell 3.0","powershell summit 2013","psh2013","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/04/scripting-games-2013-advanced-event-1.html",
+        "teaser":null},{
+        "title": "PowerShell Summit NA 2013 - Recorded Videos",
+        "excerpt":"Recently I was lucky enough to attend the PowerShell Summit in Redmond,WA, this was a great opportunity to meet a lot of PowerShell people, MVPs, Writers, Bloggers, Trainers, IT Pros, DevOps, … and some members of the PowerShell Team who created this amazing tool. One of the Summit attendee Aaron...","categories": [],
+        "tags": ["powershell","powershell summit 2013","video"],
+        "url": "https://lazywinadmin.github.io/2013/05/powershell-summit-na-2013-recorded.html",
+        "teaser":null},{
+        "title": "Scripting Games 2013 - Advanced Event 2 - An Inventory Intervention",
+        "excerpt":"Now that event 2 is closed for new entries. Here is the solution I proposed. Instruction Download the instruction here [skydrive] Dr. Scripto finally has the budget to buy a few new virtualization host servers, but he needs to make some room in the data center to accommodate them. He...","categories": [],
+        "tags": ["2013 scripting games","inventory","powershell 3.0","psh2013","scripting games","wmi"],
+        "url": "https://lazywinadmin.github.io/2013/05/scripting-games-2013-advanced-event-2.html",
+        "teaser":null},{
+        "title": "Scripting Games 2013 - Advanced Event 3 - A Disk Decision",
+        "excerpt":"This is my solution for the Advanced Event #3. Unfortunately I don’t expect a very high score in the Leader board since I did not submit the good version of my script… Shame…. But anyway I learned a bit from this event and wanted to share my solution. Hope this...","categories": [],
+        "tags": ["2013 scripting games","powershell","powershell 3.0","psh2013","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/05/scripting-games-2013-advanced-event-3.html",
+        "teaser":null},{
+        "title": "Scripting Games 2013 - Advanced Event 4 - An Auditing Adventure",
+        "excerpt":"This is my solution for the Advanced Event 4 of the Scripting Games 2013. This event was a bit challenging for me… In the past, I played with Quest Active Directory snap-in to create a bunch of Monitoring tools and some other small automation tasks, but that’s about it. (ExampleMonitor...","categories": [],
+        "tags": ["2013 scripting games","active directory","adsi","audit","function","html","module","powershell","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/06/scripting-games-2013-advanced-event-4.html",
+        "teaser":null},{
+        "title": "Scripting Games 2013 - Advanced Event 5 - The Logfile Labyrinth",
+        "excerpt":"This is my solution for the Advanced Event 5. I did not have much time to work on this event, but here is the script I submitted. Instruction Download [Skydrive] Dr. Scripto finds himself in possession of a bunch of IIS log files, much like the one at http://morelunches.com/files/powershell3/LogFiles.zip, if...","categories": [],
+        "tags": ["2013 scripting games","function","iis","log","parser","powershell","scripting games"],
+        "url": "https://lazywinadmin.github.io/2013/06/scripting-games-2013-advanced-event-5.html",
+        "teaser":null},{
+        "title": "Installing Microsoft SQL Server 2012 Standard Edition SP1 in my Home Lab",
+        "excerpt":"Currently I’m playing with some products from the Microsoft System Center 2012 Suite in my Home Lab. I’m Starting the whole installation by installing a new Virtual Machine with Microsoft SQL Server 2012 (Standard Edition). I used a dedicated VM that will be used to host the database of Configuration...","categories": [],
+        "tags": ["database","microsoft sql server 2012","sql 2012"],
+        "url": "https://lazywinadmin.github.io/2013/06/installing-microsoft-sql-server-2012.html",
+        "teaser":null},{
+        "title": "What's New in Windows PowerShell 4.0",
+        "excerpt":"Microsoft just updated the page “What’s New in PowerShell” to include information about Windows PowerShell 4.0. They also added a page about Desired State Configuration. You can try PowerShell 4.0 by either downloading the Windows Server 2012 R2 Preview which has been release just a few hours ago, or by...","categories": [],
+        "tags": ["desired state configuration","documentation","powershell","powershell 4.0","technet","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2013/06/whats-new-in-windows-powershell-40.html",
+        "teaser":null},{
+        "title": "Installing Microsoft System Center Orchestrator 2012 SP1",
+        "excerpt":"In one of my last post I installed a new SQL Server 2012 in my Home Lab. This was a requirement for a few incoming home lab projects. One of those projects is Microsoft System Center 2012 Orchestrator. I will have to install, configure and manage this product at my...","categories": [],
+        "tags": ["automate","automation","orchestrator","system center 2012","system center 2012 orchestrator"],
+        "url": "https://lazywinadmin.github.io/2013/06/installing-microsoft-system-center.html",
+        "teaser":null},{
+        "title": "PowerShell SCCM 2007 Module - My contribution",
+        "excerpt":"I recently contributed to a PowerShell module called SCCM Automation created by Andre Bocchini. (SCCM stands for System Center Configuration Manager) Take a look at it on GitHub here:https://github.com/andrebocchini/sccm-powershell-automation-moduleAndre really did an awesome job on this module! This Module for SCCM 2007 (which does not come with a set of...","categories": [],
+        "tags": ["performance","powershell","powershell module","sccm","sccm2007","wmi"],
+        "url": "https://lazywinadmin.github.io/2013/06/powershell-sccm-2007-module-my.html",
+        "teaser":null},{
+        "title": "How to Enable Copy/Paste Operations Between GuestOS and Remote Console on vSphere 5.1 (GUI and PowerCli)",
+        "excerpt":"In this blogpost I will explain how to enable Copy/Paste operations between the Guest Operating System and the Remote Console on VMware vSphere 5.1 via the GUI and PowerCli (PowerShell for VMware). VMware does not recommend this manipulation to avoid and limit Exposure of Sensitive Data Copied to the Clipboard...","categories": [],
+        "tags": ["function","powercli","powershell","powershell 3.0","vmware","vsphere 5.1"],
+        "url": "https://lazywinadmin.github.io/2013/07/how-to-enable-copypaste-operations.html",
+        "teaser":null},{
+        "title": "Enabling Change Block Tracking (CBT) on a vSphere 5.1 VM with PowerShell/PowerCli",
+        "excerpt":"In one of my previous post, I created two PowerShell functions to enable Copy/Paste operations on VMware vSphere 5.1 between a Guest OS and the vSphere Client remote console. Today we’ll use a very similar piece of code to Enable Change Block Tracking (CBT) on one or more Virtual Machines....","categories": [],
+        "tags": ["cbt","change block tracking","function","powercli","powershell 3.0","vmware"],
+        "url": "https://lazywinadmin.github.io/2013/07/enabling-change-block-tracking-cbt-on.html",
+        "teaser":null},{
+        "title": "WS2012 Storage - iSCSI Target Server - Create an iSCSI target using PowerShell",
+        "excerpt":"For my Virtual Machines needs, some LUNS are presented to my VMware vSphere 5.1 Servers and until now,my labstorage was handle byFreeNas using iSCSI. For tests purposes, I replaced this FreeNas by Windows Server 2012 to take care of that part. Note: Before writing this post, I grouped my physical...","categories": [],
+        "tags": ["datastore","homelab","iscsi","lab","powercli","powershell","powershell 3.0","storage","vsphere 5.1","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2013/07/create-iscsi-target-using-powershell-on.html",
+        "teaser":null},{
+        "title": "WS2012 Storage - iSCSI Target Server - Configuring an iSCSI Initiator on VMware vSphere 5.1",
+        "excerpt":"I recently switched the backend storage of my VMware vSphere 5.1 Home Lab from FreeNas (OS based on UNIX) to iSCSI (Windows Server 2012 Storage Feature). The reason is that I wanted to play with the PowerShell iSCSI modules and do some tests with SMB v3.0. In a previous post...","categories": [],
+        "tags": ["datastore","homelab","iscsi","lab","lun","powercli","powershell","storage","vmware","vsphere 5.1","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2013/07/configuring-iscsi-initiator-on-vmware.html",
+        "teaser":null},{
+        "title": "PowerShell - Free Trainings from Microsoft Virtual Academy",
+        "excerpt":"Update: Getting Started with PowerShell 3.0and Advanced Tools &amp; Scripting with PowerShell 3.0recorded videosare now available on Microsoft Virtual Academy. Links below. I get a lot of questions from my friends and coworkers about PowerShell … \"Hey FX, How can i get all the process that start by... and then...","categories": [],
+        "tags": ["microsoft virtual academy","powershell","powershell 3.0","training"],
+        "url": "https://lazywinadmin.github.io/2013/07/powershell-free-trainings-from.html",
+        "teaser":null},{
+        "title": "WS2012 Storage - Creating a Storage Pool and a Storage Space (aka Virtual Disk) using PowerShell",
+        "excerpt":"In my previous posts I talked about how to use NFS and iSCSI technologies hosted on Windows Server 2012 and how to deploy those to my Home Lab ESXi servers. WS2012 Storage - iSCSI Target Server - Create an iSCSI target using PowerShell WS2012 Storage - iSCSI Target Server -...","categories": [],
+        "tags": ["datastore","homelab","lab","lun","powershell","powershell 3.0","raid","storage","storage pool","virtual disk","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2013/08/ws2012-storage-creating-storage-pool.html",
+        "teaser":null},{
+        "title": "PowerShell Studio 2012 - WinForms - Creating a basic GUI (Video)",
+        "excerpt":"The following post will demo how to create a basic Graphical User Interface with SAPIEN PowerShell Studio 2012. Update:See also the second part of this post:PowerShell Studio 2012 - WinForms - GUI ToolMaking Last year I released a PowerShell script calledLazyWinAdmin 0.4 which is a script that generate a Graphical...","categories": [],
+        "tags": ["powershell","sapien powershell studio 2012","video"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-studio-2012-winforms.html",
+        "teaser":null},{
+        "title": "PowerShell Studio 2012 - WinForms - GUI ToolMaking",
+        "excerpt":"In my previous post I showed how to create a quick PowerShell GUI to append some colored text in a RichTextBox control using Sapien PowerShell Studio 2012. Today I will go a bit further and show you how to create a tool to query some information from a remote computer....","categories": [],
+        "tags": ["gui","powershell","sapien powershell studio 2012","tool","toolmaking","video","winform"],
+        "url": "https://lazywinadmin.github.io/2013/10/PowerShellStudio2012ToolMaking.html",
+        "teaser":null},{
+        "title": "PowerShell - Monitor and Report Active Directory Group Membership Change",
+        "excerpt":"UPDATE 2016/05/03:The most recent update is availableon Github See also the related blogpost:https://lazywinadmin.github.io/2013/11/update-powershell-monitor-and-report.html Today I will update a post that I published at the beginning of last year : Monitor Active Directory Membership changes.I updated the script to add some of the things I learned during the Scripting Games 2013...","categories": [],
+        "tags": ["active directory","compare","csv","html","monitoring","powershell","report"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-monitor-and-report-active.html",
+        "teaser":null},{
+        "title": "PowerShell - Get-DomainUser",
+        "excerpt":"Today one of my IT coworkers, in another department, sent a couple of emails to the Ops to get the username (SamAccount) from a couple of Active Directory users accounts. This guy, which is not familiar with AD, had only the DisplayName properties information. I wrote him back that he...","categories": [],
+        "tags": ["active directory","adsi","function","ldap","powershell","user account"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-get-domainuser.html",
+        "teaser":null},{
+        "title": "PowerShell - Get a SubString out of a String using RegEx",
+        "excerpt":"Last week one of my colleague asked me if I could help him with some Regular Expression (Regex) to select some text inside a String. I don’t work a lot with RegEx but when I do, I use tools like PowerRegex from Sapien, RegExr,the technet help forabout_Regular_Expressionsor RegExlib.com. And to...","categories": [],
+        "tags": ["operators","powershell","regex","regular expressions","split","substring"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-get-substring-out-of-string.html",
+        "teaser":null},{
+        "title": "PowerShell - Report the AD Missing Subnets from the NETLOGON.log",
+        "excerpt":"Today I will share with you a script that report the Missing Subnets detected in the NetLogon file(s) of your Active Directory Domain Controller(s). Update See my Github repository for the most recent version Missing Subnets When a computer is joined to a domain It knows for sure of which...","categories": [],
+        "tags": [".net","active directory","automation","log","missing subnet","netlogon","powershell","regex","report","subnet"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-report-ad-missing-subnets.html",
+        "teaser":null},{
+        "title": "PowerShell - Organizing my Scripts",
+        "excerpt":"With time, the number of PowerShell scripts I write keeps growing and growing, and I feel it is getting more and more difficult to find what I have done in the past. I won’t say that all my scripts are great! Especially when I look at the scripts I wrote...","categories": [],
+        "tags": ["folder","naming convention","organizing","powershell","skydrive","version control"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-organizing-my-scripts.html",
+        "teaser":null},{
+        "title": "PowerShell - Renaming a bunch of folders",
+        "excerpt":"In my previous post I talked about Organizing my script directory, naming convention, preferences and bottlenecks… Today let’s reorganize some of those script folders. Renaming a bunch of folders At my work, all the scripts related to VMware are named ESX--. And I use the same naming convention at home...","categories": [],
+        "tags": ["directory","folder","powershell","rename"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-renaming-bunch-of-folders.html",
+        "teaser":null},{
+        "title": "PowerShell 4.0 is now available",
+        "excerpt":"PowerShell 4.0 has been released by Microsoft andis now available to download and install with the Windows Management Framework 4.0 (WMF 4.0). Windows PowerShell Windows PowerShell is a task-based command-line shell and scripting language designed especially for system administration. Built on the .NET Framework, Windows PowerShell helps IT professionals and...","categories": [],
+        "tags": ["powershell","powershell 4.0"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-40-is-now-available.html",
+        "teaser":null},{
+        "title": "PowerShell - Using ADSI with alternate Credentials",
+        "excerpt":"The following PowerShell code will show you how to run ADSI with alternate credentials to get information from the Active Directory. I will query Group objects in this example, my filter is define by the following line:”(objectCategory=Group)” Using ADSI with alternate Credentials #Define the Credential $Credential = Get-Credential -Credential FX\\catfx...","categories": [],
+        "tags": ["active directory","adsi","credentials","function","powershell"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-using-adsi-with-alternate.html",
+        "teaser":null},{
+        "title": "PowerShell - Get-DomainComputer (ADSI)",
+        "excerpt":"The following function use ADSI to query Computer objects from the Active Directory. Optionally an alternate credentials and/or a different domain can be specified. Once in a while, everyone “enjoy” doing Auditing at work…,ok maybe not everyone :-)…. so last week, an colleague of mine needed to get the name...","categories": [],
+        "tags": ["active directory","adsi","computer object","credentials","powershell"],
+        "url": "https://lazywinadmin.github.io/2013/10/powershell-get-domaincomputer-adsi.html",
+        "teaser":null},{
+        "title": "PowerShell - Add AD Site Subnet",
+        "excerpt":"Last month I posted a script that report the Missing Subnets from the Active Directory. The script goes on each Domain Controllers and get the last x entries from the NETLOGON.log file. Once this report is generated, you might want to check with your Telecom guy/team to get the correct...","categories": [],
+        "tags": ["active directory","adsi","import-csv","missing subnet","powershell","powershell 4.0","subnet"],
+        "url": "https://lazywinadmin.github.io/2013/11/powershell-add-ad-site-subnet.html",
+        "teaser":null},{
+        "title": "[UPDATE] PowerShell - Monitor and Report Active Directory Group Membership Change",
+        "excerpt":"Update The most recent update is available on Github I found some time to update the script Monitor Active Directory Membership changes. This is now the version 1.6. As a reminder, this script allows you to monitor Active Directory groups membership changes. It will send you a report via email...","categories": [],
+        "tags": ["active directory","group membership","monitoring","organizational unit","powershell","report"],
+        "url": "https://lazywinadmin.github.io/2013/11/update-powershell-monitor-and-report.html",
+        "teaser":null},{
+        "title": "Top Five 2013 LazyWinAdmin Blog Posts",
+        "excerpt":"The year 2013 has been a pretty good year for the LazyWinAdmin blog. Thank you guys for following my blog and participating to the comments discussions. Thanks also for those who give me advices, critics and ideas to improve my scripts, I think It helps everyone (and myself) to improve...","categories": [],
+        "tags": ["active directory","blog posts","group membership","powershell","regex","top five 2013","windows server 2012"],
+        "url": "https://lazywinadmin.github.io/2014/01/top-five-2013-lazywinadmin-blog-posts.html",
+        "teaser":null},{
+        "title": "Microsoft MVP 2014 for PowerShell !",
+        "excerpt":"What an amazing way to start the year !!! It is a great pleasure and honor to announce that on the 1st of January I was awarded the Microsoft Most Valuable Professional (MVP) Award for outstanding contributions in Windows PowerShell. &lt;blockquote class=\"tr_bq\"&gt;Dear Francois-Xavier Cat,&lt;/blockquote&gt;&lt;blockquote class=\"tr_bq\"&gt;Congratulations! We are pleased to present...","categories": [],
+        "tags": ["achievement","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/01/im-powershell-mvp.html",
+        "teaser":null},{
+        "title": "I'm a PowerShell Hero ! Thank you guys !",
+        "excerpt":"Wow ! What a year so far… I’m one of the five persons who received the first-ever PowerShell Heroes recognition on PowerShell.org. “The idea was to offer a kudos to folks who have been working hard in the PowerShell community, but who haven’t received other formal recognition (like Microsoft’s MVP...","categories": [],
+        "tags": ["achievement","powershell","powershell heroes 2014"],
+        "url": "https://lazywinadmin.github.io/2014/01/im-powershell-hero-thank-you-guys.html",
+        "teaser":null},{
+        "title": "PowerShell MVP award",
+        "excerpt":"Here a quick post to show you the awesome MVP Welcome Kit I received ! :-)      ","categories": [],
+        "tags": ["achievement","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/01/powershell-mvp-award.html",
+        "teaser":null},{
+        "title": "Winter Scripting Games 2014",
+        "excerpt":"Get Ready! The Winter Scripting Games 2014 are starting very soon !! The Event 1 is scheduled to start this week-end (Jan 19th 2014)! The Games are an amazing opportunity to learn more about PowerShell. This is the kind of thing you don’t want to miss !!! Last year I...","categories": [],
+        "tags": ["2014 winter scripting games","powershell","scripting games"],
+        "url": "https://lazywinadmin.github.io/2014/01/winter-scripting-games-2014.html",
+        "teaser":null},{
+        "title": "PowerShell ISE Tip - Navigate between curly brackets",
+        "excerpt":"While playing with PowerShell ISE today, I just found out about this little nice trick to navigate between brackets !!! I did not know about this! Pretty cool stuff ! :-) By positioning your cursor on one of the brackets, you can navigate to its opening/closing one by pressing CTRL&lt;/b&gt;...","categories": [],
+        "tags": ["ise","powershell ise","sapien powershell studio 2012","tip"],
+        "url": "https://lazywinadmin.github.io/2014/01/powershell-ise-tip-navigate-between.html",
+        "teaser":null},{
+        "title": "PowerShell Tip - Adding Help in the PARAM statement",
+        "excerpt":"It’s always a good idea to include help within your functions ! You never know who might benefit from it. With PowerShell adding help to your script, function and module is a really easy thing to do. Help in the PARAM statements A very cool way to add some help...","categories": [],
+        "tags": ["powershell","powershell 3.0","powershell 4.0","powershell ise","sapien powershell studio 2012","tip"],
+        "url": "https://lazywinadmin.github.io/2014/01/powershell-tip-adding-help-in-param.html",
+        "teaser":null},{
+        "title": "PowerShell Summit North America 2013",
+        "excerpt":"In April 2013 I was one of the lucky attendees at the first PowerShell Summit in North America. The event was organized by the PowerShell.org team and was held in Redmond, WA between the 22nd and 25th of April 2013. I thought sharing some details and pictures would be nice...","categories": [],
+        "tags": ["mvp","powershell","powershell summit","powershell summit 2013","powershell summit 2013 north america","powershell team","redmond","seattle"],
+        "url": "https://lazywinadmin.github.io/2014/03/powershell-summit-north-america-2013.html",
+        "teaser":null},{
+        "title": "PowerShell Summit North America 2014",
+        "excerpt":"In approximately 1 month I will be attending the PowerShell Summit 2014 North America. This is the second edition of this event organized by the PowerShell.org team, It will be held April 28, 29, and 30 at the Meydenbauer Center on Northeast 6th Street in Bellevue, WA. Note: If you...","categories": [],
+        "tags": ["powershell summit","powershell summit 2014","powershell summit 2014 north america","powershell team","seattle"],
+        "url": "https://lazywinadmin.github.io/2014/03/powershell-summit-north-america-2014.html",
+        "teaser":null},{
+        "title": "PowerShell Studio 2014 from Sapien released!",
+        "excerpt":"SAPIEN released a new version of their awesome tool PowerShell Studio a few days ago:SAPIEN PowerShell Studio 2014. PowerShell Studio is a Toolmaking Environment, a PowerShell Integrated Scripting Environment (ISE) tool that let you edit and debug scripts, create package, installer, executable and deployments. Also, the Enhanced Form Designer makes...","categories": [],
+        "tags": ["gui","ise","powershell","sapien","sapien powershell studio 2014"],
+        "url": "https://lazywinadmin.github.io/2014/03/powershell-studio-2014-from-sapien.html",
+        "teaser":null},{
+        "title": "PowerShell - Find Inactive Computers in Active Directory with ADSI",
+        "excerpt":"Today I wanted to retrieve inactive computer accounts in the Active Directory without using the Quest Active Directory Snapin or the Active Directory Module. Yes… It happens that you work on a computer that don’t have those tools once in a while, and I thought It would be fun to...","categories": [],
+        "tags": ["active directory","adsi","computer object","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/03/powershell-find-inactive-computers-in.html",
+        "teaser":null},{
+        "title": "PowerShell - Read an Excel file using COM Interface",
+        "excerpt":"Last week, I worked on a small PowerShell script to read a custom excel file sheet with a lot of information in different columns and rows. Unfortunately, you’ll have to adapt the script to your needs. However I thought this might be helpful to understand how this work. Here is...","categories": [],
+        "tags": ["com","microsoft excel","microsoft office","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/03/powershell-read-excel-file-using-com.html",
+        "teaser":null},{
+        "title": "PowerShell - Get/Set the Network Level Authentication Remotely (RDP Setting)",
+        "excerpt":"A few days ago I was in a training class out of the office with one of my work colleague. During the class he tried to connect to work using our Citrix (SRA) portal when he realized that his computer at work (freshly re-installed with Windows 8.1) was not allowing...","categories": [],
+        "tags": ["cim","powershell","rdp","remote","remote desktop","wmi"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-getset-network-level.html",
+        "teaser":null},{
+        "title": "PowerShell - Get a list of my domain Organizational Units",
+        "excerpt":"Quick post, last week my coworker Andrey needed to list all the Organization Units in the domain by Canonical Name. I thought sharing the PowerShell One-Liner magic could save time to some people out there. In the following examples two methods to retrieve the information usingActive Directory and ADSI/NET. Active...","categories": [],
+        "tags": [".net","active directory","activedirectory module","adsi","csv","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-get-list-of-my-domain.html",
+        "teaser":null},{
+        "title": "PowerShell - PowerShell v5 \"Preview\" available",
+        "excerpt":"Wow that was really fast!! In case you missed it last week,PowerShell 5.0 “Preview” has been released by Microsoft part of Windows Management Framework 5.0 (WMF 5.0) Preview. The release of the version 4 was not so long ago (October 2013), Microsoft is definitely increasing the pace of releases. DownloadWMF...","categories": [],
+        "tags": ["dsc","module","networkswitch module","oneget module","powershell","powershell 5.0","wmf 5"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-powershell-v5-preview.html",
+        "teaser":null},{
+        "title": "PowerShell - Playing with the new OneGet module (v5 preview)",
+        "excerpt":"One very cool thing in the last Windows Management Framework V5 Preview release is the new module OneGet which allow us to manage a list of software repositories, search/acquire/install/uninstall package(s). This has been present in the Linux world for a very long time, for example with APT-GET (Debian). This new...","categories": [],
+        "tags": ["module","oneget module","powershell","powershell 5.0","wmf 5"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-playing-with-new-oneget.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 NA - Day 1",
+        "excerpt":"The PowerShell Summit 2014 North America kicked off this morning ! What a day! The organizers really did an Awesome Work!! Great Summit so far! This event is a great opportunity to meet old friends, make some new ones and put faces on names. I also took this opportunity to...","categories": [],
+        "tags": ["powershell","powershell summit 2014","powershell summit 2014 north america"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-summit-2014-na-day-1.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 NA - Iron Scripter scenario",
+        "excerpt":"Monday evening, the PowerShell Summit 2014 NA organized an Iron Scripter competition. The goal was to fix/create 3 scripts and to get them rated by 3 juges. We had 45 minutes to complete everything, including time for the juges to score the scripts. PshSummit 2014 NA serie posts: PowerShell Summit...","categories": [],
+        "tags": ["powershell","powershell summit","powershell summit 2014","powershell summit 2014 north america"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-summit-2014-na-iron-scripter.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 NA - Day 2",
+        "excerpt":"Another day of PowerShell Awesomeness !!! Learned a ton of things today !! Made some new PowerShell friends ANDDD met so many PowerShell Team members!! Nana, John Slack, Bruce,…etc… and Diane Dubois a new member from France! It was a great surprise! Awesome! I was really not expecting to speak...","categories": [],
+        "tags": ["powershell","powershell summit","powershell summit 2014","powershell summit 2014 north america"],
+        "url": "https://lazywinadmin.github.io/2014/04/powershell-summit-2014-na-day-2.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 NA - Day 3",
+        "excerpt":"The PowerShell Summit 2014 NA is now over ! The organizers really did an awesome work !! I can’t wait for next year!! In 2015 the event will be hosted in Charlotte, NC around the same time. PshSummit 2014 NA serie posts: PowerShell Summit 2014 NA - Day 1 PowerShell...","categories": [],
+        "tags": ["powershell","powershell summit","powershell summit 2014","powershell summit 2014 north america"],
+        "url": "https://lazywinadmin.github.io/2014/05/powershell-summit-2014-na-day-3.html",
+        "teaser":null},{
+        "title": "New-Job -Company WB -Role SysAdmin",
+        "excerpt":"Next week I will be starting a new job at Warner Brothers Gaming studio in Montreal as a Senior Microsoft System Administrator. It is with mixed emotions that I’m leaving my current employer Domtar where I spend the last five years. In 2009 I started as a Windows System Administrator...","categories": [],
+        "tags": ["domtar","montreal","personal update","warner brothers"],
+        "url": "https://lazywinadmin.github.io/2014/06/new-job-company-wb-role-sysadmin.html",
+        "teaser":null},{
+        "title": "PowerShell - Handy function to connect to Office365 services",
+        "excerpt":"I just started to play with a Microsoft Office 365 environment (Azure Active Directory, Lync Online and Exchange Online) and I thought I would make it through PowerShell obviously :-) But when you start your PowerShell console… you need to load modules, connect to each services, enter your credentials…yada yada...","categories": [],
+        "tags": ["active directory","azure","azure active directory","exchange online","lync online","office365","powershell","powershell profil"],
+        "url": "https://lazywinadmin.github.io/2014/07/powershell-handy-function-to-connect-to.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 Europe (English)",
+        "excerpt":"French version The European PowerShell Summit, organised by PowerShell.orgguys, will be in Amsterdam from the September 29th to the October 1st 2014 at the Park Hotel. Details at http://powershell.org/wp/community-events/summit/ The Summit will feature 3 days of PowerShell sessions from PowerShell team members, PowerShell MVPs and other PowerShell experts. It’s the...","categories": [],
+        "tags": ["powershell","powershell summit 2014","powershell summit 2014 europe"],
+        "url": "https://lazywinadmin.github.io/2014/08/powershell-summit-2014-europe-english.html",
+        "teaser":null},{
+        "title": "PowerShell Summit 2014 Europe (FranÃ§ais/French)",
+        "excerpt":"English version. La confÃ©rence PowerShell Summit Europe organisera sa premiÃ¨re Ã©dition du 29 septembre au 1er octobre 2014. Trois jours de sessions PowerShell par les membres de l’Ã©quipe PowerShell, MVPs et d’autres experts PowerShell. C’est le lieu de rassemblement pour des tous enthousiastes et utilisateurs PowerShell ; l’endroit pour faire...","categories": [],
+        "tags": ["francais","french","powershell","powershell summit 2014","powershell summit 2014 europe"],
+        "url": "https://lazywinadmin.github.io/2014/08/powershell-summit-2014-europe.html",
+        "teaser":null},{
+        "title": "PowerShell - Parse this - NetStat.exe",
+        "excerpt":"In the last couple of months I had to parse different types of output using PowerShell and I thought it would be a cool idea to explain how this can be done. Command line tool: Netstat.exe This small tool allows you to display active TCP connections, ports on which the...","categories": [],
+        "tags": ["cli","netstat","parser","parsing","powershell","substring","toolmaking"],
+        "url": "https://lazywinadmin.github.io/2014/08/powershell-parse-this-netstatexe.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - My first steps",
+        "excerpt":"I recently started to work withSystem Center Service Manager 2012 R2(also known as SCSM) which provides provides an integrated platform for automating and adapting an organization’s IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes...","categories": [],
+        "tags": ["powershell","scsm","scsm service request","smlets","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2014/08/powershell-scsm-my-first-steps.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Retrieving Active Directory Object Classes",
+        "excerpt":"Following my previous post, today I continuemy SCSM journey. I had to create a new automation workflow using SCSM and SCORCH to give the ability to a portal user to add an Active Directory Account to one or more group(s). Once you get the input of the user, the selected...","categories": [],
+        "tags": ["active directory","powershell","sco","scorch","scsm","scsm2012r2","smlets","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2014/08/powershell-scsm-retrieving-active.html",
+        "teaser":null},{
+        "title": "PowerShell - Sum similar entries from multiple CSV files",
+        "excerpt":"One of my script is scheduled to download everyday the proxy logs files from multiple proxies (Approx 1&gt;2GB per file) of the previous day. The second step is to parse each of them and get the top 200 domain names within a specific environment. Finally at the end of the...","categories": [],
+        "tags": ["csv","import-csv","log","microsoft excel","parsing","powershell","proxy"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-sum-similar-entries-from.html",
+        "teaser":null},{
+        "title": "PowerShell - WMF 5.0 July preview uninstallation fails",
+        "excerpt":"Today the PowerShell Team released a new version of the WMF : v5 September preview, I really like the faster beta cycle ! Having the beta preview already installed (July version), I first open Add/Remove Programs (appwiz.cpl) and start to uninstall this version (KB2969050). Once the uninstallation is completed, Windows...","categories": [],
+        "tags": ["fail","powershell","powershell 5.0","wmf 5"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-wmf-50-july-preview.html",
+        "teaser":null},{
+        "title": "PowerShell - Playing with the new ConvertFrom-String cmdlet",
+        "excerpt":"In a previous post I talked about parsing NetStat.exe using PowerShell and some regex, It is a fun exercice but require some knowledge to figure out how the parsing should happen. Today, It got way easier ! The PowerShell Team just released a new version of the WMF : v5...","categories": [],
+        "tags": ["convertfrom-string","netstat","parser","parsing","powershell","powershell 5.0","regex","regular expressions"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-playing-with-new-convertfrom.html",
+        "teaser":null},{
+        "title": "PowerShell - ConvertFrom-String and the TemplateFile parameter",
+        "excerpt":"I’m continuing to play with the new ConvertFrom-String cmdlet (available in the last WMF 5.0 September preview released yesterday) which make the parsing job really easy for simple or complex output. This cmdlets supports two types of modes: Basic Delimited Parsing (See yesterday’s post) and the Auto-Generated Example-Driven Parsing which...","categories": [],
+        "tags": ["convertfrom-string","netstat","parser","parsing","powershell","powershell 5.0","regex","regular expressions"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-convertfrom-string-and.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Install and Config the SMlets Module",
+        "excerpt":"If you follow my blog, you might have noticed that I recently started to post about SCSM. We just finished to migrate to a new SCSM environment in Azure (Iaas) while using Cireson Portal as a front end. Of course of lot of the automation part is handled by SCORCH...","categories": [],
+        "tags": ["powershell","scorch","scsm","smlets","system center 2012 r2","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-scsm-install-and-config.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Finding the GUID of an object",
+        "excerpt":"Retrieving the GUID of an object in SCSM using PowerShell is sometime a bit challenging. For the WorkItems, this piece of information is not present in any Property available, you have to invoke the get_id method to retrieve it. There is an ‘ID’ property which is misleading, it contains the...","categories": [],
+        "tags": ["powershell","scsm","smlets","system center 2012 r2","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershellscsm-finding-guid-of-object.html",
+        "teaser":null},{
+        "title": "PowerShell - NetBackupPS - Module for Symantec NetBackup",
+        "excerpt":"In my previous job, we used Symantec NetBackup to handle backups and restores. To handle some of the reporting, the storage admins were using the Symantec CLI tools (bunch of Exe). Example of usages: Find the scratch tapes in a particular robot… or in a particular site… I wanted to...","categories": [],
+        "tags": ["cli","github","module","netbackupps","parser","parsing","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-netbackupps-module-for.html",
+        "teaser":null},{
+        "title": "PowerShell Tip - Escape Regex MetaCharacters",
+        "excerpt":"Last week I worked on a Scorch PowerShell script that is looking for duplicate Incident Requests inside SCSM by checking new incoming request and existing ticket already in the system. One of the script step is to look for a match between two strings, something similar to the following: $String1...","categories": [],
+        "tags": [".net","powershell","powershell tip","regex","regular expressions","tip"],
+        "url": "https://lazywinadmin.github.io/2014/09/powershell-tip-escape-regex.html",
+        "teaser":null},{
+        "title": "PowerShell - Check the GPO Replication accross your domain",
+        "excerpt":"A couple of days ago we had to troubleshoot some SYSVOL replication issues throughout the domain. I wanted to check the version of the GPO that was modified recently and make sure it was replicated on all the Domain Controllers. I created a small function called Get-ADGPOReplication to easily compare...","categories": [],
+        "tags": ["active directory","activedirectory module","ad health check","ad replication","gpo","group policy","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/10/powershell-check-gpo-replication.html",
+        "teaser":null},{
+        "title": "PowerShell GUI - LazyTS (Terminal Services Management)",
+        "excerpt":"LazyTS is a PowerShell script to manage Sessions and Processeson local or remote machines. It allows you to Query/Disconnect/Stop session(s), Query/Stop process(es) andSend Interactive message to one or more sessions. This tool is using the module PSTerminalService which relies on the Cassia .NET Library.I used Sapien PowerShell Studio 2014to which...","categories": [],
+        "tags": ["gui","powershell","qwinsta","sapien powershell studio 2014","terminal process","terminal services manager","terminal session","winform"],
+        "url": "https://lazywinadmin.github.io/2014/10/powershell-gui-lazyts-terminal-services.html",
+        "teaser":null},{
+        "title": "PowerShell - Who Reports to Whom? (Active Directory recursive DirectReports)",
+        "excerpt":"I’ve been working in the video games industry for a bit more than 3 months now. A lot is going on, and the pace seems faster than regular corporation environment. I also notice a lot of employees movements between teams and projects. Last week I had an interesting “Quest”: To...","categories": [],
+        "tags": ["active directory","activedirectory module","directreports","function","powershell"],
+        "url": "https://lazywinadmin.github.io/2014/10/powershell-who-reports-to-whom-active.html",
+        "teaser":null},{
+        "title": "Finding VIBs on ESXi hosts with PowerCLI",
+        "excerpt":"I did not work with PowerCli for the last couple of months and I had an interesting question from one of my follower Ivo from Netherlands. He was trying to retrieve the VIB information with the name net-e1000e from all his VMware Hosts using the PowerShell and the Snapin PowerCli...","categories": [],
+        "tags": ["oneliner","powercli","powershell","vib","vmware"],
+        "url": "https://lazywinadmin.github.io/2014/11/finding-vibs-on-esxi-hosts-with-powercli.html",
+        "teaser":null},{
+        "title": "Microsoft MVP 2015 for PowerShell !",
+        "excerpt":"What an Amazing way to start the year !!! It is a great pleasure and honor to receive the Microsoft Most Valuable Professional (MVP) Award for a second year for my contributions in Windows PowerShell. Can’t wait to stack the 2015 ring on the MVP Award trophy! HUGE Thank you...","categories": [],
+        "tags": ["achievement","microsoft","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/01/im-powershell-mvp-again.html",
+        "teaser":null},{
+        "title": "and that was 2014!",
+        "excerpt":"We just started 2015 so I figured it was the time to look back at what I did in the past 12 months. I have some of stats which may be of interest, but of course also on a more personal level 2014 was an Awesome year !! Achievements and...","categories": [],
+        "tags": ["LazyWinAdmin"],
+        "url": "https://lazywinadmin.github.io/2015/01/and-that-was-2014.html",
+        "teaser":null},{
+        "title": "PowerShell Tip - PSReadLine shortcuts",
+        "excerpt":"If you are using PowerShell everyday like me, you probably started to populate you profile with some neat tools that make you like easier. In my case It’s loading some modules or add some functions such as Connect-Office365 or Clx. PSReadLine is one of the module I’ve been using for...","categories": [],
+        "tags": ["powershell","powershell tip","psreadline","tip"],
+        "url": "https://lazywinadmin.github.io/2015/01/powershell-tip-psreadline-shortcuts.html",
+        "teaser":null},{
+        "title": "PowerShell Studio 2014 - DataGridView Sorting",
+        "excerpt":"When creating graphical tools with PowerShell Studio 2014 and using the DataGridView control, I often find myself looking for the following tip! The DataGridView control provides a customizable table for displaying data. You can extend the DataGridView control in a number of ways to build custom behaviors into your applications....","categories": [],
+        "tags": ["datagridview","powershell","sapien powershell studio 2014","winform"],
+        "url": "https://lazywinadmin.github.io/2015/01/powershell-studio-2014-datagridview.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Change the Status of a Manual Activity or a Service Request.",
+        "excerpt":"Using the PowerShell module SMlets you can easily change the Status of a Ticket inside System Center Service Manager. Here are the small bits of code to change the Status of a Manual Activity and a Service Request. # Import the module Import-Module -Name smlets # Get a specific manual...","categories": [],
+        "tags": ["powershell","scsm","smlets","system center 2012","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2015/01/powershellscsm-change-status-of-manual.html",
+        "teaser":null},{
+        "title": "I'm a SAPIEN MVP 2015",
+        "excerpt":"A few weeks ago, Sapien announced on their blog the introduction of the SAPIEN Most Valuable Professional (MVP) award. This program goal is to recognize and show their appreciation for community members who promote their products and contribute to their improvement and success. And last week I received some unexpected...","categories": [],
+        "tags": ["achievement","powershell","sapien","sapien mvp","sapien powershell studio 2012","sapien powershell studio 2014"],
+        "url": "https://lazywinadmin.github.io/2015/01/im-sapien-mvp-2015.html",
+        "teaser":null},{
+        "title": "PowerShell Studio 2014/2015 - Editor Preset - Dark theme",
+        "excerpt":"Today a quick post to share one of the editor preset I created for Sapien PowerShell Studio. Because I prefer to work with a dark theme, when installing PowerShell Studio, one of the first thing I do is to set my layout to Editor Only and put a Dark theme...","categories": [],
+        "tags": ["sapien","sapien powershell studio 2014","sapien powershell studio 2015"],
+        "url": "https://lazywinadmin.github.io/2015/02/powershell-studio-20142015-editor.html",
+        "teaser":null},{
+        "title": "Introducing WinFormPS - PowerShell module to interact with WinForms controls",
+        "excerpt":"I started to work on a PowerShell module called WinFormPS. This module contains a few functions that let you interact with Windows Form controls such as DataGridView, ListBox or Button controls for example. To build those forms I mostly use PowerShell Studio from Sapien but this can also work with...","categories": [],
+        "tags": ["module","powershell","winform","winformps","winforms","winforms controls"],
+        "url": "https://lazywinadmin.github.io/2015/02/introducing-winformps-powershell-module.html",
+        "teaser":null},{
+        "title": "Two free live trainings from MVA on Desired State Configuration !",
+        "excerpt":"This week Microsoft Virtual Academy (MVA) will host two great live training events, one tomorrow and another one after tomorrow on Desired State Configuration. If you are not familiar with MVA, It provides free online IT training learning of Windows, Microsoft Technologies through courses designed by industry experts. I did...","categories": [],
+        "tags": ["desired state configuration","dsc","free","powershell","training"],
+        "url": "https://lazywinadmin.github.io/2015/02/two-free-live-trainings-from-mva-on.html",
+        "teaser":null},{
+        "title": "Update - LazyTS v1.1",
+        "excerpt":"I found some time over the week-end to fix some bugs and add a few things to LazyTS. You’ll now be able to quickly search though the displayed data using the small highlight util and open a Remote Desktop connection using the Shadow feature (View and Control) See this link...","categories": [],
+        "tags": ["gui","lazyts","powershell","sapien","sapien powershell studio 2015"],
+        "url": "https://lazywinadmin.github.io/2015/03/lazyts-11-update.html",
+        "teaser":null},{
+        "title": "PowerShell Blogging Week",
+        "excerpt":"Next week, from the 30th of March to the 4th of April, I will be participating to the PowerShell Blogging Week with a couple of community well-known Bloggers/Enthusiasts/MVP. But.. what is the PowerShell Blogging Week: This event was initiated by Jeffery Hicks and Adam Bertram and will focus on one...","categories": [],
+        "tags": ["powershell","powershell blogging week"],
+        "url": "https://lazywinadmin.github.io/2015/03/powershell-blogging-week.html",
+        "teaser":null},{
+        "title": "Standard and Advanced PowerShell functions",
+        "excerpt":"This post is part of the PowerShell Blogging Week (#PSBlogWeek), a series of coordinated posts designed to provide a comprehensive view of a particular topic. This week topic will be focused on Windows PowerShell Advanced Functions. In this series: Standard and Advanced PowerShell Functions by Francois-Xavier Cat (@LazyWinAdmin) (March 30,...","categories": [],
+        "tags": ["powershell","powershell blogging week"],
+        "url": "https://lazywinadmin.github.io/2015/03/standard-and-advanced-powershell.html",
+        "teaser":null},{
+        "title": "PSBlogWeek on Advanced Functions - Free eBook available",
+        "excerpt":"Last week I participated to the PowerShell Blog Week with a couple of community well-known Bloggers/Enthusiasts/MVP. The topic of the week was Advanced Functions. It seems a lot of people enjoyed the event and I hope a great amount learned something from it. I’m happy to announced that all the...","categories": [],
+        "tags": ["ebook","powershell","powershell blogging week"],
+        "url": "https://lazywinadmin.github.io/2015/04/psblogweek-on-advanced-functions-free.html",
+        "teaser":null},{
+        "title": "PowerShell/Active Directory - Retrieve Groups managed by a User",
+        "excerpt":"I recently had an interesting request at work: Finding a way to list all the groups a specific user was managing. If you look into the properties of an Active Directory group object, you will find under the tab ManagedBy the name of a user or group who is managing...","categories": [],
+        "tags": ["active directory","activedirectory module","adsi","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/04/powershellactive-directory-retrieving.html",
+        "teaser":null},{
+        "title": "Microsoft Ignite 2015 in Chicago",
+        "excerpt":"This week I will be in Chicago, Illinois to attend the Microsoft Ignite 2015. The last time I was in Chicago was for the Marathon in 2012. I kept a great souvenir of the city and people were super nice! This time I’m going to attend the Microsoft Ignite all...","categories": [],
+        "tags": ["chicago","microsoft","microsoft ignite 2015"],
+        "url": "https://lazywinadmin.github.io/2015/05/microsoft-ignite-2015-in-chicago.html",
+        "teaser":null},{
+        "title": "PowerShell - Report Expiring User accounts",
+        "excerpt":"In the video game industry it is common practice to hire consultants to take care of the Quality Assurance, which consists of a means of the software engineering processes and methods used to ensure quality. Those people are most likely Testers and usually spend most of their day testing games...","categories": [],
+        "tags": ["active directory","expiring","powershell","report","user account"],
+        "url": "https://lazywinadmin.github.io/2015/05/powershell-report-expiring-user-accounts.html",
+        "teaser":null},{
+        "title": "PowerShell - Remove Diacritics (Accents) from a string",
+        "excerpt":"In the last few days, I have been working on a Onboarding automation process that need to handle both French and English and one of the step needed to remove the accents (also knows as Diacritics) from some strings passed by the users. The following approach uses String.Normalize to split...","categories": [],
+        "tags": ["accents","diacritics","powershell","string"],
+        "url": "https://lazywinadmin.github.io/2015/05/powershell-remove-diacritics-accents.html",
+        "teaser":null},{
+        "title": "PowerShell - Using Office 365 REST API to get Calendar Events",
+        "excerpt":"A couple of weeks ago I was looking at a way to find the Calendar Events of an Office365 shared mailbox using PowerShell. Unfortunately I was not able to find a way to accomplished this task using the O365 Cmdlets. (Let me know in the comments if you know how…)...","categories": [],
+        "tags": ["exchange online","office 365 api","office365","powershell","rest","rest api"],
+        "url": "https://lazywinadmin.github.io/2015/06/powershell-using-office-365-rest-api-to.html",
+        "teaser":null},{
+        "title": "Windows 10 ADK - Issues while uninstalling Windows 8.1 ADK and installing Windows 10 ADK",
+        "excerpt":"Installing Windows 10 Assessment and Deployment Kit (ADK) on SCCM 2012 R2 SP1 was a bit tricky. To “upgrade” the Windows ADK from 8.1 to 10, Microsoft recommend to remove Windows 8.1 ADK prior to the installation of Windows 10 ADK. We had some issue uninstalling Windows 8.1 ADK and...","categories": [],
+        "tags": ["powershell","sccm","sccm2012r2","windows 10","windows 8.1","windows adk"],
+        "url": "https://lazywinadmin.github.io/2015/08/windows-10-adk-issues-while.html",
+        "teaser":null},{
+        "title": "PowerShell/Office 365 - Get the distribution groups membership",
+        "excerpt":"I was recently looking at Office365/Exchange Online to retrieve Distribution Group membership. This is pretty simple using something like: Get-DistributionGroupMember -Identity \"Marketing\" Not that prior to perforce the following command you need to be already connected to Office365, see this post. Retrieving all members of each Distribution Group Now if...","categories": [],
+        "tags": ["distribution group","exchange online","o365 distribution group","office365","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/08/powershello365-get-distribution-groups.html",
+        "teaser":null},{
+        "title": "PowerShell/Office 365 - Get an Exchange Online user's distribution groups efficiently",
+        "excerpt":"In my previous post I showed how to retrieve the membership of one or multiple groups. In today’s post I want to find the Distribution groups a user belongs to. There are multiple approaches you could be using to gather this information but as an example I’ll re-use the same...","categories": [],
+        "tags": ["distribution group","exchange online","o365 distribution group","office365","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/08/powershelloffice-365-get-exchange.html",
+        "teaser":null},{
+        "title": "PowerShell - Remove special characters from a string using Regular Expression (Regex)",
+        "excerpt":"Some more string manipulations! Today I’d like to remove the special characters and only keep alphanumeric characters using Regular Expression (Regex). You might be interested to check a previous article where I showed how to remove diacritics (accents) from some strings, see here: https://lazywinadmin.github.io/2015/05/powershell-remove-diacritics-accents.html My goal is to be able...","categories": [],
+        "tags": ["powershell","regex","regular expressions","string"],
+        "url": "https://lazywinadmin.github.io/2015/08/powershell-remove-special-characters.html",
+        "teaser":null},{
+        "title": "Montreal PowerShell User Group #01 - Introduction to PowerShell",
+        "excerpt":"-English- This is our first Montreal PowerShell User Group ! We’ll start easy with a presentation on the basics of PowerShell ! Hope to see you there! Pizza, PopCorn and some free games to win! When Tuesday, 15th of September 2015 Where Warner Brothers Games - 888 Maisonneuve Est -...","categories": [],
+        "tags": ["montreal","montreal powershell user group","powershell","sapien","warner brothers"],
+        "url": "https://lazywinadmin.github.io/2015/08/montreal-powershell-user-group-01.html",
+        "teaser":null},{
+        "title": "PowerShell/SCCM - Find Applications advertised to a user",
+        "excerpt":"The following function helps you retrieve all the deployment that a user is supposed to received. We use this during the Operating System Deployment (OSD). Using the UDI we get the user account that will receive the workstation currently being deployed. This script allow us to retrieve in SCCM all...","categories": [],
+        "tags": ["configmgr","powershell","sccm","sccm osd","sccm task sequence","sccm2012r2"],
+        "url": "https://lazywinadmin.github.io/2015/09/powershellsccm-find-applications.html",
+        "teaser":null},{
+        "title": "PowerShell/SCCM - Create a Dynamic Variable list during the task sequence",
+        "excerpt":"In my previous article I talked about SCCM Application and how to retrieve the applications targeted to a user. Today I’ll show how we can build a function to create a list of dynamic variables. This would be used in a Task Sequence during the Operating System Deployment in the...","categories": [],
+        "tags": ["configmgr","powershell","sccm","sccm osd","sccm task sequence"],
+        "url": "https://lazywinadmin.github.io/2015/09/powershellsccm-create-dynamic-variable.html",
+        "teaser":null},{
+        "title": "Montreal PowerShell User Group #01 - Material and pictures from my talk on Introduction to PowerShell",
+        "excerpt":"Here is the material from my presentation on Introduction to PowerShell at the first Montreal PowerShell User Group meeting that occurred yesterday (2015/09/15). The Powerpoint presentation and PowerShell code is available on the meetup group page and Github: https://github.com/lazywinadmin/MTLPUG/tree/master/MTLPUG_01 http://www.meetup.com/MontrealPowerShellUserGroup/files/ Even thought I was a bit stress to present, I...","categories": [],
+        "tags": ["montreal powershell user group","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/09/montreal-powershell-user-group-01.html",
+        "teaser":null},{
+        "title": "Montreal PowerShell User Group #02 - Using the Pipeline/Creating Script and Function",
+        "excerpt":"Join us for the Montreal PowerShell User Group #02 meeting on the Tuesday 27th of October 2015 from 6:00pm to 9:00pm at the Warner Brothers Games Studio! We will have the two following presentations: Using the PowerShell Pipeline (Beginner level) Creating Script/Function (Beginner/Intermediate level). Both presentations will be presented by...","categories": [],
+        "tags": ["montreal","montreal powershell user group","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/10/montreal-powershell-user-group-02-using.html",
+        "teaser":null},{
+        "title": "Montreal PowerShell User Group #02 - Materials and pictures",
+        "excerpt":"   Here is the material from our second Montreal PowerShell User Group meeting that occurred last Tuesday (2015/10/27).   The Powerpoint presentations and PowerShell codes is available on the meetup group page and Github:   https://github.com/lazywinadmin/MTLPUG/tree/master/MTLPUG_02   http://www.meetup.com/MontrealPowerShellUserGroup/files/      Martin lebel          Gary Szabo on “Creating Scripts and Functions”   ","categories": [],
+        "tags": ["gary szabo","martin lebel","montreal","montreal powershell user group","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/11/montreal-powershell-user-group-02.html",
+        "teaser":null},{
+        "title": "Microsoft MVP Global Summit 2015",
+        "excerpt":"I just came back yesterday from the Microsoft MVP Global Summit 2015 who took place in the beautiful city of Seattle from the 2nd to 5th of November 2015. This was the second time that I attend this event which was really well organized. I really had a blast meeting...","categories": [],
+        "tags": ["microsoft mvp global summit","microsoft mvp global summit 2015","powershell"],
+        "url": "https://lazywinadmin.github.io/2015/11/microsoft-mvp-global-summit-2015.html",
+        "teaser":null},{
+        "title": "Microsoft MVP 2016 for Cloud and Datacenter Management",
+        "excerpt":"It is a great pleasure and honor to receive for a third year the PowerShell MVP Cloud and DataCenter Management MVP Award!!! Chère/Cher Francois-Xavier Cat, Félicitations! Nous sommes heureux de vous remettre le titre MVP Microsoft® 2016! Ce titre est accordé aux leaders d’exception de la communauté technique qui partagent...","categories": [],
+        "tags": ["achievement","cloud and datacenter management","microsoft","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/01/microsoft-mvp-2016-for-cloud-and.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Get the Work Item parent of an Activity",
+        "excerpt":"In the last couple of months, I have been busy on some projects involving System Center Service Manager (SCSM), System Center Orchestrator (SCORCH) and Cireson Portal/Asset Management and I had to script a couple of repetitive tasks using PowerShell. The following solution allows you to retrieve the parent Work Item...","categories": [],
+        "tags": ["orchestrator","powershell","scorch","scsm","smlets","system center 2012 orchestrator","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2016/02/powershellscsm-get-work-item-parent-of.html",
+        "teaser":null},{
+        "title": "Windows Management Framework (WMF) 5.0 RTM released (again)",
+        "excerpt":"Microsoft just re-released the new version of Windows Management Framework (WMF) 5.0 RTM for Windows Server 2012 R2, Windows Server 2012, Windows 2008 R2 SP1, Windows 8.1, and Windows 7 SP1. The PowerShell Team previously released WMF 5.0 RTM two months ago but it was pulled-back mainly because of the...","categories": [],
+        "tags": ["microsoft","powershell","powershell 5.0","powershell team"],
+        "url": "https://lazywinadmin.github.io/2016/02/windows-management-framework-wmf-50-rtm.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Get Manual Activities Completed in the last month",
+        "excerpt":"I got an interested question from a reader that asked how he could get all the Manual Activities completed in the last 30 days using one Filter. I got some trouble working with Get-SCSMObject and multiple conditions in the -Filter parameter, but got it working using the -Criteria parameter. Hope...","categories": [],
+        "tags": ["powershell","scsm","smlets","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2016/03/powershellscsm-get-manual-activities.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Get Manual Activities Completed per Assigned user in the last month",
+        "excerpt":"I wanted to expend a bit on the previous post which retrieved all the Manual Activities completed in the last month. I want to go a step further and get the top Users who closed the most Manual Activities in that period. # Smlets Module Import-module -name Smlets # Get...","categories": [],
+        "tags": ["powershell","scsm","smlets","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2016/03/powershellscsm-get-manual-activities_9.html",
+        "teaser":null},{
+        "title": "PowerShell/SCSM - Get Review Activities Rejected in the last 60 days",
+        "excerpt":"In the following post I demonstrate how you can retrieve all the rejected Review Activities from the last 60 days. I also include the DisplayName, the Decision and the Comment of the Reviewer. Hope this help some people out there. # Smlets Module Import-module -name smlets # Capture the SR...","categories": [],
+        "tags": ["powershell","scsm","scsm review activity","smlets","system center 2012 service manager r2"],
+        "url": "https://lazywinadmin.github.io/2016/03/powershellscsm-get-review-activities.html",
+        "teaser":null},{
+        "title": "Active Directory - How to grant an account to use Sync-ADObject ?",
+        "excerpt":"During an onboarding process, I had to create some accounts on a remote site where the Exchange Role is installed. There, the account can be mail-enabled. We do this because the information will get replicated to Office365 faster and we will be able to proceed with other automated tasks. Once...","categories": [],
+        "tags": ["active directory","powershell","security"],
+        "url": "https://lazywinadmin.github.io/2016/03/active-directory-how-to-grant-account.html",
+        "teaser":null},{
+        "title": "Create a Function/Cmdlet Alias using the [Alias()] attribute",
+        "excerpt":"Just wanted to share a small PowerShell tips that Kirk Munro found. You can declare a function or Cmdlet Alias using the following keyword [Alias(\"MyAlias\")] Example: function Get-This { [CmdletBinding()] [Alias(\"Get-That\")] PARAM ( $Param1 ) Write-Output \"Param1 = $param1\" } Get-That -Param1 \"Hello World\" According to Jason Shirk this has...","categories": [],
+        "tags": ["powershell","powershell 4.0","powershell tip"],
+        "url": "https://lazywinadmin.github.io/2016/05/create-functioncmdlet-alias-using-alias.html",
+        "teaser":null},{
+        "title": "Using Pester to test your Comment Based Help",
+        "excerpt":"Update 2016/11/25: Updated the code to support functions where there is no parameter declared (Thanks Wojciech Sciesinski !!!) I remember attending a meeting on Pester presented by Dave Wyatt back in November 2014 during my first MVP Summit. A couple of well known PowerShellers were there: Boe Prox, Emin Atac,...","categories": [],
+        "tags": ["adsips","pester","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/05/using-pester-to-test-your-comment-based.html",
+        "teaser":null},{
+        "title": "Using Pester to test your Manifest File",
+        "excerpt":"In my previous post I got started with Pester and wrote my first test against the Comment Based Help of my module AdsiPS. Next, I wanted to write a Pester test against the Manifest File of AdsiPS module. I want to make sure all the basic information of the module...","categories": [],
+        "tags": ["adsips","pester","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/05/using-pester-to-test-your-manifest-file.html",
+        "teaser":null},{
+        "title": "Montreal PowerShell User Group 03 - Future of our user group",
+        "excerpt":"Join us for the Montreal PowerShell User Group #03 meeting on the Tuesday 24th of May 2016 from 6:00pm to 8:00pm at the Warner Brothers Games Studio. Registration: Seats are limited, please RSVP on Meetup.com This will be a social event, a bit different from the previous ones. We will...","categories": [],
+        "tags": ["montreal","montreal powershell user group","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/05/montreal-powershell-user-group-03.html",
+        "teaser":null},{
+        "title": "Offline Domain Join - Recreating the Blob file using PowerShell",
+        "excerpt":"When you need to join a machine to the Active Directory It is a pretty straight forward task using either the User Interface or the PowerShell cmdlet available for that usage. However in some situation you don’t have network connectivity and need to rely on Offline Domain Join, using the...","categories": [],
+        "tags": ["active directory","djoin","offline domain join","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/07/offline-domain-join-recreating-blob.html",
+        "teaser":null},{
+        "title": "PowerShell/WinForms - Row Header",
+        "excerpt":"If you are creating Windows Forms (WinForms) using PowerShell with tools such as PowerShell Studio from Sapien, you might have some scenario where you want to use Row Header instead of Column Header in a DataGridView control. Those can be controlled using the properties RowHeaderVisible and ColumnHeaderVisible. Assuming you already...","categories": [],
+        "tags": ["datagridview","powershell","winformps","winforms"],
+        "url": "https://lazywinadmin.github.io/2016/07/powershellwinforms-row-header.html",
+        "teaser":null},{
+        "title": "PowerShell 10th Anniversary - Open Source / Running on Linux and Mac OS X",
+        "excerpt":"The PowerShell Team just dropped a bombshell! Windows PowerShell is now a cross platform technology with the availability of PowerShell on Linux and Mac !! …. AND…. The PowerShell team is Open Sourcing Windows PowerShell (.Net) and PowerShell Core (.Net Core) !! This is so Cool !!! Today (2016/08/18) also...","categories": [],
+        "tags": ["linux","max os x","open source","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/08/powershell-10th-anniversary-open-source.html",
+        "teaser":null},{
+        "title": "Launch of / Lancement du French PowerShell User Group",
+        "excerpt":"French Depuis un moment, dans la Communauté PowerShell francophone, je vois un certain nombre de développeurs, administrateurs et MVP d’un peu partout dans le monde exprimer le désir d’avoir un groupe d’utilisateurs PowerShell. Nous avons tous une famille, un travail, des loisirs et organisé un évènement prend beaucoup de temps,...","categories": [],
+        "tags": ["french","french powershell user group","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/08/launch-of-lancement-du-french.html",
+        "teaser":null},{
+        "title": "PowerShell/Pester - Make sure your Comment Based Help is not indented",
+        "excerpt":"While writing some PowerShell Pester tests for my module AdsiPS, I wanted to make sure for each functions that all the help keywords of the comment based help were not indented. Depending of the script editor you are using, the number of spaces or tabs might differ and once published...","categories": [],
+        "tags": ["adsips","pester","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/08/powershellpester-make-sure-your-comment.html",
+        "teaser":null},{
+        "title": "PowerShell/Pester - Make sure your parameters are separated by an empty line",
+        "excerpt":"Today, I continue with another post on Pester. I want to check that each of my parameters declared in my PARAM() block is separated by a empty line. This will help bring clarity to my code and make it easier to read for other people. Example Here is an example,I...","categories": [],
+        "tags": ["pester","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/08/powershellpester-make-sure-your.html",
+        "teaser":null},{
+        "title": "PowerShell - Composite Formatting references (-f Operator)",
+        "excerpt":"If you play often with PowerShell you might have encountered something called “Composite Formatting”. What is that ? Each format item takes the following form and consists of the following components: {index[,alignment][:formatString]} The matching braces { and } are required. Here is a quick example \"Welcome to {0}\" -f \"LazyWinAdmin.com\"...","categories": [],
+        "tags": ["composite formatting","-f operator","powershell"],
+        "url": "https://lazywinadmin.github.io/2016/08/powershell-composite-formatting.html",
+        "teaser":null},{
+        "title": "PowerShell Tip - Generate a list of Mac Addresses",
+        "excerpt":"While playing in my lab I needed to create a bunch of fake Devices in System Center Configuration Manager (SCCM). When creation devices you need two pieces of information, the computer name and the Mac Address of the device. I used the following method to generate my list of mac...","categories": [],
+        "tags": ["composite formatting","-f operator","powershell","sccm","macaddress"],
+        "url": "https://lazywinadmin.github.io/2016/08/powershell-tip-generate-list-of-mac.html",
+        "teaser":null},{
+        "title": "My presentation at the first meetup of the French PowerShell User Group",
+        "excerpt":"Today I presented a session on Parsing Data using PowerShell at the first meeting of the French PowerShell User Group. This User Group is organized by a couple of Francophone PowerShell MVPs, including me, from different parts of the world. Below are the presentation, the scripts and the recording of...","categories": [],
+        "tags": ["frpsug","powershell","video"],
+        "url": "https://lazywinadmin.github.io/2016/09/my-presentation-at-first-meetup-of.html",
+        "teaser":null},{
+        "title": "Microsoft MVP 2017",
+        "excerpt":"It is a great pleasure and honor to receive for a fourth year the Cloud and DataCenter Management MVP Award!!! Dear Francois-Xavier, We are once again pleased to present you with the 2017 Microsoft Most Valuable Professional (MVP) Award! As you know, this award is given to exceptional technical community...","categories": [],
+        "tags": ["achievement","cloud and datacenter management","microsoft","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2017/02/Microsoft_MVP_2017.html",
+        "teaser":null},{
+        "title": "Retrieving the parameters used to run a script",
+        "excerpt":"Using $MyInvocation If you want to show the invocation line used to invoke a powershell script or function, you can use the automatic variable called $MyInvocation and the property Line to retrieve this information $MyInvocation.Line Here is an example, assume you have the following powershell script called MyInvocation.ps1 with following...","categories": ["powershell"],
+        "tags": ["powershell","powershelltip","myinvocation","pscmdlet","automaticvariable","variable"],
+        "url": "https://lazywinadmin.github.io/2017/03/MyInvocation_Commandused.html",
+        "teaser":null},{
+        "title": "Creating a PowerShell Remoting session in PowerShell v2",
+        "excerpt":"I recently wanted to test copying file over a PSSession where the remote host would be PowerShell v2 with PowerShell Remoting enabled. I did not have any handy machine with only PS2 installed so I had to register a new PowerShell Configuration to use that context. # Create a new...","categories": ["powershell"],
+        "tags": ["powershell","powershell-remoting"],
+        "url": "https://lazywinadmin.github.io/2017/03/RegisterPowerShellv2session.html",
+        "teaser":null},{
+        "title": "Resolve a DNS Entry with PowerShell",
+        "excerpt":"Here is one way to resolve a DNS Entry usng .NET   [System.net.DNS]::resolve('SERVER')  ","categories": ["powershell"],
+        "tags": ["powershell","powershelltip"],
+        "url": "https://lazywinadmin.github.io/2017/03/ResolveDNSEntry.html",
+        "teaser":null},{
+        "title": "Create and reuse a powershell scriptblock",
+        "excerpt":"Countless time people asked me how they could pass arguments to parameters inside a powershell scriptblock. The usual approach Here are a few examples when using Invoke-Command: # Without argument Invoke-Command -ScriptBlock {Get-ChildItem} # With one argument Invoke-Command -ScriptBlock {Get-ChildItem $args} -ArgumentList 'C:\\Windows' # With multiple arguments - Option A...","categories": ["powershell"],
+        "tags": ["powershell","scriptblock","powershelltip"],
+        "url": "https://lazywinadmin.github.io/2017/03/ScriptBlockObject.html",
+        "teaser":null},{
+        "title": "LazyTS 1.2 released",
+        "excerpt":"LazyTS was updated to version 1.2 Changes: Source of LazyTS are now public Functions used inside the script are now external and placed in the folder functions Configuration of the tool is now present in the config.psd1 file. Only some basic information for now (name of the tool, version, project...","categories": ["powershell","powershell-GUI"],
+        "tags": ["powershell","winforms","TerminalSession"],
+        "url": "https://lazywinadmin.github.io/2017/04/LazyTS_1.2.html",
+        "teaser":null},{
+        "title": "FRPSUG: PowerShell sur Linux",
+        "excerpt":"Introduction La prochaine rencontre de notre groupe aura lieu le Mardi 11 Avril 2017 à partir de 19h (heure de Paris). Cet événement aura lieu en ligne via Skype For Business (Pas de compte requis, vous pouvez rejoindre en tant qu’invité). Le lien du meeting sera envoyé aux personnes inscrites...","categories": ["frpsug"],
+        "tags": ["frpsug"],
+        "url": "https://lazywinadmin.github.io/2017/04/FrPSUG20170415.html",
+        "teaser":null},{
+        "title": "MVP PowerShell module",
+        "excerpt":"The MVP PowerShell module is finally out! This module allows you to interact with the Microsoft MVP Portal Api directly from PowerShell. The goal being to help any Microsoft MVP Award recipient to maintain and update their profile, for example by adding multiple contributions at once. This first version is...","categories": ["powershell","MVP Module"],
+        "tags": ["powershell","MVP","Microsoft MVP"],
+        "url": "https://lazywinadmin.github.io/2017/05/MVP_Module.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Remove a PowerShell Object property",
+        "excerpt":"Someone at work was recently asking me about the following: How to remove a property from a PowerShell Object ? Here is how you can achieve that. Create a PowerShell Object $MyObject = New-Object -Typename PSCustomObject -Property @{ ComputerName = $env:ComputerName MacAddress = '00:11:22:33:44:55' Description = 'My Computer' } $MyObject...","categories": ["powershell"],
+        "tags": ["powershell"],
+        "url": "https://lazywinadmin.github.io/2017/06/Remove_PSObject_Property.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Using $$, $^, $?",
+        "excerpt":"As requested by some of the attendees of my user group, here are some example on how to use $$, $^, $? $$ Contains the last token in the last line received by the current session. Get-ChildItem -path \"c:\\windows\\\" -filter \"*.log\" $$ Returns: *.log $^ Contains the first token in...","categories": ["powershell"],
+        "tags": ["powershell","exitcode"],
+        "url": "https://lazywinadmin.github.io/2017/06/using_automaticvariable_token.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "PowerShell Command Precedence",
+        "excerpt":"Assuming the following scenario: I’m declaring a module MyModule with one function called Get-Process which returns the following text: Module I’m also declaring a function in my session called Get-Process which returns the following text: Function And we know there is also a built-in Cmdlet called Get-Process which returns the...","categories": ["powershell"],
+        "tags": ["powershell","command precedence"],
+        "url": "https://lazywinadmin.github.io/2017/06/CommandPrecedence.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "PowerShell Saturday Paris 2017/09/16",
+        "excerpt":"Le Samedi 16 Septembre 2017, nous organisons un PowerShell Saturday à Paris à partir de 9h00 chez Cellenza. L’événement est gratuit et nous avons 6 présentations de planifier. (merci à tous les speakers!) Vraiment hate de voir tout le monde! 😀 (en esperant ne pas etre trop affecter par le...","categories": [],
+        "tags": ["powershell","frpsug"],
+        "url": "https://lazywinadmin.github.io/2017/08/PowerShell_Saturday_Paris.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "CoinMarketCap PowerShell module",
+        "excerpt":"CoinMarketCap I recently developed an interest for cryptocurrencies. It takes some time to get familiar with all the technologies involved but I’m enjoying the ride so far :rocket: To follow the market, there are plenty of services and websites available. One of the most popular platform is CoinMarketCap. In addition...","categories": ["powershell"],
+        "tags": ["bitcoin","cryptocurrencies","coinmarketcap"],
+        "url": "https://lazywinadmin.github.io/2017/11/CoinMarketCap.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "MVP Module - Backing up all your contributions",
+        "excerpt":"Last year, Emin Atac and I released a PowerShell module to interact with the Microsoft MVP website, see: MVP Module. If you are a Microsoft MVP, this module gives you quick and easy way to retrieve your entries and update your contributions. Installing the module The module can easily be...","categories": ["powershell","MVP Module"],
+        "tags": ["module","powershell","mvp"],
+        "url": "https://lazywinadmin.github.io/2018/01/MVPModule-BackupMyEntries.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "MVP Module - Adding multiple contributions",
+        "excerpt":"In the following post I’ll describe how to add multiple contributions on the Microsoft MVP portal using the MVP PowerShell module. You might be interested to take a look at my previous MVP PowerShell module post where I demoed how to backup all your entries into one or multiple files....","categories": ["powershell","MVP Module"],
+        "tags": ["module","powershell","mvp"],
+        "url": "https://lazywinadmin.github.io/2018/01/MVPModule-AddingMyContributions.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "SpaceX PowerShell module",
+        "excerpt":"Update 2018/02/09: Add launch video I recently worked on a small PowerShell module to interact with the SpaceX Data REST API (available here ). The API allows you to gather data regarding company info, vehicles, launch sites, and launch data. Scheduled on 2018/02/06, this week will be very exciting, SpaceX...","categories": ["powershell"],
+        "tags": ["module","powershell","spacex"],
+        "url": "https://lazywinadmin.github.io/2018/02/SpaceX_module.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "MeetupPS PowerShell module",
+        "excerpt":"I recently released a PowerShell module called MeetupPS. This module is a wrapper around the Rest API offered by Meetup.com. The commands available at the moment allow you to: Get a Meetup group information, Get Meetup events for a specific group (past and upcoming) Create events The initial reason behind...","categories": ["powershell"],
+        "tags": ["module","powershell","meetupps"],
+        "url": "https://lazywinadmin.github.io/2018/04/MeetupPS_Module.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Microsoft MVP 2018-2019",
+        "excerpt":"I’m very pleased and honored to receive the MVP award for another year for the category Cloud and DataCenter Management MVP ! Dear Francois-Xavier, We’re once again pleased to present you with the 2018-2019 Microsoft Most Valuable Professional (MVP) award in recognition of your exceptional technical community leadership. We appreciate...","categories": [],
+        "tags": ["achievement","cloud and datacenter management","microsoft","mvp","powershell"],
+        "url": "https://lazywinadmin.github.io/2018/07/Microsoft_MVP_2018-2019.html",
+        "teaser":null},{
+        "title": "Hacktoberfest PowerShell @FrPSUG",
+        "excerpt":"Dans le cadre du Hacktoberfest qui ce tient pendant le mois d’Octobre, nous organisons un mini-meetup pour démontrer les différentes façons de contribuer a des projets Open Sources sur Github. Les démos seront évidemment concentrées sur les projets PowerShell de la communauté. Hacktoberfest ? Hacktoberfest - présenté par DigitalOcean en...","categories": ["powershell"],
+        "tags": ["powershell","hacktoberfest"],
+        "url": "https://lazywinadmin.github.io/2018/10/Hacktoberfest_PowerShell.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "PowerShell Tip: Parse a date inside a string",
+        "excerpt":"Tested on PowerShell Core 6.1.0 (Microsoft Windows 10.0.17763) Recently I had to parse a bunch of log files for one of my projects, but the date format what not really ideal for sorting per date. As an example, here is one of the log format. Parsing the file using Import-CSV...","categories": ["powershell"],
+        "tags": ["powershell"],
+        "url": "https://lazywinadmin.github.io/2018/10/PowerShellTip-DateTimeParsing.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Using the MVP PowerShell module (video)",
+        "excerpt":"Here is a recording to demo how you can install, configure and use the MVP PowerShell module to add your contributions into the MVP Website. # Install the module Install-Module -Name MVP -Scope CurrentUser -Verbose # Configure your connection Set-MVPConfiguration -SubscriptionKey 2ed3d4ddf0e948a28caeebba64620d20 # List the commands available Get-Command -Module MVP...","categories": ["powershell","MVP Module"],
+        "tags": ["video","powershell","mvp"],
+        "url": "https://lazywinadmin.github.io/2019/03/using_the_mvp_powershell_module.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Moving my blog comments from Disqus to Github issues using PowerShell",
+        "excerpt":"Update 2019/04/12 Adding a preview of the results In this post I’m documenting my blog comment migration from Disqus to Github Issues using PowerShell. It was stricky… hopefully the diagrams help you to understand what I was trying to resolve. Hosting my comments on Disqus When I initially started to...","categories": ["powershell"],
+        "tags": ["disqus","powershell","github"],
+        "url": "https://lazywinadmin.github.io/2019/04/moving_blog_comments.html",
+        "teaser":"https://lazywinadmin.github.io/"},{
+        "title": "Retrieving Youtube video information from Google APIs using PowerShell",
+        "excerpt":"Summary In this article I’ll describe how you can query data from Youtube by using the Google Apis and PowerShell. A few days back, I saw a repository on Github from a fellow Microsoft MVP Julio Arruda that was using the PowerShell MVP module to populate Youtube videos views into...","categories": ["powershell","MVP Module"],
+        "tags": ["powershell","mvp","youtube","google api"],
+        "url": "https://lazywinadmin.github.io/2019/04/retrieving_youtube_videos_information_with_powershell.html",
+        "teaser":"https://lazywinadmin.github.io/"}]
