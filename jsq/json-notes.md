@@ -18,7 +18,8 @@ JSON's basic data types are:
 Early versions of JSON (such as specified by RFC 4627) required that a valid JSON "document" must consist of only an object or an array type, which could contain other types within them.
 
 #### Example:  
-The following example shows a possible JSON representation describing a person.  Phone numbers use array, an ordered list [ {item1}, {item2}, {item3} ]  and “,” separates objects in list.  
+The following example shows a possible JSON representation describing a person.   
+(Note:  Phone numbers are arrays, ordered list [ {item1}, {item2}, {item3} ]  and “,” separates objects in list.)   
 
 ```js
 {
