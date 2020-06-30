@@ -1,8 +1,10 @@
-# conda env name: pyfin  
+# conda env name: pyfin   
+# (Windows side C:\python\conda3\envs\pyfin)  
 # To use with Python MySQL-Connector 
 # Date export 6/19/2020 
-# Python v 3.7 (v 3.8 not yet compatible with tensorflow-CPU-v2.0) 
-# main pkgs: Jupyter, numpy, pandas, pandas-datareader,  matplotlib, seaborn,  
+#  
+# Python v 3.7 
+# main pkgs: Jupyter, numpy, pandas, pandas-datareader, matplotlib, seaborn,  
 # scipy, scikit-learn, tensorflow-cpu-v2.0, tensorflow-datasets,
 # quandl, xlrd (Excel reader), beautifulsoup4, pillow (image show), 
 # sqlite v 3.2.8, mysql-connector-python v 8.0.2 
