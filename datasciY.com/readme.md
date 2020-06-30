@@ -25,6 +25,5 @@ Template:
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/template.html   
 
 TestDev (testing MyBinder launch, Open in Colab badge):  
-https://htmlpreview.github.io/?
-https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/testdev.html  
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/testdev.html  
 
