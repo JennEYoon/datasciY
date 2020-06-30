@@ -12,6 +12,12 @@ Author:  Jennifer E. Yoon
     - PDF >50MB too large to upload to Github. 
     - Link on someone else's Github: https://github.com/vdloc/bookShelf/blob/master/Head-First-JavaScript-Programming.pdf  
 
+  * Can save script in separate file with .js extension.  
+
+  * JSON file format used to connect database.  
+
+---   
+
 #### To view HTML files directly from Github, 
 
   * Prepend the following text to your browser's URL: https://htmlpreview.github.io/?  

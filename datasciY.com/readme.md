@@ -23,3 +23,8 @@ https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master
 
 Template:  
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/template.html   
+
+TestDev (testing MyBinder launch, Open in Colab badge):  
+https://htmlpreview.github.io/?
+https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/testdev.html  
+
