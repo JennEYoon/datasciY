@@ -4,27 +4,27 @@
 
 >To view HTML files directly from Github, prepend the following text to your URL in the address cell:  
 >  - https://htmlpreview.github.io/?   
->  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
+>  - e.g.:  https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/about.html   
 
 About:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/about.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/about.html   
 
 Blog:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/blog.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/blog.html   
 
 General:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/general.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/general.html   
 
 Projects:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/projects.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/projects.html   
 
 Articles:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/articles.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/articles.html   
 
 Template:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/template.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/template.html   
 
 TestDev (testing MyBinder launch, Open in Colab badge):  
 https://htmlpreview.github.io/?
-https://github.com/JennEYoon/datasciY/blob/master/datasciY.com/testdev.html  
+https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/testdev.html  
 
