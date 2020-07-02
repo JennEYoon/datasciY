@@ -35,13 +35,15 @@
   * Build a Career in Data Science 
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
+  * Head First Javascript (c 2014). - to add simple .js to my website.  
 
 ### 6) Other Projects  
  * Start reading some Python books to get back into the mood.  
  * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
-   - SO up to 570 points now.  Two more upvotes this year, one -2 downvote.  
+   - SO 609 points as of 7/1/2020. People are upvoting my old answers.  
    - SO has new questions being posted even during Coronavirus.  
+   - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
    \-  
  * Corvid-19 infections spread map 
    - Reproducce Johns Hopkins interactive map  
@@ -76,8 +78,8 @@
   * VS Code editor -- how to select python engine, format code, indent, tab/html edit, run on selected python terminal, run on ipython interface, view markdown, view jupyter notebook, export as jupyter notebook, etc.  
   * Jupyter Notebook -- how to use, markdown edit, select cells, run connected python module, refresh imported module  
   * Python package management, installing, importing, updating, reload, run, %run automatically re-run, Ubuntu and Win versions  
- * Basic webdev, html, css, frameworks, css grid, hosting on Amazon, email redirect for jyoon@10sigmarisk.com  - 2017 first half year.  
- * Read Javascript the Good Parts, started practice with Head First Javascript.  
+  * Basic webdev, html, css, frameworks, css grid, hosting on Amazon, email redirect for jyoon@10sigmarisk.com  - 2017 first half year.  
+  * Read Javascript the Good Parts, started practice with Head First Javascript.  
 
 #### Python & ML:  
   * Finally seem to have a firm fix on class obj.  
