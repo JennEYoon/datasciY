@@ -3,16 +3,21 @@
 ## Plan as of June 2020:  
 
 ### 1) SciPy 2020 - $25 virtual conference for students.  
- * Set up a working environment and time for the week.  
- * Contemporaneous update on videos, Zoom conference.
- * test using Zoom on my laptop.  
- * Do numpy tutorial, good overall review.  
- * Also watch Juan Scipy Japan, read parts of book.  
+ * Set up a working environment and time for the week. 
+   - Most days start 9AM CT/10 AM ET.
+   - Tutorials on M, Tu, 
+ * YouTube tutorials available - Sunday 9 AM CT. 
+   - numpy - finished reading most, next reproduce code. 
+   - pysal - downloaded git repo. Also watch 2019. 
+   - pandas - to review 
+   - pytorch ML from scratch - to do
+ * Also watch Juan Scipy Japan 2019, read parts of book.  
+ * Jaoin Slack, Zoom?
  
 ### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
- * Finish clas 4 and 5 in July, edited.  
- * August edited, post conference, sign up on Coursera & get certificate.  
+ * July-August: finish class 4 & 5. 
+ * August-Sept - sign up on Coursera & get specialization certificate  
 
 ### 3) Deep Learning w Python book 
   * Currently reading parts.  
@@ -26,7 +31,12 @@
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
 
-### 5) Other Projects  
+### 5) Books Reading - June-July 2020:  
+  * Build a Career in Data Science 
+  * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
+  * Capital in 21 Century - ideas on inequality economics projects using DS.  
+
+### 6) Other Projects  
  * Start reading some Python books to get back into the mood.  
  * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
