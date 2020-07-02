@@ -72,14 +72,15 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    C:/python/repos/large-files/   
    - Files too big to upload to GitHub.  
    
+ * pyfinance (folder) -- packages related to trading, python-for-finance book.  
 
 ### History  
-
- * Add jsq folder and javascript exercises - June 20-23, 2020.  
- * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
- * Add general.html page for broader topics - June 13-15, 2020 
-   ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
- * Working on personal projects to post on datasciY.com during February to May 2020  
- * Github Repo created on July 2019
- * Website hosted on AWS during 2018 and 2019
- * Domain purchased on Sept 2017  
+  * June 2020 - Add folder for pyfinance -- SQL-connector, TA-LIB, quandl, python-for-finance book.  
+  * Add jsq folder and javascript exercises - June 20-23, 2020.  
+  * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
+  * Add general.html page for broader topics - June 13-15, 2020 
+    ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
+  * Working on personal projects to post on datasciY.com during February to May 2020  
+  * Github Repo created on July 2019
+  * Website hosted on AWS during 2018 and 2019
+  * Domain purchased on Sept 2017  
