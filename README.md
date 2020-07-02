@@ -1,5 +1,7 @@
 ## Repository for my data science & Python coding portfolio, http://datasciY.com  
 
+### Note: June 2020 - default branch name has changed from "master" to "main" in support of Black Lives Matter.  
+
 ### Author: Jennifer E Yoon  
 
 ### Description  
