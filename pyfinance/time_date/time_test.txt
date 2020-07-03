@@ -1,2 +1,0 @@
-# time:     06/09/2017  03:54
-# works here too.  PyScripter entered current time.
