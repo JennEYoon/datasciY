@@ -70,8 +70,8 @@
     - Finally somewhat comfortable with rebase, reset HEAD, edit history, remote force push, git clone, git add remote, and git merge feature branch. 
   * Got working hosted Jupyter notebooks/Hub via Google CoLab and MyBinder.org  
   * GitHub commit graph - July 19, 2020, 1-year history  
-    - Got solid filled 1-year history, 2.5 weeks to go. 
-    - Over 3645 commits in past year. 
+    - Got solid filled 1-year history, 16 days to go. 
+    - Over 3648 commits in past year. 
   * SO got over 500 pts in 2019.  
     - To get another 500 points in 2020.  
     - Got bonus 109 pts, from people voting up my earlier answers. 
