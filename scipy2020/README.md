@@ -1,10 +1,21 @@
-# Notes from SciPy Conferences  
+# README on SciPy 2020 Conferences  
 
-### SciPy July 2020 Conference  
-  * Watch previous years video. 
-  * Do posted notebook tutorials for this year.  
-  * Sprints?  
-  
+#### Prep Tasks:
+  * Sign into Crowdcast - done on iPad Air, test also on computer  
+    (does not seems to need video on myside, just chat function.)
+    Add my photo to chat on Crowdcast, have password for event.  
+  * Sign into Slack to get messages - to do later
+
+  * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
+    - Monday Basian 
+    - Tuesday Numpy -read most (Dask - parallel computing)  
+    - Wed PyTorch (Pandas) 
+    - Thursday Xarray - large data sets
+    - Friday PySal   
+
+Email used to signup "JennEYoon"
+
+
 ## SciPy 2020 coming up in July.  
 
 Dates: July 6 - 10 Conference, Sprints July 11 & 12, 2020.  
@@ -17,7 +28,7 @@ https://www.scipy2020.scipy.org/tutorials
 https://www.scipy2020.scipy.org/tutorial-information
 
 Youtube Tutorials:  
-To add later, July 5th released to public?   
+To add later, July 5th released to public 10 AM ET
 
 Sprints:  
 Has several Beginner-Level ones.  
@@ -25,7 +36,7 @@ Spatial Lib and Scikit-learn seems interesting, beginner level.
   
 ---   
 
-## Notes from previous conferences:
+## Links from previous conferences:
 
 #### SciPy 2019 Austin, Tx, USA  
 2019 SciPy:  
@@ -38,6 +49,8 @@ https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR
 #### Scipy 2019 Japan   
 2019 SciPy Japan:  
 https://www.youtube.com/playlist?list=PLYx7XA2nY5Geu7wUH_6RhQM1KJkAxZllc  
+
+---  
 
 
   
