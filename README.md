@@ -52,7 +52,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    * articles (folder) -- in-depth write ups (supporting folder)
    * projects (folder) -- programming projects (supporting folder)
    * blog (folder) -- short posts, news and thoughts (supporting folder)  
-   * wip2 -- temporary folder, saved links and snippets while writing posts    
+   * wip-temp (older) -- saved links and snippets while writing posts    
    \-\-\-     
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
@@ -72,7 +72,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    C:/python/repos/large-files/   
    - Files too big to upload to GitHub.  
    
- * pyfinance (folder) -- packages related to trading, python-for-finance book.  
+ * python_for_finance (folder) -- book exercises.    
 
 ### History  
   * June 2020 - Add folder for pyfinance -- SQL-connector, TA-LIB, quandl, python-for-finance book.  
