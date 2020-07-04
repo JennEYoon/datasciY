@@ -74,6 +74,8 @@
     - Over 3000 commits in past year. 
   * SO got over 500 pts in 2019.  
     - To get another 500 points in 2020.  
+    - Got bonus 109 pts, from people voting up my earlier answers. 
+    - To get back to it this Fall, reach 1000 pts by Nov 2020. 
   * Markdown formatting -- finally feel comfortable with text formatting, bullets, bold, code tick marks, quote block.  Also insert html link, image link with sizing HTML codes, image link wihtout sizing markdown.  
   * VS Code editor -- how to select python engine, format code, indent, tab/html edit, run on selected python terminal, run on ipython interface, view markdown, view jupyter notebook, export as jupyter notebook, etc.  
   * Jupyter Notebook -- how to use, markdown edit, select cells, run connected python module, refresh imported module  
