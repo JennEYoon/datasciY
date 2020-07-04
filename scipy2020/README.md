@@ -4,7 +4,8 @@
   * Sign into Crowdcast - done, conference & sprints.
     Add my photo & bio on Crowdcast - done.
     
-  * Sign into Slack to get messages - done.  Joined channelts for sprints, tutorials.
+  * Sign into Slack to get messages - done.  Joined channelts for sprints, tutorials.  
+    Add my photo to Slack - done  
 
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian 
