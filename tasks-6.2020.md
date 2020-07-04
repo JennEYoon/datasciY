@@ -5,7 +5,7 @@
 ### 1) SciPy 2020 - $25 virtual conference for students.  
  * Set up a working environment and time for the week. 
    - Most days start 9AM CT/10 AM ET.
-   - Tutorials on M, Tu, 
+   - Tutorials on Monday to Friday, 10am - 2pm ET, 4h. 
  * YouTube tutorials available - Sunday 9 AM CT. 
    - numpy - finished reading most, next reproduce code. 
    - pysal - downloaded git repo. Also watch 2019. 
