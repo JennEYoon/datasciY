@@ -1,11 +1,15 @@
 # README on SciPy 2020 Conferences  
 
 #### Prep Tasks:
-  * Sign into Crowdcast - done, conference & sprints.
-    Add my photo & bio on Crowdcast - done.
+  * Sign into **Crowdcast** - done, conference & sprints.
+    Add my photo & bio on Crowdcast - done.  
+    No video from my-end.  
     
-  * Sign into Slack to get messages - done.  Joined channelts for sprints, tutorials.  
+  * Sign into **Slack** to get messages - done.  Joined channelts for sprints, tutorials.  
     Add my photo to Slack - done  
+    
+  * Zoom for meetings, birds of feather -- sign up.  
+    Link will be provided - on Slack?  
 
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian 
@@ -14,7 +18,7 @@
     - Thursday Xarray - large data sets
     - Friday PySal   
 
-Email used to signup "JennEYoon"
+  *Email used to signup is "JennEYoon"  Password same for all.
 
 
 ## SciPy 2020 coming up in July.  
