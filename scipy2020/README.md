@@ -1,9 +1,8 @@
 # README on SciPy 2020 Conferences  
 
 #### Prep Tasks:
-  * Sign into Crowdcast - done on iPad Air, test also on computer  
-    (does not seems to need video on myside, just chat function.)
-    Add my photo to chat on Crowdcast, have password for event.  
+  * Sign into Crowdcast - done, conference & sprints.
+    Add my photo & bio on Crowdcast - done.
     
   * Sign into Slack to get messages - done.  Joined channelts for sprints, tutorials.
 
