@@ -48,32 +48,34 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
      - general.html -- posts on general topics
      - projects.html -- coding projects and short coding exercises 
 
+   * articles (folder) -- in-depth write ups (supporting folder)  
    * assets (folder) -- image and pdf files called at root level by src command.
-   * articles (folder) -- in-depth write ups (supporting folder)
-   * projects (folder) -- programming projects (supporting folder)
    * blog (folder) -- short posts, news and thoughts (supporting folder)  
+   * general (folder) -- files related to posts. 
+      - Note: ngram data files are stored localled in:   
+        C:/python/repos/large-files/   
+      - Files are too big to upload to GitHub.  
+   * projects (folder) -- programming projects (supporting folder)  
    * wip-temp (older) -- saved links and snippets while writing posts    
    \-\-\-     
+   
+ * colab (folder) -- hosted Google CoLab Jupyter notebooks  
+   Links to published files on datasciY.com, that are executable on Google CoLab.  
+     
+ * jsq (folder) -- practice JavaScript and jQuery    
+ 
+ * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
+   Links to published files on datasciY.com that are executable by user on MyBinder.org image build. (Note: Takes a long time to build, about 10 minutes.)
+ 
+ * python_for_finance (folder) -- book exercises, options pricing model, credit swaps, etc.    
+ 
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
    * udacity-github -- notes and articles on using Github, best practices.  
    * PyDataNY-2019 -- temporary working folder  
    * Matplotlib-Github-Test -- temporary working folder  
-   
- * colab (folder) -- hosted Google CoLab Jupyter notebooks  
-   Links to published files on datasciY.com, that are executable on Google CoLab.  
-   
- * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
-   Links to published files on datasciY.com that are executable by user on MyBinder.org image build. (Note: Takes a long time to build, about 10 minutes.)
-   
- * jsq (folder) -- practice JavaScript and jQuery    
 
- * Note: ngram data files (in general.html post) stored localled in:   
-   C:/python/repos/large-files/   
-   - Files too big to upload to GitHub.  
    
- * python_for_finance (folder) -- book exercises.    
-
 ### History  
   * June 2020 - Add folder for pyfinance -- SQL-connector, TA-LIB, quandl, python-for-finance book.  
   * Add jsq folder and javascript exercises - June 20-23, 2020.  
