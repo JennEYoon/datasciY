@@ -4,7 +4,8 @@
   * Sign into Crowdcast - done on iPad Air, test also on computer  
     (does not seems to need video on myside, just chat function.)
     Add my photo to chat on Crowdcast, have password for event.  
-  * Sign into Slack to get messages - to do later
+    
+  * Sign into Slack to get messages - done.  Joined channelts for sprints, tutorials.
 
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian 
