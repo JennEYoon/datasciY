@@ -8,9 +8,17 @@
   * Sign into **Slack** to get messages - done.  Joined channelts for sprints, tutorials.  
     Add my photo to Slack - done  
     
-  * Zoom for meetings, birds of feather -- sign up.  
-    Link will be provided - on Slack?  
-
+  * **Zoom** for meetings, birds of feather, Q&A live? -- sign up later.  
+    - Link will be provided - on Slack?  
+    - SciPy Keynotes, Plenary Sessions and Lightning Talks will all be live. 
+    - Also Q&A and panel discussion parts will be live.  
+    
+  * **Recorded talks** will be on YouTube, starting Sunday 10 AM ET.  
+    - Machine learning, High Performance Python and General talks will be available  on Sunday, July 5 at 9:00 am CDT.  
+    - Astronomy, Biology/Bioinformatics, Materials Science and Earth/Ocean/Geo and Atmospheric Science talks will be available beginning on Wednesday, July 8 at 5:00 pm CDT. 
+    - Each track and mini-symposia will have live Q&A and moderated discussion for their talks at the times listed in the schedule.   
+      Please try to watch the videos prior to the Q&A.  
+    
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian 
     - Tuesday Numpy -read most (Dask - parallel computing)  
