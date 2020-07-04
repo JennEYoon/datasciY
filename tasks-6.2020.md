@@ -55,6 +55,11 @@
     - mobile version has side-nav on top, below main nav area.  
     - practice javascript Head First Javascript book started reading.  
 
+  * Email redirect setup "jyoon@datasciY.com" - to use during job applications.  
+    Don't use this for anything else, Media signup still use "datasciY.info@gmail.com".  
+    * Build out StockWiki.com as a stand-alone application.  
+      Use it to get ad revenues, and as a project portfolio for job applications.  
+      
 ---  
 
 ## Goals Met as of June 2020:  
