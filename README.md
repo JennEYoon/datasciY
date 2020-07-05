@@ -28,11 +28,9 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 #### To Open In Google CoLab - a copy of executable Jupyter notebook:  
 >  add link  
->  add link    
 
 #### To Open In MyBinder - a copy of executable Jupyter Hub image:  
 >  add link  
->  add link   
 
 ---   
 
