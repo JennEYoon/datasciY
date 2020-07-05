@@ -41,8 +41,7 @@ Dates: July 6 - 10 Conference, Sprints July 11 & 12, 2020.
 Schedule Main:  
 https://www.scipy2020.scipy.org/schedule  
 
-Tutorials: Materials not up yet.  
-https://www.scipy2020.scipy.org/tutorials  
+Tutorials: Materials not up yet.   
 https://www.scipy2020.scipy.org/tutorial-information
 
 Youtube Tutorials:  
