@@ -30,6 +30,7 @@
       (Titanic data, notebook saved to CoLab, Gdrive) 
       Pandas - no notebooks, only data. Seems very basic.  
     - Thursday Xarray - large data sets
+      (Binder only:  https://gesis.mybinder.org/binder/v2/gh/xarray-contrib/xarray-tutorial/792849fe9c9f3c1c882996e0a3676367e7702678 )
     - Friday PySal   
 
   *Email used to signup is "JennEYoon"  Password same for all.
