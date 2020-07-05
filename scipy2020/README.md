@@ -15,12 +15,16 @@
     
   * **Recorded talks** will be on YouTube, starting Sunday 10 AM ET.  
     - Machine learning, High Performance Python and General talks will be available  on Sunday, July 5 at 9:00 am CDT.  
+      * ML: https://www.youtube.com/playlist?list=PLYx7XA2nY5GejOB1lsvriFeMytD1-VS1B  (10 videos 21min) 
+      * General: https://www.youtube.com/watch?v=nxXr0LNdQUU&list=PLYx7XA2nY5GfhekhCPLpA0NImFm2wNvSD (6 videos)  
+      * High Performance Computing: https://www.youtube.com/watch?v=hTmXpvws52M&list=PLYx7XA2nY5GfY4WWJjG5cQZDc7DIUmn6Z  (10 videos) 
+      /-/-/-  
     - Astronomy, Biology/Bioinformatics, Materials Science and Earth/Ocean/Geo and Atmospheric Science talks will be available beginning on Wednesday, July 8 at 5:00 pm CDT. 
     - Each track and mini-symposia will have live Q&A and moderated discussion for their talks at the times listed in the schedule.   
       Please try to watch the videos prior to the Q&A.  
     
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
-    - Monday Basian 
+    - Monday Basian - to do
     - Tuesday Numpy -read most (Dask - parallel computing)  
     - Wed PyTorch (Pandas) 
     - Thursday Xarray - large data sets
