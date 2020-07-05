@@ -27,7 +27,8 @@
     - Monday Basian - to do
     - Tuesday Numpy -read most (Dask - parallel computing)  
     - Wed PyTorch (Pandas) 
-      (Titanic data, notebook saved to CoLab, Gdrive)  
+      (Titanic data, notebook saved to CoLab, Gdrive) 
+      Pandas - no notebooks, only data. Seems very basic.  
     - Thursday Xarray - large data sets
     - Friday PySal   
 
