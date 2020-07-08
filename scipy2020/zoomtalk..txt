@@ -1,0 +1,10 @@
+Jason Grout6:35 PM
+FYI, here is the bulletin board I was talking about: https://covid-oss-help.org/; discourse at https://discourse.covid-oss-help.org/, here's the post about helping nextstrain: https://discourse.covid-oss-help.org/t/helping-nextstrain/284
+Rachel Plesha6:35 PM
+https://github.com/CSSEGISandData/COVID-19
+Jun Aishima6:35 PM
+(oh, discovered phone audio, will be happy to talk)
+Eric Ma6:36 PM
+yay!
+Jason Grout6:37 PM
+FYI, Hans Fangohr just showed me this bulletin site that I think his students recently did and keep up to date: https://oscovida.github.io/
