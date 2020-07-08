@@ -15,7 +15,8 @@
     - Also Q&A and panel discussion parts will be live.   
     
   * **Recorded talks** will be on YouTube, starting Sunday 10 AM ET.  
-    - Machine learning, High Performance Python and General talks will be available  on Sunday, July 5 at 9:00 am CDT.  
+    - Machine learning, High Performance Python and General talks will be available  on Sunday, July 5 at 9:00 am CDT.  6pm ET.   
+    
       * ML: https://www.youtube.com/playlist?list=PLYx7XA2nY5GejOB1lsvriFeMytD1-VS1B  (10 videos 21min) 
       * General: https://www.youtube.com/watch?v=nxXr0LNdQUU&list=PLYx7XA2nY5GfhekhCPLpA0NImFm2wNvSD (6 videos)  
       * High Performance Computing: https://www.youtube.com/watch?v=hTmXpvws52M&list=PLYx7XA2nY5GfY4WWJjG5cQZDc7DIUmn6Z (10 videos)  
