@@ -9,5 +9,6 @@ https://github.com/hugobowne/deep-learning-from-scratch-pytorch
  * @ symbol is dot product, as of python v 3.6?
 
  * Rules of thumb - ReLu is positive outcomes only, tanh if positive and negative outcomes, if zero to one outcome sigmoid. 
- 
+   ![activation plot](pytorch-plot1.jpg)
  [insert pytorch-plot1.jpg]
+ 
