@@ -7,3 +7,7 @@ https://github.com/hugobowne/deep-learning-from-scratch-pytorch
  * if stratify is none, then it will just be split by random number generator  
 
  * @ symbol is dot product, as of python v 3.6?
+
+ * Rules of thumb - ReLu is positive outcomes only, tanh if positive and negative outcomes, if zero to one outcome sigmoid. 
+ 
+ [insert plot image]
