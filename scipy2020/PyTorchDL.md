@@ -10,4 +10,4 @@ https://github.com/hugobowne/deep-learning-from-scratch-pytorch
 
  * Rules of thumb - ReLu is positive outcomes only, tanh if positive and negative outcomes, if zero to one outcome sigmoid. 
  
- [insert plot image]
+ [insert pytorch-plot1.jpg]
