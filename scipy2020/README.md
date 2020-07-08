@@ -1,17 +1,18 @@
 # README on SciPy 2020 Conferences  
 
 #### Prep Tasks:
-  * Sign into **Crowdcast** - done, conference & sprints.
+  * Sign into **Crowdcast** - done, conference & sprints.  
     Add my photo & bio on Crowdcast - done.  
     No video from my-end.  
     
   * Sign into **Slack** to get messages - done.  Joined channelts for sprints, tutorials.  
     Add my photo to Slack - done  
     
-  * **Zoom** for meetings, birds of feather, Q&A live? -- sign up later.  
+  * **Zoom** for meetings, birds of feather, Q&A live? No, only Wed Fri 6pm networking sessions.  
+  
     - Link will be provided - on Slack?  
-    - SciPy Keynotes, Plenary Sessions and Lightning Talks will all be live. 
-    - Also Q&A and panel discussion parts will be live.  
+    - SciPy Keynotes, Plenary Sessions and Lightning Talks will all be live.  
+    - Also Q&A and panel discussion parts will be live.   
     
   * **Recorded talks** will be on YouTube, starting Sunday 10 AM ET.  
     - Machine learning, High Performance Python and General talks will be available  on Sunday, July 5 at 9:00 am CDT.  
