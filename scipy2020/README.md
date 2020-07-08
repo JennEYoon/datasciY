@@ -31,12 +31,14 @@
       * numpy was disaster due to presenter using ipython as format, not providing working jupyter  notebook. Material is slides is very good, but printed 2 slides per page in portrait orientation, makes it very hard to follow along, constant scrolling and zooming in/out.  Should be provided as ppt or printed 1 slide per page in landscape orientation.  Maybe source file is no longer available?  
       * after 45 min switched to Dask. Actually turned out to be a very good presentation & timing, even though I didn't prepare in advance.  Good use of pauses, and only focusing on a few main differences from numpy (or pandas) worked.  I was able to understand everything.  
     
-    - Wed PyTorch (Pandas) 
-      (Titanic data, notebook saved to CoLab, Gdrive) 
-      Pandas - no notebooks, only data. Seems very basic.  
+    - Wed PyTorch (Pandas)   
+      - PyTouch - (Titanic data, notebook saved to CoLab, Gdrive)  
+      - Pandas - no notebooks, only data. Seems very basic.  
+      
     - Thursday Xarray - large data sets
-      (Binder only:  https://gesis.mybinder.org/binder/v2/gh/xarray-contrib/xarray-tutorial/792849fe9c9f3c1c882996e0a3676367e7702678 )
-    - Friday PySal   
+      (Binder only:  https://gesis.mybinder.org/binder/v2/gh/xarray-contrib/xarray-tutorial/792849fe9c9f3c1c882996e0a3676367e7702678 )  
+      
+    - Friday PySal - to try examples before.   
 
   *Email used to signup is "JennEYoon"  Password same for all.
 
