@@ -28,6 +28,9 @@
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian - to do
     - Tuesday Numpy -read most (Dask - parallel computing)  
+      * numpy was disaster due to presenter using ipython as format, not providing working jupyter  otebook.  
+      * after 45 min switvhed to Dask. Actually good presentation & timing.  Was able to understand everything.  
+    
     - Wed PyTorch (Pandas) 
       (Titanic data, notebook saved to CoLab, Gdrive) 
       Pandas - no notebooks, only data. Seems very basic.  
