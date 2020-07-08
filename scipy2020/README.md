@@ -8,7 +8,8 @@
   * Sign into **Slack** to get messages - done.  Joined channelts for sprints, tutorials.  
     Add my photo to Slack - done  
     
-  * **Zoom** for meetings, birds of feather, Q&A live? No, only Wed Fri 6pm networking sessions.  
+  * **Zoom** for meetings, birds of feather, Q&A live?   
+    No, only Wed & Fri 6pm networking sessions.  
   
     - Link will be provided - on Slack?  
     - SciPy Keynotes, Plenary Sessions and Lightning Talks will all be live.  
