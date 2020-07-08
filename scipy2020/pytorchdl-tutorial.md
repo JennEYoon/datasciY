@@ -20,7 +20,18 @@ dhavide stratify is an option used when constructing the train-test split that e
     [insert pytorch-plot1.jpg]
  
  
- 
- 
- 
 ### Notebook 2:  
+
+W (l - layer to) (j=to node) (k = from node)
+
+### Notebook 3: 
+
+grad function - gackward method, back propagates using tensor created. 
+data gets freed after derivative.  Can't call derivative again.  
+
+x.item()  extract singleton tensor as a scaler number. 
+
+Now that we went through this tutorial, will be able to understand the below, 
+https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html  
+
+Feedback form: https://hugobowne.typeform.com/to/NYClbcaE
