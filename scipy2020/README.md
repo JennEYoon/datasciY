@@ -29,7 +29,7 @@
     - Monday Basian - to do
     - Tuesday Numpy -read most (Dask - parallel computing)  
       * numpy was disaster due to presenter using ipython as format, not providing working jupyter  notebook. Material is slides is very good. But printer 2 sloda per page makes it very hard to follow along, constant scrolling.  Should be provided as ppt or printed 1 slide per page in landscape page format.  Maybe source file is no longer available?  
-      * after 45 min switched to Dask. Actually good presentation & timing.  Was able to understand everything.  
+      * after 45 min switched to Dask. Actually turned out to be a good presentation & timing, even though I didn't prepare before.  Good use of pauses, and only focusing on a few main differences from numpy (or pandas) worked.  I was able to understand everything.  
     
     - Wed PyTorch (Pandas) 
       (Titanic data, notebook saved to CoLab, Gdrive) 
