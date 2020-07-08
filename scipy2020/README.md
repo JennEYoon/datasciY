@@ -28,8 +28,8 @@
   * To read Tutorials for Pandas, PyTorch ML, PySal, Baysian Stats
     - Monday Basian - done.  Mostly too basic.  Later lessons on Github look interesting.  
     - Tuesday Numpy -read most (Dask - parallel computing)  
-      * numpy was disaster due to presenter using ipython as format, not providing working jupyter  notebook. Material is slides is very good. But printer 2 sloda per page makes it very hard to follow along, constant scrolling.  Should be provided as ppt or printed 1 slide per page in landscape page format.  Maybe source file is no longer available?  
-      * after 45 min switched to Dask. Actually turned out to be a good presentation & timing, even though I didn't prepare before.  Good use of pauses, and only focusing on a few main differences from numpy (or pandas) worked.  I was able to understand everything.  
+      * numpy was disaster due to presenter using ipython as format, not providing working jupyter  notebook. Material is slides is very good, but printed 2 slides per page in portrait orientation, makes it very hard to follow along, constant scrolling and zooming in/out.  Should be provided as ppt or printed 1 slide per page in landscape orientation.  Maybe source file is no longer available?  
+      * after 45 min switched to Dask. Actually turned out to be a very good presentation & timing, even though I didn't prepare in advance.  Good use of pauses, and only focusing on a few main differences from numpy (or pandas) worked.  I was able to understand everything.  
     
     - Wed PyTorch (Pandas) 
       (Titanic data, notebook saved to CoLab, Gdrive) 
