@@ -51,5 +51,28 @@ http://mapthegap.thinkingmachin.es/
 Here's our main Github org, with the subprojects mentioned: https://github.com/hamma-dev/brokkr 
 CAM Here's a link to my actual presentation: https://drive.google.com/file/d/1dpBzlkww5RsabrLQCXEnfbxAW-80DTR1/view?usp=sharing  
 
+Mjolnir Links!
+Github org: https://github.com/hamma-dev
+Presentation: https://drive.google.com/file/d/1dpBzlkww5RsabrLQCXEnfbxAW-80DTR1/view?usp=sharing
+PDF: https://drive.google.com/file/d/1qN4VthpfXgzDWqqfAYSe7qx5pBo6AGvG/view?usp=sharing
+Website with live dashboard: https://www.hamma.dev
+
+QuanSight -- who are they?  
+Hilbert Curve, cool looking.  Spatial Pandas.  
+Thanks to Blaise for inviting me to the hardware BoF panel Tuesday, and to the BlueSky team and Kyle with Yaq for creating such awesome projects too! Yaq: https://yaq.fyi/ BlueSky: https://nsls-ii.github.io/bluesky/  
+
+Joycylin - oceanographic data translate into symantic web.  
+Seattle.  Jaci Saunders - jaci@whoi.edu 
+Biological & Chemical Oceanography Data Management Office. BCO-DMO  
+
+https://github.com/WHOIGit/metatryp-2.0 
+https://metatryp-coronavirus.whoi.edu/
+Also a bench scientist, doing coronavirus work here in Python.  
+Semantic Web.  
+
+
+
+
+
 
 
