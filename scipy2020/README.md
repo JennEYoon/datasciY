@@ -10,6 +10,7 @@
     
   * **Zoom** for meetings, birds of feather, Q&A live?   
     No, only Wed & Fri 6pm networking sessions.  
+    * Zoom lagged, although downloaded app to computer.  Google Teams used instead Wednesday.  
   
     - Link will be provided - on Slack?  
     - SciPy Keynotes, Plenary Sessions and Lightning Talks will all be live.  
