@@ -1,3 +1,5 @@
+# Monday - general talks notes:  
+
 https://napari.org/docs/developers/ROADMAP_0_3.html
 
 forum.image.sc/tag/naparium.image.sc/tag/napari
