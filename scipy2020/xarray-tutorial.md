@@ -35,6 +35,10 @@ Is it possible to compute quantiles?
 Kenneth
 Joe Hamman yes! datasets and dataarrays both have a `quantile` method: http://xarray.pydata.org/en/stable/generated/xarray.Dataset.quantile.html#xarray.Dataset.quantile
 
+graph not showing on notebook 4:  pyviz jupyter lab extension fixed the problem btw  
+
+
+---  
 
 #### Main links to Xarray tutorial  
 
@@ -54,6 +58,10 @@ PyData organization:  http://xarray.pydata.org/en/stable/generated/...
 
 4: https://colab.research.google.com/drive/1TzfY7NNqltpkW92UmJDd0Um4-QZciIbV#scrollTo=BKG8dsMm_HXX  
 
+5:  https://colab.research.google.com/drive/1nFnwHBFIgsbchJv7NsH-ALREIcV0BgmM  
+
+6:  https://colab.research.google.com/drive/1oMUHalabWJhkyZCpKVnX-RXwLuWUuah_  
+
 Others:  
 More resources - Plotting (notebook 4): 
 Xarray's visualization gallery: https://xarray.pydata.org/en/stable/examples/visualization_gallery.html
@@ -65,6 +73,8 @@ hvplot's plotting documentation: https://hvplot.holoviz.org/user_guide/Gridded_D
 
 Geo-Spatial data collected on AWS Open data:
 https://hub.aws-uswest2-binder.pangeo.io/user/pangeo-data-lan-utorial-gallery-b6rs8qe9/lab?autodecode  
+
+
 
 
 
