@@ -52,7 +52,14 @@ PyData organization:  http://xarray.pydata.org/en/stable/generated/...
 
 3:  https://colab.research.google.com/drive/1lw09Ai9G9wHZd5vuvoZafO_Daerd1eY3  
 
+4: https://colab.research.google.com/drive/1TzfY7NNqltpkW92UmJDd0Um4-QZciIbV#scrollTo=BKG8dsMm_HXX  
+
 Others:  
+More resources - Plotting (notebook 4): 
+Xarray's visualization gallery: https://xarray.pydata.org/en/stable/examples/visualization_gallery.html
+Xarray's plotting documentation: https://xarray.pydata.org/en/stable/plotting.html
+hvplot's plotting documentation: https://hvplot.holoviz.org/user_guide/Gridded_Data.html  
+  Interactive plotting, move cursor to get data points on chart, similar to plotly.  
 
 #### Examples  
 
@@ -60,7 +67,4 @@ Geo-Spatial data collected on AWS Open data:
 https://hub.aws-uswest2-binder.pangeo.io/user/pangeo-data-lan-utorial-gallery-b6rs8qe9/lab?autodecode  
 
 
-More resources - Plotting (notebook 4): 
-Xarray's visualization gallery: https://xarray.pydata.org/en/stable/examples/visualization_gallery.html
-Xarray's plotting documentation: https://xarray.pydata.org/en/stable/plotting.html
-hvplot's plotting documentation: https://hvplot.holoviz.org/user_guide/Gridded_Data.html
+
