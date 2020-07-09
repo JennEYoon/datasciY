@@ -31,3 +31,20 @@ Dandrogram - annotate data by user.
 Scikit-Image roadmap, v 1.0 after 10 years.    
 
 
+
+### Ocean/Bio/Geo  
+
+https://www.youtube.com/playlist?list=PLYx7XA2nY5GezZTawXyl76LqVf3qbn-5E  
+
+PODPAC looks very impressive, wish I was doing more research and could take advantage of it.
+PODPAC looks very impressive, wish I was doing more research and could take advantage of it.
+https://github.com/creare-com/podpac-examples/blob/feature/scipy-2020/notebooks/scratch/scipy-2020.ipynb  
+
+The links in the Mjolnir presentation were all embedded; here is the link to our org repo if you're interested in scientific IoT! https://github.com/hamma-dev/brokkr  
+Here's my presentation, if you're curious: https://drive.google.com/file/d/1dpBzlkww5RsabrLQCXEnfbxAW-80DTR1/view?usp=sharing  
+And here's a PDF of the Mjolnir presentation: https://drive.google.com/file/d/1qN4VthpfXgzDWqqfAYSe7qx5pBo6AGvG/view?usp=sharing  
+
+#MaptheGap  Philippines, unmapped areas fill in by users.  
+http://mapthegap.thinkingmachin.es/  
+
+
