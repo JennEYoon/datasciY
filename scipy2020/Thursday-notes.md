@@ -67,8 +67,8 @@ Biological & Chemical Oceanography Data Management Office. BCO-DMO
 
 https://github.com/WHOIGit/metatryp-2.0 
 https://metatryp-coronavirus.whoi.edu/
-Also a bench scientist, doing coronavirus work here in Python.  
-Semantic Web.  [!ocean-semanticweb.jpg](ocean-semanticweb.jpg)
+Also a bench scientist, doing coronavirus work here in Python.   
+Semantic Web.  ![ocean-semanticweb-diagram](ocean-semanticweb.jpg)
 
 ### Planning 2021  
 
