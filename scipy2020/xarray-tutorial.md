@@ -24,10 +24,12 @@ isel index select, same as numpy to select based on index number
 110m 18s
 Time when question was addressed
 When you have a chance, maybe during next break, can you go over the main selling point of XArray again? Crowdsource bumped me into Python tutorial while I was waiting, and I didn't realize it until 20 minutes into this tutorial. :-(  
-Stephan Hoyer Xarray is useful for adding generic labels like dimension names and coordinates to your NumPy arrays  
+  * Stephan Hoyer Xarray is useful for adding generic labels like dimension names and coordinates to your NumPy arrays  
   * Metadata, labeling.  Sits on top of numpy, pandas - for calculations, matplotlib, bokeh (hvplot syntax) - for plotting 
     Dask for parallelism.  Mostly reads from data files in various formats, hdf5, it's own format... 
     Specify chunks in 512x512 minimum tile size AWS. Usually around 100 MB size.  
+  * Plotting - initial pass use xarray for convenient features (auto-labelling axis, labels, colorbar), then use matplotlib for customization. 
+    ax = ax, then set each item.  Pass-through all of matplotlib methods.  
 
 Is it possible to compute quantiles?
 Kenneth
@@ -56,3 +58,9 @@ Others:
 
 Geo-Spatial data collected on AWS Open data:
 https://hub.aws-uswest2-binder.pangeo.io/user/pangeo-data-lan-utorial-gallery-b6rs8qe9/lab?autodecode  
+
+
+More resources - Plotting (notebook 4): 
+Xarray's visualization gallery: https://xarray.pydata.org/en/stable/examples/visualization_gallery.html
+Xarray's plotting documentation: https://xarray.pydata.org/en/stable/plotting.html
+hvplot's plotting documentation: https://hvplot.holoviz.org/user_guide/Gridded_Data.html
