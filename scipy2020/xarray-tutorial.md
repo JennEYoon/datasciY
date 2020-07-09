@@ -21,10 +21,24 @@ XArray benefit over Pandas, is multiple index names, not limited to column name 
 Cordinate-Dimension (same name) allows to call item and get value using the same name?  
 isel index select, same as numpy to select based on index number
 
+110m 18s
+Time when question was addressed
+When you have a chance, maybe during next break, can you go over the main selling point of XArray again? Crowdsource bumped me into Python tutorial while I was waiting, and I didn't realize it until 20 minutes into this tutorial. :-(  
+Stephan Hoyer Xarray is useful for adding generic labels like dimension names and coordinates to your NumPy arrays  
+  * Metadata, labeling.  Sits on top of numpy, pandas - for calculations, matplotlib, bokeh (hvplot syntax) - for plotting 
+    Dask for parallelism.  Mostly reads from data files in various formats, hdf5, it's own format... 
+    Specify chunks in 512x512 minimum tile size AWS. Usually around 100 MB size.  
+
+Is it possible to compute quantiles?
+Kenneth
+Joe Hamman yes! datasets and dataarrays both have a `quantile` method: http://xarray.pydata.org/en/stable/generated/xarray.Dataset.quantile.html#xarray.Dataset.quantile
+
+
 #### Main links to Xarray tutorial  
 
 https://github.com/xarray-contrib/xarray-tutorial   
 https://github.com/xarray-contrib/xarray-tutorial/tree/master/scipy-tutorial  
+PyData organization:  http://xarray.pydata.org/en/stable/generated/...  
 
 #### notebooks links, copied to my CoLab account, google drive.  
 
