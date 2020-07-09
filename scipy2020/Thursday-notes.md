@@ -48,3 +48,8 @@ And here's a PDF of the Mjolnir presentation: https://drive.google.com/file/d/1q
 http://mapthegap.thinkingmachin.es/  
 
 
+Here's our main Github org, with the subprojects mentioned: https://github.com/hamma-dev/brokkr 
+CAM Here's a link to my actual presentation: https://drive.google.com/file/d/1dpBzlkww5RsabrLQCXEnfbxAW-80DTR1/view?usp=sharing  
+
+
+
