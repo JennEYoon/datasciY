@@ -36,7 +36,7 @@ Kenneth
 Joe Hamman yes! datasets and dataarrays both have a `quantile` method: http://xarray.pydata.org/en/stable/generated/xarray.Dataset.quantile.html#xarray.Dataset.quantile
 
 graph not showing on notebook 4:  pyviz jupyter lab extension fixed the problem btw  
-
+" Should just work in binder "  
 
 ---  
 
