@@ -1,5 +1,10 @@
 # Xarray Tutorial - Thursday morning.
 
+All 3 speakers has Oceanography and Atmospheric jobs.
+Must be useful for plotting, using Dask to parallelize tasks.  
+
+---  
+
 Kelvin -- we'll get into xarray.Dataset shortly, which has the equivalent of multiple columns
 
 dimension is refers to length of coordinates and coordinates themselves are labels to data point. is this how I should understand these?
@@ -45,6 +50,14 @@ graph not showing on notebook 4:  pyviz jupyter lab extension fixed the problem 
 https://github.com/xarray-contrib/xarray-tutorial   
 https://github.com/xarray-contrib/xarray-tutorial/tree/master/scipy-tutorial  
 PyData organization:  http://xarray.pydata.org/en/stable/generated/...  
+   https://github.com/pydata/xarray/  
+
+#### References
+Documentation  http://xarray.pydata.org/en/stable/  
+Code Repository  https://github.com/pydata/xarray  
+Ask for help:
+Use the python-xarray on StackOverflow  https://stackoverflow.com/questions/tagged/python-xarray  
+GitHub Issues for bug reports and feature requests  https://github.com/pydata/xarray/issues  
 
 #### notebooks links, copied to my CoLab account, google drive.  
 
@@ -71,10 +84,39 @@ hvplot's plotting documentation: https://hvplot.holoviz.org/user_guide/Gridded_D
 
 #### Examples  
 
-Geo-Spatial data collected on AWS Open data:
-https://hub.aws-uswest2-binder.pangeo.io/user/pangeo-data-lan-utorial-gallery-b6rs8qe9/lab?autodecode  
 
 
+## Going Deeper
+
+We've designed the notebooks above to cover the basics of Xarray from beginning
+to end. To help you go deeper, we've also create a list of notebooks that
+demonstrate real-world applications of Xarray in a variety of use cases. These
+need not be explored in any particular sequence, instead they are meant to
+provide a sampling of what Xarray can be used for.
+
+### Xarray and Weather/Climate Model Data
+
+1. [Global Mean Surface Temperature from CMIP6](https://binder.pangeo.io/v2/gh/pangeo-gallery/cmip6/binder?urlpath=git-pull?repo=https://github.com/pangeo-gallery/cmip6%26amp%3Burlpath=lab/tree/cmip6):
+   Start with `global_mean_surface_temp.ipynb` then feel free to explore the
+   rest of the notebooks.
+   <!-- 1. [Natural climate variability in the CESM Large Ensemble](https://aws-uswest2-binder.pangeo.io/v2/gh/NCAR/cesm-lens-aws/master?urlpath=lab) -->
+1. [National Water Model Streamflow Analysis](https://aws-uswest2-binder.pangeo.io/v2/gh/rsignell-usgs/esip-gallery/binder?urlpath=git-pull?repo=https://github.com/rsignell-usgs/esip-gallery%26amp%3Burlpath=lab/tree/esip-gallery):
+   Start with `02_National_Water_Model.ipynb` then feel free to explore the rest
+   of the notebooks.  
+   
+### Xarray and Satellite Data
+
+1. [Landsat-8 on AWS](https://aws-uswest2-binder.pangeo.io/v2/gh/pangeo-data/landsat-8-tutorial-gallery/master/?urlpath=git-pull?repo=https://github.com/pangeo-data/landsat-8-tutorial-gallery%26amp%3Burlpath=lab/tree/landsat-8-tutorial-gallery/landsat8.ipynb%3Fautodecode)
+
+(me) * Geo-Spatial data collected on AWS Open data:
+https://hub.aws-uswest2-binder.pangeo.io/user/pangeo-data-lan-utorial-gallery-b6rs8qe9/lab?autodecode   
+
+### Xarray and Baysian Statistical Modeling
+
+1. [Xarray and PyMC3](https://mybinder.org/v2/gh/pymc-devs/pymc3/master?filepath=%2Fdocs%2Fsource%2Fnotebooks):
+   Start with `multilevel_modeling.ipynb` then feel free to explore the rest of
+   the notebooks. Also checkout [Arviz](https://arviz-devs.github.io/arviz/)
+   which uses Xarray as its data model. 
 
 
 
