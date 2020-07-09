@@ -70,8 +70,18 @@ https://metatryp-coronavirus.whoi.edu/
 Also a bench scientist, doing coronavirus work here in Python.  
 Semantic Web.  
 
+### Planning 2021  
 
+https://docs.google.com/forms/d/e/1FAIpQLScnFvd6Wy8Hf-WND4PQ4Gq0G30MCJs8V5oEeTo8bApIIOrKJA/viewform 
+Volunteer form.  
 
+Next week email: suggestions, good/bad points.  
+
+Next year, really want to be in-person.  
+
+Rachel Thomas's keynote last year was also along similar themes as Bonny's this year. 
+
+Slack - discussion going.  
 
 
 
