@@ -66,3 +66,5 @@ Serge Rey
 Zafer - you don't need to omit them.  
 https://gitter.im/pysal/pysal  
 
+Forgot to save a copy of notebook again before it died.  
+CoLab still requires environment build to run.  
