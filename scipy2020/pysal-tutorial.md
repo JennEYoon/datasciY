@@ -29,3 +29,9 @@ a few seconds ago
 Zafer
 Absolute deviation around class median (ADCM)
 
+you'd use a UserDefined class
+a minute ago
+eli
+with UserDefined https://pysal.org/mapclassify/generated/mapclassify.UserDefined.html#mapclassify.UserDefinedyou pass a set of bins, and you can use the resulting labels to create a map 
+
+
