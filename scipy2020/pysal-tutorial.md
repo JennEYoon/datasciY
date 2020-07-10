@@ -44,5 +44,13 @@ eli https://github.com/perrygeo/python-rasterstats
 eli https://github.com/mapbox/rasterio
 eli https://github.com/makepath/xarray-spatial
 
+#### Eli talk  
 
+@Richard check out https://geographicdata.science/book/intro  
+
+https://osf.io/preprints/socarxiv/vd3uk/download  
+
+If you want to see some census tracts: https://twitter.com/everytract  
+
+paper on the segregation module: https://link.springer.com/article/10.1007/s42001-019-00059-3
 
