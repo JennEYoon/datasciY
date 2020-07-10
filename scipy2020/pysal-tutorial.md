@@ -34,4 +34,15 @@ a minute ago
 eli
 with UserDefined https://pysal.org/mapclassify/generated/mapclassify.UserDefined.html#mapclassify.UserDefinedyou pass a set of bins, and you can use the resulting labels to create a map 
 
+TES
+89m 48s
+In future , is there any plan to include some statistical analysis of raster data in Pysal as there are libraries such as rasterstats which generate stats but very slow for huge geometries and not powerful as PySal in terms of analysis.
+Shubham
+eli its under development at the moment :)
+Shubham Really looking forward to it....any library can you suggest which is good for raster statistical analysis ?
+eli https://github.com/perrygeo/python-rasterstats
+eli https://github.com/mapbox/rasterio
+eli https://github.com/makepath/xarray-spatial
+
+
 
