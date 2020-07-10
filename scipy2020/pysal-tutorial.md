@@ -54,3 +54,15 @@ If you want to see some census tracts: https://twitter.com/everytract
 
 paper on the segregation module: https://link.springer.com/article/10.1007/s42001-019-00059-3
 
+what are the y and x axis?
+a minute ago
+Vincent
+"The weights matrix is not fully connected" Do we simple omit these from our calculations by default?
+a minute ago
+Zafer
+x-distance band, y, segregation measure
+in a few seconds
+Serge Rey
+Zafer - you don't need to omit them.  
+https://gitter.im/pysal/pysal  
+
