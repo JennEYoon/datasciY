@@ -10,6 +10,9 @@ What cells instructor can setup, with 1 page instruction, for students to get st
 $200 credit, can use to try out higher core GPUs.  
 Lower core GPUs free now!  
 
+Instuctions for installing packages and saving these settings to Google Drive. 
+
+
 #### Binder -- 100 user hard max.  
 Conference like SciPy is too many people, and many trying repeatedly to launch binder, so each 
 person may start multiple instances, compounding the problem.  
