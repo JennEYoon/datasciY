@@ -11,7 +11,7 @@ $200 credit, can use to try out higher core GPUs.
 Lower core GPUs free now!  
 
 Instuctions for installing packages and saving these settings to Google Drive. 
-
+Instructions for using CoLab with environment.yml file and "conda activate name" in shell.  
 
 #### Binder -- 100 user hard max.  
 Conference like SciPy is too many people, and many trying repeatedly to launch binder, so each 
