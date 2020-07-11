@@ -13,6 +13,10 @@ Lower core GPUs free now!
 Instuctions for installing packages and saving these settings to Google Drive. 
 Instructions for using CoLab with environment.yml file and "conda activate name" in shell.  
 
+from jupyter cell> 
+!pwd
+!conda activate name -- doesn't work.  Can choose engine.  Save env as an engine.  
+
 #### Binder -- 100 user hard max.  
 Conference like SciPy is too many people, and many trying repeatedly to launch binder, so each 
 person may start multiple instances, compounding the problem.  
