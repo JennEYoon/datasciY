@@ -48,5 +48,11 @@ Spyder -
 
 Ron - Rapid development kit, 2D plotting Chaco.  Intermediate level. 
 
+### Sunday 7.12/2020 continue  
 
+Sprints still going on.  Slack channel has messages.  
+Too tired to contribute, do more next weekend.  
+Jupyter Widgets tutorial looks interesting, review later.  
+Matplotlib builds/display in Docker, with JuPyter, vi MyBinder free account, may be unstable -- good first issue or issue report, 
+Test PySAL Tutorial notebooks. Report any issues.  
 
