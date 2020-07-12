@@ -58,3 +58,11 @@ Jupyter Widgets tutorial looks interesting, review later.
 Matplotlib builds/display in Docker, with JuPyter, vi MyBinder free account, may be unstable -- good first issue or issue report, 
 Test PySAL Tutorial notebooks. Report any issues.  
 
+Display name
+Meghann Agarwal
+Local time
+3:15 PM
+Email address
+agarwal.meghann@gmail.com
+She waved to me in Announcements channel - from Meetup? 
+
