@@ -6,9 +6,11 @@ Bokeh - first timer welcome.
 Google Meet, slack channel for Bokeh.  
 
 
-sklEARN, Thomas J Fan
+scikit-learn: Thomas J Fan  - happy hour guy.  
 https://thomasjpfan.github.io/scipy-2020-scikit-learn-sprint-intro/#1
-On Discord - video.  Link on Slack?  Doc above.  
+On Discord
+
+https://thomasjpfan.github.io/scipy-2020-scikit-learn-sprint-intro/#1
 
 Dask - new to dask -- help with documentation, examples:
 New users welcome. Parallel computting.  
