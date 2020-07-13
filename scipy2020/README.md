@@ -1,7 +1,7 @@
 # README on SciPy 2020 Conferences  
 
-Cognitive Neuroscience NL virtual conference starting up, free.  
-Tell Bill and Juan.  
+Cognitive Neuroscience ML virtual conference starting up, free.  
+Tell Bill and Juan.  Also U Michigan ds friend. Say hello. 
 
 #### Prep Tasks:
   * Sign into **Crowdcast** - done, conference & sprints.  
