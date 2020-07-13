@@ -83,3 +83,4 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   * Github Repo created on July 2019
   * Website hosted on AWS during 2018 and 2019
   * Domain purchased on Sept 2017  
+  
