@@ -1,0 +1,17 @@
+**To Do : update all links from datasciY.com to reflect renamed "main" branch, do links test.**  
+projects.html - links to numpy notebooks, Titamic ....  
+
+Edited all *.html files for "master".  Only github master links found in Projects.html file.  
+
+Add check-links extension to VS Code. (change timeout setting) 
+Checked about.html only for broken links.  
+To Do - check others.  
+
+General.html has spelling error at bottom, French wrods ngram.  - finxed 
+
+Removed Linkedin.com links from About.html and Projects.html.  
+Tired of getting a black screen whemever I want to quickly check a profile.  
+Don't use it much anyway - treat it almost like Facebook.  
+  - Keep my profile, and occassionally send messages, but don't add new people or advertise it on my website, business card, resume.  
+
+
