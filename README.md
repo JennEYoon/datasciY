@@ -2,17 +2,16 @@
 
 ***Note: Renamed "master" to "main" branch in support of Black Lives Matter, June 2020***
 
-**To Do : update all links from datasciY.com to reflect renamed Github branch to "main",  Broken links test.**  
+**To Do : update all links from datasciY.com to reflect renamed "main" branch, do links test.**  
 
 ### Author: Jennifer E Yoon  
 
 ### Description  
 
-All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
+All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS3 Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
 
 >Plan:  Add demos of MySQL and Python SQL-connector databases.  
 >       Add dynamic elements in Javascript and/or jQuery.  
->       - (w3school, Head First JavaScript)  
 
 
 ### Tags  
@@ -56,7 +55,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
         C:/python/repos/large-files/   
       - Files are too big to upload to GitHub.  
    * projects (folder) -- programming projects (supporting folder)  
-   * wip-temp (older) -- saved links and snippets while writing posts    
+   * wip-temp (folder) -- saved links and snippets while writing posts    
    \-\-\-     
    
  * colab (folder) -- hosted Google CoLab Jupyter notebooks  
@@ -65,10 +64,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * jsq (folder) -- practice JavaScript and jQuery    
  
  * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
-   Links to published files on datasciY.com that are executable by user on MyBinder.org image build. (Note: Takes a long time to build, about 10 minutes.)
+   Links to published files on datasciY.com that are executable by user on MyBinder.org image. (Note: Takes a long time to build, about 10 minutes.)
  
  * python_for_finance (folder) -- book exercises, options pricing model, credit swaps, etc.    
- 
+    - moved out?  
+    
  * wip-website (folder) -- work-in-process folder, new materials and testing files.  
    * so -- stack overflow, my answers test files
    * udacity-github -- notes and articles on using Github, best practices.  
