@@ -1,5 +1,8 @@
 # README on SciPy 2020 Conferences  
 
+Cognitive Neuroscience NL virtual conference starting up, free.  
+Tell Bill and Juan.  
+
 #### Prep Tasks:
   * Sign into **Crowdcast** - done, conference & sprints.  
     Add my photo & bio on Crowdcast - done.  
