@@ -4,3 +4,21 @@
 More video playlist available, tutorials only have first 3 from Monday-Tuesday.  
 I'm watching Numpy today.  Hopefully more will be added, later tutorials were excellent.  
 
+---  
+
+Juan's Advanced Numpy tutorial may be more for my needs:  
+https://www.youtube.com/watch?v=cYugp9IN1-Q&t=435s  
+Advanced NumPy | SciPy Japan 2019 Tutorial | Juan Nunuz-Iglesias
+•May 17, 2019
+
+A hands on tutorial covering broadcasting rules, strides / stride tricks and advanced indexing.
+​
+Prerequisites: Comfortable with Python syntax, and some familiarity with NumPy / array computing.
+​
+Bio: Juan Nunez-Iglesias is a Research Fellow and CZI Imaging Software Fellow at Monash University in Melbourne, Australia. He is a core developer of scikit-image and has taught scientific Python at SciPy, EuroSciPy, the G-Node Summer School, and at other workshops. He is the co-author of the O'Reilly title "Elegant SciPy".  
+
+---  
+Note: For me, I need to get more comfortable with structured arrays in Numpy, dictionary like.  
+
+Note: For me, MatPlotLib - read the documentation, get better at distinguishing Object Method and Subplot method.  3D does it need to be in Object Method only?  Seems like it does.  Answer more Stack Overflow questions on MatPlotLib after practicing.  
+
