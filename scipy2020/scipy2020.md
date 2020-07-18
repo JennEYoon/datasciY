@@ -5,9 +5,11 @@
 https://www.scipy2020.scipy.org/tutorial-information  
 
 
-#### numpy tutorial  
+#### numpy tutorial - was bad, Juan's is better.  
 
   * https://github.com/enthought/Numpy-Tutorial-SciPyConf-2020  
+  
+  * 
   
 #### Pytorch - Deep Learning from Scratch    
   
