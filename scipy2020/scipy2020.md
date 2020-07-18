@@ -9,7 +9,8 @@ https://www.scipy2020.scipy.org/tutorial-information
 
   * https://github.com/enthought/Numpy-Tutorial-SciPyConf-2020  
   
-  * 
+  * https://www.youtube.com/watch?v=cYugp9IN1-Q May 17, 1029, Juan, SciPy Japan 2019.  
+    Advanced Numpy Tutorial  
   
 #### Pytorch - Deep Learning from Scratch    
   
