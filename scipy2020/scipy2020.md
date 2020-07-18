@@ -20,7 +20,7 @@ https://www.scipy2020.scipy.org/tutorial-information
   
   * https://github.com/ericmjl/bayesian-stats-modelling-tutorial  
 
-#### pysal tutorial  
+#### pysal tutorial - is part 2, part 1 was SciPy2018 tutorial on YouTube
 
   * https://github.com/knaaptime/pysal-scipy20#obtaining-workshop-materials  
 
