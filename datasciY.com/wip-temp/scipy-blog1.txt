@@ -1,0 +1,6 @@
+# Temp file for Scipy2020 conference blog update.  
+
+7/18/2020 2 AM  
+More video playlist available, tutorials only have first 3 from Monday-Tuesday.  
+I'm watching Numpy today.  Hopefully more will be added, later tutorials were excellent.  
+
