@@ -5,7 +5,7 @@
 https://www.scipy2020.scipy.org/tutorial-information  
 
 
-#### numpy tutorial - was bad, Juan's is better.  
+#### numpy tutorial - was bad, Juan's.  No read the docs.    
 
   * https://github.com/enthought/Numpy-Tutorial-SciPyConf-2020  
   
