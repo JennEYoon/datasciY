@@ -1,4 +1,4 @@
-# Links for SciPy 2020 Conference  
+# Links for SciPy 2020 Conference, Logs of work, July 2020  
 
 #### Tutorials Website  
 
@@ -11,6 +11,14 @@ https://www.scipy2020.scipy.org/tutorial-information
   
   * https://www.youtube.com/watch?v=cYugp9IN1-Q May 17, 1029, Juan, SciPy Japan 2019.  
     Advanced Numpy Tutorial  
+    
+#### Matplotlib tutorial - wip  
+
+  * https://www.youtube.com/watch?v=6gdNUDs6QPc  Anatomy of MatPlotLib  
+  * documentation:  https://matplotlib.org/3.2.2/contents.html  
+  * pyplot interface (mostly simple plots without a lot of control, jupyter interactive https://matplotlib.org/3.2.2/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py  
+  * Use OOP style mainly. ax....
+  
   
 #### Pytorch - Deep Learning from Scratch    
   
