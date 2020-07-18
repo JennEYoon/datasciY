@@ -4,6 +4,22 @@
 More video playlist available, tutorials only have first 3 from Monday-Tuesday.  
 I'm watching Numpy today.  Hopefully more will be added, later tutorials were excellent.  
 
+
+---  
+Enthought SciPy 2020 full list of playlists  
+https://www.youtube.com/c/enthought/playlists?view=50&sort=dd&shelf_id=4
+
+Keynote was about imaging the massive black hole - not up yet.  
+
+
+Tutorials, only 3 up so far:  
+https://www.youtube.com/watch?v=Eb8e9Jj6FQQ&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf  
+
+SciPy 2020 Machine Learning playlist, 10 videos. 
+https://www.youtube.com/watch?v=TQnxH90PqFc&list=PLYx7XA2nY5GejOB1lsvriFeMytD1-VS1B  
+
+SciPy 2020 High Performance Computing playlist, 10 videos.  
+https://www.youtube.com/watch?v=hTmXpvws52M&list=PLYx7XA2nY5GfY4WWJjG5cQZDc7DIUmn6Z  
 ---  
 
 Juan's Advanced Numpy tutorial may be more for my needs:  
