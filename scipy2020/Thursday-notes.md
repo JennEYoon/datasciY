@@ -4,6 +4,8 @@
 "Poster" winners:  
 Hi everybody, we will be posting the winning entries up at https://jhepc.github.io/ later this week  
 
+Friday - Juan's group, napari, won poster award, 1st place?
+
 ### Keynote speaker, Dr. Anne Carpenter    
 
 http://broad.io/CarpenterSlides http://broad.io/CarpenterFeedback  
