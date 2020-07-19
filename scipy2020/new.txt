@@ -1,3 +1,6 @@
 test older pencil universal.  Generic pen slightly less sensitive.  
 Sunday, watching more videos from SciPy - tools plenary, 6 short presentations. 
 napari, 
+pyqrgraph.readthedocs.io  does 3d graphs, seems useful.  
+sympy - symbolic math, algebra, calculus, ODE, stats module.  Try out.  
+yt - volumetric image data analysis, support for geo registered data
