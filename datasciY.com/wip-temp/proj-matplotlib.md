@@ -14,3 +14,7 @@ ax.set ...
 
 fig = plt.figure()  
 ax = plt.add_subplot() no s.  
+
+Passing data as a dictionary-like object, read from Excel Spreadsheet.  
+Passing data defined in a math function.  
+
