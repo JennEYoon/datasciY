@@ -15,6 +15,11 @@ ax.set ...
 fig = plt.figure()  
 ax = plt.add_subplot() no s.  
 
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the axes
+
+
+
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
 Passing data defined in a math function.  
 
