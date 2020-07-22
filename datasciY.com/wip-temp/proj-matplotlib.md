@@ -42,6 +42,18 @@ ax.legend()  # Add a legend.
 
 Backtick on iPad, .?123 key, ' key hold, options appear for backtick, flick.  
 
+#### or (pyplot-style)
+```
+x = np.linspace(0, 2, 100)
+
+plt.plot(x, x, label='linear')  # Plot some data on the (implicit) axes.
+plt.plot(x, x**2, label='quadratic')  # etc.
+plt.plot(x, x**3, label='cubic')
+plt.xlabel('x label')
+plt.ylabel('y label')
+plt.title("Simple Plot")
+plt.legend()
+```  
 
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
 Passing data defined in a math function.  
