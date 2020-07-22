@@ -29,7 +29,7 @@ fig, axs = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 ```
 x = np.linspace(0, 2, 100)
 
-\# Note that even in the OO-style, we use `.pyplot.figure` to create the figure.
+# Note that even in the OO-style, we use `.pyplot.figure` to create the figure.
 fig, ax = plt.subplots()  # Create a figure and an axes.
 ax.plot(x, x, label='linear')  # Plot some data on the axes.
 ax.plot(x, x**2, label='quadratic')  # Plot more data on the axes...
@@ -40,6 +40,7 @@ ax.set_title("Simple Plot")  # Add a title to the axes.
 ax.legend()  # Add a legend.
 ```  
 
+Backtick on iPad, .?123 key, ' key hold, options appear for backtick, flick.  
 
 
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
