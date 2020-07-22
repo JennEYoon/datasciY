@@ -7,3 +7,5 @@ Get notebook source from Github.
 
 Standardize methods for all plots, use ax method, OOM  
 Brief discussion of Pyplot method, for use in shells, not notebook.  
+Set backend to interactive, ion off.  
+
