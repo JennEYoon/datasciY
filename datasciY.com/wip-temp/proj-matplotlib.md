@@ -18,3 +18,8 @@ ax = plt.add_subplot() no s.
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
 Passing data defined in a math function.  
 
+Graph and bars and tickmarks for stdev, mean. 
+
+Graph with red bars for negative loss values.  
+
+Graph with fill region for +/- stdev.  
