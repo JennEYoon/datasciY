@@ -8,7 +8,7 @@ Get notebook source from Github.
 Standardize methods for all plots, use ax method, OOM  
 Brief discussion of Pyplot method, for use in shells, not notebook.  
 Set backend to interactive, ion off.  
-
+```
 fig, ax = plt.subplots()  with s.  
 ax.set ...  
 
@@ -24,6 +24,7 @@ The easiest way to create a new figure is with pyplot:
 fig = plt.figure()  # an empty figure with no Axes
 fig, ax = plt.subplots()  # a figure with a single Axes
 fig, axs = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
+```  
 
 #### OO method explicitly call method on ax objects.  
 ```
