@@ -9,3 +9,6 @@ Standardize methods for all plots, use ax method, OOM
 Brief discussion of Pyplot method, for use in shells, not notebook.  
 Set backend to interactive, ion off.  
 
+fig, axes = subplots()  with s.  
+ax.set ...  
+
