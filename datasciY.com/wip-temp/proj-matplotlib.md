@@ -55,6 +55,11 @@ plt.title("Simple Plot")
 plt.legend()
 ```  
 
+Main defference, OO style uses ax.something, while pyplot style uses plt.something.  
+Both styles create figure same way, <code>fig, ax = plt.subplots() </code>  
+or ```figure = plt.figure()```
+
+
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
 Passing data defined in a math function.  
 
