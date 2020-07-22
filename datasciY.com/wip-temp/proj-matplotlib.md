@@ -26,7 +26,7 @@ fig, ax = plt.subplots()  # a figure with a single Axes
 fig, axs = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 
 #### OO method explicitly call method on ax objects.  
-,,,
+```
 x = np.linspace(0, 2, 100)
 
 \# Note that even in the OO-style, we use `.pyplot.figure` to create the figure.
@@ -38,7 +38,7 @@ ax.set_xlabel('x label')  # Add an x-label to the axes.
 ax.set_ylabel('y label')  # Add a y-label to the axes.
 ax.set_title("Simple Plot")  # Add a title to the axes.
 ax.legend()  # Add a legend.
-,,, 
+```  
 
 
 
