@@ -9,7 +9,7 @@ Standardize methods for all plots, use ax method, OOM
 Brief discussion of Pyplot method, for use in shells, not notebook.  
 Set backend to interactive, ion off.  
 
-fig, axes = subplots()  with s.  
+fig, ax = plt.subplots()  with s.  
 ax.set ...  
 
 fig = plt.figure()  
@@ -18,7 +18,12 @@ ax = plt.add_subplot() no s.
 fig, ax = plt.subplots()  # Create a figure containing a single axes.
 ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the axes
 
+Both pyplot method and OOP method start off the same way to create a figure object.  
+The easiest way to create a new figure is with pyplot:
 
+fig = plt.figure()  # an empty figure with no Axes
+fig, ax = plt.subplots()  # a figure with a single Axes
+fig, axs = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
 
 Passing data as a dictionary-like object, read from Excel Spreadsheet.  
 Passing data defined in a math function.  
