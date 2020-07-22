@@ -25,3 +25,6 @@ Graph with red bars for negative loss values.
 Graph with fill region for +/- stdev.  
 Forecast graph with filled regions.  
 
+Image 
+
+Geospatial scatter plot, mark size depend and number of cases.  
