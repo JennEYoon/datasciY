@@ -3,15 +3,15 @@ projects.html - links to numpy notebooks, Titamic ....
 
 Edited all *.html files for "master".  Only github master links found in Projects.html file.  
 
-Add check-links extension to VS Code. (change timeout setting) 
+Add check-links extension to VS Code. (change timeout setting) Done. 
 Checked about.html only for broken links.  
-To Do - check others.  
 
-General.html has spelling error at bottom, French wrods ngram.  - finxed 
+General.html has spelling error at bottom, French wrods ngram.  - fixed 
 
 Removed Linkedin.com links from About.html and Projects.html.  
 Tired of getting a black screen whenever I want to quickly check a profile. - Microsoft owns it.   
 Don't use it much anyway - treat it almost like Facebook.  
   - Keep my profile, and occassionally send messages, but don't add new people or advertise it on my website.  
 
+### July 23 woking on Matplotlib demo for past week.  
 
