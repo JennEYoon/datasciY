@@ -2,7 +2,9 @@
 
 #### July 23, 2020  
 
-In the middle of updating blog post - all 100 tutorials up on YouTube.  
+In the middle of updating blog post - all 10 tutorials up on YouTube.  
+highlight pysal and bayesian tutorials.  
+
 
 numpy - structured array, 
   * can create non-uniform array for simple dictionary, list, or structured matrix operations.  
