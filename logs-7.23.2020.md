@@ -12,3 +12,9 @@ highlight pysal and bayesian tutorials.
   * structured matrix still useful for efficient memory operations in C or Fortran compatible code.  
   * do some practice with dictionary and list
   * go back and see if I can improve on SO answer.  
+
+#### matplotlib demo  
+  * ax vs plt methods  
+  * use ax method as main, use in Jupyter notebooks  
+  * plt method for REPL, print to screen.  
+  * review backend.use(), ioff and ion  
