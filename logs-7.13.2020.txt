@@ -1,9 +1,4 @@
-**To Do : update all links from datasciY.com to reflect renamed "main" branch, do links test.**  
-projects.html - links to numpy notebooks, Titamic ....  
-
-Edited all *.html files for "master".  Only github master links found in Projects.html file.  
-
-
+**To Do : Meetup DSML Slack, edit all links to my GithUb, "master" to "main" branch - sometime.  
 
 ### Removed Linkedin.com links from datasciY.com website.
 
