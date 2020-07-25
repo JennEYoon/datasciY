@@ -5,7 +5,8 @@ Edited all *.html files for "master".  Only github master links found in Project
 
 
 
-Removed Linkedin.com links from About.html and Projects.html.  
+### Removed Linkedin.com links from datasciY.com website.
+
 Tired of getting a black screen whenever I want to quickly check a profile. - Microsoft owns it.   
 Don't use it much anyway - treat it almost like Facebook.  
   - Keep my profile, and occassionally send messages, but don't add new people or advertise it on my website.  
