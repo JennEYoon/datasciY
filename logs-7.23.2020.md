@@ -4,6 +4,7 @@
 
 In the middle of updating blog post - all 10 tutorials up on YouTube.  
 highlight pysal and bayesian tutorials.  
+* Links to geopandas, STAN free class blog.  
 
 
 #### numpy - structured array, 
