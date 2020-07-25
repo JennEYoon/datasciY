@@ -4,7 +4,7 @@
 
   * Tired of getting a black screen whenever I want to quickly check a profile. - Microsoft owns it.   
 Don't use it much anyway - treat it almost like Facebook.  
-  - Keep my profile, and occassionally send messages, but don't add new people or advertise it on my website.  
+  * Keep my profile, and occassionally send messages to my existing connections, but don't advertise it on my website/resume.  
 
 ### July 23 woking on Matplotlib demo for past week.  
 
