@@ -1,4 +1,4 @@
-# Tasks datasciY.com portfolio and general coding      
+# Plan and Ideas Logs, datasciY.com portfolio and general coding      
 
 ## Plan as of June 2020:  
 
@@ -12,7 +12,12 @@
    - pandas - to review 
    - pytorch ML from scratch - to do
  * Also watch Juan Scipy Japan 2019, read parts of book.  
- * Jaoin Slack, Zoom?
+ * Juan Slack, Zoom? Later. 
+ * July 26 update -- conference went well.  
+ * New Good Habit - set up environment as much as possible to provide cues for action.  
+   Make it as repeatable as possible, simple cue, then action.  Same time, same event, same method.  Soon after cue, follow with action.  No delay to think about it.  
+   - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.  
+   - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.  1-year success along with how to fix it when I forget, 3-4 times.
  
 ### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
