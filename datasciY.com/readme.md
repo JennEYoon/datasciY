@@ -1,4 +1,9 @@
-# ReadMe on datasciY.com folder
+# ReadMe on datasciY.com folder  
+
+Only hosted files are in this folder, "datasciY.com."
+
+***NOTE: KEEP BOOKS out of folder, incur large transfer out fees on AWS!!!!***  
+Even without any internal links, Google Search finds documents, then incur transfer out fees from people searching for free books online.  
 
 ### Links to preview HTML pages on Github.  
 
