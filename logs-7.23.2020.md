@@ -19,3 +19,7 @@ highlight pysal and bayesian tutorials.
   * use ax method as main, use in Jupyter notebooks  
   * plt method for REPL, print to screen.  
   * review backend.use(), ioff and ion  
+
+### Break after 7/24 - watch news, general YouTube.  
+Wasted too much time, but feel a lot better.  
+7/19 Sunday - Talk with Jenny outside sitting 6ft apart, drink wine for 2 hours. Feel SOOO much better afterwards.  Really needed that for my psyche.   
