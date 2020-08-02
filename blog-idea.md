@@ -25,3 +25,8 @@ Data is small enough to reside at same place on Github, with notebooks.
 Data can link to URL if large, download but saved for next time notebook is run. 
 
 
+#### Blog update - my learning experience.  
+
+As of June 2020, beginning to feel confident with Python standard library, numpy, pandas, matplotlib, Python package management, conda virtual environment setup, Ubuntu bash commands (on WSL), Jupyter notebook (module and data imports, !shell commands, %magic commands, selecting different Python kernels), and github and git commands.  Also have some practice with sklearn, tensorflow,  pytorch, and machine learning and deep learning concepts & math/statistics behind them.  
+
+Time about 2 years of concentrated focus work, about 9-12 hours per day for 5-6 days per week.  Calendar time was about 3 years since the start of focused study period my, due to about two six-month periods when I could not study because of family or medical problems that required my full time and attention.  
