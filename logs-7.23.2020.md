@@ -38,7 +38,7 @@ Wasted too much time, but feel a lot better.
 7/19 Sunday - Talk with Jenny outside sitting 6ft apart, drink wine for 2 hours. Feel SOOO much better afterwards.  Really needed that for my psyche.   
 
 
-#### July 26 Sunday - updaged blog, general posts  
+#### July 26 Sunday - updated blog, general posts  
 Update LLP Fusion posts, 
 ADD post on 10 tutorial up. 
 Add internal link #named-anchor.  
