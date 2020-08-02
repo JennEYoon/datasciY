@@ -1,4 +1,4 @@
-# My current work in process  
+# Work in Process Logs for July 2020
 
 
 #### July 11 logs
@@ -12,7 +12,7 @@
   * Use it to connect to my existing contacts from Conference, but not for Job Profile.  
   * Search LinkedIn to find people who will refer me to Jobs at their Companeis for referral bonus.  
 
-## July 23, 2020  
+#### July 23, 2020  
 
 * In the middle of updating blog post - all 10 tutorials up on YouTube.  
    - highlight pysal and bayesian tutorials.  
