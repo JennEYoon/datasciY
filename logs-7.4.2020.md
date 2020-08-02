@@ -34,10 +34,11 @@ Post SciPy Conf:
 
 #### numpy - structured array, 
   * can create non-uniform array for simple dictionary, list, or structured matrix operations.  
-  * more complex operations, ise Pandas.  Predates Pandas?  
-  * structured matrix still useful for efficient memory operations in C or Fortran compatible code.  
+  * more complex operations, use Pandas.  Predates Pandas?  
+  * structured matrix still useful for efficient memory operations in C or Fortran compatible code (f2py) used in astronomy.   
   * do some practice with dictionary and list
   * go back and see if I can improve on SO answer.  
+    - xarray is for this.  Create metadata for numpy arrays.  
 
 #### matplotlib demo  
   * ax vs plt methods  
