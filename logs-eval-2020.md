@@ -166,7 +166,7 @@
   * Definitely need to file taxes for 2017, 2018, 2019 - get stimulus money!!!  
   * car - finish registering soon. 
   * money - call KPMG Pension to move out money soon.  
-  * todo: email "jyoon@datasciy.com"  "mail@datasciy.com"  
+  * todo: email "jyoon@datasciy.com" create.   
     Namecheap get URL for email redirect, add to AWS host.  
     Later: print new business cards, make sure ink doesn't fade.  
   
