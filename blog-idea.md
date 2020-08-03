@@ -27,7 +27,7 @@ Data can link to URL if large, download but saved for next time notebook is run.
 
 #### Blog update - my learning experience.  
 
-As of early June 2020, I has a feeling of beginning to feel confident with Python standard library, numpy, pandas, matplotlib, Python package management, conda virtual environment, Ubuntu bash commands (on WSL), Jupyter notebook (module and data imports, !shell commands, %magic commands, selecting different Python kernels), and github and git commands.  I also had built-up some practice with sklearn, tensorflow,  pytorch, machine learning and deep learning concepts, and related math and statistics/probability.  
+As of early June 2020, I had a feeling of beginning to feel confident with Python standard library, numpy, pandas, matplotlib, Python package management, conda virtual environment, Ubuntu bash commands (on WSL), Jupyter notebook (module and data imports, !shell commands, %magic commands, selecting different Python kernels), and github and git commands.  I also had built-up some practice with sklearn, tensorflow,  pytorch, machine learning and deep learning concepts, and related math and statistics/probability.  
 
 Time about 2 years of concentrated focus study at 9-12 hours per day for 5-6 days per week.  Calendar time was about 3 years since the start of my focused study, due to about two six-month periods when I could not study because of family or medical problems that required my full time and attention.  There was also about 1 year of transition period, from when I set a goal of studying programming stuff on a more regular basis, to when I was focusing on Python and Machine Learning study on a full-time basis.  
 
