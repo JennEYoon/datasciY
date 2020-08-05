@@ -8,4 +8,6 @@
   * SO - read python Q with bounties, found 1 that I may be able to answer.  6 days left.  
   * Update linkds on datasciY to SO profile.  
   * datasciY.com - updated blog post on learning data science.  
+  * Egg prices rise during coronavirus -- project idea, do analysis of food commodity prices during Covid. 
+  
   --- 8 hrs today
