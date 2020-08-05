@@ -4,5 +4,8 @@
     Search users based on visible user name.  No Jennifer Yoon user.  Has 1 inactive Jenny Yoon user.  
     - Got 10 points 1 answer.  640 total.  
   * SO - edit profile, change screen name to "Jennifer Yoon", easier to search user.  
+  * SO - read jobs for data analyst, data science, python.  
+  * SO - read python Q with bounties, found 1 that I may be able to answer.  6 days left.  
   * Update linkds on datasciY to SO profile.  
   * datasciY.com - updated blog post on learning data science.  
+  --- 8 hrs today
