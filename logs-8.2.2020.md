@@ -15,11 +15,14 @@
 #### 8/5 Wednesday ~ 3 hrs  
   * file open, last line read tests.  
     Continue yesterday's work.  
-    
+    \-  
   * Udemy HHMI Work free classes, evaluate  
   * WCC Udemy ML free class evaluate  
   * Bill signs up for 2 classes by Jose Portilla (Comple TF2 Deep Learning, Career & Interview)  
   * 8/6 4:30 AM continue -- evaluate free Udacity PyTorch Intro class.  
     Seems pretty good for intro, CNN, RNN, sentiment analysis...  
     Part of Udacity Nanodegree for Deep Learning.  
+    --- 11.5 hours continuous work 8/5 5 PM to 8/6 4:30 AM  
+    
+    
   
