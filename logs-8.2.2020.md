@@ -11,3 +11,8 @@
   * Egg prices rise during coronavirus -- project idea, do analysis of food commodity prices during Covid. 
   
   --- 8 hrs today
+
+#### 8/5 Wednesday ~ 3 hrs  
+  * file open, last tine tests.  
+    Continue yesterday's work.  
+    
