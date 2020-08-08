@@ -27,4 +27,8 @@
   * 8/7 Friday, more python code.  
     - SO 1 more answer, no points but refreshed my function def syntax.  
     - file seek(), with open() practice continue.  
+    - Coursera DLAI watch some videos.  
+    
+  * 8/8 Saturday - slack off, Audiobook Friday night all night to Saturday day.  
+  
   
