@@ -24,5 +24,7 @@
     Part of Udacity Nanodegree for Deep Learning.  
     --- 11.5 hours continuous work 8/5 5 PM to 8/6 4:30 AM  
     
-    
+  * 8/7 Friday, more python code.  
+    - SO 1 more answer, no points but refreshed my function def syntax.  
+    - file seek(), with open() practice continue.  
   
