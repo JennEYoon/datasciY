@@ -21,6 +21,7 @@
      1-year success along with how to fix it when I forget, 3-4 times.  
    - Successively established habit of prgramming practice almost daily from July 2018 SciPy conference to Nov-end 2019, when I took 2 months off for house work & Bernie Primary election took all my attention in Nov-Feb, and Covid Feb - April.  Got back to work in May.  On a roll again by June start. 
  
+ 
 ### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
  * July-Sept: finish class 4 & 5. 
@@ -37,7 +38,7 @@
   * Jupyter notebook, which cells to rerun.  
 
 
-### More classes signed up 8/5  
+### 4) More classes signed up 8/5  
 
   * udemy Data Science interview Q&A, career - Jose Portilla   
   * udemy Tensorflow 2 - Jose Portilla  
@@ -47,12 +48,13 @@
   * udemy ML intro, WCC  
   
 
-### 4) Fluent Python book, Python Workouts book  
+### 5) Fluent Python book, Python Workouts book  
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
   * Python Workout book - short exercises, doing chapter 5 file I/O.  
 
-### 5) Books Reading - June-July 2020:  
+
+### 6) Other Books Reading - June-July 2020:  
   * Build a Career in Data Science 
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
@@ -131,11 +133,7 @@
   * Medium level on Deep-Learning, Coursera.org halfway.  
   * Started learning about Python-MySQL-Connector, already know SQL language.  
   * Got SO practice on usign Excel with Python, manipulating objects from python module.  
-    - Even 1 for no points was good refresher on if-elif : usage and def func() uages. Had forgotten syntax.  
-
- 
----  
-
+    - Even 1 for no points was good refresher on if-else : usage and def func(): . Had forgot syntax.  
 
 
 --- end ---    
