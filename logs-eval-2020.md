@@ -25,7 +25,8 @@
  * June, watching Class 3.  Youtube 9/22. 
  * July-Sept: finish class 4 & 5. 
  * Sept-Oct - sign up on Coursera & get specialization certificate  
- *** 8/9 Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
+ * *** 8/9 Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
+ 
 
 ### 3) Deep Learning w Python book 
   * Currently reading parts.  
@@ -35,18 +36,29 @@
   * CoLab setup test again, installing and saving datasets, saving library installed.  
   * Jupyter notebook, which cells to rerun.  
 
-### 4) Fluent Python 
+
+### More classes signed up 8/5  
+
+  * udemy Data Science interview Q&A, career - Jose Portilla   
+  * udemy Tensorflow 2 - Jose Portilla  
+  * udemy SQL complete - Jose Portilla  
+  * udemy Pytorch - Jose Portilla  
+  * udacity - free Pytorch intro, Meetup  
+  * udemy ML intro, WCC  
+  
+
+### 4) Fluent Python book, Python Workouts book  
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
+  * Python Workout book - short exercises, doing chapter 5 file I/O.  
 
 ### 5) Books Reading - June-July 2020:  
   * Build a Career in Data Science 
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
   * Head First Javascript (c 2014). - to add simple .js to my website.  
-  * Python Workout book - short exercises, doing chapter 5 file I/O.  
+   
   
-
 ### 6) Other Projects  
 
  * Work on Titanic project to start small.  
