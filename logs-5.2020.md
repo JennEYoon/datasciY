@@ -39,7 +39,7 @@
     (Finished datasciY, SECdataPy, deep-learning, learn-mldl, git-practice)
   ---  
   * Definitely need to file taxes for 2017, 2018, 2019 - get stimulus money!!!  
-  * car - finish registering soon. 
+  * car - finish registering soon. Done 6/15, attached tags on car.
   * money - call KPMG Pension to move out money soon.  
   * todo: email "jyoon@datasciy.com" create.   
     Namecheap get URL for email redirect, add to AWS host.  
