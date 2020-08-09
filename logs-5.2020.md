@@ -1,3 +1,10 @@
+## Working Log 2020:   
+
+#### DLAI - April 7, 2020: SLACK Meetup, Class 2 wks 2 and 3.  
+  * finish classes 1 to 4, then 5 sequence models.    
+  * Some notebooks - redo from scratch  
+  * Read book, Chollet.  
+  * Read VanderPlas chp 5.  
   
 #### DLAI - May 4, 2020 Monday 7pm  
    * finish all of class 3.  
