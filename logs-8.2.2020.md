@@ -30,6 +30,8 @@
     - Coursera DLAI watch some videos.  
     
   * 8/8 Saturday - slack off, Audiobook Friday night all night to Saturday day.  
+    Watched resnet, week 2 videos.  Next notebooks Resnet, Keras by Monday meetup.  
+    
   * 8/9 sunday - registered for Coursera ML Andrew Ng original class.  
     Good review of math, broad oberview of topics, has data mining, robot programming.  
   
