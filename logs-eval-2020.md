@@ -109,6 +109,7 @@
     - Format for passing variables to class instance, updating class instance variable. 
     - Inherit from base class to sub class.  Use () in class creation.  
     - Call class() to create instance of class object.  
+  * 8/9 Sunday - file open(), text and binary read, seek() to move index, read(), readline() single, readlines(), readlines()[-1], relative seek for binary read only.  Got much more comportable with file I/O past week. Python Workout cht 5 and extensions from online.
   * Reasonably good with Numpy, Matplotlib.pyplot 
     - could use more recent practice  
   * Familiar with Pandas
