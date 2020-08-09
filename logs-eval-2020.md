@@ -8,21 +8,24 @@
    - Tutorials on Monday to Friday, 10am - 2pm ET, 4h. 
  * YouTube tutorials available - Sunday 9 AM CT. 
    - numpy - finished reading most, next reproduce code. 
-   - pysal - downloaded git repo. Also watch 2019. 
-   - pandas - to review 
-   - pytorch ML from scratch - to do
+   - pysal - downloaded git repo. Also watch 2018 Pysal v1. 
+   - pytorch ML from scratch - to do notebooks  
+   
  * Also watch Juan Scipy Japan 2019, read parts of book.  
- * Juan Slack, Zoom? Later. 
+ * Juan Slack, Zoom? Yes.  
  * July 26 update -- conference went well.  
  * New Good Habit - set up environment as much as possible to provide cues for action.  
    Make it as repeatable as possible, simple cue, then action.  Same time, same event, same method.  Soon after cue, follow with action.  No delay to think about it.  
-   - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.  
-   - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.  1-year success along with how to fix it when I forget, 3-4 times.
+   - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.   
+   - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.   
+     1-year success along with how to fix it when I forget, 3-4 times.  
+   - Successively established habit of prgramming practice almost daily from July 2018 SciPy conference to Nov-end 2019, when I took 2 months off for house work & Bernie Primary election took all my attention in Nov-Feb, and Covid Feb - April.  Got back to work in May.  On a roll again by June start. 
  
 ### 2) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
- * July-August: finish class 4 & 5. 
- * August-Sept - sign up on Coursera & get specialization certificate  
+ * July-Sept: finish class 4 & 5. 
+ * Sept-Oct - sign up on Coursera & get specialization certificate  
+ *** 8/9 Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
 
 ### 3) Deep Learning w Python book 
   * Currently reading parts.  
@@ -41,14 +44,17 @@
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
   * Head First Javascript (c 2014). - to add simple .js to my website.  
+  * Python Workout book - short exercises, doing chapter 5 file I/O.  
+  
 
 ### 6) Other Projects  
- * Start reading some Python books to get back into the mood.  
+
  * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
    - SO 609 points as of 7/1/2020. People are upvoting my old answers.  
    - SO has new questions being posted even during Coronavirus.  
    - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
+   - SO 640 as of 8/6, 2 more answers, only 1 got points.  
    \-  
  * Corvid-19 infections spread map 
    - Reproducce Johns Hopkins interactive map  
@@ -112,6 +118,7 @@
   * Medium level on Deep-Learning, Coursera.org halfway.  
   * Started learning about Python-MySQL-Connector, already know SQL language.  
   * Got SO practice on usign Excel with Python, manipulating objects from python module.  
+    - Even 1 for no points was good refresher on if-elif : usage and def func() uages. Had forgotten syntax.  
 
  
 ---  
