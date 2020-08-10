@@ -35,4 +35,6 @@
   * 8/9 sunday - registered for Coursera ML Andrew Ng original class.  
     Good review of math, broad oberview of topics, has data mining, robot programming.  
   
-  
+  * 8/10 Monday, Meetup small group today  
+    Reading ResNet notebook.  
+    
