@@ -42,7 +42,7 @@
     Past few days, re-watched all of class 3, quiz week 1 review.   
     Peter present ResNet notebook.  
    
-  * 8/12 taxes today.  
+  * 8/12 Wed, taxes today.  
     mow back, weed  
     eval - feeling good today after connecting with people yesterday, several new contacts.  Glad I decided to join Meetup for both days.  
     Need to carefully monitor my mental health during this pandemic.  
