@@ -38,3 +38,7 @@
   * 8/10 Monday, Meetup small group today  
     Reading ResNet notebook.  
     
+  * 8/11 Tuesday, Meetup main, had good turnout ~13 people, several works in DS or has degrees/certificate in DS.  
+    Past few days, re-watched all of class 3, quiz week 1 review.   
+    
+  
