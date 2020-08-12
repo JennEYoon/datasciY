@@ -11,8 +11,8 @@
   
  * Installed VS Code extension for spell checker.  Works well!  Checks spelling in html, python, markdown files.  
  
-#### VS Code updates -- write a blog or article about it.  
-
- * Improvements to VS Code makes it much easier to edit markdown (with preview), 
- * Juptyer Notebook (auto-render) in interactive notebook format. "Open-in" VS code.  
- * HTML/CSS spell checker, spacing checker.  
+#### VS Code updates -- Jupyter notebook integration.  
+ * Shift + Enter to run in cells, Jupyter like  
+ * Alt + Shift + Enter to run in python terminal   
+ 
+ 
