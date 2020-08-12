@@ -44,4 +44,6 @@
    
   * 8/12 taxes today.  
     mow back, weed  
+    eval - feeling good today after connecting with people yesterday, several new contacts.  Glad I decided to join Meetup for both days.  
+    Need to carefully monitor my mental health during this pandemic.  
   
