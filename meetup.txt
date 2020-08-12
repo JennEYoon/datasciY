@@ -1,0 +1,106 @@
+Dan Kelly6:37 PM
+Hello,  We are going to wait till 7.00 for the host of this  event, Debra Gresko to arrive, if not  I wil  start the meeting then. 
+Daniel Babcock6:37 PM
+Thank you!
+Michael Alexander6:38 PM
+Very good, thank you.
+Mark G.6:48 PM
+Anyone know of any jobs that will sponsor (for those credentials)?   I have all sorts of credentials until about 5 years ago when I hanged jobs and didn't require the credentials.
+Mark G.6:53 PM
+Can you post a link to the course?
+Daniel Babcock6:53 PM
+I think it's this one?
+https://www.coursera.org/specializations/deep-learning
+Mark G.6:54 PM
+Thanks!
+Peter Stephan6:55 PM
+Yes, that's the correct link.
+Daniel Babcock6:57 PM
+Has anyone had luck with things like Coursera/Udemy etc. certifications helping with jobs? Do people recognize them?
+Famey Lockwood6:58 PM
+Have to go now.  Thank you; will check in another day. Famey
+Peter Stephan6:58 PM
+I've taken a lot of the courses, but never tried to get the certifications.  So no idea if certifications help.
+You6:58 PM
+No, but on one interview, the person expected me to have at least some  individual class certificates
+Mark G.6:59 PM
+Good Question.  From what I've heard the projects in some of the courses are good for a portfolio to take into an interview.
+You7:00 PM
+I have a bunch of certificates from Coursera.  I really like a couple of Udemy classes, but didn't get the certificates from those.
+Daniel Babcock7:00 PM
+Awesome, thanks for the responses!
+E J7:00 PM
+does 'dev' set refer to 'validation'?
+Peter Stephan7:00 PM
+Yes
+You7:00 PM
+You're welcome.  
+Dev set used to test & tune algo.  Test set is final validation
+Daniel Babcock7:12 PM
+I am personally really good at identifying cats
+You7:14 PM
+Dan. :-) 
+Daniel Babcock7:15 PM
+:D
+E J7:19 PM
+In places I've worked at, they tend to go for an 80/20 or 80/10/10 split no matter how many data points they have
+Peter Stephan7:20 PM
+That's good to know.
+E J7:31 PM
+should mention that curriculum learning also refers to introducing new harder data as the model learns
+You7:31 PM
+EJ. That makes sense.  Thanks
+Daniel Babcock7:33 PM
+ Could not including them be overfitting for the test images?
+Yeah, the goal is to identify birds in the 'real world' not just in the test set
+E J7:40 PM
+a bigger model could introduce more artifacts or bias
+Daniel Babcock7:42 PM
+I think 0.3% is right based off of the definition of Bayes error
+Perpetual Agyeman7:43 PM
+Hi I’m new to the group. What course on couriers is the quiz from
+Coursera*
+Daniel Babcock7:44 PM
+Hello Perpetual, it's: https://www.coursera.org/specializations/deep-learning
+Perpetual Agyeman7:46 PM
+Thanks
+Daniel Babcock7:46 PM
+You're welcome!
+E J8:01 PM
+3&4 IMO
+Bruce Peat8:03 PM
+Thank you!
+Daniel Babcock8:03 PM
+I will try to get caught up! Thanks for going over it.
+Is your plan to audit and then pay for it and ace it all at once?
+Peter Stephan8:04 PM
+Possibly, yes.  
+Daniel Babcock8:04 PM
+Cool
+I'd be interested in the slack: daniel.b.babcock@outlook.com
+Salil Das8:04 PM
+salil_das10@hotmail.com
+Michael Alexander8:04 PM
+mike@mikealexander.com
+E J8:04 PM
+elijaffe173@gmail.com
+Daniel Babcock8:07 PM
+That sounds interesting to me... Might keep me motivated to keep moving in the Coursera course.
+Salil Das8:07 PM
+Thank you.
+Daniel Babcock8:08 PM
+Awesome, thanks so much!
+E J8:08 PM
+sounds good!
+You8:08 PM
+OK Daniel, I wil message you on Slack too.
+Bruce Peat8:08 PM
+Stay safe
+E J8:08 PM
+I had fun
+Daniel Babcock8:08 PM
+Thanks!
+Michael Alexander8:08 PM
+Thanks everyone. I need to drop; have enjoyed the conversation. Hope to see you again, soon! --Mike A
+Mark G.8:08 PM
+I'm interested in the smaller group - however I'm quite the newby   Mrgilbert@hotmail.com
