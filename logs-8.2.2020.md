@@ -48,3 +48,11 @@
     eval - feeling good today after connecting with people yesterday, several new contacts.  Glad I decided to join Meetup for both days.  
     Need to carefully monitor my mental health during this pandemic.  
   
+ * 8/13 Th Fasti.ai - interviews,  
+   Watched several interviews, impressed again.  
+   Time to revisit it after going through Andrew Ng's deep learning series?  
+   - Try doing 3 Kaggle competitions, learn how to connect with data, move model to cloud, clean large data ... 
+   - Run the notebook cells myself, then try to reproduce the notebook without looking at it, takes time.  
+     Look up definitions.  
+   - In July 2018 when I first came across it, I didn"t have 1 year of solid Python coding experience.  Now I do & know more about ML and DL.  
+   
