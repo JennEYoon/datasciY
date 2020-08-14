@@ -59,4 +59,5 @@
   * 8/14 Friday  
     Lex Fridman interviews Elon Musk.  Freaky.  Watch his face as he asks "Wat is outside of the Simulation?"   
     Musk is on full display without having to water down his replies to talk to lay people.  His power and technological importance is on full display.  
-    
+     - https://www.youtube.com/watch?v=dEv99vxKjVI  
+     - https://www.youtube.com/watch?v=smK9dgdTl40  
