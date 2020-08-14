@@ -56,3 +56,7 @@
      Look up definitions.  
    - In July 2018 when I first came across it, I didn"t have 1 year of solid Python coding experience.  Now I do & know more about ML and DL.  
    
+  * 8/14 Friday  
+    Lex Fridman interviews Elon Musk.  Freaky.  Watch his face as he asks "Wat is outside of the Simulation?"   
+    Musk is on full display without having to water down his replies to talk to lay people.  His power and technological importance is on full display.  
+    
