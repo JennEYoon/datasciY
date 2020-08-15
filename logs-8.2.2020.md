@@ -61,3 +61,13 @@
     Musk is on full display without having to water down his replies to talk to lay people.  His power and technological importance is on full display.  
      - https://www.youtube.com/watch?v=dEv99vxKjVI  
      - https://www.youtube.com/watch?v=smK9dgdTl40  
+
+  * 8/15 Sat  
+    Pytorch tutorial SciPy skimmed yesterday.  
+    3 notebooks, only 3rd is intro to PyTorch, but 1-2 is goo from scratch into to ML and backprop using numpy.  
+    - Reproduce with blank notebook.  
+    - DLAI, step by step week 1, reproduce with blank notebook.  
+    - DLAI, review NN weeks 3 & 4, backprop math, reproduce with blank notebook.  
+    - YOLO do next week.  
+    
+    
