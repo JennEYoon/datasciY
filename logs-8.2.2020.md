@@ -70,4 +70,8 @@
     - DLAI, review NN weeks 3 & 4, backprop math, reproduce with blank notebook.  
     - YOLO do next week.  
     
+  * Fashion is impacted by Coronavirus. Designers are declaring bankruptcy.  
+    - Comfy sweatpants are selling out, 1 year's sale in 1 month.  
+    - Many clothing stores are closing.  Fash fashion may be wasteful.  
+    
     
