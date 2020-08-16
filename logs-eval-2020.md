@@ -68,7 +68,7 @@
    - SO 609 points as of 7/1/2020. People are upvoting my old answers.  
    - SO has new questions being posted even during Coronavirus.  
    - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
-   - SO 640 as of 8/6, 2 more answers, only 1 got points.  
+   - SO 655 as of 8/10, 2 more answers, only 1 got points.  
    \-  
  * Corvid-19 infections spread map 
    - Reproducce Johns Hopkins interactive map  
