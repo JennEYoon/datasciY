@@ -26,6 +26,7 @@
     
   * 8/7 Friday, more python code.  
     - SO 1 more answer, no points but refreshed my function def syntax.  
+    - SO image 2nd channel, got 25 points! Asker already had a working solution, weird. Asker was pro 25K pts.  
     - file seek(), with open() practice continue.  
     - Coursera DLAI watch some videos.  
     
