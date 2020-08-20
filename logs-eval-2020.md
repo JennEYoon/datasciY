@@ -3,23 +3,20 @@
 ## Plan as of June 2020:  
 
 ### 1) SciPy 2020 - $25 virtual conference for students.  
- * Set up a working environment and time for the week. 
-   - Most days start 9AM CT/10 AM ET.
-   - Tutorials on Monday to Friday, 10am - 2pm ET, 4h. 
+
  * YouTube tutorials available - Sunday 9 AM CT. 
-   - numpy - finished reading most, next reproduce code. 
-   - pysal - downloaded git repo. Also watch 2018 Pysal v1. 
-   - pytorch ML from scratch - to do notebooks  
-   
- * Also watch Juan Scipy Japan 2019, read parts of book.  
- * Juan Slack, Zoom? Yes.  
- * July 26 update -- conference went well.  
+   - numpy - practice, reproduce code. 
+   - pysal - try tutorial notebooks, also try 2018 SciPy tutorial PySAL notebooks.  
+   - pytorch ML - try notebooks, has good intro to backprop math and convolution matrix multiply.    
+ * Also watch Juan Scipy tutorial Japan 2019, read Elegant-Scipy book.  
+ * YouTube - watch pre-recorded series for the other sections, can take it easy.  
+   \-   
  * New Good Habit - set up environment as much as possible to provide cues for action.  
    Make it as repeatable as possible, simple cue, then action.  Same time, same event, same method.  Soon after cue, follow with action.  No delay to think about it.  
    - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.   
    - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.   
      1-year success along with how to fix it when I forget, 3-4 times.  
-   - Successively established habit of prgramming practice almost daily from July 2018 SciPy conference to Nov-end 2019, when I took 2 months off for house work & Bernie Primary election took all my attention in Nov-Feb, and Covid Feb - April.  Got back to work in May.  On a roll again by June start. 
+   - Successfully established habit of prgramming practice almost daily from July 2018 SciPy conference to Nov-end 2019, when I took 2 months off for house work & Bernie Primary election took all my attention in Nov-Feb, and Covid March - April.  Got back to work in May.  On a roll again by June & July. 
  
  
 ### 2) Coursera.org DLAI - to finish this year.   
