@@ -38,6 +38,7 @@
 ### 4) More classes signed up 8/5  
 
   * udemy Data Science interview Q&A, career - Jose Portilla   
+    - Read DataSci interview Q&A.  
   * udemy Tensorflow 2 - Jose Portilla  
   * udemy SQL complete - Jose Portilla  
   * udemy Pytorch - Jose Portilla  
@@ -48,7 +49,8 @@
 ### 5) Fluent Python book, Python Workouts book  
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
-  * Python Workout book - short exercises, doing chapter 5 file I/O.  
+  * Python Workout book - short exercises, doing chapter 5 file I/O 
+    - reading csv, excel, json files?    
 
 
 ### 6) Other Books Reading - June-July 2020:  
@@ -79,9 +81,19 @@
 
   * Email redirect setup "jyoon@datasciY.com" - to use during job applications.  
     Don't use this for anything else, Media signup still use "datasciY.info@gmail.com".  
-    * Build out StockWiki.com as a stand-alone application.  
-      Use it to get ad revenues, and as a project portfolio for job applications.  
-      
+    
+ * Build out StockWiki.com as a stand-alone application.  
+   Side hustle - Use it to get ad revenues, and as a project portfolio for job applications.  
+   Javascript - user account creating, forms.  
+   Google Sheets API - community spreadsheets for DCF analysis.  
+   
+### 6b: Ready to flesh out Projects - August 2020  
+  * Applied to my first Data Science job this year, Yeah!  
+    - Kinetica Arlington, VA, Meetup WWC message, Aug 17, 2020 submit.    
+  * Start with Titanic, PyTorch tutorial & logistic regression from book.   
+    - Feels like it will take 3 more months to flesh out Projects to reasonable level, but can start applying to jobs after 2 months, Novermber 2020.  More practice with interview questions.  Look into Algorithms.  
+   
+   
 ---  
 
 ## Goals Met as of June 2020:  
