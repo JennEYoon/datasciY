@@ -75,4 +75,4 @@
     - Comfy sweatpants are selling out, 1 year's sale in 1 month.  
     - Many clothing stores are closing.  Fash fashion may be wasteful.  
     
-    
+  * 8/22 week 3 YOLO- keep falling asleep.    
