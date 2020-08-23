@@ -77,3 +77,6 @@
     
   * 8/22 week 3 YOLO- keep falling asleep.    
   * Cotton farming restricted in Virginia, unless ball weeval irradication fee is paid and pests are closely monitored.  Hum.  
+  
+  * 8/23 Sunday - fastai book arrived, Bill started reading it.  
+  
