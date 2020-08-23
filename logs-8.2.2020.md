@@ -76,3 +76,4 @@
     - Many clothing stores are closing.  Fash fashion may be wasteful.  
     
   * 8/22 week 3 YOLO- keep falling asleep.    
+  * Cotton farming restricted in Virginia, unless ball weeval irradication fee is paid and pests are closely monitored.  Hum.  
