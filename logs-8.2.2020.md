@@ -80,3 +80,9 @@
   
   * 8/23 Sunday - fastai book arrived, Bill started reading it.  
   
+  * 8/27 TH WCC Janelia - first Zoom meeting, ML Udemy class.  
+    Mostly setup questions, 1st notebook OLS Regression.  
+    Next meet in 2 weeks.  
+    Re-activated login to Slack WCC, #python-machine learning (new).  
+    Piped up, but not overly.  Allowed space for Lisa to answer most questions.  
+    
