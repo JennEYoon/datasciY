@@ -85,4 +85,7 @@
     Next meet in 2 weeks.  
     Re-activated login to Slack WCC, #python-machine learning (new).  
     Piped up, but not overly.  Allowed space for Lisa to answer most questions.  
+    * Used new bluetooth Mpow Jaws headset, worked well.  Setup sound, disable default on computer first.  
+      Zoom used my audio setting (from computer).  
+    * Along with Lisa, was the most knowledgeable participant.    
     
