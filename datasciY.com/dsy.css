@@ -203,6 +203,13 @@ img {
     border: 2px solid black;
 }
 
+/* Move bullet away from left small image, when float is used, about 16px margin-left.  */
+.bullet-imgsm {
+    padding-left: 160px; /* adjust based on image width? */
+    margin-left: 24px;
+}
+
+
 .imgmid {
     float: left;
     max-width: 600px;
