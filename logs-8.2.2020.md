@@ -85,11 +85,12 @@
     Next meet in 2 weeks.  
     Re-activated login to Slack WCC, #python-machine learning (new).  
     Piped up, but not overly.  Allowed space for others to answer most questions.  
+    * First joined WCC, in August 2017 w Emily, 3 years ago, but was not active after ~ Oct 2018.  
+    * Along with moderator, was one of the most knowledgeable participant in group.  
     * Used new bluetooth Mpow Jaws headset, worked well.  
       Setup sound, disable default (speaker built-in) on computer first.  
       Zoom used my audio setting (from computer after redirecting audio to headset).  
-    * Along with moderator, was one of the most knowledgeable participant in group.    
-    * First joined WCC, in August 2017 w Emily it looks like, 3 years ago, but was not active after ~ Oct 2018.  
+
      \-   
     * Meetup DSML took over my attention in early 2019, with my first presentation in March 2019, k-nearest neighbor, ISLR book chapter 10.  
     * Joined Serious Data Science in June/July 2018 for Andrew D Deep Learning talks, then shkipped until Nov & Dec 2018.  Become more consistent from Jan/Feb 2019 onwards.  
