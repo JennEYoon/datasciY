@@ -98,4 +98,4 @@
 
   * 8/29 Sat   
     YOLO do, review backprop w fastai book, Pytorch Scipy Tutorial.  
-    
+    I learned a lot about deep learning in the past 1.5 years, since March 2019, Stanford 231n.   
