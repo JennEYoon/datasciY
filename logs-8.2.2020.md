@@ -95,3 +95,7 @@
     * Meetup DSML took over my attention in early 2019, with my first presentation in March 2019, k-nearest neighbor, ISLR book chapter 10.  
     * Joined Serious Data Science in June/July 2018 for Andrew D Deep Learning talks, then shkipped until Nov & Dec 2018.  Become more consistent from Jan/Feb 2019 onwards.  
     * WCC Slack - posted bunch or resource links.  
+
+  * 8/29 Sat   
+    YOLO do, review backprop w fastai book, Pytorch Scipy Tutorial.  
+    
