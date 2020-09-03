@@ -11,6 +11,9 @@ With related files somehow open in Colab notebooks.
 
  * Public data file link: can use datasciY, already have public URL.  
    Or AWS S3 public bucket, just for data - pay for transfer out fee - OK for small files.  
+ * Shareable public link from Google Drive, faster to read from Colab (Google), OK seems good.  
+   Find a way to read text files into CoLab from shareable link on Google Drive (public).  
+   Can I mount a folder, use for all data files?  Yes.  from drive mount...
 
  * Also create collapsing headings - for subprojects.  
 
