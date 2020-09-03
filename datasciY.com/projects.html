@@ -55,15 +55,18 @@
     <h3>Python Basics</h3>    
         
 
-    <h5>File IO Demos</h5>    
-    <p> I will cover reading from text, JSON, CSV, Excel, and SQL file formats.  I will also cover scraping data directly from websites in html tables and PDF tables.</p>
-
-        <h6>Text file read: file-io demo</h6>
-        <p>A demonstration of reading in a text file using 'rt' read text and 'rb' read binary methods. 
-            For reverse order read and non-sequential read, 'rb' binary read along with relative address seek is usually much faster than 'rt' text read method. 
-        </p>
-        <p><a href="./projects/fileio/fileio-demo.ipynb">file-io demo notebook</a> or view in browser<a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb"> via nbviewer</a> or 
-        <a href="https://colab.research.google.com/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">open in colab</a>.</p>
+    <h4>File-IO demo</h4>
+    <p>A demonstration of reading in a text file using 'rt' read text and 'rb' read binary methods. 
+        For reverse order read and non-sequential read, 'rb' binary read is usually faster.  Relative address seek (from end of file and from current position) is only available for binary read method.   
+    </p>
+        <ul>       
+        <li>Static view in browser: <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb"> via nbviewer</a> </li>
+        <li>Executable notebook: <a href="https://colab.research.google.com/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">open in colab</a>.</li>
+        <li>View on Github: <a href="https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">fileio-demo.ipynb</a></li>
+        <li>Download file from this site: <a href="./projects/fileio/fileio-demo.ipynb">fileio-demo</a>, <a href="./projects/fileio/demofile.txt">text file 1</a>, <a href="./projects/fileio/TheRaven-Poe.txt">text file 2</a> </li>    
+        </ul>
+    
+        <p>Later, I will cover reading from text, JSON, CSV, Excel, and SQL file formats.  I will also cover scraping data directly from websites.</p>
 
 
     <h3>Using NumPy data arrays</h3>
