@@ -8,8 +8,9 @@ Mayve move all non-website file out again?
 Maybe a separate repo just for project notebooks???  
 With MyBinder and CoLab option  
 With related files somehow open in Colab notebooks.  
-Public data file link: can use datasciY, already have public URL.  
-Or AWS S3 public bucket, just for data - pay for transfer out fee.  
+
+ * Public data file link: can use datasciY, already have public URL.  
+   Or AWS S3 public bucket, just for data - pay for transfer out fee - OK for small files.  
 
  * Also create collapsing headings - for subprojects.  
 
