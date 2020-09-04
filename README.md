@@ -14,22 +14,16 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
 ### Tags  
   
- * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, financial derivatives, economics
+ * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, statistics, econometrics, financial derivatives, economics
 
- * ***Python Libraries:*** Python standard library, Jupyter Notebook, NumPy, Pandas, MatplotLib, SciPy, Scikit-Learn, TensorFlow, Keras, Plotly, Dash, Bokeh 
+ * ***Python Libraries:*** Python core, Jupyter, NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow, Keras, Plotly, Bokeh, Xarray   
  
- * ***Other Software, Services and Tools:*** Excel, VBA, SQL (MySQL and SQLite), R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google CoLab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53)
+ * ***Other Software, Services and Tools:*** Excel, VBA, SQL, R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google CoLab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53 hosting website)
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
 >  - e.g.: to view **example_rt.html** file on this repo:  
 >    https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html
-
-#### To Open In Google CoLab - a copy of executable Jupyter notebook:  
->  add link  
-
-#### To Open In MyBinder - a copy of executable Jupyter Hub image:  
->  add link  
 
 ---   
 
@@ -62,7 +56,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * jsq (folder) -- practice JavaScript and jQuery    
  
  * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
-   Links to published files on datasciY.com that are executable by user on MyBinder.org image. (Note: Takes a long time to build, about 10 minutes.)
+   Links to published files on datasciY.com that are executable by user on MyBinder.org image.  
+   (Note: Takes a long time to build, about 10 minutes.)  
  
  * python_for_finance (folder) -- book exercises, option pricing model, credit swaps, etc.    
     
