@@ -26,6 +26,7 @@ Img is colab_logo, link text is "Run in Google Colab".  Like that.
   * How to handle loading data from public URL? 
   * How to open text file for reading?  public URL?
   
+  ```
     {
    "cell_type": "markdown",
    "metadata": {},
