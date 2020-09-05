@@ -1,5 +1,5 @@
 # Google CoLab for running Jupyter notebooks.  
-Also terminal session.  
+Also has terminal session? 
 June 16, 2020 
 
 
