@@ -1,32 +1,47 @@
 # Plan and Ideas Logs, datasciY.com portfolio and general coding      
 
-## Plan as of June 2020:  
+## Plan updated Sept 2020:  
 
-### 1) SciPy 2020 - $25 virtual conference for students.  
+### SciPy 2020 - Done
 
  * YouTube tutorials available - Sunday 9 AM CT. 
-   - numpy - practice, reproduce code. 
    - pysal - try tutorial notebooks, also try 2018 SciPy tutorial PySAL notebooks.  
    - pytorch ML - try notebooks, has good intro to backprop math and convolution matrix multiply.    
  * Also watch Juan Scipy tutorial Japan 2019, read Elegant-Scipy book.  
  * YouTube - watch pre-recorded series for the other sections, can take it easy.  
-   \-   
- * New Good Habit - set up environment as much as possible to provide cues for action.  
-   Make it as repeatable as possible, simple cue, then action.  Same time, same event, same method.  Soon after cue, follow with action.  No delay to think about it.  
-   - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.   
-   - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.   
-     1-year success along with how to fix it when I forget, 3-4 times.  
-   - Successfully established habit of prgramming practice almost daily from July 2018 SciPy conference to Nov-end 2019, when I took 2 months off for house work & Bernie Primary election took all my attention in Nov-Feb, and Covid March - April.  Got back to work in May.  On a roll again by June & July. 
  
+### 1) Ready to flesh out Projects - Sept 2020  
+  * Applied to my first Data Science job this year, Yeah!  
+    - Kinetica Arlington, VA, or remote, Meetup WWC message, Aug 17, 2020 submit.    
+  * Applied to Saturn Cloud - Data Scientist (Entry Level) remote  
+  * Applied to Coiled.io founded by Dask creator - Data Science Evangelist junior level and marketing intern, remote.  
+  \-\-\-  
+  * Start with Titanic, PyTorch Scipy20 tutorial & logistic regression from book.   
+  * Matplotlib - OO vs Matlab demo  
+  * Numpy structured array (dict like)  
+  * Xarray - meta data for Numpy.  
+  * Dask - Do Scipy20 tutorial and write about it.  
+  * Bicycle lending - Pandas interview example - PyData NY 2019 - do and write about it  
+    
+    
+### 2) Practice Interview Questions - Sept 2020  
+  * Udemy class - Data Science Career & Interview Prep  
+    - Go through and practice all questions.  
+    - Look up additional information from books and online, prep statistics heavily, since this will be my forte.  
+  \-\-\-  
+   * Read DataSci interview Q&A doc.  
+   * Finish book Build a Career in DS
+   * Data Science Weekly - resume doc read  
+   * Data Science Weekly - jobs keyword search, read saved job descriptions.  
  
-### 2) Coursera.org DLAI - to finish this year.   
+### 3) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
  * July-Sept: finish class 4 & 5. 
  * Sept-Oct - sign up on Coursera & get specialization certificate  
  * *** 8/9 Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
  
 
-### 3) Deep Learning w Python book 
+### 4a) Deep Learning w Python book 
   * Currently reading parts.  
   * Setup finished on Ubuntu side.  
   * Do mnist numbers example notebook,
@@ -34,37 +49,48 @@
   * CoLab setup test again, installing and saving datasets, saving library installed.  
   * Jupyter notebook, which cells to rerun.  
 
+### 4b) Fast.ai deep learning book  
+  * Read online, notebooks.  
+  * Watch videos  
+  * Do practice.  
+  * Also have paper book, can use sometimes. 
 
-### 4) More classes signed up 8/5  
+### 5) More classes signed up 8/5  
 
-  * udemy Data Science interview Q&A, career - Jose Portilla   
-    - Read DataSci interview Q&A.  
+  * udemy ML intro, WCC -- Janelia, currently doing.  OK review.   
+  * udemy Data Science interview Q&A, career - Jose Portilla    
   * udemy Tensorflow 2 - Jose Portilla  
   * udemy SQL complete - Jose Portilla  
   * udemy Pytorch - Jose Portilla  
   * udacity - free Pytorch intro, Meetup  
-  * udemy ML intro, WCC  
-  
 
-### 5) Fluent Python book, Python Workouts book  
+  
+### 6) Fluent Python book, Python Workouts book  
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
   * Python Workout book - short exercises, doing chapter 5 file I/O 
     - reading csv, excel, json files?    
 
 
-### 6) Other Books Reading - June-July 2020:  
-  * Build a Career in Data Science 
+### 7) Other Books Reading - June-July 2020:  
+  * Build a Career in Data Science -- in interview part
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
   * Head First Javascript (c 2014). - to add simple .js to my website.  
+   \-   
+ * New Good Habit - set up environment as much as possible to provide cues for action.  
+   Make it as repeatable as possible, simple cue, then default action.  No delay to think about it.  
+   - I've successfully set up Good Habit of hugging/greeting Bill as soon as he comes home from work.   
+   - I've successfully set up Good Habit of contributing 1 items to GitHub, as soon as I wake up.   
+     1-year success along with how to fix it when I forget, 3-4 times.  
+   - Successfully established habit of prgramming practice almost daily from July 2018 SciPy conference to now, with 2 breaks. 
    
+   ***Next Habit: Daily exercise & Sleep at same time daily.***   
   
-### 6) Other Projects  
+### 8) Other Projects  
 
- * Work on Titanic project to start small.  
  * Answer StackOverflow questions to get recent practice.  
-   - SO 609 points as of 7/1/2020. People are upvoting my old answers.  
+   - SO 500 points as of July 2019.  
    - SO has new questions being posted even during Coronavirus.  
    - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
    - SO 655 as of 8/10, 2 more answers, only 1 got points.  
@@ -86,13 +112,6 @@
    Side hustle - Use it to get ad revenues, and as a project portfolio for job applications.  
    Javascript - user account creating, forms.  
    Google Sheets API - community spreadsheets for DCF analysis.  
-   
-### 6b: Ready to flesh out Projects - August 2020  
-  * Applied to my first Data Science job this year, Yeah!  
-    - Kinetica Arlington, VA, Meetup WWC message, Aug 17, 2020 submit.    
-  * Start with Titanic, PyTorch tutorial & logistic regression from book.   
-    - Feels like it will take 3 more months to flesh out Projects to reasonable level, but can start applying to jobs after 2 months, Novermber 2020.  More practice with interview questions.  Look into Algorithms.  
-   
    
 ---  
 
