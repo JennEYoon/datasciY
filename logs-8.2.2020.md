@@ -100,3 +100,9 @@
   * 8/29 Sat   
     YOLO do, review backprop w fastai book, Pytorch Scipy Tutorial.  
     I learned a lot about deep learning in the past 1.5 years, since March 2019, Stanford 231n.   
+  * 9/6 Sun finished YOLO videos, had to review several times.  
+    Notebook 
+    Training set needs bounding box marked by humans.  
+    sliding window vs YOLO whick use grid. Kind of parallel all grids processed simultaneously.  
+    Still need processors, but in parallel instead of sequentially.  
+    
