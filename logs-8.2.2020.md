@@ -1,4 +1,6 @@
-# Work in Process Logs for August 2020  
+# Work in Process Logs for August - Oct 2020  
+
+#### 8/4/2020  
 
   * 8/4 - SO profile, visible name change to "Jennifer Yoon" without E or E.  
     Search users based on visible user name.  No Jennifer Yoon user.  Has 1 inactive Jenny Yoon user.  
@@ -10,7 +12,7 @@
   * datasciY.com - updated blog post on learning data science.  
   * Egg prices rise during coronavirus -- project idea, do analysis of food commodity prices during Covid. 
   
-  --- 8 hrs today
+  --- 8 hrs today, 8/4
 
 #### 8/5 Wednesday ~ 3 hrs  
   * file open, last line read tests.  
@@ -100,9 +102,13 @@
   * 8/29 Sat   
     YOLO do, review backprop w fastai book, Pytorch Scipy Tutorial.  
     I learned a lot about deep learning in the past 1.5 years, since March 2019, Stanford 231n.   
+    
+#### Sept 2020      
+    
   * 9/6 Sun finished YOLO videos, had to review several times.  
-    Notebook 
+    Notebook - to do.  
     Training set needs bounding box marked by humans.  
     sliding window vs YOLO whick use grid. Kind of parallel all grids processed simultaneously.  
     Still need processors, but in parallel instead of sequentially.  
-    
+    \-  
+  * YOLO post poned to 9/15 Tu 7pm. Do notebook by then.    
