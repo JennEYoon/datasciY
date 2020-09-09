@@ -37,8 +37,8 @@
 ### 3) Coursera.org DLAI - to finish this year.   
  * June, watching Class 3.  Youtube 9/22. 
  * July-Sept: finish class 4 & 5. 
- * Sept-Oct - sign up on Coursera & get specialization certificate  
- * *** 8/9 Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
+ * Oct - sign up on Coursera & get specialization certificate  
+ * Memo 8/9: Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
  
 
 ### 4a) Deep Learning w Python book 
@@ -49,7 +49,7 @@
   * CoLab setup test again, installing and saving datasets, saving library installed.  
   * Jupyter notebook, which cells to rerun.  
 
-### 4b) Fast.ai deep learning book  
+### 4b) Fast.ai 2020 deep learning book, Class, software v2    
   * Read online, notebooks.  
   * Watch videos  
   * Do practice.  
@@ -73,7 +73,7 @@
 
 
 ### 7) Other Books Reading - June-July 2020:  
-  * Build a Career in Data Science -- in interview part
+
   * Good Habits Bad Habits - help to change sleep time, exercise & fasting, meditation & eye exercise  
   * Capital in 21 Century - ideas on inequality economics projects using DS.  
   * Head First Javascript (c 2014). - to add simple .js to my website.  
