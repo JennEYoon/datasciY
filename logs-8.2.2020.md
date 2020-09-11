@@ -112,7 +112,10 @@
     Still need processors, but in parallel instead of sequentially.  
     \-  
   * YOLO post poned to 9/15 Tu 7pm. Do notebook by then.    
+  * YOLO notebook to finish Friday 9/11. 
 
+ ---  
+ 
 #### Projects WIP 9/3/2020 00:30 - 4:45 AM  
 
 How to show jupyter notebooks on website?  
