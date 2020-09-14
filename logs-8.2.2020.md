@@ -117,6 +117,9 @@
   * 0/12-9/13 3:30 am -- finally figured out how to download Coursera class zip files.  
     Use **tor**  
     Data files too large to push to Github, some weeks. 
+  * 9/13 11pm, setup TV 2nd floor with Roku box, watch 1917 movie.  
+  
+
 
  ---  
  
