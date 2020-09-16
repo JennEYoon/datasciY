@@ -6,10 +6,11 @@
 
 #### Description:  
 
-Put data files for website hosted projects here, except for files > 10 MB.  
-Host large data files from Googld Drive, and provide shareable link.  
+Put data files for website hosted projects here, except for files > 15 MB.  
+Host large data files from Google Drive, and provide shareable link.  
 Avoid AWS transfer out fees for large files.  
 
-For very large files > 50 MB, zip and use tor for downloads, or give URL link to data source.  
+For larger files > 50 MB, zip and use tor for downloads, 
+or give URL link to original data source.  
 
 ---  
