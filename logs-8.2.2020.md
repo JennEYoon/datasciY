@@ -123,13 +123,23 @@
 
  ---  
  
-#### Projects WIP 9/3/2020 00:30 - 4:45 AM  
+## Projects WIP 9/3/2020 00:30 - 4:45 AM  
 
-How to show jupyter notebooks on website?  
-HTML viewer for non-coders, HR people.  
-Github for clone, but also download from website, so don't need to clone whole repo.  
-Mayve move all non-website file out again?  
+#### How to show jupyter notebooks on website?  
 
+  * HTML viewer for non-coders, HR people. -- registered with NBViewer, Jupyter hub.  
+    https://nbviewer.jupyter.org/  
+    
+  * Github for clone or download (whole repo only, no partial option)  
+    Maybe move all non-website file out again? But why would anyone want to clone the whole website repo?   
+    No, keep as is.  
+    
+  * Download individual files from datasciY.com on AWS, small files only, otherwise transfer out fees apply.  
+    http://datasciY.com/projects/name/data.*
+  
+  * Large data files, download from Google Drive with shareable link.  
+    C:\Users\jyoon\gdrive\Colab Notebooks\data-large\    
+    
 Maybe a separate repo just for project notebooks???  
 With MyBinder and CoLab option  
 With related files somehow open in Colab notebooks.  
