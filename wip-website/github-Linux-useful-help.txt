@@ -1,4 +1,0 @@
-# My cribsheet for useful Github related functions.  
-
-### Combination add and commit, for single file edits.  Note message is in quotes.  
-git commit -am "Update links"

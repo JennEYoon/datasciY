@@ -1,1 +1,0 @@
-FizzBuzz comparison of Python and other languages.
