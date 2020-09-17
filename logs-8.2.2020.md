@@ -133,8 +133,8 @@
   * 9/17 1:20 AM, file history update. 
     Deleted older full data backups, 2 left, August 2020, Nov 2019. 
     File History data missed latest moved files in SECdataPy repo, but uploaded to Github, so no problem.  
-    
-
+    * Found folders in previous location, so was there, but not moved yet.  
+      Maybe next file history update with change folder path.  
 
  ---  
  
