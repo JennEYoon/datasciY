@@ -129,7 +129,10 @@
     Then figured out how to post for browser, added image as .jpg file.  
     Used VS Code to preview markdown, then screen clipping, past into jpg file.  
     - Also updated picture formats, general.html.  
-    
+  
+  * 9/17 1:20 AM, file history update. 
+    Deleted older full data backups, 2 left, August 2020, Nov 2019. 
+    File History data missed latest moved files in SECdataPy repo, but uploaded to Github, so no problem.  
     
 
 
