@@ -119,6 +119,14 @@
     Data files too large to push to Github, some weeks. 
   * 9/13 11pm, setup TV 2nd floor with Roku box, watch 1917 movie.  
   
+  * 9/15 YOLO Meetup small group - went well.  
+  
+  * 9/16 Added Coursera whole class donwload post, tar, cat Linux shell tools. 
+    Took whole day, 9h.  First wrote up for Slack using Markdown format.  
+    Then figured out how to post for browser, added image as .jpg file.  
+    Used VS Code to preview markdown, then screen clipping, past into jpg file.  
+    
+    
 
 
  ---  
