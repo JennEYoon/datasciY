@@ -121,6 +121,7 @@
   
   * 9/15 YOLO Meetup small group - went well.  
     - Peter, YOLO tutorials, papers, Art style paper.  
+    - Dan - talk to him about helping him practice interviews, SQL, Data Science 3-%.  
     
   
   * 9/16 Added Coursera whole class donwload post, tar, cat Linux shell tools. 
