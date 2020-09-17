@@ -125,6 +125,7 @@
     Took whole day, 9h.  First wrote up for Slack using Markdown format.  
     Then figured out how to post for browser, added image as .jpg file.  
     Used VS Code to preview markdown, then screen clipping, past into jpg file.  
+    - Also updated picture formats, general.html.  
     
     
 
