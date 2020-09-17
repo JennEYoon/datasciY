@@ -120,6 +120,8 @@
   * 9/13 11pm, setup TV 2nd floor with Roku box, watch 1917 movie.  
   
   * 9/15 YOLO Meetup small group - went well.  
+    - Peter, YOLO tutorials, papers, Art style paper.  
+    
   
   * 9/16 Added Coursera whole class donwload post, tar, cat Linux shell tools. 
     Took whole day, 9h.  First wrote up for Slack using Markdown format.  
