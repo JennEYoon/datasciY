@@ -8,34 +8,37 @@ You use Linux commands "tar" and "cat" to compress and uncompress files for down
   
 3) At the top of a Jupyter notebook, add some blank cells.  
   
-   * Type into a cell "ls" to see the parent folder file list: 
-   ``` !ls ../  ``` 
-     Run cell (Control + Enter)  
-   If files printed are as expected (you're in 1 level below root), type next cell. 
+   * Type into a cell "ls" to see the parent folder file list:  
+   ``` !ls ../  ```   
+     Run cell (Control + Enter)   
+     If files printed are as expected (you're in 1 level below root), type next cell.  
 
-   * Compress and split into 90 MB sizes for downloading:
-   ``` !tar chzvf - ../* | split -b 90M - ../"course4.tgz."  ```
-     This will create multiple zipped files at the root (parent) level.  
-     (You may substitute "course4" with another file name such as "course1".  Make sure your name matches on all places.)
+   * Compress and split into 90 MB sizes for downloading:  
+   ``` !tar chzvf - ../* | split -b 90M - ../"course4.tgz."  ```   
+     This will create multiple zipped files at the root (parent) level.   
+     (You may substitute "course4" with another file name such as "course1".  Make sure your name matches on all places.)   
    
-4) Go back to folder-view, move up to root level.  
+4) Go back to folder-view, move up to root level.   
    You should see the .tgz files you have created.  Select and download each file to your computer.  
     
 5) From your computer's Linux terminal, uncompress and concatenate the files back into original folders.      
-   ``` cat course4.tgz.* | tar xvzf -  ```  
-     Review files and check that all were downloaded correctly.  
+   ``` cat course4.tgz.* | tar xvzf -  ```   
+     Review files and check that all were downloaded correctly.   
     
-6) Back on Coursera.org Jupyter notebook, delete tar files:  
-   ``` !rm -f ../course4.tgz.* ``` 
-   ``` !ls -l ../ ```  
+6) Back on Coursera.org Jupyter notebook, delete tar files:   
+   ``` !rm -f ../course4.tgz.* ```   
+   ``` !ls -l ../ ```    
   
 #### Background:  
 You are limited on zip tools you can use on Coursera class servers because you do not have sudo permission to install any software.  You have to use built-in Linux bash tools.  This includes "tar" to compress and split files into binary, fixed size files and "cat" to uncompress and concatenate the files back into original directory structure.  (I use Windows Subsystem for Linux.  This is a Microsoft product with full file compatibility with Windows OS.  You can download WSL app from Microsoft App Store.)  
 
 #### The main commands are:   
-  ``` !tar chzvf - ../* | split -b 90M - ../"course4.tgz." ```  (from Coursera.org notebook, create zip files)
-  ``` cat course4.tgz.* | tar xvzf - ```  (from your Linux terminal, recombine)
-  ``` !rm -f ../course4.tgz.* ```  (from Coursera.org notebook, remove zip files)  
+  ``` !tar chzvf - ../* | split -b 90M - ../"course4.tgz." ```     
+  (from Coursera.org notebook, create zip files)   
+  ``` cat course4.tgz.* | tar xvzf - ```   
+  (from your Linux terminal, recombine)  
+  ``` !rm -f ../course4.tgz.* ```   
+  (from Coursera.org notebook, remove zip files)   
   
   * Change "course4" to other names for your other classes.  Make sure the name matches in all 3 places. 
   * If 90 MB is too large and your downloads hang, try 50 MB size.  Also depends on your internet connection speed.  

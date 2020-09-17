@@ -55,7 +55,7 @@
     <h3>Python Basics</h3>    
         
 
-    <h4>File-IO demo</h4>
+    <h4>File-IO Demo</h4>
     <p>A demonstration of reading in a text file using 'rt' read text and 'rb' read binary methods. 
         For reverse order read and non-sequential read, 'rb' binary read is usually faster.  Relative address seek (from end of file and from current position) is only available for binary read method.   
     </p>
@@ -68,17 +68,17 @@
     
         <p>Later, I will cover reading from JSON, CSV, Excel, and SQL formats.  I will also cover scraping data directly from websites.</p>
 
-    <h4>Downloading Whole class, Coursera.org</h4>  
+    <h4>Downloading Whole Class, Coursera.org</h4>  
         <ul>
         <li>Date: September 16, 2020 </li>
-        <li>Coursera whole class download instruction: <a href="./projects/coursera_dn/coursera_dn.md">markdown file</a></li>
+        <li>Coursera whole class download instruction: <a href="./projects/coursera_dn/coursera_dn.md">markdown file</a>, <a href="./projects/coursera_dn/coursera_dn.jpg">browser-view jpg</a></li>
         <li>folder-view jupyter image - to add</li>
         <li>local linux terminal image - to add</li>
         </ul>
         <p>While studying Andrew Ng's Deep Learning AI classes on Coursera.org, I needed a way to download the entire class at once, with all of the supporting images and data files.  Using the GUI to download files, I had to click and download each file one by one.  Some of the Jupyter notebooks have many supporting image files.  Large datasets can't be downloaded at all due to download size limit on the server.  Maybe Coursera will offer an easier download solution in the future.  But for now, "tar" and "cat" Linux commands work on Coursera's Linux server and on my computer's Linux terminal. (I use Windows Subsystem for Linux.)  It's important that "tar" and "cat" are default tools built into Linux, since I don't have the permission to install any new tools on Coursera's server.  This method may work for non-Coursera classes where you have access to a server-side Linux terminal or a Jupyter notebook with ! Linux shell command capability. </p>
 
 
-    <h4>Adding Colab badge to Jupyter notebook</h4>    
+    <h4>Adding Colab Badge to a Jupyter Notebook</h4>    
 
         <ul>
             <li>Date: September 5, 2020</li>
@@ -86,10 +86,10 @@
             <li>Browser static view:  <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/example_rt.ipynb">example_rt.ipynb</a> via nbviewer </li>
         </ul>
         <p>This is an example of a Jupyter notebook with "Open in Colab" and "Run in Colab" badges.  Google Colab is a free machine learning resource using the Jupyter notebook interface.  You can run deep learning models on GPU machines and lighter machine learning models on CPU machines. The badges open my example notebook stored on Github.com.  You can see the badge code by changing the cell format containing the badge to "raw".  Feel free to copy it into your own notebooks.  Change the href link to point to your own Github account and file path.</p>    
-        <p>Example notebook shows <b>Matplotlib</b> plotting functions.  The first figure is an example of 3-dimensional projection of sign and cosign waves.  The second figure is a histogram with three overlapping data series combined into one image.  Alpha transparency is set to moderate opacity.  I am working on a separate demo of Matplotlib commands that clearly separates out the  <b>"plt" (Matlab like)</b> method from the <b>"ax" (object oriented)</b> method.  I found this area to be confusing at first, so perhaps other new users can benefit from my effort. </p>
+        <p>Example notebook shows <b>Matplotlib</b> plotting functions.  The first figure is an example of 3-dimensional projection of sign and cosign waves.  The second figure is a histogram with three overlapping data series combined into one image.  Alpha transparency is set to moderate opacity.  </p>
 
 
-    <h3>Using NumPy data arrays</h3>
+    <h3>Using NumPy Data Arrays</h3>
         <p>Practice exercises using NumPy n-dimensional arrays.</p>
 
         <ul>
@@ -97,6 +97,8 @@
         <li><a href="/projects/numpy_ex2.py">NumPy Exercise 2</a> (py), &nbsp; <a href="https://github.com/JennEYoon/datasciY/blob/main/projects/numpy_ex2.py">GitHub</a></li>
         </ul>
 
+    <h3>Matplotlib "ax" and "plt" Methods</h3>    
+    <p>I am working on a demo of Matplotlib commands that clearly separates out the <b>"ax" (object oriented)</b> method from the <b>"plt" (Matlab style)</b> method.  I found this area to be confusing when I was learning it, so perhaps other students can benefit from following my trail. </p>
 
     <h3>Visualizing Interactive Charts with Dash and Plotly</h3>
         <ul>
