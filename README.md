@@ -1,6 +1,6 @@
 ## Repository for my data science & Python coding portfolio, http://datasciY.com  
 
-***Note: Renamed "master" to "main" branch, June 2020***
+***Note: Renamed "master" to "main" branch in June 2020, in support of Black-American racial equity***
 
 ### Author: Jennifer E Yoon  
 
@@ -69,6 +69,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
    
 ### History  
+  * Sept 19, 2020 -- streamlined repo, moved out folder for learning, financial modeling.  
   * June 2020 - Add folder for pyfinance -- SQL-connector, TA-LIB, quandl, python-for-finance book.  
   * Add jsq folder and javascript exercises - June 20-23, 2020.  
   * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
