@@ -95,23 +95,6 @@
    - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
    - SO 655 as of 8/10, 2 more answers, only 1 got points.  
    \-  
- * Corvid-19 infections spread map 
-   - Reproducce Johns Hopkins interactive map  
-   - Add transport hubs connections info.  
-   - Population size, and age over 65 category.  
-   - A data networks company is also looking at mapping social networks of corvid-19 spread.  
-   \-  
-  * website - add side-nav bar to Projects, Blog, Articles  
-    - mobile version has side-nav on top, below main nav area.  
-    - practice javascript Head First Javascript book started reading.  
-
-  * Email redirect setup "jyoon@datasciY.com" - to use during job applications.  
-    Don't use this for anything else, Media signup still use "datasciY.info@gmail.com".  
-    
- * Build out StockWiki.com as a stand-alone application.  
-   Side hustle - Use it to get ad revenues, and as a project portfolio for job applications.  
-   Javascript - user account creating, forms.  
-   Google Sheets API - community spreadsheets for DCF analysis.  
    
 ---  
 
