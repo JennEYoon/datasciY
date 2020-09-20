@@ -142,6 +142,96 @@
 </section><!-- End main content -->
 
 
+<section> 
+    <h5>DRAFTs, WIPs section start</h5>
+
+
+    <h3>Template -- DRAFT - Title 1</h3>
+    <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    </ul>
+
+    <ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    </ol>
+    <p>Lorem</p>
+    
+
+    <h3>Tools - MyBinder and Google Colab for Hosting Jupyter Notebooks</h3>
+        <p>WIP</p>
+        <p>
+        Pros & Cons
+        Link to Binder built Docker image, 
+        Link to conda env.yml
+        Link to Matplotlib 3D plots example notebook
+        Writing about saving edits on MyBinder.org and download locally, upload to Github to commit new version.
+        Also link to CoLab, running Jupyter notebook from binder docker image. 
+        </p>
+   
+
+    <h3>Python Basics</h3>
+    <ul>
+    <li>Functions - Pass functions as inputs to another function.
+        <a href="/projects/function_ex1.py"> Function Exercise 1</a>
+    </li>
+    <li>Functions - *arg, **kwargs, defaults, and variables order. To do.
+        <br /> 
+        Reference: <a href="https://www.geeksforgeeks.org/args-kwargs-python">www.geeksforgeeks.org</a>"
+    </li>
+    <li>Class Objects - Spaceship Class, Asteroid Class.
+        <a href=""></a>  To do. 
+    
+    <li>To do -- Pandas as Class Objects, NumPy as Class Objects.</li> 
+    </ul>
+    
+
+
+    <h3>Sorting, Recursion and Big-O Math</h3>
+        <p>Algorithm efficiency is studied using the Big-O math.  Generally an order of log(n) is preferred over an order of n*log(n), n**3, or n!.  The best algorithm has an order of n, <strong>O(n)</strong>, but this is rarely achieved.  An O(n) means that as the number of inputs grows, the time to execute grows linearly.  In my sorting algorithm, I use a binary tree with a central pivot point and recursive function calls to itself.  I use this algorithm to study Big-O math.  </p>
+        
+        <p>More to follow. </p>
+        <p></p>    
+
+
+    <h5>Level 2: Work in Progress Section </h5>
+    <h3>Visualizing 3D Volatility Surface Data with Matplotlib</h3>
+    <p>To be added - WIP</p>
+
+    <h3>Visualizing Energy Trading Data with Bokeh</h3>
+    <p>To be added.</p>
+    <p></p>
+
+    <h3>Visualizing Economics Data with Tableau</h3>    
+    <p>Link to Hans TED talk movie - to be added.</p>
+    <p>Content to be added.</p>
+
+    <h3>Amazon Lambda (AWS)</h3>
+    <p>Sometimes it is really helpful to host a short, executable python code on a public web server. You may have a client with whom you wish to share an idea or a methodology. It may not be enough to show a static html page. Amazon's Lambda makes that easy to do. You can customize installed python libraries with "layers."</p>
+    <p>I will post a demo using the Ubuntu Linux OS base machine and a Jupyter notebook running Python 3, and import NumPy, Pandas, Matplotlib, and Scikit-Learn libraries. I will also repeat the demo with a Windows 10 base machine for the 50% of population who uses a Windows computer.</p>
+    <p>To be added.</p>
+    <p></p>
+    
+
+    <h3>When do you know you have sufficient samples from a streaming data source?</h3>
+    <h4 style="color:navy; margin-left: 16px;">Answer: "It depends on the stability of your mean and standard deviation. By using the Central Limit Theorem, you can calculate the probability that you have sufficient data."</h4>
+
+    <ul><li>Date: June 1, 2019</li></ul>
+    <p>I went to an <a href="https://www.ntconcepts.com/">NT Concepts</a> talk this week, and an audience member asked a question, <strong>"When you are using a streaming data source, when do you know you have enough data?"</strong> I provided an audience answered to this question. I think the questioner was asking when can we have a reasonably high level of confidence that the sample data we are getting from the streaming data source is a good representation of the true population data. My answer was that, <strong>"From a statistics point of view, it depends on the stability of the sampled mean and sampled standard deviation over time. And I don't know the formula off the top of my head, but due to the Central Limit Theorem, there IS a formula that will allow one to calculate the <strong>probability</strong> that the streaming sampled data is [not representative of the true underlying data]"</strong>. (That is, the streaming data you have collected so far is <strong>NOT</strong> representative of the true population, and you need to collect more samples.) I forgot to mention that the number of observations and number of features you are using also matters, as these influence the degrees of freedom you have in the statistical calculation. And that my emphasis on the stability of mean and standard deviation over time was an indirect reference to stationarity and independence of samples. </p>
+
+    <p>In summary, this question seems to come straight out of the <Strong>Central Limit Theorem</Strong>. Given the sample mean, sample standard deviation, independence, and stability of volatility -- the probability of the sampled mean approaching the true population mean <strong>can</strong> be estimated. (This is usually stated as the sampled mean approaching the true mean of the "Gaussian" probability density function, or some other named probability density functions, such as binominal, log-normal, exponential, etc.). I tried to follow up with the questioner, but the email address she gave me had an error. Anyway, I thought it might make a good post. So I will explore it further and write a post about it with real-world streaming data.</p>
+
+    <p>To be continued later.</p>
+    <p></p>
+    
+    <h5>Draft section end.  </h5>
+</section>
+
+
+
 <footer>    
     <p>Contact: "datasciY.info@gmail.com"  <br />
     Copyright &copy; 2018 - 2020 by Jennifer Yoon  <br />
