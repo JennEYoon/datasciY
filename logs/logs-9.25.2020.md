@@ -18,5 +18,5 @@
   * Time for me to setup my white desk on 2nd floor.  
   * Move everythin out of the credenza, and move forward to door.  
   * Move my large monitor and computer up, also laser printer up.  
-  * Print out Amazon return mail label first, before moving everything, since all is hooking up.  
+  * Print out Amazon return mail label first, before moving printer, since it's hooked up.  
   
