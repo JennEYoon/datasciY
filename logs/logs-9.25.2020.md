@@ -14,3 +14,6 @@
   * Tax for 2019 should also be doable few days later.  
   * To finish all and submit all by next weekend, ***Oct 4th!***
     
+#### Bill finished setting up standing desk on 2nd floor.  
+  * Time for me to setup my white desk on 2nd floor.  
+  
