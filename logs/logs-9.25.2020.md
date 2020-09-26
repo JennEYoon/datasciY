@@ -16,4 +16,6 @@
     
 #### Bill finished setting up standing desk on 2nd floor.  
   * Time for me to setup my white desk on 2nd floor.  
+  * Move everythin out of the credenza, and move forward to door.  
+  * Move my large monitor and computer up, also laser printer up.  
   
