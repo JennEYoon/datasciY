@@ -1,2 +1,6 @@
 # Notes for 9/25/2020 Updates.  
 
+  * Spent all day working on 1 blog post, 
+    Update to "My Python and Data Science Learning Experience."  
+    
+    
