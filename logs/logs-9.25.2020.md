@@ -23,3 +23,13 @@
 ### 9/28 6 am, finished setting up my white desk on 2nd floor.  
   * Keep laser printer downstairs and plug in when down there.  
   * Bring laptop and one of the monitors up.  
+
+#### Taxes, 9/28/2020 Monday:  
+  * reviewed receipts for 2017, 2018.  
+  * ready to enter values.  Dont fuss avout all the small amounts.  
+  * largest deduction is house use for office.  
+  
+  
+  
+  
+  
