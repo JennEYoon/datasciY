@@ -20,3 +20,6 @@
   * Move my large monitor and computer up, also laser printer up.  
   * Print out Amazon return mail label first, before moving printer, since it's hooked up.  
   
+### 9/28 6 am, finished setting up my white desk on 2nd floor.  
+  * Keep laser printer downstairs and plug in when down there.  
+  * Bring laptop and one of the monitors up.  
