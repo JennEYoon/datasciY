@@ -28,6 +28,13 @@
   * reviewed receipts for 2017, 2018.  
   * ready to enter values.  Dont fuss avout all the small amounts.  
   * largest deduction is house use for office.  
+  * 9/29/2020 Tuesday, continue setting up new desk on 2nd floor.  
+    Used smaller monitor takes up less space, vertical alignment with laptop keyboard.  
+    Kensington trackball rolling mousepad.  
+    
+#### 9/29/2020 - Ready to work on Taxes, FINALLY !!!   
+
+---  
   
   
   
