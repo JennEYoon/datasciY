@@ -31,6 +31,7 @@
   * 9/29/2020 Tuesday, continue setting up new desk on 2nd floor.  
     Used smaller monitor takes up less space, vertical alignment with laptop keyboard.  
     Kensington trackball rolling mousepad.  
+  * Do some Art Style paper.    
     
 #### 9/29/2020 - Ready to work on Taxes, FINALLY !!!   
 
