@@ -34,7 +34,13 @@
   * Do some Art Style paper.    
     
 #### 9/29/2020 - Ready to work on Taxes, FINALLY !!!   
+  * Done Sunday Oct 4, submit Monday Oct 5 2019 Fed Tax electronically - accepted.  
+  * To mail, 2017 Fed, VA, 2018 Fed, VA, 2019 VA.  
 
+#### Hactoberfest started 10/6/2020  
+  PR needs label - accepted for Hactoberfest
+  
+  
 ---  
   
   
