@@ -26,12 +26,19 @@
   * Turn on fan often, dust all books soon -- to do.  
   * Later -- Create sheer curtain covering over bookshelves, wash every 3-6 months.  
   
-### 9/28 6 am, finished setting up my white desk on 2nd floor.  
+#### 9/28 6 am, finished setting up my white desk on 2nd floor.  
   * Keep using downstairs as my main work area.  Too much interruptions from Bill to use here.  
+
+
+---  
 
 #### Hactoberfest started 10/6/2020  
   PR needs label - accepted for Hactoberfest
   
+#### 10/12/2020 Monday, Columbus Day holiday.  
+  * Working on small group, Art Style notebook, quiz for week 4.  
+  * Finished watching videos for Art Style and Deep Face.  
+  * Review back-prop for Tuesday.  
   
 ---  
   
