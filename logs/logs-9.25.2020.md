@@ -1,41 +1,33 @@
-# Notes for 9/25/2020 Updates.  
-
+#### Notes for 9/25/2020 Updates.  
   * Spent all day working on 1 blog post, 
     Update to "My Python and Data Science Learning Experience."  
   * Also posted link to Slack for WCC and DSML.  
   * Continued to make minor edits until 11 pm.  
   * Also made slight edits to other pages, projects, general.  
   
-  
-#### Bill fight with TurboTax Company again  
-  * Reminder to me to finish my part of taxes by the end of this weekend.  
-  * Signal that he is ready to work on it and file it when I give it to him.  
-  * I should be able to give it to him by Sunday night, Taxes for 2017 and 2018.  
-  * Tax for 2019 should also be doable few days later.  
-  * To finish all and submit all by next weekend, ***Oct 4th!***
+#### Bill fight with TurboTax Company again - DONE 10/7/2020.  
+  * To finish all and submit all by next weekend, 10/4.  
+  * Finished, electronic submission accepted 2019 Fed - Oct 7, 2020 Wed!  
+  * Finished, mailed submission 2019 VA, 2018 Fed & VA, 2017 Fed & VA - Oct 7, 2020, Wed!!!  
+  * All caught up with taxes, yeah !!!  Will get stimulus payment $2,400 and tax refunds.   
     
-#### Bill finished setting up standing desk on 2nd floor.  
-  * Time for me to setup my white desk on 2nd floor.  
-  * Move everythin out of the credenza, and move forward to door.  
-  * Move my large monitor and computer up, also laser printer up.  
-  * Print out Amazon return mail label first, before moving printer, since it's hooked up.  
+#### Bill finished standing desk, me setup white work desk -- done 9/29/2020.  
+  * Moved my white credenza up, set-up white desk
+  * Attached 1 smaller monitor, but too noisy to work there during the day when Bill is on call or has TV on.
+    (Even downstairs is too loud to concentrate when he's on call, use ear plugs - good)
+  * Bill talks to me constantly and interrupts my train on thought!  
+  * Good for alternative place to read or relax and work on crafting, when I don't need to concentrate.  
+  * Good for late at night, after Bill goes to bed.  
+  
+#### Keep downstairs desk setup for myself:  
+  * Need a separate floor to get any work done!  Bill too much interruptions.  
+  * Air quality OK after hosing off outside - do regularly in Summer months.  
+  * Wear neck covering, jacket to keep warm.  
+  * Turn on fan often, dust all books soon -- to do.  
+  * Later -- Create sheer curtain covering over bookshelves, wash every 3-6 months.  
   
 ### 9/28 6 am, finished setting up my white desk on 2nd floor.  
-  * Keep laser printer downstairs and plug in when down there.  
-  * Bring laptop and one of the monitors up.  
-
-#### Taxes, 9/28/2020 Monday:  
-  * reviewed receipts for 2017, 2018.  
-  * ready to enter values.  Dont fuss avout all the small amounts.  
-  * largest deduction is house use for office.  
-  * 9/29/2020 Tuesday, continue setting up new desk on 2nd floor.  
-    Used smaller monitor takes up less space, vertical alignment with laptop keyboard.  
-    Kensington trackball rolling mousepad.  
-  * Do some Art Style paper.    
-    
-#### 9/29/2020 - Ready to work on Taxes, FINALLY !!!   
-  * Done Sunday Oct 4, submit Monday Oct 5 2019 Fed Tax electronically - accepted.  
-  * To mail, 2017 Fed, VA, 2018 Fed, VA, 2019 VA.  
+  * Keep using downstairs as my main work area.  Too much interruptions from Bill to use here.  
 
 #### Hactoberfest started 10/6/2020  
   PR needs label - accepted for Hactoberfest
