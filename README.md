@@ -1,6 +1,6 @@
 ## Repository for my data science & Python coding portfolio, http://datasciY.com  
 
-***Note: Renamed "master" to "main" branch in June 2020, in support of Black-American racial equity***
+***Note: Renamed "master" to "main" branch in June 2020, in support of Black-American racial equality***
 
 ### Author: Jennifer E Yoon  
 
