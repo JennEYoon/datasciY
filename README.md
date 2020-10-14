@@ -15,7 +15,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 
  * ***Python Libraries:*** Python core, Jupyter, NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow, Keras, Plotly, Bokeh, Xarray   
  
- * ***Other Software, Services and Tools:*** Excel, VBA, SQL, R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google CoLab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53 hosting website)
+ * ***Other Software, Services and Tools:*** Excel, VBA, SQL, R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google Colab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53 hosting website)
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
