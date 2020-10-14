@@ -13,7 +13,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   
  * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, statistics, econometrics, financial derivatives, economics
 
- * ***Python Libraries:*** Python core, Jupyter, NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow, Keras, Plotly, Bokeh, Xarray   
+ * ***Python Libraries:*** Python core, Jupyter, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, TensorFlow, Keras, Plotly, Bokeh, Xarray   
  
  * ***Other Software, Services and Tools:*** Excel, VBA, SQL, R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google Colab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53 hosting website)
 
