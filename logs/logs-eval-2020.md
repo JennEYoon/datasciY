@@ -2,15 +2,15 @@
 
 ## Plan updated Sept 2020:  
 
-### SciPy 2020 - Done
-
+### 0) SciPy 2020 - Done
  * YouTube tutorials available - Sunday 9 AM CT. 
    - pysal - try tutorial notebooks, also try 2018 SciPy tutorial PySAL notebooks.  
    - pytorch ML - try notebooks, has good intro to backprop math and convolution matrix multiply.    
  * Also watch Juan Scipy tutorial Japan 2019, read Elegant-Scipy book.  
- * YouTube - watch pre-recorded series for the other sections, can take it easy.  
+ * YouTube - watch pre-recorded series for the other sections, can take it easy.  Watched ML and Pysics. Biology skipped.  
  
-### 1) Ready to flesh out Projects - Sept 2020  
+ 
+### 1a) Ready to flesh out Projects - Sept 2020  
   * Applied to my first Data Science job this year, Yeah!  
     - Kinetica Arlington, VA, or remote, Meetup WWC message, Aug 17, 2020 submit.    
   * Applied to Saturn Cloud - Data Scientist (Entry Level) remote  
@@ -22,9 +22,36 @@
   * Xarray - meta data for Numpy.  
   * Dask - Do Scipy20 tutorial and write about it.  
   * Bicycle lending - Pandas interview example - PyData NY 2019 - do and write about it  
+  
+### 1b) Do a Kaggle Competition  
+  * Start from the beginning and work on it with other coders.  
+  * May need to do several to get good at it.  
+  
+### 1c) StackOverflow -- 2000 points by Sept 2021.   
+ * Answer StackOverflow questions to get recent practice.  
+   - SO 500 points as of July 2019.  
+   - SO has new questions being posted even during Coronavirus.  
+   - SO 655 as of 8/10, 2 more answers, only 1 got points.  
+
+### 2a) Fast.ai 2020 deep learning book, Class, software v2    
+  * Read paper book  
+    * 10/20/2020 started reading book:  
+      started Chp 4 backprop, reviewed conclusion job of data scientist,  
+      reviewed appendix blogging using Jupyter Notebook, nbdev package.  
+      Don't use Github.io pages, need to learn a separate template for html/css.  
+  * Watch videos  
+  * Do practice.  
     
+### 2b) Deep Learning w Python book 
+ * 10/20/2020: started reading again.  
+  * Currently reading parts.  
+  * Setup finished on Ubuntu side.  
+  * Do mnist numbers example notebook,
+  * then do cifar10 example.  
+  * CoLab setup test again, installing and saving datasets, saving library installed.  
+  * Jupyter notebook, which cells to rerun.  
     
-### 2) Practice Interview Questions - Sept 2020  
+### 3) Practice Interview Questions - Sept 2020  
   * Udemy class - Data Science Career & Interview Prep  
     - Go through and practice all questions.  
     - Look up additional information from books and online, prep statistics heavily, since this will be my forte.  
@@ -34,41 +61,33 @@
    * Data Science Weekly - resume doc read  
    * Data Science Weekly - jobs keyword search, read saved job descriptions.  
  
-### 3) Coursera.org DLAI - to finish this year - no longer plan.  
+### 4) Other Classes helpful to getting a job  
+
+  * SQL Complete (Postgres) Jose Portilla - Udemy HHMI  
+
+  
+### 4) More classes signed up 8/5  
+   Helpful to job: 
+     * udemy Data Science interview Q&A, career - Jose Portilla    
+     * udemy SQL complete - Jose Portilla  
+     * Algorithms book - review a couple, do some in Python  
+     * Python for Finance book - post some exercises.  
+  Oters:           
+   * udemy Pytorch - Jose Portilla 
+   * udemy ML intro, WCC -- Janelia, currently doing.  OK review.   
+   * udemy Tensorflow 2 - Jose Portilla  
+   * udacity - free Pytorch intro, Meetup    
+ 
+### 5) Coursera.org DLAI - to finish this year - no longer plan.  
   > Coursera classes went behing paywall as of Sept 2020 end.  Cannot access any notebooks or quizzes for Meetup.  
   > Shift focus to Fast.AI 2020 classes instead.  
   > Can to ahead and download Class 5 Sequence Models, and review on my own sometime, but no longer main focus.
 
-### 4a) Deep Learning w Python book 
-  * Currently reading parts.  
-  * Setup finished on Ubuntu side.  
-  * Do mnist numbers example notebook,
-  * then do cifar10 example.  
-  * CoLab setup test again, installing and saving datasets, saving library installed.  
-  * Jupyter notebook, which cells to rerun.  
-
-### 4b) Fast.ai 2020 deep learning book, Class, software v2    
-  * Read online, notebooks.  
-  * Watch videos  
-  * Do practice.  
-  * Also have paper book, can use sometimes. 
-
-### 5) More classes signed up 8/5  
-
-  * udemy ML intro, WCC -- Janelia, currently doing.  OK review.   
-  * udemy Data Science interview Q&A, career - Jose Portilla    
-  * udemy Tensorflow 2 - Jose Portilla  
-  * udemy SQL complete - Jose Portilla  
-  * udemy Pytorch - Jose Portilla  
-  * udacity - free Pytorch intro, Meetup  
-
-  
 ### 6) Fluent Python book, Python Workouts book  
   * June started, good for understanding structures.  
   * Don't need to read most of it, just focus on areas I want, more core-basic stuff.  
   * Python Workout book - short exercises, doing chapter 5 file I/O 
     - reading csv, excel, json files?    
-
 
 ### 7) Other Books Reading - June-July 2020:  
 
@@ -84,15 +103,6 @@
    - Successfully established habit of prgramming practice almost daily from July 2018 SciPy conference to now, with 2 breaks. 
    
    ***Next Habit: Daily exercise & Sleep at same time daily.***   
-  
-### 8) Other Projects  
-
- * Answer StackOverflow questions to get recent practice.  
-   - SO 500 points as of July 2019.  
-   - SO has new questions being posted even during Coronavirus.  
-   - Write some more answers.  Maybe post self Q & A on github "master" to "main" for newbiews, single user.  
-   - SO 655 as of 8/10, 2 more answers, only 1 got points.  
-   \-  
    
 ---  
 
