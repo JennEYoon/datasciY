@@ -34,12 +34,10 @@
    * Data Science Weekly - resume doc read  
    * Data Science Weekly - jobs keyword search, read saved job descriptions.  
  
-### 3) Coursera.org DLAI - to finish this year.   
- * June, watching Class 3.  Youtube 9/22. 
- * July-Sept: finish class 4 & 5. 
- * Oct - sign up on Coursera & get specialization certificate  
- * Memo 8/9: Coursera ML Ng original class - signed up.  Good review of basics, math, broader topics.  
- 
+### 3) Coursera.org DLAI - to finish this year - no longer plan.  
+  > Coursera classes went behing paywall as of Sept 2020 end.  Cannot access any notebooks or quizzes for Meetup.  
+  > Shift focus to Fast.AI 2020 classes instead.  
+  > Can to ahead and download Class 5 Sequence Models, and review on my own sometime, but no longer main focus.
 
 ### 4a) Deep Learning w Python book 
   * Currently reading parts.  
