@@ -1,14 +1,15 @@
 # Plan and Ideas Logs, datasciY.com portfolio and general coding      
 
-## Plan updated Sept 2020:  
+## Plan updated October 2020:  
 
 ### 0) SciPy 2020 - Done
  * YouTube tutorials available - Sunday 9 AM CT. 
    - pysal - try tutorial notebooks, also try 2018 SciPy tutorial PySAL notebooks.  
    - pytorch ML - try notebooks, has good intro to backprop math and convolution matrix multiply.    
  * Also watch Juan Scipy tutorial Japan 2019, read Elegant-Scipy book.  
- * YouTube - watch pre-recorded series for the other sections, can take it easy.  Watched ML and Pysics. Biology skipped.  
+ * YouTube - watch other sections.  
  
+ ---  
  
 ### 1a) Ready to flesh out Projects - Sept 2020  
   * Applied to my first Data Science job this year, Yeah!  
