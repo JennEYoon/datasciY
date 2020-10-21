@@ -104,7 +104,7 @@
    - Successfully established habit of prgramming practice almost daily from July 2018 SciPy conference to now, with 2 breaks. 
    
    ***Next Habit: Daily exercise & Sleep at same time daily.***   
-   
+   ***Sleep time, more regular***   
 ---  
 
 ## Goals Met as of June 2020:  
