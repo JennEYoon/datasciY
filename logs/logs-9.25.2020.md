@@ -40,6 +40,13 @@
   * Finished watching videos for Art Style and Deep Face.  
   * Review back-prop for Tuesday.  
   
+#### 10/22/2020 Thursday, relaxing, sunny this week afternoons.  
+  * Started reading fastai book - Chp 4 has step by step, back prop.  
+  * Watched most of video 2, all os Video 1.  
+  * Started reading deep learning Chollet book again.  
+  * Garden work this week, enjoy weather.  
+
+
 ---  
   
   
