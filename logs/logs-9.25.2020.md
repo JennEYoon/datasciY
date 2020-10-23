@@ -44,8 +44,10 @@
   * Started reading fastai book - Chp 4 has step by step, back prop.  
   * Watched most of video 2, all os Video 1.  
   * Started reading deep learning Chollet book again.  
+  
+#### 10/22/2020 TH  
   * Garden work this week, enjoy weather.  
-
+  * Go serveral open orders resolved.  
 
 ---  
   
