@@ -51,6 +51,17 @@
 
 ---  
   
+#### 10/24/2020 Saturday WIP:  
+  * Hacktoberfest not started -- do soon.  
+  * WCC - email all Meetup starting fast.ai new class.  See if anyone will join, probably not one.  
+  * Small Group - proposed chp 13, Deep Face. Nov 9, 2020 Monday, 2.5 weeks from today.  
+  * Finished watching first 2 lectures, look over notebooks, try it out.  
+  * Github Fastblog try - nbdev seems promising.  
+  * fastcore - useful, testing. Not part of deep learning.  
+  
+#### tomorrow -- Jonathan Sunday. 
+  * Ceiling rack, move out stuff  
+  * Get amendments to plant trees, mow front, dig 2 holes.  
   
   
   
