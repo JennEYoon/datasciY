@@ -47,16 +47,18 @@
   * Working on fastai book this week.  
   * Check back with Meetup, small group. - Peter Deep Face, alt mod add.  Dan?  
   * Sent invitation to WCC to join Nov Meetup fastai beginning.  Maybe send 1 more remider on Monday before?  
-  * Hacktoberfest -- not going to make it this year, OK too much else to pay attention to.  
-    - WWC/Excel -- add PR with #hactoberfest labels.  
+
   * Say hello to Elise from WWC NOVA.  
   \-\-\-  
   * House - Jon postponed to Nov 6 Friday. Wrap up soon.  
   * Garden - plants move this week, front mow.  
   * Greenhouse - set up this weekend.  
   
-  
-  
-  
-  
+#### Hacktoberfest -- not going to make it this year, OK too much else to pay attention to.  
+    - WWC/Excel -- add PR with #hactoberfest labels.    
+  > What happens if I make a pull request before the maintainer adds a hacktoberfest topic to the repository?
+﹢
+Your pull request will undergo a review period in which the repository will be checked for the Hacktoberfest topic or has a hacktoberfest-accepted label on it. We will continue to check this pull request and repository until November 1 for the hacktoberfest topic. If the topic is added to the repository, the pull request will become valid.
+ 
+---    
   
