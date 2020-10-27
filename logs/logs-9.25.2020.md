@@ -46,6 +46,7 @@
 #### Oct 27 Monday:  
   * Working on fastai book this week.  
   * Check back with Meetup, small group.  
+  * Sent invitation to WCC to join Nov Meetup fastai beginning.  Maybe send 1 more remider on Monday before?  
   * Hacktoberfest -- not going to make it this year, OK too much else to pay attention to.  
   \-\-\-  
   * House - Jon postponed to Nov 6 Friday. Wrap up soon.  
