@@ -61,13 +61,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
 ### History  
   * Oct 12, 2020 -- added data science resume copy to root.  
   * Sept 19, 2020 -- streamlined repo, moved out folder for learning, financial modeling.  
-  * June 2020 - Add folder for pyfinance -- SQL-connector, TA-LIB, quandl, python-for-finance book.  
   * Add jsq folder and javascript exercises - June 20-23, 2020.  
   * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
   * Add general.html page for broader topics - June 13-15, 2020 
     ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
-  * Working on personal projects to post on datasciY.com during February to May 2020  
   * Github Repo created on July 2019
-  * Website hosted on AWS during 2018 - 2020+  
+  * Website hosted on AWS from 2018+  
   * Domain purchased on Sept 2017  
   
