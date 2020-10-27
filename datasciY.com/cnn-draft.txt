@@ -1,0 +1,7 @@
+# Work on Convolutions  
+
+Oct 27, 2020 - memo  
+
+* Neural Style Transfer -- add to "Articles" post  
+
+* Blog - CNN text recognition -- expand into CNN project or article.  
