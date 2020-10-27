@@ -48,6 +48,7 @@
   * Check back with Meetup, small group.  
   * Sent invitation to WCC to join Nov Meetup fastai beginning.  Maybe send 1 more remider on Monday before?  
   * Hacktoberfest -- not going to make it this year, OK too much else to pay attention to.  
+  * Say hello to Elise from WWC NOVA.  
   \-\-\-  
   * House - Jon postponed to Nov 6 Friday. Wrap up soon.  
   * Garden - plants move this week, front mow.  
