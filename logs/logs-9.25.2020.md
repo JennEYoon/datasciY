@@ -5,30 +5,16 @@
   * Continued to make minor edits until 11 pm.  
   * Also made slight edits to other pages, projects, general.  
   
-#### Bill fight with TurboTax Company again - DONE 10/7/2020.  
-  * To finish all and submit all by next weekend, 10/4.  
-  * Finished, electronic submission accepted 2019 Fed - Oct 7, 2020 Wed!  
-  * Finished, mailed submission 2019 VA, 2018 Fed & VA, 2017 Fed & VA - Oct 7, 2020, Wed!!!  
-  * All caught up with taxes, yeah !!!  Will get stimulus payment $2,400 and tax refunds.   
-    
-#### Bill finished standing desk, me setup white work desk -- done 9/29/2020.  
-  * Moved my white credenza up, set-up white desk
-  * Attached 1 smaller monitor, but too noisy to work there during the day when Bill is on call or has TV on.
-    (Even downstairs is too loud to concentrate when he's on call, use ear plugs - good)
-  * Bill talks to me constantly and interrupts my train on thought!  
-  * Good for alternative place to read or relax and work on crafting, when I don't need to concentrate.  
-  * Good for late at night, after Bill goes to bed.  
-  
 #### Keep downstairs desk setup for myself:  
   * Need a separate floor to get any work done!  Bill too much interruptions.  
-  * Air quality OK after hosing off outside - do regularly in Summer months.  
-  * Wear neck covering, jacket to keep warm.  
   * Turn on fan often, dust all books soon -- to do.  
-  * Later -- Create sheer curtain covering over bookshelves, wash every 3-6 months.  
+  * Air quality seems better after Jon washed exterior.  
   
 #### 9/28 6 am, finished setting up my white desk on 2nd floor.  
   * Keep using downstairs as my main work area.  Too much interruptions from Bill to use here.  
 
+#### 10/4 - 6, all Tax filing DONE!  Mailed. 
+  * 2019 processed refund, stimulus check on the way.  
 
 ---  
 
@@ -38,7 +24,6 @@
 #### 10/12/2020 Monday, Columbus Day holiday.  
   * Working on small group, Art Style notebook, quiz for week 4.  
   * Finished watching videos for Art Style and Deep Face.  
-  * Review back-prop for Tuesday.  
   
 #### 10/22/2020 Thursday, relaxing, sunny this week afternoons.  
   * Started reading fastai book - Chp 4 has step by step, back prop.  
@@ -47,9 +32,7 @@
   
 #### 10/22/2020 TH  
   * Garden work this week, enjoy weather.  
-  * Go serveral open orders resolved.  
-
----  
+  * Got serveral open orders resolved.  
   
 #### 10/24/2020 Saturday WIP:  
   * Hacktoberfest not started -- do soon.  
@@ -58,10 +41,17 @@
   * Finished watching first 2 lectures, look over notebooks, try it out.  
   * Github Fastblog try - nbdev seems promising.  
   * fastcore - useful, testing. Not part of deep learning.  
+  * nbdev - downloaded, learn.  Useful add-ons to Jupyter notebook.  
   
-#### tomorrow -- Jonathan Sunday. 
-  * Ceiling rack, move out stuff  
-  * Get amendments to plant trees, mow front, dig 2 holes.  
+#### Oct 27 Monday:  
+  * Working on fastai book this week.  
+  * Check back with Meetup, small group.  
+  \-\-\-  
+  * House - Jon postponed to Nov 6 Friday. Wrap up soon.  
+  * Garden - plants move this week, front mow.  
+  * Greenhouse - set up this weekend.  
+  
+  
   
   
   
