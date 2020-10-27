@@ -46,6 +46,7 @@
 #### Oct 27 Monday:  
   * Working on fastai book this week.  
   * Check back with Meetup, small group.  
+  * Hacktoberfest -- not going to make it this year, OK too much else to pay attention to.  
   \-\-\-  
   * House - Jon postponed to Nov 6 Friday. Wrap up soon.  
   * Garden - plants move this week, front mow.  
