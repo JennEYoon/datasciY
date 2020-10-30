@@ -3,9 +3,9 @@
 #### 10/29/2020 Thursday Notes    
 
 Reminders: 
-  * Hactoberfest - PR from WCC, SEC-data public repo. 
+  * Hactoberfest - PR from WCC, SEC-data public repo. - TODAY!  
   * Merge repos, learn-mldl into deep-learning, with histories intact.  
-  * Google Meet - test logging into Peter's link.  
+  * Google Meet - test logging into Peter's link.  done.  
   
 ### Plan going forward:  
 
