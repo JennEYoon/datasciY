@@ -15,6 +15,7 @@
 
 #### 10/4 - 6, all Tax filing DONE!  Mailed. 
   * 2019 processed refund, stimulus check on the way.  
+  * Bill recd 2019 Fed & VA refunds, $2400 stimulus.
 
 ---  
 
