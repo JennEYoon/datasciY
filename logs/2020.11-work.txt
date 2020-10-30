@@ -28,7 +28,7 @@ Reminders:
     - get current regulations, current events.  
     - Do some Python exercises pricing models, trading models.
   
- 5) HackerRank -- see if I can do a challenge from start to finish  
+ 5) Kaggle, HackerRank -- see if I can do a challenge from start to finish  
  
  6) Stack Overflow - get 1000 pts by Dec 2020, get 2000 pts by August 2021.  
  
