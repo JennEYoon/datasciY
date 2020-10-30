@@ -15,6 +15,7 @@ Reminders:
  1d) Fluent Python book, do more to get better. Do testing.  
  1e) Algorithms book, review common algorithms.  
  1f) Coursera DeepLearning.AI - review notebooks and tools, see if there is something I can re-use.  
+     - Get certificate in Nov/Dec?  Finish class 5 first.
  
  2) Interview Prep - various Q&As, Jose Portilla class  
  2b) Build a Career book  
