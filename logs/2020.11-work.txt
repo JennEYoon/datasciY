@@ -3,10 +3,12 @@
 #### 10/29/2020 Thursday Notes    
 
 Reminders: 
-  * Hactoberfest - PR from WCC, SEC-data public repo. - TODAY!  
+  * Hactoberfest - PR from WCC, SEC-data public repo. no. 
   * Merge repos, learn-mldl into deep-learning, with histories intact.  
   * Google Meet - test logging into Peter's link.  done.  
-  
+
+---   
+
 ### Plan going forward:  
 
  1) Fastai book and Class - finsih rapidly, all in 5 months (Nov, Dec, Jan, Feb, March) 
