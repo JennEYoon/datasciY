@@ -3,21 +3,22 @@
 #### 10/29/2020 Thursday Notes    
 
 Reminders: 
-  * Hactoberfest - PR from WCC, SEC-data public repo. no. 
   * Merge repos, learn-mldl into deep-learning, with histories intact.  
-  * Google Meet - test logging into Peter's link.  done.  
+    - Keep Coursera DLAI folder, for reference.  
+
 
 ---   
 
 ### Plan going forward:  
 
- 1) Fastai book and Class - finsih rapidly, all in 5 months (Nov, Dec, Jan, Feb, March) 
+ 1) Fastai book and Class - finish rapidly, all in 5 months (Nov, Dec, Jan, Feb, March) 
  1b) Suppliment with Chollet book, Deep Learning with Python 
  1c) Vanderplas - Do Scikit-Learn chapter, Pandas chapter.  
  1d) Fluent Python book, do more to get better. Do testing.  
  1e) Algorithms book, review common algorithms.  
  1f) Coursera DeepLearning.AI - review notebooks and tools, see if there is something I can re-use.  
-     - Get certificate in Nov/Dec?  Finish class 5 first.
+     - Get certificate in Nov/Dec?  Finish class 5 first. 
+ 1g) Tutorials from SciPy, Videos recent AI talks.  
  
  2) Interview Prep - various Q&As, Jose Portilla class  
  2b) Build a Career book  
@@ -28,7 +29,8 @@ Reminders:
  
  4) Review Finance and Risk Management, Probability & Statistics    
     - get current regulations, current events.  
-    - Do some Python exercises pricing models, trading models.
+    - Do some Python exercises pricing models, trading models.  
+    - Lookup websites GARP, SEC, FINRA, Fed, CFTC.  
   
  5) Kaggle, HackerRank -- see if I can do a challenge from start to finish  
  
