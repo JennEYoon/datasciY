@@ -5,7 +5,8 @@
 Reminders: 
   * Merge repos, learn-mldl into deep-learning, with histories intact.  
     - Keep Coursera DLAI folder, for reference.  
-
+  * Nov 9, 2020 -- Today is last Meetup small group, for Coursera DLAI.  
+  * Nov 10 tomorrow -- Meetup main, Fastai lessons 1 & 2.  Review. prepare to present.  
 
 ---   
 
