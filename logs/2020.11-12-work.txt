@@ -8,6 +8,13 @@ Reminders:
   * Nov 9, 2020 -- Today is last Meetup small group, for Coursera DLAI.  
   * Nov 10 tomorrow -- Meetup main, Fastai lessons 1 & 2.  Review. prepare to present.  
 
+#### Dec 1m 2020  
+  * Next Meetup, send emails to newbie presenters, post on Slack and Meetup.com messages.  
+  * Me chapter 4 start - prep  
+  * Me - Chp 13 CNN prep - small group.  
+  * Started fastai nbs 1 and 2 this past week.  
+  * Started Voila production app.  
+
 ---   
 
 ### Plan going forward:  
