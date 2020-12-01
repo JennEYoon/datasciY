@@ -1,4 +1,4 @@
-# Work logs Nov 2020  
+# Work logs Nov & Dec 2020  
 
 #### 10/29/2020 Thursday Notes    
 
@@ -27,6 +27,7 @@ Reminders:
  3) Review SQL, use it to help me get a job. 
     - PostgresSQL, one may be enough.  
     - Python SQL connector.  
+    - SQL Pocket reference, practice commands.  
  
  4) Review Finance and Risk Management, Probability & Statistics    
     - get current regulations, current events.  
