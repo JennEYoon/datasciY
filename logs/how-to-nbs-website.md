@@ -29,3 +29,12 @@ Maybe a separate repo just for project notebooks
    Can I mount a folder, use for all data files?  Yes.  from drive mount...
 
  * Also create collapsing headings - for subprojects.  
+
+#### Fastai App publish on web - Nov 30, 2020.  
+
+Notebook develop with ipywidgets, hosted on MyBinder for running on CPU server.  
+Can use "Open on Colab" with instructions for runtime "GPU" setting.  
+Notebook can be linked to Github, don't need to be uploaded to AWS.  
+
+
+
