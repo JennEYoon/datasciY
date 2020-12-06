@@ -5,7 +5,7 @@
 Reminders: 
   * Merge repos, learn-mldl into deep-learning, with histories intact.  
     - Keep Coursera DLAI folder, for reference.  
-  * DSML send out emails to 4 presenters.  
+  * DSML send out emails to 4 presenters.  done.  
 
 #### Dec 1m 2020  
   * Next Meetup, send emails to newbie presenters, post on Slack and Meetup.com messages.  
