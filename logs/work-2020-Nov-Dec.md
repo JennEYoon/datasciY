@@ -1,4 +1,6 @@
-# Work logs Nov & Dec 2020  
+# Working notes - Nov & Dec 2020  
+
+## Work Logs: 
 
 #### 10/29/2020 Thursday Notes    
 
@@ -14,9 +16,19 @@ Reminders:
   * Started fastai nbs 1 and 2 this past week.  
   * Started Voila production app.  
 
+#### Dec 7, 2020 Monday:  
+  * Small Group today.  
+  * re-reading chapter 13.  stopped at p 412, before Our First CNN p. 414.  
+  
+  > F.conv2d()  
+  > F is fastai import from PyTorch, F is class?  
+  > PyTorch **torch.nn.functional** spec: 
+  > input: input tensor of shape(minibatch, in_channels, iH, iW), iH is image rows 
+  > weight: filters of shape (out_channels, in_channels, kH, kW), kH is kernel rows
+
 ---   
 
-### Plan going forward:  
+## Plan going forward:  
 
  1) Fastai book and Class - finish rapidly, all in 5 months (Nov, Dec, Jan, Feb, March) 
  1b) Suppliment with Chollet book, Deep Learning with Python 
