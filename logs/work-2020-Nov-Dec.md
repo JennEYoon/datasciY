@@ -26,6 +26,15 @@ Reminders:
   > input: input tensor of shape(minibatch, in_channels, iH, iW), iH is image rows 
   > weight: filters of shape (out_channels, in_channels, kH, kW), kH is kernel rows
 
+#### Dec 8, 2020 Meetup notes:  
+  * 3 presenters Jan 2020  
+    Holden - volunteered again, talk about anything  
+    Peter - 2nd half of notebook 4  
+    Deborah - moderate Q&A for notebooks 1-3/4.  
+  * We agreed to try to do a project together as a group in 2021.  
+    Maybe Kaggle?  I can provide support.  
+
+
 ---   
 
 ## Plan going forward:  
