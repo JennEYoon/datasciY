@@ -34,6 +34,27 @@ Reminders:
   * We agreed to try to do a project together as a group in 2021.  
     Maybe Kaggle?  I can provide support.  
 
+#### Dec 13, 2020 practice  
+  * Doe some Vanderplas Matplotlib and Numpy practice   
+    - np.linspace(start, stop, numsteps)  linear space, geomspace, logspace also available.  
+    - np.arange(start, stop, stepsize)  
+    **OOP**
+    fig, ax = subplots(1, 2)  # numrow, numcol  
+    ax[0].plot(x, y, 'color')
+    ax[1].plot(x, y, 'color')  
+    **MATLAB**  
+    plt.figure()  # create figure 
+    plt.plot(x, np.sin(x))
+    plt.plot(x, np.cos(x))
+    * subplots MATLAB 
+    plt.figure()
+    plt.subplot(2, 1, 1)  # row, col, panel 1
+    plt.plot(x, np.sin(x))
+    plt.subplot((2, 1, 2)  # row, col, panel 2 
+    plt.plot(x, np.cos(x))
+    
+    
+
 
 ---   
 
