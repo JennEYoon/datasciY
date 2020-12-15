@@ -4,12 +4,11 @@
 
 #### 10/29/2020 Thursday Notes    
 
-Reminders: 
-  * Merge repos, learn-mldl into deep-learning, with histories intact.  
+  * Merge repos, learn-mldl into deep-learning, with histories intact.  - no, repurposed instead.  
     - Keep Coursera DLAI folder, for reference.  
   * DSML send out emails to 4 presenters.  done.  
 
-#### Dec 1m 2020  
+#### Dec 1, 2020  
   * Next Meetup, send emails to newbie presenters, post on Slack and Meetup.com messages.  
   * Me chapter 4 start - prep  
   * Me - Chp 13 CNN prep - small group.  
@@ -35,7 +34,7 @@ Reminders:
     Maybe Kaggle?  I can provide support.  
 
 #### Dec 13, 2020 practice  
-  * Doe some Vanderplas Matplotlib and Numpy practice   
+  * Do some Vanderplas Matplotlib and Numpy practice   
     - np.linspace(start, stop, numsteps)  linear space, geomspace, logspace also available.  
     - np.arange(start, stop, stepsize)  
     **OOP**
@@ -53,7 +52,13 @@ Reminders:
     plt.subplot((2, 1, 2)  # row, col, panel 2 
     plt.plot(x, np.cos(x))
     
-    
+#### Dec 15 notes  
+   * Do Vanderplas Pandas fully, including database, steipping PDF tables data.  
+   * More practice with Matplotlib.  
+   * Memorize Sklearn models.  
+   * Wcc - practice doing notebooks without looking at code solution.  
+   
+   Reminder: Slack, post message for next meetup, on Meetup post schedule.  
 
 
 ---   
