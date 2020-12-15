@@ -1,5 +1,7 @@
 # Working notes - Nov & Dec 2020  
 
+***Reminder: Slack, post message for next meetup, on Meetup post schedule.***    
+
 ## Work Logs: 
 
 #### 10/29/2020 Thursday Notes    
