@@ -76,23 +76,27 @@
      - Get certificate in Nov/Dec?  Finish class 5 first. 
  1g) Tutorials from SciPy, Videos recent AI talks.  
  
- 2) Interview Prep - various Q&As, Jose Portilla class  
- 2b) Build a Career book  
+ 2) More projects on datasciY.com  
+    - Matplotlib OO vs Matlab style  
+    - FastAPI  
+    - Geospatial viz, econ data  
  
- 3) Review SQL, use it to help me get a job. 
+ 3) Interview Prep - various Q&As, Jose Portilla class  
+ 3b) Build a Career book  
+ 
+ 4) Review SQL, use it to help me get a job. 
     - PostgresSQL, one may be enough.  
     - Python SQL connector.  
     - SQL Pocket reference, practice commands.  
  
- 4) Review Finance and Risk Management, Probability & Statistics    
+ 5) Review Finance and Risk Management, Probability & Statistics    
     - get current regulations, current events.  
     - Do some Python exercises pricing models, trading models.  
     - Lookup websites GARP, SEC, FINRA, Fed, CFTC.  
   
- 5) Kaggle, HackerRank -- see if I can do a challenge from start to finish  
+ 6) Kaggle, HackerRank -- see if I can do a challenge from start to finish  
+    - Meetup DSML group Kaggle?  
+ 6b) Stack Overflow - get 1000 pts by Dec 2020, get 2000 pts by August 2021.  
  
- 6) Stack Overflow - get 1000 pts by Dec 2020, get 2000 pts by August 2021.  
- 
- 7) More projects on datasciY.com  
  
  
