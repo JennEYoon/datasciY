@@ -1,4 +1,12 @@
-# Jupyter Notebooks based blog posts -- exported via fastpages  
+
+
+# Projects in Development - later post on website datasciY.com  
+
+ * Covid19 project moved here, data, news articles clipped.  
+ * Dec 22, 2020 Update.  
+
+
+#### Notes - Jupyter Notebooks based blog posts -- exported via fastpages  
 
 http://fastpages.fast.ai  
 Jupyter notebooks export into blog web pages using **fastpages** template tool.  
