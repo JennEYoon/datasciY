@@ -1,0 +1,15 @@
+Try "codespaces"!  
+
+https://github.com/features/codespaces  
+
+Signed up for Beta, reply to main gmail acct.  
+Dec 22, 2020.  
+
+---  
+
+nbdev, github, Jupyter notebook, on-browser, any device.  
+  also has docs, testing.  
+
+IDE, Github linked, VS Code linked, nbdev, Jupyter notebook.  
+
+Direct development environment.  
