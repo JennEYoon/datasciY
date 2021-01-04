@@ -6,3 +6,7 @@ Better suited to edit existing notebook than starting a new notebook.
   * Q) How to activate shortcut commands?  
   * Q) How to copy cell tex/code and paste on next cell?  
        I have to retype now.  Can't select text block.  
+  * Do) Google sheets data uploading from gdrive, local laptop.  
+        Excel sheets loading.  
+  
+  
