@@ -1,0 +1,5 @@
+# Work logs, January 2021  
+
+#### Jan 6, 2021 week:  
+  * 2 Republicans win Georgia Senate! Majority flips.  
+  * Trump and cronies attempt a coup of Congress.  
