@@ -5,3 +5,6 @@
   * Trump and cronies attempt a coup of Congress.  
   * WCC - SVM, K-Means Clustering today, Thursday.  
   
+#### Jan 7 Th notes:  
+  * Sedition occurred.  
+  
