@@ -13,7 +13,8 @@
   * Work on Fastai for Meetup next Tuesday.  
   * Geopandas, Pysal, Geosnap - do, examples, documentation, tutorials.  
   \-  
-  * Garden today, bulbs, pots.  Picaxe arrived Wed. 3ft exactly handle.  
+  * Garden today, bulbs, pots.  Pickaxe arrived Wed. 3ft exactly handle.  
+  * Return Amazon pants / Return Home Depot parts.  
   
   
   
