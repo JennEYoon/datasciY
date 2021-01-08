@@ -12,6 +12,7 @@
 #### Jan 8 Friday:  
   * Work on Fastai for Meetup next Tuesday.  
   * Geopandas, Pysal, Geosnap - do, examples, documentation, tutorials.  
+  * WCC Udemy review, viz, pandas, geoviz.  
   \-  
   * Garden today, bulbs, pots.  Pickaxe arrived Wed. 3ft exactly handle.  
   * Return Amazon pants / Return Home Depot parts.  
