@@ -9,3 +9,11 @@
   * Sedition occurred.  
   * Republican enablers must be stipped of power.  
   
+#### Jan 8 Friday:  
+  * Work on Fastai for Meetup next Tuesday.  
+  * Geopandas, Pysal, Geosnap - do, examples, documentation, tutorials.  
+  \-  
+  * Garden today, bulbs, pots.  
+  
+  
+  
