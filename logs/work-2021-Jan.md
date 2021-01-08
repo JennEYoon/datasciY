@@ -7,4 +7,5 @@
   
 #### Jan 7 Th notes:  
   * Sedition occurred.  
+  * Republican enablers must be stipped of power.  
   
