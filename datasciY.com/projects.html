@@ -52,40 +52,13 @@
         <p>Some of the specific types of analyses I will be performing include: decision trees and random forests, principal component analysis (PCA), k-means clustering, sentiment analysis, natural language processing (NLP), linear regression, logistic regression, time-series, econometrics, big data cloud computing, deep-learning and convolutional neural networks (CNN).</p>
  
 
-    <h3>Python Basics</h3>    
-        
-
-    <h4>File-IO Demo</h4>
-        <p>A demonstration of reading in a text file using 'rt' read text and 'rb' read binary methods. 
-        For reverse order read and non-sequential read, 'rb' binary read is usually faster.  Relative address seek (from end of file and from current position) is only available for binary read method. </p>
-        <ul>       
-        <li>Static view in browser: <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb"> via nbviewer</a> </li>
-        <li>Executable notebook: <a href="https://colab.research.google.com/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">open in colab</a>.</li>
-        <li>View on Github: <a href="https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">fileio-demo.ipynb</a></li>
-        <li>Download file from this site: <a href="./projects/fileio/fileio-demo.ipynb">fileio-demo</a>, <a href="./projects/fileio/demofile.txt">text file 1</a>, <a href="./projects/fileio/TheRaven-Poe.txt">text file 2</a> </li>    
-        </ul>
-        <p>Later, I will cover reading from JSON, CSV, Excel, and SQL formats.  I will also cover scraping data directly from websites.</p>
-
-
-    <h4>Downloading Whole Class, Coursera.org</h4>  
+    <h3>Image Classification - Pet Breeds</h3>
         <ul>
-        <li>Date: September 16, 2020 </li>
-        <li>Coursera whole class download instruction: <a href="./projects/coursera_dn/coursera_dn.md">markdown file</a>, <a href="./projects/coursera_dn/coursera_dn.jpg">browser-view jpg</a></li>
-        <li>folder-view jupyter image - to add</li>
-        <li>local linux terminal image - to add</li>
+            <li>Date: January 15, 2021</li>
+            <li>My notebook example: <a href="https://github.com/JennEYoon/deep-learning/blob/main/fastai-20/fastbook/05_pet_breeds.ipynb"> from my Github acct</a></li>
+            <li>Source fast.ai class: <a href="https://course.fast.ai/">from fast.ai</a></li>
         </ul>
-        <p>While studying Andrew Ng's Deep Learning AI classes on Coursera.org, I needed a way to download the entire class at once, with all of the supporting images and data files.  Using the GUI to download files, I had to click and download each file one by one.  Some of the Jupyter notebooks have many supporting image files.  Large datasets can't be downloaded at all due to download size limit on the server.  Maybe Coursera will offer an easier download solution in the future.  But for now, "tar" and "cat" Linux commands work on Coursera's Linux server and on my computer's Linux terminal. (I use Windows Subsystem for Linux.)  It's important that "tar" and "cat" are default tools built into Linux, since I don't have the permission to install any new tools on Coursera's server.  This method may work for non-Coursera classes as well, where you have access to a server-side Linux terminal or a Jupyter notebook with ! Linux shell command capability. </p>
-
-
-    <h4>Adding Colab Badge to a Jupyter Notebook</h4>    
-
-        <ul>
-            <li>Date: September 5, 2020</li>
-            <li>Jupyter notebook: <a href="https://github.com/JennEYoon/datasciY/blob/main/example_rt.ipynb">example_rt.ipynb</a> from Github</li> 
-            <li>Browser static view:  <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/example_rt.ipynb">example_rt.ipynb</a> via nbviewer </li>
-        </ul>
-        <p>This is an example of a Jupyter notebook with "Open in Colab" and "Run in Colab" badges.  Google Colab is a free machine learning resource using the Jupyter notebook interface.  You can run deep learning models on GPU machines and lighter machine learning models on CPU machines. The badges open my example notebook stored on Github.com.  You can see the badge code by changing the cell format containing the badge to "raw".  Feel free to copy it into your own notebooks.  Change the href link to point to your own Github account and file path.</p>    
-        <p>Example notebook shows <b>Matplotlib</b> plotting functions.  The first figure is an example of 3-dimensional projection of sign and cosign waves.  The second figure is a histogram with three overlapping data series combined into one image.  Alpha transparency is set to moderate opacity.  </p>
+        <p>I am working on an end-to-end image classification project about cats and dogs breeds.  This is a reproduction project based on <b>fast.ai's</b> deep learning class.  I am using this example Jupyter notebook to blog about how to use deep-learning packages and tools. Details to follow. </p>
 
 
     <h3>Using NumPy Data Arrays</h3>
@@ -94,6 +67,16 @@
         <li><a href="http://datasciY.com/projects/numpy_ex1_jy.html">Numpy Exercise 1</a>  (html), &nbsp; <a href="https://github.com/JennEYoon/datasciY/blob/main/projects/numpy_ex1_jy.ipynb">GitHub</a></li>
         <li><a href="/projects/numpy_ex2.py">NumPy Exercise 2</a> (py), &nbsp; <a href="https://github.com/JennEYoon/datasciY/blob/main/projects/numpy_ex2.py">GitHub</a></li>
         </ul>
+
+        <div style="margin-left: 16px;">
+            <h4>Aside: </h4> 
+            Python standard library includes an <b>Array</b> module that can seem similar to <b>Numpy</b> at first glance.  However, the Array module creates list-like structures that cannot be used to do matrix multiplication or use the "@" at-symbol for element by element multiplication or addition.  Numpy also has a structured data array ability similar to <b>Pandas</b> or <b>Xarray</b> libraries.  I think it may be a vestigial feature from years ago when Pandas and Xarray did not exist or was not as well developed.  However, I think the structured array part of Numpy is still useful today.  I can see this being a handy tool for memory-limited operations, for example in a mobile phone app.  Pandas is a large library to load.  Xarray is designed to be the solution for large, parallel datasets.  It's supposed to be the solution for the slow processing speed of Pandas.  Xarray works on top of Numpy's n-dimensional arrays, which in turn is written in C for faster computation.  </p>
+            <P style="margin-left:24px; border-width:1px; border-style: dashed; background-color: aliceblue;">
+                <b>Array — Efficient arrays of numeric values</b> <br />
+                "This module defines an object type which can compactly represent an array of basic values: characters, integers, floating point numbers. Arrays are sequence types and behave very much like lists, except that the type of objects stored in them is constrained." <br /> 
+                (See: <a href="https://docs.python.org/3/library/array.html">https://docs.python.org/3/library/array.html</a>)
+            </P>
+        </div>    
 
 
     <h3>Matplotlib "ax" and "plt" Methods</h3>    
@@ -137,6 +120,40 @@
         <li><a href="https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/">Udemy class link</a></li>     
         <li>Image from <a href="https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/learn/v4/t/lecture/5733420?start=0">section 16 link</a>. Login to access.</li>
         </ul></p>
+
+
+    <h3>Python Basics and Programming Tools</h3>    
+        
+    <h4>File-IO Demo</h4>
+        <p>A demonstration of reading in a text file using 'rt' read text and 'rb' read binary methods. 
+        For reverse order read and non-sequential read, 'rb' binary read is usually faster.  Relative address seek (from end of file and from current position) is only available for binary read method. </p>
+        <ul>       
+        <li>Static view in browser: <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb"> via nbviewer</a> </li>
+        <li>Executable notebook: <a href="https://colab.research.google.com/github/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">open in colab</a>.</li>
+        <li>View on Github: <a href="https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/projects/fileio/fileio-demo.ipynb">fileio-demo.ipynb</a></li>
+        <li>Download file from this site: <a href="./projects/fileio/fileio-demo.ipynb">fileio-demo</a>, <a href="./projects/fileio/demofile.txt">text file 1</a>, <a href="./projects/fileio/TheRaven-Poe.txt">text file 2</a> </li>    
+        </ul>
+        <p>Later, I will cover reading from JSON, CSV, Excel, and SQL formats.  I will also cover scraping data directly from websites.</p>
+
+    <h4>Downloading Whole Class, Coursera.org</h4>  
+        <ul>
+        <li>Date: September 16, 2020 </li>
+        <li>Coursera whole class download instruction: <a href="./projects/coursera_dn/coursera_dn.md">markdown file</a>, <a href="./projects/coursera_dn/coursera_dn.jpg">browser-view jpg</a></li>
+        <li>folder-view jupyter image - to add</li>
+        <li>local linux terminal image - to add</li>
+        </ul>
+        <p>While studying Andrew Ng's Deep Learning AI classes on Coursera.org, I needed a way to download the entire class at once, with all of the supporting images and data files.  Using the GUI to download files, I had to click and download each file one by one.  Some of the Jupyter notebooks have many supporting image files.  Large datasets can't be downloaded at all due to download size limit on the server.  Maybe Coursera will offer an easier download solution in the future.  But for now, "tar" and "cat" Linux commands work on Coursera's Linux server and on my computer's Linux terminal. (I use Windows Subsystem for Linux.)  It's important that "tar" and "cat" are default tools built into Linux, since I don't have the permission to install any new tools on Coursera's server.  This method may work for non-Coursera classes as well, where you have access to a server-side Linux terminal or a Jupyter notebook with ! Linux shell command capability. </p>
+
+    <h4>Adding Colab Badge to a Jupyter Notebook</h4>    
+
+        <ul>
+            <li>Date: September 5, 2020</li>
+            <li>Jupyter notebook: <a href="https://github.com/JennEYoon/datasciY/blob/main/example_rt.ipynb">example_rt.ipynb</a> from Github</li> 
+            <li>Browser static view:  <a href="https://nbviewer.jupyter.org/github/JennEYoon/datasciY/blob/main/example_rt.ipynb">example_rt.ipynb</a> via nbviewer </li>
+        </ul>
+        <p>This is an example of a Jupyter notebook with "Open in Colab" and "Run in Colab" badges.  Google Colab is a free machine learning resource using the Jupyter notebook interface.  You can run deep learning models on GPU machines and lighter machine learning models on CPU machines. The badges open my example notebook stored on Github.com.  You can see the badge code by changing the cell format containing the badge to "raw".  Feel free to copy it into your own notebooks.  Change the href link to point to your own Github account and file path.</p>    
+        <p>Example notebook shows <b>Matplotlib</b> plotting functions.  The first figure is an example of 3-dimensional projection of sign and cosign waves.  The second figure is a histogram with three overlapping data series combined into one image.  Alpha transparency is set to moderate opacity.  </p>
+
 
 
 <p> &nbsp; </p>
