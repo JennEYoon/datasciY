@@ -1,0 +1,5 @@
+Add new small project to datasciY  
+Add Matplotlib OO vs plt methods  
+Add Numpy structured data  
+Add Python *kwargs, **args (dictionary) 
+
