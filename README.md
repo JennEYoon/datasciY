@@ -65,8 +65,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
   * Add general.html page for broader topics - June 13-15, 2020 
     ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
-  * Github Repo created on July 2019? 
+  *   
   * Website hosted on AWS from 2018+  
   * Domain purchased on Sept 2017  
-  * My 2nd Github repo, created Oct 2018, part of WWC NOVA Hactoberfest.  
+  * My 2nd Github repo, created Oct 16, 2018, part of WWC NOVA Hactoberfest.  
   
