@@ -13,7 +13,7 @@ Work on 1 small reproducible part of an existing project or paper at a time, abo
 
 Work on projects that are in industries using tools and keywords mentioned from my job descriptions keywords search step.  
 
-First end-to-end project should be a reproduction of a simple project in my industry.  Then extend using other tools, idead, data, visualizations, etc.  
+First end-to-end project should be a reproduction of a simple project in my industry.  Then extend using other tools, idea, data, visualizations, etc.  
 
 After 2-3 reproduction projects, then work on my own project from scratch, but still using common methods already in existance.  Using my own data in a slightly novel way.  
 

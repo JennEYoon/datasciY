@@ -2,4 +2,5 @@ Add new small project to datasciY
 Add Matplotlib OO vs plt methods  
 Add Numpy structured data  
 Add Python *kwargs, **args (dictionary) 
+Add Plotly and Dash interactive demo - pick simple one in financial industry.  
 
