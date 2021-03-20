@@ -1,6 +1,6 @@
 ## My Data Science & Python Coding Projects, http://datasciY.com  
 
-***Note: Renamed "master" to "main" branch in June 2020, in support of Black-American racial equality***
+***Note: Renamed "master" to "main" branch in June 2020***
 
 ### Author: Jennifer E Yoon  
 
