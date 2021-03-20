@@ -13,9 +13,9 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   
  * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, statistics, econometrics, financial derivatives, economics
 
- * ***Python Libraries:*** Python core, Jupyter, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, TensorFlow, Keras, Plotly, Bokeh, Xarray   
+ * ***Python Libraries:*** Python core, Jupyter Lab, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Fastai, Plotly, Dash
  
- * ***Other Software, Services and Tools:*** Excel, VBA, SQL, R (statistics), Tableau, Unix-Bash, GitHub, VS Code, Google Colab, MyBinder, and AWS (EC2, Lambda, S3 storage, Route53 hosting website)
+ * ***Other Software, Services and Tools:*** Excel, VBA, SQL, Unix bash, GitHub, VS Code, Google Colab, AWS (EC2, Lambda, S3, Route 53)
 
 #### To view HTML files directly from Github, prepend the following text to your browser's URL:  
 >  - https://htmlpreview.github.io/?   
@@ -51,7 +51,7 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
    Links to published files on datasciY.com, that are executable on Google CoLab.  
      
  * jsq (folder) -- practice JavaScript and jQuery  
-   PDF - Headfirst Javascript booklet
+
  
  * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
    Links to published files on datasciY.com that are executable by user on MyBinder.org image.  
@@ -65,8 +65,8 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
   * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
   * Add general.html page for broader topics - June 13-15, 2020 
     ngram data files stored in "large-files" folder, not uploaded to Github due to size.   
-  *   
-  * Website hosted on AWS from 2018+  
-  * Domain purchased on Sept 2017  
-  * My 2nd Github repo, created Oct 16, 2018, part of WWC NOVA Hactoberfest.  
-  
+    \-  
+  * My 2nd Github repo, created Oct 16, 2018, part of WWC NOVA Hactoberfest.    
+  * Website hosted on AWS Route 53 from 2018+  
+  * Temporary website design hosted on Google Sites.    
+  * Domain purchased on Sept 2017.   
