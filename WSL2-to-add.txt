@@ -5,6 +5,7 @@ To add WSL2.  Make sure VS Code Remote Extension for WSL is installed.
 https://code.visualstudio.com/blogs/2019/09/03/wsl2
 
 First, copy all data files from Linux side to external drive, make copy.  
+Copy settings, .bashrc, etc.  
 
 Need to store my github repos on the Linux side.  
 Only copy the repos, not other files.  
