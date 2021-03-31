@@ -14,3 +14,8 @@ Keep large files, etc in Google Drive backup on C.
 Keep bare python 3.9 on C drive.  Not conda.  
 
 After, double check Windows Environment Variables, Path, for Python paths on Linux side.  
+
+Google Drive: Unsync, upload photos, cards, sewing, crafts, personal.  
+
+Corel Draw 13, load from DVDs.  Find and load.  
+Stampin Up MDS DVDs load???  
