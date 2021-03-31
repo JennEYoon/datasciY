@@ -1,0 +1,15 @@
+Mar 31, 2021: 
+
+To add WSL2.  Make sure VS Code Remote Extension for WSL is installed. 
+
+https://code.visualstudio.com/blogs/2019/09/03/wsl2
+
+First, copy all data files from Linux side to external drive, make copy.  
+
+Need to store my github repos on the Linux side.  
+Only copy the repos, not other files.  
+Keep large files, etc in Google Drive backup on C.  
+
+Keep bare python 3.9 on C drive.  Not conda.  
+
+After, double check Windows Environment Variables, Path, for Python paths on Linux side.  
