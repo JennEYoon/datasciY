@@ -2,6 +2,8 @@
 
 ***Note: Renamed "master" to "main" branch in June 2020***
 
+***Public Repo, links from datasciY.com to project files, Jupyter notebooks***
+
 ### Author: Jennifer E Yoon  
 
 ### Description  
