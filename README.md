@@ -2,10 +2,7 @@
 
 ***Note: Renamed "master" to "main" branch in June 2020***
 
-***Repo Private, April 2, 2021***  
-No need to keep my website development public.  
-Link to projects from my website, need a public place to go.  
-Create a hosted-projects repo for them.  
+***Public Repo, links from datasciY.com to project files, Jupyter notebooks***
 
 ### Author: Jennifer E Yoon  
 
