@@ -4,3 +4,4 @@ Add Numpy structured data
 Add Python *kwargs, **args (dictionary) 
 Add Plotly and Dash interactive demo - pick simple one in financial industry.  
 
+WIP - Amazon Rainforest, post intro in projects, add to it as I make progress.  
