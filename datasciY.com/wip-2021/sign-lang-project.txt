@@ -1,0 +1,6 @@
+https://github.com/insigh1/Interactive_ABCs_with_American_Sign_Language_using_Yolov5  
+
+Try doing it myself.  
+ * Add camera - user interactive component.  
+ * Web hosted app.  
+ * Add some words as vocab.  Images with labels and bounding box.  
