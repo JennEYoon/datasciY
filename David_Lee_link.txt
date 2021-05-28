@@ -1,6 +1,6 @@
 https://github.com/insigh1/Interactive_ABCs_with_American_Sign_Language_using_Yolov5  
 
-To download and study project. -- done
+To download (done), and study project.
 Extend project with live demo app, client can use his/her video camera to test recognition.  
 Add short words and phrases to dictionary of recognized live images/video items.  
 
