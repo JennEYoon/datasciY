@@ -13,6 +13,8 @@
   * Informatio more condensed than Blog project page.  
   * Team mates - create project sheet to coordinate work. 
 
+  * > https://github.com/JennEYoon/geo-ml/wiki
+
 ### Blog will be on DatasciY.com  
  * TO showcase my work to future job recruiters  
  * To teach other newbies, every step explored, as a learning opportunity.  
