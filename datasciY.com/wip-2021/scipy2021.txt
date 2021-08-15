@@ -6,3 +6,6 @@ Find something you are really interested in, then perservere. You have to do pro
 From doing 1 very simple project, I learned so much more than from taking 1 online class.   
 
 Napari demo - very relevant to my group project, Amazon Rainforest deep learning.  
+
+Edit post - remove refs to SciPy 2020 videos from last year. 
+
