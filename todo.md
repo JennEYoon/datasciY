@@ -1,7 +1,15 @@
 # datasciY.com posts, work in progress  
 
 ### Amazon Rainforest, Dec 16, 2021  
- 8 WIP - Amazon Rainforest, post intro in projects, add to it as I make progress.  
+
+ * WIP - Amazon Rainforest, post intro in projects, add to it as I make progress.  
+ * wiki on **geo-ml.wiki** repo.
+ * create outline on paper first, collect plot/viz ideas.  
+ * Make a movie of segments over time.  
+ * Test planet_data_api to download sample area (geo-jason spec)  
+ * Google Earth cloud free data sharing -- login and look into.  
+ * Download sufficient data from Planet Labs to have it on hand to continue after NICFI funding ends in 2022 Sept.  
+ * Game idea, write it out on paper fully, with drawings.  
 
 
 ### Basic ML coverage:  
@@ -11,7 +19,7 @@
  * Do Regression, housing prices example   - airli
  * Do time-series financial model, Pandas.  
  * Do Recommender System - friends, movie reviews  
- * DO Graph Network - friends, airline routes, traveling salesman  
+ * Do Graph Network - friends, airline routes, traveling salesman  
  
 ### Algorithms, first 2 books:  
 
