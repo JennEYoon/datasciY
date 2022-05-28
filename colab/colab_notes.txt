@@ -1,0 +1,9 @@
+# colab usage notes  
+
+### January 9, 2022, 4:50 am   
+
+ * keyboard shortcuts - to review  
+ 
+ * external data files  
+ 
+ * keywords, kwarks  
