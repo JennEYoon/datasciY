@@ -15,10 +15,7 @@ About:
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/about.html   
 
 Blog:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/blog.html   
-
-General:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/general.html   
+https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/blog.html     
 
 Projects:  
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/projects.html   
@@ -26,9 +23,7 @@ https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/d
 Articles:  
 https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/articles.html   
 
-Template:  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/template.html   
+s
 
-TestDev (testing MyBinder launch, Open in Colab badge):  
-https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/datasciY.com/testdev.html  
+
 
