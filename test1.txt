@@ -1,2 +1,3 @@
 add test for ROG-G17  Ubuntu SSH
 Worked!  Test download now. 
+Repeat edit from local ROG-G17 ubuntu
