@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-test2 SSH
-=======
-test login from vivobook@  
-wsl2 Ubuntu
->>>>>>> 3863f960a834b56dbb21597121fa821e8d8ef1ba
-
