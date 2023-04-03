@@ -4,6 +4,6 @@ Project: Platform Game Creation
 I am new to Javascript.  
 I experiment with using OpenAI ChatGPT to write html, css, and javascript code for a simple, interactive, Platform Game. Uses canvas and keyboard event handlers and event listeners.  
 
-Project: Batch preocessing csv file using Pandas and Python.
-
+Project: Batch reading .csv file using Pandas and Python.
+Break up a large data file into 100 line chunks to be read and processed into a Pandas DataFrame.  
 
