@@ -1,18 +1,19 @@
 # AI assisted game development.  
-I am testing out using AI to write javascript, html, css game code.  
-It will be a platform game with interactive graphical elements.  
+I am testing out using AI to write a simple game using only javascript, html, and css.  
+It will be a platform game with interactive graphical elements and drawing to canvas.   
 
-engine: ChatGPT Mar 14 Version
-chat.openai.com/chat
-https://chat.openai.com/chat/f3f62545-553d-44a1-85a5-68b3df04502d
+engine: ChatGPT4-0314 Version  
+chat.openai.com/chat  
+https://chat.openai.com/chat/f3f62545-553d-44a1-85a5-68b3df04502d  
+Date session 1:  4/2/2023.  
+
 
 Session 1)  
 Prompt: 
 I want to create an interactive platform game using only html, css, and javascript. Please write introductory code for me and what files to paste it to.
 
 ChatGPT: 
-To create an interactive platform game using HTML, CSS, and JavaScript, you can start by creating a basic HTML file with the necessary structure and adding CSS and JavaScript files to it. Here's some introductory code to get you started:
-HTML file (index.html):
+To create an interactive platform game using HTML, CSS, and JavaScript, you can start by creating a basic HTML file with the necessary structure and adding CSS and JavaScript files to it. Here's some introductory code to get you started:  
 
 index.html:  
 <file>
@@ -21,11 +22,11 @@ styles.css:
 game.js:  
 <file>
 
-This code sets up the basic structure of an HTML file with a canvas element and includes a CSS file to add a border to the canvas. The JavaScript file defines a game loop function and starts the game by calling the game loop using the requestAnimationFrame method.
+This code sets up the basic structure of an HTML file with a canvas element and includes a CSS file to add a border to the canvas. The JavaScript file **defines a game loop function** and starts the game by calling the game loop using the **requestAnimationFrame** method.
 
-To get started with your platform game, you can add additional JavaScript code to create and control game objects, such as the player, enemies, and obstacles. You can also add event listeners to handle user input and collisions between objects.
+To get started with your platform game, you can add additional JavaScript code to create and control game objects, such as the player, enemies, and obstacles. You can also add **event listeners** to handle <u>user input and collisions</u> between objects.
 
-Note that while HTML, CSS, and JavaScript can be used to create simple games, for more complex games, you may want to consider using a game engine or library like Phaser or Unity.
+Note that while HTML, CSS, and JavaScript can be used to create simple games, for more complex games, you may want to consider using a game engine or library like Phaser or **Unity**.
 
 
 Prompt: 
