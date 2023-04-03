@@ -15,6 +15,7 @@ batch_size = 100
 # Initialize an empty list to hold the dataframes
 dfs = []
 
+### readline from Python built-in io. Not Pandas read_csv! ###  
 # Open the CSV file for reading
 with open('your_file.csv', 'r') as file:
 
@@ -28,9 +29,13 @@ with open('your_file.csv', 'r') as file:
         if line_num % batch_size == 0:
             
             # If we have, create a new dataframe and append it to the list
-            df = pd.DataFrame(columns=['column1', 'column2', 'column3'])  # replace column names as per your csv
+            # inner loop skipped for rows 1-99 in each batch.     
+            df = pd.DataFrame(columns=['column1', 'column2', 'column3'])  
+               # replace column names as per your csv
             dfs.append(df)
-            
+         
+        ### next 3 lines seem redundant, reproducing Pandas functionality. ###  
+        # need else?  What is preferred style?  
         # Parse the line into a list of values
         values = line.strip().split(',')
         
@@ -44,7 +49,7 @@ with open('your_file.csv', 'r') as file:
 df = pd.concat(dfs, ignore_index=True)
 
 """
-Prompt: Write a pandas code to read the first 100 lines from example.csv file to a DataFrame
+Prompt: Write a pandas code to read the first 100 lines from example.csv file to a DataFrame.
 
 ChatGPT: Sure, here's the code to read the first 100 lines from example.csv file into a Pandas DataFrame:
 
