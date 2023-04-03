@@ -8,6 +8,6 @@ I experiment with using OpenAI ChatGPT to write html, css, and javascript code f
 
 Code Syntax help: Batch reading a large example.csv file using Pandas and Python.
 I am familiar with Python and Pandas, but can't recall how to process a large example.csv file by splitting up the task.  
-Looking for a memory and speed efficient way to handle file I/O and writing to a Pandas DataFrame.  
+Looking for a memory and speed efficient way to handle file read/write and creating a Pandas DataFrame object.  
   
 
