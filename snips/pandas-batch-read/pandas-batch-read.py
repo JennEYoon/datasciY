@@ -77,6 +77,8 @@ df = pd.read_csv('example.csv', skiprows=100, nrows=100)
 
 """
 When running in batch mode, check to see if eol is reached.  
-rows_remaining > skiprows, else skiprows = 0.  
+skiprows increase by multiples of 100. 
+Read Pandas documentation to see what happens when eol is reached.  
+rows_remaining > 100, else skiprows = current index.  
 nrows=100 or rows_remaining, whichever is lesser
 """
