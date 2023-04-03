@@ -74,3 +74,9 @@ import pandas as pd
 
 # Read the second 100 lines of the CSV file into a DataFrame
 df = pd.read_csv('example.csv', skiprows=100, nrows=100)
+
+"""
+When running in batch mode, check to see if eol is reached.  
+rows_remaining > skiprows, else skiprows = 0.  
+nrows=100 or rows_remaining, whichever is lesser
+"""
