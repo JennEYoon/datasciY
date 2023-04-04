@@ -348,6 +348,7 @@ In this code, we've added a similar conditional statement inside the if (leftPre
 
 We've also added event listeners for the left arrow key, and modified the keyDownHandler and keyUpHandler functions to set and unset the leftPressed variable accordingly.
 
+```
 // Define canvas and context variables
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
@@ -431,7 +432,8 @@ function keyUpHandler(event) {
 
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
-
+```
+  
 Prompt: 
 Add jump event tied to enter key. box1 should move up by 20 pixels and continue in current direction by 10 pixels.
 
