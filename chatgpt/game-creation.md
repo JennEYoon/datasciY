@@ -469,8 +469,10 @@ if (box1.isJumping) {
 
   if (box1.jumpCounter < jumpDuration / 2) { // During the first half of the jump, move up
     box1.y = box1.startY - jumpDelta;
+    // increase box1.x by sine wave. Need to know direcion it ismfacing, momentum.                          
   } else if (box1.jumpCounter < jumpDuration) { // During the second half of the jump, move down
     box1.y = box1.startY - (jumpHeight - jumpDelta);
+    // increase box1.x second half.  
   } else { // After the jump, stop jumping
     box1.isJumping = false;
   }
