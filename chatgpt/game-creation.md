@@ -85,6 +85,7 @@ function gameLoop() {
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
 ```
+
 2 / 2
 
 ChatGPT: 
@@ -156,7 +157,7 @@ Where should the above code go if it is for game background?
 ChatGPT:
 If you want to draw a solid green horizontal line 6 pixels thick, 90% from the top of the canvas and full screen wide to serve as the background for your game, you can modify the game.js file to include this code in the gameLoop() function before any other game objects are drawn. Here's an example:
 
-...
+```
 // Define game loop function
 function gameLoop() {
   // Clear canvas
@@ -184,7 +185,7 @@ function gameLoop() {
 
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
-
+```  
 
 In this code, we're adding two new lines to draw a solid green background before drawing any game objects. We're using the fillStyle and fillRect() methods to fill the canvas with a solid green color from the top to 90% down. We're then drawing the solid green horizontal line as described before.
 
@@ -363,7 +364,8 @@ var box1 = {
   y: canvas.height * 0.9 - 20, // Same height as green horizontal line
   width: 10,
   height: 20,
-  color: "pink"
+  color: "pink",
+  direction: 1  // facing direction, 1 is right, 0 is left
 };
 
 // Define game loop function
@@ -387,6 +389,7 @@ function gameLoop() {
   if (rightPressed) {
     if (box1.x + box1.width < canvas.width) { // Check if box1 is within canvas bounds
       box1.x += 5;
+      box1.direction = 1;                                  
     } else {
       box1.x = canvas.width - box1.width; // Set box1 position to the right edge of canvas
     }
@@ -395,6 +398,7 @@ function gameLoop() {
   if (leftPressed) {
     if (box1.x > 0) { // Check if box1 is within canvas bounds
       box1.x -= 5;
+      box1.direction = -1; 
     } else {
       box1.x = 0; // Set box1 position to the left edge of canvas
     }
@@ -411,6 +415,7 @@ function gameLoop() {
 // Define keyboard event listeners
 var rightPressed = false;
 var leftPressed = false;
+var enterPressed = false;  
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
@@ -419,6 +424,8 @@ function keyDownHandler(event) {
     rightPressed = true;
   } else if (event.keyCode === 37) {
     leftPressed = true;
+  } else if (event.keyCode === 13) {
+    enterPressed = true;
   }
 }
 
@@ -427,6 +434,8 @@ function keyUpHandler(event) {
     rightPressed = false;
   } else if (event.keyCode === 37) {
     leftPressed = false;
+  } else if (event.keyCode === 13) {
+    enterPressed = false;
   }
 }
 
@@ -458,6 +467,7 @@ if (enterPressed) {
     box1.isJumping = true;
     box1.jumpCounter = 0;
     box1.startY = box1.y; // Store box1's starting position for the jump
+    box1.startX = box1.x;  
   }
 }
 
@@ -465,13 +475,17 @@ if (box1.isJumping) {
   var jumpHeight = 20; // The height of the jump in pixels
   var jumpDuration = 20; // The duration of the jump in frames
   var jumpProgress = box1.jumpCounter / jumpDuration; // The progress of the jump from 0 to 1
-  var jumpDelta = (Math.sin(jumpProgress * Math.PI) * jumpHeight); // The distance to move during the jump
+  var jumpDelta = (Math.sin(jumpProgress * Math.PI) * jumpHeight); 
+    // The distance to move during the jump
 
+  
   if (box1.jumpCounter < jumpDuration / 2) { // During the first half of the jump, move up
     box1.y = box1.startY - jumpDelta;
+    box1.x = box1.startX + jumpProgress * box1.direction;                               
     // increase box1.x by sine wave. Need to know direcion it ismfacing, momentum.                          
   } else if (box1.jumpCounter < jumpDuration) { // During the second half of the jump, move down
     box1.y = box1.startY - (jumpHeight - jumpDelta);
+    box1.x = box1.startX + jumpProgress * box1.direction;  
     // increase box1.x second half.  
   } else { // After the jump, stop jumping
     box1.isJumping = false;
