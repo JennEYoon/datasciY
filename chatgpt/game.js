@@ -59,10 +59,12 @@ function gameLoop() {
     }
   }
 
-  if (box1.isJumping) {
-    box1.y -= 5; // Move box1 up by 5 pixels per frame during the first half of the jump
+    if (box1.isJumping) { // error missed 2 indent spaces bol.  
+    box1.y -= 5; 
+      // Move box1 up by 5 pixels per frame during the first half of the jump
     box1.jumpCounter++;
-    if (box1.jumpCounter >= 20) { // After 20 frames, move box1 down by 5 pixels per frame during the second half of the jump
+    if (box1.jumpCounter >= 20) {
+      // After 20 frames, move box1 down by 5 pixels per frame during the second half of the jump
       box1.y += 5;
     }
     if (box1.jumpCounter === 40) { // After 40 frames, finish the jump
