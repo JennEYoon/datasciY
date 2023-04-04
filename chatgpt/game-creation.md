@@ -24,7 +24,7 @@ game.js:
 
 This code sets up the basic structure of an HTML file with a canvas element and includes a CSS file to add a border to the canvas. The JavaScript file **defines a game loop function** and starts the game by calling the game loop using the **requestAnimationFrame** method.
 
-To get started with your platform game, you can add additional JavaScript code to create and control game objects, such as the player, enemies, and obstacles. You can also add **event listeners** to handle <u>user input and collisions</u> between objects.
+To get started with your platform game, you can add additional JavaScript code to create and control game objects, such as the player, enemies, and obstacles. You can also add **_event listeners_** to handle <em>user input and collisions</em> between objects.
 
 Note that while HTML, CSS, and JavaScript can be used to create simple games, for more complex games, you may want to consider using a game engine or library like Phaser or **Unity**.
 
@@ -35,6 +35,7 @@ write code to set gameCavas size to popular ipad screen resolution size
 ChatGPT:
 Sure! One popular iPad screen resolution size is 1024 x 768 pixels. To set the gameCanvas element to this size, you can add some additional code to the HTML file:
 
+```
 // Define canvas and context variables
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
@@ -54,10 +55,12 @@ function gameLoop() {
 
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
-
+```
+  
 Prompt: 
 Adjust the above code to paste into game.js file and tell me where in the file to past it.
 
+```
 // Define canvas and context variables
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
@@ -81,7 +84,7 @@ function gameLoop() {
 
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
-
+```
 2 / 2
 
 ChatGPT: 
@@ -111,7 +114,7 @@ ChatGPT:
 To draw a solid green horizontal line 6 pixels thick, 90% from the top of the canvas and full screen wide, you can add some additional code to the game.js file. Here's an example of how you can do it:
 
 javascript
-Copy code
+```
 // Define canvas and context variables
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
@@ -141,7 +144,8 @@ function gameLoop() {
 
 // Call game loop to start the game
 requestAnimationFrame(gameLoop);
-
+```
+  
 In this code, we're adding some new code to the gameLoop function to draw a solid green horizontal line 6 pixels thick, 90% from the top of the canvas and full screen wide. We're doing this using the beginPath(), strokeStyle, lineWidth, moveTo(), lineTo(), and stroke() methods of the canvas context.
 
 The moveTo() method sets the starting point for the line to the left edge of the canvas and 90% down from the top, and the lineTo() method draws the line to the right edge of the canvas at the same y-coordinate. Finally, we call the stroke() method to actually draw the line on the canvas.
@@ -192,10 +196,12 @@ Change above fill color from green to sky blue
 ChatGPT:
 To change the fill color of the background from green to sky blue, you can modify the game.js file to set the fillStyle to "skyblue" instead of "green" in the gameLoop() function. Here's an updated example:
 
+ ```
  // Draw sky blue background
   ctx.fillStyle = "skyblue";
   ctx.fillRect(0, 0, canvas.width, canvas.height * 0.9);
-
+  ```
+  
 In this code, we're simply changing the fillStyle to "skyblue" to set the background fill color to sky blue. This will be reflected in the call to fillRect() that follows.
 
 
