@@ -435,7 +435,7 @@ requestAnimationFrame(gameLoop);
 ```
   
 Prompt: 
-Add jump event tied to enter key. box1 should move up by 20 pixels and continue in current direction by 10 pixels.
+Add jump event tied to enter key. box1 should move up by 20 pixels and "continue in current direction by 10 pixels". May have been confused by this.  
 
 2 / 2
 ChatGPT:
