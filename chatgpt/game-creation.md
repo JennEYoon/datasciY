@@ -441,8 +441,10 @@ Add jump event tied to enter key. box1 should move up by 20 pixels and continue 
 ChatGPT:
 To add a jump event tied to the enter key, you can modify the game.js file once again. Here's an example:
 
+> code in game.js  
+  box1 jumps up, but stays there. Does not come back down.  
+  Down event never happens.  
 
-datasciy.info@gmail.com
 Prompt:
 modify jump event to move box1 up and then down
 
