@@ -15,6 +15,7 @@ var box1 = {
   color: "pink",
   isJumping: false,
   jumpCounter: 0
+  // direction = 1
 };
 
 // Define game loop function
@@ -38,6 +39,7 @@ function gameLoop() {
   if (rightPressed) {
     if (box1.x + box1.width < canvas.width) { // Check if box1 is within canvas bounds
       box1.x += 5;
+      // box1.direction = 1;
     } else {
       box1.x = canvas.width - box1.width; // Set box1 position to the right edge of canvas
     }
@@ -46,6 +48,7 @@ function gameLoop() {
   if (leftPressed) {
     if (box1.x > 0) { // Check if box1 is within canvas bounds
       box1.x -= 5;
+      // box1.direction = -1;  
     } else {
       box1.x = 0; // Set box1 position to the left edge of canvas
     }
@@ -59,13 +62,18 @@ function gameLoop() {
     }
   }
 
+    // ### sub w Math.sin, move x-axis too during jump. Also need facing direction. ### 
+    // how is jumpCounter looped?  
     if (box1.isJumping) { // error missed 2 indent spaces bol.  
-    box1.y -= 5; 
+      box1.y -= 5; 
       // Move box1 up by 5 pixels per frame during the first half of the jump
-    box1.jumpCounter++;
+      // box1.x = box1.jumpCounter * box1.direction;
+      box1.jumpCounter++;
     if (box1.jumpCounter >= 20) {
       // After 20 frames, move box1 down by 5 pixels per frame during the second half of the jump
       box1.y += 5;
+      // box1.x = box1.jumpCounter * box1.direction;
+      box1.jumpCounter++;
     }
     if (box1.jumpCounter === 40) { // After 40 frames, finish the jump
       box1.isJumping = false;
