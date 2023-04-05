@@ -496,3 +496,27 @@ if (box1.isJumping) {
 ```
 
 This code uses a sine wave function to calculate the vertical position of the box1 object during the jump, which creates a smooth up-and-down motion. The jumpHeight variable determines how high the box1 object should jump, and the jumpDuration variable determines how long the jump should take (in frames). The jumpProgress variable calculates the progress of the jump from 0 to 1, and the jumpDelta variable calculates the distance the box1 object should move vertically during the jump. The if statements inside the box1.isJumping block use these values to move the box1 object up and down during the jump.
+
+  \-\-  
+  
+  
+### Session 2 plan:  
+
+Ran out of token length. Can ask AI to continue, or copy code to a new session.  
+
+Plan:  
+  * test sine wave jump code.  
+  * create platforms and test jumping on the platforms.  
+  * create different level platforms and jumping between them.  
+  * how to control jumping so player can go between platforms and floor?  
+    - do I need another key controller?  
+  * how to handle losing life if jump between platforms?  
+  * add sprite, player w feet animation.  
+  * add background image for sky and lava floor.  
+  * add scrolling scenes.  
+  * add coins, picking up animation.  
+  * add scores and high scores.  
+  * add music - maybe ai generated.   
+  * host on my website, datasciY.com. Limit transfer out amount.  
+  * write blog on how I created it.  
+  
