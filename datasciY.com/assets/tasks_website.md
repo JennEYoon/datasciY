@@ -1,7 +1,7 @@
 # Website Tasks, 2023  
 
 ### Short Tasks:  
- * Resume - change project date to "2022-presnet"
+ * Resume - change project date to "2022-present"  -- done.
 
 
 ### Project Ideas:  
