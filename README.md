@@ -52,13 +52,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * colab (folder) -- hosted Google CoLab Jupyter notebooks  
    Links to published files on datasciY.com, that are executable on Google CoLab.  
      
- * jsq (folder) -- practice JavaScript and jQuery  
-
- 
  * mybinder (folder) -- hosted MyBinder.org Jupyter notebooks    
    Links to published files on datasciY.com that are executable by user on MyBinder.org image.  
    (Note: Takes a long time to build, about 10 minutes.)  
 
+ * chatgpt-ai (folder) -- development, using chatgpt in coding.  
    
 ### History  
   * Oct 12, 2020 -- added data science resume copy to root.  
