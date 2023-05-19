@@ -1,0 +1,2 @@
+OneNote format .one can only be opened w app in C Windows side, not WSL.  
+Can save to file, then transfered later. Then can be opened with OneNote app.  
