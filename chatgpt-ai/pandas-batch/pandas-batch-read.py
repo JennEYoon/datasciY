@@ -1,6 +1,8 @@
 """
 # For use in life happiness project, batch read csv into dataframe, in chunks.  
 # To save RAM memory, in future case where datafile is larger than RAM.  
+# Date: March 2023  
+# Author: Jennifer E Yoon
 
 Prompt: Using Pandas and Python 3, write code to read 100 line batches of csv file into a dataframe object
 
