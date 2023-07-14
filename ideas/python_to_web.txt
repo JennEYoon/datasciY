@@ -24,6 +24,14 @@ Chalk'it allows technicians, scientists or engineers, not specialists in web tec
 
 ### Other apps
 
+7:59
+Mostly about Briefcase but relevant re: native apps
+https://m.youtube.com/watch?v=Ytg4dij6Uwo
+YouTubeYouTube | PyCon US
+Talks - Russell Keith-Magee: You *can* take it with you: Packaging your Python code with Briefcase   
+
+Altaire   
+Database, browser, transformation, etc...   
 
 
 
