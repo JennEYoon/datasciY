@@ -1,0 +1,1 @@
+Aretaeus (Greek: Ἀρεταῖος) is one of the most celebrated of the ancient Greek physicians. Little is known of his life. He presumably was a native or at least a citizen of Cappadocia, a Roman province in Asia Minor (modern day Turkey), and most likely lived in the second half of the second century AD.[1] He is generally styled "the Cappadocian" (Καππάδοξ).  
