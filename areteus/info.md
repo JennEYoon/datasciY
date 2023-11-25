@@ -2,3 +2,9 @@ Aretaeus (Greek: Ἀρεταῖος) is one of the most celebrated of the ancien
 
 ARETE was the goddess or personified spirit (daimona) of virtue, excellence, goodness and valour. She was depicted as a fair woman of high bearing, dressed in white. Her opposite number was the daimona Kakia (Cacia), lady of vice.  
 
+Arete.com etc all taken  
+Arete.us also taken  
+
+Jason have Areteus.com ?   He pronounced it Arete-i-us.  
+We can say Arete-US with silent e.  Or Are-TUS
+Or it could be alternate spelling for Aret-ae-US  
