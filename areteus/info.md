@@ -7,5 +7,5 @@ Arete.us also taken
 Aretaeus.com is taken, but Aretae.us is available!   
 
 Jason have Areteus.com ?   He pronounced it Arete-i-us.  
-We can say Arete-US with silent e.  Or Are-TUS
+We can say Arete-US with silent e.  Or Aret-TUS
 Or it could be alternate spelling for Aret-ae-US  
