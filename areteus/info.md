@@ -6,7 +6,7 @@ Arete.com etc all taken
 Arete.us also taken  
 Aretaeus.com is taken, but Aretae.us is available!   
 
-Jason have ***Areteus.com***?   He pronounced it Aret-e-Us.  
+Jason have ***Areteus.com***?   He pronounced it Aret-EE-Us.  
 We can say Aret-US with silent e.  Or Aret-TUS   
 Or it could be alternate spelling for Aret-ae-US  
 Registered w namecheap in 2022.  
