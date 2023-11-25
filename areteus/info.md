@@ -4,6 +4,7 @@ ARETE was the goddess or personified spirit (daimona) of virtue, excellence, goo
 
 Arete.com etc all taken  
 Arete.us also taken  
+Aretaeus.com is taken, but Aretae.us is available!   
 
 Jason have Areteus.com ?   He pronounced it Arete-i-us.  
 We can say Arete-US with silent e.  Or Are-TUS
