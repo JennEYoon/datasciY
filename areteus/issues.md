@@ -5,7 +5,9 @@
  * New England Journal, high quality EKG data
  * Sample graphs, square measurements?  12 channel live feed first
  * History, search for periods, flag anomalies, later AI auto monitor.
- * Dasgbiard to show live feed from prototype, history from 2 user feeds.
+ * Dasbord to show live feed from prototype, history from 2 user feeds.
+   > Update, call Jason, what has he got?
+   > Train some AI to find heart anamolies.  
 
 ### Platform:  
  * Flutter?  CloudFlare?
