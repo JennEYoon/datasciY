@@ -25,3 +25,22 @@ Additional Features:  GOTO AI app, visual view of Russian Shipping (Satellite, g
   * Satellite image of night-time light intensity - gauage of domestic electricity usage activity
   * Pandas auto-refresh analysis of shipping activity volume and prices (range) for different containers, LNG, crude via ship.
   * Plotly image interactive charts, zoom in-out, scroll, data refresh automatically from API sources  
+
+### Hume AI ideas:   
+
+ * Try feat ure engineering, data exploration to find patterns
+ * ARIMA and other time-series models
+ * Interactive plots, Plotly library, Dashboard app build
+ * Make it Fun, write intermediate step blogs, create small step figures   
+ * work on GoTo app w satellite images of shipping lanes, refinery, ports, rail track, imspect volume
+ * Tie in with global shipping, volumes imported and tefined by India, China. How about Brazil?
+ * impact on global shipping prices, volume, insurance
+ * effect of Houtie piracy
+ * scrapbook, news articles, journal, adventure game like, Myst, sound effect, music?
+
+
+* Train custom LLM to ingest trading information about energy, crude oil, natural gas, and provide chat-like interface.
+* Voice activated.  
+
+
+
