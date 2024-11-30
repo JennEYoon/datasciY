@@ -11,5 +11,5 @@ We can say Aret-US with silent e.  Or Aret-TUS
 Or it could be alternate spelling for Aret-ae-US  
 Registered w namecheap in 2022.  
 
-
+Jason website, DOM?  Arete.us.com?  
 
