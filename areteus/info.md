@@ -12,4 +12,5 @@ Or it could be alternate spelling for Aret-ae-US
 Registered w namecheap in 2022.  
 
 Jason website, DOM?  Arete.us.com?  
-
+Areteus.us   
+Email: info [at] areteus [dot] us  
