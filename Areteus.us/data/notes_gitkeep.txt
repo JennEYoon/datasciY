@@ -8,6 +8,9 @@ Original paper published in 1995, database published in 2004.
 More detail is at:  
 https://physionet.org/content/ptbdb/1.0.0/
 
+Image data
+https://physionet.org/lightwave/?db=ptbdb/1.0.0
+
 Citations:  
 PTB Diagnostic ECG Database (Sept. 25, 2004, midnight)
 
