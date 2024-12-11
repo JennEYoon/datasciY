@@ -1,5 +1,10 @@
 Text version of notes_gitkeep.  
 Actual large data files ignored git git, not uploaded to repo. Only exists in local computer.  
 
+Data 2) PTB Diagnostic ECG Database  
+549 high-resolution samples, from 294 patients both healthy and unhealthy heart patients.  
+Original paper published in 1995, database published in 2004.  
+
+Citations:  
 
 
