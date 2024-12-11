@@ -1,12 +1,22 @@
 Text version of notes_gitkeep.  
 Actual large data files ignored git git, not uploaded to repo. Only exists in local computer.  
 
+Data 0) pre-processed from author, saved to PyTorch  .pt format  
+
+A common PyTorch convention is to save models using either a .pt or .pth file extension.  
+https://pytorch.org/tutorials/beginner/saving_loading_models.html  
+
+1. torch.save: Saves a serialized object to disk. This function uses Python’s pickle utility for serialization. Models, tensors, and dictionaries of all kinds of objects can be saved using this function.
+
+2. torch.load: Uses pickle’s unpickling facilities to deserialize pickled object files to memory. This function also facilitates the device to load the data into (see Saving & Loading Model Across Devices).
+
+3. torch.nn.Module.load_state_dict: Loads a model’s parameter dictionary using a deserialized state_dict. For more information on state_dict, see What is a state_dict?.
+
+
 Data 1) MIT-BIH Arrhythmia Database
 https://www.physionet.org/content/mitdb/1.0.0/  
 MIT-BIH Arrhythmia Database expanded (Feb. 24, 2005, midnight)
 The entire MIT-BIH Arrhythmia Database is now freely available on PhysioNet. Somewhat more than half of the database has been available here since PhysioNet's inception; the remainder has now been posted.
-
-
 
 Citation:  
 When using this resource, please cite the original publication:
