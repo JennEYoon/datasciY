@@ -1,2 +1,5 @@
-all items in data folder .gitignore added.
-test, added gitignore file directly to data folder
+Text version of notes_gitkeep.  
+Actual large data files ignored git git, not uploaded to repo. Only exists in local computer.  
+
+
+
