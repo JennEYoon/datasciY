@@ -1,6 +1,6 @@
-# exclude everything in thid folder 
+# exclude everything in this folder 
 Areteus.us/data/*
-# excep to this rule  
+# except to this rule  
 !Areteus.us/data/notes_gitkeep.*
 
 .ipynb_checkpoints/
