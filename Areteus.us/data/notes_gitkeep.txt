@@ -6,5 +6,13 @@ Data 2) PTB Diagnostic ECG Database
 Original paper published in 1995, database published in 2004.  
 
 Citations:  
+PTB Diagnostic ECG Database (Sept. 25, 2004, midnight)
 
+New in PhysioBank is the PTB Diagnostic ECG Database, a collection of 549 high-resolution 15-lead ECGs (12 standard leads together with Frank XYZ leads), including clinical summaries for each record. From one to five ECG records are available for each of the 294 subjects, who include healthy subjects as well as patients with a variety of heart diseases.
+
+When using this resource, please cite the original publication:
+Bousseljot R, Kreiseler D, Schnabel, A. Nutzung der EKG-Signaldatenbank CARDIODAT der PTB über das Internet. Biomedizinische Technik, Band 40, Ergänzungsband 1 (1995) S 317
+
+Please include the standard citation for PhysioNet: (show more options)
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
