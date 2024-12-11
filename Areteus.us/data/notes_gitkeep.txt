@@ -1,6 +1,22 @@
 Text version of notes_gitkeep.  
 Actual large data files ignored git git, not uploaded to repo. Only exists in local computer.  
 
+Data 1) MIT-BIH Arrhythmia Database
+https://www.physionet.org/content/mitdb/1.0.0/  
+MIT-BIH Arrhythmia Database expanded (Feb. 24, 2005, midnight)
+The entire MIT-BIH Arrhythmia Database is now freely available on PhysioNet. Somewhat more than half of the database has been available here since PhysioNet's inception; the remainder has now been posted.
+
+
+
+Citation:  
+When using this resource, please cite the original publication:
+Moody GB, Mark RG. The impact of the MIT-BIH Arrhythmia Database. IEEE Eng in Med and Biol 20(3):45-50 (May-June 2001). (PMID: 11446209)
+
+Please include the standard citation for PhysioNet: (show more options)
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
+
+\-\-\-  
+
 Data 2) PTB Diagnostic ECG Database  
 549 high-resolution samples, from 294 patients both healthy and unhealthy heart patients.  
 Original paper published in 1995, database published in 2004.  
