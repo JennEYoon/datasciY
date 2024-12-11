@@ -1,3 +1,8 @@
+# exclude everything in thid folder 
+Areteus.us/data/*
+# excep to this rule  
+!Areteus.us/data/notes_gitkeep.*
+
 .ipynb_checkpoints/
 desktop.ini
 .zip 
