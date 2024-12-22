@@ -3,7 +3,9 @@ Private notes in Jennifer-Yoon private repo.
 
 ### Dec 22, 2024 Sunday notes:  
 
-Find Colab pricing  
+ * Find Colab pricing, $10/month pro?  Better GPU?  
+ * Find AI pricing, which ones are good for me?
+   
 Try running DataLoader from ECGTransform paper during Christmas post week break.  
 Write-up do, present to Bill, Dec 2024 end - January 7, 2025.  
 Present to Dan & Peter from small group in January 2025.  
