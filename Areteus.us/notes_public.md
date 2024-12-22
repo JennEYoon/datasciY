@@ -21,6 +21,15 @@ Employment contact, stipulate I can publish my own work on events/publications/m
 > Fallback: Use someone else's device with 2 or more leads, or buy 2 devices used together with 1-lead each, get data, showcase AI part works.
 > Fallback: Use live data from only 2 of Jason's 12-19 lead, use "live" to showcase proof of concept, device and AI works.
 
+### Database, my thoughts:  
+DART - language, CloudFlare, fine.  
+
+Use no-SQL structure to import and store data, unmodified/written.  
+Use SQL - to save portions, each customer's data file separately saved, saved time later on export.  
+Use temp file to gather data from each cloud upload sessions, one per user, then when data is finished uploading and checked, save one permanent copy for later audits, then add chuck to no-SQL dabase.  Add date-time-timezone, location, user ID, logs about upload, errors etc.  
+
+Each chunk to data upload will be one-day's worth of data for each user, written into consequtive rows into no-SQL table.  
+
 
 
 
