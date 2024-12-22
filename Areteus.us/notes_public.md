@@ -13,5 +13,5 @@ Present to Dan & Peter from small group in January 2025.
 
 ### Make timesheet, present contract employee/shareholder  
 From October calls, Nov, Dec.  
-Total about 3 weeks worth so far, including this week.  
+Total about 3 weeks worth so far (80-120 hours), including this week.  
 Employment contact, stipulate I can publish my own work on events/publications/my website, but keep all data produced by Areteus private.  If Areteus decideds to make a portion of data public, I can use that data, but eh decision will be up to Jason and other at Areteus.  
