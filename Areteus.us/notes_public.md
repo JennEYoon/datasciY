@@ -3,8 +3,10 @@ Private notes in Jennifer-Yoon private repo.
 
 ### Dec 22, 2024 Sunday notes:  
 
- * Find Colab pricing, $10/month pro?  Better GPU?  
- * Find AI pricing, which ones are good for me?
+ * Find Colab pricing, $10/month pro?  Better GPU?
+   - Pay as you Go: $10/month for 100 compute units, expire in 90 days unused units. ** start here, if needed **  
+   - Colab Pro: $10/month for 100 compute units, expire after 90 days unused units, get more memory machines (not needed for data sizes), get terminal (VM machine).  
+ * Find AI pricing, which ones are good for me? 
    
 Try running DataLoader from ECGTransform paper during Christmas post week break.  
 Write-up do, present to Bill, Dec 2024 end - January 7, 2025.  
