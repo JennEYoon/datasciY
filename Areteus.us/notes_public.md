@@ -29,7 +29,10 @@ Use SQL - to save portions, each customer's data file separately saved, saved ti
 Use temp file to gather data from each cloud upload sessions, one per user, then when data is finished uploading and checked, save one permanent copy for later audits, then add chuck to no-SQL dabase.  Add date-time-timezone, location, user ID, logs about upload, errors etc.  
 
 Each chunk to data upload will be one-day's worth of data for each user, written into consequtive rows into no-SQL table.  
-
+Each User ID has a SQL-Table datavase for all historical data.  Live data is not uploaded until sync time.  
+User web interface allows searching by date and time, view heart-rate graphs, and see AI diagnostic analysis on any day-hour period.  
+Live USB-phone user-interface, provide alerts for irregular heart-beat, based on simple AI prediction model, continuously run on client phone.  
+Overnight, run detailed AI anlalysis on uploaded heart-rate analysis.  Trends spotted to go for hospital checkups, precautions.  
 
 
 
