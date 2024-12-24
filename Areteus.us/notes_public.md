@@ -36,6 +36,17 @@ User web interface allows searching by date and time, view heart-rate graphs, an
 Live USB-phone user-interface, provide alerts for irregular heart-beat, based on simple AI prediction model, continuously run on client phone.  
 Overnight, run detailed AI anlalysis on uploaded heart-rate analysis.  Trends spotted to go for hospital checkups, precautions.  
 
+### Dec 24, 2024 thoughts:  
+
+Working on reading train.py and test.py (PyTorch format files used by ECGTransform repo.  
+AI should be able to help me, if I upload DataLoader module.  
+Do data exploration using Pandas, Numpy.  
+
+Try to run model, upload all code to AI, had it explain the different parts.  
+Transfer to Jupyter Notebook format.  Run training, then prediction on test samples.  
+
+
+
 
 
 
