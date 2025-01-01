@@ -45,6 +45,10 @@ Do data exploration using Pandas, Numpy.
 Try to run model, upload all code to AI, had it explain the different parts.  
 Transfer to Jupyter Notebook format.  Run training, then prediction on test samples.  
 
+### Due early Jan 2025  
+contract  
+timesheet  
+Colab free AI startup, sign up.   
 
 
 
