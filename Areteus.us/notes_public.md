@@ -59,6 +59,12 @@ Data are tensors, but no weights, no checkpoints.
 Will need to train the model myself, but author says they used foundational models with pretrained transformer weights.  
 Which ine are they talking about?  
 
+Try running Kaggle csv data and random forest w XGBoost library first.  
+Probably easiest one to reproduce.  
+There is also nn model w Resnet, also using Kaggle csv data.  
+
+After that, try ECGTransform model, along w Resnet using .pt pre-processed files.  
+
 
 
 
