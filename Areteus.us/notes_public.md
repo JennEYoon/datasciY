@@ -53,6 +53,14 @@ timesheet
 ### Jan 2, 2025 notes:    
 Need 2-3 full days to test loading data files w PyTorch *.pt format.   
 
+#### Jan 3, 2025 Friday notes:  
+Got train.pt and test.pt PTB source files to load in PyTorch. Yeah!!!    
+Data are tensors, but no weights, no checkpoints.  
+Will need to train the model myself, but author says they used foundational models with pretrained transformer weights.  
+Which ine are they talking about?  
+
+
+
 
 
 
