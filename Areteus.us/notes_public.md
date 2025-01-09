@@ -65,6 +65,15 @@ There is also nn model w Resnet, also using Kaggle csv data.
 
 After that, try ECGTransform model, along w Resnet using .pt pre-processed files.  
 
+### Jan 9 notes  
+Next call Tuesday, too short time to do anything meaningful. OK, just do small follow ups.  
+Chinese database link, take a look  
+Run Framwork NB Rodrigo provided, as is fist.  
+If possible do PTB dataset on 1Dcnn next, but don't stree if no time.  
+DO send engagement letter, timesheet.  
+May not matter in the end, for various reasons, but good form.  
+
+> Next week, write up initial finding so far, post on datasciY website as project.  
 
 
 
