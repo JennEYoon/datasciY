@@ -23,6 +23,7 @@ Correct audio for coding names, etc.
 Present project for each chapter, make YouTube videos.  
 
 
+### Add blog posts, projects   
 
 
 
