@@ -1,8 +1,9 @@
-# Todos July 2025  
+# Todos August 2025  
 
 Revamp whole website for job search  
-Finish ECG project, make webapp for viewing calssification, shoose simulated inputs.  
-
-Make app w fitbit, apple watch?  
+Showcase single project, ecg-wearable  
+Repo - make ecg-wearable new clean repo. For external audience, not development repo.  
+make webapp for viewing classification, choose inputs. chhose dl model, 1dcnn, time series, se resnets
+Make app w fitbit and apple watch data. Doesn't have to be ecg, what it currently measures, and what can be done w 2 watches sensors. 
 
 
