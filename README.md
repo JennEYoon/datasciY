@@ -1,33 +1,23 @@
 ## My Data Science & Python Coding Projects, http://datasciY.com  
-
-***Note: Renamed "master" to "main" branch in June 2020***
-
-***Public Repo, links from datasciY.com to project files, Jupyter notebooks***
-
 ### Author: Jennifer E Yoon  
 
 ### Description  
-
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS3 Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
 
 
 ### Tags  
   
- * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, statistics, econometrics, financial derivatives, economics
+ * ***Topics:*** data science, data analysis, machine learning, deep learning, visualization, statistics, econometrics, financial derivatives, economics  
+ * ***Python Libraries:*** Python core, Jupyter Lab, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Fastai, Plotly, Dash  
+ * ***Other Software, Services and Tools:*** Excel, VBA, SQL, Unix bash, GitHub, VS Code, Google Colab, AWS (EC2, Lambda, S3, Route 53)  
 
- * ***Python Libraries:*** Python core, Jupyter Lab, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Fastai, Plotly, Dash
- 
- * ***Other Software, Services and Tools:*** Excel, VBA, SQL, Unix bash, GitHub, VS Code, Google Colab, AWS (EC2, Lambda, S3, Route 53)
-
-#### To view HTML files directly from Github, prepend the following text to your browser's URL:  
+#### To view HTML files directly from Github, prepend the following text to your browser's URL:   
 >  - https://htmlpreview.github.io/?   
 >  - e.g.: to view **example_rt.html** file on this repo:  
->    https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html
-
+>    https://htmlpreview.github.io/?https://github.com/JennEYoon/datasciY/blob/main/example_rt.html   
 ---   
 
 ### Folder Structure  
-
  * datasciy.com (folder) -- only hosted files
    * root level:
      - dsy.css -- My handcoded stylesheet, uses CSS3 format, the latest standard.
@@ -59,7 +49,11 @@ All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded
  * chatgpt-ai (folder) -- development, using chatgpt in coding.  
    
 ### History  
-  * Oct 12, 2020 -- added data science resume copy to root.  
+  * Sept 2025: Overhaul of website, prepare for job applications.
+     * Post SciPy 2025 virtual poster presentation, make visuals to high light Wearabke-ECG project.
+     * Update all other parts of site. Use AI to write new Articles and Blog posts.  
+  * Oct 12, 2020 -- added data science resume copy to root.
+  * June 2020: rename branch default from "master" to "main" per recommended practice.  
   * Sept 19, 2020 -- streamlined repo, moved out folder for learning, financial modeling.  
   * Add jsq folder and javascript exercises - June 20-23, 2020.  
   * Add links to HTML github viewer, Open In CoLab, Open In MyBinder - June 2020  
