@@ -4,6 +4,7 @@
 Following SciPy 2025 virtual poster submission, showcase wearable-ecg DL project.  
 Update all other parts, get ready for job search.  
 Primary industry: Finance, Investing, Risk Management, & AI/ML  
+Also write blog about Bitcoin?  On StockWiki or 10SigmaRisk.com  
 
 ### Description  
 All pages are hand coded by me using HTML5 and CSS3 standard.  I also hand coded the stylesheet.  After evaluating Bootstrap and W3C  Frameworks, decided to code a light weight style sheet using only items in use.  Style makes use of CSS3 Grid to layout photos.  Most of the coding examples are using the Python language and Python data science libraries.  Some of the demos and articles are about tools and cloud services.  
